@@ -68,9 +68,8 @@ https://github.com/user-attachments/assets/fb3f2992-da00-4730-872f-8f3bb8b29163
 | **Safety Guarantee** | Relies on accurate perception | No formal safety guarantee | **Mathematical optimization** with collision avoidance constraints for reliable deployment |
 | **Deployment** | Complex integration required | Black-box policy, hard to debug | **Easy to deploy** and flexible to integrate with global planners (A*, VLN) |
 
-## Quick Start
-
-**Requirements:** Python >= 3.10
+## Prerequisite
+- Python >= 3.8
 
 ```bash
 # Install NeuPAN
