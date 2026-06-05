@@ -18,6 +18,8 @@ You should have received a copy of the GNU General Public License
 along with NeuPAN planner. If not, see <https://www.gnu.org/licenses/>.
 '''
 
+from __future__ import annotations
+
 import yaml
 import torch
 from neupan.robot import robot

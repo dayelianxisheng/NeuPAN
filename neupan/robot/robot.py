@@ -18,6 +18,8 @@ You should have received a copy of the GNU General Public License
 along with NeuPAN planner. If not, see <https://www.gnu.org/licenses/>.
 '''
 
+from __future__ import annotations
+
 from math import inf
 import numpy as np
 from typing import Optional, Union
