@@ -1,13 +1,13 @@
 device: 'cuda'
 
 robot:
-  kinematics: 'diff'
+  kinematics: 'omni'
   length: 1.6
   width: 2.0
 
 train:
   direct_train: true
-  model_name: 'my_diff_robot'
+  model_name: 'mowen'
   data_size: 100000
   data_range: [-25, -25, 25, 25]
   batch_size: 256

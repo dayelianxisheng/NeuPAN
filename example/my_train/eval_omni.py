@@ -1,34 +1,32 @@
 """
-用自己训练的 DUNE 模型测试所有 diff 场景
+用自己训练的 DUNE 模型测试所有 omni 场景
 
 用法:
-    python eval.py -e corridor      # 单场景
-    python eval.py -e all           # 全部9个场景
+    python eval_omni.py -e corridor      # 单场景
+    python eval_omni.py -e all           # 全部8个场景
 
 场景: corridor, convex_obs, dyna_non_obs, dyna_obs, non_obs,
-      pf, pf_obs, polygon_robot, reverse
-
-逻辑: 使用各场景自带的 planner.yaml (路点/环境匹配)，然后替换为你训练的 DUNE 权重
+      pf, pf_obs, polygon_robot
 """
 from neupan import neupan
 import irsim
 import torch
 import argparse
 
-MODEL_PATH = "model/my_diff_robot/model_1500.pth"
+MODEL_PATH = "model/mowen/model_5000.pth"
 
 SCENARIOS = [
     "corridor", "convex_obs", "dyna_non_obs", "dyna_obs",
-    "non_obs", "pf", "pf_obs", "polygon_robot", "reverse",
+    "non_obs", "pf", "pf_obs", "polygon_robot",
 ]
 
 
 def run_scenario(scenario, max_steps=1000):
-    env_path = f"../{scenario}/diff/env.yaml"
-    planner_path = f"../{scenario}/diff/planner.yaml"
+    env_path = f"../{scenario}/omni/env.yaml"
+    planner_path = f"../{scenario}/omni/planner.yaml"
 
     print(f"\n{'='*50}")
-    print(f"  {scenario}/diff  ({MODEL_PATH})")
+    print(f"  {scenario}/omni  ({MODEL_PATH})")
     print(f"{'='*50}")
 
     env = irsim.make(env_path, save_ani=False, full=False, display=True)
@@ -71,7 +69,7 @@ def run_scenario(scenario, max_steps=1000):
         if env.done():
             break
 
-    env.end(3, ani_name=f"my_diff_{scenario}")
+    env.end(3, ani_name=f"mowen_{scenario}")
 
 
 if __name__ == "__main__":
