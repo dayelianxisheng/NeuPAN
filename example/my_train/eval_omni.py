@@ -14,7 +14,7 @@ import irsim
 import torch
 import argparse
 
-MODEL_PATH = "model/mowen/model_4000.pth"
+MODEL_PATH = "model/mowen/model_1500.pth"
 
 SCENARIOS = [
     "corridor", "convex_obs", "dyna_non_obs", "dyna_obs",
