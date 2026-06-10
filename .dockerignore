@@ -1,0 +1,25 @@
+# 排除 ROS2 包 (catkin_make 不兼容)
+neupan_ros2/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# 构建产物
+build/
+dist/
+
+# 其他
+.DS_Store

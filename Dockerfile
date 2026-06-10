@@ -21,12 +21,11 @@ RUN curl -sS https://bootstrap.pypa.io/pip/3.9/get-pip.py | python3.9
 
 # ── ROS 系统 Python 的 numpy（spawn_model 需要） ─────
 RUN apt-get update && apt-get install -y --no-install-recommends python3-numpy \
-    && apt-get remove -y python3-matplotlib \
     && rm -rf /var/lib/apt/lists/*
 
 # ── 修复 catkin wrapper：让 exec 后的名字暴露给 import ──
 RUN sed -i 's/exec(compile(fh.read(), python_script, "exec"), context)/exec(compile(fh.read(), python_script, "exec"), context)\n    globals().update(context)/' \
-    /opt/ros/noetic/share/catkin/cmake/template/script.py.in
+    /opt/ros/noetic/share/catkin/cmake/templates/script.py.in
 
 # ── NeuPAN Planner ─────────────────────────────────────
 COPY . /root/neupan_ws/src/NeuPAN
