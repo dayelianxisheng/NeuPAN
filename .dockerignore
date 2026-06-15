@@ -1,6 +1,3 @@
-# 排除 ROS2 包 (catkin_make 不兼容)
-neupan_ros2/
-
 # Python
 __pycache__/
 *.pyc
@@ -19,6 +16,9 @@ __pycache__/
 
 # 构建产物
 build/
+**/build/
+**/install/
+**/log/
 dist/
 
 # 其他

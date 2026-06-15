@@ -21,8 +21,13 @@ ENV http_proxy=${HTTP_PROXY} \
 
 SHELL ["/bin/bash", "-c"]
 
+# ── 国内加速源 ────────────────────────────────────────
+RUN sed -i 's|http://archive.ubuntu.com|http://mirrors.tuna.tsinghua.edu.cn|g' /etc/apt/sources.list \
+    && sed -i 's|http://security.ubuntu.com|http://mirrors.tuna.tsinghua.edu.cn|g' /etc/apt/sources.list \
+    && apt-get update
+
 # ── 系统依赖 ──────────────────────────────────────────
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get install -y --no-install-recommends \
     software-properties-common git curl \
     ros-noetic-tf2-tools \
     ros-noetic-tf2-ros \
@@ -36,14 +41,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl -sS https://bootstrap.pypa.io/pip/3.9/get-pip.py | python3.9
 
 # ── NeuPAN Python 依赖 ────────────────────────────────
-RUN python3.9 -m pip install --upgrade pip setuptools wheel
-RUN python3.9 -m pip install numpy==1.26.4 scipy==1.13.0
+RUN python3.9 -m pip install --upgrade pip setuptools wheel \
+    -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN python3.9 -m pip install numpy==1.26.4 scipy==1.13.0 \
+    -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN python3.9 -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 COPY . /root/neupan_ws/src/NeuPAN
 
 RUN cd /root/neupan_ws/src/NeuPAN \
-    && python3.9 -m pip install -e .
+    && python3.9 -m pip install -e . -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# ── 移除 ROS2 包（catkin_make 不兼容） ──────────────────
+RUN rm -rf /root/neupan_ws/src/NeuPAN/neupan_ros2
 
 # ── 修复 neupan_core: 空 obstacle_points 兼容 ──────────
 RUN sed -i 's|self.obstacle_points = None  # (2, n)|self.obstacle_points = np.empty((2, 0))  # (2, n)|' \
@@ -76,10 +86,10 @@ RUN source /opt/ros/noetic/setup.bash \
     && catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3.9
 
 # ── 清除代理（运行时不需要） ──────────────────────────
-ENV http_proxy= \
-    https_proxy= \
-    HTTP_PROXY= \
-    HTTPS_PROXY=
+ENV http_proxy=""
+ENV https_proxy=""
+ENV HTTP_PROXY=""
+ENV HTTPS_PROXY=""
 
 # ── 入口脚本 ──────────────────────────────────────────
 RUN printf '#!/bin/bash\n\

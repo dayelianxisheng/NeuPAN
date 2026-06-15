@@ -156,56 +156,73 @@ roslaunch xxx.launch
 
 ---
 
-## 五、项目 Dockerfile 模板
+## 五、NeuPAN 项目 Dockerfile
 
-以 NeuPAN 为例，展示如何为一个 ROS 项目写 Dockerfile：
+项目自带构建好的 Dockerfile，位于 `docker/` 目录。已内置清华国内加速源，无需代理即可快速构建。
 
-```dockerfile
-FROM osrf/ros:noetic-desktop-full-focal
-
-# ── 代理通过 build-arg 传入 ────────
-ARG HTTP_PROXY
-ARG HTTPS_PROXY
-ENV http_proxy=${HTTP_PROXY} https_proxy=${HTTPS_PROXY}
-
-# ── 项目依赖 ──────────────────────
-RUN sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list \
-    && apt-get update && apt-get install -y python3.9 git python3-numpy \
-    && apt-get remove -y python3-matplotlib \
-    && rm -rf /var/lib/apt/lists/*
-
-# ── Python 依赖 ───────────────────
-RUN python3.9 -m pip install -e . \
-    && python3.9 -m pip install numpy==1.26.4
-
-# ── 外部 ROS 包 ────────────────────
-RUN git clone https://github.com/xxx/rvo_ros.git /ws/src/rvo_ros
-
-# ── 编译 ──────────────────────────
-RUN . /opt/ros/noetic/setup.sh && cd /ws && catkin_make
-
-# ── 清理代理 ──────────────────────
-ENV http_proxy= https_proxy=
-
-# ── 入口 ──────────────────────────
-RUN echo '. /opt/ros/noetic/setup.sh && . /ws/devel/setup.sh && export __GLX_VENDOR_LIBRARY_NAME=nvidia' > /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["bash"]
-```
-
-构建：
+### 构建
 
 ```bash
-# 开代理
-docker build --build-arg HTTP_PROXY=http://127.0.0.1:7897 --build-arg HTTPS_PROXY=http://127.0.0.1:7897 -t my-project .
+# 国内直连（已内置 apt/pip/rosdep 清华源）
+./docker/build.sh ros1       # ROS1 Noetic + Gazebo
+./docker/build.sh ros2       # ROS2 Humble + ddr_minimal_sim
 
-# 不开代理
-docker build -t my-project .
+# 如需代理（git clone 等场景）
+./docker/build.sh ros2 --proxy                    # 默认 http://127.0.0.1:7897
+./docker/build.sh ros1 --proxy http://x.x.x.x:7890  # 自定义代理
 ```
+
+### 运行
+
+```bash
+xhost +local:docker
+
+# ROS1（Gazebo 仿真 + 动态障碍物）
+docker run -it --gpus all --net=host -e DISPLAY \
+  -v /tmp/.X11-unix:/tmp/.X11-unix neupan:noetic
+
+# ROS2（ddr_minimal_sim 仿真）
+docker run -it --gpus all --net=host -e DISPLAY \
+  -v /tmp/.X11-unix:/tmp/.X11-unix neupan:ros2
+```
+
+### 挂载代码（开发用）
+
+```bash
+docker run -it --gpus all --net=host -e DISPLAY \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -v /home/qcqc/resource/code/eai/NeuPAN:/root/neupan_ros2_ws/src/NeuPAN \
+  neupan:ros2
+```
+
+### 已内置的加速源
+
+| 组件 | 镜像源 |
+|------|--------|
+| apt (Ubuntu) | `mirrors.tuna.tsinghua.edu.cn` |
+| pip | `~/.config/pip/pip.conf` 全局清华源 |
+| rosdep | `ROSDISTRO_INDEX_URL` → 清华 rosdistro |
+| ROS 包 | Ubuntu 22.04 官方仓库自带 ROS Humble |
 
 ---
 
 ## 六、踩坑清单
+
+### 构建相关
+
+| 问题 | 原因 | 解决 |
+|---|---|---|
+| docker build 时 apt 巨慢 | 没换国内源 | Dockerfile 内置清华源 |
+| pip install 依赖包走 PyPI 慢 | 没配 pip 全局源 | 加 `~/.config/pip/pip.conf` 写入清华 index-url |
+| `.dockerignore` 排除 `neupan_ros2/` | 旧注释说 "catkin_make 不兼容" | 改为在 ROS1 Dockerfile 里 `rm -rf`，保留 ROS2 需要的包 |
+| `neupan_ros2/build/` 构建产物被复制进镜像 | `.dockerignore` 的 `build/` 只匹配根目录 | 改用 `**/build/` `**/install/` `**/log/` |
+| colcon 报 CMakeCache.txt 路径错误 | 宿主机构建产物（含旧绝对路径）被复制 | `.dockerignore` 排除 `**/build/` 等目录 |
+| `rosdep: command not found` | 没装 `python3-rosdep` | `apt-get install python3-rosdep` |
+| rosdep 报 `no sources directory exists` | 没执行 `rosdep init` | `rosdep init && rosdep update` |
+| `pip install -e .` 后 numpy 版本被覆盖 | `pyproject.toml` 写 `'numpy'` 无版本约束 | 改为 `'numpy==1.26.4'` 锁定版本 |
+| torch 依赖包（nvidia-cublas 等）下载慢 | pip index-url 与 torch 的冲突 | torch 用 `--index-url pytorch.org` + `--extra-index-url 清华` |
+
+### ROS / 运行时相关
 
 | 问题 | 原因 | 解决 |
 |---|---|---|
@@ -219,4 +236,3 @@ docker build -t my-project .
 | Python 3.10 in deadsnakes 没了 | Ubuntu 20.04 deadsnakes 下架了 3.10 | 用 3.9，`pyproject.toml` 写的就是 `>= 3.9` |
 | pip get-pip.py 报不支持 3.9 | 新 get-pip.py 最低要 3.10 | 用 `https://bootstrap.pypa.io/pip/3.9/get-pip.py` |
 | git clone 巨慢 | 没走代理 | `git config --global http.proxy http://127.0.0.1:7897` |
-| docker build 时 apt 巨慢 | 容器内没代理 | `--build-arg HTTP_PROXY=...` |

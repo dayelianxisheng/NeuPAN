@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Build & Run
 
 **Requirements:** Python >= 3.9 (pyproject.toml). README says >= 3.10 for safety.
-**Critical pins:** `scipy<=1.13.0` (newer versions break cvxpylayers), `gctl==1.2` (exact pin), `torch>=2.1.0`.
+**Critical pins:** `numpy==1.26.4`, `scipy==1.13.0` (newer versions break cvxpylayers), `gctl==1.2` (exact pin), `torch>=2.1.0`. All pinned in `pyproject.toml`.
 
 ```bash
 # Editable install (base package)
@@ -111,3 +111,30 @@ The `file_check()` utility in `neupan/util/__init__.py` searches for checkpoint 
 4. `<neupan_package_root>/<file_name>`
 
 This means relative paths like `'example/model/diff_robot_default/model_5000.pth'` resolve relative to wherever `run_exp.py` is invoked. Run from the `example/` directory for correct resolution.
+
+## Docker
+
+项目自带 Docker 镜像，已内置清华加速源（apt/pip/rosdep），国内构建无需代理。
+
+**构建:** `./docker/build.sh ros2` (或 `ros1`)，加 `--proxy` 使用代理（git clone 场景）。
+
+**运行:**
+```bash
+xhost +local:docker
+# ROS2
+docker run -it --gpus all --net=host -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix neupan:ros2
+# ROS1
+docker run -it --gpus all --net=host -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix neupan:noetic
+```
+
+**开发（挂载代码）:**
+```bash
+docker run -it --gpus all --net=host -e DISPLAY \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -v $(pwd):/root/neupan_ros2_ws/src/NeuPAN neupan:ros2
+# 容器内重新安装
+pip install -e /root/neupan_ros2_ws/src/NeuPAN
+```
+
+**Dockerfile 位置:** `docker/ros1/Dockerfile`, `docker/ros2/Dockerfile`
+**关键依赖:** 已内置 `torch==2.8.0+cu128`、`numpy==1.26.4`、`scipy==1.13.0`，与 `pyproject.toml` 版本锁定一致。
