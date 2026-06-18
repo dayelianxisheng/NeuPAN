@@ -2,17 +2,17 @@
 # mowen omni 规划器 | non_obs
 # ═══════════════════════════════════════════════════════
 
-receding: 8
-step_time: 0.15
-ref_speed: 1
+receding: 10
+step_time: 0.1
+ref_speed: 0.7
 device: 'cpu'
 time_print: True
 collision_threshold: 0.1
 
 robot:
   kinematics: 'omni'
-  max_speed: [1.0, 1.0]
-  max_acce: [1.0, 1.0]
+  max_speed: [8, 6.28]
+  max_acce: [2, 1]
   length: 0.42
   width: 0.26
 
@@ -23,7 +23,7 @@ ipath:
   loop: False
   arrive_threshold: 0.1
   close_threshold: 0.1
-  ind_range: 10
+  ind_range: 30
   arrive_index_threshold: 1
 
 pan:
@@ -38,4 +38,4 @@ adjust:
   p_u: 1.0
   eta: 8.0
   d_max: 0.3
-  d_min: 0.05
+  d_min: 0.03

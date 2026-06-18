@@ -51,7 +51,7 @@ case "$CMD" in
             -v /tmp/.X11-unix:/tmp/.X11-unix $WS_MOUNT \
             "$IMAGE" sleep infinity
         echo "[1/2] 容器已创建，开始安装依赖..."
-        docker exec "$NAME" bash -c "$PROXY_VARS bash $SETUP_SCRIPT"
+        docker exec "$NAME" bash -c "$PROXY_VARS echo 'Acquire::Retries \"10\";' > /etc/apt/apt.conf.d/99-retries; bash $SETUP_SCRIPT"
         echo "[2/2] 安装完成"
         docker exec -it "$NAME" bash -c "$INIT_CMD; exec bash"
         ;;

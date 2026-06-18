@@ -49,6 +49,7 @@ python3 -m pip install -e .
 echo -e "${YELLOW}[5/5] colcon build...${NC}"
 source /opt/ros/humble/setup.bash
 cd "$NEUPAN_SRC/neupan_ros2"
+rm -rf build install log
 colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release \
     || (rosdep init && rosdep update && rosdep install -i --from-path . --rosdistro humble -y \
         && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release)
