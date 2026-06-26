@@ -1,0 +1,54 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/ToolProperties
+    Name: ToolProperties
+  - Class: rviz/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/TF
+      Name: TF
+      Enabled: true
+      Frame Timeout: 15
+      All Enabled: true
+      Marker Scale: 0.5
+    - Class: rviz/Odometry
+      Name: Odometry
+      Enabled: true
+      Topic: /odom
+      Color: 0; 255; 0
+      Position Tolerance: 0.1
+      Angle Tolerance: 0.1
+      Keep: 1000
+    - Class: rviz/LaserScan
+      Name: LaserScan
+      Enabled: true
+      Topic: /scan
+      Color: 255; 0; 0
+      Size: 0.02
+      Style: Points
+    - Class: rviz/Path
+      Name: Path
+      Enabled: true
+      Topic: /neupan_plan
+      Color: 255; 0; 0
+    - Class: rviz/Path
+      Name: InitialPath
+      Enabled: true
+      Topic: /neupan_initial_path
+      Color: 0; 0; 0
+    - Class: rviz/Grid
+      Name: Grid
+      Enabled: true
+      Plane Cell Count: 20
+      Cell Size: 1
+  Global Options:
+    Fixed Frame: odom
+    Frame Rate: 30
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 5
+      Focal Point: [0, 0, 0]

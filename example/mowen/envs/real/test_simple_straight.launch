@@ -1,29 +1,40 @@
 <launch>
     <!-- ========================================================
-    mowen 真机 NeuPAN 部署
-    依赖 newznzc_ws: Leishen N10 + 轮式里程计 + EKF (odom frame)
-    小车: omni 全向底盘, DUNE 模型以 omni 训练
+    mowen 新小车 — 简化测试 launch
+    功能: 直线行走 + 基础避障测试
+    依赖: 小车端已启动 robot_minimal.launch
     ======================================================== -->
 
-    <arg name="neupan_root"
-         default="/root/neupan_ws/src/NeuPAN"/>
-    <!-- 小车端部署可改为:
-         default="/home/your_user/newznzc_ws/src/NeuPAN" -->
+    <!-- NeuPAN 代码路径 -->
+    <arg name="neupan_root" default="$(env HOME)/neupan_ws/src/NeuPAN"/>
+    <!-- 如果在 Docker 容器内，改为 /root/neupan_ws/src/NeuPAN -->
 
+    <!-- 使用简化配置 -->
     <arg name="config_file"
-         default="$(arg neupan_root)/example/mowen/envs/real/planner.yaml"/>
-    <arg name="map_frame"       default="odom"/>                    <!-- 无全局定位, 用 odom 帧 -->
+         default="$(arg neupan_root)/example/mowen/envs/real/planner_simple_test.yaml"/>
+
+    <!-- Frame 配置 -->
+    <arg name="map_frame"       default="odom"/>        <!-- 使用 odom 帧，无需全局定位 -->
     <arg name="base_frame"      default="base_link"/>
     <arg name="lidar_frame"     default="laser_link"/>
-    <arg name="scan_range"      default="0.5 27.0"/>         <!-- Leishen N10, 滤近点防误停 -->
+
+    <!-- 激光雷达参数（关键：过滤近点防止误停） -->
+    <arg name="scan_range"      default="0.5 27.0"/>    <!-- Leishen N10，0.5m 以下过滤掉 -->
     <arg name="scan_angle_range" default="-3.14 3.14"/>
-    <arg name="scan_downsample" default="6"/>
+    <arg name="scan_downsample" default="6"/>           <!-- 下采样，减少计算量 -->
+
+    <!-- 可视化参数 -->
     <arg name="marker_size"     default="0.15"/>
     <arg name="marker_z"        default="0.5"/>
+
+    <!-- DUNE 模型路径 -->
     <arg name="dune_checkpoint"
          default="$(arg neupan_root)/example/mowen/model/mowen_real/model_5000.pth"/>
-    <arg name="refresh_initial_path" default="false"/>       <!-- 跟仿真一致 -->
 
+    <!-- 路径刷新模式（测试时关闭，避免路径重置） -->
+    <arg name="refresh_initial_path" default="false"/>
+
+    <!-- ========== NeuPAN 控制节点 ========== -->
     <node name="neupan_control" pkg="neupan_ros" type="neupan_node.py" output="screen">
         <param name="config_file"    value="$(arg config_file)"/>
         <param name="map_frame"      value="$(arg map_frame)"/>
@@ -36,8 +47,16 @@
         <param name="marker_z"       value="$(arg marker_z)"/>
         <param name="dune_checkpoint" value="$(arg dune_checkpoint)"/>
         <param name="refresh_initial_path" value="$(arg refresh_initial_path)"/>
-        <!-- /scan 直接收，不 remap（Leishen 发布到 /scan） -->
+
+        <!-- Topic remap -->
         <remap from="/neupan_cmd_vel" to="/cmd_vel"/>
         <remap from="/neupan_goal" to="/move_base_simple/goal"/>
     </node>
+
+    <!-- ========== RViz 可视化（可选） ========== -->
+    <!-- 取消注释以启动 RViz -->
+    <!--
+    <node name="rviz" pkg="rviz" type="rviz"
+          args="-d $(arg neupan_root)/example/mowen/envs/real/mowen.rviz"/>
+    -->
 </launch>

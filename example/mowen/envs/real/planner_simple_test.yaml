@@ -1,0 +1,43 @@
+# ═══════════════════════════════════════════════════════
+# mowen 新小车 — 简化测试配置（直线走 + 避障）
+# 用途: 验证基础功能，避免复杂场景
+# ═══════════════════════════════════════════════════════
+
+receding: 5              # 预测步长（保持原值）
+step_time: 0.3           # 控制周期 (s)
+ref_speed: 0.15          # 参考速度 (m/s) - 保守设置
+device: 'cpu'
+time_print: True         # 打印执行时间，便于调试
+collision_threshold: 0.12  # 碰撞检测阈值 (m) - 略增大以提高安全性
+
+robot:
+  kinematics: 'omni'       # 全向底盘
+  max_speed: [0.2, 0.2]   # 最大速度 [vx, vy] (m/s) - 限制速度提高安全性
+  max_acce: [0.3, 0.4]    # 最大加速度
+  length: 0.42             # 机器人长度 (m)
+  width: 0.26              # 机器人宽度 (m)
+
+ipath:
+  interval: 0.09
+  # 简化测试路径：原点 → 前方3米（纯直线）
+  waypoints: [[0.5, 0, 0], [3.0, 0, 0]]
+  curve_style: 'line'      # 直线模式
+  min_radius: 0.0
+  loop: False              # 不循环
+  arrive_threshold: 0.2    # 到达阈值 (m) - 略放宽
+  close_threshold: 0.15
+  arrive_index_threshold: 1
+
+pan:
+  iter_num: 2              # PAN 迭代次数
+  dune_max_num: 80         # DUNE 最大点数（略减少以提高实时性）
+  nrmp_max_num: 10         # NRMP 最大点数
+  iter_threshold: 0.1
+  dune_checkpoint: 'example/mowen/model/mowen_real/model_5000.pth'
+
+adjust:
+  q_s: 1.0                 # 状态跟踪权重
+  p_u: 1.0                 # 速度跟踪权重
+  eta: 15.0                # 松弛变量权重（避障强度）
+  d_max: 1.2               # 最大安全距离 (m) - 增大以更早避障
+  d_min: 0.15              # 最小安全距离 (m) - 增大以保持安全间距
