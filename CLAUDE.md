@@ -24,23 +24,45 @@ python run_exp.py -e dyna_obs -d omni       # dynamic obstacles, omnidirectional
 #   -v  : use point velocity from lidar scan (dynamic obstacle avoidance)
 #   -a  : save animation to file
 #   -n  : enable display (default: no display)
+#   -d  : kinematics type (acker, diff, omni)
 #   -m N: set max steps (default 1000)
 
 # Training DUNE for a new robot geometry
 cd example/dune_train
 python train_dune.py
+
+# Training LON model
+cd example/LON
+python train_lon.py
 ```
 
-Available scenarios for `-e`: `corridor`, `convex_obs`, `dyna_non_obs`, `dyna_obs`, `non_obs`, `pf`, `pf_obs`, `polygon_robot`, `reverse`.
+Available scenarios for `-e`: `corridor`, `convex_obs`, `dyna_non_obs`, `dyna_obs`, `non_obs`, `pf` (path following), `pf_obs`, `polygon_robot`, `reverse`.
 Available kinematics for `-d`: `diff`, `acker`, `omni`.
 
 **Note:** The `reverse` scenario with `-d diff` has special handling in `run_exp.py` — it flips gear direction and rotates orientation by π on the initial path. For Ackermann reverse, use `ipath.curve_style: 'reeds'` in the YAML config (Reeds-Shepp paths support forward+backward).
 
-**Import naming:** The repository is `NeuPAN`, but the Python package installs and imports as `neupan` (singular). E.g., `from neupan import neupan`.
-
 ## Architecture
 
 NeuPAN is an end-to-end MPC-based robot motion planner that directly maps raw obstacle points to control actions. It avoids explicit object detection, mapping, or trajectory engineering by solving a differentiable optimization at each timestep.
+
+### Package Structure
+
+```
+neupan/                         # Python package (import as neupan, not NeuPAN)
+├── neupan.py                   # Main neupan class (torch.nn.Module)
+├── robot/robot.py              # Robot kinematics model (diff/acker/omni)
+├── blocks/
+│   ├── pan.py                  # PAN — Proximal Alternating-minimization Network
+│   ├── dune.py                 # DUNE — Deep Unfolded Neural Encoder
+│   ├── nrmp.py                 # NRMP — Neural Regularized Motion Planner (cvxpylayers)
+│   ├── dune_train.py           # DUNE training pipeline with synthetic data
+│   ├── initial_path.py         # Waypoint → reference trajectory (via gctl)
+│   └── obs_point_net.py        # ObsPointNet: MLP mapping points → latent distance
+├── configuration/__init__.py   # Global mutable state (device, dtype, conversions)
+└── util/__init__.py            # Helpers: file_check(), WrapToPi, decimation, G/h generators
+```
+
+Import shorthand: The repo is named `NeuPAN`, but the package installs and imports as `neupan` (lowercase, singular). E.g., `from neupan import neupan` or `from neupan import configuration`.
 
 ### Core pipeline (top to bottom)
 
@@ -92,7 +114,24 @@ YAML config → neupan.init_from_yaml()
 
 ### YAML Configuration
 
-Planner parameters are set via YAML files (see `example/corridor/diff/planner.yaml`). Sections: `robot` (kinematics, shape, limits), `ipath` (waypoints, curve style), `pan` (DUNE checkpoint, iteration settings), `adjust` (cost weights, safety distances). The `adjust` section can be updated at runtime via `update_adjust_parameters()`.
+Planner parameters are set via YAML files (see `example/corridor/diff/planner.yaml`). Sections: `robot` (kinematics, shape, limits), `ipath` (waypoints, curve style), `pan` (DUNE checkpoint, iteration settings), `adjust` (cost weights, safety distances), `train` (data generation and training parameters for DUNE). The `adjust` section can be updated at runtime via `update_adjust_parameters()`.
+
+**`q_s` dimension alignment:** When using vector `q_s` (e.g., `[1.0, 1.0, 0.5]` for x, y, theta weights), the type (scalar vs 3-element vector) must be consistent between YAML initialization and runtime updates. You cannot switch from scalar to vector at runtime — re-initialize the planner to switch types.
+
+### Key Public API
+
+These methods on the `neupan` class are the primary integration points:
+
+- **`scan_to_point(state, scan)`** — Convert raw lidar scan to world-frame obstacle points (2×N matrix). Handles sensor offset, rotation, downsampling. Returns `None` if no points.
+- **`scan_to_point_velocity(state, scan)`** — Same as above but also returns per-point velocity for dynamic obstacle handling.
+- **`set_initial_path(path)`** — Replace the reference path at runtime (e.g., from A* or other global planner). Path format: list of `[x, y, theta, gear]` 4×1 vectors (gear = -1 or 1).
+- **`set_reference_speed(speed)`** — Change reference speed dynamically.
+- **`update_initial_path_from_waypoints(waypoints)`** — Regenerate the reference path from a new list of waypoints.
+- **`update_initial_path_from_goal(start, goal)`** — Generate a direct path from start to goal pose.
+- **`update_adjust_parameters(**kwargs)`** — Tune cost weights at runtime: `q_s`, `p_u`, `eta`, `d_max`, `d_min`.
+- **`reset()`** — Reset planner state (path index, stop/arrive flags) for a new run.
+- **`train_dune()`** — Trigger DUNE training from the initialized config.
+- **Properties:** `min_distance`, `dune_points`, `nrmp_points`, `initial_path`, `adjust_parameters`, `waypoints`, `opt_trajectory`, `ref_trajectory`.
 
 ### Key design decisions
 
@@ -138,3 +177,37 @@ pip install -e /root/neupan_ros2_ws/src/NeuPAN
 
 **Dockerfile 位置:** `docker/ros1/Dockerfile`, `docker/ros2/Dockerfile`
 **关键依赖:** 已内置 `torch==2.8.0+cu128`、`numpy==1.26.4`、`scipy==1.13.0`，与 `pyproject.toml` 版本锁定一致。
+
+## ROS Integration & Real Robot Deployment
+
+- **[neupan_ros](https://github.com/hanruihua/neupan_ros)** — ROS1 wrapper for NeuPAN (git submodule at `neupan_ros/`).
+- **`neupan_ros2/`** — ROS2 wrapper for NeuPAN (separate directory in repo root).
+- **`example/mowen/`** — Custom real robot deployment example for the "Mowen" platform. Contains simulation environments, scaling configs, and real robot launch files (`.launch` + `planner.yaml` + `move.py`).
+- **`docs/`** — Deployment reference:
+  - `docs/BUGS.md` — Known issues and workarounds.
+  - `docs/real_robot_deployment.md` — Instructions for deploying on physical robots.
+  - `docs/MOWEN_SIM_TO_REAL.md` — Sim-to-real transfer notes for the Mowen platform.
+
+To update the initial path from an external global planner (A*, etc.) at runtime, use `set_initial_path()` or publish to the `/initial_path` ROS topic with `refresh_initial_path=True` in the ROS wrapper.
+
+## 实车代码参考
+
+**小车 ROS 工作空间参考路径 (本地副本):**
+```
+/home/zq/resource/code/emb_ai/mobile_robot/clone/newznzc_ws/
+```
+
+**重要说明:**
+- 该目录是 **小车 Ubuntu 系统内代码的副本 (copy)**，并非真实小车上的代码
+- 真实小车 ROS 工作空间运行在小车自带的 Ubuntu 系统中
+- 所有对小车代码的修改，必须先 **scp** 到小车后才能生效
+  ```bash
+  # 将文件复制到小车
+  scp /本地路径/文件 小车用户名@小车IP:~/newznzc_ws/src/...
+  
+  # 或从小车复制回本地
+  scp -r 小车用户名@小车IP:~/newznzc_ws/... /本地路径/
+  ```
+- **核心原则**: 任何场景测试都**不得修改小车内部已有代码**。如需改动，只能复制可复用的代码文件到新路径，再在此基础上新增功能代码。
+- 小车已有的自定义功能包（不可修改）: `car_bringup`, `mbot_bringup`, `nav_demo`, `grab`, `wit`
+- 小车已有的第三方包（通常不修改）: `leishen`, `ydlidar_ros_driver`, `mycobot_ros`, `OrbbecSDK_ROS`, `imu_tools`, `rf2o_laser_odometry`, `open_karto`, `slam_karto`, `robot_pose_ekf`

@@ -35,8 +35,8 @@
 - 详见 `deployment_flow.md` §1.3
 
 ### 5. 配置文件 ✅
-- `example/mowen/envs/real/planner.yaml`: omni, collision_threshold=0.05, max_speed=[0.2,0.5], ref_speed=0.15
-- `example/mowen/envs/real/mowen_real.launch`: map_frame=odom, base_frame=base_link, lidar_frame=laser_link, scan_range=0.5-27.0, scan_downsample=6
+- `example/mowen/deploy/planner.yaml`: omni, collision_threshold=0.05, max_speed=[0.2,0.5], ref_speed=0.15
+- `example/mowen/deploy/mowen_real.launch`: map_frame=odom, base_frame=base_link, lidar_frame=laser_link, scan_range=0.5-27.0, scan_downsample=6
 - `example/mowen/model/mowen_real/model_5000.pth`: omni 模型 checkpoint
 
 ---
@@ -138,7 +138,7 @@ export ROS_IP=10.42.0.xxx   # 本地 10.42.x.x IP
 
 # 4. 启动 neupan_node
 roslaunch neupan_ros neupan_node.launch \
-  config_file:=/root/neupan_ws/src/NeuPAN/example/mowen/envs/real/planner.yaml \
+  config_file:=/root/neupan_ws/src/NeuPAN/example/mowen/deploy/planner.yaml \
   map_frame:=odom base_frame:=base_link lidar_frame:=laser_link \
   scan_downsample:=6 scan_range:="0.5 27.0" \
   dune_checkpoint:=/root/neupan_ws/src/NeuPAN/example/mowen/model/mowen_real/model_5000.pth

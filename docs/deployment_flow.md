@@ -331,7 +331,7 @@ pip install -e /root/neupan_ws/src/NeuPAN
 
 # 启动 neupan_node
 roslaunch neupan_ros neupan_node.launch \
-  config_file:=/root/neupan_ws/src/NeuPAN/example/mowen/envs/real/planner.yaml \
+  config_file:=/root/neupan_ws/src/NeuPAN/example/mowen/deploy/planner.yaml \
   map_frame:=odom \
   base_frame:=base_link \
   lidar_frame:=laser_link \
@@ -357,7 +357,7 @@ rostopic echo /odom -n 1
 # 例如小车在 (0.05, -0.02), waypoints 应设为:
 #   waypoints: [[0.05, -0.02, 0], [1.0, 0, 0]]
 # 编辑文件 (在本地, 挂载后容器内可见):
-#   example/mowen/envs/real/planner.yaml
+#   example/mowen/deploy/planner.yaml
 ```
 
 > 也可以用 ROS 参数覆盖: 部分版本支持 `initial_path` 话题刷新。
@@ -458,7 +458,7 @@ pose:
 
 在本地创建 `neupan_deploy/` 包结构（详见附录 A），包含：
 - `neupan_real.launch` — 启动所有小车端已有节点 + neupan_node
-- `planner_real.yaml` — NeuPAN 参数（复制自 `example/mowen/envs/real/planner.yaml`）
+- `planner_real.yaml` — NeuPAN 参数（复制自 `example/mowen/deploy/planner.yaml`）
 - `check_sensors.py` — 传感器状态检测脚本
 
 ### 3.2 scp 到小车
@@ -535,7 +535,7 @@ neupan_deploy/
 │       # + topic remap
 │
 ├── config/
-│   └── planner_real.yaml        # NeuPAN 参数 (复制自 example/mowen/envs/real/)
+│   └── planner_real.yaml        # NeuPAN 参数 (复制自 example/mowen/deploy/)
 │
 ├── scripts/
 │   ├── check_all.sh             # 一键检测脚本 (传感器 + TF + 底盘)

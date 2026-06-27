@@ -1,17 +1,8 @@
 <launch>
-    <!-- ========================================================
-    mowen 真机 NeuPAN 部署
-    依赖 newznzc_ws: Leishen N10 + 轮式里程计 + EKF (odom frame)
-    小车: omni 全向底盘, DUNE 模型以 omni 训练
-    ======================================================== -->
-
     <arg name="neupan_root"
          default="/root/neupan_ws/src/NeuPAN"/>
-    <!-- 小车端部署可改为:
-         default="/home/your_user/newznzc_ws/src/NeuPAN" -->
-
     <arg name="config_file"
-         default="$(arg neupan_root)/example/mowen/envs/real/planner.yaml"/>
+         default="$(arg neupan_root)/example/mowen/deploy/planner.yaml"/>
     <arg name="map_frame"       default="odom"/>                    <!-- 无全局定位, 用 odom 帧 -->
     <arg name="base_frame"      default="base_link"/>
     <arg name="lidar_frame"     default="laser_link"/>
