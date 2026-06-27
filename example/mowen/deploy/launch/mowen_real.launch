@@ -2,7 +2,7 @@
     <arg name="neupan_root"
          default="/root/neupan_ws/src/NeuPAN"/>
     <arg name="config_file"
-         default="$(arg neupan_root)/example/mowen/deploy/planner.yaml"/>
+         default="$(arg neupan_root)/example/mowen/deploy/config/planner.yaml"/>
     <arg name="map_frame"       default="odom"/>                    <!-- 无全局定位, 用 odom 帧 -->
     <arg name="base_frame"      default="base_link"/>
     <arg name="lidar_frame"     default="laser_link"/>
@@ -27,7 +27,6 @@
         <param name="marker_z"       value="$(arg marker_z)"/>
         <param name="dune_checkpoint" value="$(arg dune_checkpoint)"/>
         <param name="refresh_initial_path" value="$(arg refresh_initial_path)"/>
-        <!-- /scan 直接收，不 remap（Leishen 发布到 /scan） -->
         <remap from="/neupan_cmd_vel" to="/cmd_vel"/>
         <remap from="/neupan_goal" to="/move_base_simple/goal"/>
     </node>
