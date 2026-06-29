@@ -10,7 +10,7 @@ from neupan import neupan
 DIR = os.path.dirname(__file__)
 MODEL = os.path.join(DIR, 'model', 'mowen_real', 'model_5000.pth')
 
-SCENES = ['corridor', 'non_obs', 'convex_obs', 'dyna_obs', 'dyna_non_obs', 'pf', 'pf_obs', 'polygon_robot']
+SCENES = ['corridor', 'non_obs', 'convex_obs', 'dyna_obs', 'dyna_non_obs', 'line_obs', 'pf', 'pf_obs', 'polygon_robot']
 
 
 def run(scene, max_steps=1000):

@@ -1,33 +1,60 @@
 <launch>
+    <!-- 工作空间根目录参数 -->
     <arg name="neupan_root"
          default="/root/neupan_ws/src/NeuPAN"/>
+
+    <!-- 规划器yaml配置文件路径 -->
     <arg name="config_file"
          default="$(arg neupan_root)/example/mowen/deploy/config/planner.yaml"/>
-    <arg name="map_frame"       default="odom"/>                    <!-- 无全局定位, 用 odom 帧 -->
+    <!-- 地图坐标系，默认odom里程计坐标系 -->
+    <arg name="map_frame"       default="odom"/>
+    <!-- 机器人底盘基坐标系 -->
     <arg name="base_frame"      default="base_link"/>
+     <!-- 激光雷达传感器坐标系 -->
     <arg name="lidar_frame"     default="laser_link"/>
-    <arg name="scan_range"      default="0.5 27.0"/>         <!-- Leishen N10, 滤近点防误停 -->
+     <!-- 激光有效探测范围 [最小探测距离, 最大探测距离] 单位m -->
+    <arg name="scan_range"      default="0.5 27.0"/>
+     <!-- 激光角度观测范围 [起始角度, 终止角度] 单位rad，-π ~ π 全周扫描 -->
     <arg name="scan_angle_range" default="-3.14 3.14"/>
+     <!-- 激光点云下采样步长，每N个点取1个，降低计算量 -->
     <arg name="scan_downsample" default="6"/>
+     <!-- RVIZ可视化标记尺寸，用于显示规划轨迹、障碍物点等 -->
     <arg name="marker_size"     default="0.15"/>
+     <!-- RVIZ标记z轴高度，避免和地面重叠遮挡 -->
     <arg name="marker_z"        default="0.5"/>
+
     <arg name="dune_checkpoint"
          default="$(arg neupan_root)/example/mowen/model/mowen_real/model_5000.pth"/>
-    <arg name="refresh_initial_path" default="false"/>       <!-- 跟仿真一致 -->
-
+    <!-- 是否每次收到新目标都重新生成初始参考路径 -->
+    <arg name="refresh_initial_path" default="false"/>
+    <!-- NeuPAN规划控制主节点 -->
     <node name="neupan_control" pkg="neupan_ros" type="neupan_node.py" output="screen">
+        <!-- 加载外部yaml规划参数 -->
         <param name="config_file"    value="$(arg config_file)"/>
+
+        <!-- 坐标系配置传入节点 -->
         <param name="map_frame"      value="$(arg map_frame)"/>
         <param name="base_frame"     value="$(arg base_frame)"/>
         <param name="lidar_frame"    value="$(arg lidar_frame)"/>
+
+        <!-- 激光雷达预处理参数 -->
         <param name="scan_range"     value="$(arg scan_range)"/>
         <param name="scan_angle_range" value="$(arg scan_angle_range)"/>
         <param name="scan_downsample" value="$(arg scan_downsample)"/>
+
+        <!-- RVIZ可视化参数 -->
         <param name="marker_size"    value="$(arg marker_size)"/>
         <param name="marker_z"       value="$(arg marker_z)"/>
+
+        <!-- 神经网络模型路径 -->
         <param name="dune_checkpoint" value="$(arg dune_checkpoint)"/>
+
+        <!-- 路径刷新开关 -->
         <param name="refresh_initial_path" value="$(arg refresh_initial_path)"/>
+
+        <!-- 话题重映射：规划输出速度指令映射到底盘控制话题 -->
         <remap from="/neupan_cmd_vel" to="/cmd_vel"/>
+        <!-- 话题重映射：接收rviz 2D Nav Goal导航目标点 -->
         <remap from="/neupan_goal" to="/move_base_simple/goal"/>
     </node>
 </launch>
