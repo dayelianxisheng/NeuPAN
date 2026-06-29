@@ -1,47 +1,49 @@
 # ═══════════════════════════════════════════════════════
-# mowen omni | line_obs — 3米直线避障测试
-# 每隔0.75m一个圆形障碍物，模拟真机锥桶场景
+# mowen omni 规划器 | dyna_non_obs（动态环境无障碍物版）
 # ═══════════════════════════════════════════════════════
 
-# ── MPC 参数 ─────────────────────────────────
-receding: 8
-step_time: 0.15
-ref_speed: 1.5
-device: 'cpu'
-time_print: True
-collision_threshold: 0.1
+# === MPC 参数 ===
+receding: 10               # 规划步数（越大看越远，但计算越慢）
+step_time: 0.15            # 每步时间间隔 (s)，receding × step_time ≈ 总规划时域
+ref_speed: 0.6              # 参考速度 (m/s)
+device: 'cpu'              # 运行设备 ('cpu' 或 'cuda')
+time_print: True           # 打印每帧计算耗时
+collision_threshold: 0.05   # 碰撞停止阈值 (m)，DUNE 潜在距离 < 此值 → 急停
 
-# ── 机器人运动学 ────────────────────────────
+# === 机器人参数 ===
 robot:
-  kinematics: 'omni'
-  max_speed: [1.0, 1.0]
-  max_acce: [1.0, 1.0]
-  length: 0.42
-  width: 0.26
+  kinematics: 'omni'       # 运动学模型: omni / diff / acker
+  max_speed: [1.0, 1.0]  # 最大速度 (m/s)：[线速度, 角速度]
+  max_acce: [1.0, 1.0]     # 最大加速度 (m/s²)：[线加速度, 角加速度]
+  length: 0.42              # 车身长度 (m)
+  width: 0.26               # 车身宽度 (m)
 
-# ── 初始参考路径 ─────────────────────────────
+# === 参考路径参数 ===
 ipath:
-  waypoints: [[0, 1.2, 0], [3, 1.2, 0]]
-  curve_style: 'line'
-  min_radius: 1.0
-  loop: False
-  arrive_threshold: 0.15
-  close_threshold: 0.1
-  ind_range: 10
-  arrive_index_threshold: 1
+  waypoints: [[0, 1.2, 0], [4, 1.2, 0]]  # 途经点列表 [x, y, theta] 生成参考路径
+  curve_style: 'line'       # 曲线类型: 'line' / 'dubins' / 'reeds'
+  min_radius: 0           # 最小转弯半径 (m)
+  loop: False               # True=到达终点后循环回到起点，False=到达即停
+  arrive_threshold: 0.1     # 到达判定距离 (m)：距离终点 < 此值 → 认为到达
+  close_threshold: 0.08      # 路径点接近阈值 (m)：用于计算当前在路径上的位置
+  ind_range: 10              # 查找最近路径点的搜索范围
+  arrive_index_threshold: 1  # 到达所需通过的路径点数（越大要求越严格）
 
-# ── PAN 迭代网络 ─────────────────────────────
+# === PAN 迭代优化参数 ===
 pan:
-  iter_num: 2
-  dune_max_num: 100
-  nrmp_max_num: 10
-  iter_threshold: 0.1
-  dune_checkpoint: 'example/mowen/model/mowen_real/model_5000.pth'
+  iter_num: 2               # 每次 forward 迭代次数（越大效果越好，但更慢）
+  dune_max_num: 100          # DUNE 输入的最大障碍物点数（超过的截断）
+  nrmp_max_num: 10           # NRMP 使用的最多约束点数（关键障碍点）
+  iter_threshold: 0.1        # 迭代收敛阈值
+  dune_checkpoint: 'example/mowen/model/mowen_real/model_5000.pth'  # DUNE 模型权重路径
 
-# ── 调参（真机验证通过参数） ──────────────────
+# === 可调权重参数（避障/跟踪行为的关键） ===
 adjust:
-  q_s: 0.5
-  p_u: 1.0
-  eta: 8.0
-  d_max: 0.3
-  d_min: 0.05
+  q_s: 0.5    # 状态跟踪权重：越大 → 越偏向严格跟随路径（当心过大导致急转弯）
+  p_u: 1.0    # 控制代价权重：越大 → 控制越平滑温和（当心过大导致不敢转向避障）
+  eta: 8.0    # 碰撞约束松弛惩罚：越大 → 约束越硬（当心过大会导致撞墙前急停）
+              # 越小 → 约束越软（当心过小会导致走不过障碍物）
+  d_max: 0.15  # DUNE 最大潜在距离 (m)：越大 → DUNE 对远处障碍越不敏感（敢走近再反应）
+              # 越小 → 障碍物看起来"更近"（更保守）
+  d_min: 0.05 # DUNE 最小潜在距离 (m)：决定车能离障碍物多近
+  solver: "SCS" # 求解器: ECOS/SCS/OSQP
