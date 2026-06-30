@@ -11,14 +11,7 @@ robot:
   kinematics: 'omni'
   max_speed: [8, 6.28]
   max_acce: [3, 3]
-  length: 1.6
-  width: 2.0
-
-# initial path
-ipath:
-  # interval: 0.4
-  waypoints: [[0, 20, 0], [60, 20, 0]]
-  curve_style: 'line'   # 'dubins' or reeds or line
+  length: 1.61eds or line
   min_radius: 4.0
   loop: False
   arrive_threshold: 0.1

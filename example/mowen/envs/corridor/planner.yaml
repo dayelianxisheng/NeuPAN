@@ -40,3 +40,8 @@ adjust:
   eta: 8.0
   d_max: 0.3
   d_min: 0.05
+
+# === A* 全局规划（存在此配置时 eval.py 自动启用） ===
+astar:
+  robot_radius: 0.25
+  resolution: 0.05

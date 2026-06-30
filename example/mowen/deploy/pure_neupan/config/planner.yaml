@@ -1,10 +1,7 @@
-# ═══════════════════════════════════════════════════════
-# mowen omni 规划器 | convex_obs
-# ═══════════════════════════════════════════════════════
-
+# Pure NeuPAN 路径跟踪 — 固定 waypoints，无地图
 receding: 8
 step_time: 0.15
-ref_speed: 0.8
+ref_speed: 0.7
 device: 'cpu'
 time_print: True
 collision_threshold: 0.1
@@ -17,7 +14,7 @@ robot:
   width: 0.26
 
 ipath:
-  waypoints: [[-0.3, 6.6, 0], [13.1, 6.6, 0]]
+  waypoints: [[-1.3, 5.2, 0], [15, 5.2, 0]]
   curve_style: 'line'
   min_radius: 1.0
   loop: False
@@ -39,8 +36,3 @@ adjust:
   eta: 8.0
   d_max: 0.3
   d_min: 0.05
-
-# === A* 全局规划（eval.py 自动启用） ===
-astar:
-  robot_radius: 0.25
-  resolution: 0.05

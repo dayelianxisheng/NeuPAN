@@ -1,4 +1,4 @@
-"""mowen 仿真测试
+"""mowen 仿真测试（场景含 astar 配置则启用 A* 关键引导）
 用法: python eval.py               # 跑所有场景
       python eval.py corridor      # 跑指定场景"""
 import os, sys, argparse
@@ -10,7 +10,51 @@ from neupan import neupan
 DIR = os.path.dirname(__file__)
 MODEL = os.path.join(DIR, 'model', 'mowen_real', 'model_5000.pth')
 
-SCENES = ['corridor', 'maze_obs', 'non_obs', 'convex_obs', 'dyna_obs', 'dyna_non_obs', 'line_obs', 'pf', 'pf_obs', 'polygon_robot']
+SCENES = ['corridor', 'dyna_maze', 'maze_obs', 'non_obs', 'convex_obs', 'dyna_obs', 'dyna_non_obs', 'line_obs', 'pf', 'pf_obs', 'polygon_robot']
+
+
+def _astar_waypoints(env_path, cfg_path):
+    """从 astar 配置规划全局路径，提取关键拐点，返回 waypoints 或 None"""
+    import yaml, math
+    # 检查是否有 astar 配置
+    if not os.path.exists(cfg_path):
+        return None
+    with open(cfg_path) as f:
+        cfg = yaml.safe_load(f)
+    astar_cfg = cfg.get('astar', {})
+    if not astar_cfg:
+        return None
+
+    robot_radius = astar_cfg.get('robot_radius', 0.22)
+    resolution = astar_cfg.get('resolution', 0.05)
+
+    # 构建栅格
+    from eval_astar import build_grid_from_env, AStar, extract_key_waypoints
+    try:
+        grid, res, origin, _ = build_grid_from_env(env_path, robot_radius, resolution)
+    except Exception as e:
+        print(f"  ⚠️ A* 栅格构建失败 ({e})，使用原始配置")
+        return None
+    astar = AStar(grid, res, origin)
+
+    # 读取起终点
+    with open(env_path) as f:
+        env_cfg = yaml.safe_load(f)
+    rc = env_cfg['robot'][0]
+    sx, sy = rc['state'][:2]
+    gx, gy = rc['goal'][:2]
+    ipath_wp = cfg.get('ipath', {}).get('waypoints', [])
+    if ipath_wp:
+        gx, gy = ipath_wp[-1][0], ipath_wp[-1][1]
+
+    path = astar.plan(sx, sy, gx, gy)
+    if path is None:
+        print(f"  ⚠️ A* 找不到路径，使用原始配置")
+        return None
+
+    wps = extract_key_waypoints(astar, path, gx, gy)
+    print(f"  A*: {len(path)}格 → {len(wps)}个拐点")
+    return wps
 
 
 def run(scene, max_steps=1000):
@@ -23,6 +67,14 @@ def run(scene, max_steps=1000):
 
     env = irsim.make(env_path, display=True)
     planner = neupan.init_from_yaml(cfg_path)
+
+    # 尝试用 A* 拐点替换固定 waypoints
+    astar_wps = _astar_waypoints(env_path, cfg_path)
+    if astar_wps is not None:
+        planner.ipath.waypoints = astar_wps
+        planner.ipath.initial_path = None
+        planner.reset()
+
     goal_pos = np.array(planner.ipath.waypoints[-1][:2]).flatten()
 
     for i in range(max_steps):

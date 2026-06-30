@@ -1,5 +1,10 @@
-"""mowen 仿真测试（集成 A* 全局规划）
+"""mowen 仿真测试（A* 关键点引导 + NeuPAN 自主导航）
 用法: python eval_astar.py maze_obs
+
+设计原则：
+  - A* 规划全局路径，只提取"不平衡点"（转弯/方向突变处）作为 waypoints
+  - 直路/动态避障 → 完全交给 NeuPAN
+  - 不做卡住检测、重规划、参考线干预
 """
 import os, sys, math, yaml
 import numpy as np
@@ -15,9 +20,9 @@ DIR = os.path.dirname(__file__)
 
 class AStar:
     def __init__(self, grid, resolution, origin):
-        self.grid = grid            # 2D numpy, 0=空闲 1=障碍
-        self.res = resolution       # 米/格
-        self.origin = origin        # (x_min, y_min) 世界坐标
+        self.grid = grid
+        self.res = resolution
+        self.origin = origin
         self.h = grid.shape[0]
         self.w = grid.shape[1]
 
@@ -85,7 +90,6 @@ class AStar:
 # ========== 构建栅格地图 ==========
 
 def is_point_in_rect(px, py, cx, cy, length, width, theta):
-    """判断点 (px,py) 是否在矩形障碍物内（含旋转）"""
     dx, dy = px - cx, py - cy
     cos_t, sin_t = math.cos(-theta), math.sin(-theta)
     rx = dx * cos_t - dy * sin_t
@@ -105,27 +109,36 @@ def build_grid_from_env(env_path, robot_radius=0.22, resolution=0.05):
     w_world = env_cfg['world']['width']
     h_world = env_cfg['world']['height']
     ox, oy = offset
-    x_min, x_max = ox, ox + w_world
-    y_min, y_max = oy, oy + h_world
 
-    gw = int(w_world / resolution) + 2   # +2 避免边界越界
-    gh = int(h_world / resolution) + 2
+    robot_cfg = env_cfg['robot'][0]
+    start_pos = robot_cfg['state'][:2]
+    goal_pos = robot_cfg['goal'][:2]
+    x_min = min(ox, start_pos[0] - 0.5, goal_pos[0] - 0.5)
+    y_min = min(oy, start_pos[1] - 0.5, goal_pos[1] - 0.5)
+    x_max = max(ox + w_world, start_pos[0] + 0.5, goal_pos[0] + 0.5)
+    y_max = max(oy + h_world, start_pos[1] + 0.5, goal_pos[1] + 0.5)
+
+    gw = int((x_max - x_min) / resolution) + 2
+    gh = int((y_max - y_min) / resolution) + 2
     grid = np.zeros((gh, gw), dtype=np.uint8)
     inflate = int(robot_radius / resolution) + 1
 
-    # 收集所有障碍物
     all_obs = []
     for obs_group in env_cfg.get('obstacle', []):
+        dist = obs_group.get('distribution', {})
+        if isinstance(dist, dict) and dist.get('name') != 'manual':
+            continue
+        if 'state' not in obs_group:
+            continue
         shapes = obs_group['shape']
         states = obs_group['state']
         for shape, state in zip(shapes, states):
             all_obs.append((shape, state))
 
-    # 遍历所有栅格，检查是否在障碍物内
     for gy in range(gh):
         for gx in range(gw):
-            wx = ox + gx * resolution
-            wy = oy + gy * resolution
+            wx = x_min + gx * resolution
+            wy = y_min + gy * resolution
             for shape, state in all_obs:
                 cx, cy = state[0], state[1]
                 theta = state[2] if len(state) > 2 else 0
@@ -137,7 +150,6 @@ def build_grid_from_env(env_path, robot_radius=0.22, resolution=0.05):
                     if is_point_in_circle(wx, wy, cx, cy, shape['radius']):
                         hit = True
                 if hit:
-                    # 膨胀
                     for dy in range(-inflate, inflate+1):
                         for dx in range(-inflate, inflate+1):
                             ngx, ngy = gx+dx, gy+dy
@@ -145,7 +157,61 @@ def build_grid_from_env(env_path, robot_radius=0.22, resolution=0.05):
                                 grid[ngy, ngx] = 1
                     break
 
-    return grid, resolution, (ox, oy), (x_min, x_max, y_min, y_max)
+    return grid, resolution, (x_min, y_min), (x_min, x_max, y_min, y_max)
+
+
+# ========== 提取关键引导点 ==========
+
+def extract_key_waypoints(astar, path, gx, gy, angle_thresh=0.3, min_gap=5):
+    """
+    从 A* 路径中提取"不平衡点"——方向突变的转弯处。
+    策略：连续方向变化 > angle_thresh 的地方记为一个关键点。
+    只保留：起点(跳过) + 转弯点 + 终点。
+    """
+    if len(path) < 3:
+        return [[[gx], [gy], [0.0]]]
+
+    # 计算每个路径点的世界坐标和方向
+    world_pts = [astar.grid_to_world(px, py) for px, py in path]
+
+    # 检测方向突变
+    key_indices = set()
+    prev_angle = None
+    for i in range(1, len(world_pts) - 1):
+        dx1 = world_pts[i][0] - world_pts[i-1][0]
+        dy1 = world_pts[i][1] - world_pts[i-1][1]
+        dx2 = world_pts[i+1][0] - world_pts[i][0]
+        dy2 = world_pts[i+1][1] - world_pts[i][1]
+
+        if math.hypot(dx1, dy1) < 0.01 or math.hypot(dx2, dy2) < 0.01:
+            continue
+
+        angle1 = math.atan2(dy1, dx1)
+        angle2 = math.atan2(dy2, dx2)
+        change = abs((angle2 - angle1 + math.pi) % (2 * math.pi) - math.pi)
+
+        if change > angle_thresh:
+            # 避免相邻的转弯点太密集
+            if not key_indices or i - max(key_indices) >= min_gap:
+                key_indices.add(i)
+
+    # 构建 waypoints: 转弯点 + 终点
+    waypoints = []
+    sorted_idx = sorted(key_indices)
+    for idx in sorted_idx:
+        wx, wy = world_pts[idx]
+        waypoints.append(np.array([[wx], [wy], [0.0]]))
+
+    # 确保终点在最后一个
+    if not waypoints:
+        # 没有转弯，直接用终点
+        waypoints.append(np.array([[gx], [gy], [0.0]]))
+    else:
+        last = waypoints[-1]
+        if abs(last[0, 0] - gx) > 0.1 or abs(last[1, 0] - gy) > 0.1:
+            waypoints.append(np.array([[gx], [gy], [0.0]]))
+
+    return waypoints
 
 
 # ========== main ==========
@@ -164,9 +230,9 @@ if __name__ == '__main__':
         print(f"{scene}: SKIP (no env)")
         exit(1)
 
-    print(f"=== {scene}: A* + NeuPAN ===")
+    print(f"=== {scene}: A* 关键引导 + NeuPAN ===")
 
-    # 读取 A* 配置（从 planner.yaml）
+    # 读取配置
     astar_cfg = {}
     if os.path.exists(cfg_path):
         with open(cfg_path) as f:
@@ -175,7 +241,7 @@ if __name__ == '__main__':
     robot_radius = astar_cfg.get('robot_radius', 0.22)
     resolution = astar_cfg.get('resolution', 0.05)
 
-    # 构建 A* 栅格
+    # 构建栅格
     grid, res, origin, bounds = build_grid_from_env(env_path, robot_radius, resolution)
     print(f"  栅格: {grid.shape[1]}x{grid.shape[0]}, 分辨率={res}m")
     obs_count = np.sum(grid)
@@ -183,41 +249,46 @@ if __name__ == '__main__':
 
     astar = AStar(grid, res, origin)
 
-    # 读取 env.yaml 获取起终点
+    # 读取起终点
     with open(env_path) as f:
         env_cfg = yaml.safe_load(f)
     robot_cfg = env_cfg['robot'][0]
     sx, sy = robot_cfg['state'][:2]
     gx, gy = robot_cfg['goal'][:2]
+    if os.path.exists(cfg_path):
+        with open(cfg_path) as f:
+            planner_cfg = yaml.safe_load(f)
+        ipath_wp = planner_cfg.get('ipath', {}).get('waypoints', [])
+        if ipath_wp:
+            gx, gy = ipath_wp[-1][0], ipath_wp[-1][1]
 
-    # A* 规划
+    # A* 全局规划
     path = astar.plan(sx, sy, gx, gy)
     if path is None:
         print(f"  ❌ A* 找不到路径!")
         exit(1)
 
-    # 路径抽稀（每 N 个点取一个，减少 waypoint 数量）
-    step = max(1, len(path) // 30)
-    waypoints = []
-    for i in range(0, len(path), step):
-        wx, wy = astar.grid_to_world(*path[i])
-        waypoints.append(np.array([[wx], [wy], [0.0]]))
-    last = waypoints[-1]
-    if abs(last[0,0]-gx) > 0.01 or abs(last[1,0]-gy) > 0.01:
-        waypoints.append(np.array([[gx], [gy], [0.0]]))
+    # 提取关键引导点（转弯处）
+    waypoints = extract_key_waypoints(astar, path, gx, gy)
+    print(f"  ✅ A* 路径: {len(path)}格 → {len(waypoints)}个关键引导点")
+    for idx, wp in enumerate(waypoints):
+        print(f"    [{idx}]: ({wp[0,0]:.2f}, {wp[1,0]:.2f})")
 
-    print(f"  ✅ A* 路径: {len(path)}格 → {len(waypoints)}个waypoints")
-
-    # === 运行 NeuPAN 仿真 ===
+    # === 运行 NeuPAN ===
     env = irsim.make(env_path, display=True)
     planner = neupan.init_from_yaml(cfg_path)
-
-    # 用 A* 路径替换 waypoints
-    planner.update_initial_path_from_waypoints(waypoints)
+    planner.ipath.waypoints = waypoints
+    planner.ipath.initial_path = None
     planner.reset()
+
+    # 显示关键引导点（拐点标记）
+    key_pts = np.array([[wp[0, 0] for wp in waypoints], [wp[1, 0] for wp in waypoints]])
+    env.draw_points(key_pts, s=40, c="cyan", marker="x", refresh=True)
+    env.render()
 
     goal_pos = np.array(waypoints[-1][:2]).flatten()
     max_steps = 1500
+    first_ref_traj = None  # 保存初始参考线（只画不更新）
 
     for i in range(max_steps):
         state = env.get_robot_state()
@@ -225,6 +296,10 @@ if __name__ == '__main__':
         pts = planner.scan_to_point(state, scan)
         action, info = planner(state, pts, None)
         goal_dist = np.linalg.norm(state[:2].flatten() - goal_pos)
+
+        # 保存第一次生成的参考线
+        if first_ref_traj is None and planner.ref_trajectory is not None:
+            first_ref_traj = planner.ref_trajectory.copy()
 
         if info.get('stop'):
             print(f"step {i:3d}: pos=({state[0,0]:.2f},{state[1,0]:.2f}) goal_dist={goal_dist:.2f} stop=True min_dist={planner.min_distance:.3f}")
@@ -240,7 +315,9 @@ if __name__ == '__main__':
         env.draw_points(planner.dune_points, s=25, c="g", refresh=True)
         env.draw_points(planner.nrmp_points, s=13, c="r", refresh=True)
         env.draw_trajectory(planner.opt_trajectory, "r", refresh=True)
-        env.draw_trajectory(planner.ref_trajectory, "b", refresh=True)
+        if first_ref_traj is not None:
+            env.draw_trajectory(first_ref_traj, "b")  # 初始蓝线，不刷新
+        env.draw_points(key_pts, s=40, c="cyan", marker="x")  # 拐点标记，不刷新
         env.step(action)
         env.render()
 

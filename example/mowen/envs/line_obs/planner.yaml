@@ -47,3 +47,8 @@ adjust:
               # 越小 → 障碍物看起来"更近"（更保守）
   d_min: 0.05 # DUNE 最小潜在距离 (m)：决定车能离障碍物多近
   solver: "SCS" # 求解器: ECOS/SCS/OSQP
+
+# === A* 全局规划（eval.py 自动启用） ===
+astar:
+  robot_radius: 0.25
+  resolution: 0.05

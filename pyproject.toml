@@ -36,5 +36,10 @@ all = ['ir-sim>=2.4.0']
 [tool.setuptools]
 packages = ["neupan"]
 
+[dependency-groups]
+dev = [
+    "torch>=2.8.0",
+]
+
 
 

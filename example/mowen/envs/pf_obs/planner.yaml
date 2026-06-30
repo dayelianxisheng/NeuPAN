@@ -37,5 +37,22 @@ adjust:
   q_s: 0.5
   p_u: 1.0
   eta: 8.0
-  d_max: 0.3
+  d_max: 0.15
   d_min: 0.03
+
+# =
+#  warn("Converting A to a CSC matrix; may take a while.")
+#- nrmp forward execute time 0.006022 seconds
+#neupan forward execute time 0.007307 seconds
+#- dune forward execute time 0.000619 seconds
+#/home/zq/miniconda3/envs/neupan/lib/python3.10/site-packages/ecos/ecos.py:26: UserWarning: Converting G to a CSC matrix; may take a while.
+#  warn("Converting G to a CSC matrix; may take a while.")
+#/home/zq/miniconda3/envs/neupan/lib/python3.10/site-packages/ecos/ecos.py:29: UserWarning: Converting A to a CSC matrix; may take a while.
+#  warn("Converting A to a CSC matrix; may take a while.")
+#- nrmp forward execute time 0.006832 seconds
+#neupan forward execute time 0.008275 seconds
+#2026-06-30 19:39 | INFO     | Simulation Environment 'env' closing in 3.00 seconds.
+#2026-06-30 19:39 | INFO     | Simulation Environment 'env' ended. Total time 100.00 seconds.== A* 全局规划（eval.py 自动启用） ===
+astar:
+  robot_radius: 0.25
+  resolution: 0.05
