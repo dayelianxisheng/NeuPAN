@@ -1,0 +1,30 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Views
+    Name: Views
+Visualization Manager:
+  Displays:
+    - Class: rviz/Grid
+      Name: Grid
+      Plane Cell Count: 20
+    - Class: rviz/TF
+      Name: TF
+    - Class: rviz/LaserScan
+      Name: LaserScan
+      Topic: /scan
+      Size (m): 0.1
+    - Class: rviz/Path
+      Name: PlanPath
+      Topic: /neupan_path
+      Color: 255; 0; 0
+    - Class: rviz/PoseArray
+      Name: DUNEPoints
+      Topic: /neupan_dune_points
+      Color: 0; 255; 0
+    - Class: rviz/MarkerArray
+      Name: NRMP_Points
+      Topic: /neupan_marker
+  Global Options:
+    Fixed Frame: odom
+    Frame Rate: 20

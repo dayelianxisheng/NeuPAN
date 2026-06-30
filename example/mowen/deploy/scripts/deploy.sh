@@ -22,7 +22,15 @@ case "$MODE" in
         echo "=== A* + NeuPAN 导航 ==="
         roslaunch "$NEUPAN_DIR/deploy/astar_neupan/launch/navigation.launch"
         ;;
+    fast_lio)
+        echo "=== Fast-LIO + NeuPAN 导航 ==="
+        roslaunch "$NEUPAN_DIR/deploy/fast_lio_neupan/launch/fast_lio_neupan.launch"
+        ;;
     *)
-        echo "用法: bash deploy.sh [pure|astar] [IP]"
+        echo "用法: bash deploy.sh [pure|astar|fast_lio] [IP]"
+        echo ""
+        echo "  pure      纯 NeuPAN 路径跟踪（初始 odom 定位）"
+        echo "  astar     A* + AMCL + NeuPAN（需先建图）"
+        echo "  fast_lio  Fast-LIO 定位 + NeuPAN（未知环境）"
         ;;
 esac

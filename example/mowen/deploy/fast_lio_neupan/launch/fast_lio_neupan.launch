@@ -1,0 +1,37 @@
+<launch>
+    <!-- Fast-LIO + NeuPAN 导航 -->
+    <arg name="neupan_root" default="/root/neupan_ws/src/NeuPAN"/>
+    <arg name="config_file"
+         default="$(arg neupan_root)/example/mowen/deploy/fast_lio_neupan/config/planner.yaml"/>
+    <arg name="map_frame"       default="odom"/>
+    <arg name="base_frame"      default="base_link"/>
+    <arg name="lidar_frame"     default="laser_link"/>
+    <arg name="scan_range"      default="0.5 27.0"/>
+    <arg name="scan_angle_range" default="-3.14 3.14"/>
+    <arg name="scan_downsample" default="6"/>
+    <arg name="marker_size"     default="0.15"/>
+    <arg name="marker_z"        default="0.5"/>
+    <arg name="dune_checkpoint"
+         default="$(arg neupan_root)/example/mowen/model/mowen_real/model_5000.pth"/>
+
+    <!-- TODO: Fast-LIO 定位 -->
+    <!-- <include file="$(find fast_lio)/launch/mapping.launch"/> -->
+
+    <node name="neupan_control" pkg="neupan_ros" type="neupan_node.py" output="screen">
+        <param name="config_file"    value="$(arg config_file)"/>
+        <param name="map_frame"      value="$(arg map_frame)"/>
+        <param name="base_frame"     value="$(arg base_frame)"/>
+        <param name="lidar_frame"    value="$(arg lidar_frame)"/>
+        <param name="scan_range"     value="$(arg scan_range)"/>
+        <param name="scan_angle_range" value="$(arg scan_angle_range)"/>
+        <param name="scan_downsample" value="$(arg scan_downsample)"/>
+        <param name="marker_size"    value="$(arg markder_size)"/>
+        <param name="marker_z"       value="$(arg marker_z)"/>
+        <param name="dune_checkpoint" value="$(arg dune_checkpoint)"/>
+        <remap from="/neupan_cmd_vel" to="/cmd_vel"/>
+        <remap from="/neupan_goal" to="/move_base_simple/goal"/>
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz"
+          args="-d $(arg neupan_root)/example/mowen/deploy/fast_lio_neupan/rviz/fast_lio_neupan.rviz"/>
+</launch>
