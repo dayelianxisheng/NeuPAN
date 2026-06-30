@@ -33,7 +33,7 @@ adjust:
   q_s: 0.6
   p_u: 0.4
   eta: 10.0
-  d_max: 0.3
+  d_max: 0.15
   d_min: 0.03
 
 # === A* 全局规划（eval.py 自动启用） ===

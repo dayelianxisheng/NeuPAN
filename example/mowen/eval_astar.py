@@ -101,6 +101,18 @@ def is_point_in_circle(px, py, cx, cy, radius):
     return math.hypot(px-cx, py-cy) <= radius
 
 
+def is_point_in_polygon(px, py, vertices):
+    """射线法判断点是否在多边形内"""
+    inside = False
+    n = len(vertices)
+    for i in range(n):
+        x1, y1 = vertices[i]
+        x2, y2 = vertices[(i + 1) % n]
+        if ((y1 > py) != (y2 > py)) and px < (x2 - x1) * (py - y1) / (y2 - y1) + x1:
+            inside = not inside
+    return inside
+
+
 def build_grid_from_env(env_path, robot_radius=0.22, resolution=0.05):
     with open(env_path) as f:
         env_cfg = yaml.safe_load(f)
@@ -130,9 +142,16 @@ def build_grid_from_env(env_path, robot_radius=0.22, resolution=0.05):
             continue
         if 'state' not in obs_group:
             continue
-        shapes = obs_group['shape']
-        states = obs_group['state']
-        for shape, state in zip(shapes, states):
+        num = obs_group.get('number', 1)
+        shape_list = obs_group['shape']
+        raw = obs_group['state']
+
+        # 判断是平铺状态（多边形单障碍物）还是二维列表
+        is_flat = raw and not isinstance(raw[0], (list, tuple))
+
+        for i in range(num):
+            state = raw if is_flat else (raw[i] if i < len(raw) else raw[-1])
+            shape = shape_list[i % len(shape_list)]
             all_obs.append((shape, state))
 
     for gy in range(gh):
@@ -149,6 +168,15 @@ def build_grid_from_env(env_path, robot_radius=0.22, resolution=0.05):
                 elif 'circle' in shape.get('name', ''):
                     if is_point_in_circle(wx, wy, cx, cy, shape['radius']):
                         hit = True
+                elif 'polygon' in shape.get('name', ''):
+                    if 'vertices' in shape:
+                        if is_point_in_polygon(wx, wy, shape['vertices']):
+                            hit = True
+                    elif shape.get('random_shape') and 'avg_radius_range' in shape:
+                        # 随机多边形 → 用最大半径近似为圆
+                        r = shape['avg_radius_range'][1]
+                        if is_point_in_circle(wx, wy, cx, cy, r):
+                            hit = True
                 if hit:
                     for dy in range(-inflate, inflate+1):
                         for dx in range(-inflate, inflate+1):

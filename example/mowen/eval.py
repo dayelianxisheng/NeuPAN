@@ -10,7 +10,7 @@ from neupan import neupan
 DIR = os.path.dirname(__file__)
 MODEL = os.path.join(DIR, 'model', 'mowen_real', 'model_5000.pth')
 
-SCENES = ['corridor', 'dyna_maze', 'maze_obs', 'non_obs', 'convex_obs', 'dyna_obs', 'dyna_non_obs', 'line_obs', 'pf', 'pf_obs', 'polygon_robot']
+SCENES = ['corridor', 'dyna_maze', 'maze', 'maze_obs', 'non_obs', 'convex_obs', 'dyna_obs', 'dyna_non_obs', 'line_obs', 'pf', 'pf_obs', 'polygon_robot']
 
 
 def _astar_waypoints(env_path, cfg_path):
@@ -57,7 +57,7 @@ def _astar_waypoints(env_path, cfg_path):
     return wps
 
 
-def run(scene, max_steps=1000):
+def run(scene, max_steps=2000):
     env_path = os.path.join(DIR, 'envs', scene, 'env.yaml')
     cfg_path = os.path.join(DIR, 'envs', scene, 'planner.yaml')
 
