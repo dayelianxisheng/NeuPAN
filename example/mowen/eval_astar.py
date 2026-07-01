@@ -247,7 +247,7 @@ def extract_key_waypoints(astar, path, gx, gy, angle_thresh=0.3, min_gap=5):
 if __name__ == '__main__':
     from argparse import ArgumentParser
     parser = ArgumentParser()
-    parser.add_argument('scene', nargs='?', default='maze_obs')
+    parser.add_argument('scene', nargs='?', default='tight_space')
     args = parser.parse_args()
 
     scene = args.scene

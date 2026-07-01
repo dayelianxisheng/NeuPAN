@@ -6,7 +6,7 @@
     <arg name="map_frame"       default="odom"/>
     <arg name="base_frame"      default="base_link"/>
     <arg name="lidar_frame"     default="laser_link"/>
-    <arg name="scan_range"      default="0.5 27.0"/>
+    <arg name="scan_range"      default="0.05 10.0"/>
     <arg name="scan_angle_range" default="-3.14 3.14"/>
     <arg name="scan_downsample" default="6"/>
     <arg name="marker_size"     default="0.15"/>
@@ -25,7 +25,7 @@
         <param name="scan_range"     value="$(arg scan_range)"/>
         <param name="scan_angle_range" value="$(arg scan_angle_range)"/>
         <param name="scan_downsample" value="$(arg scan_downsample)"/>
-        <param name="marker_size"    value="$(arg markder_size)"/>
+        <param name="marker_size"    value="$(arg marker_size)"/>
         <param name="marker_z"       value="$(arg marker_z)"/>
         <param name="dune_checkpoint" value="$(arg dune_checkpoint)"/>
         <remap from="/neupan_cmd_vel" to="/cmd_vel"/>

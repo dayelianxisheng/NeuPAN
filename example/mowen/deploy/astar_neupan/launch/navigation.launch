@@ -12,7 +12,7 @@
     <arg name="map_frame"       default="map"/>
     <arg name="base_frame"      default="base_link"/>
     <arg name="lidar_frame"     default="laser_link"/>
-    <arg name="scan_range"      default="0.5 27.0"/>
+    <arg name="scan_range"      default="0.05 10.0"/>
     <arg name="scan_angle_range" default="-3.14 3.14"/>
     <arg name="scan_downsample" default="6"/>
     <arg name="marker_size"     default="0.15"/>

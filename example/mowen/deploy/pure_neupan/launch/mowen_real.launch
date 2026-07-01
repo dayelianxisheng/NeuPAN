@@ -13,7 +13,7 @@
      <!-- 激光雷达传感器坐标系 -->
     <arg name="lidar_frame"     default="laser_link"/>
      <!-- 激光有效探测范围 [最小探测距离, 最大探测距离] 单位m -->
-    <arg name="scan_range"      default="0.5 27.0"/>
+    <arg name="scan_range"      default="0.05 10.0"/>
      <!-- 激光角度观测范围 [起始角度, 终止角度] 单位rad，-π ~ π 全周扫描 -->
     <arg name="scan_angle_range" default="-3.14 3.14"/>
      <!-- 激光点云下采样步长，每N个点取1个，降低计算量 -->

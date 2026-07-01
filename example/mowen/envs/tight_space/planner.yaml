@@ -1,56 +1,48 @@
 # ═══════════════════════════════════════════════════════
-# mowen omni | maze — 蛇形迷宫场景
+# mowen omni | tight_space — 4×4 窄缝迷宫
+# 障碍物：圆柱 + 矩形，通道宽度仅 0.35~0.45m
+# 目的：测试 NeuPAN 在狭窄场景的通行能力
 # ═══════════════════════════════════════════════════════
 
 receding: 10
-step_time: 0.1
-ref_speed: 1
+step_time: 0.15
+ref_speed: 0.3
 device: 'cpu'
 time_print: True
 collision_threshold: 0.1
 
 robot:
   kinematics: 'omni'
-  max_speed: [8, 6.28]
-  max_acce: [2, 1]
+  max_speed: [0.8, 0.8]
+  max_acce: [0.5, 0.5]
   length: 0.42
   width: 0.26
 
 ipath:
-  waypoints:
-    - [16.25, 2.5, 0]
-    - [16.25, 5.5, 0]
-    - [1.75, 5.5, 0]
-    - [1.75, 8.5, 0]
-    - [16.25, 8.5, 0]
-    - [16.25, 11.5, 0]
-    - [1.75, 11.5, 0]
-    - [1.75, 14.5, 0]
-    - [16.25, 14.5, 0]
-    - [16.25, 16.5, 0]
-    - [2, 16.5, 0]
+  waypoints: [[0.5, 0.5, 0], [3.5, 3.5, 0]]
   curve_style: 'line'
   min_radius: 0
   loop: False
-  arrive_threshold: 0.15
+  arrive_threshold: 0.2
   close_threshold: 0.1
-  ind_range: 30
+  ind_range: 10
   arrive_index_threshold: 1
 
 pan:
   iter_num: 2
   dune_max_num: 100
-  nrmp_max_num: 15
+  nrmp_max_num: 30
   iter_threshold: 0.1
   dune_checkpoint: 'example/mowen/model/mowen_real/model_5000.pth'
 
 adjust:
-  q_s: 0.6
-  p_u: 0.4
-  eta: 10.0
-  d_max: 0.15
-  d_min: 0.03
+  q_s: 0.5
+  p_u: 1.0
+  eta: 8.0
+  d_max: 0.12
+  d_min: 0.05
+  solver: "SCS"
 
 astar:
-  robot_radius: 0.28
+  robot_radius: 0.15
   resolution: 0.05
