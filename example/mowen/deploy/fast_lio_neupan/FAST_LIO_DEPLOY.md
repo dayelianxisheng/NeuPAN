@@ -5,11 +5,11 @@
 ```
 小车端（Ubuntu 18.04 / ROS Melodic）
 ┌─────────────────────────────────────────────┐
-│  LiDAR (镭神 N10)    IMU (WIT)              │
+│  LiDAR (镭神 N10)    IMU (WitMotion)        │
 │       │                  │                   │
 │       └────────┬─────────┘                   │
 │                │                              │
-│         Fast-LIO (定位)                       │
+│         Fast-LIO2 (定位)                      │
 │                │                              │
 │            /odom (位姿)                       │
 │                │                              │
@@ -37,54 +37,72 @@
 
 ```
 deploy/fast_lio_neupan/
+├── FAST_LIO_DEPLOY.md          # 本文件
 ├── config/
-│   ├── planner.yaml        # NeuPAN 规划参数（已配置）
-│   └── fast_lio.yaml       # TODO: Fast-LIO 参数
+│   ├── planner.yaml            # NeuPAN 规划参数
+│   └── fast_lio.yaml           # Fast-LIO2 参数（需根据设备标定）
 ├── launch/
-│   └── fast_lio_neupan.launch  # 主 launch 文件（NeuPAN 已配置）
+│   └── fast_lio_neupan.launch  # 主 launch 文件
 ├── scripts/
-│   └── start_car.sh        # 小车端启动脚本（Fast-LIO 部分待填充）
+│   └── start_car.sh            # 小车端启动脚本
 └── rviz/
-    └── fast_lio_neupan.rviz    # RViz 配置模板
+    └── fast_lio_neupan.rviz    # RViz 配置
 ```
 
-## TODO
-
-### 1. Fast-LIO 安装编译
-- [ ] 小车端 clone: `git clone https://github.com/hku-mars/FAST_LIO.git`
-- [ ] 配置 LiDAR 型号（镭神 N10 → Livox 格式适配）
-- [ ] 编译: `catkin_make` 或 `catkin build`
-
-### 2. Fast-LIO 参数配置
-- [ ] 填写 `config/fast_lio.yaml`（LiDAR 参数 + IMU 外参）
-- [ ] 标定 LiDAR→IMU 外参
-- [ ] 调试点云配准效果
-
-### 3. Launch 集成
-- [ ] 在 `fast_lio_neupan.launch` 中取消 Fast-LIO 注释并接入
-- [ ] 验证 TF 树: `odom (Fast-LIO) → base_link → laser_link`
-- [ ] 测试话题连通性: `/odom` → NeuPAN 正确接收
-
-### 4. 路径规划接口
-- [ ] 决定全局路径提供方式:
-  - 手动 waypoints（写入 planner.yaml）
-  - 外部路径规划（订阅 `/neupan_goal` 并调用 `set_initial_path()`）
-  - RViz 2D Nav Goal 交互
-
-### 5. 实车测试
-- [ ] 空载直线行走测试
-- [ ] 带 Fast-LIO 定位的闭环路径跟踪
-- [ ] 避障测试
-
-## 快速启动
+## 安装 Fast-LIO2（小车端）
 
 ```bash
-# 1. 小车端
-cd ~/neupan_ws/src/NeuPAN/example/mowen/deploy/fast_lio_neupan/scripts
-./start_car.sh
+# 1. 克隆并编译（小车端）
+cd ~
+git clone https://github.com/hku-mars/FAST_LIO.git fast_lio_ws
+cd fast_lio_ws
+catkin_make
+source devel/setup.bash
 
-# 2. Docker 端
+# 2. 检查 LiDAR 话题
+rostopic echo /lslidar_point_cloud -n1 --noarr | head -5
+
+# 3. 检查 IMU 话题
+rostopic echo /wit/imu -n1 | head -5
+```
+
+## LiDAR-IMU 外参标定
+
+Fast-LIO 需要 LiDAR 到 IMU 的外参（旋转+平移）。
+修改 `config/fast_lio.yaml` 中的 `extrinsic_T` 参数。
+
+参考标定方法：
+1. 使用 [LiDAR_IMU_Calib](https://github.com/APRIL-ZJU/lidar_IMU_calib)
+2. 或者根据机械安装尺寸手动测量
+
+## 日常使用
+
+### 小车端
+```bash
+~/neupan_ws/src/NeuPAN/example/mowen/deploy/fast_lio_neupan/scripts/start_car.sh
+```
+
+### Docker 端
+```bash
 export ROS_MASTER_URI=http://10.42.0.169:11311
 export ROS_IP=10.42.0.1
-bash deploy/scripts/deploy.sh fast_lio
+bash /root/neupan_ws/src/NeuPAN/example/mowen/deploy/scripts/deploy.sh fast_lio
+```
+
+### RViz 操作
+1. 确认 Fast-LIO 点云和 TF 正常
+2. **2D Nav Goal** → 设置目标点
+3. NeuPAN 自动规划路径并导航
+
+## 调试
+
+```bash
+# 查看 Fast-LIO 定位
+rostopic echo /odom -n1 | head -10
+
+# 查看 TF 树
+rosrun tf view_frames
+
+# 检查 Fast-LIO 点云
+rostopic hz /lslidar_point_cloud
 ```

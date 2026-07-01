@@ -1,8 +1,16 @@
 <launch>
-    <!-- Fast-LIO + NeuPAN 导航 -->
+    <!-- Fast-LIO2 (激光雷达里程计) + NeuPAN (导航避障)
+         小车端运行: lslidar_driver + wit_imu + Fast-LIO + newt.py
+         Docker 端运行: neupan_node + RViz
+    -->
+
     <arg name="neupan_root" default="/root/neupan_ws/src/NeuPAN"/>
     <arg name="config_file"
          default="$(arg neupan_root)/example/mowen/deploy/fast_lio_neupan/config/planner.yaml"/>
+    <arg name="fast_lio_config"
+         default="$(arg neupan_root)/example/mowen/deploy/fast_lio_neupan/config/fast_lio.yaml"/>
+
+    <!-- ===== NeuPAN 参数 ===== -->
     <arg name="map_frame"       default="odom"/>
     <arg name="base_frame"      default="base_link"/>
     <arg name="lidar_frame"     default="laser_link"/>
@@ -14,9 +22,22 @@
     <arg name="dune_checkpoint"
          default="$(arg neupan_root)/example/mowen/model/mowen_real/model_5000.pth"/>
 
-    <!-- TODO: Fast-LIO 定位 -->
-    <!-- <include file="$(find fast_lio)/launch/mapping.launch"/> -->
+    <!-- ===== Fast-LIO 定位（小车端运行） =====
+         注意: Fast-LIO 需要在小车端安装编译
+         git clone https://github.com/hku-mars/FAST_LIO.git
+         编译后取消下面注释即可启用
+    -->
+    <!--
+    <include file="$(find fast_lio)/launch/mapping_rov.launch">
+        <arg name="config_file" value="$(arg fast_lio_config)"/>
+        <arg name="point_cloud_topic" value="/lslidar_point_cloud"/>
+        <arg name="imu_topic" value="/wit/imu"/>
+        <arg name="odom_frame" value="odom"/>
+        <arg name="base_frame" value="base_link"/>
+    </include>
+    -->
 
+    <!-- ===== NeuPAN 规划控制 ===== -->
     <node name="neupan_control" pkg="neupan_ros" type="neupan_node.py" output="screen">
         <param name="config_file"    value="$(arg config_file)"/>
         <param name="map_frame"      value="$(arg map_frame)"/>
@@ -32,6 +53,8 @@
         <remap from="/neupan_goal" to="/move_base_simple/goal"/>
     </node>
 
+    <!-- ===== RViz ===== -->
     <node pkg="rviz" type="rviz" name="rviz"
           args="-d $(arg neupan_root)/example/mowen/deploy/fast_lio_neupan/rviz/fast_lio_neupan.rviz"/>
+
 </launch>

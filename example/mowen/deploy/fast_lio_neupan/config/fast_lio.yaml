@@ -1,0 +1,64 @@
+# Fast-LIO2 配置参数 — 适用于 镭神 N10 + WitMotion IMU
+# 参考: https://github.com/hku-mars/FAST_LIO
+
+# ===== 通用参数 =====
+common:
+  # 点云话题（镭神 N10 发布 /lslidar_point_cloud）
+  lid_topic: "/lslidar_point_cloud"
+  # IMU 话题（WitMotion 发布 /wit/imu）
+  imu_topic: "/wit/imu"
+  # 时间同步: 0=使用ROS时间, 1=使用IMU时间戳
+  time_sync_en: 0
+
+# ===== LiDAR 参数 =====
+# 适配 Leishen N10 (10线机械旋转雷达)
+lidar:
+  # 雷达类型: 0=Livox Horizon, 1=Livox Mid-70, 2=Custom(通用PointCloud2)
+  scan_type: 2
+  # 每线束点数
+  point_num: 1800
+  # 帧率
+  time_scale: 1e-3
+  # 最近/最远探测距离 (m)
+  min_range: 0.3
+  max_range: 50.0
+  # 盲区
+  blind: 2
+
+# ===== IMU 参数 =====
+# WitMotion JY61/JY901 系列典型值（需实际标定）
+imu:
+  # 加速度计噪声 (连续时间)
+  acc_noise: 0.01
+  # 陀螺仪噪声 (连续时间)
+  gyr_noise: 0.001
+  # 加速度计偏置随机游走
+  acc_bias_noise: 0.0001
+  # 陀螺仪偏置随机游走
+  gyr_bias_noise: 0.00001
+
+  # IMU 坐标系到 LiDAR 坐标系的外参（需标定）
+  # T = [x, y, z, roll, pitch, yaw]
+  extrinsic_T: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  # 外参是否已知（精确标定后设为true）
+  extrinsic_est_en: false
+
+# ===== 滤波参数 =====
+filter:
+  # 滑窗大小
+  window_size: 20
+  # 最大迭代次数
+  max_iteration: 3
+  # 收敛阈值
+  converge_thresh: 0.01
+  # 体素降采样 (m)
+  voxel_size: 0.3
+  # 是否使用平面特征
+  use_plane: true
+
+# ===== 初始化 =====
+initial:
+  # 是否使用重力对齐
+  gravity_align: true
+  # 初始姿态 (如果有 prior)
+  init_pose: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
