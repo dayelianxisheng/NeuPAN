@@ -1,7 +1,7 @@
 # Pure NeuPAN 路径跟踪 — 固定 waypoints，无地图
 receding: 10
 step_time: 0.15
-ref_speed: 0.3
+ref_speed: 0.8
 device: 'cpu'
 time_print: True
 collision_threshold: 0.1
@@ -15,7 +15,7 @@ robot:
 
 ipath:
 
-  waypoints: [[4, 0, 0]]
+  waypoints: [[-1, 0, 0]]
 
   curve_style: 'line'
   min_radius: 1.0

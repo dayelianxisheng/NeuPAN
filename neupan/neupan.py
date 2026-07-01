@@ -22,7 +22,6 @@ from __future__ import annotations
 
 import yaml
 import torch
-import math
 from neupan.robot import robot
 from neupan.blocks import InitialPath, PAN
 from neupan import configuration
@@ -295,18 +294,6 @@ class neupan(torch.nn.Module):
         self.info["stop"] = False
         self.info["arrive"] = False
         self.cur_vel_array = np.zeros_like(self.cur_vel_array)
-        # 重置后根据路径方向设置初始 phi
-        if self.robot.kinematics == "omni" and hasattr(self.ipath, 'cur_curve'):
-            try:
-                curve = self.ipath.cur_curve
-                if curve is not None and len(curve) > 1:
-                    dx = curve[1][0, 0] - curve[0][0, 0]
-                    dy = curve[1][1, 0] - curve[0][1, 0]
-                    if abs(dx) > 0.001 or abs(dy) > 0.001:
-                        phi = math.atan2(dy, dx)
-                        self.cur_vel_array[1, :] = phi
-            except (AttributeError, IndexError, TypeError):
-                pass
 
     def set_initial_path(self, path):
 
@@ -324,18 +311,6 @@ class neupan(torch.nn.Module):
 
         """
         self.ipath.init_check(state)
-        # 根据初始路径方向设置 cur_vel_array 的 phi（避免 omni 机器人初始方向错误）
-        if self.robot.kinematics == "omni" and self.cur_vel_array is not None:
-            try:
-                curve = self.ipath.cur_curve
-                if curve is not None and len(curve) > 1:
-                    dx = curve[1][0, 0] - curve[0][0, 0]
-                    dy = curve[1][1, 0] - curve[0][1, 0]
-                    if abs(dx) > 0.001 or abs(dy) > 0.001:
-                        phi = math.atan2(dy, dx)
-                        self.cur_vel_array[1, :] = phi
-            except (AttributeError, IndexError, TypeError):
-                pass
     
     def set_reference_speed(self, speed: float):
 
