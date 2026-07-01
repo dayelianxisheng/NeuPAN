@@ -1,7 +1,7 @@
 # Pure NeuPAN 路径跟踪 — 固定 waypoints，无地图
 receding: 10
 step_time: 0.15
-ref_speed: 1
+ref_speed: 0.3
 device: 'cpu'
 time_print: True
 collision_threshold: 0.1
@@ -14,7 +14,9 @@ robot:
   width: 0.26
 
 ipath:
-  waypoints: [[-0.5, 0, 0]]
+
+  waypoints: [[4, 0, 0]]
+
   curve_style: 'line'
   min_radius: 1.0
   loop: False
@@ -25,7 +27,7 @@ ipath:
 
 pan:
   iter_num: 2
-  dune_max_num: 100
+  dune_max_num: 100w
   nrmp_max_num: 10
   iter_threshold: 0.1
   dune_checkpoint: 'example/mowen/model/mowen_real/model_5000.pth'
