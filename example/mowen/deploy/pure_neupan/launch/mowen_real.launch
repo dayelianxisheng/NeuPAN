@@ -5,7 +5,7 @@
 
     <!-- 规划器yaml配置文件路径 -->
     <arg name="config_file"
-         default="$(arg neupan_root)/example/mowen/deploy/config/planner.yaml"/>
+         default="$(arg neupan_root)/example/mowen/deploy/pure_neupan/config/planner.yaml"/>
     <!-- 地图坐标系，默认odom里程计坐标系 -->
     <arg name="map_frame"       default="odom"/>
     <!-- 机器人底盘基坐标系 -->
