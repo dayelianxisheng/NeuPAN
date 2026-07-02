@@ -19,7 +19,7 @@ ipath:
 
   curve_style: 'line'
   min_radius: 1.0
-  loop: False
+  loop: True
   arrive_threshold: 0.1
   close_threshold: 0.05
   ind_range: 10
@@ -27,7 +27,7 @@ ipath:
 
 pan:
   iter_num: 2
-  dune_max_num: 100w
+  dune_max_num: 100
   nrmp_max_num: 10
   iter_threshold: 0.1
   dune_checkpoint: 'example/mowen/model/mowen_real/model_5000.pth'

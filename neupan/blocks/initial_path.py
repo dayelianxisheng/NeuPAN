@@ -320,9 +320,12 @@ class InitialPath:
         assert len(self.waypoints) > 0, "Error: waypoints are not set"
 
         if isinstance(self.waypoints, list):
-            self.waypoints = [state] + self.waypoints
+            # 避免冗余点：如果 state 和第一个 waypoint 相同，不重复插入
+            if np.linalg.norm(np.array(state[:2]).flatten() - np.array(self.waypoints[0][:2]).flatten()) > 0.01:
+                self.waypoints = [state] + self.waypoints
         elif isinstance(self.waypoints, np.ndarray):
-            self.waypoints = np.vstack([state, self.waypoints])
+            if np.linalg.norm(state[:2] - self.waypoints[0][:2]) > 0.01:
+                self.waypoints = np.vstack([state, self.waypoints])
 
         if self.loop:
             self.waypoints = self.waypoints + [self.waypoints[0]]
