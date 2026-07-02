@@ -8,7 +8,7 @@ collision_threshold: 0.1
 
 robot:
   kinematics: 'omni'
-  max_speed: [1.0, 3.14]
+  max_speed: [1.0, 6.28]
   max_acce: [1.0, 2.0]
   length: 0.42
   width: 0.26
@@ -19,7 +19,7 @@ ipath:
 
   curve_style: 'line'
   min_radius: 0
-  loop: True
+  loop: False
   arrive_threshold: 0.1
   close_threshold: 0.05
   ind_range: 10

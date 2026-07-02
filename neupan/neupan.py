@@ -117,10 +117,25 @@ class neupan(torch.nn.Module):
             self.info["arrive"] = True
             return np.zeros((2, 1)), self.info
 
-        # loop 重置路径后清理旧速度，防止第二圈方向错误
+        # loop 重置路径后，设置沿新路径方向的初始速度
         if self.ipath.loop_triggered:
             self.cur_vel_array = np.zeros_like(self.cur_vel_array)
+            # 给 MPC 非零初始速度，避免 omni 下 v=0 导致 B 矩阵 y 轴控制项消失
+            if self.robot.kinematics == 'omni' and len(self.ipath.cur_curve) >= 2:
+                p0 = self.ipath.cur_curve[0]
+                p1 = self.ipath.cur_curve[1]
+                dx = p1[0, 0] - p0[0, 0]
+                dy = p1[1, 0] - p0[1, 0]
+                theta = np.arctan2(dy, dx)
+                self.cur_vel_array[0, :] = self.ref_speed * 0.3
+                self.cur_vel_array[1, :] = theta
             self.ipath.loop_triggered = False
+
+        # 调头阶段：loop 后先旋转 180°，让激光雷达朝向新路径方向
+        if self.ipath.turn_remaining > 0:
+            self.info["rotate_omega"] = self.ipath.turn_speed
+            self.ipath.turn_remaining -= self.dt
+            return np.zeros((2, 1)), self.info
 
         nom_input_np = self.ipath.generate_nom_ref_state(
             state, self.cur_vel_array, self.ref_speed

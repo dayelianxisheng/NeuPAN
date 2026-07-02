@@ -41,6 +41,7 @@ class InitialPath:
         waypoints=None,
         loop=False,
         curve_style="line",
+        turn_speed=1.0,
         **kwargs,
     ) -> None:
 
@@ -59,12 +60,14 @@ class InitialPath:
         self.arrive_index_threshold = kwargs.get("arrive_index_threshold", 1)
         self.arrive_flag = False
         self.loop_triggered = False
+        self.turn_remaining = 0.0
+        self.turn_speed = turn_speed
 
         self.cg = curve_generator()
         # initial path and gear
         self.initial_path = None
 
-        
+
 
     def generate_nom_ref_state(self, state: np.ndarray, cur_vel_array: np.ndarray, ref_speed: float):
         """
@@ -155,7 +158,7 @@ class InitialPath:
 
         if n < 2:
             return 0
-        
+
         dist_sum = 0.0
         for point1, point2 in zip(path, path[1:]):
             x1, y1 = point1[0:2]
@@ -260,17 +263,30 @@ class InitialPath:
         )  # find the closest point on the path
 
         if self.check_curve_arrive(state, self.arrive_threshold, self.arrive_index_threshold):
-            
-            if self.curve_index + 1 >= self.curve_number:
-                
-                if self.loop:
-                    self.curve_index = 0
-                    self.point_index = 0
-                    self.loop_triggered = True
 
-                    print("Info: loop, reset the path")
-                    # self.initial_path.reverse()
-                    # self.split_path_with_gear()
+            if self.curve_index + 1 >= self.curve_number:
+
+                if self.loop:
+                    # 记录原始起终点（仅首次触法 loop 时）
+                    if not hasattr(self, '_loop_start'):
+                        self._loop_start = self.waypoints[0].copy()
+                        self._loop_goal = self.waypoints[1].copy()
+
+                    # 判断当前位置在起点还是终点，以此决定下一段方向
+                    at_start = np.linalg.norm(
+                        state[:2] - self._loop_start[:2]
+                    ) < self.arrive_threshold
+                    target = self._loop_goal if at_start else self._loop_start
+
+                    # 生成从当前位置到目标点的正向路径
+                    # （参考从机器人当前位置开始，避免复位索引后首尾不匹配）
+                    self.set_ipath_with_waypoints(
+                        [state[0:3].copy(), target.copy()]
+                    )
+                    # 需要旋转 180°，使激光雷达朝向新路径方向
+                    self.turn_remaining = math.pi / self.turn_speed
+                    self.loop_triggered = True
+                    print(f"Info: loop, {'start→goal' if at_start else 'goal→start'} (turn {self.turn_remaining:.1f}s)")
                     return False
                 else:
                     if not self.arrive_flag:
@@ -322,9 +338,12 @@ class InitialPath:
         assert len(self.waypoints) > 0, "Error: waypoints are not set"
 
         if isinstance(self.waypoints, list):
-            self.waypoints = [state] + self.waypoints
+            # 避免 state 和第一个 waypoint 相同时重复插入（零长度段导致 gctl 产生 NaN）
+            if np.linalg.norm(np.array(state[:2]).flatten() - np.array(self.waypoints[0][:2]).flatten()) > 0.01:
+                self.waypoints = [state] + self.waypoints
         elif isinstance(self.waypoints, np.ndarray):
-            self.waypoints = np.vstack([state, self.waypoints])
+            if np.linalg.norm(state[:2] - self.waypoints[0][:2]) > 0.01:
+                self.waypoints = np.vstack([state, self.waypoints])
 
         if self.loop:
             self.waypoints = self.waypoints + [self.waypoints[0]]
@@ -361,7 +380,7 @@ class InitialPath:
         self.initial_path = self.cg.generate_curve(
             self.curve_style, waypoints, self.interval, self.min_radius, True
         )
-        
+
         if self.curve_style == 'line':
             # Ensure consistent angles for line curve
             self._ensure_consistent_angles()
@@ -376,7 +395,7 @@ class InitialPath:
         self.initial_path = self.cg.generate_curve(
             self.curve_style, waypoints, self.interval, self.min_radius, True
         )
-        
+
         if self.curve_style == 'line':
             # Ensure consistent angles for line curve
             self._ensure_consistent_angles()
@@ -394,7 +413,7 @@ class InitialPath:
 
         elif self.robot.kinematics == "diff":
             next_state = self.diff_model(robot_state, vel, sample_time)
-        
+
         elif self.robot.kinematics == "omni":
             next_state = self.omni_model(robot_state, vel, sample_time)
 
@@ -432,7 +451,7 @@ class InitialPath:
         # next_state[2, 0] = wraptopi(next_state[2, 0])
 
         return next_state
-    
+
     def omni_model(self, robot_state, vel, sample_time):
 
         assert robot_state.shape[0] >= 2 and vel.shape == (2, 1)
@@ -442,7 +461,7 @@ class InitialPath:
         omni_vel = np.array([[vx], [vy], [0]])
 
         next_state = robot_state + sample_time * omni_vel
-       
+
         return next_state
 
     @property
@@ -478,18 +497,18 @@ class InitialPath:
         """
         if self.initial_path is None or len(self.initial_path) < 2:
             return
-        
+
         for i in range(len(self.initial_path) - 1):
             current_point = self.initial_path[i]
             next_point = self.initial_path[i + 1]
-            
+
             dx = next_point[0, 0] - current_point[0, 0]
             dy = next_point[1, 0] - current_point[1, 0]
-            
+
             theta = math.atan2(dy, dx)
-            
+
             current_point[2, 0] = theta
-        
+
         if len(self.initial_path) >= 2:
             self.initial_path[-1][2, 0] = self.initial_path[-2][2, 0]
 
