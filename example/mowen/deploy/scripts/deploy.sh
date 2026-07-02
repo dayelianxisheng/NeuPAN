@@ -5,10 +5,15 @@
 #       astar   → A* + NeuPAN 导航
 
 MODE="${1:-pure}"
-ROBOT_IP="${2:-10.42.0.169}"
 
-export ROS_MASTER_URI=http://$ROBOT_IP:11311
-export ROS_IP=10.42.0.1
+# 从环境变量读取 ROS_MASTER_URI，兼容 docker 内外
+if [ -z "${ROS_MASTER_URI:-}" ]; then
+    ROBOT_IP="${2:-10.42.0.169}"
+    export ROS_MASTER_URI=http://$ROBOT_IP:11311
+fi
+if [ -z "${ROS_IP:-}" ]; then
+    export ROS_IP=10.42.0.1
+fi
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 NEUPAN_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"

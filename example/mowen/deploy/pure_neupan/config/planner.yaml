@@ -15,7 +15,7 @@ robot:
 
 ipath:
 
-  waypoints: [[4.5,0, 0]]
+  waypoints: [[0.01, 0, 0]]
 
   curve_style: 'line'
   min_radius: 1.0

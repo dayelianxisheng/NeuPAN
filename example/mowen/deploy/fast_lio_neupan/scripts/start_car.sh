@@ -5,10 +5,10 @@
 # NeuPAN 负责导航避障
 #
 # 用法:
-#   ./start_car.sh          # 启动所有节点
-#   ./start_car.sh stop     # 急停
-#   ./start_car.sh check    # 健康检查
-#   ./start_car.sh cleanup  # 清理
+#   ./start_car_pure.sh          # 启动所有节点
+#   ./start_car_pure.sh stop     # 急停
+#   ./start_car_pure.sh check    # 健康检查
+#   ./start_car_pure.sh cleanup  # 清理
 #
 # 前提:
 #   - FAST_LIO 已编译安装 (git clone + catkin_make)
