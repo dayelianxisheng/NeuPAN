@@ -20,7 +20,7 @@ ipath:
   waypoints: [[23, 30, -1.57], [41, 28, -1], [30, 38, 2], [10, 19, -2], [29, 18, 3]]
   curve_style: 'line'   # 'dubins' or reeds or line
   min_radius: 4.0
-  loop: True
+  loop: False
   arrive_threshold: 0.1
   close_threshold: 0.1
   ind_range: 10
@@ -31,6 +31,7 @@ pan:
   iter_num: 2
   dune_max_num: 100
   nrmp_max_num: 10
+  dune_checkpoint: None
   iter_threshold: 0.1
   dune_checkpoint: 'example/model/diff_robot_default/model_5000.pth'
 

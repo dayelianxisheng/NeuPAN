@@ -37,6 +37,6 @@ adjust:
   d_min: 0.03
 
 # === A* 全局规划（eval.py 自动启用） ===
-#astar:
-#  robot_radius: 0.25
-#  resolution: 0.05
+astar:
+  robot_radius: 0.25
+  resolution: 0.05

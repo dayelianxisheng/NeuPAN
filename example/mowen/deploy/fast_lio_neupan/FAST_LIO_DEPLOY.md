@@ -79,7 +79,7 @@ Fast-LIO 需要 LiDAR 到 IMU 的外参（旋转+平移）。
 
 ### 小车端
 ```bash
-~/neupan_ws/src/NeuPAN/example/mowen/deploy/fast_lio_neupan/scripts/start_car_pure.sh
+~/neupan_ws/src/NeuPAN/example/mowen/deploy/fast_lio_neupan/scripts/start_car.sh
 ```
 
 ### Docker 端

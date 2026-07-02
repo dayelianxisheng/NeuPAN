@@ -117,6 +117,11 @@ class neupan(torch.nn.Module):
             self.info["arrive"] = True
             return np.zeros((2, 1)), self.info
 
+        # loop 重置路径后清理旧速度，防止第二圈方向错误
+        if self.ipath.loop_triggered:
+            self.cur_vel_array = np.zeros_like(self.cur_vel_array)
+            self.ipath.loop_triggered = False
+
         nom_input_np = self.ipath.generate_nom_ref_state(
             state, self.cur_vel_array, self.ref_speed
         )

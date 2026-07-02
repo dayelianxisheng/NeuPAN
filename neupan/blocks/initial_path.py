@@ -58,6 +58,7 @@ class InitialPath:
         self.ind_range = kwargs.get("ind_range", 10)
         self.arrive_index_threshold = kwargs.get("arrive_index_threshold", 1)
         self.arrive_flag = False
+        self.loop_triggered = False
 
         self.cg = curve_generator()
         # initial path and gear
@@ -265,6 +266,7 @@ class InitialPath:
                 if self.loop:
                     self.curve_index = 0
                     self.point_index = 0
+                    self.loop_triggered = True
 
                     print("Info: loop, reset the path")
                     # self.initial_path.reverse()
@@ -320,12 +322,9 @@ class InitialPath:
         assert len(self.waypoints) > 0, "Error: waypoints are not set"
 
         if isinstance(self.waypoints, list):
-            # 避免冗余点：如果 state 和第一个 waypoint 相同，不重复插入
-            if np.linalg.norm(np.array(state[:2]).flatten() - np.array(self.waypoints[0][:2]).flatten()) > 0.01:
-                self.waypoints = [state] + self.waypoints
+            self.waypoints = [state] + self.waypoints
         elif isinstance(self.waypoints, np.ndarray):
-            if np.linalg.norm(state[:2] - self.waypoints[0][:2]) > 0.01:
-                self.waypoints = np.vstack([state, self.waypoints])
+            self.waypoints = np.vstack([state, self.waypoints])
 
         if self.loop:
             self.waypoints = self.waypoints + [self.waypoints[0]]
