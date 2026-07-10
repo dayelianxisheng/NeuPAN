@@ -1,22 +1,17 @@
-'''
-util file contains the utility functions for NeuPAN.
+"""
+util — NeuPAN 工具函数集合
 
-Developed by Ruihua Han
-Copyright (c) 2025 Ruihua Han <hanrh@connect.hku.hk>
-
-NeuPAN planner is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-NeuPAN planner is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with NeuPAN planner. If not, see <https://www.gnu.org/licenses/>.
-'''
+功能：
+  - time_it: 函数耗时测量装饰器
+  - file_check: 文件路径搜索（支持4种解析方式）
+  - WrapToPi: 角度归一化 [-π, π]
+  - distance: 2D 距离计算
+  - get_transform: 从状态提取旋转平移矩阵
+  - gen_inequal_from_vertex: 从凸包顶点生成 G/h 不等式
+  - is_convex_and_ordered / cross_product: 凸性检测
+  - repeat_mk_dirs: 避重目录创建
+  - downsample_decimation: 均匀下采样
+"""
 
 from __future__ import annotations
 
@@ -28,17 +23,17 @@ from math import sqrt, pi, cos, sin
 import numpy as np
 import neupan
 
+
 def time_it(name="Function"):
     """
-    Decorator to measure function execution time with instance attribute check.
+    函数耗时测量装饰器。
+
+    当 configuration.time_print = True 时，每次函数调用后打印耗时。
+    用于 forward 性能监控。
 
     Args:
-        name (str): Function name for logging (default "Function").
-
-    Returns:
-        function: Wrapped function with timing.
+        name: 打印时显示的函数名
     """
-
     def decorator(func):
         def wrapper(self, *args, **kwargs):
             wrapper.count += 1
@@ -49,126 +44,115 @@ def time_it(name="Function"):
             if configuration.time_print:
                 print(f"{name} execute time {(end - start):.6f} seconds")
             return result
-
         wrapper.count = 0
         wrapper.func_count = 0
         return wrapper
-
     return decorator
 
 
 def file_check(file_name):
     """
-    Check whether a file exists and return its absolute path.
+    检查文件存在性，按优先级搜索4个路径。
 
-    Args:
-        file_name (str): Name of the file to check.
-        root_path (str, optional): Root path to use if the file is not found.
-
-    Returns:
-        str: Absolute path of the file if found.
+    搜索顺序:
+      1. 完整路径（直接 os.path.exists）
+      2. sys.path[0] / 文件名（脚本运行目录）
+      3. os.getcwd() / 文件名（当前工作目录）
+      4. neupan 包根目录 / 文件名
 
     Raises:
-        FileNotFoundError: If the file is not found.
+        FileNotFoundError: 所有路径都找不到
     """
-
     root_path = os.path.dirname(os.path.dirname(neupan.__file__))
 
     if file_name is None:
         return None
-    
     if os.path.exists(file_name):
-        abs_file_name = file_name
-    elif os.path.exists(sys.path[0] + "/" + file_name):
-        abs_file_name = sys.path[0] + "/" + file_name
-    elif os.path.exists(os.getcwd() + "/" + file_name):
-        abs_file_name = os.getcwd() + "/" + file_name
-    else:
-        if root_path is None:
-            raise FileNotFoundError("File not found: " + file_name)
-        else:
-            root_file_name = root_path + "/" + file_name
-            if os.path.exists(root_file_name):
-                abs_file_name = root_file_name
-            else:
-                raise FileNotFoundError("File not found: " + root_file_name)
+        return file_name
+    if os.path.exists(sys.path[0] + "/" + file_name):
+        return sys.path[0] + "/" + file_name
+    if os.path.exists(os.getcwd() + "/" + file_name):
+        return os.getcwd() + "/" + file_name
 
-    return abs_file_name
+    if root_path is None:
+        raise FileNotFoundError("File not found: " + file_name)
+    root_file_name = root_path + "/" + file_name
+    if os.path.exists(root_file_name):
+        return root_file_name
 
+    raise FileNotFoundError("File not found: " + file_name)
 
 
 def WrapToPi(rad: float, positive: bool = False) -> float:
-    '''The function `WrapToPi` transforms an angle in radians to the range [-pi, pi].
-    
+    """
+    将角度归一化到 [-π, π] 范围。
+
     Args:
+        rad: 输入角度 (rad)
+        positive: True 时返回 [0, π] 的绝对值
 
-        rad (float): Angle in radians.
-            The `rad` parameter in the `WrapToPi` function represents an angle in radians that you want to
-        transform to the range [-π, π]. The function ensures that the angle is within this range by wrapping
-        it around if it exceeds the bounds.
-
-        positive (bool): Whether to return the positive value of the angle. Useful for angles difference.
-    
-    Returns:
-        The function `WrapToPi(rad)` returns the angle `rad` wrapped to the range [-pi, pi].
-    
-    '''
+    用途: 角度差计算、theta 归一化。
+    """
     while rad > pi:
         rad = rad - 2 * pi
     while rad < -pi:
         rad = rad + 2 * pi
-
     return rad if not positive else abs(rad)
 
 
 def distance(point1: np.ndarray, point2: np.ndarray) -> float:
     """
-    Compute the distance between two points.
+    计算两个 2D 点之间的欧氏距离。
 
     Args:
-        point1 (np.array): First point [x, y] (2x1).
-        point2 (np.array): Second point [x, y] (2x1).
-
-    Returns:
-        float: Distance between points.
+        point1: (2, 1) 或 (2,)
+        point2: (2, 1) 或 (2,)
     """
-    return sqrt((point1[0, 0] - point2[0, 0]) ** 2 + (point1[1, 0] - point2[1, 0]) ** 2)
+    return sqrt((point1[0, 0] - point2[0, 0]) ** 2
+                + (point1[1, 0] - point2[1, 0]) ** 2)
 
 
 def get_transform(state: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     """
-    Get rotation and translation matrices from state.
+    从状态中提取旋转矩阵和平移向量。
 
     Args:
-        state (np.array): State [x, y, theta] (3x1) or [x, y] (2x1).
+        state: (3, 1) [x, y, theta] 或 (2, 1) [x, y]
 
     Returns:
-        tuple: Translation vector and rotation matrix.
+        trans: (2,) 平移向量
+        rot:   (2, 2) 旋转矩阵
+
+    用途: scan_to_point 和 generate_point_flow 中的坐标变换
     """
     if state.shape == (2, 1):
         rot = np.array([[1, 0], [0, 1]])
         trans = state[0:2]
     else:
-        rot = np.array(
-            [
-                [cos(state[2, 0]), -sin(state[2, 0])],
-                [sin(state[2, 0]), cos(state[2, 0])],
-            ]
-        )
+        rot = np.array([
+            [cos(state[2, 0]), -sin(state[2, 0])],
+            [sin(state[2, 0]), cos(state[2, 0])],
+        ])
         trans = state[0:2]
     return trans, rot
 
 
-
 def gen_inequal_from_vertex(vertex: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     """
-    Generate inequality constraints for a convex polygon.
+    从凸多边形顶点生成半平面不等式: G @ x <= h
+
+    对每条边 (v_i → v_{i+1}) 求法向量:
+      a = dy, b = -dx, c = a*x_i + b*y_i
+    G[i] = [a, b], h[i] = c
 
     Args:
-        vertex (np.array): Vertices of the polygon (2xN).
+        vertex: (2, N) 逆时针排列的凸多边形顶点
 
     Returns:
-        tuple: G matrix and h vector for the inequality Gx <= h.
+        G: (N, 2) 不等式系数矩阵
+        h: (N, 1) 不等式右侧向量
+
+    如果输入多边形不是凸的，返回 (None, None)。
     """
     convex_flag, order = is_convex_and_ordered(vertex)
 
@@ -176,14 +160,13 @@ def gen_inequal_from_vertex(vertex: np.ndarray) -> tuple[np.ndarray, np.ndarray]
         print("The polygon constructed by vertex is not convex.")
         return None, None
 
+    # 如果是顺时针，反转为逆时针
     if order == "CW":
         first_point = vertex[:, 0:1]
         rest_points = vertex[:, 1:]
-        vertex = np.hstack([first_point, rest_points[:, ::-1]]) 
+        vertex = np.hstack([first_point, rest_points[:, ::-1]])
 
-        
     num = vertex.shape[1]
-
     G = np.zeros((num, 2))
     h = np.zeros((num, 1))
 
@@ -196,11 +179,9 @@ def gen_inequal_from_vertex(vertex: np.ndarray) -> tuple[np.ndarray, np.ndarray]
             next_point = vertex[:, 0]
 
         diff = next_point - pre_point
-
         a = diff[1]
         b = -diff[0]
         c = a * pre_point[0] + b * pre_point[1]
-
         G[i, 0] = a
         G[i, 1] = b
         h[i, 0] = c
@@ -208,101 +189,83 @@ def gen_inequal_from_vertex(vertex: np.ndarray) -> tuple[np.ndarray, np.ndarray]
     return G, h
 
 
-def is_convex_and_ordered(points):
+def is_convex_and_ordered(points: np.ndarray):
     """
-    Determine if the polygon is convex and return the order (CW or CCW).
+    判断多边形是否是凸的，并返回顶点顺序。
 
-    Args:
-        points (np.ndarray): A 2xN NumPy array representing the vertices of the polygon.
+    用叉积法：遍历所有相邻三条边，叉积方向必须一致。
 
     Returns:
-        (bool, str): A tuple where the first element is True if the polygon is convex,
-                      and the second element is 'CW' or 'CCW' based on the order.
-                      If not convex, returns (False, None).
+        (bool, str): (是否凸, 'CW'/'CCW'/'None')
     """
-    n = points.shape[1]  # Number of points
+    n = points.shape[1]  # 顶点数
     if n < 3:
-        return False, None  # A polygon must have at least 3 points
+        return False, None
 
-    # Initialize the direction for the first cross product
     direction = 0
-
     for i in range(n):
         o = points[:, i]
         a = points[:, (i + 1) % n]
         b = points[:, (i + 2) % n]
-
         cross = cross_product(o, a, b)
-
-        if cross != 0:  # Only consider non-collinear points
+        if cross != 0:
             if direction == 0:
                 direction = 1 if cross > 0 else -1
             elif (cross > 0 and direction < 0) or (cross < 0 and direction > 0):
-                return False, None  # Not convex
+                return False, None  # 方向改变 → 不是凸多边形
 
     return True, "CCW" if direction > 0 else "CW"
 
 
-def cross_product(o, a, b):
+def cross_product(o, a, b) -> float:
     """
-    Compute the cross product of vectors OA and OB.
+    计算向量 OA 和 OB 的叉积（z 分量）。
 
-    Args:
-        o, a, b (array-like): Points representing vectors.
+    cross = (a.x - o.x)*(b.y - o.y) - (a.y - o.y)*(b.x - o.x)
 
-    Returns:
-        float: Cross product value.
+    用于判断多边形顶点顺序和凸性。
     """
     return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
 
 
 def repeat_mk_dirs(path, max_num=100):
     """
-    Create a directory, appending numbers if it already exists.
+    创建目录，如果已存在则追加编号（_1, _2, ...）。
 
-    Args:
-        path (str): Path of the directory to create.
-        max_num (int): Maximum number of attempts.
-
-    Returns:
-        str: Path of the created directory.
+    用于 DUNE 训练时自动生成不重复的模型保存目录。
     """
     if not os.path.exists(path):
         os.makedirs(path)
         return path
     else:
-        if len(os.listdir(path)) == 0:  # empty dir
+        if len(os.listdir(path)) == 0:
             return path
         else:
             i = 1
             while i < max_num:
                 new_path = path + "_" + str(i)
-                i = i + 1
+                i += 1
                 if not os.path.exists(new_path):
                     break
             os.makedirs(new_path)
             return new_path
-        
+
 
 def downsample_decimation(mat, m):
     """
-    Downsamples a dim x n matrix to a dim x m matrix using direct sampling uniformly.
-    
-    Parameters:
-        mat: numpy.ndarray of shape (dim, n)
-        m: integer, number of columns in the downsampled matrix (m < n)
-    
+    将 d×n 矩阵均匀下采样为 d×m（线性选取 m 个样本）。
+
+    用于点数超过 dune_max_num 时降低计算量。
+
+    Args:
+        mat: (d, n) 输入矩阵
+        m: 目标列数
+
     Returns:
-        numpy.ndarray of shape (dim, m)
+        (d, m) 下采样后的矩阵
     """
-
     n = mat.shape[1]
-
     if m >= n:
         return mat
-    
     indices = np.linspace(0, n - 1, m).astype(int)
-    
-    sampled_matrix = mat[:, indices]
-    return sampled_matrix
-
+    return mat[:, indices]
