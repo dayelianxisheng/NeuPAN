@@ -1,0 +1,27 @@
+sgcf_nrmp_project/
+├── README.md
+├── LICENSE
+├── COPYING_NOTICE.md
+├── CHANGELOG.md
+├── core/
+│   ├── README.md
+│   ├── pyproject.toml
+│   ├── configs/data/procedural.yaml
+│   ├── scripts/
+│   ├── src/sgcf_nrmp/
+│   └── tests/
+├── ros2_ws/src/
+├── gazebo/{worlds,models,launch,config}/
+├── deploy/{cpp,model_export,benchmark}/
+├── docs/
+├── tools/
+└── artifacts/
+    ├── stages/stage_01_repository_audit/
+    ├── stages/stage_02_procedural_geometry/
+    ├── datasets/
+    ├── checkpoints/
+    ├── logs/
+    ├── figures/
+    ├── videos/
+    ├── bags/
+    └── results/

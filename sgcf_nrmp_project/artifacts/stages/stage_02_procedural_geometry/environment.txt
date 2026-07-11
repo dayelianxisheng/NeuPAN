@@ -1,0 +1,9 @@
+Python 3.10.0
+NumPy 1.26.4
+Shapely 2.0.7
+Matplotlib 3.9.4
+PyYAML 6.0.3
+Test runner: Python standard-library unittest
+Matplotlib backend: Agg
+No packages installed during stage 02.
+No network, ROS, Gazebo or GPU used.

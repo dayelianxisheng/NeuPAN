@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sgcf-nrmp"
+version = "0.1.0.dev0"
+description = "Sparse Gated Clearance Field with an NRMP-like local planner"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = {text = "GPL-3.0-or-later"}
+dependencies = [
+  "matplotlib>=3.8",
+  "numpy>=1.26,<2",
+  "PyYAML>=6",
+  "shapely>=2",
+  "torch==2.8.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

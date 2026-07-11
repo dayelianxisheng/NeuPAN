@@ -1,0 +1,24 @@
+test_fixed_seed_reproduces_layout_scan_and_queries ... ok
+test_empty_scene_lidar_and_clearance_are_explicitly_truncated ... ok
+test_footprint_intersection_sets_world_collision ... ok
+test_lidar_field_of_view ... ok
+test_lidar_max_range_excludes_far_obstacle ... ok
+test_near_obstacle_occludes_far_obstacle ... ok
+test_no_valid_lidar_points_with_full_dropout ... ok
+test_observable_and_world_clearance_differ_outside_fov ... ok
+test_rotated_footprint_changes_clearance ... ok
+test_single_circle_known_distance ... ok
+test_single_rectangle_known_distance ... ok
+test_transform_inverse_roundtrip ... ok
+test_wall_raycast_known_range ... ok
+test_xy_finite_difference_gradient ... ok
+test_yaw_finite_difference_gradient ... ok
+test_version_is_exposed ... ok
+
+Ran 16 tests in 0.119s
+OK
+
+compileall: PASS
+git diff --check: PASS
+visual output reproducibility: PASS (12/12 PNG hashes identical after rerun)
+1000 random scenes: PASS, 0 NaN/Inf across 3000 query labels

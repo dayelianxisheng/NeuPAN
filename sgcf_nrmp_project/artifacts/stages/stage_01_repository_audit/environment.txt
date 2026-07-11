@@ -1,0 +1,13 @@
+Python 3.10.0
+Python executable: /home/zq/miniconda3/envs/neupan/bin/python
+Conda environment: neupan
+torch 2.8.0+cu128
+numpy 1.26.4
+scipy 1.13.0
+cvxpy 1.7.5
+cvxpylayers 0.1.6
+osqp 1.1.1
+shapely 2.0.7
+PyYAML 6.0.3
+pytest: not installed
+No packages installed during stage 01.

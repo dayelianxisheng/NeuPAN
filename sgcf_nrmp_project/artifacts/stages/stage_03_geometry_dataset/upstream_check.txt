@@ -1,0 +1,8 @@
+Stage-start protected status:
+ m neupan_ros
+
+Stage-end protected status:
+ m neupan_ros
+
+This is the same pre-existing nested neupan_ros state. Stage 03 created and
+modified files only under sgcf_nrmp_project/. No protected path was touched.

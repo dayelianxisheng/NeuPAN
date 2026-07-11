@@ -1,0 +1,19 @@
+schema_version: 1
+dataset: sgcf_nrmp_project/artifacts/datasets/geometry_v1
+device: cpu
+training:
+  seed: 20260711
+  batch_size: 64
+  max_epochs: 20
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 4
+  gradient_clip_norm: 5.0
+  distance_loss_weight: 1.0
+  collision_loss_weight: 0.2
+  local_linearity_weight: 0.0
+  category_weights: [1.0, 1.5, 2.0, 2.0]
+overfit:
+  sample_count: 64
+  steps: 250
+  required_loss_ratio: 0.35

@@ -1,0 +1,9 @@
+Stage-start protected status:
+ m neupan_ros
+
+Stage-end protected status:
+ m neupan_ros
+
+The same pre-existing nested neupan_ros modification was present before stage 02.
+No file in neupan/, neupan_ros/, neupan_ros2/, example/ or docker/ was created,
+modified, restored, deleted or formatted by stage 02.

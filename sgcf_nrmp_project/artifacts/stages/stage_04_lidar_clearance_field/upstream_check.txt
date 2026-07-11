@@ -1,0 +1,8 @@
+Stage-start protected status:
+ m neupan_ros
+
+Stage-end protected status:
+ m neupan_ros
+
+This is the same pre-existing nested state. Stage 04 only changed files under
+sgcf_nrmp_project/ and did not restore, delete or format any protected file.

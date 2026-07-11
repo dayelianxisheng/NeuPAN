@@ -1,0 +1,8 @@
+schema_version: 1
+model:
+  point_hidden_dims: [32, 64, 64]
+  decoder_hidden_dims: [64, 32]
+  use_max_pool: true
+  use_mean_pool: true
+  use_collision_head: true
+  clearance_clip_m: 5.0

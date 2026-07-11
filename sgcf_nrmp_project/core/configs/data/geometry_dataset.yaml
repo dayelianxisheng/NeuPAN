@@ -1,0 +1,37 @@
+schema_version: geometry_v1
+seed: 20260711
+scene_count: 100
+queries_per_scene: 32
+shard_size: 256
+fixed_point_count: 180
+scene:
+  bounds: [-6.0, -6.0, 6.0, 6.0]
+  obstacle_count_min: 4
+  obstacle_count_max: 9
+  corridor_probability: 0.20
+footprint:
+  length: 0.8
+  width: 0.5
+lidar:
+  angle_min: -3.141592653589793
+  angle_max: 3.141592653589793
+  num_beams: 360
+  range_min: 0.05
+  range_max: 8.0
+  range_noise_std: 0.005
+  dropout_probability: 0.03
+labels:
+  observable_truncation: 8.0
+  spatial_step: 0.04
+  angular_step: 0.04
+  safety_distance: 0.60
+  collision_boundary_width: 0.20
+query_sampling:
+  free_ratio: 0.30
+  safety_boundary_ratio: 0.25
+  collision_boundary_ratio: 0.30
+  collision_ratio: 0.15
+splits:
+  train: 0.70
+  validation: 0.15
+  test: 0.15

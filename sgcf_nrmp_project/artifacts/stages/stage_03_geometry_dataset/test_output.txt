@@ -1,0 +1,14 @@
+Standard-library unittest result:
+
+Ran 34 tests in 11.327s
+OK
+
+Dataset-specific coverage includes same/different seeds, scene split isolation,
+shard checksums, corruption rejection, fixed N=180/256/360, padding masks,
+point/range alignment, Dataset/DataLoader shapes, deterministic augmentation,
+empty observation, gradient validity, safe resume, config hashes and NaN/Inf.
+
+compileall: PASS
+git diff --check: PASS
+smoke integrity: PASS
+full smoke reproducibility: 13/13 shard hashes identical

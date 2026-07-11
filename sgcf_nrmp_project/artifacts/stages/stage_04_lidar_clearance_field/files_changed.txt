@@ -1,0 +1,33 @@
+All stage 04 files are inside sgcf_nrmp_project/.
+
+Configuration/environment:
+core/envs/torch_cp310_cu128.yaml
+core/configs/model/lidar_clearance_field.yaml
+core/configs/train/lidar_clearance_smoke.yaml
+core/configs/eval/lidar_clearance.yaml
+core/pyproject.toml
+
+Model:
+core/src/sgcf_nrmp/models/lidar/query_transform.py
+core/src/sgcf_nrmp/models/lidar/point_encoder.py
+core/src/sgcf_nrmp/models/field/field_output.py
+core/src/sgcf_nrmp/models/field/lidar_clearance_field.py
+
+Training/evaluation/visualization:
+core/src/sgcf_nrmp/training/
+core/src/sgcf_nrmp/evaluation/
+core/src/sgcf_nrmp/visualization/field_prediction_plot.py
+core/src/sgcf_nrmp/visualization/gradient_comparison_plot.py
+core/scripts/train_lidar_clearance_smoke.py
+core/scripts/evaluate_lidar_clearance.py
+core/scripts/benchmark_clearance_query.py
+core/scripts/visualize_lidar_clearance_field.py
+
+Tests/docs/artifacts:
+core/tests/models/
+core/tests/training/
+core/tests/evaluation/
+docs/architecture/lidar_clearance_field.md
+artifacts/stages/stage_04_lidar_clearance_field/
+
+Protected upstream changes introduced: none

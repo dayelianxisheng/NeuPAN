@@ -1,0 +1,26 @@
+Created/modified inside sgcf_nrmp_project only:
+
+sgcf_nrmp_project/.gitignore
+sgcf_nrmp_project/core/README.md
+sgcf_nrmp_project/core/pyproject.toml
+sgcf_nrmp_project/core/configs/data/geometry_dataset.yaml
+sgcf_nrmp_project/core/scripts/generate_geometry_dataset.py
+sgcf_nrmp_project/core/scripts/inspect_geometry_dataset.py
+sgcf_nrmp_project/core/scripts/validate_geometry_dataset.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/data/datasets/
+sgcf_nrmp_project/core/src/sgcf_nrmp/data/procedural/dataset_generator.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/data/procedural/dataset_writer.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/data/procedural/sample_builder.py
+sgcf_nrmp_project/core/tests/data/dataset_test_utils.py
+sgcf_nrmp_project/core/tests/data/test_dataset_corruption.py
+sgcf_nrmp_project/core/tests/data/test_dataset_generation.py
+sgcf_nrmp_project/core/tests/data/test_dataset_loading.py
+sgcf_nrmp_project/core/tests/data/test_dataset_reproducibility.py
+sgcf_nrmp_project/core/tests/data/test_dataset_split.py
+sgcf_nrmp_project/docs/dataset/geometry_v1.md
+sgcf_nrmp_project/artifacts/stages/stage_03_geometry_dataset/
+
+Generated smoke data (gitignored):
+sgcf_nrmp_project/artifacts/datasets/geometry_v1/
+
+Protected upstream changes introduced: none

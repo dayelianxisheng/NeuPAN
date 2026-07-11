@@ -1,0 +1,6 @@
+schema_version: 1
+batch_size: 64
+d_safe: 0.6
+near_boundary_max_m: 0.8
+benchmark_repeats: 30
+benchmark_batch_sizes: [1, 32, 128]

@@ -1,0 +1,27 @@
+Unified current locations after authorized migration:
+
+Project metadata:
+sgcf_nrmp_project/README.md
+sgcf_nrmp_project/LICENSE
+sgcf_nrmp_project/COPYING_NOTICE.md
+sgcf_nrmp_project/CHANGELOG.md
+
+Core:
+sgcf_nrmp_project/core/README.md
+sgcf_nrmp_project/core/pyproject.toml
+sgcf_nrmp_project/core/configs/data/procedural.yaml
+sgcf_nrmp_project/core/scripts/validate_clearance_labels.py
+sgcf_nrmp_project/core/scripts/visualize_procedural_scene.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/
+sgcf_nrmp_project/core/tests/
+
+Documentation and tools:
+sgcf_nrmp_project/docs/
+sgcf_nrmp_project/tools/
+
+Stage outputs:
+sgcf_nrmp_project/artifacts/stages/stage_01_repository_audit/
+sgcf_nrmp_project/artifacts/stages/stage_02_procedural_geometry/
+
+Repository-root legacy SGCF-NRMP directories remaining: none
+Protected upstream changes introduced: none

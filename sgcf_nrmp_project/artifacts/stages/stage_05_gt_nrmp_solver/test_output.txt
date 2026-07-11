@@ -1,0 +1,17 @@
+test_angle_wrap_boundary (test_dynamics_and_qp.DynamicsQPTest) ... ok
+test_dynamics_jacobian_finite_difference (test_dynamics_and_qp.DynamicsQPTest) ... ok
+test_persistent_qp_is_dpp_and_identity_is_stable (test_dynamics_and_qp.DynamicsQPTest) ... ok
+test_qp_is_valid_and_shapes (test_dynamics_and_qp.DynamicsQPTest) ... ok
+test_rollout_known_straight (test_dynamics_and_qp.DynamicsQPTest) ... ok
+test_trust_region_scaling (test_dynamics_and_qp.DynamicsQPTest) ... ok
+test_affine_obstacle_constraint_and_geometry_recheck (test_planner_behavior.PlannerBehaviorTest) ... ok
+test_emergency_stop (test_planner_behavior.PlannerBehaviorTest) ... ok
+test_hidden_world_collision_classification (test_planner_behavior.PlannerBehaviorTest) ... ok
+test_no_obstacle_solution_bounds_initial_and_acceleration (test_planner_behavior.PlannerBehaviorTest) ... ok
+test_timeout_and_infeasible_fallback (test_planner_behavior.PlannerBehaviorTest) ... ok
+test_warm_start_runs (test_planner_behavior.PlannerBehaviorTest) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.658s
+
+OK

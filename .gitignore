@@ -164,3 +164,13 @@ test.py
 
 .vscode/
 test.py
+
+# SGCF-NRMP generated artifacts
+sgcf_nrmp_project/artifacts/**/*.png
+sgcf_nrmp_project/artifacts/**/*.csv
+sgcf_nrmp_project/artifacts/**/*.json
+sgcf_nrmp_project/artifacts/**/*.gif
+sgcf_nrmp_project/artifacts/**/*.onnx
+sgcf_nrmp_project/artifacts/**/*.pth
+sgcf_nrmp_project/artifacts/**/*.bag
+sgcf_nrmp_project/core/**/__pycache__/

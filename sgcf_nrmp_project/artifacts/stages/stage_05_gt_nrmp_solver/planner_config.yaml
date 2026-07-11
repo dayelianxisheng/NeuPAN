@@ -1,0 +1,41 @@
+schema_version: 1
+planner:
+  horizon: 12
+  dt_s: 0.2
+  scp_iterations: 3
+  convergence_tolerance: 0.001
+  max_rejections: 2
+  d_safe_m: 0.25
+  emergency_distance_m: 0.05
+  slack_acceptance_m: 0.03
+  reference_speed_mps: 0.6
+robot:
+  footprint_length_m: 0.8
+  footprint_width_m: 0.5
+bounds:
+  v_min_mps: 0.0
+  v_max_mps: 1.0
+  omega_min_radps: -1.5
+  omega_max_radps: 1.5
+  acceleration_min_mps2: -1.2
+  acceleration_max_mps2: 1.2
+  angular_acceleration_min_radps2: -3.0
+  angular_acceleration_max_radps2: 3.0
+cost:
+  track: [8.0, 8.0, 1.0]
+  terminal: [20.0, 20.0, 2.0]
+  control: [0.15, 0.08]
+  smooth: [0.8, 0.25]
+  proximal: [1.0, 1.0, 0.2]
+  slack: 2000.0
+trust_region:
+  xy_m: 0.25
+  yaw_rad: 0.25
+  linear_velocity_mps: 0.30
+  angular_velocity_radps: 0.60
+solver:
+  max_iter: 10000
+  eps_abs: 0.0001
+  eps_rel: 0.0001
+  time_limit_s: 0.08
+  polish: true

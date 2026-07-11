@@ -1,0 +1,18 @@
+seed: 20260711
+footprint:
+  length: 0.8
+  width: 0.5
+lidar:
+  angle_min: -3.141592653589793
+  angle_max: 3.141592653589793
+  num_beams: 181
+  range_min: 0.05
+  range_max: 8.0
+  range_noise_std: 0.0
+  dropout_probability: 0.0
+labels:
+  observable_truncation: 8.0
+  spatial_step: 0.04
+  angular_step: 0.04
+visualization:
+  grid_resolution: 45

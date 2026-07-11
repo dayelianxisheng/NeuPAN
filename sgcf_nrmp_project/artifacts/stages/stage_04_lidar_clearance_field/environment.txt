@@ -1,0 +1,15 @@
+Python 3.10.0
+Python executable: /home/zq/miniconda3/envs/neupan/bin/python
+PyTorch: 2.8.0+cu128
+PyTorch CUDA build: 12.8
+CUDA runtime available: false
+Stage 04 device: CPU
+
+Pinned local wheels:
+/home/zq/resource/env/torch/torch-2.8.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl
+/home/zq/resource/env/torch/torchaudio-2.8.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl
+/home/zq/resource/env/torch/torchvision-0.23.0+cu128-cp310-cp310-manylinux_2_28_x86_64.whl
+
+torch was already installed at the requested version. torchvision and torchaudio
+were not installed because stage 04 does not use them. No network or package
+installation occurred.

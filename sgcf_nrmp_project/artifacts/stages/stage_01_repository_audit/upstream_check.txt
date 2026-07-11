@@ -1,0 +1,21 @@
+Official baseline commit: 579e7afa239cd7ff61f7f63fbd4aaaecbb136d3b
+Official baseline tree: e37d357483d2e4df7631fbf03decd928b9cb0e5c
+Current HEAD: 54a291c7f68c7fe5085ff1abac7536e903dfadb6
+
+Baseline object exists and is readable: PASS
+Baseline ObsPointNet is geometry-only: PASS
+Current protected tree contains acknowledged erroneous semantic changes: YES
+Erroneous changes restored or modified by stage 01: NO
+
+Pre-existing protected working-tree status before stage work:
+ m neupan_ros
+
+Protected working-tree status after stage work:
+ m neupan_ros
+
+Nested neupan_ros details (pre-existing):
+ M src/neupan_core.py
+?? src/neupan_core.py.bak
+
+neupan_ros2 nested status was not changed or approved as a Git safe.directory.
+No protected directory was modified by stage 01.

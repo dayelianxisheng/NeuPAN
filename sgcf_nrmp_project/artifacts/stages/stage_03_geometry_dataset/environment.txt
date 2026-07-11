@@ -1,0 +1,8 @@
+Python 3.10.0
+PyTorch 2.8.0+cu128 (CPU Dataset/DataLoader checks only)
+NumPy 1.26.4
+Shapely 2.0.7
+Matplotlib 3.9.4
+PyYAML 6.0.3
+Test runner: Python standard-library unittest
+No package installation, network, training, ROS, Gazebo or GPU computation.

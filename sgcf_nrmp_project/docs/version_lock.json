@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "579e7afa239cd7ff61f7f63fbd4aaaecbb136d3b",
+  "baseline_tree": "e37d357483d2e4df7631fbf03decd928b9cb0e5c",
+  "packages": {
+    "PyYAML": "6.0.3",
+    "cvxpy": "1.7.5",
+    "cvxpylayers": "0.1.6",
+    "numpy": "1.26.4",
+    "osqp": "1.1.1",
+    "scipy": "1.13.0",
+    "shapely": "2.0.7",
+    "torch": "2.8.0+cu128"
+  },
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.35",
+  "python": "3.10.0 (default, Mar  3 2022, 09:58:08) [GCC 7.5.0]",
+  "python_executable": "/home/zq/miniconda3/envs/neupan/bin/python",
+  "working_head": "54a291c7f68c7fe5085ff1abac7536e903dfadb6"
+}

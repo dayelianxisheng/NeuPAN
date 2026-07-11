@@ -1,0 +1,16 @@
+Final standard-library unittest run is recorded after all stage-04 code changes.
+
+Ran 52 tests in 12.230s
+OK
+
+compileall: PASS
+git diff --check: PASS
+required artifacts: PASS
+root SGCF directory check: only sgcf_nrmp_project
+protected status: unchanged pre-existing ` m neupan_ros`
+
+Coverage includes model shapes for N=180/256/360, batch size one, all/partial
+padding, query transform, yaw periodicity, nonnegative output, autograd query
+gradient, finite-difference agreement on a smooth pooling branch, repeatable eval,
+optional collision head, checkpoint/optimizer restore, backward, overfit,
+observable-only loss semantics, hidden-risk separation and fixed-seed training.
