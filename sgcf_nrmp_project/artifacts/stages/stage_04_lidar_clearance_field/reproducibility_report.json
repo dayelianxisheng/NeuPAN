@@ -1,0 +1,9 @@
+{
+  "best_epoch_a": 20,
+  "best_epoch_b": 20,
+  "full_training_history_identical": true,
+  "seed": 20260711,
+  "state_dict_max_absolute_difference": 0.0,
+  "torch_version": "2.8.0+cu128",
+  "training_b": "/tmp/sgcf_stage04_repro"
+}

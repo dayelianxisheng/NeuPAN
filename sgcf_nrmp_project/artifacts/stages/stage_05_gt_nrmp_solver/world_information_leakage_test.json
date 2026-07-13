@@ -1,0 +1,10 @@
+{
+  "online_checker_constructor_inputs": ["lidar_scan", "footprint_length", "footprint_width", "truncation"],
+  "planner_inputs": ["state", "reference", "exact_observable_checker", "previous_control", "warm_start"],
+  "forbidden_online_fields_present": [],
+  "planner_result_world_fields_present": false,
+  "identical_lidar_action_bitwise_equal": true,
+  "offline_risk_independently_variable": true,
+  "world_evaluator_call_site": "offline_simulator after planner.plan and action selection",
+  "pass": true
+}

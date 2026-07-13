@@ -1,0 +1,20 @@
+pwd
+git status --short
+git log --oneline -10
+git remote -v
+git submodule status || true
+git -C neupan_ros status --short || true
+git -C neupan_ros2 status --short || true
+python --version
+which python
+conda info --envs || true
+git cat-file -t 579e7af
+git show -s --format=... 579e7af
+git diff --name-status 579e7af..HEAD -- neupan neupan_ros neupan_ros2 example docker
+git show 579e7af:neupan/blocks/obs_point_net.py
+python sgcf_nrmp_tools/write_version_lock.py sgcf_nrmp_docs/version_lock.json
+PYTHONPATH=sgcf_nrmp/src python -m unittest discover -s sgcf_nrmp/tests -v
+PYTHONPATH=sgcf_nrmp/src python -c "import sgcf_nrmp; print(sgcf_nrmp.__version__)"
+sgcf_nrmp_tools/check_upstream_clean.sh
+python -m compileall -q sgcf_nrmp/src sgcf_nrmp/tests sgcf_nrmp_tools
+git diff --check -- .gitignore COPYING_NOTICE.md docs/codex sgcf_nrmp sgcf_nrmp_tools sgcf_nrmp_docs sgcf_nrmp_artifacts

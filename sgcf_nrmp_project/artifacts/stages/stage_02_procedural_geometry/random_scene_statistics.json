@@ -1,0 +1,11 @@
+{
+  "seed": 20260711,
+  "scene_count": 1000,
+  "query_count": 3000,
+  "nan_or_inf_count": 0,
+  "world_collision_count": 325,
+  "mean_valid_lidar_hits": 6.501,
+  "mean_absolute_clearance_difference_m": 0.4615455076982591,
+  "max_absolute_clearance_difference_m": 6.618804771007045,
+  "reproducibility_sha256": "be3e02ea91c13bcf46f7cee1be2a6efdcfc7ab8a0381c9075af453311a426980"
+}

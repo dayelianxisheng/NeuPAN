@@ -1,0 +1,16 @@
+PYTHONPATH=sgcf_nrmp/src python -m unittest discover -s sgcf_nrmp/tests -v
+MPLCONFIGDIR=/tmp/sgcf_nrmp_mpl PYTHONPATH=sgcf_nrmp/src MPLBACKEND=Agg python sgcf_nrmp/scripts/visualize_procedural_scene.py
+PYTHONPATH=sgcf_nrmp/src python sgcf_nrmp/scripts/validate_clearance_labels.py --scene-count 1000
+python -m compileall -q sgcf_nrmp/src sgcf_nrmp/tests sgcf_nrmp/scripts
+git diff --check -- sgcf_nrmp sgcf_nrmp_docs docs/codex sgcf_nrmp_artifacts/stages/stage_02_procedural_geometry
+git status --short -- neupan neupan_ros neupan_ros2 example docker
+
+Measured validation run: 2.72 s, max RSS 38656 KiB.
+Measured visualization run: 7.41 s, max RSS 125980 KiB.
+
+Post-migration verification commands:
+PYTHONPATH=sgcf_nrmp_project/core/src python -m unittest discover -s sgcf_nrmp_project/core/tests -v
+python -m compileall -q sgcf_nrmp_project/core/src sgcf_nrmp_project/core/tests sgcf_nrmp_project/core/scripts sgcf_nrmp_project/tools
+MPLCONFIGDIR=/tmp/sgcf_nrmp_mpl PYTHONPATH=sgcf_nrmp_project/core/src MPLBACKEND=Agg python sgcf_nrmp_project/core/scripts/visualize_procedural_scene.py
+PYTHONPATH=sgcf_nrmp_project/core/src python sgcf_nrmp_project/core/scripts/validate_clearance_labels.py --scene-count 1000
+python sgcf_nrmp_project/tools/write_version_lock.py sgcf_nrmp_project/docs/version_lock.json

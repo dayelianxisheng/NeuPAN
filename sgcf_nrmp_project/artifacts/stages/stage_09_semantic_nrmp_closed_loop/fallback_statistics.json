@@ -1,0 +1,342 @@
+{
+  "no_obstacle_straight": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "no_obstacle_turn": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "static_wall": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "single_human": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "single_vehicle": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "single_robot": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "human_beside_wall": {
+    "P0": {
+      "fallback_count": 1,
+      "emergency_stop_count": 0,
+      "final_status": "REJECTED_BY_GEOMETRY_CHECK"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "human_path_center": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "human_path_side": {
+    "P0": {
+      "fallback_count": 1,
+      "emergency_stop_count": 0,
+      "final_status": "REJECTED_BY_GEOMETRY_CHECK"
+    },
+    "P1": {
+      "fallback_count": 1,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVER_TIMEOUT"
+    },
+    "P2": {
+      "fallback_count": 1,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVER_TIMEOUT"
+    }
+  },
+  "two_human_channel": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "static_narrow_corridor": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "semantic_infeasible": {
+    "P0": {
+      "fallback_count": 1,
+      "emergency_stop_count": 0,
+      "final_status": "REJECTED_BY_GEOMETRY_CHECK"
+    },
+    "P1": {
+      "fallback_count": 1,
+      "emergency_stop_count": 0,
+      "final_status": "REJECTED_BY_GEOMETRY_CHECK"
+    },
+    "P2": {
+      "fallback_count": 1,
+      "emergency_stop_count": 0,
+      "final_status": "REJECTED_BY_GEOMETRY_CHECK"
+    }
+  },
+  "image_dropout": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "image_outdated": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "projection_invalid": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "unknown_semantic": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "hidden_world_obstacle": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "silent_miscalibration": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "geometry_recheck_rejection": {
+    "P0": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P1": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    },
+    "P2": {
+      "fallback_count": 0,
+      "emergency_stop_count": 0,
+      "final_status": "SOLVED_SAFE"
+    }
+  },
+  "emergency_stop": {
+    "P0": {
+      "fallback_count": 1,
+      "emergency_stop_count": 1,
+      "final_status": "EMERGENCY_STOP"
+    },
+    "P1": {
+      "fallback_count": 1,
+      "emergency_stop_count": 1,
+      "final_status": "EMERGENCY_STOP"
+    },
+    "P2": {
+      "fallback_count": 1,
+      "emergency_stop_count": 1,
+      "final_status": "EMERGENCY_STOP"
+    }
+  }
+}

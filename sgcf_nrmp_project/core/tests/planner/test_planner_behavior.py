@@ -5,7 +5,7 @@ import numpy as np,yaml
 from sgcf_nrmp.data.procedural.scene import ProceduralScene
 from sgcf_nrmp.data.procedural.scene_generator import circle_obstacle
 from sgcf_nrmp.geometry.footprint import rectangular_footprint
-from sgcf_nrmp.planner.geometry_checker import ExactGeometryChecker
+from sgcf_nrmp.planner.geometry_checker import ExactObservableChecker,OfflineWorldEvaluator
 from sgcf_nrmp.planner.gt_nrmp_planner import GTNRMPPlanner
 from sgcf_nrmp.planner.reference import local_reference,polyline_path
 from sgcf_nrmp.planner.solver_result import PlannerStatus
@@ -17,7 +17,7 @@ CONFIG=yaml.safe_load(Path('sgcf_nrmp_project/core/configs/planner/diff_drive_gt
 
 
 def setup(scene,path,state=None):
-    state=path[0] if state is None else np.asarray(state,float); scan=scene.scan(Pose2D(*map(float,state)),LidarConfig(num_beams=181,range_max=8.),np.random.default_rng(1)); footprint=rectangular_footprint(.8,.5); checker=ExactGeometryChecker(scene,scan,footprint,8.); reference=local_reference(state,path,CONFIG['planner']['horizon'],CONFIG['planner']['reference_speed_mps']*CONFIG['planner']['dt_s']); return state,checker,reference
+    state=path[0] if state is None else np.asarray(state,float); scan=scene.scan(Pose2D(*map(float,state)),LidarConfig(num_beams=181,range_max=8.),np.random.default_rng(1)); checker=ExactObservableChecker(scan,.8,.5,8.); reference=local_reference(state,path,CONFIG['planner']['horizon'],CONFIG['planner']['reference_speed_mps']*CONFIG['planner']['dt_s']); return state,checker,reference
 
 
 class PlannerBehaviorTest(unittest.TestCase):
@@ -35,4 +35,4 @@ class PlannerBehaviorTest(unittest.TestCase):
         scene=ProceduralScene([circle_obstacle((.41,0),.2)],(-2,-2,5,2)); path=polyline_path([(0,0),(4,0)]); state,checker,reference=setup(scene,path); result=GTNRMPPlanner(CONFIG).plan(state,reference,checker); self.assertEqual(result.status,PlannerStatus.EMERGENCY_STOP); np.testing.assert_allclose(result.first_control,0)
     def test_hidden_world_collision_classification(self):
         # Rear obstacle is outside forward FOV and intersects a future query.
-        scene=ProceduralScene([circle_obstacle((-1.,0),.3)],(-3,-2,3,2)); state=np.asarray([0.,0.,0.]); scan=scene.scan(Pose2D(*state),LidarConfig(-np.pi/3,np.pi/3,61,.05,5.),np.random.default_rng(1)); checker=ExactGeometryChecker(scene,scan,rectangular_footprint(.8,.5),5.); check=checker.recheck(np.asarray([[-.6,0.,0.]]),.25); self.assertTrue(check['partial_observation_world_risk'])
+        scene=ProceduralScene([circle_obstacle((-1.,0),.3)],(-3,-2,3,2)); state=np.asarray([0.,0.,0.]); scan=scene.scan(Pose2D(*state),LidarConfig(-np.pi/3,np.pi/3,61,.05,5.),np.random.default_rng(1)); checker=ExactObservableChecker(scan,.8,.5,5.); query=np.asarray([[-.6,0.,0.]]); offline=OfflineWorldEvaluator(scene,rectangular_footprint(.8,.5),5.).evaluate_trajectory(query,checker.distance(query),.25); self.assertTrue(offline.partial_observation_world_risk)

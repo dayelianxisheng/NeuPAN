@@ -1,0 +1,5 @@
+seed: 909
+deterministic_max_steps: 80
+random_smoke_episodes: 20
+modes: [GEOMETRY_ONLY, SEMANTIC_ALWAYS_ON, SEMANTIC_WITH_EXPLICIT_FAILURE_GATE]
+

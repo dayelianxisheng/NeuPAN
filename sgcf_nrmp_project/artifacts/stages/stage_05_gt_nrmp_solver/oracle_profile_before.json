@@ -1,0 +1,18 @@
+{
+  "scenario": "corridor",
+  "scope": "one cold-start control-cycle component profile",
+  "lidar_data_preparation_ms": 6.200405,
+  "reference_and_control_logic_ms": 0.098736,
+  "observable_distance_query_ms": 0.546769,
+  "finite_difference_gradient_query_ms": 2.961416,
+  "legacy_actual_mixed_linearization_ms": 66.095834,
+  "qp_parameter_update_ms": 0.950660,
+  "osqp_solve_wall_ms": 111.788619,
+  "osqp_internal_ms": 4.053232,
+  "observable_geometry_recheck_ms": 0.584200,
+  "online_equivalent_planner_latency_ms": 123.130805,
+  "offline_world_evaluation_latency_ms": 0.439628,
+  "visualization_latency_ms": 24.457682,
+  "historical_closed_loop_corridor": {"mean_ms": 310.87, "p95_ms": 364.44},
+  "note": "The online-equivalent total excludes complete-world evaluation and visualization. The cold-start CVXPY setup dominates this single cycle. legacy_actual_mixed_linearization separately records the original scene.label path, which improperly computed world geometry while obtaining observable values. Distribution acceptance uses warmed closed-loop P95, not this one cold-start sample."
+}

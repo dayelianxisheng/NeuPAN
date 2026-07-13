@@ -1,0 +1,9 @@
+{
+  "oracle_accuracy_on_valid_projection": 1.0,
+  "all_point_accuracy": 1.0,
+  "point_count_input": 39,
+  "point_count_output": 39,
+  "unknown_count": 0,
+  "rgb_dropout_confidence_zero": true,
+  "geometry_coordinates_unchanged": true
+}

@@ -1,0 +1,13 @@
+{
+  "feature_order": [
+    "x",
+    "y",
+    "range",
+    "class_probability[5]",
+    "projection_valid",
+    "projection_confidence",
+    "image_age_s"
+  ],
+  "class_count": 5,
+  "preserves_point_order": true
+}

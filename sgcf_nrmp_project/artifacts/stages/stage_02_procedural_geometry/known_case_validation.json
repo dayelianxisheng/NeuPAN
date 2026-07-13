@@ -1,0 +1,17 @@
+{
+  "circle_expected_clearance_m": 2.0,
+  "circle_world_clearance_m": 2.0,
+  "circle_observable_clearance_m": 2.0,
+  "circle_absolute_error_m": 0.0,
+  "wall_expected_gradient_xy": [
+    -1.0,
+    0.0
+  ],
+  "wall_gradient": [
+    -0.9999999999999787,
+    0.0,
+    -0.12678643583630134
+  ],
+  "wall_gradient_valid": true,
+  "pass": true
+}

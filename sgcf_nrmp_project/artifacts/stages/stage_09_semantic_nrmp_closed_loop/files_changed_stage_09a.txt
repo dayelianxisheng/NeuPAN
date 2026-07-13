@@ -1,0 +1,23 @@
+sgcf_nrmp_project/core/scripts/audit_stage09a_lifecycle.py
+sgcf_nrmp_project/core/scripts/evaluate_stage09_semantic_nrmp.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/gt_nrmp_planner.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/offline_simulator.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/qp_problem.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/semantic_nrmp_planner.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/semantic/semantic_margin_provider.py
+sgcf_nrmp_project/core/tests/planner/test_stage09a_lifecycle.py
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/stage_09a_audit_report.md
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/stage05_vs_stage09_p0_equivalence.json
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/empty_scene_rejection_diagnosis.json
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/solver_timeout_diagnosis.json
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/closed_loop_lifecycle_report.json
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/collision_metric_definition.md
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/collision_classification_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/latency_regression_before_after.json
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/latency_component_breakdown.json
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/warm_start_audit.json
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/test_output_stage_09a.txt
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/*.png (six audit figures)
+
+Protected directories: no Stage 09A incremental modifications.
+No commit, push, reset, clean, network install, sudo, ROS, Gazebo, or Stage 10 action.

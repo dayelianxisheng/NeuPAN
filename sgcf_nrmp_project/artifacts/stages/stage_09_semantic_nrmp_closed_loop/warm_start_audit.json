@@ -1,0 +1,92 @@
+{
+  "R0_empty_straight": {
+    "STAGE05_ORIGINAL": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P0": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P1": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P2": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    }
+  },
+  "R1_empty_turn": {
+    "STAGE05_ORIGINAL": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P0": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P1": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P2": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    }
+  },
+  "R2_static": {
+    "STAGE05_ORIGINAL": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P0": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P1": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P2": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    }
+  },
+  "R3_human": {
+    "STAGE05_ORIGINAL": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P0": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P1": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    },
+    "P2": {
+      "warm_start_valid": true,
+      "termination_reason": "EPISODE_MAX_STEPS"
+    }
+  },
+  "R4_initial_collision": {
+    "STAGE05_ORIGINAL": {
+      "warm_start_valid": false,
+      "termination_reason": "EMERGENCY_STOP"
+    },
+    "P0": {
+      "warm_start_valid": false,
+      "termination_reason": "EMERGENCY_STOP"
+    },
+    "P1": {
+      "warm_start_valid": false,
+      "termination_reason": "EMERGENCY_STOP"
+    },
+    "P2": {
+      "warm_start_valid": false,
+      "termination_reason": "EMERGENCY_STOP"
+    }
+  }
+}

@@ -37,6 +37,7 @@ class PersistentPlannerQP:
         self.clearance_bias = cp.Parameter(T, name="clearance_bias")
         self.clearance_valid = cp.Parameter(T, nonneg=True, name="clearance_valid")
         self.d_safe = cp.Parameter(nonneg=True, name="d_safe")
+        self.semantic_margin = cp.Parameter(T, nonneg=True, name="semantic_margin")
         self.trust_xy = cp.Parameter(nonneg=True, name="trust_xy")
         self.trust_yaw = cp.Parameter(nonneg=True, name="trust_yaw")
         self.trust_v = cp.Parameter(nonneg=True, name="trust_v")
@@ -73,7 +74,7 @@ class PersistentPlannerQP:
             constraints.append(
                 self.clearance_gradient[k] @ self.states[k + 1]
                 + self.clearance_bias[k] + self.slack[k]
-                >= self.d_safe - inactive_big_m * (1.0 - self.clearance_valid[k])
+                >= self.d_safe + self.semantic_margin[k] - inactive_big_m * (1.0 - self.clearance_valid[k])
             )
             objective += cp.quad_form(self.states[k + 1] - self.reference[k + 1], Q)
             objective += cp.quad_form(self.controls[k], R)
@@ -92,11 +93,14 @@ class PersistentPlannerQP:
         if not self.problem.is_dpp():
             raise ValueError("persistent planner problem is not DPP compliant")
         self._last_primal = None
+        self.solve_count = 0
+        self.last_solve_diagnostics = {}
         self._set_static_parameter_values()
 
     def _set_static_parameter_values(self):
         bounds = self.config["bounds"]
         self.d_safe.value = float(self.config["planner"]["d_safe_m"])
+        self.semantic_margin.value = np.zeros(self.T)
         self.v_min.value = float(bounds["v_min_mps"])
         self.v_max.value = float(bounds["v_max_mps"])
         self.omega_min.value = float(bounds["omega_min_radps"])
@@ -107,7 +111,7 @@ class PersistentPlannerQP:
         self.alpha_max.value = float(bounds["angular_acceleration_max_radps2"])
 
     def update(self, initial_state, reference, nominal_states, nominal_controls, previous_control,
-               distances, gradients, gradient_valid, trust: TrustRegion) -> float:
+               distances, gradients, gradient_valid, trust: TrustRegion, semantic_margins=None) -> float:
         started = time.perf_counter()
         reference = unwrap_reference(np.asarray(reference, float), nominal_states)
         self.initial_state.value = np.asarray(initial_state, float)
@@ -127,6 +131,9 @@ class PersistentPlannerQP:
             self.clearance_gradient[k].value = gradient_values[k]
         self.clearance_bias.value = bias
         self.clearance_valid.value = valid
+        margins=np.zeros(self.T) if semantic_margins is None else np.asarray(semantic_margins,float)[1:]
+        if margins.shape!=(self.T,) or np.any(margins < -1e-6) or np.any(margins > .350001): raise ValueError("semantic margins must have shape [T+1] and lie in [0,0.35]")
+        self.semantic_margin.value=np.clip(margins,0,.35)
         self.trust_xy.value = trust.xy_m
         self.trust_yaw.value = trust.yaw_rad
         self.trust_v.value = trust.linear_velocity_mps
@@ -154,6 +161,16 @@ class PersistentPlannerQP:
             return PlannerStatus.NUMERICAL_ERROR, None, (time.perf_counter() - started) * 1000.0, 0.0
         wall_ms = (time.perf_counter() - started) * 1000.0
         internal_ms = float(self.problem.solver_stats.solve_time or 0.0) * 1000.0
+        setup_ms = float(self.problem.solver_stats.setup_time or 0.0) * 1000.0
+        self.solve_count += 1
+        self.last_solve_diagnostics = {
+            "solver_status": str(self.problem.status),
+            "osqp_iterations": int(self.problem.solver_stats.num_iters or 0),
+            "osqp_setup_ms": setup_ms,
+            "osqp_solve_ms": internal_ms,
+            "cvxpy_wrapper_and_canonicalization_ms": max(0.0, wall_ms - internal_ms - setup_ms),
+            "first_solve": self.solve_count == 1,
+        }
         if self.problem.status in (cp.OPTIMAL, cp.OPTIMAL_INACCURATE):
             values = [np.asarray(v.value).copy() for v in (self.states, self.controls, self.slack)]
             self._last_primal = values

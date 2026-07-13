@@ -1,0 +1,14 @@
+Stage-08A focused unittest: 8/8 passed in 0.007 s
+
+Covered fixed offsets, border masks, invalid projection, <=64 candidate limit,
+deterministic ordering, center/shifted candidate inclusion, dropout/stale image,
+coarse-to-fine top-k shape, multiscale coordinates, finite outputs, and API
+absence of GT class/calibration/world inputs.
+
+Coverage gate result: FAILED AS DESIGNED
+- 1 cm + 1° best coverage: 96.46% (target 99%)
+- 3 cm + 3° best coverage: 93.28% (entry gate 95%)
+- 5 cm + 5° best coverage: 90.48% (reported, no recovery requirement)
+
+The full repository suite was not rerun after the mandatory stop condition was
+triggered. No training, checkpoint, Stage 08B, Planner, ROS, or Gazebo work ran.

@@ -1,0 +1,11 @@
+python --version
+python wheel/version/CUDA availability audit
+PYTHONPATH=sgcf_nrmp_project/core/src:sgcf_nrmp_project/core/tests python -m unittest discover -s sgcf_nrmp_project/core/tests/models -v
+PYTHONPATH=sgcf_nrmp_project/core/src:sgcf_nrmp_project/core/tests python -m unittest discover -s sgcf_nrmp_project/core/tests/training -v
+PYTHONPATH=sgcf_nrmp_project/core/src python sgcf_nrmp_project/core/scripts/train_lidar_clearance_smoke.py
+PYTHONPATH=sgcf_nrmp_project/core/src python sgcf_nrmp_project/core/scripts/evaluate_lidar_clearance.py
+PYTHONPATH=sgcf_nrmp_project/core/src python sgcf_nrmp_project/core/scripts/benchmark_clearance_query.py
+MPLCONFIGDIR=/tmp/sgcf_nrmp_mpl PYTHONPATH=sgcf_nrmp_project/core/src MPLBACKEND=Agg python sgcf_nrmp_project/core/scripts/visualize_lidar_clearance_field.py
+PYTHONPATH=sgcf_nrmp_project/core/src python sgcf_nrmp_project/core/scripts/train_lidar_clearance_smoke.py --output /tmp/sgcf_stage04_repro
+python -m compileall -q sgcf_nrmp_project/core/src sgcf_nrmp_project/core/tests sgcf_nrmp_project/core/scripts
+git diff --check

@@ -1,0 +1,18 @@
+core/src/sgcf_nrmp/fusion/sparse_candidate_search.py
+core/tests/fusion/test_sparse_candidate_search.py
+core/scripts/evaluate_stage08a_candidate_search.py
+artifacts/stages/stage_08_sparse_local_soft_fusion/stage_08_blocking_report.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/candidate_search_definition.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/candidate_coverage_metrics.json
+artifacts/stages/stage_08_sparse_local_soft_fusion/candidate_coverage_by_perturbation.json
+artifacts/stages/stage_08_sparse_local_soft_fusion/candidate_coverage_by_scenario.json
+artifacts/stages/stage_08_sparse_local_soft_fusion/candidate_ambiguity_analysis.json
+artifacts/stages/stage_08_sparse_local_soft_fusion/candidate_latency_benchmark.json
+artifacts/stages/stage_08_sparse_local_soft_fusion/stage_08a_decision.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/test_output_stage_08a.txt
+artifacts/stages/stage_08_sparse_local_soft_fusion/files_changed_stage_08a.txt
+artifacts/stages/stage_08_sparse_local_soft_fusion/*.png
+
+No Stage-05 exact geometry, Stage-07 semantic-margin definition, protected
+NeuPAN path, learned model, Planner, ROS, Gazebo, Stage 08B, or Stage 09 file was
+modified or created.

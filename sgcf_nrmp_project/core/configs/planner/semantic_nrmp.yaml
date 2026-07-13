@@ -1,0 +1,11 @@
+mode: SEMANTIC_WITH_EXPLICIT_FAILURE_GATE
+class_margin_m:
+  UNKNOWN: 0.00
+  STATIC_OBSTACLE: 0.00
+  HUMAN: 0.35
+  VEHICLE: 0.20
+  ROBOT: 0.15
+maximum_image_age_s: 0.10
+allow_semantic_degradation: false
+semantic_infeasible_slack_m: 0.05
+

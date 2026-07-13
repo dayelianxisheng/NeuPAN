@@ -1,0 +1,13 @@
+Import test runner: Python unittest (pytest is not installed)
+
+test_version_is_exposed (test_import.ImportTest) ... ok
+Ran 1 test in 0.000s
+OK
+
+Direct import:
+0.1.0.dev0
+
+Additional checks:
+- compileall: PASS
+- git diff --check: PASS
+- baseline object/readability: PASS

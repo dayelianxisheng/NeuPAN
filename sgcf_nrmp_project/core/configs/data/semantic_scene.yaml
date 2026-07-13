@@ -1,0 +1,9 @@
+seed: 20260713
+classes: [UNKNOWN, STATIC_OBSTACLE, HUMAN, VEHICLE, ROBOT]
+default_height_m: 1.0
+semantic_margin_m:
+  UNKNOWN: 0.00
+  STATIC_OBSTACLE: 0.00
+  HUMAN: 0.35
+  VEHICLE: 0.20
+  ROBOT: 0.15

@@ -1,0 +1,15 @@
+Stage-07 focused unittest (initial gate): 16/16 passed
+Stage-07 focused unittest after boundary additions: covered by full suite
+Full standard-library unittest discovery after margin audit: 102/102 passed in 11.962 s
+compileall core/src + core/scripts + core/tests: PASS
+git diff --check: PASS
+
+Coverage includes center/boundary/behind-camera projection, transform inversion,
+batch shape, invalid/padding points, hidden-world independence, deterministic
+rendering, foreground occlusion and movement, UNKNOWN background, PointPainting
+order retention, invalid projection, RGB dropout/staleness, finite outputs,
+nonnegative margin, HUMAN priority, farther HUMAN criticality, exact geometry
+semantic invariance, and reliability degradation.
+
+No pytest, network installation, training, planner integration, ROS, Gazebo, or
+Stage-08 execution was performed.

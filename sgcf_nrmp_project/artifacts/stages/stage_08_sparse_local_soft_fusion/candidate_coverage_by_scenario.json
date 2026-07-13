@@ -1,0 +1,1080 @@
+{
+  "isolated_object": {
+    "C0_HARD_SINGLE_PIXEL": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.7647058823529411,
+        "correct_instance_coverage": 0.7647058823529411,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 1.0,
+        "p95_candidate_count": 1.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 0.0,
+        "point_count": 17,
+        "scene": "isolated_object",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C0_HARD_SINGLE_PIXEL"
+      }
+    },
+    "C1_LOCAL_3X3": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.7647058823529411,
+        "correct_instance_coverage": 0.7647058823529411,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 9.0,
+        "p95_candidate_count": 9.0,
+        "candidate_semantic_ambiguity": 1.0588235294117647,
+        "candidate_instance_ambiguity": 1.0588235294117647,
+        "semantic_entropy_in_candidates": 0.03744200989969487,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 1.4142135623730951,
+        "point_count": 17,
+        "scene": "isolated_object",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C1_LOCAL_3X3"
+      }
+    },
+    "C2_LOCAL_5X5": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.7647058823529411,
+        "correct_instance_coverage": 0.7647058823529411,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.0588235294117647,
+        "candidate_instance_ambiguity": 1.0588235294117647,
+        "semantic_entropy_in_candidates": 0.039588921588779795,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 2.8284271247461903,
+        "point_count": 17,
+        "scene": "isolated_object",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C2_LOCAL_5X5"
+      }
+    },
+    "C3_SPARSE_GRID_RADIUS_8": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.8823529411764706,
+        "correct_instance_coverage": 0.8823529411764706,
+        "coverage_on_hard_misclassified": 0.5,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.2941176470588236,
+        "candidate_instance_ambiguity": 1.2941176470588236,
+        "semantic_entropy_in_candidates": 0.17763763812377326,
+        "nearest_correct_candidate_offset_px_mean": 0.8,
+        "maximum_candidate_offset_px": 11.313708498984761,
+        "point_count": 17,
+        "scene": "isolated_object",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C3_SPARSE_GRID_RADIUS_8"
+      }
+    },
+    "C4_SPARSE_GRID_RADIUS_16": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.6470588235294117,
+        "candidate_instance_ambiguity": 1.6470588235294117,
+        "semantic_entropy_in_candidates": 0.3734046708270503,
+        "nearest_correct_candidate_offset_px_mean": 2.823529411764706,
+        "maximum_candidate_offset_px": 22.627416997969522,
+        "point_count": 17,
+        "scene": "isolated_object",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C4_SPARSE_GRID_RADIUS_16"
+      }
+    },
+    "C5_SPARSE_GRID_RADIUS_24": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 49.0,
+        "p95_candidate_count": 49.0,
+        "candidate_semantic_ambiguity": 2.0,
+        "candidate_instance_ambiguity": 2.0,
+        "semantic_entropy_in_candidates": 0.5487346661140989,
+        "nearest_correct_candidate_offset_px_mean": 2.823529411764706,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 17,
+        "scene": "isolated_object",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C5_SPARSE_GRID_RADIUS_24"
+      }
+    },
+    "C6_COARSE_TO_FINE_SPARSE_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 36.0,
+        "p95_candidate_count": 36.0,
+        "candidate_semantic_ambiguity": 1.1176470588235294,
+        "candidate_instance_ambiguity": 1.1176470588235294,
+        "semantic_entropy_in_candidates": 0.03374540977131302,
+        "nearest_correct_candidate_offset_px_mean": 22.031311622687443,
+        "maximum_candidate_offset_px": 35.35533905932738,
+        "point_count": 17,
+        "scene": "isolated_object",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C6_COARSE_TO_FINE_SPARSE_SEARCH"
+      }
+    },
+    "C7_MULTISCALE_PYRAMID_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 33.0,
+        "p95_candidate_count": 33.0,
+        "candidate_semantic_ambiguity": 2.0,
+        "candidate_instance_ambiguity": 2.0,
+        "semantic_entropy_in_candidates": 0.44323130217184104,
+        "nearest_correct_candidate_offset_px_mean": 2.823529411764706,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 17,
+        "scene": "isolated_object",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C7_MULTISCALE_PYRAMID_SEARCH"
+      }
+    }
+  },
+  "human_beside_wall": {
+    "C0_HARD_SINGLE_PIXEL": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.7692307692307693,
+        "correct_instance_coverage": 0.7692307692307693,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 1.0,
+        "p95_candidate_count": 1.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 0.0,
+        "point_count": 39,
+        "scene": "human_beside_wall",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C0_HARD_SINGLE_PIXEL"
+      }
+    },
+    "C1_LOCAL_3X3": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.7692307692307693,
+        "correct_instance_coverage": 0.7692307692307693,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 9.0,
+        "p95_candidate_count": 9.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 1.4142135623730951,
+        "point_count": 39,
+        "scene": "human_beside_wall",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C1_LOCAL_3X3"
+      }
+    },
+    "C2_LOCAL_5X5": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.7948717948717948,
+        "correct_instance_coverage": 0.7948717948717948,
+        "coverage_on_hard_misclassified": 0.1111111111111111,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.0512820512820513,
+        "candidate_instance_ambiguity": 1.0512820512820513,
+        "semantic_entropy_in_candidates": 0.025661662745548097,
+        "nearest_correct_candidate_offset_px_mean": 0.06451612903225806,
+        "maximum_candidate_offset_px": 2.8284271247461903,
+        "point_count": 39,
+        "scene": "human_beside_wall",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C2_LOCAL_5X5"
+      }
+    },
+    "C3_SPARSE_GRID_RADIUS_8": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.8974358974358975,
+        "correct_instance_coverage": 0.8974358974358975,
+        "coverage_on_hard_misclassified": 0.5555555555555556,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.2307692307692308,
+        "candidate_instance_ambiguity": 1.2307692307692308,
+        "semantic_entropy_in_candidates": 0.13318099450584528,
+        "nearest_correct_candidate_offset_px_mean": 0.9142857142857143,
+        "maximum_candidate_offset_px": 11.313708498984761,
+        "point_count": 39,
+        "scene": "human_beside_wall",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C3_SPARSE_GRID_RADIUS_8"
+      }
+    },
+    "C4_SPARSE_GRID_RADIUS_16": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.9743589743589743,
+        "correct_instance_coverage": 0.9743589743589743,
+        "coverage_on_hard_misclassified": 0.8888888888888888,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.564102564102564,
+        "candidate_instance_ambiguity": 1.564102564102564,
+        "semantic_entropy_in_candidates": 0.3221111925405063,
+        "nearest_correct_candidate_offset_px_mean": 2.3157894736842106,
+        "maximum_candidate_offset_px": 22.627416997969522,
+        "point_count": 39,
+        "scene": "human_beside_wall",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C4_SPARSE_GRID_RADIUS_16"
+      }
+    },
+    "C5_SPARSE_GRID_RADIUS_24": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.9743589743589743,
+        "correct_instance_coverage": 0.9743589743589743,
+        "coverage_on_hard_misclassified": 0.8888888888888888,
+        "average_candidate_count": 49.0,
+        "p95_candidate_count": 49.0,
+        "candidate_semantic_ambiguity": 1.794871794871795,
+        "candidate_instance_ambiguity": 1.794871794871795,
+        "semantic_entropy_in_candidates": 0.44836692955317914,
+        "nearest_correct_candidate_offset_px_mean": 2.3157894736842106,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 39,
+        "scene": "human_beside_wall",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C5_SPARSE_GRID_RADIUS_24"
+      }
+    },
+    "C6_COARSE_TO_FINE_SPARSE_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.8717948717948718,
+        "correct_instance_coverage": 0.8717948717948718,
+        "coverage_on_hard_misclassified": 0.4444444444444444,
+        "average_candidate_count": 36.0,
+        "p95_candidate_count": 36.0,
+        "candidate_semantic_ambiguity": 1.2307692307692308,
+        "candidate_instance_ambiguity": 1.2307692307692308,
+        "semantic_entropy_in_candidates": 0.12534615824869158,
+        "nearest_correct_candidate_offset_px_mean": 22.515655811343724,
+        "maximum_candidate_offset_px": 35.35533905932738,
+        "point_count": 39,
+        "scene": "human_beside_wall",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C6_COARSE_TO_FINE_SPARSE_SEARCH"
+      }
+    },
+    "C7_MULTISCALE_PYRAMID_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.9743589743589743,
+        "correct_instance_coverage": 0.9743589743589743,
+        "coverage_on_hard_misclassified": 0.8888888888888888,
+        "average_candidate_count": 33.0,
+        "p95_candidate_count": 33.0,
+        "candidate_semantic_ambiguity": 1.794871794871795,
+        "candidate_instance_ambiguity": 1.794871794871795,
+        "semantic_entropy_in_candidates": 0.3647167014097084,
+        "nearest_correct_candidate_offset_px_mean": 2.1578947368421053,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 39,
+        "scene": "human_beside_wall",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C7_MULTISCALE_PYRAMID_SEARCH"
+      }
+    }
+  },
+  "multiple_nearby_instances": {
+    "C0_HARD_SINGLE_PIXEL": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.75,
+        "correct_instance_coverage": 0.75,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 1.0,
+        "p95_candidate_count": 1.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 0.0,
+        "point_count": 28,
+        "scene": "multiple_nearby_instances",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C0_HARD_SINGLE_PIXEL"
+      }
+    },
+    "C1_LOCAL_3X3": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.75,
+        "correct_instance_coverage": 0.75,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 9.0,
+        "p95_candidate_count": 9.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 1.4142135623730951,
+        "point_count": 28,
+        "scene": "multiple_nearby_instances",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C1_LOCAL_3X3"
+      }
+    },
+    "C2_LOCAL_5X5": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.7857142857142857,
+        "correct_instance_coverage": 0.7857142857142857,
+        "coverage_on_hard_misclassified": 0.14285714285714285,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.0714285714285714,
+        "candidate_instance_ambiguity": 1.0714285714285714,
+        "semantic_entropy_in_candidates": 0.0357430302527277,
+        "nearest_correct_candidate_offset_px_mean": 0.09090909090909091,
+        "maximum_candidate_offset_px": 2.8284271247461903,
+        "point_count": 28,
+        "scene": "multiple_nearby_instances",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C2_LOCAL_5X5"
+      }
+    },
+    "C3_SPARSE_GRID_RADIUS_8": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.9285714285714286,
+        "correct_instance_coverage": 0.9285714285714286,
+        "coverage_on_hard_misclassified": 0.7142857142857143,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.3214285714285714,
+        "candidate_instance_ambiguity": 1.3214285714285714,
+        "semantic_entropy_in_candidates": 0.18550209949028448,
+        "nearest_correct_candidate_offset_px_mean": 1.2307692307692308,
+        "maximum_candidate_offset_px": 11.313708498984761,
+        "point_count": 28,
+        "scene": "multiple_nearby_instances",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C3_SPARSE_GRID_RADIUS_8"
+      }
+    },
+    "C4_SPARSE_GRID_RADIUS_16": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.6428571428571428,
+        "candidate_instance_ambiguity": 1.6428571428571428,
+        "semantic_entropy_in_candidates": 0.37716881481882136,
+        "nearest_correct_candidate_offset_px_mean": 2.5714285714285716,
+        "maximum_candidate_offset_px": 22.627416997969522,
+        "point_count": 28,
+        "scene": "multiple_nearby_instances",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C4_SPARSE_GRID_RADIUS_16"
+      }
+    },
+    "C5_SPARSE_GRID_RADIUS_24": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 49.0,
+        "p95_candidate_count": 49.0,
+        "candidate_semantic_ambiguity": 1.9285714285714286,
+        "candidate_instance_ambiguity": 1.9285714285714286,
+        "semantic_entropy_in_candidates": 0.5357029662919885,
+        "nearest_correct_candidate_offset_px_mean": 2.5714285714285716,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 28,
+        "scene": "multiple_nearby_instances",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C5_SPARSE_GRID_RADIUS_24"
+      }
+    },
+    "C6_COARSE_TO_FINE_SPARSE_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 36.0,
+        "p95_candidate_count": 36.0,
+        "candidate_semantic_ambiguity": 1.1071428571428572,
+        "candidate_instance_ambiguity": 1.1071428571428572,
+        "semantic_entropy_in_candidates": 0.03073242675601721,
+        "nearest_correct_candidate_offset_px_mean": 21.253236735501385,
+        "maximum_candidate_offset_px": 35.35533905932738,
+        "point_count": 28,
+        "scene": "multiple_nearby_instances",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C6_COARSE_TO_FINE_SPARSE_SEARCH"
+      }
+    },
+    "C7_MULTISCALE_PYRAMID_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 33.0,
+        "p95_candidate_count": 33.0,
+        "candidate_semantic_ambiguity": 1.9285714285714286,
+        "candidate_instance_ambiguity": 1.9285714285714286,
+        "semantic_entropy_in_candidates": 0.43880277456966715,
+        "nearest_correct_candidate_offset_px_mean": 2.357142857142857,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 28,
+        "scene": "multiple_nearby_instances",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C7_MULTISCALE_PYRAMID_SEARCH"
+      }
+    }
+  },
+  "foreground_occlusion": {
+    "C0_HARD_SINGLE_PIXEL": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.8275862068965517,
+        "correct_instance_coverage": 0.8275862068965517,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 1.0,
+        "p95_candidate_count": 1.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 0.0,
+        "point_count": 29,
+        "scene": "foreground_occlusion",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C0_HARD_SINGLE_PIXEL"
+      }
+    },
+    "C1_LOCAL_3X3": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.8275862068965517,
+        "correct_instance_coverage": 0.8275862068965517,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 9.0,
+        "p95_candidate_count": 9.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 1.4142135623730951,
+        "point_count": 29,
+        "scene": "foreground_occlusion",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C1_LOCAL_3X3"
+      }
+    },
+    "C2_LOCAL_5X5": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.8620689655172413,
+        "correct_instance_coverage": 0.8620689655172413,
+        "coverage_on_hard_misclassified": 0.2,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.0344827586206897,
+        "candidate_instance_ambiguity": 1.0344827586206897,
+        "semantic_entropy_in_candidates": 0.017255255984075443,
+        "nearest_correct_candidate_offset_px_mean": 0.08,
+        "maximum_candidate_offset_px": 2.8284271247461903,
+        "point_count": 29,
+        "scene": "foreground_occlusion",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C2_LOCAL_5X5"
+      }
+    },
+    "C3_SPARSE_GRID_RADIUS_8": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.9310344827586207,
+        "correct_instance_coverage": 0.9310344827586207,
+        "coverage_on_hard_misclassified": 0.6,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.206896551724138,
+        "candidate_instance_ambiguity": 1.206896551724138,
+        "semantic_entropy_in_candidates": 0.10319043255642019,
+        "nearest_correct_candidate_offset_px_mean": 0.7407407407407407,
+        "maximum_candidate_offset_px": 11.313708498984761,
+        "point_count": 29,
+        "scene": "foreground_occlusion",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C3_SPARSE_GRID_RADIUS_8"
+      }
+    },
+    "C4_SPARSE_GRID_RADIUS_16": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.4137931034482758,
+        "candidate_instance_ambiguity": 1.4137931034482758,
+        "semantic_entropy_in_candidates": 0.23842358566503635,
+        "nearest_correct_candidate_offset_px_mean": 1.9310344827586208,
+        "maximum_candidate_offset_px": 22.627416997969522,
+        "point_count": 29,
+        "scene": "foreground_occlusion",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C4_SPARSE_GRID_RADIUS_16"
+      }
+    },
+    "C5_SPARSE_GRID_RADIUS_24": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 49.0,
+        "p95_candidate_count": 49.0,
+        "candidate_semantic_ambiguity": 1.5517241379310345,
+        "candidate_instance_ambiguity": 1.5517241379310345,
+        "semantic_entropy_in_candidates": 0.3194749925721395,
+        "nearest_correct_candidate_offset_px_mean": 1.9310344827586208,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 29,
+        "scene": "foreground_occlusion",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C5_SPARSE_GRID_RADIUS_24"
+      }
+    },
+    "C6_COARSE_TO_FINE_SPARSE_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 36.0,
+        "p95_candidate_count": 36.0,
+        "candidate_semantic_ambiguity": 1.0689655172413792,
+        "candidate_instance_ambiguity": 1.0689655172413792,
+        "semantic_entropy_in_candidates": 0.025427489376636737,
+        "nearest_correct_candidate_offset_px_mean": 22.39531068224648,
+        "maximum_candidate_offset_px": 35.35533905932738,
+        "point_count": 29,
+        "scene": "foreground_occlusion",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C6_COARSE_TO_FINE_SPARSE_SEARCH"
+      }
+    },
+    "C7_MULTISCALE_PYRAMID_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 33.0,
+        "p95_candidate_count": 33.0,
+        "candidate_semantic_ambiguity": 1.5517241379310345,
+        "candidate_instance_ambiguity": 1.5517241379310345,
+        "semantic_entropy_in_candidates": 0.26025281782241066,
+        "nearest_correct_candidate_offset_px_mean": 1.7241379310344827,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 29,
+        "scene": "foreground_occlusion",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C7_MULTISCALE_PYRAMID_SEARCH"
+      }
+    }
+  },
+  "image_border": {
+    "C0_HARD_SINGLE_PIXEL": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.0,
+        "correct_instance_coverage": 0.0,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 0.5555555555555556,
+        "p95_candidate_count": 1.0,
+        "candidate_semantic_ambiguity": 0.5555555555555556,
+        "candidate_instance_ambiguity": 0.5555555555555556,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": null,
+        "maximum_candidate_offset_px": 0.0,
+        "point_count": 9,
+        "scene": "image_border",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C0_HARD_SINGLE_PIXEL"
+      }
+    },
+    "C1_LOCAL_3X3": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.0,
+        "correct_instance_coverage": 0.0,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 5.0,
+        "p95_candidate_count": 9.0,
+        "candidate_semantic_ambiguity": 0.5555555555555556,
+        "candidate_instance_ambiguity": 0.5555555555555556,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": null,
+        "maximum_candidate_offset_px": 1.4142135623730951,
+        "point_count": 9,
+        "scene": "image_border",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C1_LOCAL_3X3"
+      }
+    },
+    "C2_LOCAL_5X5": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.0,
+        "correct_instance_coverage": 0.0,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 13.88888888888889,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 0.5555555555555556,
+        "candidate_instance_ambiguity": 0.5555555555555556,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": null,
+        "maximum_candidate_offset_px": 2.8284271247461903,
+        "point_count": 9,
+        "scene": "image_border",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C2_LOCAL_5X5"
+      }
+    },
+    "C3_SPARSE_GRID_RADIUS_8": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.2222222222222222,
+        "correct_instance_coverage": 0.2222222222222222,
+        "coverage_on_hard_misclassified": 0.2222222222222222,
+        "average_candidate_count": 12.222222222222221,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 0.7777777777777778,
+        "candidate_instance_ambiguity": 0.7777777777777778,
+        "semantic_entropy_in_candidates": 0.14955814822427924,
+        "nearest_correct_candidate_offset_px_mean": 4.0,
+        "maximum_candidate_offset_px": 11.313708498984761,
+        "point_count": 9,
+        "scene": "image_border",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C3_SPARSE_GRID_RADIUS_8"
+      }
+    },
+    "C4_SPARSE_GRID_RADIUS_16": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.4444444444444444,
+        "correct_instance_coverage": 0.4444444444444444,
+        "coverage_on_hard_misclassified": 0.4444444444444444,
+        "average_candidate_count": 11.11111111111111,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.2827636274369038,
+        "nearest_correct_candidate_offset_px_mean": 12.0,
+        "maximum_candidate_offset_px": 22.627416997969522,
+        "point_count": 9,
+        "scene": "image_border",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C4_SPARSE_GRID_RADIUS_16"
+      }
+    },
+    "C5_SPARSE_GRID_RADIUS_24": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.5555555555555556,
+        "correct_instance_coverage": 0.5555555555555556,
+        "coverage_on_hard_misclassified": 0.5555555555555556,
+        "average_candidate_count": 19.444444444444443,
+        "p95_candidate_count": 42.0,
+        "candidate_semantic_ambiguity": 1.1111111111111112,
+        "candidate_instance_ambiguity": 1.1111111111111112,
+        "semantic_entropy_in_candidates": 0.3683098170342112,
+        "nearest_correct_candidate_offset_px_mean": 14.4,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 9,
+        "scene": "image_border",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C5_SPARSE_GRID_RADIUS_24"
+      }
+    },
+    "C6_COARSE_TO_FINE_SPARSE_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.5555555555555556,
+        "correct_instance_coverage": 0.5555555555555556,
+        "coverage_on_hard_misclassified": 0.5555555555555556,
+        "average_candidate_count": 20.0,
+        "p95_candidate_count": 36.0,
+        "candidate_semantic_ambiguity": 0.5555555555555556,
+        "candidate_instance_ambiguity": 0.5555555555555556,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 19.706459517137308,
+        "maximum_candidate_offset_px": 35.35533905932738,
+        "point_count": 9,
+        "scene": "image_border",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C6_COARSE_TO_FINE_SPARSE_SEARCH"
+      }
+    },
+    "C7_MULTISCALE_PYRAMID_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.5555555555555556,
+        "correct_instance_coverage": 0.5555555555555556,
+        "coverage_on_hard_misclassified": 0.5555555555555556,
+        "average_candidate_count": 15.0,
+        "p95_candidate_count": 30.0,
+        "candidate_semantic_ambiguity": 1.1111111111111112,
+        "candidate_instance_ambiguity": 1.1111111111111112,
+        "semantic_entropy_in_candidates": 0.2989489010047429,
+        "nearest_correct_candidate_offset_px_mean": 14.4,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 9,
+        "scene": "image_border",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C7_MULTISCALE_PYRAMID_SEARCH"
+      }
+    }
+  },
+  "narrow_corridor": {
+    "C0_HARD_SINGLE_PIXEL": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.4375,
+        "correct_instance_coverage": 0.4375,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 1.0,
+        "p95_candidate_count": 1.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 0.0,
+        "point_count": 16,
+        "scene": "narrow_corridor",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C0_HARD_SINGLE_PIXEL"
+      }
+    },
+    "C1_LOCAL_3X3": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.5,
+        "correct_instance_coverage": 0.5,
+        "coverage_on_hard_misclassified": 0.1111111111111111,
+        "average_candidate_count": 9.0,
+        "p95_candidate_count": 9.0,
+        "candidate_semantic_ambiguity": 1.0625,
+        "candidate_instance_ambiguity": 1.0625,
+        "semantic_entropy_in_candidates": 0.0397821355184258,
+        "nearest_correct_candidate_offset_px_mean": 0.125,
+        "maximum_candidate_offset_px": 1.4142135623730951,
+        "point_count": 16,
+        "scene": "narrow_corridor",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C1_LOCAL_3X3"
+      }
+    },
+    "C2_LOCAL_5X5": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.5625,
+        "correct_instance_coverage": 0.5625,
+        "coverage_on_hard_misclassified": 0.2222222222222222,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.125,
+        "candidate_instance_ambiguity": 1.125,
+        "semantic_entropy_in_candidates": 0.07333838065921527,
+        "nearest_correct_candidate_offset_px_mean": 0.3333333333333333,
+        "maximum_candidate_offset_px": 2.8284271247461903,
+        "point_count": 16,
+        "scene": "narrow_corridor",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C2_LOCAL_5X5"
+      }
+    },
+    "C3_SPARSE_GRID_RADIUS_8": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.8125,
+        "correct_instance_coverage": 0.8125,
+        "coverage_on_hard_misclassified": 0.6666666666666666,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.625,
+        "candidate_instance_ambiguity": 1.625,
+        "semantic_entropy_in_candidates": 0.3559038255791346,
+        "nearest_correct_candidate_offset_px_mean": 2.769230769230769,
+        "maximum_candidate_offset_px": 11.313708498984761,
+        "point_count": 16,
+        "scene": "narrow_corridor",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C3_SPARSE_GRID_RADIUS_8"
+      }
+    },
+    "C4_SPARSE_GRID_RADIUS_16": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 2.125,
+        "candidate_instance_ambiguity": 2.125,
+        "semantic_entropy_in_candidates": 0.6560217633297167,
+        "nearest_correct_candidate_offset_px_mean": 6.0,
+        "maximum_candidate_offset_px": 22.627416997969522,
+        "point_count": 16,
+        "scene": "narrow_corridor",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C4_SPARSE_GRID_RADIUS_16"
+      }
+    },
+    "C5_SPARSE_GRID_RADIUS_24": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 49.0,
+        "p95_candidate_count": 49.0,
+        "candidate_semantic_ambiguity": 2.5,
+        "candidate_instance_ambiguity": 2.5,
+        "semantic_entropy_in_candidates": 0.8188458157305314,
+        "nearest_correct_candidate_offset_px_mean": 6.0,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 16,
+        "scene": "narrow_corridor",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C5_SPARSE_GRID_RADIUS_24"
+      }
+    },
+    "C6_COARSE_TO_FINE_SPARSE_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 36.0,
+        "p95_candidate_count": 36.0,
+        "candidate_semantic_ambiguity": 1.75,
+        "candidate_instance_ambiguity": 1.75,
+        "semantic_entropy_in_candidates": 0.42261870619673536,
+        "nearest_correct_candidate_offset_px_mean": 20.27527106831397,
+        "maximum_candidate_offset_px": 35.35533905932738,
+        "point_count": 16,
+        "scene": "narrow_corridor",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C6_COARSE_TO_FINE_SPARSE_SEARCH"
+      }
+    },
+    "C7_MULTISCALE_PYRAMID_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 33.0,
+        "p95_candidate_count": 33.0,
+        "candidate_semantic_ambiguity": 2.5,
+        "candidate_instance_ambiguity": 2.5,
+        "semantic_entropy_in_candidates": 0.6918288556151551,
+        "nearest_correct_candidate_offset_px_mean": 5.25,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 16,
+        "scene": "narrow_corridor",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C7_MULTISCALE_PYRAMID_SEARCH"
+      }
+    }
+  },
+  "vehicle_behind_obstacle": {
+    "C0_HARD_SINGLE_PIXEL": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.84,
+        "correct_instance_coverage": 0.84,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 1.0,
+        "p95_candidate_count": 1.0,
+        "candidate_semantic_ambiguity": 1.0,
+        "candidate_instance_ambiguity": 1.0,
+        "semantic_entropy_in_candidates": 0.0,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 0.0,
+        "point_count": 25,
+        "scene": "vehicle_behind_obstacle",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C0_HARD_SINGLE_PIXEL"
+      }
+    },
+    "C1_LOCAL_3X3": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.84,
+        "correct_instance_coverage": 0.84,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 9.0,
+        "p95_candidate_count": 9.0,
+        "candidate_semantic_ambiguity": 1.04,
+        "candidate_instance_ambiguity": 1.04,
+        "semantic_entropy_in_candidates": 0.025460566731792512,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 1.4142135623730951,
+        "point_count": 25,
+        "scene": "vehicle_behind_obstacle",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C1_LOCAL_3X3"
+      }
+    },
+    "C2_LOCAL_5X5": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.84,
+        "correct_instance_coverage": 0.84,
+        "coverage_on_hard_misclassified": 0.0,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.04,
+        "candidate_instance_ambiguity": 1.04,
+        "semantic_entropy_in_candidates": 0.02692046668037026,
+        "nearest_correct_candidate_offset_px_mean": 0.0,
+        "maximum_candidate_offset_px": 2.8284271247461903,
+        "point_count": 25,
+        "scene": "vehicle_behind_obstacle",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C2_LOCAL_5X5"
+      }
+    },
+    "C3_SPARSE_GRID_RADIUS_8": {
+      "3cm_3deg": {
+        "correct_class_coverage": 0.92,
+        "correct_instance_coverage": 0.92,
+        "coverage_on_hard_misclassified": 0.5,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.2,
+        "candidate_instance_ambiguity": 1.2,
+        "semantic_entropy_in_candidates": 0.12079359392416582,
+        "nearest_correct_candidate_offset_px_mean": 0.5217391304347826,
+        "maximum_candidate_offset_px": 11.313708498984761,
+        "point_count": 25,
+        "scene": "vehicle_behind_obstacle",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C3_SPARSE_GRID_RADIUS_8"
+      }
+    },
+    "C4_SPARSE_GRID_RADIUS_16": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 25.0,
+        "p95_candidate_count": 25.0,
+        "candidate_semantic_ambiguity": 1.48,
+        "candidate_instance_ambiguity": 1.48,
+        "semantic_entropy_in_candidates": 0.24863507525794734,
+        "nearest_correct_candidate_offset_px_mean": 1.92,
+        "maximum_candidate_offset_px": 22.627416997969522,
+        "point_count": 25,
+        "scene": "vehicle_behind_obstacle",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C4_SPARSE_GRID_RADIUS_16"
+      }
+    },
+    "C5_SPARSE_GRID_RADIUS_24": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 49.0,
+        "p95_candidate_count": 49.0,
+        "candidate_semantic_ambiguity": 1.64,
+        "candidate_instance_ambiguity": 1.64,
+        "semantic_entropy_in_candidates": 0.3585395513574548,
+        "nearest_correct_candidate_offset_px_mean": 1.92,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 25,
+        "scene": "vehicle_behind_obstacle",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C5_SPARSE_GRID_RADIUS_24"
+      }
+    },
+    "C6_COARSE_TO_FINE_SPARSE_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 36.0,
+        "p95_candidate_count": 36.0,
+        "candidate_semantic_ambiguity": 1.04,
+        "candidate_instance_ambiguity": 1.04,
+        "semantic_entropy_in_candidates": 0.011473439322246426,
+        "nearest_correct_candidate_offset_px_mean": 22.08340971771733,
+        "maximum_candidate_offset_px": 35.35533905932738,
+        "point_count": 25,
+        "scene": "vehicle_behind_obstacle",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C6_COARSE_TO_FINE_SPARSE_SEARCH"
+      }
+    },
+    "C7_MULTISCALE_PYRAMID_SEARCH": {
+      "3cm_3deg": {
+        "correct_class_coverage": 1.0,
+        "correct_instance_coverage": 1.0,
+        "coverage_on_hard_misclassified": 1.0,
+        "average_candidate_count": 33.0,
+        "p95_candidate_count": 33.0,
+        "candidate_semantic_ambiguity": 1.64,
+        "candidate_instance_ambiguity": 1.64,
+        "semantic_entropy_in_candidates": 0.2910935152420022,
+        "nearest_correct_candidate_offset_px_mean": 1.92,
+        "maximum_candidate_offset_px": 33.94112549695428,
+        "point_count": 25,
+        "scene": "vehicle_behind_obstacle",
+        "translation_m": 0.03,
+        "rotation_deg": 3,
+        "method": "C7_MULTISCALE_PYRAMID_SEARCH"
+      }
+    }
+  }
+}

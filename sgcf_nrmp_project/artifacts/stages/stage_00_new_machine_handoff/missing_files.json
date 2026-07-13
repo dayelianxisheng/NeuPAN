@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "missing_required_directories": [],
+  "missing_required_files": [],
+  "expected_geometry_shards": 13,
+  "observed_geometry_shards": 13,
+  "notes": ["No missing item triggered regeneration or retraining."]
+}

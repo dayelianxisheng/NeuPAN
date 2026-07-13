@@ -1,0 +1,13 @@
+artifacts/stages/stage_08_sparse_local_soft_fusion/stage_08a_decision.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/stage_08_blocking_report.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/reliability_feature_definition.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/reliability_information_boundary.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/reliability_identifiability_counterexample.json
+artifacts/stages/stage_08_sparse_local_soft_fusion/stage_08b_report.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/stage_08_final_decision.md
+artifacts/stages/stage_08_sparse_local_soft_fusion/test_output_stage_08b.txt
+artifacts/stages/stage_08_sparse_local_soft_fusion/files_changed_stage_08b.txt
+
+No core implementation, learned gate, checkpoint, semantic-margin definition,
+exact geometry, Planner, protected NeuPAN path, ROS, Gazebo, or Stage-09 file was
+created or modified in Stage 08B.

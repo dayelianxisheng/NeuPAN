@@ -1,0 +1,11 @@
+{
+  "compared_sample_count": 9147,
+  "ambiguous_or_invalid_count": 742,
+  "gx_mae": 0.0028616145374677072,
+  "gy_mae": 0.001539825584775651,
+  "yaw_mae": 0.0013369084307529443,
+  "translation_cosine_similarity_mean": 0.99978215467155,
+  "gradient_sign_disagreement": 0.004810320323603367,
+  "nan_or_inf_count": 0,
+  "pass": true
+}

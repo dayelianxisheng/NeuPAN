@@ -1,0 +1,204 @@
+{
+  "config_hash": "1ce0d06e548e20d69fc33b20102b203fa4dea1ed73446e44b51a746a35d06ec7",
+  "splits": {
+    "test": {
+      "sample_count": 480,
+      "scene_ids": [
+        7,
+        12,
+        16,
+        18,
+        22,
+        34,
+        38,
+        55,
+        58,
+        63,
+        64,
+        68,
+        71,
+        74,
+        79
+      ],
+      "shards": [
+        {
+          "path": "test/shard_00000.npz",
+          "sample_count": 256,
+          "sha256": "d870c1dd781ae64580d8a210a22a537f96c4d9f1d98da6420e008945102c8c8e",
+          "size_bytes": 27785
+        },
+        {
+          "path": "test/shard_00001.npz",
+          "sample_count": 224,
+          "sha256": "56ac9e8ba8b4be5f58d9a4a0fb0c5c9f6fc57f5b89b878c8f4ffa1956a122e8c",
+          "size_bytes": 22139
+        }
+      ]
+    },
+    "train": {
+      "sample_count": 2240,
+      "scene_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        17,
+        19,
+        20,
+        21,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        36,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        54,
+        56,
+        57,
+        59,
+        60,
+        61,
+        62,
+        65,
+        66,
+        67,
+        70,
+        72,
+        73,
+        77,
+        78,
+        81,
+        82,
+        83,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        93,
+        94,
+        95,
+        96,
+        98,
+        99
+      ],
+      "shards": [
+        {
+          "path": "train/shard_00000.npz",
+          "sample_count": 256,
+          "sha256": "954c5b345ec7778784b47dad695f6d596b33bc2536ff2a0f61445b0b4bc6f89d",
+          "size_bytes": 26766
+        },
+        {
+          "path": "train/shard_00001.npz",
+          "sample_count": 256,
+          "sha256": "16e38057c9d55a1a28a1a956a56273353fcae33e41df88c09d6bdeb3d1da2ae8",
+          "size_bytes": 27810
+        },
+        {
+          "path": "train/shard_00002.npz",
+          "sample_count": 256,
+          "sha256": "86df6252e202c5f2681cdb1c19af9016a72dd9c61e4cb44fb92cbd143ad94eac",
+          "size_bytes": 28990
+        },
+        {
+          "path": "train/shard_00003.npz",
+          "sample_count": 256,
+          "sha256": "fa04afb97de5346f709c0263463d46ab0a84a00f4b55c9187a94c358aa9e1f92",
+          "size_bytes": 26497
+        },
+        {
+          "path": "train/shard_00004.npz",
+          "sample_count": 256,
+          "sha256": "d615f2d06c59aa9b944f2c8fd410566d6d387f41e088fc9e604b3ffbaca0edde",
+          "size_bytes": 27205
+        },
+        {
+          "path": "train/shard_00005.npz",
+          "sample_count": 256,
+          "sha256": "f57798c24524035553368234ad3b1e60de5ce5b08f6f638584a0355f8186e7a4",
+          "size_bytes": 27550
+        },
+        {
+          "path": "train/shard_00006.npz",
+          "sample_count": 256,
+          "sha256": "06d53006e9cb5032ec5a91560372b45f9b496ca571dd0e29317bf21069307eb6",
+          "size_bytes": 26083
+        },
+        {
+          "path": "train/shard_00007.npz",
+          "sample_count": 256,
+          "sha256": "5d7193704c199114c9c01a40f57b48e429cb14b989bd3f95e41c71fd1e0a5c02",
+          "size_bytes": 27849
+        },
+        {
+          "path": "train/shard_00008.npz",
+          "sample_count": 192,
+          "sha256": "ef67439a22bcce7dba47af3fd02cbc35752c115441e6e16196ecb1953dc88b31",
+          "size_bytes": 20894
+        }
+      ]
+    },
+    "validation": {
+      "sample_count": 480,
+      "scene_ids": [
+        0,
+        15,
+        23,
+        27,
+        37,
+        44,
+        51,
+        53,
+        69,
+        75,
+        76,
+        80,
+        84,
+        92,
+        97
+      ],
+      "shards": [
+        {
+          "path": "validation/shard_00000.npz",
+          "sample_count": 256,
+          "sha256": "a7663767ce670426e1214171def18c5ed673042505be7d2e307cfbf530b95ac1",
+          "size_bytes": 27868
+        },
+        {
+          "path": "validation/shard_00001.npz",
+          "sample_count": 224,
+          "sha256": "9c8989cc0580ddf05780eb47f048f6ca8798aaa1c3b46d1efd4d420b2f5e69a2",
+          "size_bytes": 26378
+        }
+      ]
+    }
+  }
+}

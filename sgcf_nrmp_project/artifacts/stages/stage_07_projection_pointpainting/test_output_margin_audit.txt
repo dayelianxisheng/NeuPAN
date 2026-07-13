@@ -1,0 +1,20 @@
+Semantic-margin focused unittest: 10/10 passed in 0.013 s
+Full standard-library unittest: 102/102 passed in 11.962 s
+compileall: PASS
+
+Covered:
+- single HUMAN bound <= 0.35 m
+- single VEHICLE bound <= 0.20 m
+- static wall plus farther HUMAN
+- occluded HUMAN excluded from online margin
+- out-of-FOV HUMAN excluded from online margin
+- random common-obstacle-set upper bound
+- truncation boundary
+- collision query
+- no visible semantic obstacle -> zero margin
+- different hidden worlds with identical observable data -> identical margin
+
+Post-repair deterministic heatmap range: 0.0 to 0.3500000000000001 m
+Tolerance: 1e-6 m
+Violation count: 0
+NaN/Inf: 0

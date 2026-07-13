@@ -1,0 +1,115 @@
+{
+  "same_planner_class": true,
+  "same_config_object": true,
+  "semantic_margin_parameter_p0_value": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "cycles": [
+    {
+      "cycle": 0,
+      "state_max_abs_error": 0.0,
+      "control_max_abs_error": 0.0,
+      "slack_max_abs_error": 0.0,
+      "distance_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status_equal": true,
+      "qp_problem_identity_persistent_a": 135092026625616,
+      "qp_problem_identity_persistent_b": 135092024864256
+    },
+    {
+      "cycle": 1,
+      "state_max_abs_error": 0.0,
+      "control_max_abs_error": 0.0,
+      "slack_max_abs_error": 0.0,
+      "distance_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status_equal": true,
+      "qp_problem_identity_persistent_a": 135092026625616,
+      "qp_problem_identity_persistent_b": 135092024864256
+    },
+    {
+      "cycle": 2,
+      "state_max_abs_error": 0.0,
+      "control_max_abs_error": 0.0,
+      "slack_max_abs_error": 0.0,
+      "distance_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status_equal": true,
+      "qp_problem_identity_persistent_a": 135092026625616,
+      "qp_problem_identity_persistent_b": 135092024864256
+    },
+    {
+      "cycle": 3,
+      "state_max_abs_error": 0.0,
+      "control_max_abs_error": 0.0,
+      "slack_max_abs_error": 0.0,
+      "distance_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status_equal": true,
+      "qp_problem_identity_persistent_a": 135092026625616,
+      "qp_problem_identity_persistent_b": 135092024864256
+    },
+    {
+      "cycle": 4,
+      "state_max_abs_error": 0.0,
+      "control_max_abs_error": 0.0,
+      "slack_max_abs_error": 0.0,
+      "distance_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status_equal": true,
+      "qp_problem_identity_persistent_a": 135092026625616,
+      "qp_problem_identity_persistent_b": 135092024864256
+    },
+    {
+      "cycle": 5,
+      "state_max_abs_error": 0.0,
+      "control_max_abs_error": 0.0,
+      "slack_max_abs_error": 0.0,
+      "distance_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status_equal": true,
+      "qp_problem_identity_persistent_a": 135092026625616,
+      "qp_problem_identity_persistent_b": 135092024864256
+    },
+    {
+      "cycle": 6,
+      "state_max_abs_error": 0.0,
+      "control_max_abs_error": 0.0,
+      "slack_max_abs_error": 0.0,
+      "distance_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status_equal": true,
+      "qp_problem_identity_persistent_a": 135092026625616,
+      "qp_problem_identity_persistent_b": 135092024864256
+    },
+    {
+      "cycle": 7,
+      "state_max_abs_error": 0.0,
+      "control_max_abs_error": 0.0,
+      "slack_max_abs_error": 0.0,
+      "distance_max_abs_error": 0.0,
+      "gradient_max_abs_error": 0.0,
+      "status_equal": true,
+      "qp_problem_identity_persistent_a": 135092026625616,
+      "qp_problem_identity_persistent_b": 135092024864256
+    }
+  ],
+  "maxima": {
+    "state_max_abs_error": 0.0,
+    "control_max_abs_error": 0.0,
+    "slack_max_abs_error": 0.0,
+    "distance_max_abs_error": 0.0,
+    "gradient_max_abs_error": 0.0
+  }
+}

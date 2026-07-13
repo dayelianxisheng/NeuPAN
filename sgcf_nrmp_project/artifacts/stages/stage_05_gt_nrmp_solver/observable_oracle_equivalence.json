@@ -1,0 +1,11 @@
+{
+  "scene_count": 100,
+  "queries_per_scene": 100,
+  "sample_count": 10000,
+  "maximum_absolute_distance_error_m": 1.7763568394002505e-15,
+  "mean_absolute_distance_error_m": 1.7724071179909402e-16,
+  "p95_absolute_distance_error_m": 4.440892098500626e-16,
+  "collision_agreement": 1.0,
+  "nearest_obstacle_agreement": 0.99978489997849,
+  "pass": true
+}

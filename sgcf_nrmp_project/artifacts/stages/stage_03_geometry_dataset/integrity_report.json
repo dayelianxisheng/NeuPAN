@@ -1,0 +1,8 @@
+{
+  "nan_or_inf_count": 0,
+  "sample_count": 3200,
+  "scene_count": 100,
+  "scene_leakage": false,
+  "temporary_file_count": 0,
+  "valid": true
+}

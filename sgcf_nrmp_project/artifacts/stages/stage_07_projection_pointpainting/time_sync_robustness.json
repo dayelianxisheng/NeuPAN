@@ -1,0 +1,42 @@
+[
+  {
+    "image_age_s": 0.0,
+    "projection_validity": 1.0,
+    "label_agreement": 1.0,
+    "mean_confidence": 1.0,
+    "mean_reliability": 1.0,
+    "semantic_margin_mae_m": 0.0
+  },
+  {
+    "image_age_s": 0.05,
+    "projection_validity": 1.0,
+    "label_agreement": 1.0,
+    "mean_confidence": 1.0,
+    "mean_reliability": 1.0,
+    "semantic_margin_mae_m": 0.0
+  },
+  {
+    "image_age_s": 0.1,
+    "projection_validity": 1.0,
+    "label_agreement": 1.0,
+    "mean_confidence": 1.0,
+    "mean_reliability": 1.0,
+    "semantic_margin_mae_m": 0.0
+  },
+  {
+    "image_age_s": 0.3,
+    "projection_validity": 1.0,
+    "label_agreement": 0.0,
+    "mean_confidence": 0.0,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.1076923076923077
+  },
+  {
+    "image_age_s": 0.5,
+    "projection_validity": 1.0,
+    "label_agreement": 0.0,
+    "mean_confidence": 0.0,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.1076923076923077
+  }
+]

@@ -2,7 +2,11 @@
 
 ## Result
 
-**PASS for the Stage-05 exact-Oracle optimizer scope, with a documented complex-geometry latency limitation.**
+**PASS for the Stage-05 exact-Oracle optimizer scope, including the repaired complex-geometry online latency gate.**
+
+The Exact Observable Oracle performance repair strictly separates online planning from complete-world evaluation. The online planner now receives only the current LiDAR observation and uses a batched analytic rectangle-to-point Oracle with Torch autograd. Complete-world geometry is owned only by `OfflineWorldEvaluator`, called after control selection by the simulator.
+
+> 在线规划器只依赖当前 LiDAR 可观测障碍信息；完整世界几何仅由离线评估器使用，不参与控制求解、状态判断、回退决策或 warm start。
 
 The two mandatory real-time gates pass at `dt_s=0.2`. The planner uses exact
 `observable_clearance` and finite-difference observable gradients for its normal
@@ -115,25 +119,19 @@ Error increases with radius as expected. The configured medium trust region is
 retained because nonlinear rollout and exact recheck protect acceptance; the
 analysis supports shrinking it on rejection.
 
-## Known limitation: dense exact-geometry latency
+## Resolved limitation: dense exact-geometry latency
 
-The mandatory empty and circle P95 gates pass. In two-wall corridor scenes,
-however, exact finite-difference Oracle evaluation dominates the cycle:
+The earlier implementation mixed complete-world `scene.label()` work into the online checker and performed six Shapely queries per state for finite differences. Its recorded results were:
 
 - Corridor mean/P95: 310.87/364.44 ms.
 - Narrow passage mean/P95: 320.72/374.64 ms.
 
-QP wall time remains about 4–5 ms. This is therefore not a persistent-QP or OSQP
-failure and a direct OSQP backend would not remove the dominant cost. It is a
-Stage-05 exact-Oracle implementation limitation caused by repeated footprint to
-many-observed-points distance evaluations. Safety checks were not reduced and
-`dt_s` was not changed. Before deployment, batch/vectorized Oracle gradients or
-the Stage-04 learned proxy should be evaluated under a separate approved stage.
+The repaired analytic Oracle preserves the exact rectangle-to-LiDAR-point definition and batches the full horizon. New online P95 is 23.18 ms for corridor and 21.97 ms for narrow passage; single obstacle is 17.03 ms. Observable distance-plus-gradient P95 per SCP is below 0.55 ms in all three cases. Offline world evaluation and visualization are measured separately. Safety checks, `dt_s`, horizon, LiDAR points, and SCP limits were not reduced.
 
 ## Verification
 
-- Full standard-library suite: **64 tests passed** in 12.506 s.
-- Stage-05 planner suite: **12 tests passed** in 0.658 s.
+- Full standard-library suite: **77 tests passed** in 10.687 s.
+- Stage-05 planner/interface/Oracle suite: **25 tests passed** in 1.331 s.
 - `python -m compileall`: passed.
 - `git diff --check`: passed.
 - Deterministic fixed-seed gate/scenario runs: passed.

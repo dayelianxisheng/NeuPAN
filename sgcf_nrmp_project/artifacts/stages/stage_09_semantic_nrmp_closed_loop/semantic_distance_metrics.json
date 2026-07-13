@@ -1,0 +1,17 @@
+{
+  "evaluation_wall_s": 68.04063582420349,
+  "deterministic_scenarios": 20,
+  "random_smoke_episodes": 20,
+  "human_clearance": {
+    "P0": 0.30271393134774893,
+    "P1": 0.5978830647418316,
+    "P2": 0.5978830647418316
+  },
+  "static_clearance": {
+    "P0": 0.30271393134774893,
+    "P1": 0.30271393134774893,
+    "P2": 0.30271393134774893
+  },
+  "observable_collisions": 3,
+  "online_p95_max_ms": 179.09349700494204
+}

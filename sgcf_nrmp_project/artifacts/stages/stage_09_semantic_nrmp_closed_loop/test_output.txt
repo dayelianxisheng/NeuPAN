@@ -1,0 +1,15 @@
+Stage 09 partial verification (stopped on mandatory conditions)
+
+PASS compileall before closed-loop evaluation
+PASS explicit_failure_gate unittest: 2 tests
+PASS semantic_margin_provider unittest: 2 tests
+PASS existing planner behavior unittest: 6 tests
+PASS semantic planner integration unittest: 4 tests
+PASS single-HUMAN smoke: all modes completed; P0 0.347 m, P1/P2 0.597 m
+PASS STATIC smoke: equal minimum clearance in P0/P1/P2
+PASS dropout/stale smoke: P2 controls bitwise equal to P0
+BLOCK deterministic evaluation: 3 observable collision flags (emergency-stop fixture)
+BLOCK deterministic evaluation: worst online P95 175.493 ms (>100 ms)
+
+No complete post-change suite was run after the mandatory stop.
+

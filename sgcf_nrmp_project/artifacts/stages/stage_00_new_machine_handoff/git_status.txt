@@ -1,0 +1,38 @@
+COMMAND: git branch --show-current
+main
+
+COMMAND: git rev-parse --short HEAD
+fffaf87
+
+COMMAND: git log --oneline -10
+fffaf87 feat: add SGCF-NRMP stages 01-05
+54a291c 新计划
+f254c54 方向
+64140cf 小车调头循环不行
+9dcc904 docs: add mowen README with run guide and file reference
+1b15f93 fix: reset cur_vel_array on loop to prevent second-cycle drift
+6981ac4 fix: avoid duplicate start point in init_path_with_state
+9badf2c fix: set pure_neupan waypoints to near-start so robot waits for NavGoal
+cda489f fix: reduce pure_neupan ref_speed 0.7->0.3 for stable arrive detection
+4d4c663 revert: remove omni phi init (not root cause of backward issue)
+
+COMMAND: git remote -v
+origin  git@github.com:dayelianxisheng/NeuPAN.git (fetch)
+origin  git@github.com:dayelianxisheng/NeuPAN.git (push)
+
+COMMAND: git cat-file -t 579e7af
+commit
+
+COMMAND: git status --short (before this report directory)
+ M .gitignore
+ M sgcf_nrmp_project/.gitignore
+?? AGENTS.md
+?? sgcf_nrmp_project/artifacts/datasets/geometry_v1/
+?? sgcf_nrmp_project/artifacts/stages/stage_01_repository_audit/{commands.log,tests.log}
+?? sgcf_nrmp_project/artifacts/stages/stage_02_procedural_geometry/ (copied logs, JSON, PNG)
+?? sgcf_nrmp_project/artifacts/stages/stage_03_geometry_dataset/ (copied logs, JSON, PNG)
+?? sgcf_nrmp_project/artifacts/stages/stage_04_lidar_clearance_field/ (copied logs, JSON, PNG, CSV)
+?? sgcf_nrmp_project/artifacts/stages/stage_05_gt_nrmp_solver/ (copied JSON, PNG, GIF)
+?? uv.lock
+
+The untracked groups above match the copied archive inventory checked immediately before this handoff. No protected-directory worktree changes were present.

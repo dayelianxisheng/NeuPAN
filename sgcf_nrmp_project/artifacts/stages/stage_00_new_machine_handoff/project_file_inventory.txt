@@ -1,0 +1,29 @@
+Required directory inventory (regular-file counts):
+core/src/sgcf_nrmp: 65
+core/configs: 6
+core/scripts: 11
+core/tests: 20
+artifacts/datasets/geometry_v1: 17
+artifacts/stages/stage_01_repository_audit: 7
+artifacts/stages/stage_02_procedural_geometry: 22
+artifacts/stages/stage_03_geometry_dataset: 18
+artifacts/stages/stage_04_lidar_clearance_field: 26
+
+geometry_v1 shards (13):
+test/shard_00000.npz
+test/shard_00001.npz
+train/shard_00000.npz
+train/shard_00001.npz
+train/shard_00002.npz
+train/shard_00003.npz
+train/shard_00004.npz
+train/shard_00005.npz
+train/shard_00006.npz
+train/shard_00007.npz
+train/shard_00008.npz
+validation/shard_00000.npz
+validation/shard_00001.npz
+
+Manifest/config: split_manifest.json, metadata.json, dataset_schema.json, config_snapshot.yaml
+Stage 04: best_model.pt; best_checkpoint_metadata.json; test_metrics.json; gradient_metrics.json; false_safe_report.json; PNG figures; training_config.yaml; training_history.csv
+Environment locks: docs/version_lock.json and repository-root uv.lock

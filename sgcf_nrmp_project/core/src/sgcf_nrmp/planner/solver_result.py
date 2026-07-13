@@ -21,9 +21,7 @@ class SolverResult:
     solve_time_ms: float=0.
     scp_iterations: int=0
     min_observable_clearance: float=float("inf")
-    min_world_clearance: float=float("inf")
     violated_points: int=0
-    partial_observation_world_risk: bool=False
     rejection_count: int=0
     diagnostics: dict=field(default_factory=dict)
 

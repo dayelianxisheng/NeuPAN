@@ -1,0 +1,124 @@
+{
+  "backend": "persistent_cvxpy_parameter_osqp",
+  "dt_s": 0.2,
+  "problem_is_dpp": true,
+  "cases": {
+    "no_obstacle_straight": {
+      "metrics": {
+        "success": true,
+        "steps": 25,
+        "navigation_time_s": 5.0,
+        "path_length_m": 3.8171125538226414,
+        "control_smoothness": 0.034292773205042267,
+        "min_observable_clearance_m": 8.0,
+        "min_world_clearance_m": 8.0,
+        "observable_collision": false,
+        "world_collision": false,
+        "partial_observation_world_risk": false,
+        "average_qp_solve_ms": 3.8940304777986343,
+        "p95_qp_solve_ms": 2.9035002997261468,
+        "max_qp_solve_ms": 103.26679699937813,
+        "average_end_to_end_ms": 24.170311160123674,
+        "p95_end_to_end_ms": 25.87677020055707,
+        "max_end_to_end_ms": 124.34100199970999,
+        "end_to_end_over_200ms_count": 0,
+        "scp_iterations_mean": 2.68,
+        "max_slack": 0.0,
+        "geometry_recheck_rejections": 0,
+        "fallback_count": 0,
+        "emergency_stop_count": 0
+      },
+      "timing_breakdown_per_scp_ms": {
+        "geometry_query_ms": {
+          "mean": 3.200687417826084,
+          "p95": 3.3795556995755756,
+          "max": 4.310809999878984,
+          "count": 67
+        },
+        "parameter_update_ms": {
+          "mean": 1.1559400149623675,
+          "p95": 1.2368868010526057,
+          "max": 1.700823999271961,
+          "count": 67
+        },
+        "solve_wall_ms": {
+          "mean": 3.8940304777986343,
+          "p95": 2.9035002997261468,
+          "max": 103.26679699937813,
+          "count": 67
+        },
+        "osqp_internal_ms": {
+          "mean": 0.301635,
+          "p95": 0.37354099999999985,
+          "max": 1.161902,
+          "count": 67
+        },
+        "recheck_ms": {
+          "mean": 0.34204967386872537,
+          "p95": 0.46269204922282375,
+          "max": 0.595468001847621,
+          "count": 92
+        }
+      }
+    },
+    "single_circle_detour": {
+      "metrics": {
+        "success": true,
+        "steps": 29,
+        "navigation_time_s": 5.800000000000001,
+        "path_length_m": 4.316299894531821,
+        "control_smoothness": 0.08128056417860986,
+        "min_observable_clearance_m": 0.3334288874212151,
+        "min_world_clearance_m": 0.3333831739143513,
+        "observable_collision": false,
+        "world_collision": false,
+        "partial_observation_world_risk": false,
+        "average_qp_solve_ms": 3.5287214555358366,
+        "p95_qp_solve_ms": 2.9211068991571665,
+        "max_qp_solve_ms": 81.98418599931756,
+        "average_end_to_end_ms": 70.13387506946134,
+        "p95_end_to_end_ms": 89.9573022026743,
+        "max_end_to_end_ms": 147.91726800103788,
+        "end_to_end_over_200ms_count": 0,
+        "scp_iterations_mean": 2.7241379310344827,
+        "max_slack": 8.112667312815128e-08,
+        "geometry_recheck_rejections": 0,
+        "fallback_count": 0,
+        "emergency_stop_count": 0
+      },
+      "timing_breakdown_per_scp_ms": {
+        "geometry_query_ms": {
+          "mean": 16.731180266071554,
+          "p95": 19.16313929723401,
+          "max": 19.931880000513047,
+          "count": 79
+        },
+        "parameter_update_ms": {
+          "mean": 1.4877852154313587,
+          "p95": 1.237109600333497,
+          "max": 26.51633999994374,
+          "count": 79
+        },
+        "solve_wall_ms": {
+          "mean": 3.5287214555358366,
+          "p95": 2.9211068991571665,
+          "max": 81.98418599931756,
+          "count": 79
+        },
+        "osqp_internal_ms": {
+          "mean": 0.3284932658227847,
+          "p95": 0.43423599999999984,
+          "max": 3.074818,
+          "count": 79
+        },
+        "recheck_ms": {
+          "mean": 1.6749816385426028,
+          "p95": 2.5180653488860116,
+          "max": 2.754421002464369,
+          "count": 108
+        }
+      }
+    }
+  },
+  "gate_pass": true
+}

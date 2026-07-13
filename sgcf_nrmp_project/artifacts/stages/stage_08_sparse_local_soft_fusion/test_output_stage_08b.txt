@@ -1,0 +1,14 @@
+Stage-08B identifiability gate: FAILED (mandatory stop condition 3)
+
+Constructed paired observations:
+- permitted feature vectors: bitwise identical
+- case A reliability GT: 1.0
+- case B reliability GT: 0.0
+- deterministic rule separable: no
+- deterministic MLP separable: no
+
+No model forward, overfit test, training, checkpoint selection, threshold tuning,
+test evaluation, or latency benchmark was run after the mandatory stop.
+
+Stage-07 already verifies R1 hard shutdown for dropout, stale image, invalid
+projection, and UNKNOWN. This does not resolve silent misalignment.

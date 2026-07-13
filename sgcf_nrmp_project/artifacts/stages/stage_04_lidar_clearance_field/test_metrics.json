@@ -1,0 +1,18 @@
+{
+  "mae": 0.0730779618024826,
+  "rmse": 0.1299298256635666,
+  "median_absolute_error": 0.0565749928355217,
+  "p90_absolute_error": 0.1258839845657349,
+  "near_boundary_mae": 0.04745877906680107,
+  "collision_region_mae": 0.05998934432864189,
+  "free_region_mae": 0.10361043363809586,
+  "pearson_correlation": 0.9952006501290542,
+  "safety_threshold_accuracy": 0.9875,
+  "safety_threshold_precision": 0.9800995024875622,
+  "safety_threshold_recall": 0.9899497487437185,
+  "safety_threshold_f1": 0.985,
+  "collision_accuracy": 0.9791666666666666,
+  "collision_precision": 0.9111111111111111,
+  "collision_recall": 0.8723404255319149,
+  "collision_f1": 0.8913043478260869
+}

@@ -16,7 +16,7 @@ import yaml
 from sgcf_nrmp.data.procedural.scene import ProceduralScene
 from sgcf_nrmp.data.procedural.scene_generator import circle_obstacle, corridor_obstacles, rectangle_obstacle, wall_obstacle
 from sgcf_nrmp.geometry.footprint import rectangular_footprint
-from sgcf_nrmp.planner.geometry_checker import ExactGeometryChecker
+from sgcf_nrmp.planner.geometry_checker import ExactObservableChecker
 from sgcf_nrmp.planner.gt_nrmp_planner import GTNRMPPlanner
 from sgcf_nrmp.planner.offline_simulator import run_closed_loop
 from sgcf_nrmp.planner.reference import polyline_path
@@ -65,13 +65,13 @@ def cases():
 
 def linearization_analysis(scene,path):
     footprint=rectangular_footprint(CONFIG["robot"]["footprint_length_m"],CONFIG["robot"]["footprint_width_m"])
-    base=np.asarray([.65,.7,.35]); scan=scene.scan(Pose2D(*base),LIDAR,np.random.default_rng(3)); checker=ExactGeometryChecker(scene,scan,footprint,8.)
+    base=np.asarray([.65,.7,.35]); scan=scene.scan(Pose2D(*base),LIDAR,np.random.default_rng(3)); checker=ExactObservableChecker(scan,CONFIG["robot"]["footprint_length_m"],CONFIG["robot"]["footprint_width_m"],8.)
     d,g,valid=checker.linearization(base[None,:]); radii=[.01,.03,.05,.10]; yaw_deg=[1,3,5,10]; rng=np.random.default_rng(4); data={}
     for radius,angle in zip(radii,yaw_deg):
         errors=[]
         for _ in range(80):
             delta=np.r_[rng.uniform(-radius,radius,2),rng.uniform(-np.deg2rad(angle),np.deg2rad(angle))]
-            actual=checker.recheck((base+delta)[None,:],CONFIG["planner"]["d_safe_m"])["observable"][0]
+            actual=checker.recheck_observable_trajectory((base+delta)[None,:],CONFIG["planner"]["d_safe_m"])["observable"][0]
             errors.append(abs(actual-(d[0]+g[0]@delta)))
         data[f"xy_{radius:.2f}m_yaw_{angle}deg"]={"mae_m":float(np.mean(errors)),"p95_m":float(np.percentile(errors,95)),"gradient_valid":bool(valid[0])}
     (OUT/"linearization_error_by_radius.json").write_text(json.dumps(data,indent=2)+"\n")

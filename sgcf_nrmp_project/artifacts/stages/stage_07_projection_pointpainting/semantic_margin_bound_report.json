@@ -1,0 +1,20 @@
+{
+  "configured_classes": [
+    {"class_id": 0, "class_name": "UNKNOWN", "configured_margin_m": 0.0},
+    {"class_id": 1, "class_name": "STATIC_OBSTACLE", "configured_margin_m": 0.0},
+    {"class_id": 2, "class_name": "HUMAN", "configured_margin_m": 0.35},
+    {"class_id": 3, "class_name": "VEHICLE", "configured_margin_m": 0.2},
+    {"class_id": 4, "class_name": "ROBOT", "configured_margin_m": 0.15}
+  ],
+  "configuration_override_found": false,
+  "unit_conversion_found": false,
+  "pre_repair_maximum_m": 0.4146153846153845,
+  "post_repair_minimum_m": 0.0,
+  "post_repair_maximum_m": 0.3500000000000001,
+  "maximum_visible_class_margin_m": 0.35,
+  "acceptance_tolerance_m": 0.000001,
+  "violation_count": 0,
+  "lower_bound_assertion_enabled": true,
+  "upper_bound_assertion_enabled": true,
+  "pass": true
+}

@@ -1,0 +1,87 @@
+{
+  "evaluation_only": [
+    "world_clearance",
+    "world_collision"
+  ],
+  "fields": {
+    "observable_available": {
+      "dtype": "bool"
+    },
+    "observable_clearance": {
+      "dtype": "float32"
+    },
+    "observable_collision": {
+      "dtype": "bool"
+    },
+    "observable_gradient": {
+      "dtype": "float32",
+      "shape": [
+        3
+      ]
+    },
+    "observable_gradient_valid": {
+      "dtype": "bool"
+    },
+    "point_valid_mask": {
+      "dtype": "bool",
+      "shape": [
+        180
+      ]
+    },
+    "points_xy": {
+      "dtype": "float32",
+      "shape": [
+        180,
+        2
+      ]
+    },
+    "query_category": {
+      "dtype": "int8"
+    },
+    "query_id": {
+      "dtype": "int64"
+    },
+    "query_pose": {
+      "dtype": "float32",
+      "shape": [
+        4
+      ]
+    },
+    "ranges": {
+      "dtype": "float32",
+      "shape": [
+        180
+      ]
+    },
+    "scene_id": {
+      "dtype": "int64"
+    },
+    "seed": {
+      "dtype": "int64"
+    },
+    "world_clearance": {
+      "dtype": "float32"
+    },
+    "world_collision": {
+      "dtype": "bool"
+    },
+    "world_gradient": {
+      "dtype": "float32",
+      "shape": [
+        3
+      ]
+    },
+    "world_gradient_valid": {
+      "dtype": "bool"
+    }
+  },
+  "fixed_point_count": 180,
+  "query_categories": {
+    "collision": 3,
+    "collision_boundary": 2,
+    "free": 0,
+    "safety_boundary": 1
+  },
+  "schema_version": "geometry_v1",
+  "supervision_target": "observable_clearance"
+}

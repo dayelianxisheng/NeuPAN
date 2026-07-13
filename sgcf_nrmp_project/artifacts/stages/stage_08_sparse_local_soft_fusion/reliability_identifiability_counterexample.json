@@ -1,0 +1,19 @@
+{
+  "feature_names": [
+    "projection_valid", "semantic_max_probability", "semantic_entropy",
+    "unknown_probability", "border_distance_px", "u", "v", "lidar_range",
+    "beam_index", "neighbor_range_difference", "neighbor_class_disagreement",
+    "local_probability_disagreement", "distance_to_semantic_boundary",
+    "valid_projected_neighbor_ratio", "rgb_available", "image_age_s",
+    "frame_valid_projection_ratio", "frame_unknown_ratio", "frame_mean_entropy",
+    "frame_mean_disagreement", "painted_transition_rate",
+    "range_discontinuity_rate", "transition_consistency"
+  ],
+  "shared_feature_vector": [1,1,0,0,100,160,120,2,90,0,0,0,40,1,1,0,1,0,0,0,0,0,1],
+  "case_a": {"meaning": "correctly projected true HUMAN in uniform HUMAN region", "reliability_gt": 1.0},
+  "case_b": {"meaning": "misprojected true STATIC point in the same HUMAN region", "reliability_gt": 0.0},
+  "feature_vectors_bitwise_equal": true,
+  "deterministic_rule_can_separate": false,
+  "deterministic_mlp_can_separate": false,
+  "forbidden_information_required_to_resolve": ["GT point class", "true calibration error", "Oracle instance/depth", "world geometry"]
+}

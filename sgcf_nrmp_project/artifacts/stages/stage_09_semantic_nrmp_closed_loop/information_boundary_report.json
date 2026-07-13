@@ -1,0 +1,9 @@
+{
+  "status": "PASS_FOR_IMPLEMENTED_PATH",
+  "planner_inputs": ["state", "reference", "observable_lidar_points", "painted_semantic_probabilities", "projection_validity", "image_availability", "image_age", "warm_start"],
+  "forbidden_inputs_present": false,
+  "world_geometry_usage": "OfflineWorldEvaluator only after control selection; synthetic oracle semantics are prepared outside planner",
+  "exact_geometry_modified_by_semantics": false,
+  "silent_calibration_detection_claimed": false
+}
+

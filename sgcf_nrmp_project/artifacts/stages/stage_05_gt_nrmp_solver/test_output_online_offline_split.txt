@@ -1,0 +1,7 @@
+Command: PYTHONPATH=sgcf_nrmp_project/core/src:sgcf_nrmp_project/core/tests python -m unittest discover -s sgcf_nrmp_project/core/tests/planner -p 'test_*.py' -v
+Result: PASS
+Tests run: 25
+Failures: 0
+Errors: 0
+
+Covered: planner signature, world-evaluator isolation, identical-observation action equality, independent offline risk, timing separation, warm-start immutability, planner-output boundary, hidden-risk classification, explicit observable candidate rejection, legacy split equivalence, batched distance, autograd, empty scan, masking, dynamics, DPP QP, and planner behavior.

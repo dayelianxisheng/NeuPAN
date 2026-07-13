@@ -1,0 +1,42 @@
+{
+  "no_obstacle_tracking": {
+    "fallback_count": 0,
+    "emergency_stop_count": 0,
+    "geometry_recheck_rejections": 0
+  },
+  "no_obstacle_turning": {
+    "fallback_count": 0,
+    "emergency_stop_count": 0,
+    "geometry_recheck_rejections": 0
+  },
+  "single_obstacle_avoidance": {
+    "fallback_count": 0,
+    "emergency_stop_count": 0,
+    "geometry_recheck_rejections": 0
+  },
+  "rotated_rectangle": {
+    "fallback_count": 0,
+    "emergency_stop_count": 0,
+    "geometry_recheck_rejections": 0
+  },
+  "corridor_navigation": {
+    "fallback_count": 0,
+    "emergency_stop_count": 0,
+    "geometry_recheck_rejections": 0
+  },
+  "narrow_passage": {
+    "fallback_count": 0,
+    "emergency_stop_count": 0,
+    "geometry_recheck_rejections": 0
+  },
+  "u_shape_case": {
+    "fallback_count": 1,
+    "emergency_stop_count": 0,
+    "geometry_recheck_rejections": 3
+  },
+  "infeasible_case": {
+    "fallback_count": 1,
+    "emergency_stop_count": 0,
+    "geometry_recheck_rejections": 3
+  }
+}

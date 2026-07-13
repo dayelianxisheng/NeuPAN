@@ -1,0 +1,21 @@
+Implementation:
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/geometry_checker.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/gt_nrmp_planner.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/offline_simulator.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/solver_result.py
+sgcf_nrmp_project/core/tests/planner/test_batched_observable_oracle.py
+sgcf_nrmp_project/core/tests/planner/test_online_offline_boundary.py
+sgcf_nrmp_project/core/tests/planner/test_planner_behavior.py
+sgcf_nrmp_project/core/scripts/benchmark_exact_oracle_optimization.py
+sgcf_nrmp_project/core/scripts/run_gt_nrmp_scenarios.py
+
+Stage-05 artifacts:
+oracle_profile_before.json, oracle_profile_after.json, oracle_equivalence_report.json,
+oracle_gradient_equivalence.json, oracle_benchmark_comparison.json,
+planner_latency_breakdown.json, latency_breakdown_before_after.json,
+single_obstacle_latency_after.json, corridor_latency_after.json,
+narrow_passage_latency_after.json, observable_oracle_equivalence.json,
+offline_world_evaluation_report.json, information_boundary_test_report.json,
+world_information_leakage_test.json, exact_oracle_optimization.md,
+online_offline_interface_design.md, latency_definition.md, test outputs,
+file inventories, and five required PNG figures plus three scenario plots.

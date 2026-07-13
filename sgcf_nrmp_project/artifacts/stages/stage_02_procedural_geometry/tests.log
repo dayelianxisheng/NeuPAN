@@ -1,0 +1,17 @@
+Command:
+PYTHONPATH=sgcf_nrmp/src python -m unittest discover -s sgcf_nrmp/tests -v
+
+Result: 16 tests passed, 0 failed, 0 skipped.
+
+Numerical checks include exact/near-exact circle, rectangle, wall-ray,
+translation-gradient and yaw-gradient cases; view limits, max range, occlusion,
+dropout, transform inversion, collision and deterministic RNG are also covered.
+
+Additional checks:
+- python -m compileall: PASS
+- git diff --check: PASS
+- visualization hash rerun: PASS
+- known_case_validation.json pass: true
+- random scenes: 1000
+- random queries: 3000
+- NaN/Inf: 0

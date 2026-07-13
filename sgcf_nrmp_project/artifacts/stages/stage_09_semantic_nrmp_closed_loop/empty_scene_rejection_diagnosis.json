@@ -1,0 +1,3273 @@
+{
+  "root_cause": "Stage09 fixture name bug created a circle obstacle for no_obstacle_*; exact empty oracle itself returns truncation=8, zero gradient, invalid linearization slots, and passes recheck.",
+  "after_fix": {
+    "R0_empty_straight": {
+      "STAGE05_ORIGINAL": {
+        "statuses": [
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE"
+        ],
+        "metrics": {
+          "success": false,
+          "steps": 12,
+          "navigation_time_s": 2.4000000000000004,
+          "path_length_m": 1.7601723855526,
+          "control_smoothness": 0.06070708800804483,
+          "min_observable_clearance_m": 8.0,
+          "min_world_clearance_m": 8.0,
+          "observable_collision": false,
+          "world_collision": false,
+          "partial_observation_world_risk": false,
+          "initial_collision": false,
+          "planner_induced_collision": false,
+          "trajectory_collision": false,
+          "correct_emergency_stop": false,
+          "average_qp_solve_ms": 5.426065721621853,
+          "p95_qp_solve_ms": 2.3900502474134555,
+          "max_qp_solve_ms": 123.2592879969161,
+          "average_end_to_end_ms": 20.257304083012666,
+          "p95_end_to_end_ms": 65.55795774766003,
+          "max_end_to_end_ms": 132.1842179968371,
+          "average_offline_world_evaluation_ms": 0.07219466654836044,
+          "p95_offline_world_evaluation_ms": 0.09647239894547965,
+          "end_to_end_over_100ms_count": 1,
+          "scp_iterations_mean": 3.0,
+          "max_slack": 0.0,
+          "geometry_recheck_rejections": 0,
+          "fallback_count": 0,
+          "emergency_stop_count": 0,
+          "termination_reason": "EPISODE_MAX_STEPS",
+          "termination_step": 12,
+          "last_valid_action": [
+            0.7990119250425491,
+            0.0
+          ],
+          "last_planner_status": "SOLVED_SAFE",
+          "goal_distance_m": 2.2398276144474,
+          "yaw_error_rad": 0.0,
+          "warm_start_valid": true,
+          "first_cycle_online_ms": 132.1842179968371,
+          "steady_state_mean_ms": 10.082130090846807,
+          "steady_state_p50_ms": 10.032651000074111,
+          "steady_state_p95_ms": 10.6587779991969,
+          "steady_state_p99_ms": 10.968205998506164
+        },
+        "latency": {
+          "first_cycle_ms": 132.1842179968371,
+          "steady_mean_ms": 10.082130090846807,
+          "steady_p50_ms": 10.032651000074111,
+          "steady_p95_ms": 10.6587779991969,
+          "steady_p99_ms": 10.968205998506164,
+          "observation_mean_ms": 0.32336558554864797,
+          "offline_world_mean_ms": 0.07219466654836044
+        },
+        "components": {
+          "observable_distance_gradient_ms": {
+            "mean_ms": 0.020881111090097368,
+            "p95_ms": 0.028905000363010913
+          },
+          "semantic_margin_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "parameter_update_ms": {
+            "mean_ms": 0.9795637785524983,
+            "p95_ms": 1.0702082527132006
+          },
+          "solve_wall_ms": {
+            "mean_ms": 5.426065721621853,
+            "p95_ms": 2.3900502474134555
+          },
+          "osqp_internal_ms": {
+            "mean_ms": 0.28949480555555557,
+            "p95_ms": 0.45750899999999994
+          },
+          "observable_recheck_ms": {
+            "mean_ms": 0.04653306298981382,
+            "p95_ms": 0.06805200137023348
+          },
+          "fallback_status_selection_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "lidar_data_preparation_ms": {
+            "mean_ms": 0.32336558554864797,
+            "p95_ms": 0.3559386033884948
+          },
+          "checker_and_semantic_preparation_ms": {
+            "mean_ms": 0.018737085459482234,
+            "p95_ms": 0.02814320105244405
+          },
+          "reference_and_control_logic_ms": {
+            "mean_ms": 0.06112033346047004,
+            "p95_ms": 0.06759495008736849
+          },
+          "online_equivalent_planner_ms": {
+            "mean_ms": 20.257304083012666,
+            "p95_ms": 65.55795774766003
+          },
+          "offline_world_evaluation_ms": {
+            "mean_ms": 0.07219466654836044,
+            "p95_ms": 0.09647239894547965
+          }
+        },
+        "solver_details": [
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 250,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.0892959999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 122.1699919969161,
+            "first_solve": true
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 150,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.6464609999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8802190003009849,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.303493,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7609249967348464,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 75,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.394525,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7731079997717403,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.300669,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.724554999226,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.222089,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.1224179964509458,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.31777000000000005,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7755419958499445,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.302523,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7523969980450795,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21725,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7426500006564893,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.31371299999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7908199995104113,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21989399999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9779560008117407,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218102,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7895279988431856,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.308091,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7669969994011483,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218823,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7228420029597804,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.23361099999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7682989974888377,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.310645,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9509050056417658,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218083,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7561149995160363,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21479499999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.739735001967214,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.29713199999999995,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.744603002421774,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21703999999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8003389962427692,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218995,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.042835995848868,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30158999999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7914920028297603,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215557,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8571060027638748,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215507,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.739142997060187,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.29627000000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7670459947465174,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215757,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7361979969118089,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21345199999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7311989977569804,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.29546900000000004,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.74954200233756,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21386400000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7376509979270063,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.213815,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7593610039576328,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.298765,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7562950020214916,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21489599999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7403860012904704,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21379299999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7353669960019813,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.297853,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7533890014711098,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.217089,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7336139937813058,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215136,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7759830029233694,
+            "first_solve": false
+          }
+        ]
+      },
+      "P0": {
+        "statuses": [
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE"
+        ],
+        "metrics": {
+          "success": false,
+          "steps": 12,
+          "navigation_time_s": 2.4000000000000004,
+          "path_length_m": 1.7601723855526,
+          "control_smoothness": 0.06070708800804483,
+          "min_observable_clearance_m": 8.0,
+          "min_world_clearance_m": 8.0,
+          "observable_collision": false,
+          "world_collision": false,
+          "partial_observation_world_risk": false,
+          "initial_collision": false,
+          "planner_induced_collision": false,
+          "trajectory_collision": false,
+          "correct_emergency_stop": false,
+          "average_qp_solve_ms": 3.90871947214085,
+          "p95_qp_solve_ms": 2.474837252520956,
+          "max_qp_solve_ms": 68.83492699853377,
+          "average_end_to_end_ms": 15.636285834261798,
+          "p95_end_to_end_ms": 40.49226215065569,
+          "max_end_to_end_ms": 77.39847600169014,
+          "average_offline_world_evaluation_ms": 0.07411400171501252,
+          "p95_offline_world_evaluation_ms": 0.10350685261073522,
+          "end_to_end_over_100ms_count": 0,
+          "scp_iterations_mean": 3.0,
+          "max_slack": 0.0,
+          "geometry_recheck_rejections": 0,
+          "fallback_count": 0,
+          "emergency_stop_count": 0,
+          "termination_reason": "EPISODE_MAX_STEPS",
+          "termination_step": 12,
+          "last_valid_action": [
+            0.7990119250425491,
+            0.0
+          ],
+          "last_planner_status": "SOLVED_SAFE",
+          "goal_distance_m": 2.2398276144474,
+          "yaw_error_rad": 0.0,
+          "warm_start_valid": true,
+          "first_cycle_online_ms": 77.39847600169014,
+          "steady_state_mean_ms": 10.021541273586495,
+          "steady_state_p50_ms": 9.977577996323816,
+          "steady_state_p95_ms": 10.290177502611186,
+          "steady_state_p99_ms": 10.295050700369757
+        },
+        "latency": {
+          "first_cycle_ms": 77.39847600169014,
+          "steady_mean_ms": 10.021541273586495,
+          "steady_p50_ms": 9.977577996323816,
+          "steady_p95_ms": 10.290177502611186,
+          "steady_p99_ms": 10.295050700369757,
+          "observation_mean_ms": 0.3260031668711842,
+          "offline_world_mean_ms": 0.07411400171501252
+        },
+        "components": {
+          "observable_distance_gradient_ms": {
+            "mean_ms": 0.02105138891137257,
+            "p95_ms": 0.02861649772967212
+          },
+          "semantic_margin_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "parameter_update_ms": {
+            "mean_ms": 0.9602904996831462,
+            "p95_ms": 1.0925580008915858
+          },
+          "solve_wall_ms": {
+            "mean_ms": 3.90871947214085,
+            "p95_ms": 2.474837252520956
+          },
+          "osqp_internal_ms": {
+            "mean_ms": 0.2940529444444444,
+            "p95_ms": 0.45986974999999997
+          },
+          "observable_recheck_ms": {
+            "mean_ms": 0.04354695844691984,
+            "p95_ms": 0.06292254984145984
+          },
+          "fallback_status_selection_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "lidar_data_preparation_ms": {
+            "mean_ms": 0.3260031668711842,
+            "p95_ms": 0.3613363041949924
+          },
+          "checker_and_semantic_preparation_ms": {
+            "mean_ms": 0.019580333173507825,
+            "p95_ms": 0.03173844961565919
+          },
+          "reference_and_control_logic_ms": {
+            "mean_ms": 0.06344808389258105,
+            "p95_ms": 0.08268695019069125
+          },
+          "online_equivalent_planner_ms": {
+            "mean_ms": 15.636285834261798,
+            "p95_ms": 40.49226215065569
+          },
+          "offline_world_evaluation_ms": {
+            "mean_ms": 0.07411400171501252,
+            "p95_ms": 0.10350685261073522
+          }
+        },
+        "solver_details": [
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 250,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.103023,
+            "cvxpy_wrapper_and_canonicalization_ms": 67.73190399853378,
+            "first_solve": true
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 150,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.6651050000000001,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9292230052160844,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30867300000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7484010016410128,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 75,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.391458,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.764472000299122,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30133899999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7404460028024986,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21973499999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7886569953322038,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.311047,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.902923001321286,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.31279999999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7388229997156188,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22733,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.711110000230912,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30346399999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.750093000181172,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.228852,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7947780042597576,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22176900000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8567959976460262,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.312441,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7400849969872423,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.217852,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7374500028979518,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21914299999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.743331998435937,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.322069,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7685379985358045,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22153,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7511039960470796,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.221858,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.772105996937964,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30555699999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.740416000349477,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21850199999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7679779978677184,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.23079600000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7747599944012202,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30476400000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.76464300445557,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21812299999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7550419954337626,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21697,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7257879973125831,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.302431,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.765512998554256,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.221809,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7786070032840446,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219323,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7345660046533198,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30837200000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7720460021514184,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.220586,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7200479997658507,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219044,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.762145998332411,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30564600000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9040660017861015,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22234,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7482699992617965,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21718099999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7310369995975456,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.303002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7607540010072775,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21788,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7411590002122148,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.224092,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.21091500162258,
+            "first_solve": false
+          }
+        ]
+      },
+      "P1": {
+        "statuses": [
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE"
+        ],
+        "metrics": {
+          "success": false,
+          "steps": 12,
+          "navigation_time_s": 2.4000000000000004,
+          "path_length_m": 1.7601723855526,
+          "control_smoothness": 0.06070708800804483,
+          "min_observable_clearance_m": 8.0,
+          "min_world_clearance_m": 8.0,
+          "observable_collision": false,
+          "world_collision": false,
+          "partial_observation_world_risk": false,
+          "initial_collision": false,
+          "planner_induced_collision": false,
+          "trajectory_collision": false,
+          "correct_emergency_stop": false,
+          "average_qp_solve_ms": 3.9200683333749313,
+          "p95_qp_solve_ms": 2.51180749728519,
+          "max_qp_solve_ms": 68.32223999663256,
+          "average_end_to_end_ms": 20.128699416697298,
+          "p95_end_to_end_ms": 69.80341805028728,
+          "max_end_to_end_ms": 77.31628000328783,
+          "average_offline_world_evaluation_ms": 0.07004291607396833,
+          "p95_offline_world_evaluation_ms": 0.08192269924620631,
+          "end_to_end_over_100ms_count": 0,
+          "scp_iterations_mean": 3.0,
+          "max_slack": 0.0,
+          "geometry_recheck_rejections": 0,
+          "fallback_count": 0,
+          "emergency_stop_count": 0,
+          "termination_reason": "EPISODE_MAX_STEPS",
+          "termination_step": 12,
+          "last_valid_action": [
+            0.7990119250425491,
+            0.0
+          ],
+          "last_planner_status": "SOLVED_SAFE",
+          "goal_distance_m": 2.2398276144474,
+          "yaw_error_rad": 0.0,
+          "warm_start_valid": true,
+          "first_cycle_online_ms": 77.31628000328783,
+          "steady_state_mean_ms": 14.929828454279976,
+          "steady_state_p50_ms": 10.087393995490856,
+          "steady_state_p95_ms": 37.00758900231449,
+          "steady_state_p99_ms": 58.326742598728764
+        },
+        "latency": {
+          "first_cycle_ms": 77.31628000328783,
+          "steady_mean_ms": 14.929828454279976,
+          "steady_p50_ms": 10.087393995490856,
+          "steady_p95_ms": 37.00758900231449,
+          "steady_p99_ms": 58.326742598728764,
+          "observation_mean_ms": 0.315680915567403,
+          "offline_world_mean_ms": 0.07004291607396833
+        },
+        "components": {
+          "observable_distance_gradient_ms": {
+            "mean_ms": 0.021211443203760103,
+            "p95_ms": 0.027674497687257826
+          },
+          "semantic_margin_ms": {
+            "mean_ms": 0.001163083046170262,
+            "p95_ms": 0.0013779990695184097
+          },
+          "parameter_update_ms": {
+            "mean_ms": 2.4385127221143597,
+            "p95_ms": 1.1477267526061041
+          },
+          "solve_wall_ms": {
+            "mean_ms": 3.9200683333749313,
+            "p95_ms": 2.51180749728519
+          },
+          "osqp_internal_ms": {
+            "mean_ms": 0.2938477777777778,
+            "p95_ms": 0.4569145
+          },
+          "observable_recheck_ms": {
+            "mean_ms": 0.045689187724444004,
+            "p95_ms": 0.062349953077500686
+          },
+          "fallback_status_selection_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "lidar_data_preparation_ms": {
+            "mean_ms": 0.315680915567403,
+            "p95_ms": 0.33430024777771905
+          },
+          "checker_and_semantic_preparation_ms": {
+            "mean_ms": 0.04157191566870703,
+            "p95_ms": 0.09341959739685982
+          },
+          "reference_and_control_logic_ms": {
+            "mean_ms": 0.05953250062399699,
+            "p95_ms": 0.06539235182572155
+          },
+          "online_equivalent_planner_ms": {
+            "mean_ms": 20.128699416697298,
+            "p95_ms": 69.80341805028728
+          },
+          "offline_world_evaluation_ms": {
+            "mean_ms": 0.07004291607396833,
+            "p95_ms": 0.08192269924620631
+          },
+          "r1_gate_ms": {
+            "mean_ms": 0.0010794998767475288,
+            "p95_ms": 0.001577399962116032
+          },
+          "point_semantic_margin_ms": {
+            "mean_ms": 0.005304333778137031,
+            "p95_ms": 0.006469802610808982
+          },
+          "semantic_provider_total_ms": {
+            "mean_ms": 0.007531749361078255,
+            "p95_ms": 0.009487548231845718
+          }
+        },
+        "solver_details": [
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 250,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.0618740000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 67.26036599663256,
+            "first_solve": true
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 150,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.672067,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.0966499931596143,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.309153,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7744599988310858,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 75,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.385197,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7530599975685328,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30219,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7351660037114658,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.282794,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.0573350018227883,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.306569,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7613150010077692,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.29540700000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7315490045562685,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.214264,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7534410004247576,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.303794,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.739973999566626,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.224053,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7472690026460476,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21762099999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.768138001399856,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30822299999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7923230002925248,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.217891,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7441230010374598,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215557,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.737950999132853,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30543699999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9243220039670468,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219665,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7799799991595,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.216789,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7337229998939336,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.29632,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7435510039444269,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21621800000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7384319970601871,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.227259,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8720240031900666,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30214,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.782314994474072,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219705,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8241330015548318,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.228662,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.833370996036578,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30145000000000005,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8495810034500435,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22791100000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7573780036418103,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.23343100000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7602829950343408,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.308734,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9197829980023056,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21599800000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7370990021151007,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.214775,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7279229997660965,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30718,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.755804996882733,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.224474,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7710740020144022,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22007500000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7825150012115016,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.314884,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.1112869986603817,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22786099999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9091539988797495,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.232898,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7770870007682107,
+            "first_solve": false
+          }
+        ]
+      },
+      "P2": {
+        "statuses": [
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE"
+        ],
+        "metrics": {
+          "success": false,
+          "steps": 12,
+          "navigation_time_s": 2.4000000000000004,
+          "path_length_m": 1.7601723855526,
+          "control_smoothness": 0.06070708800804483,
+          "min_observable_clearance_m": 8.0,
+          "min_world_clearance_m": 8.0,
+          "observable_collision": false,
+          "world_collision": false,
+          "partial_observation_world_risk": false,
+          "initial_collision": false,
+          "planner_induced_collision": false,
+          "trajectory_collision": false,
+          "correct_emergency_stop": false,
+          "average_qp_solve_ms": 3.8970788332840636,
+          "p95_qp_solve_ms": 2.3040352534735575,
+          "max_qp_solve_ms": 68.20418700226583,
+          "average_end_to_end_ms": 15.599128249353575,
+          "p95_end_to_end_ms": 40.33514264665423,
+          "max_end_to_end_ms": 76.71404400025494,
+          "average_offline_world_evaluation_ms": 0.06926583349316691,
+          "p95_offline_world_evaluation_ms": 0.07445900191669352,
+          "end_to_end_over_100ms_count": 0,
+          "scp_iterations_mean": 3.0,
+          "max_slack": 0.0,
+          "geometry_recheck_rejections": 0,
+          "fallback_count": 0,
+          "emergency_stop_count": 0,
+          "termination_reason": "EPISODE_MAX_STEPS",
+          "termination_step": 12,
+          "last_valid_action": [
+            0.7990119250425491,
+            0.0
+          ],
+          "last_planner_status": "SOLVED_SAFE",
+          "goal_distance_m": 2.2398276144474,
+          "yaw_error_rad": 0.0,
+          "warm_start_valid": true,
+          "first_cycle_online_ms": 76.71404400025494,
+          "steady_state_mean_ms": 10.04322681745345,
+          "steady_state_p50_ms": 10.008896999352146,
+          "steady_state_p95_ms": 10.421565999422455,
+          "steady_state_p99_ms": 10.540782794851111
+        },
+        "latency": {
+          "first_cycle_ms": 76.71404400025494,
+          "steady_mean_ms": 10.04322681745345,
+          "steady_p50_ms": 10.008896999352146,
+          "steady_p95_ms": 10.421565999422455,
+          "steady_p99_ms": 10.540782794851111,
+          "observation_mean_ms": 0.3228336663596565,
+          "offline_world_mean_ms": 0.06926583349316691
+        },
+        "components": {
+          "observable_distance_gradient_ms": {
+            "mean_ms": 0.020514666781915974,
+            "p95_ms": 0.023181248252512887
+          },
+          "semantic_margin_ms": {
+            "mean_ms": 0.0010021946460862334,
+            "p95_ms": 0.0011070023901993409
+          },
+          "parameter_update_ms": {
+            "mean_ms": 0.9541222227400996,
+            "p95_ms": 1.0487227482371964
+          },
+          "solve_wall_ms": {
+            "mean_ms": 3.8970788332840636,
+            "p95_ms": 2.3040352534735575
+          },
+          "osqp_internal_ms": {
+            "mean_ms": 0.2969043611111111,
+            "p95_ms": 0.4566455
+          },
+          "observable_recheck_ms": {
+            "mean_ms": 0.04398489530406854,
+            "p95_ms": 0.05636780260829255
+          },
+          "fallback_status_selection_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "lidar_data_preparation_ms": {
+            "mean_ms": 0.3228336663596565,
+            "p95_ms": 0.36526320182019845
+          },
+          "checker_and_semantic_preparation_ms": {
+            "mean_ms": 0.040587499218721255,
+            "p95_ms": 0.06352844757202546
+          },
+          "reference_and_control_logic_ms": {
+            "mean_ms": 0.05944566692051012,
+            "p95_ms": 0.06602895082323812
+          },
+          "online_equivalent_planner_ms": {
+            "mean_ms": 15.599128249353575,
+            "p95_ms": 40.33514264665423
+          },
+          "offline_world_evaluation_ms": {
+            "mean_ms": 0.06926583349316691,
+            "p95_ms": 0.07445900191669352
+          },
+          "r1_gate_ms": {
+            "mean_ms": 0.007465917102914925,
+            "p95_ms": 0.01094415347324684
+          },
+          "point_semantic_margin_ms": {
+            "mean_ms": 0.005494500631660533,
+            "p95_ms": 0.007486750473617574
+          },
+          "semantic_provider_total_ms": {
+            "mean_ms": 0.01402141606376972,
+            "p95_ms": 0.019867404625983905
+          }
+        },
+        "solver_details": [
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 250,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.063417,
+            "cvxpy_wrapper_and_canonicalization_ms": 67.14077000226582,
+            "first_solve": true
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 150,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.637745,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7636590027395822,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.312531,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.751325001768727,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 75,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.396279,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7496930010170713,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.299326,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.799125994243078,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.221829,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8162980005600526,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.342056,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.929523003718216,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30700999999999995,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.801721001499109,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.250213,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9402920016357563,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.300859,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7485299969657175,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.27020099999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7636989966043048,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.221668,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8139649987407662,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.31199,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8458030019702762,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21733899999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7453760031737984,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22055599999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7563360028582216,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.320935,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7588320003958047,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.285481,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7717629971147106,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219405,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8132919970483332,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30347299999999994,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7742399975613208,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21570699999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7222220024517103,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21936400000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.855362995488163,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.299095,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7655930002459512,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.220497,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.794397002059009,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.217191,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8079020028851145,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30279100000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.755185002106443,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215496,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7179950030011089,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.284598,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.831838000505928,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.304475,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9062390030129812,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.216329,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7419379992814772,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21563700000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7177119981363527,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.308792,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8165799969536178,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21719,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7387329986043647,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215095,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.771364996260237,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.303874,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.757777997792069,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215728,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.709606996485617,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.214385,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.711591001075469,
+            "first_solve": false
+          }
+        ]
+      }
+    },
+    "R1_empty_turn": {
+      "STAGE05_ORIGINAL": {
+        "statuses": [
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE"
+        ],
+        "metrics": {
+          "success": false,
+          "steps": 12,
+          "navigation_time_s": 2.4000000000000004,
+          "path_length_m": 1.6483152771142129,
+          "control_smoothness": 0.2634648119493071,
+          "min_observable_clearance_m": 8.0,
+          "min_world_clearance_m": 8.0,
+          "observable_collision": false,
+          "world_collision": false,
+          "partial_observation_world_risk": false,
+          "initial_collision": false,
+          "planner_induced_collision": false,
+          "trajectory_collision": false,
+          "correct_emergency_stop": false,
+          "average_qp_solve_ms": 4.193661675826126,
+          "p95_qp_solve_ms": 4.011279850601566,
+          "max_qp_solve_ms": 70.20524499966996,
+          "average_end_to_end_ms": 15.58828249956908,
+          "p95_end_to_end_ms": 43.58307874754241,
+          "max_end_to_end_ms": 82.10288699774537,
+          "average_offline_world_evaluation_ms": 0.06862466701325805,
+          "p95_offline_world_evaluation_ms": 0.07783164946886244,
+          "end_to_end_over_100ms_count": 0,
+          "scp_iterations_mean": 2.8333333333333335,
+          "max_slack": 0.0,
+          "geometry_recheck_rejections": 0,
+          "fallback_count": 0,
+          "emergency_stop_count": 0,
+          "termination_reason": "EPISODE_MAX_STEPS",
+          "termination_step": 12,
+          "last_valid_action": [
+            0.8282818724251442,
+            -0.446352151356771
+          ],
+          "last_planner_status": "SOLVED_SAFE",
+          "goal_distance_m": 0.6997843662029851,
+          "yaw_error_rad": 0.00598355303421938,
+          "warm_start_valid": true,
+          "first_cycle_online_ms": 82.10288699774537,
+          "steady_state_mean_ms": 9.541500272462144,
+          "steady_state_p50_ms": 9.928715000569355,
+          "steady_state_p95_ms": 11.156067001138581,
+          "steady_state_p99_ms": 11.884710998128867
+        },
+        "latency": {
+          "first_cycle_ms": 82.10288699774537,
+          "steady_mean_ms": 9.541500272462144,
+          "steady_p50_ms": 9.928715000569355,
+          "steady_p95_ms": 11.156067001138581,
+          "steady_p99_ms": 11.884710998128867,
+          "observation_mean_ms": 0.31749091734430596,
+          "offline_world_mean_ms": 0.06862466701325805
+        },
+        "components": {
+          "observable_distance_gradient_ms": {
+            "mean_ms": 0.020621559301884296,
+            "p95_ms": 0.02238840024801902
+          },
+          "semantic_margin_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "parameter_update_ms": {
+            "mean_ms": 0.965942088762805,
+            "p95_ms": 1.0540565988776507
+          },
+          "solve_wall_ms": {
+            "mean_ms": 4.193661675826126,
+            "p95_ms": 4.011279850601566
+          },
+          "osqp_internal_ms": {
+            "mean_ms": 0.49106900000000003,
+            "p95_ms": 2.2152962999999986
+          },
+          "observable_recheck_ms": {
+            "mean_ms": 0.04273417368455304,
+            "p95_ms": 0.05584499922406394
+          },
+          "fallback_status_selection_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "lidar_data_preparation_ms": {
+            "mean_ms": 0.31749091734430596,
+            "p95_ms": 0.33953230231418274
+          },
+          "checker_and_semantic_preparation_ms": {
+            "mean_ms": 0.01774574957380537,
+            "p95_ms": 0.02518450091884005
+          },
+          "reference_and_control_logic_ms": {
+            "mean_ms": 0.05272616726870183,
+            "p95_ms": 0.06421319740184117
+          },
+          "online_equivalent_planner_ms": {
+            "mean_ms": 15.58828249956908,
+            "p95_ms": 43.58307874754241
+          },
+          "offline_world_evaluation_ms": {
+            "mean_ms": 0.06862466701325805,
+            "p95_ms": 0.07783164946886244
+          }
+        },
+        "solver_details": [
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 700,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.5998089999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 67.60543599966996,
+            "first_solve": true
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 450,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.689871,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.768007003246151,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 775,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.7091739999999995,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7431120043798578,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 550,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.008251,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7655639985671043,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 75,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.40764100000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.77434799528943,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.305697,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.823253000042096,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.305115,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.843080999325253,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22044799999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7214779988353588,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215808,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7872940030728541,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.302942,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8006989962107427,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.216849,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.717823996867448,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.216157,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7950099946345501,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30295099999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7645219967140593,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7371509993020184,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21529700000000004,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7180729965500272,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.309684,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7445749991237036,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219805,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8357860014081746,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21719,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7264589965301007,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 125,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.5617909999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7682689932554179,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21615,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7189529986864887,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.216801,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7128220020700022,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30796100000000004,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7691810022356322,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21756999999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7383130026653595,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215737,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.739975003109511,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30381400000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.881180998970069,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21575800000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7246249937800764,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22017599999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7645109981847704,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218774,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.785709998462092,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22142799999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7347960049708635,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21389600000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7255549945414028,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.221086,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8199080043464302,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22094600000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7480520035764164,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.223462,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7992170002197958,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22231,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7854109992450662,
+            "first_solve": false
+          }
+        ]
+      },
+      "P0": {
+        "statuses": [
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE"
+        ],
+        "metrics": {
+          "success": false,
+          "steps": 12,
+          "navigation_time_s": 2.4000000000000004,
+          "path_length_m": 1.6483152771142129,
+          "control_smoothness": 0.2634648119493071,
+          "min_observable_clearance_m": 8.0,
+          "min_world_clearance_m": 8.0,
+          "observable_collision": false,
+          "world_collision": false,
+          "partial_observation_world_risk": false,
+          "initial_collision": false,
+          "planner_induced_collision": false,
+          "trajectory_collision": false,
+          "correct_emergency_stop": false,
+          "average_qp_solve_ms": 5.761774235639571,
+          "p95_qp_solve_ms": 4.048873053034184,
+          "max_qp_solve_ms": 121.18704600288766,
+          "average_end_to_end_ms": 20.15989199996208,
+          "p95_end_to_end_ms": 67.40898970165281,
+          "max_end_to_end_ms": 133.41795800079126,
+          "average_offline_world_evaluation_ms": 0.07441741763614118,
+          "p95_offline_world_evaluation_ms": 0.10501335309527347,
+          "end_to_end_over_100ms_count": 1,
+          "scp_iterations_mean": 2.8333333333333335,
+          "max_slack": 0.0,
+          "geometry_recheck_rejections": 0,
+          "fallback_count": 0,
+          "emergency_stop_count": 0,
+          "termination_reason": "EPISODE_MAX_STEPS",
+          "termination_step": 12,
+          "last_valid_action": [
+            0.8282818724251442,
+            -0.446352151356771
+          ],
+          "last_planner_status": "SOLVED_SAFE",
+          "goal_distance_m": 0.6997843662029851,
+          "yaw_error_rad": 0.00598355303421938,
+          "warm_start_valid": true,
+          "first_cycle_online_ms": 133.41795800079126,
+          "steady_state_mean_ms": 9.863704181704883,
+          "steady_state_p50_ms": 10.003155999584123,
+          "steady_state_p95_ms": 12.270957002328942,
+          "steady_state_p99_ms": 13.17551300235209
+        },
+        "latency": {
+          "first_cycle_ms": 133.41795800079126,
+          "steady_mean_ms": 9.863704181704883,
+          "steady_p50_ms": 10.003155999584123,
+          "steady_p95_ms": 12.270957002328942,
+          "steady_p99_ms": 13.17551300235209,
+          "observation_mean_ms": 0.3179302493663272,
+          "offline_world_mean_ms": 0.07441741763614118
+        },
+        "components": {
+          "observable_distance_gradient_ms": {
+            "mean_ms": 0.021080734714975253,
+            "p95_ms": 0.0293409037112724
+          },
+          "semantic_margin_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "parameter_update_ms": {
+            "mean_ms": 1.0000939706943053,
+            "p95_ms": 1.2233036501129384
+          },
+          "solve_wall_ms": {
+            "mean_ms": 5.761774235639571,
+            "p95_ms": 4.048873053034184
+          },
+          "osqp_internal_ms": {
+            "mean_ms": 0.5002359411764706,
+            "p95_ms": 2.225623749999999
+          },
+          "observable_recheck_ms": {
+            "mean_ms": 0.04662382612561645,
+            "p95_ms": 0.06698149991279934
+          },
+          "fallback_status_selection_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "lidar_data_preparation_ms": {
+            "mean_ms": 0.3179302493663272,
+            "p95_ms": 0.34789594828907866
+          },
+          "checker_and_semantic_preparation_ms": {
+            "mean_ms": 0.016700417594014045,
+            "p95_ms": 0.021174602079554457
+          },
+          "reference_and_control_logic_ms": {
+            "mean_ms": 0.052912417838039495,
+            "p95_ms": 0.06924864974280352
+          },
+          "online_equivalent_planner_ms": {
+            "mean_ms": 20.15989199996208,
+            "p95_ms": 67.40898970165281
+          },
+          "offline_world_evaluation_ms": {
+            "mean_ms": 0.07441741763614118,
+            "p95_ms": 0.10501335309527347
+          }
+        },
+        "solver_details": [
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 700,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.6233230000000005,
+            "cvxpy_wrapper_and_canonicalization_ms": 118.56372300288766,
+            "first_solve": true
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 450,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.71044,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8822430023527146,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 775,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.741065,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7976239978544788,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 550,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.0114780000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.773648005823258,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 75,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.42900999999999995,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.312725996096395,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.31203899999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9758609952808954,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.307201,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7697200022990591,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.220626,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.730819003214758,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.227851,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7801499999219328,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.308293,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7573970014728308,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.281403,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.24189099518203,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21964399999999995,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8844390033598468,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.309143,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.722833000580471,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215867,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7879660039824359,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.24114499999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7652430001544022,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.298774,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7944679938617387,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.220417,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7443319971248432,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21552700000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8012609993095994,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 125,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.578161,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9083329987310207,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.221158,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8209870026333332,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.222962,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7936349981462696,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.31818199999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.821508004696604,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.225697,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7759520016132593,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218412,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7237750019868947,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.303423,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7486610043900535,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.217932,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7909910019948445,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22073700000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.741648002116207,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22550599999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.771464000618603,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.242649,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9415250017407573,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22130899999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7495620024133325,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.221288,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7547129963647463,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21692899999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.72037899946934,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219215,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7494019980559499,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.24121599999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.993422996014837,
+            "first_solve": false
+          }
+        ]
+      },
+      "P1": {
+        "statuses": [
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE"
+        ],
+        "metrics": {
+          "success": false,
+          "steps": 12,
+          "navigation_time_s": 2.4000000000000004,
+          "path_length_m": 1.6483152771142129,
+          "control_smoothness": 0.2634648119493071,
+          "min_observable_clearance_m": 8.0,
+          "min_world_clearance_m": 8.0,
+          "observable_collision": false,
+          "world_collision": false,
+          "partial_observation_world_risk": false,
+          "initial_collision": false,
+          "planner_induced_collision": false,
+          "trajectory_collision": false,
+          "correct_emergency_stop": false,
+          "average_qp_solve_ms": 4.255881117869114,
+          "p95_qp_solve_ms": 4.04617645217513,
+          "max_qp_solve_ms": 71.72683800308732,
+          "average_end_to_end_ms": 15.786198834878936,
+          "p95_end_to_end_ms": 44.41531235133875,
+          "max_end_to_end_ms": 84.01501700427616,
+          "average_offline_world_evaluation_ms": 0.07037866695706423,
+          "p95_offline_world_evaluation_ms": 0.0858213494211668,
+          "end_to_end_over_100ms_count": 0,
+          "scp_iterations_mean": 2.8333333333333335,
+          "max_slack": 0.0,
+          "geometry_recheck_rejections": 0,
+          "fallback_count": 0,
+          "emergency_stop_count": 0,
+          "termination_reason": "EPISODE_MAX_STEPS",
+          "termination_step": 12,
+          "last_valid_action": [
+            0.8282818724251442,
+            -0.446352151356771
+          ],
+          "last_planner_status": "SOLVED_SAFE",
+          "goal_distance_m": 0.6997843662029851,
+          "yaw_error_rad": 0.00598355303421938,
+          "warm_start_valid": true,
+          "first_cycle_online_ms": 84.01501700427616,
+          "steady_state_mean_ms": 9.58357900129737,
+          "steady_state_p50_ms": 9.990040998673066,
+          "steady_state_p95_ms": 11.112419499113457,
+          "steady_state_p99_ms": 11.834927098971093
+        },
+        "latency": {
+          "first_cycle_ms": 84.01501700427616,
+          "steady_mean_ms": 9.58357900129737,
+          "steady_p50_ms": 9.990040998673066,
+          "steady_p95_ms": 11.112419499113457,
+          "steady_p99_ms": 11.834927098971093,
+          "observation_mean_ms": 0.3148166658017241,
+          "offline_world_mean_ms": 0.07037866695706423
+        },
+        "components": {
+          "observable_distance_gradient_ms": {
+            "mean_ms": 0.020695794399430537,
+            "p95_ms": 0.02429380001558456
+          },
+          "semantic_margin_ms": {
+            "mean_ms": 0.0010330875417875016,
+            "p95_ms": 0.0012111511750845236
+          },
+          "parameter_update_ms": {
+            "mean_ms": 0.9665675589691519,
+            "p95_ms": 1.058269746863516
+          },
+          "solve_wall_ms": {
+            "mean_ms": 4.255881117869114,
+            "p95_ms": 4.04617645217513
+          },
+          "osqp_internal_ms": {
+            "mean_ms": 0.49207870588235303,
+            "p95_ms": 2.186872099999999
+          },
+          "observable_recheck_ms": {
+            "mean_ms": 0.04388115247939308,
+            "p95_ms": 0.058753748817252927
+          },
+          "fallback_status_selection_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "lidar_data_preparation_ms": {
+            "mean_ms": 0.3148166658017241,
+            "p95_ms": 0.33023749929270707
+          },
+          "checker_and_semantic_preparation_ms": {
+            "mean_ms": 0.02999674870807212,
+            "p95_ms": 0.03540534780768211
+          },
+          "reference_and_control_logic_ms": {
+            "mean_ms": 0.050982916339611016,
+            "p95_ms": 0.060069450046285056
+          },
+          "online_equivalent_planner_ms": {
+            "mean_ms": 15.786198834878936,
+            "p95_ms": 44.41531235133875
+          },
+          "offline_world_evaluation_ms": {
+            "mean_ms": 0.07037866695706423,
+            "p95_ms": 0.0858213494211668
+          },
+          "r1_gate_ms": {
+            "mean_ms": 0.0009459163266001269,
+            "p95_ms": 0.0010064959496958181
+          },
+          "point_semantic_margin_ms": {
+            "mean_ms": 0.0049017507990356535,
+            "p95_ms": 0.005253502604318783
+          },
+          "semantic_provider_total_ms": {
+            "mean_ms": 0.006987499849249919,
+            "p95_ms": 0.00791300080891233
+          }
+        },
+        "solver_details": [
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 700,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.5958690000000004,
+            "cvxpy_wrapper_and_canonicalization_ms": 69.13096900308733,
+            "first_solve": true
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 450,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.6808740000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8104279990199243,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 775,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.762386,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7821239967764693,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 550,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.9666430000000001,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8112000050821042,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 75,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.39870199999999995,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8183029996930176,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30996599999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.749541998637855,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.296711,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7997970038877205,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.231026,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7880959955449924,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.216588,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7531810004250035,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30136799999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7406479999048337,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.258578,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7918630058492795,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21804199999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7729269945052377,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.302021,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7386820024216512,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22072599999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8173910033942908,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219596,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.756435002413947,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.301007,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7310899997555949,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21914299999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.9367769958574028,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22007600000000005,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7481599998114405,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 125,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.547995,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.732971000398621,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219574,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8189749988257178,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22034499999999999,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8630589969486184,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30849299999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7682679967151658,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21714999999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8456939961001277,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22027699999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7537700015676692,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30189000000000005,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7392540054886043,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.220527,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7554529979510718,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.219555,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.811819999205582,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21848199999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7558450022445358,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215978,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7796500011683702,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.220957,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7689000026271045,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22244000000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8487100037577935,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218072,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7420879997258745,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22090699999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7676369978679642,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218712,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7395750008889586,
+            "first_solve": false
+          }
+        ]
+      },
+      "P2": {
+        "statuses": [
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE",
+          "SOLVED_SAFE"
+        ],
+        "metrics": {
+          "success": false,
+          "steps": 12,
+          "navigation_time_s": 2.4000000000000004,
+          "path_length_m": 1.6483152771142129,
+          "control_smoothness": 0.2634648119493071,
+          "min_observable_clearance_m": 8.0,
+          "min_world_clearance_m": 8.0,
+          "observable_collision": false,
+          "world_collision": false,
+          "partial_observation_world_risk": false,
+          "initial_collision": false,
+          "planner_induced_collision": false,
+          "trajectory_collision": false,
+          "correct_emergency_stop": false,
+          "average_qp_solve_ms": 5.805280353610321,
+          "p95_qp_solve_ms": 4.458500752298278,
+          "max_qp_solve_ms": 124.11423300363822,
+          "average_end_to_end_ms": 20.218055999066564,
+          "p95_end_to_end_ms": 68.46954399697998,
+          "max_end_to_end_ms": 136.14891399629414,
+          "average_offline_world_evaluation_ms": 0.0698301676796594,
+          "p95_offline_world_evaluation_ms": 0.08492730667057911,
+          "end_to_end_over_100ms_count": 1,
+          "scp_iterations_mean": 2.8333333333333335,
+          "max_slack": 0.0,
+          "geometry_recheck_rejections": 0,
+          "fallback_count": 0,
+          "emergency_stop_count": 0,
+          "termination_reason": "EPISODE_MAX_STEPS",
+          "termination_step": 12,
+          "last_valid_action": [
+            0.8282818724251442,
+            -0.446352151356771
+          ],
+          "last_planner_status": "SOLVED_SAFE",
+          "goal_distance_m": 0.6997843662029851,
+          "yaw_error_rad": 0.00598355303421938,
+          "warm_start_valid": true,
+          "first_cycle_online_ms": 136.14891399629414,
+          "steady_state_mean_ms": 9.678887090227693,
+          "steady_state_p50_ms": 9.86042599834036,
+          "steady_state_p95_ms": 11.982908501522616,
+          "steady_state_p99_ms": 12.872992898337543
+        },
+        "latency": {
+          "first_cycle_ms": 136.14891399629414,
+          "steady_mean_ms": 9.678887090227693,
+          "steady_p50_ms": 9.86042599834036,
+          "steady_p95_ms": 11.982908501522616,
+          "steady_p99_ms": 12.872992898337543,
+          "observation_mean_ms": 0.31749458382061374,
+          "offline_world_mean_ms": 0.0698301676796594
+        },
+        "components": {
+          "observable_distance_gradient_ms": {
+            "mean_ms": 0.02119764672790873,
+            "p95_ms": 0.029836503017577332
+          },
+          "semantic_margin_ms": {
+            "mean_ms": 0.001063471512786825,
+            "p95_ms": 0.0014185021427692843
+          },
+          "parameter_update_ms": {
+            "mean_ms": 0.9759122941057499,
+            "p95_ms": 1.119984000615659
+          },
+          "solve_wall_ms": {
+            "mean_ms": 5.805280353610321,
+            "p95_ms": 4.458500752298278
+          },
+          "osqp_internal_ms": {
+            "mean_ms": 0.4996551176470587,
+            "p95_ms": 2.4508746999999995
+          },
+          "observable_recheck_ms": {
+            "mean_ms": 0.04326967325102052,
+            "p95_ms": 0.05993875129206572
+          },
+          "fallback_status_selection_ms": {
+            "mean_ms": 0.0,
+            "p95_ms": 0.0
+          },
+          "lidar_data_preparation_ms": {
+            "mean_ms": 0.31749458382061374,
+            "p95_ms": 0.3326399000798119
+          },
+          "checker_and_semantic_preparation_ms": {
+            "mean_ms": 0.03774466555720816,
+            "p95_ms": 0.05348814775061328
+          },
+          "reference_and_control_logic_ms": {
+            "mean_ms": 0.054263166627303384,
+            "p95_ms": 0.07238559737743343
+          },
+          "online_equivalent_planner_ms": {
+            "mean_ms": 20.218055999066564,
+            "p95_ms": 68.46954399697998
+          },
+          "offline_world_evaluation_ms": {
+            "mean_ms": 0.0698301676796594,
+            "p95_ms": 0.08492730667057911
+          },
+          "r1_gate_ms": {
+            "mean_ms": 0.007478334130913329,
+            "p95_ms": 0.01194345350086223
+          },
+          "point_semantic_margin_ms": {
+            "mean_ms": 0.005124000381329097,
+            "p95_ms": 0.007246899986057541
+          },
+          "semantic_provider_total_ms": {
+            "mean_ms": 0.013804334836701551,
+            "p95_ms": 0.021338749138521955
+          }
+        },
+        "solver_details": [
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 700,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.568851,
+            "cvxpy_wrapper_and_canonicalization_ms": 121.54538200363822,
+            "first_solve": true
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 450,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 1.6613980000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7974619955895914,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 775,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.7041469999999994,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7729859994546255,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 550,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 2.387349,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.0611190038294755,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 75,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.395236,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7556939986064435,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.29746100000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7508460038608276,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30277099999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.759142000943605,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.214514,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7533119995998814,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.214655,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7587210054805316,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.300908,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7520680004137643,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21539599999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7398249996618331,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.214464,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7674779976556674,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.306518,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7534909992512948,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.217259,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7464179939097575,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.216118,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7518969998748675,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30066899999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7594910044756196,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21813100000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7997790029054097,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21761999999999998,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7589310005527177,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 125,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.55609,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.754241998160109,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.213763,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7493630001915508,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.215918,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7528890024130865,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.302552,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7568860039256067,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21787200000000004,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.8023420003675594,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21585700000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7578790053113662,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 50,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.30017699999999997,
+            "cvxpy_wrapper_and_canonicalization_ms": 2.111725998574078,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.24867,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.899615995644983,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22195800000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7886780025238245,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22623700000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7707629993918463,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.221169,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.733060002876673,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21843299999999996,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7234240009293036,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21778000000000003,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.732030997757595,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.21718900000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7506660015669315,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.22238100000000002,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.788586000387609,
+            "first_solve": false
+          },
+          {
+            "solver_status": "optimal",
+            "osqp_iterations": 25,
+            "osqp_setup_ms": 0.0,
+            "osqp_solve_ms": 0.218763,
+            "cvxpy_wrapper_and_canonicalization_ms": 1.7350650030246824,
+            "first_solve": false
+          }
+        ]
+      }
+    }
+  }
+}

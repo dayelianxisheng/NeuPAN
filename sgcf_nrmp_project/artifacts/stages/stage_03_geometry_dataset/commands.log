@@ -1,0 +1,7 @@
+PYTHONPATH=sgcf_nrmp_project/core/src python sgcf_nrmp_project/core/scripts/generate_geometry_dataset.py
+MPLCONFIGDIR=/tmp/sgcf_nrmp_mpl PYTHONPATH=sgcf_nrmp_project/core/src MPLBACKEND=Agg python sgcf_nrmp_project/core/scripts/inspect_geometry_dataset.py sgcf_nrmp_project/artifacts/datasets/geometry_v1
+PYTHONPATH=sgcf_nrmp_project/core/src python sgcf_nrmp_project/core/scripts/validate_geometry_dataset.py sgcf_nrmp_project/artifacts/datasets/geometry_v1 --report sgcf_nrmp_project/artifacts/stages/stage_03_geometry_dataset/integrity_report.json
+PYTHONPATH=sgcf_nrmp_project/core/src:sgcf_nrmp_project/core/tests python -m unittest discover -s sgcf_nrmp_project/core/tests -v
+PYTHONPATH=sgcf_nrmp_project/core/src python sgcf_nrmp_project/core/scripts/generate_geometry_dataset.py --output /tmp/sgcf_geometry_v1_repro
+python -m compileall -q sgcf_nrmp_project/core/src sgcf_nrmp_project/core/tests sgcf_nrmp_project/core/scripts
+git diff --check

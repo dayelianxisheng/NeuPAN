@@ -1,0 +1,12 @@
+sgcf_nrmp_project/docs/codex/SGCF_NRMP_Codex_Execution_Plan_V2.md
+sgcf_nrmp_project/docs/architecture/lidar_clearance_field.md
+sgcf_nrmp_project/artifacts/stages/stage_06_learned_field_nrmp/stage_report.md
+sgcf_nrmp_project/artifacts/stages/stage_06_learned_field_nrmp/architecture_decision.md
+sgcf_nrmp_project/artifacts/stages/stage_06_learned_field_nrmp/stage04_interface_audit.md
+sgcf_nrmp_project/artifacts/stages/stage_06_learned_field_nrmp/learned_vs_exact_role_analysis.md
+sgcf_nrmp_project/artifacts/stages/stage_06_learned_field_nrmp/final_geometry_architecture.md
+sgcf_nrmp_project/artifacts/stages/stage_06_learned_field_nrmp/stage04_ablation_retention.md
+sgcf_nrmp_project/artifacts/stages/stage_06_learned_field_nrmp/next_stage_redefinition.md
+sgcf_nrmp_project/artifacts/stages/stage_06_learned_field_nrmp/files_changed.txt
+
+No model, checkpoint, dataset, Planner, test, Stage-07 implementation, or protected NeuPAN path was modified.

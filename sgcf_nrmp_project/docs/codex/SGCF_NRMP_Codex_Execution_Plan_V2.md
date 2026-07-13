@@ -172,6 +172,33 @@ sgcf_nrmp_project/artifacts/stages/stage_XX_<name>/
 
 # 技术设计正文
 
+## Stage 06 架构决策修订（2026-07-13，优先于后文旧描述）
+
+Stage 06 在集成前接口审计中确认：Stage 04 的 `LidarClearanceField` 是 query-conditioned point encoder。点特征中的 query-local x/y 与平方距离在编码前生成，因此现有 checkpoint 无法满足“场景编码一次、多查询复用”；改变该结构需要重新训练。结合 Stage 05 批量精确 Oracle 已达到 single obstacle/corridor/narrow passage 的 17.03/23.18/21.97 ms online P95，且学习几何场仍需 exact recheck，最终决策为：
+
+```text
+REPLACE_WITH_EXACT_GEOMETRY_FOR_FINAL_SYSTEM
+KEEP_LEARNED_GEOMETRY_FIELD_AS_RESEARCH_ABLATION_ONLY
+```
+
+最终主链路固定为：
+
+```text
+2D LiDAR
+    -> Batched Exact Observable Geometry
+    -> exact d_geo and g_geo
+
+RGB + LiDAR
+    -> Sparse RGB-LiDAR Semantic Fusion
+    -> nonnegative semantic margin m_sem and reliability r
+
+d_geo + g_geo^T(q-q_nom) + slack >= d_safe + r*m_sem
+    -> Trust-Region NRMP-like QP
+    -> [v, omega]
+```
+
+Exact Geometry 负责物理净空；学习模块只增加类别相关安全裕度，RGB 不得增加或伪造几何净空。`m_sem >= 0`；RGB 失效时 `r -> 0`，系统退化为 Stage 05 的 LiDAR-only exact planner。完整世界几何仍只用于离线评价。第一版不预测动态障碍未来轨迹。凡后文仍称学习净空场为最终主几何模块之处，均由本修订覆盖。
+
 ## 0. 文档目标
 
 本文档用于指导一个完整、可验证、可部署的硕士小论文项目。项目不是在完整 NeuPAN 上增加少量功能，而是：
@@ -179,8 +206,8 @@ sgcf_nrmp_project/artifacts/stages/stage_XX_<name>/
 1. 保留 NeuPAN 作为研究基线；
 2. 参考 NeuPAN 中的滚动时域、近端交替优化和模型约束设计；
 3. 重新设计 RGB–LiDAR 多模态环境表示；
-4. 使用自主设计的净空场替代 DUNE；
-5. 将净空距离、局部梯度和语义安全裕度转换为 NRMP-like 优化约束；
+4. 使用批量精确可观测几何替代 DUNE 的主安全几何职责；
+5. 将精确净空、精确局部梯度和学习语义安全裕度转换为 NRMP-like 优化约束；
 6. 先完成核心算法，再接 ROS 2，最后在 Gazebo 和 CPU 智能小车上验证。
 
 本文档规定：
@@ -280,12 +307,12 @@ RGB + LiDAR
 
 在实现和实验成功后，可将贡献概括为：
 
-1. 提出面向 RGB + 2D LiDAR 移动机器人的稀疏门控跨模态融合模块；
-2. 提出以完整机器人 footprint 为查询对象的局部净空场，而不是只预测空间点占用；
-3. 设计 LiDAR 几何净空与多模态语义安全裕度双分支结构；
-4. 将净空场输出转换为固定结构的模型预测优化约束；
-5. 设计 RGB 失效、过期或错位时退化为 LiDAR-only 的安全机制；
-6. 在 Gazebo 和纯 CPU 智能小车上验证精度、实时性和闭环安全性。
+1. 实现 CPU 实时的批量精确机器人净空与 Trust-Region NRMP-like 规划；
+2. 提出面向 RGB + 2D LiDAR 的稀疏语义融合；
+3. 设计非负语义安全裕度与可靠性退化机制；
+4. 分离精确几何安全基础与学习语义风险；
+5. 设计 RGB 失效、过期或错位时自动退化为 LiDAR-only planner 的机制；
+6. 在 Gazebo 和纯 CPU 智能小车上验证部署性能。
 
 ---
 
@@ -386,35 +413,35 @@ d_geo + grad^T(q-q_nom) >= d_safe + reliability * margin
 
 ## 3.2 双分支安全定义
 
-### 几何净空分支
+### 几何净空分支（最终系统：批量精确几何）
 
 \[
 d_{\text{obs}}(q,P)
 \]
 
-表示机器人 footprint 位于候选位姿 \(q\) 时，相对当前 LiDAR 可观测表面集合的净空距离，本文称为 `observable_clearance`。几何网络只学习这一可由当前观测确定的量。
+表示机器人 footprint 位于候选位姿 \(q\) 时，相对当前 LiDAR 可观测点集合的净空距离，本文称为 `observable_clearance`。最终系统由 Stage 05 的 `BatchedRectangleObservableOracle` 精确计算距离与梯度，不由 RGB 或学习模型修改。
 
 完整仿真环境中的真实障碍集合用于计算 `world_clearance`。该量只用于闭环安全评估、轨迹复检和 false-safe 统计，不作为单帧 LiDAR 网络的直接监督目标，避免遮挡和视野外障碍造成不可学习的一对多标签。
 
-第一版网络只输出距离：
+Stage 04 网络曾学习该距离：
 
 \[
 d_{\text{obs}}(q,P)
 \]
 
-训练和离线开发阶段的梯度由距离输出通过 autograd 获得：
+其梯度由距离输出通过 autograd 获得：
 
 \[
 g_{\text{obs}}(q,P)=\nabla_q d_{\text{obs}}(q,P)
 \]
 
-独立梯度 head 延后到 CPU 部署阶段，只有在验证其与 autograd 梯度、局部线性化误差和 false-safe rate 一致后才允许启用。候选部署输出为：
+该模型现定位为 `Learned Geometry Ablation`，用于精度、梯度和架构选择消融，不接入最终主规划器，也不再规划独立梯度 head 作为主系统部署输出。最终主系统直接使用 exact：
 
 \[
-[d,g_x,g_y,g_\theta]
+[d_geo,g_x,g_y,g_\theta]
 \]
 
-用于避免最终控制周期内执行反向传播；在此之前 autograd 是正确性基准。
+这些值由解析几何提供，不需要网络反向传播。
 
 ### 语义安全裕度分支
 
@@ -3187,6 +3214,8 @@ scripts/inspect_geometry_dataset.py
 
 ## 阶段 04：LiDAR-only Robot Clearance Field 模型
 
+**Stage 06 后定位：`Learned Geometry Ablation`。** 本阶段代码、checkpoint 和实验成果完整保留，用于与 exact geometry 比较精度与梯度、展示学习净空场可行性，并解释最终架构选择；不得再描述为最终主几何模块，不重新训练或强行接入主 Planner。
+
 ### 目标
 
 训练自主设计的 LiDAR 几何净空场，输出：
@@ -3310,59 +3339,41 @@ scripts/demo_gt_planner.py
 
 ---
 
-## 阶段 06：学习净空场与 NRMP 的离线闭环集成
+## 阶段 06：学习几何接口审计与最终几何架构决策
 
 ### 目标
 
-将阶段 04 的 LiDAR 场接入阶段 05 的规划器，形成第一套完整自主核心方法。
+在接入前审计 Stage 04 模型能否满足可缓存场景编码接口，并结合 Stage 05 精确 Oracle 的正确性、实时性和安全职责作最终架构决策。
 
-### 任务
+### 已完成审计
 
-实现：
-
-```text
-src/sgcf_nrmp/models/field/sgcf_model.py   # 当前仅 LiDAR 路径
-src/sgcf_nrmp/planner/field_adapter.py
-scripts/run_offline_planner.py
-scripts/evaluate_offline_closed_loop.py
-```
-
-### 测试顺序
-
-1. GT field；
-2. learned field；
-3. 同场景输出对比；
-4. 加 LiDAR 噪声；
-5. 加点缺失；
-6. 连续 1000 帧稳定性。
+Stage 04 encoder 的输入包含 query-local point coordinates 与 query-dependent squared distance，无法使用现有 checkpoint 实现场景编码一次、多 query 复用。改变结构需要重新训练；本阶段禁止重新训练或放宽接口强行集成。
 
 ### 可见成果
 
-- GT planner 与 learned planner 轨迹叠加图；
-- 闭环动画；
-- 成功率；
-- 碰撞率；
-- 最小 clearance；
-- field/query/QP 延迟；
-- 失败案例图集。
+- Stage 04 接口审计；
+- learned vs exact 职责分析；
+- 最终架构图与决策记录；
+- Stage 04 消融保留说明；
+- Stage 07 重定义。
 
 ### 验收
 
-- 可见完成局部避障；
-- 无大量 false-safe；
-- 连续运行稳定；
-- 失败案例被记录而非隐藏；
-- 达不到验收时不得进入 RGB 阶段。
+- 状态为 `COMPLETE WITH ARCHITECTURE DECISION`；
+- `REPLACE_WITH_EXACT_GEOMETRY_FOR_FINAL_SYSTEM`；
+- `KEEP_LEARNED_GEOMETRY_FIELD_AS_RESEARCH_ABLATION_ONLY`；
+- 不修改、不删除、不重新训练 Stage 04；
+- 不开始 RGB 或 Stage 07 实现。
 
 完成后停止。
 
 ---
 
-## 阶段 07：RGB–LiDAR 标定、投影和同步数据接口
+## 阶段 07：RGB–LiDAR Projection, Semantic Ground Truth and PointPainting Baseline
 
 ### 目标
 
-只实现多模态数据基础设施，不训练融合模型。
+建立 RGB–LiDAR 相机/投影/同步基础设施、语义 ground truth 和 PointPainting 基线；定义非负 semantic margin 标签，但不接入主规划器闭环。
 
 ### 任务
 
@@ -3374,10 +3385,14 @@ src/sgcf_nrmp/types/multimodal.py
 src/sgcf_nrmp/geometry/camera_projection.py
 src/sgcf_nrmp/models/image/image_preprocess.py
 src/sgcf_nrmp/data/datasets/multimodal_dataset.py
+src/sgcf_nrmp/types/semantic.py
+src/sgcf_nrmp/models/fusion/point_painting.py
+src/sgcf_nrmp/training/losses/semantic_margin_label.py
 scripts/demo_projection.py
+scripts/demo_point_painting.py
 ```
 
-先使用合成相机和合成点云测试。
+先使用合成相机、合成点云和 Oracle semantic labels 测试。只实现相机模型、时间戳/外参接口、语义类别数据结构、PointPainting、`m_sem >= 0` 标签和投影可视化。Sparse Local Soft Fusion 延后到 Stage 08。
 
 ### 可见成果
 
@@ -3387,6 +3402,8 @@ scripts/demo_projection.py
 - border distance 图；
 - 外参扰动前后对比；
 - 时间戳过期 fallback 报告。
+- Oracle semantic label 与非负 margin 分布；
+- PointPainting semantic-colored LiDAR 基线。
 
 ### 强制阻塞条件
 
@@ -3399,28 +3416,32 @@ scripts/demo_projection.py
 - 变换方向命名明确；
 - 不接 ROS；
 - 不下载分割模型。
+- 不接入 NRMP-like 主规划器闭环；
+- 不实现 Sparse Local Soft Fusion。
 
 完成后停止。
 
 ---
 
-## 阶段 08：PointPainting 多模态基线
+## 阶段 08：Sparse Local Soft Fusion 主方法
 
 ### 目标
 
-建立简单、清晰、可复现的融合基线，用于后续证明主方法优于硬投影类别拼接。
+在 Stage 07 的 PointPainting 基线上实现 CPU 友好的 Sparse Local Soft Fusion、soft association 和 reliability gate，并严格保持 exact geometry 不受 RGB 修改。
 
 ### 任务
 
 实现：
 
 ```text
-src/sgcf_nrmp/models/image/mobile_encoder.py
-src/sgcf_nrmp/models/fusion/point_painting.py
-src/sgcf_nrmp/training/losses/semantic_loss.py
-src/sgcf_nrmp/training/multimodal_trainer.py
-scripts/train_pointpainting.py
-scripts/evaluate_pointpainting.py
+configs/model/fusion.yaml
+src/sgcf_nrmp/models/fusion/local_sampler.py
+src/sgcf_nrmp/models/fusion/soft_association.py
+src/sgcf_nrmp/models/fusion/reliability_gate.py
+src/sgcf_nrmp/models/fusion/sparse_fusion.py
+src/sgcf_nrmp/models/field/semantic_head.py
+scripts/train_multimodal.py
+scripts/evaluate_multimodal.py
 ```
 
 如果需要下载预训练权重：
@@ -3431,28 +3452,27 @@ scripts/evaluate_pointpainting.py
 
 ### 可见成果
 
-- semantic-colored LiDAR；
-- 类别概率分布；
-- PointPainting margin heatmap；
-- RGB dropout fallback；
-- 与 LiDAR-only 的对比表。
+- 3×3 局部关联权重热图；
+- 每点 reliability gate 可视化；
+- RGB dropout/过期退化；
+- 与 Stage 07 PointPainting 的精度、鲁棒性和 CPU 延迟对比。
 
 ### 验收
 
-- RGB 缺失时回退；
-- LiDAR 几何距离输出不因 RGB 改变；
+- RGB 缺失时 `r -> 0`；
+- exact LiDAR geometry 不因 RGB 改变；
 - semantic margin 非负；
-- 基线训练和推理可复现。
+- 主方法至少在一项预先声明的鲁棒指标上优于 PointPainting，且 CPU 延迟不超预算。
 
 完成后停止。
 
 ---
 
-## 阶段 09：稀疏局部软关联与可靠性门控主方法
+## 阶段 09：Sparse Fusion 鲁棒性消融与语义裕度准备
 
 ### 目标
 
-实现比 PointPainting 更先进、仍适合 CPU 的 Sparse Local Soft Fusion。
+在 Stage 08 主方法实现后完成系统消融、标定/同步/RGB 失效鲁棒性评价，并为 Stage 10 的 semantic margin 规划器接入冻结接口；不重复实现 Stage 08。
 
 ### 任务
 

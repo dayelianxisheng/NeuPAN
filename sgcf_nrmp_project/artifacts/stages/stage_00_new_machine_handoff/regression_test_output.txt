@@ -1,0 +1,21 @@
+Package import: PASS (sgcf_nrmp 0.1.0.dev0)
+compileall core/src + core/tests: PASS
+
+pytest invocation: NOT RUNNABLE (No module named pytest; no installation attempted)
+Fallback runner: Python unittest over the same test files
+
+Stage 02 geometry: PASS, 14 tests, 0 failures
+Stage 03 dataset: PASS, 19 tests, 0 failures
+Stage 04 model: PASS, 10 tests, 0 failures
+Stage 04 training utilities: PASS, 6 tests, 0 failures
+Stage 04 evaluation: PASS, 2 tests, 0 failures
+Package import test: PASS, 1 test, 0 failures
+TOTAL: PASS, 52 tests, 0 failures
+
+Checkpoint load: PASS
+Single-batch forward: PASS
+Autograd query gradient: PASS (finite and nonzero)
+Full existing test-split inference: PASS, 480 predictions
+NaN/Inf check: PASS
+
+No planner/stage-05 tests, training scripts, dataset generators, or artifact-writing evaluation scripts were run.

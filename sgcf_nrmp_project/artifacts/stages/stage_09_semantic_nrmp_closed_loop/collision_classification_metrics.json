@@ -1,0 +1,152 @@
+{
+  "R0_empty_straight": {
+    "STAGE05_ORIGINAL": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P0": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P1": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P2": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    }
+  },
+  "R1_empty_turn": {
+    "STAGE05_ORIGINAL": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P0": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P1": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P2": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    }
+  },
+  "R2_static": {
+    "STAGE05_ORIGINAL": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P0": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P1": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P2": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    }
+  },
+  "R3_human": {
+    "STAGE05_ORIGINAL": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P0": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P1": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    },
+    "P2": {
+      "initial_collision": false,
+      "planner_induced_collision": false,
+      "trajectory_collision": false,
+      "world_collision": false,
+      "correct_emergency_stop": false
+    }
+  },
+  "R4_initial_collision": {
+    "STAGE05_ORIGINAL": {
+      "initial_collision": true,
+      "planner_induced_collision": false,
+      "trajectory_collision": true,
+      "world_collision": true,
+      "correct_emergency_stop": true
+    },
+    "P0": {
+      "initial_collision": true,
+      "planner_induced_collision": false,
+      "trajectory_collision": true,
+      "world_collision": true,
+      "correct_emergency_stop": true
+    },
+    "P1": {
+      "initial_collision": true,
+      "planner_induced_collision": false,
+      "trajectory_collision": true,
+      "world_collision": true,
+      "correct_emergency_stop": true
+    },
+    "P2": {
+      "initial_collision": true,
+      "planner_induced_collision": false,
+      "trajectory_collision": true,
+      "world_collision": true,
+      "correct_emergency_stop": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "test": {
+    "samples": 480,
+    "scenes": 15
+  },
+  "train": {
+    "samples": 2240,
+    "scenes": 70
+  },
+  "validation": {
+    "samples": 480,
+    "scenes": 15
+  }
+}

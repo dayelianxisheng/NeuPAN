@@ -1,5 +1,7 @@
 /artifacts/datasets/*
 !/artifacts/datasets/.gitkeep
+!/artifacts/datasets/geometry_v1/
+!/artifacts/datasets/geometry_v1/**
 /artifacts/checkpoints/*
 !/artifacts/checkpoints/.gitkeep
 /artifacts/logs/*

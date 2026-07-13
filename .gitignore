@@ -174,3 +174,11 @@ sgcf_nrmp_project/artifacts/**/*.onnx
 sgcf_nrmp_project/artifacts/**/*.pth
 sgcf_nrmp_project/artifacts/**/*.bag
 sgcf_nrmp_project/core/**/__pycache__/
+
+# Keep reproducibility artifacts and the resolved environment in version control.
+!uv.lock
+!sgcf_nrmp_project/artifacts/stages/**/*.png
+!sgcf_nrmp_project/artifacts/stages/**/*.csv
+!sgcf_nrmp_project/artifacts/stages/**/*.json
+!sgcf_nrmp_project/artifacts/stages/**/*.gif
+!sgcf_nrmp_project/artifacts/stages/**/*.log

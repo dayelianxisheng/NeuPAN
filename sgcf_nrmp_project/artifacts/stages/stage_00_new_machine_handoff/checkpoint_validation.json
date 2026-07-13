@@ -1,0 +1,17 @@
+{
+  "path": "sgcf_nrmp_project/artifacts/stages/stage_04_lidar_clearance_field/best_model.pt",
+  "size_bytes": 240935,
+  "sha256": "d0ac838335a954453946631329e5bb85659785148b9eeb310886ea971969b97b",
+  "load_success": true,
+  "checkpoint_epoch": 20,
+  "validation_loss": 0.024350964898864427,
+  "parameter_count": 17634,
+  "single_batch_forward": true,
+  "single_prediction": 0.05180437117815018,
+  "single_prediction_finite": true,
+  "autograd_query_gradient": [[-0.0553028435, -0.0996692181, -0.0284161512, 0.0162669346]],
+  "autograd_finite": true,
+  "autograd_nonzero": true,
+  "test_split_inference_count": 480,
+  "test_split_all_finite": true
+}

@@ -1,0 +1,12 @@
+Protected paths checked:
+neupan/
+neupan_ros/
+neupan_ros2/
+example/
+docker/
+
+Current worktree status for all protected paths: CLEAN (no staged, modified, deleted, or untracked files).
+
+Historical comparison against official baseline 579e7af is not clean and predates this handoff. It includes tracked NeuPAN modifications, the neupan_ros and neupan_ros2 trees, Docker additions, and example/Mowen additions and configuration changes. These are present in current HEAD fffaf87. They were recorded only; nothing was restored, removed, or overwritten.
+
+The archive comparison previously identified neupan_ros/src/neupan_core.py as differing from the copied archive, but the repository copy was intentionally preserved. No protected-directory file was changed during this check.

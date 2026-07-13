@@ -1,0 +1,146 @@
+[
+  {
+    "translation_m": 0.0,
+    "rotation_deg": 0.0,
+    "projection_validity": 1.0,
+    "label_agreement": 1.0,
+    "painted_point_accuracy": 1.0,
+    "mean_reliability": 1.0,
+    "semantic_margin_mae_m": 0.0
+  },
+  {
+    "translation_m": 0.0,
+    "rotation_deg": 1.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.9487179487179487,
+    "painted_point_accuracy": 0.9487179487179487,
+    "mean_reliability": 0.7794871794871796,
+    "semantic_margin_mae_m": 0.008974358974358974
+  },
+  {
+    "translation_m": 0.0,
+    "rotation_deg": 3.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.7948717948717948,
+    "painted_point_accuracy": 0.7948717948717948,
+    "mean_reliability": 0.3589743589743591,
+    "semantic_margin_mae_m": 0.035897435897435895
+  },
+  {
+    "translation_m": 0.0,
+    "rotation_deg": 5.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.717948717948718,
+    "painted_point_accuracy": 0.717948717948718,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.053846153846153835
+  },
+  {
+    "translation_m": 0.01,
+    "rotation_deg": 0.0,
+    "projection_validity": 1.0,
+    "label_agreement": 1.0,
+    "painted_point_accuracy": 1.0,
+    "mean_reliability": 0.8000000000000002,
+    "semantic_margin_mae_m": 0.0
+  },
+  {
+    "translation_m": 0.01,
+    "rotation_deg": 1.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.8974358974358975,
+    "painted_point_accuracy": 0.8974358974358975,
+    "mean_reliability": 0.5692307692307695,
+    "semantic_margin_mae_m": 0.017948717948717947
+  },
+  {
+    "translation_m": 0.01,
+    "rotation_deg": 3.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.7948717948717948,
+    "painted_point_accuracy": 0.7948717948717948,
+    "mean_reliability": 0.17948717948717954,
+    "semantic_margin_mae_m": 0.035897435897435895
+  },
+  {
+    "translation_m": 0.01,
+    "rotation_deg": 5.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.717948717948718,
+    "painted_point_accuracy": 0.717948717948718,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.053846153846153835
+  },
+  {
+    "translation_m": 0.03,
+    "rotation_deg": 0.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.9487179487179487,
+    "painted_point_accuracy": 0.9487179487179487,
+    "mean_reliability": 0.3897435897435898,
+    "semantic_margin_mae_m": 0.008974358974358974
+  },
+  {
+    "translation_m": 0.03,
+    "rotation_deg": 1.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.8717948717948718,
+    "painted_point_accuracy": 0.8717948717948718,
+    "mean_reliability": 0.18974358974358976,
+    "semantic_margin_mae_m": 0.026923076923076918
+  },
+  {
+    "translation_m": 0.03,
+    "rotation_deg": 3.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.7692307692307693,
+    "painted_point_accuracy": 0.7692307692307693,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.044871794871794865
+  },
+  {
+    "translation_m": 0.03,
+    "rotation_deg": 5.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.6666666666666666,
+    "painted_point_accuracy": 0.6666666666666666,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.06282051282051282
+  },
+  {
+    "translation_m": 0.05,
+    "rotation_deg": 0.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.9230769230769231,
+    "painted_point_accuracy": 0.9230769230769231,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.017948717948717947
+  },
+  {
+    "translation_m": 0.05,
+    "rotation_deg": 1.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.8461538461538461,
+    "painted_point_accuracy": 0.8461538461538461,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.026923076923076918
+  },
+  {
+    "translation_m": 0.05,
+    "rotation_deg": 3.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.717948717948718,
+    "painted_point_accuracy": 0.717948717948718,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.053846153846153835
+  },
+  {
+    "translation_m": 0.05,
+    "rotation_deg": 5.0,
+    "projection_validity": 1.0,
+    "label_agreement": 0.6666666666666666,
+    "painted_point_accuracy": 0.6666666666666666,
+    "mean_reliability": 0.0,
+    "semantic_margin_mae_m": 0.06282051282051282
+  }
+]

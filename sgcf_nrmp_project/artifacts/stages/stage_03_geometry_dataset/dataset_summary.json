@@ -1,0 +1,58 @@
+{
+  "dataset_size_bytes": 350967,
+  "estimated_bytes_per_10000_samples": 1096771,
+  "mean_scene_generation_seconds": 0.5008280905399988,
+  "no_valid_lidar_ratio": 0.0,
+  "observable_clearance_mean": 1.1986116170883179,
+  "observable_clearance_quantiles": [
+    0.0,
+    0.23642541468143463,
+    0.7580088973045349,
+    1.710864245891571,
+    3.0851463079452515,
+    5.261605319976802,
+    8.0
+  ],
+  "observable_collision_ratio": 0.076875,
+  "observable_gradient_valid_ratio": 0.9496875,
+  "observable_world_abs_difference_mean": 0.29359009861946106,
+  "partial_observation_hidden_collision_count": 64,
+  "partial_observation_hidden_collision_ratio": 0.02,
+  "query_category_counts": {
+    "collision": 500,
+    "collision_boundary": 900,
+    "free": 1000,
+    "safety_boundary": 800
+  },
+  "query_category_ratios": {
+    "collision": 0.15625,
+    "collision_boundary": 0.28125,
+    "free": 0.3125,
+    "safety_boundary": 0.25
+  },
+  "sample_count": 3200,
+  "scene_count": 100,
+  "split_sample_counts": {
+    "test": 480,
+    "train": 2240,
+    "validation": 480
+  },
+  "split_scene_counts": {
+    "test": 15,
+    "train": 70,
+    "validation": 15
+  },
+  "total_generation_seconds": 50.083191234999504,
+  "world_clearance_mean": 0.9056614637374878,
+  "world_clearance_quantiles": [
+    0.0,
+    0.060816798359155655,
+    0.5033215880393982,
+    1.2417488992214203,
+    2.7099152326583855,
+    5.012125611305235,
+    8.382452011108398
+  ],
+  "world_collision_ratio": 0.15625,
+  "world_gradient_valid_ratio": 0.9196875
+}

@@ -1,0 +1,24 @@
+Stage 09 changes made before mandatory stop:
+sgcf_nrmp_project/core/configs/eval/stage_09_semantic_closed_loop.yaml
+sgcf_nrmp_project/core/configs/planner/semantic_nrmp.yaml
+sgcf_nrmp_project/core/scripts/evaluate_stage09_semantic_nrmp.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/gt_nrmp_planner.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/offline_simulator.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/qp_problem.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/semantic_nrmp_planner.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/semantic/explicit_failure_gate.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/semantic/semantic_margin_provider.py
+sgcf_nrmp_project/core/tests/planner/test_semantic_nrmp_planner.py
+sgcf_nrmp_project/core/tests/semantic/test_explicit_failure_gate.py
+sgcf_nrmp_project/core/tests/semantic/test_semantic_margin_provider.py
+sgcf_nrmp_project/artifacts/stages/stage_09_semantic_nrmp_closed_loop/*
+
+Protected-directory incremental status:
+neupan/: no Stage 09 changes observed
+neupan_ros/: no Stage 09 changes observed
+neupan_ros2/: no Stage 09 changes observed
+example/: no Stage 09 changes observed
+docker/: no Stage 09 changes observed
+
+git diff --check: PASS
+

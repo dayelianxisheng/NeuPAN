@@ -1,0 +1,11 @@
+{
+  "dataset": "sgcf_nrmp_project/artifacts/datasets/geometry_v1",
+  "valid": true,
+  "shard_count": 13,
+  "sample_count": 3200,
+  "scene_count": 100,
+  "scene_leakage": false,
+  "nan_or_inf_count": 0,
+  "temporary_file_count": 0,
+  "regenerated": false
+}

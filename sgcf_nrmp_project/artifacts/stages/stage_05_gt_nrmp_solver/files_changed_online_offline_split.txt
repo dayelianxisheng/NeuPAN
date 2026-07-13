@@ -1,0 +1,12 @@
+core/src/sgcf_nrmp/planner/geometry_checker.py
+core/src/sgcf_nrmp/planner/gt_nrmp_planner.py
+core/src/sgcf_nrmp/planner/offline_simulator.py
+core/src/sgcf_nrmp/planner/solver_result.py
+core/tests/planner/test_online_offline_boundary.py
+core/tests/planner/test_batched_observable_oracle.py
+core/tests/planner/test_planner_behavior.py
+core/scripts/run_gt_nrmp_scenarios.py
+core/scripts/benchmark_exact_oracle_optimization.py
+artifacts/stages/stage_05_gt_nrmp_solver/ (reports, JSON metrics, and PNG figures listed by this optimization)
+
+No file under neupan/, neupan_ros/, neupan_ros2/, example/, or docker/ was modified.

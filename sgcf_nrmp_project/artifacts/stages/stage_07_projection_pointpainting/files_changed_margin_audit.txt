@@ -1,0 +1,16 @@
+core/src/sgcf_nrmp/semantic/margin_labeler.py
+core/tests/semantic/test_margin_labeler.py
+core/scripts/evaluate_stage07_projection_pointpainting.py
+artifacts/stages/stage_07_projection_pointpainting/semantic_margin_consistency_audit.md
+artifacts/stages/stage_07_projection_pointpainting/semantic_margin_bound_report.json
+artifacts/stages/stage_07_projection_pointpainting/semantic_margin_violation_cases.json
+artifacts/stages/stage_07_projection_pointpainting/semantic_information_boundary_report.json
+artifacts/stages/stage_07_projection_pointpainting/test_output_margin_audit.txt
+artifacts/stages/stage_07_projection_pointpainting/files_changed_margin_audit.txt
+artifacts/stages/stage_07_projection_pointpainting/semantic_margin_violation_examples.png
+artifacts/stages/stage_07_projection_pointpainting/semantic_margin_heatmap.png
+artifacts/stages/stage_07_projection_pointpainting/case_*.png
+artifacts/stages/stage_07_projection_pointpainting/stage_report.md
+artifacts/stages/stage_07_projection_pointpainting/semantic_margin_definition.md
+
+No Stage-05 exact geometry definition, protected NeuPAN directory, model, Planner, or Stage-08 file was modified.

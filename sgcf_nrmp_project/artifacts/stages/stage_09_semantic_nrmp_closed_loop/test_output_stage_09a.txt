@@ -1,0 +1,18 @@
+Stage 09A verification
+
+PASS compileall: core/src, core/scripts, core/tests
+PASS focused lifecycle audit: 8 tests
+PASS P0/semantic/oracle focused regression: 16 tests
+PASS full unittest discovery: 126 tests in 12.736 s
+PASS P0 equivalence: state/control/distance/gradient/slack maxima all 0.0
+PASS empty straight/turn: 12 cycles x 4 modes, all SOLVED_SAFE
+PASS minimal solver timeout count: 0
+PASS normal-scene planner-induced collision count: 0
+PASS intentional initial collision: 4/4 EMERGENCY_STOP, 0 planner-induced
+PASS steady-state online P95: all minimal reproductions below 100 ms
+PASS git diff --check
+PASS protected-directory incremental check
+
+Decision: AUDIT_FIXED_READY_TO_REVALIDATE_STAGE09
+Stage 09 remains BLOCKED_PLANNER_INTEGRATION pending explicit revalidation.
+

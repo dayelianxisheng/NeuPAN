@@ -1,0 +1,19 @@
+{
+  "d_safe": 0.6,
+  "model_false_safe_count": 2,
+  "model_false_safe_rate": 0.004166666666666667,
+  "world_risk_count": 4,
+  "world_risk_rate": 0.008333333333333333,
+  "world_risk_partial_observation_count": 4,
+  "world_risk_model_error_count": 0,
+  "model_false_safe_indices": [
+    140,
+    293
+  ],
+  "world_risk_partial_observation_indices": [
+    13,
+    112,
+    164,
+    327
+  ]
+}

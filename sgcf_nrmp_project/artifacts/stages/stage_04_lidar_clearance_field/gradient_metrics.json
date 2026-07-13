@@ -1,0 +1,11 @@
+{
+  "valid_count": 462,
+  "translation_l1": 0.1423499435186386,
+  "translation_l2": 0.22441372275352478,
+  "translation_cosine_similarity": 0.9619495272636414,
+  "x_mae": 0.13988953828811646,
+  "y_mae": 0.14481031894683838,
+  "yaw_mae_per_radian": 0.14991873502731323,
+  "yaw_rmse_per_radian": 0.1824670284986496,
+  "local_linearity_mae_m": 7.517580525018275e-05
+}

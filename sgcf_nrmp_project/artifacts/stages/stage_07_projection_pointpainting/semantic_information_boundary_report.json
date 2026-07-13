@@ -1,0 +1,17 @@
+{
+  "d_geo_source": "current observable LiDAR points",
+  "d_j_source": "the same current observable LiDAR points",
+  "geometry_primitive": "exact point-to-oriented-rectangle distance",
+  "footprint_length_m": 0.8,
+  "footprint_width_m": 0.5,
+  "pose_identical": true,
+  "truncation_m": 8.0,
+  "collision_distance_m": 0.0,
+  "invalid_or_unknown_semantic_margin_m": 0.0,
+  "occluded_instance_used_online": false,
+  "out_of_fov_instance_used_online": false,
+  "world_polygon_used_online": false,
+  "hidden_world_affects_margin": false,
+  "same_observable_different_world_test_passed": true,
+  "pass": true
+}

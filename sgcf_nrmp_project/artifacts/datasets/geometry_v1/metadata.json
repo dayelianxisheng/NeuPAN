@@ -1,0 +1,21 @@
+{
+  "code_version": "0.1.0.dev0",
+  "config_hash": "1ce0d06e548e20d69fc33b20102b203fa4dea1ed73446e44b51a746a35d06ec7",
+  "fixed_point_count": 180,
+  "generation_seconds": 50.083191234999504,
+  "mean_scene_seconds": 0.5008280905399988,
+  "sample_count": 3200,
+  "scene_count": 100,
+  "schema_version": "geometry_v1",
+  "seed": 20260711,
+  "split_sample_counts": {
+    "test": 480,
+    "train": 2240,
+    "validation": 480
+  },
+  "split_scene_counts": {
+    "test": 15,
+    "train": 70,
+    "validation": 15
+  }
+}

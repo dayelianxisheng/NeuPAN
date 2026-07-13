@@ -1,0 +1,7 @@
+{
+  "UNKNOWN": 0,
+  "STATIC_OBSTACLE": 1,
+  "HUMAN": 2,
+  "VEHICLE": 3,
+  "ROBOT": 4
+}

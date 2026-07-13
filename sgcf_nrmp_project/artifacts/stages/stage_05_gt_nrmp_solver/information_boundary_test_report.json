@@ -1,0 +1,15 @@
+{
+  "planner_accepts_world_geometry": false,
+  "world_evaluator_exception_affects_planner": false,
+  "same_observation_different_hidden_world_control_equal": true,
+  "same_observation_different_hidden_world_risk_can_differ": true,
+  "online_timings_contain_world_evaluation": false,
+  "offline_evaluator_changes_warm_start": false,
+  "offline_evaluator_changes_planner_output": false,
+  "hidden_obstacle_classification_passed": true,
+  "observable_collision_online_rejection_passed": true,
+  "legacy_split_numeric_equivalence_passed": true,
+  "unittest_count": 25,
+  "failures": 0,
+  "pass": true
+}

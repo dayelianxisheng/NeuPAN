@@ -1,0 +1,12 @@
+{
+  "device": "cpu",
+  "repeats": 10,
+  "units": "milliseconds per complete batch",
+  "batches": {
+    "1": {"model_forward_mean": 0.2379515, "model_autograd_mean": 0.5294985, "exact_python_oracle_mean": 1.7855002, "outputs_finite": true},
+    "10": {"model_forward_mean": 0.4949549, "model_autograd_mean": 0.9577592, "exact_python_oracle_mean": 5.9314757, "outputs_finite": true},
+    "32": {"model_forward_mean": 0.8377311, "model_autograd_mean": 1.7007073, "exact_python_oracle_mean": 18.0263000, "outputs_finite": true},
+    "128": {"model_forward_mean": 1.8357415, "model_autograd_mean": 4.5890315, "exact_python_oracle_mean": 77.3968370, "outputs_finite": true}
+  },
+  "note": "Smoke-only timings from this machine; no comparison gate against old-machine latency."
+}

@@ -1,0 +1,31 @@
+{
+  "python": {"version": "3.10.0", "executable": "/home/qcqc/miniconda3/envs/neupan/bin/python"},
+  "dependencies": {
+    "torch": {"installed": true, "version": "2.8.0+cu128"},
+    "numpy": {"installed": true, "version": "1.26.4"},
+    "scipy": {"installed": true, "version": "1.13.0"},
+    "cvxpy": {"installed": true, "version": "1.7.5"},
+    "cvxpylayers": {"installed": true, "version": "0.1.6"},
+    "osqp": {"installed": true, "version": "1.1.1"},
+    "shapely": {"installed": true, "version": "2.0.7"},
+    "PyYAML": {"installed": true, "version": "6.0.3"},
+    "matplotlib": {"installed": true, "version": "3.9.4"},
+    "pytest": {"installed": false}
+  },
+  "torch_runtime": {
+    "version": "2.8.0+cu128",
+    "cuda_version": "12.8",
+    "host_cuda_available": true,
+    "sandbox_cuda_available": false,
+    "sandbox_limitation": "NVIDIA device nodes are not mapped into the Codex sandbox",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "compute_capability": [12, 0],
+    "arch_list": ["sm_70", "sm_75", "sm_80", "sm_86", "sm_90", "sm_100", "sm_120"],
+    "tensor_device": "cuda:0",
+    "matrix_multiply_2048_passed": true,
+    "result_finite": true,
+    "verification_source": "manual host-terminal verification"
+  },
+  "reinstall_required": {"pytorch": false, "cuda_toolkit": false, "nvidia_driver": false},
+  "network_install_performed": false
+}

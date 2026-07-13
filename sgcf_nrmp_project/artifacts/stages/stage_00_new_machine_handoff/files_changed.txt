@@ -1,0 +1,18 @@
+Files created by the new-machine handoff check:
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/handoff_report.md
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/git_status.txt
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/environment_report.md
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/dependency_report.json
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/project_file_inventory.txt
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/missing_files.json
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/regression_test_output.txt
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/checkpoint_validation.json
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/dataset_validation.json
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/cpu_smoke_benchmark.json
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/protected_directory_status.txt
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/recommended_next_action.md
+sgcf_nrmp_project/artifacts/stages/stage_00_new_machine_handoff/files_changed.txt
+
+No existing source, dataset, checkpoint, stage 01–05 artifact, or protected-directory file was modified by this check.
+
+CUDA status revision: handoff_report.md, environment_report.md, dependency_report.json, recommended_next_action.md, and this inventory were updated from the manually verified host results. No file outside this handoff directory was changed by the revision.

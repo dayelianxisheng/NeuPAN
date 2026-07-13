@@ -1,0 +1,306 @@
+{
+  "before": {
+    "source": "pre-optimization Stage-05 report",
+    "corridor": {
+      "online_mixed_mean_ms": 310.87,
+      "online_mixed_p95_ms": 364.44
+    },
+    "narrow_passage": {
+      "online_mixed_mean_ms": 320.72,
+      "online_mixed_p95_ms": 374.64
+    },
+    "note": "Legacy timing mixed observable Shapely/finite differences with complete-world scene.label evaluation; plotting/GIF were outside cycle timing."
+  },
+  "after": {
+    "single_obstacle": {
+      "metrics": {
+        "success": true,
+        "steps": 29,
+        "navigation_time_s": 5.800000000000001,
+        "path_length_m": 4.316299894533105,
+        "control_smoothness": 0.08128056417736178,
+        "min_observable_clearance_m": 0.3334266665151856,
+        "min_world_clearance_m": 0.3333831739146291,
+        "observable_collision": false,
+        "world_collision": false,
+        "partial_observation_world_risk": false,
+        "average_qp_solve_ms": 3.5470840506190418,
+        "p95_qp_solve_ms": 2.4185046006095945,
+        "max_qp_solve_ms": 114.91721799939114,
+        "average_end_to_end_ms": 18.018750930987782,
+        "p95_end_to_end_ms": 17.029932400328104,
+        "max_end_to_end_ms": 129.35484500121675,
+        "average_offline_world_evaluation_ms": 0.10060503430803033,
+        "p95_offline_world_evaluation_ms": 0.12501079982030205,
+        "end_to_end_over_100ms_count": 1,
+        "scp_iterations_mean": 2.7241379310344827,
+        "max_slack": 8.113845646424365e-08,
+        "geometry_recheck_rejections": 0,
+        "fallback_count": 0,
+        "emergency_stop_count": 0
+      },
+      "latency": {
+        "observable_distance_gradient_ms": {
+          "mean_ms": 0.37549991137421795,
+          "p50_ms": 0.36204000025463756,
+          "p95_ms": 0.4636366002159775,
+          "p99_ms": 0.5111999398650369,
+          "count": 79
+        },
+        "parameter_update_ms": {
+          "mean_ms": 1.0062189746430348,
+          "p50_ms": 0.9718439996504458,
+          "p95_ms": 1.2122533000365365,
+          "p99_ms": 1.283271958855039,
+          "count": 79
+        },
+        "solve_wall_ms": {
+          "mean_ms": 3.5470840506190418,
+          "p50_ms": 2.0914649994665524,
+          "p95_ms": 2.4185046006095945,
+          "p99_ms": 27.297307959743065,
+          "count": 79
+        },
+        "osqp_internal_ms": {
+          "mean_ms": 0.3042054556962025,
+          "p50_ms": 0.231965,
+          "p95_ms": 0.4020829,
+          "p99_ms": 1.0869743199999975,
+          "count": 79
+        },
+        "observable_recheck_ms": {
+          "mean_ms": 0.19545620369643546,
+          "p50_ms": 0.17575000038050348,
+          "p95_ms": 0.22486920079245457,
+          "p99_ms": 0.49083598052675353,
+          "count": 108
+        },
+        "lidar_data_preparation_ms": {
+          "mean_ms": 3.4618970343656437,
+          "p50_ms": 3.387908000149764,
+          "p95_ms": 4.040649600210599,
+          "p99_ms": 4.7721617594652335,
+          "count": 29
+        },
+        "reference_and_control_logic_ms": {
+          "mean_ms": 0.05380758588655916,
+          "p50_ms": 0.05759799933002796,
+          "p95_ms": 0.06318260057014413,
+          "p99_ms": 0.06866347976028918,
+          "count": 29
+        },
+        "online_equivalent_planner_ms": {
+          "mean_ms": 18.018750930987782,
+          "p50_ms": 14.759981999304728,
+          "p95_ms": 17.029932400328104,
+          "p99_ms": 98.01421176074642,
+          "count": 29
+        },
+        "offline_world_evaluation_ms": {
+          "mean_ms": 0.10060503430803033,
+          "p50_ms": 0.09533900083624758,
+          "p95_ms": 0.12501079982030205,
+          "p99_ms": 0.13522679946618152,
+          "count": 29
+        }
+      },
+      "online_p95_under_100ms": true
+    },
+    "corridor": {
+      "metrics": {
+        "success": true,
+        "steps": 25,
+        "navigation_time_s": 5.0,
+        "path_length_m": 3.8171125538226414,
+        "control_smoothness": 0.034292773205042267,
+        "min_observable_clearance_m": 0.3749999999999998,
+        "min_world_clearance_m": 0.375,
+        "observable_collision": false,
+        "world_collision": false,
+        "partial_observation_world_risk": false,
+        "average_qp_solve_ms": 3.3856861044032893,
+        "p95_qp_solve_ms": 2.553881599305896,
+        "max_qp_solve_ms": 69.70997399912449,
+        "average_end_to_end_ms": 21.941866079941974,
+        "p95_end_to_end_ms": 23.17643879978277,
+        "max_end_to_end_ms": 86.17154999956256,
+        "average_offline_world_evaluation_ms": 0.10502999983145855,
+        "p95_offline_world_evaluation_ms": 0.11418040048738476,
+        "end_to_end_over_100ms_count": 0,
+        "scp_iterations_mean": 2.68,
+        "max_slack": 0.0,
+        "geometry_recheck_rejections": 0,
+        "fallback_count": 0,
+        "emergency_stop_count": 0
+      },
+      "latency": {
+        "observable_distance_gradient_ms": {
+          "mean_ms": 0.47550435830537513,
+          "p50_ms": 0.4789890008396469,
+          "p95_ms": 0.543181201101106,
+          "p99_ms": 0.6932809795762296,
+          "count": 67
+        },
+        "parameter_update_ms": {
+          "mean_ms": 1.1557424626951263,
+          "p50_ms": 1.2167140012024902,
+          "p95_ms": 1.2398210994433612,
+          "p99_ms": 1.2539873002606328,
+          "count": 67
+        },
+        "solve_wall_ms": {
+          "mean_ms": 3.3856861044032893,
+          "p50_ms": 2.452663000440225,
+          "p95_ms": 2.553881599305896,
+          "p99_ms": 25.39237583940144,
+          "count": 67
+        },
+        "osqp_internal_ms": {
+          "mean_ms": 0.3151424925373134,
+          "p50_ms": 0.26580000000000004,
+          "p95_ms": 0.37708369999999997,
+          "p99_ms": 0.8070250800000016,
+          "count": 67
+        },
+        "observable_recheck_ms": {
+          "mean_ms": 0.19728780432120877,
+          "p50_ms": 0.2059619991996442,
+          "p95_ms": 0.22577304962396738,
+          "p99_ms": 0.2715273800640717,
+          "count": 92
+        },
+        "lidar_data_preparation_ms": {
+          "mean_ms": 7.353524999998626,
+          "p50_ms": 7.341108001128305,
+          "p95_ms": 9.121349799534071,
+          "p99_ms": 9.557595120350015,
+          "count": 25
+        },
+        "reference_and_control_logic_ms": {
+          "mean_ms": 0.052803520011366345,
+          "p50_ms": 0.05719699947803747,
+          "p95_ms": 0.0722941997082671,
+          "p99_ms": 0.08231436106143517,
+          "count": 25
+        },
+        "online_equivalent_planner_ms": {
+          "mean_ms": 21.941866079941974,
+          "p50_ms": 20.76368999951228,
+          "p95_ms": 23.17643879978277,
+          "p99_ms": 71.1033575996406,
+          "count": 25
+        },
+        "offline_world_evaluation_ms": {
+          "mean_ms": 0.10502999983145855,
+          "p50_ms": 0.10503699922992382,
+          "p95_ms": 0.11418040048738476,
+          "p99_ms": 0.12560147973999844,
+          "count": 25
+        }
+      },
+      "online_p95_under_100ms": true
+    },
+    "narrow_passage": {
+      "metrics": {
+        "success": true,
+        "steps": 25,
+        "navigation_time_s": 5.0,
+        "path_length_m": 3.8171125538226414,
+        "control_smoothness": 0.034292773205042267,
+        "min_observable_clearance_m": 0.2599999999999998,
+        "min_world_clearance_m": 0.26,
+        "observable_collision": false,
+        "world_collision": false,
+        "partial_observation_world_risk": false,
+        "average_qp_solve_ms": 4.0478700299913655,
+        "p95_qp_solve_ms": 2.8307692004091223,
+        "max_qp_solve_ms": 112.24610800127266,
+        "average_end_to_end_ms": 23.687135400177795,
+        "p95_end_to_end_ms": 21.96809320121247,
+        "max_end_to_end_ms": 129.28656099938962,
+        "average_offline_world_evaluation_ms": 0.10682096006348729,
+        "p95_offline_world_evaluation_ms": 0.11720439906639513,
+        "end_to_end_over_100ms_count": 1,
+        "scp_iterations_mean": 2.68,
+        "max_slack": 0.0,
+        "geometry_recheck_rejections": 0,
+        "fallback_count": 0,
+        "emergency_stop_count": 0
+      },
+      "latency": {
+        "observable_distance_gradient_ms": {
+          "mean_ms": 0.466377238713469,
+          "p50_ms": 0.4803709998668637,
+          "p95_ms": 0.5404014998930506,
+          "p99_ms": 0.5800460001773899,
+          "count": 67
+        },
+        "parameter_update_ms": {
+          "mean_ms": 1.1629573283827805,
+          "p50_ms": 1.2243479995959206,
+          "p95_ms": 1.3558349995946626,
+          "p99_ms": 1.4701851396239363,
+          "count": 67
+        },
+        "solve_wall_ms": {
+          "mean_ms": 4.0478700299913655,
+          "p50_ms": 2.4596359999122797,
+          "p95_ms": 2.8307692004091223,
+          "p99_ms": 40.13824096069621,
+          "count": 67
+        },
+        "osqp_internal_ms": {
+          "mean_ms": 0.3193988358208955,
+          "p50_ms": 0.302729,
+          "p95_ms": 0.4304592999999998,
+          "p99_ms": 0.7870934000000015,
+          "count": 67
+        },
+        "observable_recheck_ms": {
+          "mean_ms": 0.20424468483843553,
+          "p50_ms": 0.2075850006804103,
+          "p95_ms": 0.25736495053934055,
+          "p99_ms": 0.3204527696652807,
+          "count": 92
+        },
+        "lidar_data_preparation_ms": {
+          "mean_ms": 7.28996659963741,
+          "p50_ms": 7.4668349989224225,
+          "p95_ms": 7.962681198841891,
+          "p99_ms": 8.067379280619207,
+          "count": 25
+        },
+        "reference_and_control_logic_ms": {
+          "mean_ms": 0.056506040127715096,
+          "p50_ms": 0.05743800102209207,
+          "p95_ms": 0.09923279940267092,
+          "p99_ms": 0.10239203998935409,
+          "count": 25
+        },
+        "online_equivalent_planner_ms": {
+          "mean_ms": 23.687135400177795,
+          "p50_ms": 21.04284400047618,
+          "p95_ms": 21.96809320121247,
+          "p99_ms": 103.53969339987067,
+          "count": 25
+        },
+        "offline_world_evaluation_ms": {
+          "mean_ms": 0.10682096006348729,
+          "p50_ms": 0.10578799992799759,
+          "p95_ms": 0.11720439906639513,
+          "p99_ms": 0.161255079001421,
+          "count": 25
+        }
+      },
+      "online_p95_under_100ms": true
+    },
+    "visualization_latency": {
+      "mean_ms": 35.03784033273405,
+      "p50_ms": 35.23234599924763,
+      "p95_ms": 37.06366329952289,
+      "p99_ms": 37.226447059547354,
+      "count": 3
+    },
+    "all_online_p95_under_100ms": true
+  }
+}

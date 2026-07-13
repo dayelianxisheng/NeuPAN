@@ -1,0 +1,25 @@
+core/configs/data/semantic_scene.yaml
+core/configs/model/pointpainting_baseline.yaml
+core/configs/eval/stage_07_projection.yaml
+core/src/sgcf_nrmp/types/camera.py
+core/src/sgcf_nrmp/types/semantic.py
+core/src/sgcf_nrmp/types/multimodal.py
+core/src/sgcf_nrmp/geometry/camera_projection.py
+core/src/sgcf_nrmp/geometry/semantic_rasterizer.py
+core/src/sgcf_nrmp/data/procedural/semantic_scene.py
+core/src/sgcf_nrmp/fusion/__init__.py
+core/src/sgcf_nrmp/fusion/pointpainting.py
+core/src/sgcf_nrmp/semantic/__init__.py
+core/src/sgcf_nrmp/semantic/margin_labeler.py
+core/src/sgcf_nrmp/semantic/reliability_labeler.py
+core/scripts/evaluate_stage07_projection_pointpainting.py
+core/tests/geometry/test_camera_projection.py
+core/tests/data/test_semantic_scene.py
+core/tests/fusion/__init__.py
+core/tests/fusion/test_pointpainting.py
+core/tests/semantic/__init__.py
+core/tests/semantic/test_margin_labeler.py
+core/tests/semantic/test_reliability_labeler.py
+artifacts/stages/stage_07_projection_pointpainting/*
+
+No protected NeuPAN path, Stage-05 exact geometry definition, learned model, checkpoint, ROS, Gazebo, or Stage-08 file was modified.

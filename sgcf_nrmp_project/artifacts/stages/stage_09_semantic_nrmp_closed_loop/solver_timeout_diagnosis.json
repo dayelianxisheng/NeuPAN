@@ -1,0 +1,5 @@
+{
+  "minimal_reproduction_timeout_count": 0,
+  "classification": "OSQP USER_LIMIT when present; no outer SCP or episode timeout is mapped to SOLVER_TIMEOUT",
+  "events": []
+}

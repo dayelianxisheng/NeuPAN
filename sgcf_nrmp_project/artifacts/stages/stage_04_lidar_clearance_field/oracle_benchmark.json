@@ -1,0 +1,150 @@
+{
+  "device": "cpu",
+  "notes": [
+    "Exact geometry is a Python/Shapely oracle.",
+    "Small batches may favor exact geometry; neural batching is the intended comparison.",
+    "Autograd and finite differences add gradient cost."
+  ],
+  "batches": {
+    "1": {
+      "meaning": "query_batch",
+      "model_forward": {
+        "mean_ms": 0.3513744331939961,
+        "p50_ms": 0.3489425007501268,
+        "p95_ms": 0.38124940037960187,
+        "per_query_mean_ms": 0.3513744331939961,
+        "repeats": 30,
+        "query_count": 1
+      },
+      "model_forward_autograd": {
+        "mean_ms": 1.1246708000423193,
+        "p50_ms": 0.9512434999123798,
+        "p95_ms": 1.1770862490266154,
+        "per_query_mean_ms": 1.1246708000423193,
+        "repeats": 30,
+        "query_count": 1
+      },
+      "exact_geometry": {
+        "mean_ms": 1.4181295665669797,
+        "p50_ms": 0.921161999940523,
+        "p95_ms": 1.044841799648566,
+        "per_query_mean_ms": 1.4181295665669797,
+        "repeats": 30,
+        "query_count": 1
+      },
+      "exact_geometry_finite_difference": {
+        "mean_ms": 6.085304667067248,
+        "p50_ms": 5.534535999686341,
+        "p95_ms": 7.103458300844068,
+        "per_query_mean_ms": 6.085304667067248,
+        "repeats": 3,
+        "query_count": 1
+      }
+    },
+    "10": {
+      "meaning": "full_horizon",
+      "model_forward": {
+        "mean_ms": 0.827321633369138,
+        "p50_ms": 0.7951994994073175,
+        "p95_ms": 1.0994318503435352,
+        "per_query_mean_ms": 0.0827321633369138,
+        "repeats": 30,
+        "query_count": 10
+      },
+      "model_forward_autograd": {
+        "mean_ms": 2.3022088665432725,
+        "p50_ms": 2.251935999993293,
+        "p95_ms": 2.788833600880025,
+        "per_query_mean_ms": 0.23022088665432724,
+        "repeats": 30,
+        "query_count": 10
+      },
+      "exact_geometry": {
+        "mean_ms": 7.486183766741306,
+        "p50_ms": 7.436577500811836,
+        "p95_ms": 7.959576599751017,
+        "per_query_mean_ms": 0.7486183766741306,
+        "repeats": 30,
+        "query_count": 10
+      },
+      "exact_geometry_finite_difference": {
+        "mean_ms": 57.30558433363816,
+        "p50_ms": 57.197180000002845,
+        "p95_ms": 57.94538329992065,
+        "per_query_mean_ms": 5.730558433363816,
+        "repeats": 3,
+        "query_count": 10
+      }
+    },
+    "32": {
+      "meaning": "query_batch",
+      "model_forward": {
+        "mean_ms": 1.6011701999862755,
+        "p50_ms": 1.378013999783434,
+        "p95_ms": 2.4385673994402164,
+        "per_query_mean_ms": 0.05003656874957111,
+        "repeats": 30,
+        "query_count": 32
+      },
+      "model_forward_autograd": {
+        "mean_ms": 4.719318700093329,
+        "p50_ms": 4.498412500652194,
+        "p95_ms": 6.977806250415592,
+        "per_query_mean_ms": 0.14747870937791654,
+        "repeats": 30,
+        "query_count": 32
+      },
+      "exact_geometry": {
+        "mean_ms": 23.114384666951082,
+        "p50_ms": 22.768231499867397,
+        "p95_ms": 24.73704295052812,
+        "per_query_mean_ms": 0.7223245208422213,
+        "repeats": 30,
+        "query_count": 32
+      },
+      "exact_geometry_finite_difference": {
+        "mean_ms": 172.99789099949217,
+        "p50_ms": 172.35699899902102,
+        "p95_ms": 174.65510849942802,
+        "per_query_mean_ms": 5.40618409373413,
+        "repeats": 3,
+        "query_count": 32
+      }
+    },
+    "128": {
+      "meaning": "query_batch",
+      "model_forward": {
+        "mean_ms": 5.346808900079243,
+        "p50_ms": 5.30730750051589,
+        "p95_ms": 7.507539050402556,
+        "per_query_mean_ms": 0.04177194453186909,
+        "repeats": 30,
+        "query_count": 128
+      },
+      "model_forward_autograd": {
+        "mean_ms": 17.90087166646117,
+        "p50_ms": 16.920696999477514,
+        "p95_ms": 26.831339949421793,
+        "per_query_mean_ms": 0.1398505598942279,
+        "repeats": 30,
+        "query_count": 128
+      },
+      "exact_geometry": {
+        "mean_ms": 96.10771586673461,
+        "p50_ms": 94.28297099930205,
+        "p95_ms": 100.78890674994909,
+        "per_query_mean_ms": 0.7508415302088641,
+        "repeats": 30,
+        "query_count": 128
+      },
+      "exact_geometry_finite_difference": {
+        "mean_ms": 734.0170513331637,
+        "p50_ms": 731.5510520002135,
+        "p95_ms": 738.2354419996773,
+        "per_query_mean_ms": 5.734508213540342,
+        "repeats": 3,
+        "query_count": 128
+      }
+    }
+  }
+}

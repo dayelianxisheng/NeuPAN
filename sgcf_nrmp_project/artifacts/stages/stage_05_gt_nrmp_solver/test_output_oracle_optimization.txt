@@ -1,0 +1,11 @@
+Compileall: PASS
+Planner/interface/Oracle unittest suite: 25/25 PASS
+Full standard-library unittest suite: 77/77 PASS in 10.687 s
+100-scene x 100-query distance equivalence: PASS
+Gradient equivalence: PASS, 9,147 compared samples, 0 NaN/Inf
+Single-obstacle closed loop: PASS, online P95 17.03 ms
+Corridor closed loop: PASS, online P95 23.18 ms
+Narrow-passage closed loop: PASS, online P95 21.97 ms
+Protected-directory worktree check: PASS
+
+No pytest, training, dataset generation, network installation, Stage-04 model integration, or Stage-06 work was performed.
