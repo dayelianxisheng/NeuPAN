@@ -1,0 +1,14 @@
+{
+  "search_roots": [
+    "/usr/lib",
+    "/lib",
+    "/opt"
+  ],
+  "matching_directories": [
+    "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins"
+  ],
+  "unique": true,
+  "preexisting_alias_count": 0,
+  "directory_created_by_stage11be": false,
+  "selected_directory": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins"
+}

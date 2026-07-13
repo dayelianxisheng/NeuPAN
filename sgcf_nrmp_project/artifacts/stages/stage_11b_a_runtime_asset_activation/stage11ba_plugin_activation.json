@@ -1,0 +1,34 @@
+{
+  "world_systems": {
+    "Physics": {
+      "declared_all_worlds": true
+    },
+    "UserCommands": {
+      "declared_all_worlds": true
+    },
+    "SceneBroadcaster": {
+      "declared_all_worlds": true
+    },
+    "Sensors": {
+      "declared_all_worlds": true,
+      "count_per_world": 1,
+      "render_engine": "ogre2"
+    }
+  },
+  "robot_diff_drive": {
+    "declared_once": true,
+    "left_joint": "left_wheel_joint",
+    "right_joint": "right_wheel_joint",
+    "command_topic": "/cmd_vel",
+    "odometry_topic": "/odom",
+    "frame_id": "odom",
+    "child_frame_id": "base_link"
+  },
+  "runtime": {
+    "diff_drive_loaded_before_sensor_crash": true,
+    "sensors_system_library_loaded": true,
+    "render_engine_initialized": false,
+    "failure": "gz-rendering-ogre2 shared-library name could not be resolved"
+  },
+  "passed": false
+}

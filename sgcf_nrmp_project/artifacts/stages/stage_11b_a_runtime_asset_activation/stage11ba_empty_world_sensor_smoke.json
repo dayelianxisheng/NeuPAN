@@ -1,0 +1,10 @@
+{
+  "status": "NOT_COMPLETED_RUNTIME_CRASH",
+  "lidar_message_count": 0,
+  "camera_message_count": 0,
+  "odometry_message_count": 0,
+  "lidar_topic_present": false,
+  "camera_topic_present": false,
+  "odometry_topic_present": true,
+  "passed": false
+}

@@ -1,0 +1,68 @@
+{
+  "obstacle_signature_sha256_before": "5e19602b9ef7a904e7e6b83575d994ace4dca32d44309c08a7dd1372e72e9b00",
+  "obstacle_signature_sha256_after": "5e19602b9ef7a904e7e6b83575d994ace4dca32d44309c08a7dd1372e72e9b00",
+  "scenario_geometry_unchanged": true,
+  "human_path_side_unchanged": true,
+  "base_collision_size_unchanged": true,
+  "wheel_radius_m": 0.1,
+  "wheel_radius_contract_m": 0.1,
+  "wheel_separation_m": 0.5,
+  "wheel_separation_contract_m": 0.5,
+  "lidar_contract": {
+    "frame_id": "lidar_link",
+    "samples": 181,
+    "angle_min_rad": -3.141592653589793,
+    "angle_max_rad": 3.141592653589793,
+    "angle_increment_rad": 0.03490658503988659,
+    "zero_angle_axis": "+x forward",
+    "increasing_angle_direction": "counter-clockwise toward +y left",
+    "range_min_m": 0.05,
+    "range_max_m": 8.0,
+    "update_rate_hz": 10.0,
+    "noise_std_m": 0.0,
+    "invalid_policy": "retain ordered slot, zero point, valid mask false",
+    "maximum_range_policy": "no-return; retain slot with valid mask false",
+    "conversion": "[r*cos(angle), r*sin(angle), 0] then T_base_link_lidar_link",
+    "point_order_preserved": true
+  },
+  "camera_contract": {
+    "camera_frame": "camera_link",
+    "optical_frame": "camera_optical_frame",
+    "optical_axes": {
+      "x": "right",
+      "y": "down",
+      "z": "forward"
+    },
+    "width": 320,
+    "height": 240,
+    "horizontal_fov_rad": 1.453284681363431,
+    "intrinsics": {
+      "fx": 180.0,
+      "fy": 180.0,
+      "cx": 160.0,
+      "cy": 120.0
+    },
+    "update_rate_hz": 10.0,
+    "near_clip_m": 0.05,
+    "far_clip_m": 20.0,
+    "transform_convention": "T_camera_optical_frame_lidar_link",
+    "rgb_model_execution_in_stage11a": false
+  },
+  "sensors_system_once_in_all_12_worlds": true,
+  "docker_stage11b_baseline_sha256": {
+    "docker/README.md": "d634aa2c14134f80e46fc0a3c719d1db9aba29682c138e43de7d38cc33dcc83c",
+    "docker/gazebo_harmonic/Dockerfile": "a4d52ec34ad0d791032f7d747ff630f991de7d35ae398491e266392adab9fb79",
+    "docker/gazebo_harmonic/README.md": "d2590db1a695b72dd2beab126cdf70699aa75ba7dfb3b27d253973ce6ed33144",
+    "docker/gazebo_harmonic/install_validation.md": "0e25bd1d0ac5e6d35b0b09e56035d658f45b4885f28117dbe0ecc14dc3e73bdb",
+    "docker/gazebo_harmonic/container.sh": "2d0e99150e745981731c79e32608b21d02cd7dbe3cec72ed6845186145392d4a"
+  },
+  "docker_current_sha256": {
+    "docker/README.md": "d634aa2c14134f80e46fc0a3c719d1db9aba29682c138e43de7d38cc33dcc83c",
+    "docker/gazebo_harmonic/Dockerfile": "a4d52ec34ad0d791032f7d747ff630f991de7d35ae398491e266392adab9fb79",
+    "docker/gazebo_harmonic/README.md": "d2590db1a695b72dd2beab126cdf70699aa75ba7dfb3b27d253973ce6ed33144",
+    "docker/gazebo_harmonic/install_validation.md": "0e25bd1d0ac5e6d35b0b09e56035d658f45b4885f28117dbe0ecc14dc3e73bdb",
+    "docker/gazebo_harmonic/container.sh": "2d0e99150e745981731c79e32608b21d02cd7dbe3cec72ed6845186145392d4a"
+  },
+  "docker_modified_by_stage11ba": false,
+  "passed": true
+}

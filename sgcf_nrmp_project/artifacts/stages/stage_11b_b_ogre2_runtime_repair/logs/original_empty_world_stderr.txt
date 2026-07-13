@@ -1,0 +1,12 @@
+[1;31m[Err] [RenderEngineManager.cc:496] [0m[1;31mFailed to load plugin [[0m[1;31mgz-rendering-ogre2[0m[1;31m] : couldn't find shared library.[0m[1;31m[0m
+[1;31m[Err] [RenderUtil.cc:2636] [0m[1;31mEngine [[0m[1;31mogre2[0m[1;31m] is not supported. [0m[1;31mLoading OGRE2 instead.[0m[1;31m[0m
+[1;31m[Err] [RenderEngineManager.cc:496] [0m[1;31mFailed to load plugin [[0m[1;31mgz-rendering-ogre2[0m[1;31m] : couldn't find shared library.[0m[1;31m[0m
+Stack trace (most recent call last) in thread 148:
+#6    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#5    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7cc4f884ca83, in clone
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x7cc4f87bbac2, in 
+#3    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x7cc4f4df0252, in 
+#2    Object "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/libgz-sim-sensors-system.so", at 0x7cc4d102c003, in gz::sim::v8::systems::SensorsPrivate::RenderThread()
+#1    Object "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/libgz-sim-sensors-system.so", at 0x7cc4d102b67e, in gz::sim::v8::systems::SensorsPrivate::WaitForInit()
+#0    Object "/lib/x86_64-linux-gnu/libgz-sim8-rendering.so.8", at 0x7cc4d0f811d0, in gz::sim::v8::RenderUtil::Init()
+Segmentation fault (Address not mapped to object [(nil)])

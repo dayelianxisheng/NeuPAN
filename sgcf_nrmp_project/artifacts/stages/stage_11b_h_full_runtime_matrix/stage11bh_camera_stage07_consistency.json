@@ -1,0 +1,85 @@
+{
+  "far_clip_m": 20.0,
+  "horizontal_fov_rad": 1.453284681363431,
+  "near_clip_m": 0.05,
+  "records": {
+    "human_path_center": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "human_path_side": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "initial_collision": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "narrow_passage": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "outdated_rgb_contract": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "rgb_dropout_contract": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "robot_obstacle": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "semantic_infeasible": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "single_static_obstacle": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "static_corridor": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    },
+    "vehicle_path": {
+      "cx_error": 0.0,
+      "cy_error": 0.0,
+      "fx_error": 1.9073486328125e-05,
+      "fy_error": 1.430511474609375e-05,
+      "size_match": true
+    }
+  },
+  "status": "PASSED_INTRINSICS"
+}

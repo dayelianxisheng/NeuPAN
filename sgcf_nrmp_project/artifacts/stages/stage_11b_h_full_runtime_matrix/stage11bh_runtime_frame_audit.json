@@ -1,0 +1,19 @@
+{
+  "T_target_source_preserved": true,
+  "base_axes": {
+    "x": "forward",
+    "y": "left",
+    "z": "up"
+  },
+  "camera_contract_optical_frame": "camera_optical_frame",
+  "camera_runtime_frame": "sgcf_robot::camera_link::rgb_camera",
+  "lidar_contract_frame": "lidar_link",
+  "lidar_runtime_frame": "sgcf_robot::lidar_link::lidar",
+  "note": "Gazebo Transport emits scoped sensor names; adapter mapping to frozen contract frame names remains explicit.",
+  "static_camera_optical_rpy": [
+    -1.5707963267948966,
+    0,
+    -1.5707963267948966
+  ],
+  "status": "STATIC_CONTRACT_PRESERVED_RUNTIME_SCOPED_FRAME_MAPPING_REQUIRED"
+}

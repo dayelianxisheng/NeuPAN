@@ -1,0 +1,40 @@
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+compileall:
+PASS
+git diff --check:
+PASS
+Acceptance matrix:
+01 original image retained: PASS
+02 independent new tag: PASS
+03 OGRE2 plugin exists: PASS
+04 plugin symlink valid: PASS
+05 ELF x86-64: PASS
+06 ldd not found = 0: PASS
+07 Gazebo/rendering ABI match: PASS
+08 Dockerfile reproducible repair: PASS
+09 no host shared library copy: PASS
+10 no OGRE ABI-bypass symlink: PASS
+11 headless / GUI not started: PASS
+12 empty_world no segfault: FAIL (SIGSEGV)
+13 LiDAR topic: FAIL (not published before crash)
+14 Camera topic: FAIL (not published before crash)
+15 odometry topic: PASS presence only; messages not sampled
+16 DiffDrive command: NOT_EXECUTED
+17 positive v: NOT_EXECUTED
+18 positive w: NOT_EXECUTED
+19 zero stop: NOT_EXECUTED
+20 residual Gazebo processes = 0: PASS
+21 Gazebo asset hash unchanged: PASS
+22 footprint 0.8 x 0.5: PASS
+23 Planner not started: PASS
+24 Stage10 not loaded: PASS
+25 ROS bridge not started: PASS
+26 JSON parse: PASS
+27 compileall: PASS
+28 git diff --check: PASS
+29 other docker directories: no Stage11B-B changes (docker/README.md pre-existing hash unchanged)
+30 protected algorithm directories: PASS no Stage11B-B changes

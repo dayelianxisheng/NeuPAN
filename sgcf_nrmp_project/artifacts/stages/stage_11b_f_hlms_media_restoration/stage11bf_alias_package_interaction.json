@@ -1,0 +1,33 @@
+{
+  "aliases": [
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so",
+      "target": "libgz-rendering8-ogre2.so",
+      "type": "symlink"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so",
+      "target": "libgz-rendering8-ogre2.so.8",
+      "type": "symlink"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so",
+      "target": "libgz-rendering8-ogre2.so.8",
+      "type": "symlink"
+    }
+  ],
+  "expected_stage11be_target_sha256": "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef",
+  "installed_stage11be_target": "/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8",
+  "installed_stage11be_target_sha256": "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef",
+  "must_build_from_pre_alias_image": true,
+  "must_not_overwrite_stage11be_local_alias": true,
+  "official_alias_chain": [
+    "libgz-rendering-ogre2.so",
+    "libgz-rendering8-ogre2.so",
+    "libgz-rendering8-ogre2.so.8",
+    "libgz-rendering8-ogre2.so.8.2.3"
+  ],
+  "package_contains_logical_alias": true,
+  "selected_case": "B_OFFICIAL_PACKAGE_PROVIDES_ALIAS",
+  "target_matches_stage11be": true
+}

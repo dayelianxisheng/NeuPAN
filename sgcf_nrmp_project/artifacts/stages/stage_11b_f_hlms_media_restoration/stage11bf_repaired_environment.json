@@ -1,0 +1,9 @@
+{
+  "gz_rendering_plugin_path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+  "gz_rendering_resource_path": "/usr/share/gz/gz-rendering8",
+  "headless": true,
+  "new_gl_or_egl_workarounds": [],
+  "obsolete_gz_sim_render_engine_path_present": false,
+  "render_engine": "ogre2",
+  "status": "PASSED"
+}

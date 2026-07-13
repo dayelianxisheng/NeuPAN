@@ -1,0 +1,8 @@
+
+Requesting state for world [narrow_passage]...
+
+Model: [32]
+  - Name: wall_right
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [2.000000 -0.585000 0.250000]
+    [0.000000 -0.000000 0.000000]

@@ -1,0 +1,50 @@
+{
+  "decision": "BLOCKED_GAZEBO_PLUGIN",
+  "plugins": [
+    {
+      "function": "physics system",
+      "runtime_evidence": "world advanced and /world/empty_world/control exists",
+      "load_success": true
+    },
+    {
+      "function": "scene broadcaster",
+      "runtime_evidence": "/world/empty_world/scene/info and pose/info topics exist",
+      "load_success": true
+    },
+    {
+      "function": "user commands",
+      "runtime_evidence": "create/remove/set_pose services exist",
+      "load_success": true
+    },
+    {
+      "function": "sensors system",
+      "runtime_evidence": "no /scan or camera topic; no Sensors system declaration in world",
+      "load_success": false,
+      "critical": true
+    },
+    {
+      "function": "diff drive",
+      "runtime_evidence": "no command/odometry topic; no DiffDrive plugin or wheel joints in robot SDF",
+      "load_success": false,
+      "critical": true
+    },
+    {
+      "function": "odometry",
+      "runtime_evidence": "no odometry topic",
+      "load_success": false,
+      "critical": true
+    },
+    {
+      "function": "LiDAR",
+      "runtime_evidence": "gpu_lidar SDF element present but no runtime publisher",
+      "load_success": false,
+      "critical": true
+    },
+    {
+      "function": "RGB camera",
+      "runtime_evidence": "camera SDF element present but no runtime publisher",
+      "load_success": false,
+      "critical": true
+    }
+  ]
+}

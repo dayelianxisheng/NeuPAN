@@ -1,0 +1,6 @@
+scene=static_corridor
+run_id=matrix
+mode=full
+ready=1
+server_pid=418
+startup_ms=4223

@@ -1,0 +1,23 @@
+ M docker/README.md
+ M sgcf_nrmp_project/gazebo/models/sgcf_diff_drive_robot/model.sdf
+ M sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py
+ M sgcf_nrmp_project/gazebo/worlds/empty_world.sdf
+ M sgcf_nrmp_project/gazebo/worlds/human_path_center.sdf
+ M sgcf_nrmp_project/gazebo/worlds/human_path_side.sdf
+ M sgcf_nrmp_project/gazebo/worlds/initial_collision.sdf
+ M sgcf_nrmp_project/gazebo/worlds/narrow_passage.sdf
+ M sgcf_nrmp_project/gazebo/worlds/outdated_rgb_contract.sdf
+ M sgcf_nrmp_project/gazebo/worlds/rgb_dropout_contract.sdf
+ M sgcf_nrmp_project/gazebo/worlds/robot_obstacle.sdf
+ M sgcf_nrmp_project/gazebo/worlds/semantic_infeasible.sdf
+ M sgcf_nrmp_project/gazebo/worlds/single_static_obstacle.sdf
+ M sgcf_nrmp_project/gazebo/worlds/static_corridor.sdf
+ M sgcf_nrmp_project/gazebo/worlds/vehicle_path.sdf
+?? docker/gazebo_harmonic/
+?? sgcf_nrmp_project/artifacts/stages/stage_11b_a_runtime_asset_activation/
+?? sgcf_nrmp_project/artifacts/stages/stage_11b_gazebo_headless_smoke/
+?? sgcf_nrmp_project/gazebo/tests/test_stage11ba_activation.py
+?? sgcf_nrmp_project/tools/finalize_stage11ba_report.py
+?? sgcf_nrmp_project/tools/run_stage11ba_empty_world_gate.sh
+?? sgcf_nrmp_project/tools/stage11ba_asset_audit.py
+?? sgcf_nrmp_project/tools/write_stage11b_blocked_plugin_report.py

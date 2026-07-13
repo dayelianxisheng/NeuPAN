@@ -1,0 +1,12 @@
+{
+  "status": "NOT_EXECUTED_AFTER_IMMEDIATE_STOP",
+  "scope": "human_path_side runtime audit",
+  "stop_reason": "BLOCKED_GAZEBO_PLUGIN",
+  "fabricated_runtime_data": false,
+  "frozen_stage09b_result": {
+    "P0": "exact clearance 0.24652 m < 0.25 m; geometry recheck rejection",
+    "P1_P2": "OSQP_MAX_ITER_REACHED; iterations 10000"
+  },
+  "planner_run_in_stage11b": false,
+  "claim_resolved": false
+}

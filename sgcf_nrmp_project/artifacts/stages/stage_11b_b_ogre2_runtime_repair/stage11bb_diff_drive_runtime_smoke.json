@@ -1,0 +1,8 @@
+{
+  "status": "NOT_EXECUTED_SENSOR_GATE_DID_NOT_PASS",
+  "command_sequence_sent": false,
+  "positive_v_verified": false,
+  "positive_w_verified": false,
+  "zero_stop_verified": false,
+  "passed": false
+}

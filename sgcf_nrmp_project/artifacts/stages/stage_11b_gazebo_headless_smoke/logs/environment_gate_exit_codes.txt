@@ -1,0 +1,8 @@
+which gz: 0
+gz --commands: 0
+gz sdf --versions: 0
+gz --versions: 255
+gz sim --versions: 255
+gz topic --help: 255
+gz service --help: 255
+gz model --help: 255

@@ -1,0 +1,16 @@
+{
+  "gz_rendering_runtime_upgraded": 0,
+  "gz_sim_upgraded": 0,
+  "ogre_runtime_replaced": 0,
+  "packages_downgraded": 0,
+  "packages_newly_installed": 158,
+  "packages_removed": 0,
+  "packages_upgraded": 3,
+  "source_log": "logs/apt_simulation.txt",
+  "status": "PASSED_STAGE_RULES",
+  "upgraded_packages": [
+    "perl-base",
+    "liblzma5",
+    "libssl3"
+  ]
+}

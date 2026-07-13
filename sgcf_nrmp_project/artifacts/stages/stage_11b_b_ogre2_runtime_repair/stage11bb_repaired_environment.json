@@ -1,0 +1,18 @@
+{
+  "image": "sgcf-gazebo-harmonic:ogre2-fix",
+  "container": "sgcf_gz_harmonic_ogre2_fix",
+  "gazebo_sim_version": "8.14.0",
+  "sdformat_version": "14.9.0",
+  "GZ_SIM_RENDER_ENGINE_SERVER": "ogre2",
+  "GZ_SIM_RENDER_ENGINE_PATH": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+  "plugin_exists": true,
+  "symlink_valid": true,
+  "ldd_not_found_count": 0,
+  "container_final_state": "exited",
+  "gazebo_asset_tree_shell_sha256_entry": "49b2a14bb01c7137ab9a4badf3a5835c88808855e75a7b254819c1908da66da6",
+  "gazebo_asset_tree_shell_sha256_after": "49b2a14bb01c7137ab9a4badf3a5835c88808855e75a7b254819c1908da66da6",
+  "robot_collision_envelope_m": [
+    0.8,
+    0.5
+  ]
+}

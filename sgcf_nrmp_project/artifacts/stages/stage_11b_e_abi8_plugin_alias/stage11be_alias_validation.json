@@ -1,0 +1,19 @@
+{
+  "alias": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so",
+  "is_symlink": true,
+  "exists": true,
+  "readable": true,
+  "link_text": "/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8",
+  "resolved_path": "/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8.2.3",
+  "matches_audited_target": true,
+  "dpkg_owner": null,
+  "ownership_disclosure": "NOT_OWNED_BY_DEBIAN_PACKAGE",
+  "shim_type": "LOCAL_PACKAGING_COMPATIBILITY_SHIM",
+  "abi_policy": "ABI_LOCKED_TO_GZ_RENDERING_8",
+  "target_package_owner": "libgz-rendering8-ogre2:amd64",
+  "target_sha256_before": "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef",
+  "target_sha256_after": "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef",
+  "ldd_not_found_count": 0,
+  "compatibility_manifest": "/usr/local/share/sgcf/compat/gz-rendering8-ogre2-alias.json",
+  "only_ogre_compatibility_alias_created": true
+}

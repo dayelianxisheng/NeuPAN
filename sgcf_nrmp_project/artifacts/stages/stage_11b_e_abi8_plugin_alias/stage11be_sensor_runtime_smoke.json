@@ -1,0 +1,10 @@
+{
+  "status": "NOT_EXECUTED_OGRE2_BACKEND_INITIALIZATION_FAILED",
+  "lidar_topic_present": false,
+  "camera_topic_present": false,
+  "odometry_topic_present": false,
+  "lidar_messages": 0,
+  "camera_messages": 0,
+  "odometry_messages": 0,
+  "passed": false
+}

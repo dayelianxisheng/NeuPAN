@@ -1,0 +1,56 @@
+{
+  "all_required_present_and_nonempty": true,
+  "directory_count": 57,
+  "file_count": 286,
+  "fixed_compositors_directory_required": false,
+  "fixed_directory_gate_cancelled_by_user": true,
+  "functional_resource_set_present": true,
+  "glsl_file_count": 90,
+  "material_script_file_count": 22,
+  "media_root_in_package": "/usr/share/gz/gz-rendering8/ogre2/media",
+  "note": "The absent 2.0/scripts/Compositors directory is not referenced exactly by the audited gz-rendering libraries; actual compositor assets and the fatal-missing HLMS resources are present.",
+  "observed_fatal_unlit_glsl_resource_present": true,
+  "package_sha256": "f7963e5c70dc933d5c3e402de6491a28b22e7229ce918bec69f0fc7a69f1df6b",
+  "piece_file_count": 97,
+  "required_directories": {
+    "2.0/scripts/Compositors": {
+      "exists": false,
+      "nonempty": false
+    },
+    "2.0/scripts/materials/Common": {
+      "exists": true,
+      "nonempty": true
+    },
+    "2.0/scripts/materials/Common/GLSL": {
+      "exists": true,
+      "nonempty": true
+    },
+    "2.0/scripts/materials/Terra": {
+      "exists": true,
+      "nonempty": true
+    },
+    "2.0/scripts/materials/Terra/GLSL": {
+      "exists": true,
+      "nonempty": true
+    },
+    "Hlms/Gz": {
+      "exists": true,
+      "nonempty": true
+    },
+    "Hlms/Pbs/GLSL": {
+      "exists": true,
+      "nonempty": true
+    },
+    "Hlms/Terra": {
+      "exists": true,
+      "nonempty": true
+    },
+    "Hlms/Unlit/GLSL": {
+      "exists": true,
+      "nonempty": true
+    }
+  },
+  "resource_root": "/usr/share/gz/gz-rendering8",
+  "runtime_ogre2_initialization_passed": true,
+  "total_bytes": 4052667
+}

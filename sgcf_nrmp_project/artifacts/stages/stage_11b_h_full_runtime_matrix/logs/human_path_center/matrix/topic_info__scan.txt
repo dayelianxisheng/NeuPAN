@@ -1,0 +1,3 @@
+Publishers [Address, Message Type]:
+  tcp://172.17.0.1:43605, gz.msgs.LaserScan
+No subscribers on topic [/scan]

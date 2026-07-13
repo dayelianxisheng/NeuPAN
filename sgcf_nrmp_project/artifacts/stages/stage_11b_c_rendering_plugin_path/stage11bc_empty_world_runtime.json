@@ -1,0 +1,9 @@
+{
+  "status": "NOT_EXECUTED_PREBUILD_ASSERTION_FAILED",
+  "runtime_regate_count": 0,
+  "worlds_run": [],
+  "command": null,
+  "stdout": "logs/empty_world_stdout.txt",
+  "stderr": "logs/empty_world_stderr.txt",
+  "decision": "BLOCKED_GZ_RENDERING_PLUGIN_PATH"
+}

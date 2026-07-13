@@ -1,0 +1,8 @@
+
+Requesting state for world [static_corridor]...
+
+Model: [28]
+  - Name: wall_left
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [2.000000 0.700000 0.250000]
+    [0.000000 -0.000000 0.000000]

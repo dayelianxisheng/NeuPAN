@@ -1,0 +1,6 @@
+scene=robot_obstacle
+run_id=matrix
+mode=full
+ready=1
+server_pid=2601
+startup_ms=4209

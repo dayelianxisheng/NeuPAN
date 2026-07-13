@@ -1,0 +1,5 @@
+container=sgcf_gz_harmonic_abi8_alias
+container_stopped=true
+container_gz_processes_before_stop=0
+host_gz_processes_after_stop=0
+new_hlms_container_exists=0

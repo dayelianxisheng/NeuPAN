@@ -1,0 +1,8 @@
+{
+  "pid": 132,
+  "exit_code": 139,
+  "timeout": false,
+  "cleanup_result": "PASS_NO_RESIDUAL_GAZEBO_PROCESS",
+  "residual_gz_processes": 0,
+  "attempt_count": 1
+}

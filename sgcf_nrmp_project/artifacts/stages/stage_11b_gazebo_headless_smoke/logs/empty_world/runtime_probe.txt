@@ -1,0 +1,4 @@
+PID=75
+topics=/clock,/gazebo/resource_paths,/stats,/world/empty_world/clock,/world/empty_world/dynamic_pose/info,/world/empty_world/pose/info,/world/empty_world/scene/deletion,/world/empty_world/scene/info,/world/empty_world/state,/world/empty_world/stats
+sensor_topics=/scan absent; camera absent; odometry absent
+service_families=server_control,world control,create,remove,set_pose,scene info

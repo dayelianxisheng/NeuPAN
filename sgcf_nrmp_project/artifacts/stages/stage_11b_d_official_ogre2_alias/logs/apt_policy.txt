@@ -1,0 +1,9 @@
+libgz-rendering8-ogre2:
+  Installed: 8.2.3-1~jammy
+  Candidate: 8.2.3-1~jammy
+
+libgz-rendering8-ogre2-dev:
+  Candidate: (none; package absent from configured official repositories)
+
+apt-cache search result:
+libgz-rendering8-ogre2 - Gazebo Rendering classes and functions for robot apps - Development files

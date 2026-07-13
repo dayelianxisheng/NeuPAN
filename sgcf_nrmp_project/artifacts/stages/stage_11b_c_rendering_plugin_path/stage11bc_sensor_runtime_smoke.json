@@ -1,0 +1,7 @@
+{
+  "status": "NOT_EXECUTED_RUNTIME_NOT_STARTED",
+  "lidar_messages": 0,
+  "camera_messages": 0,
+  "odometry_messages": 0,
+  "passed": false
+}

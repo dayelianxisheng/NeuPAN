@@ -1,0 +1,8 @@
+Stage 11B-C changes:
+sgcf_nrmp_project/artifacts/stages/stage_11b_c_rendering_plugin_path/
+
+Docker files modified by Stage 11B-C: none
+Gazebo assets modified by Stage 11B-C: none
+Protected algorithm files modified by Stage 11B-C: none
+Images built by Stage 11B-C: none
+Worlds run by Stage 11B-C: none

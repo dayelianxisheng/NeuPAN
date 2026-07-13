@@ -1,0 +1,10 @@
+{
+  "status": "NOT_EXECUTED_SERVER_SEGFAULT_DURING_SENSOR_INITIALIZATION",
+  "lidar_topic_present": false,
+  "camera_topic_present": false,
+  "odometry_topic_present": true,
+  "lidar_messages": 0,
+  "camera_messages": 0,
+  "odometry_messages_collected": 0,
+  "passed": false
+}

@@ -1,0 +1,158 @@
+
+Requesting state for world [static_corridor]...
+
+- Link [9]
+  - Name: base_footprint
+  - Parent: sgcf_robot [8]
+  - Mass (kg): 1.000000
+  - Inertial Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+  - Inertial Matrix (kg.m^2):
+    [1.000000 0.000000 0.000000]
+    [0.000000 1.000000 0.000000]
+    [0.000000 0.000000 1.000000]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+- Link [10]
+  - Name: base_link
+  - Parent: sgcf_robot [8]
+  - Mass (kg): 20.000000
+  - Inertial Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+  - Inertial Matrix (kg.m^2):
+    [0.500000 0.000000 0.000000]
+    [0.000000 0.800000 0.000000]
+    [0.000000 0.000000 1.000000]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.100000]
+    [0.000000 0.000000 0.000000]
+- Link [13]
+  - Name: left_wheel_link
+  - Parent: sgcf_robot [8]
+  - Mass (kg): 1.000000
+  - Inertial Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+  - Inertial Matrix (kg.m^2):
+    [0.002708 0.000000 0.000000]
+    [0.000000 0.005000 0.000000]
+    [0.000000 0.000000 0.002708]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.250000 0.100000]
+    [-0.000000 -0.000000 0.000000]
+- Link [16]
+  - Name: right_wheel_link
+  - Parent: sgcf_robot [8]
+  - Mass (kg): 1.000000
+  - Inertial Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+  - Inertial Matrix (kg.m^2):
+    [0.002708 0.000000 0.000000]
+    [0.000000 0.005000 0.000000]
+    [0.000000 0.000000 0.002708]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 -0.250000 0.100000]
+    [-0.000000 -0.000000 0.000000]
+- Link [19]
+  - Name: lidar_link
+  - Parent: sgcf_robot [8]
+  - Mass (kg): 1.000000
+  - Inertial Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+  - Inertial Matrix (kg.m^2):
+    [1.000000 0.000000 0.000000]
+    [0.000000 1.000000 0.000000]
+    [0.000000 0.000000 1.000000]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 -0.000000 0.200000]
+    [0.000000 0.000000 0.000000]
+  - Sensor [20]
+    - Name: lidar
+    - Parent: sgcf_robot [8]
+    - Pose [ XYZ (m) ] [ RPY (rad) ]:
+      [0.000000 0.000000 0.000000]
+      [0.000000 -0.000000 0.000000]
+    - Range:
+      - Min (m): 0.05
+      - Max (m): 8
+      - Resolution: 0.001
+    - Horizontal scan:
+      - Samples: 181
+      - Resolution: 1
+      - Min angle (rad): -3.14159
+      - Max angle (rad): 3.14159
+    - Vertical scan:
+      - Samples: 1
+      - Resolution: 1
+      - Min angle (rad): 0
+      - Max angle (rad): 0
+    - Noise:
+      - Mean (m): 0
+      - Bias mean (m): 0
+      - Standard deviation (m): 0
+      - Bias standard deviation (m): 0
+      - Precision: 0
+      - Dynamic bias standard deviation (m): 0
+      - Dynamic bias correlation time (s): 0
+- Link [21]
+  - Name: camera_link
+  - Parent: sgcf_robot [8]
+  - Mass (kg): 1.000000
+  - Inertial Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+  - Inertial Matrix (kg.m^2):
+    [1.000000 0.000000 0.000000]
+    [0.000000 1.000000 0.000000]
+    [0.000000 0.000000 1.000000]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 1.000000]
+    [0.000000 0.000000 0.000000]
+  - Sensor [22]
+    - Name: rgb_camera
+    - Parent: sgcf_robot [8]
+    - Pose [ XYZ (m) ] [ RPY (rad) ]:
+      [0.000000 0.000000 0.000000]
+      [0.000000 -0.000000 0.000000]
+    - Horizontal field of view (rad): 1.45328
+    - Image width (px): 320
+    - Image height (px): 240
+    - Near clip (m): 0.05
+    - Far clip (m): 20
+    - Pixel format: RGB_INT8
+    - Save frames: 0
+    - Save frames path: 
+    - Image noise:
+      - Mean: 0
+      - Bias mean: 0
+      - Standard deviation: 0
+      - Bias standard deviation: 0
+      - Precision: 0
+      - Dynamic bias standard deviation: 0
+      - Dynamic bias correlation time (s): 0
+    - Distortion K1: 0
+    - Distortion K2: 0
+    - Distortion K3: 0
+    - Distortion P1: 0
+    - Distortion P2: 0
+    - Distortion center: 0.5 0.5
+    - Lens type: stereographic
+    - Lens scale to horizontal field of view (rad): 1
+    - Lens C1: 1
+    - Lens C2: 1
+    - Lens C3: 0
+    - Lens focal length (m): 1
+    - Lens function: tan
+    - Lens cutoff angle (rad): 1.5708
+    - Lens texture size: 256
+    - Lens intrinsics Fx: 277
+    - Lens intrinsics Fy: 277
+    - Lens intrinsics Cx: 160
+    - Lens intrinsics Cy: 120
+    - Lens intrinsics skew: 0
+    - Visibility mask: 4294967295

@@ -1,0 +1,37 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+compileall:
+PASS
+git diff --check:
+PASS
+Acceptance matrix:
+01 runtime/dev exact version: FAIL dev candidate absent
+02 dev deb contains alias: NOT_EXECUTED no candidate
+03 alias in engine-plugins: NOT_EXECUTED
+04 alias target ABI 8: NOT_EXECUTED
+05 apt simulation no upgrade: NOT_EXECUTED
+06 apt simulation no downgrade: NOT_EXECUTED
+07 apt simulation no removal: NOT_EXECUTED
+08 alias package ownership: NOT_EXECUTED
+09 Dockerfile repair ln -s: PASS none added
+10 shared library copy/rename: PASS none
+11 third-party source added: PASS none
+12 source compilation: PASS none
+13 GZ_RENDERING_PLUGIN_PATH: NOT_APPLIED build blocked
+14 ogre2 unchanged: PASS
+15 gz-rendering-ogre2 unchanged: PASS
+16 empty_world runtime count = 0: PASS truthful pre-download stop
+17 other 11 worlds not run: PASS
+18 Gazebo assets unchanged: PASS
+19 footprint unchanged: PASS 0.8 x 0.5 m
+20 Planner not started: PASS
+21 Stage10 not loaded: PASS
+22 ROS bridge not started: PASS
+23 residual Gazebo processes = 0: PASS
+24 JSON parse: PASS
+25 compileall: PASS
+26 git diff --check: PASS
+27 protected directories: PASS no Stage11B-D changes

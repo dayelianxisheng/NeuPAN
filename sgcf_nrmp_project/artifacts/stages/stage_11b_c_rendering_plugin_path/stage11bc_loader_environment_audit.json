@@ -1,0 +1,23 @@
+{
+  "audited_image": "sgcf-gazebo-harmonic:ogre2-fix",
+  "audited_container": "sgcf_gz_harmonic_ogre2_fix",
+  "runtime_environment_before_stage11bc": {
+    "GZ_SIM_RENDER_ENGINE_PATH": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+    "GZ_SIM_RENDER_ENGINE_SERVER": "ogre2",
+    "GZ_RENDERING_PLUGIN_PATH": null
+  },
+  "official_source_evidence_supplied_by_user": {
+    "loader_variable": "GZ_RENDERING_PLUGIN_PATH",
+    "logical_library": "gz-rendering-ogre2",
+    "engine_identifier": "ogre2",
+    "default_directory_pattern": "<prefix>/<libdir>/gz-rendering-8/engine-plugins"
+  },
+  "binary_string_audit": {
+    "main_library": "/lib/x86_64-linux-gnu/libgz-rendering8.so.8",
+    "GZ_RENDERING_PLUGIN_PATH_found": false,
+    "GZ_SIM_RENDER_ENGINE_PATH_found": false,
+    "note": "The stripped runtime library exposed neither literal; the user-provided official gz-rendering8 source audit is the accepted source evidence."
+  },
+  "GZ_SIM_RENDER_ENGINE_PATH_used_as_stage11bc_basis": false,
+  "passed_loader_variable_evidence": true
+}

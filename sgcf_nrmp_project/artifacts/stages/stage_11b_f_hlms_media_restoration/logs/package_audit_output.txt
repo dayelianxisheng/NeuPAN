@@ -1,0 +1,122 @@
+{
+  "alias_interaction": {
+    "aliases": [
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so",
+        "target": "libgz-rendering8-ogre2.so",
+        "type": "symlink"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so",
+        "target": "libgz-rendering8-ogre2.so.8",
+        "type": "symlink"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so",
+        "target": "libgz-rendering8-ogre2.so.8",
+        "type": "symlink"
+      }
+    ],
+    "expected_stage11be_target_sha256": "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef",
+    "installed_stage11be_target": "/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8",
+    "installed_stage11be_target_sha256": "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef",
+    "must_build_from_pre_alias_image": true,
+    "must_not_overwrite_stage11be_local_alias": true,
+    "official_alias_chain": [
+      "libgz-rendering-ogre2.so",
+      "libgz-rendering8-ogre2.so",
+      "libgz-rendering8-ogre2.so.8",
+      "libgz-rendering8-ogre2.so.8.2.3"
+    ],
+    "package_contains_logical_alias": true,
+    "selected_case": "B_OFFICIAL_PACKAGE_PROVIDES_ALIAS",
+    "target_matches_stage11be": true
+  },
+  "download": {
+    "content_length": 1183388,
+    "content_type": "application/vnd.debian.binary-package",
+    "download_file_mtime_utc": "2026-07-13T17:31:02.860219+00:00",
+    "downloaded_size": 1183388,
+    "dpkg_deb_recognized": true,
+    "etag": "6477fd822f1caff5519511ef3e6ee571",
+    "filename": "libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb",
+    "final_url": "https://osrf-distributions.s3.us-east-1.amazonaws.com/gz-rendering/releases/libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb",
+    "http_status": 200,
+    "last_modified": "Fri, 14 Nov 2025 21:35:28 GMT",
+    "md5": "6477fd822f1caff5519511ef3e6ee571",
+    "passed": true,
+    "redirect_count": 0,
+    "requested_url": "https://osrf-distributions.s3.us-east-1.amazonaws.com/gz-rendering/releases/libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb",
+    "sha256": "f7963e5c70dc933d5c3e402de6491a28b22e7229ce918bec69f0fc7a69f1df6b"
+  },
+  "identity": {
+    "Architecture": "amd64",
+    "Depends": "libgz-cmake3-dev, libgz-common5-events-dev, libgz-common5-geospatial-dev, libgz-common5-graphics-dev, libgz-math7-dev, libgz-math7-eigen3-dev, libogre-next-2.3-dev, libvulkan-dev, libgz-plugin2-dev, libgz-rendering8-core-dev (= 8.2.3-1~jammy), libgz-rendering8-ogre2 (= 8.2.3-1~jammy)",
+    "Package": "libgz-rendering8-ogre2-dev",
+    "Version": "8.2.3-1~jammy"
+  },
+  "media": {
+    "all_required_present_and_nonempty": false,
+    "directory_count": 57,
+    "file_count": 286,
+    "glsl_file_count": 90,
+    "material_script_file_count": 22,
+    "media_root_in_package": "/usr/share/gz/gz-rendering8/ogre2/media",
+    "package_sha256": "f7963e5c70dc933d5c3e402de6491a28b22e7229ce918bec69f0fc7a69f1df6b",
+    "piece_file_count": 97,
+    "required_directories": {
+      "2.0/scripts/Compositors": {
+        "exists": false,
+        "nonempty": false
+      },
+      "2.0/scripts/materials/Common": {
+        "exists": true,
+        "nonempty": true
+      },
+      "2.0/scripts/materials/Common/GLSL": {
+        "exists": true,
+        "nonempty": true
+      },
+      "2.0/scripts/materials/Terra": {
+        "exists": true,
+        "nonempty": true
+      },
+      "2.0/scripts/materials/Terra/GLSL": {
+        "exists": true,
+        "nonempty": true
+      },
+      "Hlms/Gz": {
+        "exists": true,
+        "nonempty": true
+      },
+      "Hlms/Pbs/GLSL": {
+        "exists": true,
+        "nonempty": true
+      },
+      "Hlms/Terra": {
+        "exists": true,
+        "nonempty": true
+      },
+      "Hlms/Unlit/GLSL": {
+        "exists": true,
+        "nonempty": true
+      }
+    },
+    "resource_root": "/usr/share/gz/gz-rendering8",
+    "total_bytes": 4052667
+  },
+  "resource": {
+    "binary_contains_default_root": true,
+    "binary_contains_environment_name": true,
+    "binary_scan_method": "direct byte search",
+    "current_environment_value": null,
+    "derived_resource_root": "/usr/share/gz/gz-rendering8",
+    "package_media_root": "/usr/share/gz/gz-rendering8/ogre2/media",
+    "resource_root_is_parent_of_ogre2": true,
+    "strings_tool_available": false,
+    "unique": true,
+    "valid_candidates": [
+      "/usr/share/gz/gz-rendering8/ogre2/media"
+    ]
+  }
+}

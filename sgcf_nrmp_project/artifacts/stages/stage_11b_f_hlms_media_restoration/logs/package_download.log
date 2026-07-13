@@ -1,0 +1,9 @@
+requested_url=https://osrf-distributions.s3.us-east-1.amazonaws.com/gz-rendering/releases/libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb
+final_url=https://osrf-distributions.s3.us-east-1.amazonaws.com/gz-rendering/releases/libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb
+http_status=200
+content_type=application/vnd.debian.binary-package
+content_length=1183388
+downloaded_size=1183388
+sha256=f7963e5c70dc933d5c3e402de6491a28b22e7229ce918bec69f0fc7a69f1df6b
+md5=6477fd822f1caff5519511ef3e6ee571
+timestamp=2026-07-13T17:31:02.860219+00:00

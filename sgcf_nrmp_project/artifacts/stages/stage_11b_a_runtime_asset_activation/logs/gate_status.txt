@@ -1,0 +1,7 @@
+ready=0
+server_pid=132
+startup_ms=2148
+/gazebo/resource_paths
+/odom
+/tf
+/world/empty_world/stats

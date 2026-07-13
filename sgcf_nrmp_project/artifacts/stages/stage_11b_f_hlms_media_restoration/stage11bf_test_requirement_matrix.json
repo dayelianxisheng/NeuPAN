@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "passed": true,
+    "requirement": "exact official archive identity and hash"
+  },
+  {
+    "id": 2,
+    "passed": true,
+    "requirement": "functional HLMS resource set present"
+  },
+  {
+    "id": 3,
+    "passed": true,
+    "requirement": "official package owns alias and media"
+  },
+  {
+    "id": 4,
+    "passed": true,
+    "requirement": "gz-rendering runtime version preserved"
+  },
+  {
+    "id": 5,
+    "passed": true,
+    "requirement": "no new EGL/OpenGL workaround"
+  },
+  {
+    "id": 6,
+    "passed": true,
+    "requirement": "one empty_world runtime gate only"
+  },
+  {
+    "id": 7,
+    "passed": true,
+    "requirement": "OGRE2 initialized without segfault"
+  },
+  {
+    "id": 8,
+    "passed": true,
+    "requirement": "LiDAR Camera odometry topics and samples"
+  },
+  {
+    "id": 9,
+    "passed": true,
+    "requirement": "positive v and positive yaw directions"
+  },
+  {
+    "id": 10,
+    "passed": true,
+    "requirement": "zero command stopped motion"
+  },
+  {
+    "id": 11,
+    "passed": true,
+    "requirement": "no other eleven worlds run"
+  },
+  {
+    "id": 12,
+    "passed": true,
+    "requirement": "Gazebo assets and footprint frozen"
+  },
+  {
+    "id": 13,
+    "passed": true,
+    "requirement": "Planner Stage10 ROS bridge not started"
+  },
+  {
+    "id": 14,
+    "passed": true,
+    "requirement": "no residual Gazebo process"
+  }
+]

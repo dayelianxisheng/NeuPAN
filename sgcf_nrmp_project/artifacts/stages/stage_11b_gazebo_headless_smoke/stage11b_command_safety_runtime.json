@@ -1,0 +1,6 @@
+{
+  "status": "NOT_EXECUTED_AFTER_IMMEDIATE_STOP",
+  "scope": "runtime command publisher safety mapping",
+  "stop_reason": "BLOCKED_GAZEBO_PLUGIN",
+  "fabricated_runtime_data": false
+}

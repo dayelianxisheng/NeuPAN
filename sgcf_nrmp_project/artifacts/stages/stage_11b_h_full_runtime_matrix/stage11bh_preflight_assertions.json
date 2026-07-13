@@ -1,0 +1,11 @@
+{
+  "asset_hash_match": true,
+  "gpu_rays_compositor_available": true,
+  "image_id_match": true,
+  "official_alias_available": true,
+  "pbs_glsl_available": true,
+  "preexisting_gazebo_processes": 0,
+  "status": "PASSED",
+  "unlit_glsl_available": true,
+  "versions_match": true
+}

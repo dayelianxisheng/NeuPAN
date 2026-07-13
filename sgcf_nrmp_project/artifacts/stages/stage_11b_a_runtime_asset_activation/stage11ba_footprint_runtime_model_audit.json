@@ -1,0 +1,35 @@
+{
+  "base_collision_size_xyz_m": [
+    0.8,
+    0.5,
+    0.2
+  ],
+  "base_collision_unchanged_0_8_by_0_5": true,
+  "wheel_collision_horizontal_bounds_m": {
+    "left_wheel_collision": {
+      "x_min": -0.1,
+      "x_max": 0.1,
+      "y_min": 0.2,
+      "y_max": 0.25
+    },
+    "right_wheel_collision": {
+      "x_min": -0.1,
+      "x_max": 0.1,
+      "y_min": -0.25,
+      "y_max": -0.2
+    }
+  },
+  "combined_bounds_m": {
+    "x_min": -0.4,
+    "x_max": 0.4,
+    "y_min": -0.25,
+    "y_max": 0.25
+  },
+  "combined_length_m": 0.8,
+  "combined_width_m": 0.5,
+  "length_limit_m": 0.8,
+  "width_limit_m": 0.5,
+  "tolerance_m": 1e-09,
+  "passed": true,
+  "method": "analytic AABB from base box and inward-offset cylindrical wheel collisions"
+}

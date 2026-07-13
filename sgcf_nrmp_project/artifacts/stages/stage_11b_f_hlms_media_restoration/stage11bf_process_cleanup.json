@@ -1,0 +1,9 @@
+{
+  "container_residual_gz_process_count": 0,
+  "diagnostic_container": "sgcf_gz_harmonic_hlms_media_fix",
+  "diagnostic_container_stopped": true,
+  "host_residual_gz_process_count": 0,
+  "runtime_script_cleanup_passed": true,
+  "server_exit_code": 0,
+  "status": "PASSED"
+}

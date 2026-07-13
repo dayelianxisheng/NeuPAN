@@ -1,0 +1,18 @@
+{
+  "status": "NOT_BUILT_PACKAGE_VERSION_GATE_FAILED",
+  "base_image": {
+    "tag": "sgcf-gazebo-harmonic:ogre2-fix",
+    "id": "sha256:a631eadf79b59df7974655fcac9969f82c0308001408e152f00c5a944ad4d931"
+  },
+  "requested_new_tag": "sgcf-gazebo-harmonic:official-ogre2-alias",
+  "requested_container": "sgcf_gz_harmonic_official_alias",
+  "new_image_id": null,
+  "new_image_size": null,
+  "runtime_package_version": "8.2.3-1~jammy",
+  "dev_package_version": null,
+  "archive_sha256": null,
+  "new_packages_installed": [],
+  "packages_removed": 0,
+  "packages_upgraded": 0,
+  "packages_downgraded": 0
+}

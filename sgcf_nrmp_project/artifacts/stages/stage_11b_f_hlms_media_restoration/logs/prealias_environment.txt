@@ -1,0 +1,11 @@
+=== image/environment ===
+GZ_SIM_RENDER_ENGINE_PATH=/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins
+GZ_SIM_RENDER_ENGINE_SERVER=ogre2
+=== pre-alias conflict check ===
+=== installed versions ===
+gz-sim8-cli	8.14.0-1~jammy	amd64
+libgz-rendering8	8.2.3-1~jammy	amd64
+libgz-rendering8-ogre2	8.2.3-1~jammy	amd64
+libgz-sim8-plugins	8.14.0-1~jammy	amd64
+=== package hash ===
+f7963e5c70dc933d5c3e402de6491a28b22e7229ce918bec69f0fc7a69f1df6b  /tmp/libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb

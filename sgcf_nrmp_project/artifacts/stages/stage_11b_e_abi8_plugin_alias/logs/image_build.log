@@ -1,0 +1,69 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 DONE 0.0s
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.36kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ubuntu:22.04
+#2 DONE 7.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/7] FROM docker.io/library/ubuntu:22.04@sha256:4f838adc7181d9039ac795a7d0aba05a9bd9ecd480d294483169c5def983b64d
+#4 resolve docker.io/library/ubuntu:22.04@sha256:4f838adc7181d9039ac795a7d0aba05a9bd9ecd480d294483169c5def983b64d 0.0s done
+#4 DONE 0.0s
+
+#5 [3/7] RUN curl -fsSL https://packages.osrfoundation.org/gazebo.gpg         -o /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg     && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] https://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main"         > /etc/apt/sources.list.d/gazebo-stable.list
+#5 CACHED
+
+#6 [4/7] RUN apt-get update     && apt-get install -y --no-install-recommends         gz-tools2         gz-sim8-cli         gz-transport13-cli         libgz-sim8-plugins         libgz-rendering8-ogre2         sdformat14-sdf     && rm -rf /var/lib/apt/lists/*
+#6 CACHED
+
+#7 [2/7] RUN echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/80-retries     && apt-get update     && apt-get install -y --no-install-recommends         ca-certificates         curl         gnupg         lsb-release         python3         python3-venv         jq         procps         libegl1         libgl1-mesa-dri         mesa-utils
+#7 CACHED
+
+#8 [5/7] RUN apt-get update     && apt-get install -y --no-install-recommends         libgz-physics7-dartsim     && ln -s libgz-physics7-dartsim-plugin.so.7         /usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics7-dartsim-plugin.so     && ln -s libgz-physics7-dartsim-plugin.so.7         /usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so     && rm -rf /var/lib/apt/lists/*
+#8 CACHED
+
+#9 [6/7] RUN set -eux;     target="/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8";     plugin_dir="/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins";     alias="${plugin_dir}/libgz-rendering-ogre2.so";     test "$(dpkg-query -W -f='${Version}' libgz-rendering8-ogre2)" = "8.2.3-1~jammy";     test -e "${target}";     test -r "${target}";     echo "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef  ${target}" | sha256sum -c -;     test -d "${plugin_dir}";     test ! -e "${alias}";     ln -s "${target}" "${alias}";     test -L "${alias}";     test -e "${alias}";     test "$(readlink -f "${alias}")" = "$(readlink -f "${target}")";     mkdir -p /usr/local/share/sgcf/compat;     printf '%s\n'       '{'       '  "type": "LOCAL_PACKAGING_COMPATIBILITY_SHIM",'       '  "ownership": "NOT_OWNED_BY_DEBIAN_PACKAGE",'       '  "abi_policy": "ABI_LOCKED_TO_GZ_RENDERING_8",'       '  "logical_name": "libgz-rendering-ogre2.so",'       '  "target_soname": "libgz-rendering8-ogre2.so.8",'       '  "gz_rendering_abi": 8,'       '  "runtime_package": "libgz-rendering8-ogre2",'       '  "runtime_version": "8.2.3-1~jammy",'       '  "reason": "Jammy OSRF package lacks the unversioned engine-plugin alias expected by gz-rendering8 loader",'       '  "scope": "Stage 11B Gazebo Docker runtime only"'       '}'       > /usr/local/share/sgcf/compat/gz-rendering8-ogre2-alias.json
+#9 0.054 + target=/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8
+#9 0.054 + plugin_dir=/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins
+#9 0.054 + alias=/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so
+#9 0.054 + dpkg-query -W -f=${Version} libgz-rendering8-ogre2
+#9 0.056 + test 8.2.3-1~jammy = 8.2.3-1~jammy
+#9 0.056 + test -e /usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8
+#9 0.056 + test -r /usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8
+#9 0.056 + echo c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef  /usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8
+#9 0.056 + sha256sum -c -
+#9 0.062 /usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8: OK
+#9 0.062 + test -d /usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins
+#9 0.062 + test ! -e /usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so
+#9 0.062 + ln -s /usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8 /usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so
+#9 0.072 + test -L /usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so
+#9 0.072 + test -e /usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so
+#9 0.072 + readlink -f /usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so
+#9 0.073 + readlink -f /usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8
+#9 0.073 + test /usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8.2.3 = /usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8.2.3
+#9 0.073 + mkdir -p /usr/local/share/sgcf/compat
+#9 0.077 + printf %s\n {   "type": "LOCAL_PACKAGING_COMPATIBILITY_SHIM",   "ownership": "NOT_OWNED_BY_DEBIAN_PACKAGE",   "abi_policy": "ABI_LOCKED_TO_GZ_RENDERING_8",   "logical_name": "libgz-rendering-ogre2.so",   "target_soname": "libgz-rendering8-ogre2.so.8",   "gz_rendering_abi": 8,   "runtime_package": "libgz-rendering8-ogre2",   "runtime_version": "8.2.3-1~jammy",   "reason": "Jammy OSRF package lacks the unversioned engine-plugin alias expected by gz-rendering8 loader",   "scope": "Stage 11B Gazebo Docker runtime only" }
+#9 DONE 0.1s
+
+#10 [7/7] WORKDIR /workspace
+#10 DONE 0.1s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.2s done
+#11 exporting manifest sha256:05e48ece8e3fc5870b8ba96378da23b0943388ee5eafb467e0d99462f3d49767 0.0s done
+#11 exporting config sha256:e2bae7a63b65406d8dae152c8b74318231b2282cb7971484ec0c16a95ddfe100 0.0s done
+#11 exporting attestation manifest sha256:b0979a9757e8e8cf5128f46a05e481804042c6bda87a93d15751ecf8954210fd 0.0s done
+#11 exporting manifest list sha256:a5f7e323e414099377396bc698d1e9e12d2d103473364687d635fdf7b1cf3c6b 0.0s done
+#11 naming to docker.io/library/sgcf-gazebo-harmonic:abi8-plugin-alias
+#11 naming to docker.io/library/sgcf-gazebo-harmonic:abi8-plugin-alias done
+#11 unpacking to docker.io/library/sgcf-gazebo-harmonic:abi8-plugin-alias 0.1s done
+#11 DONE 0.4s

@@ -1,0 +1,8 @@
+{
+  "server_crashed_before_explicit_shutdown": true,
+  "container_processes_after_attempt": [
+    "sleep infinity"
+  ],
+  "residual_gz_processes": 0,
+  "passed": true
+}

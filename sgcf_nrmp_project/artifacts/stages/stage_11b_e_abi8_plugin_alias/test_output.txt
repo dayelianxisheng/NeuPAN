@@ -1,0 +1,36 @@
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+compileall:
+PASS
+git diff --check:
+PASS
+Acceptance matrix:
+01 target Debian-owned: PASS libgz-rendering8-ogre2:amd64
+02 target version exact: PASS 8.2.3-1~jammy
+03 target SONAME ABI8: PASS
+04 target ldd not found = 0: PASS
+05 original alias absent: PASS
+06 exactly one OGRE compatibility alias: PASS
+07 alias in gz-rendering-8/engine-plugins: PASS
+08 alias resolves to package-owned ABI8 target: PASS
+09 ELF copied/modified: PASS none; SHA unchanged
+10 packages installed/upgraded: PASS none
+11 GZ_RENDERING_PLUGIN_PATH correct: PASS
+12 ogre2 unchanged: PASS
+13 gz-rendering-ogre2 unchanged: PASS
+14 empty_world re-gate count = 1: PASS
+15 other 11 worlds not run: PASS
+16 Gazebo assets unchanged: PASS
+17 footprint unchanged: PASS 0.8 x 0.5 m
+18 Planner not started: PASS
+19 Stage10 not loaded: PASS
+20 ROS bridge not started: PASS
+21 residual Gazebo processes = 0: PASS
+22 JSON parse: PASS
+23 compileall: PASS
+24 git diff --check: PASS
+25 protected directories: PASS no Stage11B-E changes
+Runtime acceptance: BLOCKED_HEADLESS_RENDERING_BACKEND (missing HLMS shader media; subsequent SIGSEGV)

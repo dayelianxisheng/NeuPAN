@@ -1,0 +1,112 @@
+{
+  "human_path_center": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 23,
+    "world_geometry_injected": false
+  },
+  "human_path_side": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 23,
+    "world_geometry_injected": false
+  },
+  "initial_collision": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 65,
+    "world_geometry_injected": false
+  },
+  "narrow_passage": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 44,
+    "world_geometry_injected": false
+  },
+  "outdated_rgb_contract": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 23,
+    "world_geometry_injected": false
+  },
+  "rgb_dropout_contract": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 23,
+    "world_geometry_injected": false
+  },
+  "robot_obstacle": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 21,
+    "world_geometry_injected": false
+  },
+  "semantic_infeasible": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 23,
+    "world_geometry_injected": false
+  },
+  "single_static_obstacle": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 23,
+    "world_geometry_injected": false
+  },
+  "static_corridor": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 44,
+    "world_geometry_injected": false
+  },
+  "vehicle_path": {
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "output_points_finite": true,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "valid_count": 23,
+    "world_geometry_injected": false
+  }
+}

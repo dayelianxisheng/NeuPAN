@@ -1,0 +1,10 @@
+{
+  "audit_container_stopped": true,
+  "audit_container_state": "exited",
+  "gazebo_server_started": false,
+  "residual_gz_process_count": 0,
+  "original_baseline_container_processes": [
+    "sleep infinity"
+  ],
+  "passed": true
+}

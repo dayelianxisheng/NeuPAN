@@ -1,0 +1,11 @@
+{
+  "world": "empty_world",
+  "world_file": "/workspace/sgcf_nrmp_project/gazebo/worlds/empty_world.sdf",
+  "sdf_parse_success": true,
+  "model_uri_resolution_success": true,
+  "physics_engine_resolution_success": true,
+  "fatal_resource_errors": [],
+  "sensor_runtime_system_resolution_success": false,
+  "diff_drive_runtime_resolution_success": false,
+  "decision": "BLOCKED_GAZEBO_PLUGIN"
+}

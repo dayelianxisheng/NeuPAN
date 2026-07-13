@@ -1,0 +1,6 @@
+scene=rgb_dropout_contract
+run_id=matrix
+mode=full
+ready=1
+server_pid=3906
+startup_ms=4221

@@ -1,0 +1,8 @@
+
+Requesting state for world [semantic_infeasible]...
+
+Model: [8]
+  - Name: sgcf_robot
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [-0.000000 -0.000000 -0.000000]
+    [-0.000000 0.000000 0.000000]

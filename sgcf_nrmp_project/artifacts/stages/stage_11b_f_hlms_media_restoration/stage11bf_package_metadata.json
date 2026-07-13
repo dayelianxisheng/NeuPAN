@@ -1,0 +1,17 @@
+{
+  "dpkg_info": " new Debian package, version 2.0.\n size 1183388 bytes: control archive=9864 bytes.\n    1103 bytes,    20 lines      control              \n   40090 bytes,   347 lines      md5sums              \n Package: libgz-rendering8-ogre2-dev\n Source: gz-rendering8\n Version: 8.2.3-1~jammy\n Architecture: amd64\n Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>\n Installed-Size: 4463\n Depends: libgz-cmake3-dev, libgz-common5-events-dev, libgz-common5-geospatial-dev, libgz-common5-graphics-dev, libgz-math7-dev, libgz-math7-eigen3-dev, libogre-next-2.3-dev, libvulkan-dev, libgz-plugin2-dev, libgz-rendering8-core-dev (= 8.2.3-1~jammy), libgz-rendering8-ogre2 (= 8.2.3-1~jammy)\n Section: libdevel\n Priority: optional\n Multi-Arch: same\n Homepage: http://gazebosim.org/\n Description: Gazebo Rendering classes and functions for robot apps - Development files\n  Gazebo Rendering is a C++ library designed to provide an abstraction for\n  different rendering engines. It offers unified APIs for creating 3D graphics\n  applications.  Gazebo Rendering is a component in the Gazebo framework, a\n  set of libraries designed to rapidly develop robot applications.\n  Gazebo Rendering is a component in the Gazebo framework, a set of libraries\n  designed to rapidly develop robot applications.\n  .\n  Ogre2 component development files\n",
+  "expected_identity": {
+    "Architecture": "amd64",
+    "Package": "libgz-rendering8-ogre2-dev",
+    "Version": "8.2.3-1~jammy"
+  },
+  "identity": {
+    "Architecture": "amd64",
+    "Depends": "libgz-cmake3-dev, libgz-common5-events-dev, libgz-common5-geospatial-dev, libgz-common5-graphics-dev, libgz-math7-dev, libgz-math7-eigen3-dev, libogre-next-2.3-dev, libvulkan-dev, libgz-plugin2-dev, libgz-rendering8-core-dev (= 8.2.3-1~jammy), libgz-rendering8-ogre2 (= 8.2.3-1~jammy)",
+    "Package": "libgz-rendering8-ogre2-dev",
+    "Version": "8.2.3-1~jammy"
+  },
+  "identity_exact_match": true,
+  "package_sha256": "f7963e5c70dc933d5c3e402de6491a28b22e7229ce918bec69f0fc7a69f1df6b",
+  "package_size": 1183388
+}

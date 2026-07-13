@@ -1,0 +1,24 @@
+{
+  "logical_library_name": "gz-rendering-ogre2",
+  "required_platform_filename": "libgz-rendering-ogre2.so",
+  "reliable_find_expression": "find /usr /lib /opt \\( -type f -o -type l \\) -name 'libgz-rendering-ogre2.so' -print",
+  "logical_plugin_matches": [],
+  "logical_plugin_exists": false,
+  "logical_plugin_readable": false,
+  "plugin_symlink_path": null,
+  "plugin_resolved_path": null,
+  "plugin_directory": null,
+  "versioned_abi_files_found": [
+    "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8",
+    "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8.2.3"
+  ],
+  "versioned_file_resolved_path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8.2.3",
+  "versioned_file_directory": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+  "debian_package": {
+    "name": "libgz-rendering8-ogre2",
+    "version": "8.2.3-1~jammy"
+  },
+  "package_file_list_contains_required_logical_filename": false,
+  "unique_valid_directory_containing_required_logical_filename": false,
+  "decision": "BLOCKED_GZ_RENDERING_PLUGIN_PATH"
+}

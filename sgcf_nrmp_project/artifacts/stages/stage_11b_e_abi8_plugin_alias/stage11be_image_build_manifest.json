@@ -1,0 +1,21 @@
+{
+  "base_os_image": "ubuntu:22.04@sha256:4f838adc7181d9039ac795a7d0aba05a9bd9ecd480d294483169c5def983b64d",
+  "preserved_images": {
+    "sgcf-gazebo-harmonic:local": "sha256:add3df817107a929749e1ed78b3a6bd674e47850527c7f790694915d078f81db",
+    "sgcf-gazebo-harmonic:ogre2-fix": "sha256:a631eadf79b59df7974655fcac9969f82c0308001408e152f00c5a944ad4d931"
+  },
+  "new_image_tag": "sgcf-gazebo-harmonic:abi8-plugin-alias",
+  "new_image_id": "sha256:a5f7e323e414099377396bc698d1e9e12d2d103473364687d635fdf7b1cf3c6b",
+  "new_image_size_bytes": 362385695,
+  "container_id": "88172f5b9a1eb5ce8c6f601a2dbc373618355f25741a8984b4fa0622076a0b78",
+  "packages_installed": [],
+  "packages_upgraded": [],
+  "packages_removed": [],
+  "alias_path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so",
+  "alias_target": "/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8",
+  "target_sha256": "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef",
+  "GZ_RENDERING_PLUGIN_PATH": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+  "GZ_SIM_RENDER_ENGINE_PATH_present": false,
+  "dockerfile_change": "one ABI-locked compatibility symlink, one disclosure manifest, and loader-variable correction",
+  "build_log": "logs/image_build.log"
+}

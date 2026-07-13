@@ -1,0 +1,16 @@
+{
+  "stage11b_start_git_status": [
+    " M docker/README.md",
+    "?? docker/gazebo_harmonic/",
+    "?? sgcf_nrmp_project/artifacts/stages/stage_11b_gazebo_headless_smoke/"
+  ],
+  "docker_diff_sha256": "f0853935e7e97daf9ae95f1bae043245fa9c4ab1fda00950fe7da215176ebe4c",
+  "docker_file_sha256": {
+    "docker/README.md": "d634aa2c14134f80e46fc0a3c719d1db9aba29682c138e43de7d38cc33dcc83c",
+    "docker/gazebo_harmonic/Dockerfile": "a4d52ec34ad0d791032f7d747ff630f991de7d35ae398491e266392adab9fb79",
+    "docker/gazebo_harmonic/README.md": "d2590db1a695b72dd2beab126cdf70699aa75ba7dfb3b27d253973ce6ed33144",
+    "docker/gazebo_harmonic/install_validation.md": "0e25bd1d0ac5e6d35b0b09e56035d658f45b4885f28117dbe0ecc14dc3e73bdb",
+    "docker/gazebo_harmonic/container.sh": "2d0e99150e745981731c79e32608b21d02cd7dbe3cec72ed6845186145392d4a"
+  },
+  "docker_modified_during_stage11b": false
+}

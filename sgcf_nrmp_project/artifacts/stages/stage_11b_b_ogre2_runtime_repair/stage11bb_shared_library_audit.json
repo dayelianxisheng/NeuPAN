@@ -1,0 +1,19 @@
+{
+  "plugin": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8",
+  "ldd_not_found_count": 0,
+  "all_dependencies_resolved": true,
+  "key_dependencies": [
+    "libgz-rendering8.so.8",
+    "libOgreNextMain.so.2.3.1",
+    "libEGL.so.1",
+    "libOpenGL.so.0",
+    "libGLX.so.0"
+  ],
+  "abi": {
+    "gazebo_sim_major": 8,
+    "gz_rendering_major": 8,
+    "compatible": true
+  },
+  "file_utility_available": false,
+  "elf_check_method": "direct ELF header parsing with Python struct"
+}

@@ -1,0 +1,29 @@
+{
+  "hash_method": "sorted relative path plus per-file SHA256, excluding __pycache__",
+  "current_hashes": {
+    "gazebo_worlds": "e15a50e79aedb14bdd45d4c031afd9042f3f963a8658f6feec6db30a90a0b238",
+    "gazebo_models": "1ffa4cfee04e94c619c462585bf9c428623d451891add41fbde417d34de288c5",
+    "stage05_exact_geometry": "d0bdc2c4e08d52396dff1aa5ea7e44ddf037cada15015adfd7d62c6670279265",
+    "stage07_projection": "d0bdc2c4e08d52396dff1aa5ea7e44ddf037cada15015adfd7d62c6670279265",
+    "stage07_semantic_margin": "39096071b63eeac8cef167ad6b07493bf9debbddabcb0b0c6ca04f124dc95cfe",
+    "stage09b_planner": "e8334817bae338bea70c789bb9fe65423c6e05199fef934411267d2022043de3"
+  },
+  "modified_by_stage11bd": {
+    "gazebo_worlds": false,
+    "gazebo_models": false,
+    "stage05_exact_geometry": false,
+    "stage07_projection": false,
+    "stage07_semantic_margin": false,
+    "stage09b_planner": false
+  },
+  "robot_footprint_m": {
+    "length": 0.8,
+    "width": 0.5,
+    "modified": false
+  },
+  "lidar_contract_modified": false,
+  "camera_contract_modified": false,
+  "stage10_modified": false,
+  "other_worlds_run": [],
+  "passed": true
+}

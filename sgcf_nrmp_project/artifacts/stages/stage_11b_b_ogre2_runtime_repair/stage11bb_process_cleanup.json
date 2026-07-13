@@ -1,0 +1,8 @@
+{
+  "runtime_script_cleanup_passed": true,
+  "residual_gz_process_count": 0,
+  "diagnostic_container_stopped": true,
+  "diagnostic_container_state": "exited",
+  "original_container_state": "running baseline sleep only",
+  "passed": true
+}

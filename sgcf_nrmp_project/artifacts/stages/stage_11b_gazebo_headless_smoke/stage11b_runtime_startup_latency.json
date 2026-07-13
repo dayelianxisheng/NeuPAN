@@ -1,0 +1,9 @@
+{
+  "status": "INSUFFICIENT_SAMPLES_AFTER_IMMEDIATE_STOP",
+  "empty_world_single_probe": {
+    "server_ready_wall_s_approx": 4.0,
+    "statistical_p95_claimed": false
+  },
+  "required_repeated_scenes_completed": 0,
+  "decision": "BLOCKED_GAZEBO_PLUGIN"
+}

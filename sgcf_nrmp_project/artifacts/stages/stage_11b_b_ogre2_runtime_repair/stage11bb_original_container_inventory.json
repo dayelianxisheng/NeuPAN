@@ -1,0 +1,21 @@
+{
+  "image": "sgcf-gazebo-harmonic:local",
+  "image_id": "sha256:add3df817107a929749e1ed78b3a6bd674e47850527c7f790694915d078f81db",
+  "container": "sgcf_gz_harmonic",
+  "gazebo_sim_version": "8.14.0",
+  "sdformat_version": "14.9.0",
+  "architecture": "amd64",
+  "environment": {
+    "GZ_SIM_RENDER_ENGINE_SERVER": "ogre2",
+    "GZ_SIM_RENDER_ENGINE_PATH": null,
+    "GZ_SIM_PHYSICS_ENGINE_PATH": "/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins",
+    "QT_QPA_PLATFORM": "offscreen"
+  },
+  "installed_packages": {
+    "libgz-rendering8-ogre2": "8.2.3-1~jammy",
+    "libgz-rendering8": "8.2.3-1~jammy",
+    "libogre-next-2.3.0": "2.3.1-9osrf~jammy",
+    "libegl-mesa0": "23.2.1-1ubuntu3.1~22.04.4"
+  },
+  "raw_inventory": "logs/original_container_inventory.txt"
+}

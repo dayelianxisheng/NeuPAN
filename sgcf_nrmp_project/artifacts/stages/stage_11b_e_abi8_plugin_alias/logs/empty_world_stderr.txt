@@ -1,0 +1,18 @@
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: egl: failed to create dri2 screen
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+[1;31m[Err] [Ogre2RenderEngine.cc:464] [0m[1;31mOGRE EXCEPTION(6:FileNotFoundException): Data folder provided contains no valid template shader files. Did you provide the right folder location? Check you have the right read pemissions. Folder: /usr/share/gz/gz-rendering8/ogre2/src/media/Hlms/Unlit/GLSL in Hlms::Hlms at ./OgreMain/src/OgreHlms.cpp (line 456)[0m[1;31m[0m
+[1;31m[Err] [BaseRenderEngine.cc:55] [0m[1;31mRender-engine must be loaded first[0m[1;31m[0m
+[1;31m[Err] [BaseRenderEngine.cc:215] [0m[1;31mRender-engine has not been initialized[0m[1;31m[0m
+[1;31m[Err] [MarkerManager.cc:167] [0m[1;31mScene pointer is invalid[0m
+Stack trace (most recent call last) in thread 87:
+#5    Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#4    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x70c79b23aa83, in clone
+#3    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x70c79b1a9ac2, in 
+#2    Object "/lib/x86_64-linux-gnu/libstdc++.so.6", at 0x70c7977de252, in 
+#1    Object "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/libgz-sim-sensors-system.so", at 0x70c773a16003, in gz::sim::v8::systems::SensorsPrivate::RenderThread()
+#0    Object "/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins/libgz-sim-sensors-system.so", at 0x70c773a15912, in gz::sim::v8::systems::SensorsPrivate::WaitForInit()
+Segmentation fault (Address not mapped to object [(nil)])

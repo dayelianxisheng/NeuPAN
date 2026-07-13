@@ -1,0 +1,17 @@
+{
+  "package_present": true,
+  "plugin_symlink": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8",
+  "plugin_resolved_path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8.2.3",
+  "symlink_valid": true,
+  "plugin_directory": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+  "elf": {
+    "magic": "7f454c46",
+    "class": "ELF64",
+    "endianness": "little",
+    "machine": 62,
+    "architecture": "x86-64"
+  },
+  "ogre_next_main": "/usr/lib/x86_64-linux-gnu/OGRE-2.3/libOgreNextMain.so.2.3.1",
+  "logical_name_requested_by_runtime": "gz-rendering-ogre2",
+  "unversioned_logical_library_present": false
+}

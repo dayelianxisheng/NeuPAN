@@ -1,0 +1,22 @@
+{
+  "image": "sgcf-gazebo-harmonic:ogre2-fix",
+  "container": "sgcf_gz_harmonic_ogre2_fix",
+  "ubuntu_release": "22.04.5 LTS",
+  "ubuntu_codename": "jammy",
+  "architecture": "amd64",
+  "multiarch_tuple": "x86_64-linux-gnu",
+  "multiarch_source": "actual official package install path; dpkg-architecture executable is not installed",
+  "packages": {
+    "libgz-rendering8": {
+      "version": "8.2.3-1~jammy",
+      "architecture": "amd64",
+      "major_family": 8
+    },
+    "libgz-rendering8-ogre2": {
+      "version": "8.2.3-1~jammy",
+      "architecture": "amd64",
+      "major_family": 8
+    }
+  },
+  "family_gate_passed": true
+}

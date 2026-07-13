@@ -1,0 +1,6 @@
+scene=semantic_infeasible
+run_id=matrix
+mode=full
+ready=1
+server_pid=3036
+startup_ms=4222

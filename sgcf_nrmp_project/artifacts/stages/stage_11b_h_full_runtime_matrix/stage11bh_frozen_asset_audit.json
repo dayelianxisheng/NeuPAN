@@ -1,0 +1,16 @@
+{
+  "docker_modified_by_stage11bh": false,
+  "entry_hash": "9fd7ec9b2e868eb5f4627b85d945a16a724f17fd2e5779c0d07dca6b04721e8a",
+  "exit_hash": "9fd7ec9b2e868eb5f4627b85d945a16a724f17fd2e5779c0d07dca6b04721e8a",
+  "footprint_m": [
+    0.8,
+    0.5
+  ],
+  "gazebo_modified": false,
+  "planner_started": false,
+  "ros_bridge_started": false,
+  "stage10_loaded": false,
+  "status": "PASSED",
+  "wheel_radius_m": 0.1,
+  "wheel_separation_m": 0.5
+}

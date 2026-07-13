@@ -1,0 +1,18 @@
+{
+  "container_stopped": true,
+  "host_residual_gz_process_count": 0,
+  "per_scene": {
+    "human_path_center": true,
+    "human_path_side": true,
+    "initial_collision": true,
+    "narrow_passage": true,
+    "outdated_rgb_contract": true,
+    "rgb_dropout_contract": true,
+    "robot_obstacle": true,
+    "semantic_infeasible": true,
+    "single_static_obstacle": true,
+    "static_corridor": true,
+    "vehicle_path": true
+  },
+  "status": "PASSED"
+}

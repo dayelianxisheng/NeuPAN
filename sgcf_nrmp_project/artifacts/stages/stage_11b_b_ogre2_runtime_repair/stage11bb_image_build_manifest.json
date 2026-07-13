@@ -1,0 +1,25 @@
+{
+  "base_image": "ubuntu:22.04",
+  "base_image_digest": "sha256:4f838adc7181d9039ac795a7d0aba05a9bd9ecd480d294483169c5def983b64d",
+  "original_image": {
+    "tag": "sgcf-gazebo-harmonic:local",
+    "id": "sha256:add3df817107a929749e1ed78b3a6bd674e47850527c7f790694915d078f81db",
+    "preserved": true
+  },
+  "new_image": {
+    "tag": "sgcf-gazebo-harmonic:ogre2-fix",
+    "id": "sha256:a631eadf79b59df7974655fcac9969f82c0308001408e152f00c5a944ad4d931",
+    "size_bytes": 362383146
+  },
+  "container": "sgcf_gz_harmonic_ogre2_fix",
+  "build_command": "docker build --network=host --build-arg HTTP_PROXY=http://127.0.0.1:7897 --build-arg HTTPS_PROXY=http://127.0.0.1:7897 -t sgcf-gazebo-harmonic:ogre2-fix docker/gazebo_harmonic",
+  "new_packages": [],
+  "new_environment": {
+    "GZ_SIM_RENDER_ENGINE_PATH": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins"
+  },
+  "build_log": "logs/repaired_build.log",
+  "build_succeeded": true,
+  "source_compile_used": false,
+  "host_library_copy_used": false,
+  "ogre_abi_bypass_symlink_created": false
+}

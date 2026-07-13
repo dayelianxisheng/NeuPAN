@@ -1,0 +1,27 @@
+{
+  "attempt_count": 1,
+  "world": "empty_world",
+  "command": "gz sim -s -r --headless-rendering --render-engine-server ogre2 -v 4 <empty_world.sdf>",
+  "headless": true,
+  "gui_started": false,
+  "server_started": true,
+  "server_survived_initialization": false,
+  "exit": {
+    "code": 139,
+    "signal": "SIGSEGV",
+    "timeout": false
+  },
+  "segmentation_fault": true,
+  "render_engine_initialized": false,
+  "simulation_clock_advanced": false,
+  "topics_before_crash": [
+    "/gazebo/resource_paths",
+    "/odom",
+    "/tf",
+    "/world/empty_world/stats"
+  ],
+  "stdout": "logs/repaired_empty_world_stdout.txt",
+  "stderr": "logs/repaired_empty_world_stderr.txt",
+  "ogre2_log": "logs/repaired_ogre2.log",
+  "decision": "BLOCKED_OGRE2_PLUGIN_DISCOVERY"
+}

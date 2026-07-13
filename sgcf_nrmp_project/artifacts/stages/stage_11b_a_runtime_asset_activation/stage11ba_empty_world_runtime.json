@@ -1,0 +1,20 @@
+{
+  "attempt_count": 1,
+  "world": "empty_world",
+  "headless": true,
+  "server_started": true,
+  "exit_code": 139,
+  "timeout": false,
+  "simulation_clock_advanced": false,
+  "topics_discovered_before_crash": [
+    "/gazebo/resource_paths",
+    "/odom",
+    "/tf",
+    "/world/empty_world/stats"
+  ],
+  "fatal_error": "Sensors render thread segmentation fault after OGRE2 plugin resolution failure",
+  "stderr_contains_ogre2_load_failure": true,
+  "stderr_contains_segmentation_fault": true,
+  "second_attempt_performed": false,
+  "decision": "BLOCKED_SENSOR_SYSTEM_ACTIVATION"
+}

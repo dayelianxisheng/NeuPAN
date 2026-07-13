@@ -1,0 +1,8 @@
+
+Requesting state for world [initial_collision]...
+
+Model: [8]
+  - Name: sgcf_robot
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [-0.016848 0.000000 -0.000000]
+    [0.000000 -0.000000 -0.000000]

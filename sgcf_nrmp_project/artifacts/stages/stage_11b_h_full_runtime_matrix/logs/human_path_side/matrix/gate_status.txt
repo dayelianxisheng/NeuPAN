@@ -1,0 +1,6 @@
+scene=human_path_side
+run_id=matrix
+mode=full
+ready=1
+server_pid=1731
+startup_ms=4218

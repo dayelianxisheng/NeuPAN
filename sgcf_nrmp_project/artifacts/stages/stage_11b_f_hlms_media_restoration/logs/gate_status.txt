@@ -1,0 +1,3 @@
+ready=1
+server_pid=66
+startup_ms=4209

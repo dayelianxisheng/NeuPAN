@@ -1,0 +1,32 @@
+{
+  "attempt_count": 1,
+  "world": "empty_world",
+  "other_worlds_run": [],
+  "command": "gz sim -s -r --headless-rendering --render-engine-server ogre2 -v 4 <empty_world.sdf>",
+  "headless": true,
+  "gui_started": false,
+  "server_started": true,
+  "server_stable": false,
+  "exit": {
+    "code": 139,
+    "signal": "SIGSEGV",
+    "timeout": false
+  },
+  "simulation_clock_advanced": false,
+  "topics_before_failure": [],
+  "loading_chain": {
+    "engine_identifier": "ogre2",
+    "logical_library": "gz-rendering-ogre2",
+    "compatibility_alias": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so",
+    "resolved_runtime": "/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8.2.3",
+    "render_engine_plugin_loaded": true,
+    "ogre2_engine_entered_initialization": true
+  },
+  "previous_discovery_error_present": false,
+  "egl_context_created": true,
+  "backend_failure": "Data folder provided contains no valid template shader files",
+  "missing_resource_path": "/usr/share/gz/gz-rendering8/ogre2/src/media/Hlms/Unlit/GLSL",
+  "missing_resource_path_exists": false,
+  "segmentation_fault_after_backend_failure": true,
+  "decision": "BLOCKED_HEADLESS_RENDERING_BACKEND"
+}

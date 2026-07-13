@@ -1,0 +1,17 @@
+{
+  "asset_hash_unchanged": true,
+  "entity_present": true,
+  "historical_stage09b": {
+    "P0": "exact clearance 0.24652 m < 0.25 m; geometry recheck rejection",
+    "P1_P2": "OSQP_MAX_ITER_REACHED; iterations=10000"
+  },
+  "manifest_human_pose": [
+    1.5,
+    0.35,
+    0.0
+  ],
+  "planner_run_in_stage11bh": false,
+  "runtime_clearance_blocked_by_self_observation": true,
+  "sensors_present": true,
+  "world_loaded": true
+}

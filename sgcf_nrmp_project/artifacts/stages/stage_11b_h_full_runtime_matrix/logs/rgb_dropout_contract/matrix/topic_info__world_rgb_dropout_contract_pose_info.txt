@@ -1,0 +1,3 @@
+Publishers [Address, Message Type]:
+  tcp://172.17.0.1:42277, gz.msgs.Pose_V
+No subscribers on topic [/world/rgb_dropout_contract/pose/info]

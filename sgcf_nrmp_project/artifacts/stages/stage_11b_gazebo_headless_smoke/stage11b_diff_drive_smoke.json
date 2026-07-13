@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED_DIFF_DRIVE_NOT_ACTIVE",
+  "commands_sent": 0,
+  "unsafe_motion_attempted": false,
+  "decision": "BLOCKED_GAZEBO_PLUGIN"
+}

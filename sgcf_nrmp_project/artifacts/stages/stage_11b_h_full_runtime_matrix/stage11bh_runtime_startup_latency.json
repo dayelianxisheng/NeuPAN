@@ -1,0 +1,20 @@
+{
+  "matrix_samples_ms": {
+    "human_path_center": 4218,
+    "human_path_side": 4218,
+    "initial_collision": 4219,
+    "narrow_passage": 4207,
+    "outdated_rgb_contract": 4208,
+    "rgb_dropout_contract": 4221,
+    "robot_obstacle": 4209,
+    "semantic_infeasible": 4222,
+    "single_static_obstacle": 4218,
+    "static_corridor": 4223,
+    "vehicle_path": 4220
+  },
+  "reason": "BLOCKED_GEOMETRY_RUNTIME_CONSISTENCY",
+  "repeat_runs_executed": 0,
+  "required_three_sample_statistics_available": false,
+  "stage11bf_empty_world_sample_ms": 4209,
+  "status": "NOT_COMPLETED_AFTER_IMMEDIATE_STOP"
+}

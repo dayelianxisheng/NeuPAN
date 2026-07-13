@@ -1,0 +1,15 @@
+{
+  "gazebo_assets_modified": false,
+  "other_worlds_run": [],
+  "planner_started": false,
+  "robot_footprint_m": {
+    "length": 0.8,
+    "modified": false,
+    "width": 0.5
+  },
+  "ros_bridge_started": false,
+  "stage10_loaded": false,
+  "stage_entry_combined_gazebo_hash": "9fd7ec9b2e868eb5f4627b85d945a16a724f17fd2e5779c0d07dca6b04721e8a",
+  "stage_exit_combined_gazebo_hash": "9fd7ec9b2e868eb5f4627b85d945a16a724f17fd2e5779c0d07dca6b04721e8a",
+  "status": "PASSED"
+}

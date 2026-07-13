@@ -1,0 +1,15 @@
+{
+  "status": "PARTIAL_TOPIC_DISCOVERY_ONLY",
+  "clock_topics": [
+    "/clock",
+    "/world/empty_world/clock"
+  ],
+  "stats_topics": [
+    "/stats",
+    "/world/empty_world/stats"
+  ],
+  "timestamps_sampled": 0,
+  "monotonicity_evaluated": false,
+  "reason": "Immediate stop followed missing sensor runtime topics.",
+  "decision": "BLOCKED_GAZEBO_PLUGIN"
+}

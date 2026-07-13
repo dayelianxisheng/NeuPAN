@@ -1,0 +1,12 @@
+{
+  "build_attempts": 2,
+  "first_attempt_failure": "incorrect local assertion of the package-owned alias resolved path; Gazebo was not launched",
+  "gz_runtime_major": 8,
+  "image_id": "sha256:72af30cf91fb3001e019c6e57846dbe8d72497516882cc3d0e99a7d5551759ac",
+  "image_size_bytes": 523807123,
+  "image_tag": "sgcf-gazebo-harmonic:hlms-media-fix",
+  "package": "libgz-rendering8-ogre2-dev=8.2.3-1~jammy",
+  "package_sha256": "f7963e5c70dc933d5c3e402de6491a28b22e7229ce918bec69f0fc7a69f1df6b",
+  "packages_removed": 0,
+  "status": "BUILT"
+}

@@ -1,0 +1,6 @@
+scene=single_static_obstacle
+run_id=matrix
+mode=full
+ready=1
+server_pid=70
+startup_ms=4218

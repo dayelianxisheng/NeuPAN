@@ -1,0 +1,14 @@
+{
+  "binary_contains_default_root": true,
+  "binary_contains_environment_name": true,
+  "binary_scan_method": "direct byte search",
+  "current_environment_value": null,
+  "derived_resource_root": "/usr/share/gz/gz-rendering8",
+  "package_media_root": "/usr/share/gz/gz-rendering8/ogre2/media",
+  "resource_root_is_parent_of_ogre2": true,
+  "strings_tool_available": false,
+  "unique": true,
+  "valid_candidates": [
+    "/usr/share/gz/gz-rendering8/ogre2/media"
+  ]
+}

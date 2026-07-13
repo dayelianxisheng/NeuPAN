@@ -1,0 +1,19 @@
+{
+  "maximum_image_age_s": 0.1,
+  "outdated_rgb_contract": {
+    "fallback_reason": "OUTDATED_IMAGE",
+    "image_age_s": 3.6610000000000014,
+    "manifest_contract": "OUTDATED_IMAGE",
+    "semantic_contribution_enabled": false,
+    "semantic_valid": false
+  },
+  "planner_called": false,
+  "rgb_dropout_contract": {
+    "fallback_reason": "RGB_DROPOUT",
+    "image_present_for_adapter": false,
+    "manifest_contract": "RGB_DROPOUT",
+    "semantic_contribution_enabled": false,
+    "semantic_valid": false
+  },
+  "status": "PASSED"
+}

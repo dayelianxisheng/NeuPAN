@@ -1,0 +1,7 @@
+{
+  "status": "NOT_EXECUTED_PACKAGE_VERSION_GATE_FAILED",
+  "runtime_regate_count": 0,
+  "worlds_run": [],
+  "image": null,
+  "decision": "BLOCKED_OFFICIAL_PACKAGE_VERSION_MISMATCH"
+}

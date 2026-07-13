@@ -1,0 +1,18 @@
+{
+  "status": "NOT_BUILT_PREBUILD_ASSERTION_FAILED",
+  "requested_tag": "sgcf-gazebo-harmonic:rendering-path-fix",
+  "requested_container": "sgcf_gz_harmonic_rendering_path_fix",
+  "base_image": {
+    "tag": "sgcf-gazebo-harmonic:ogre2-fix",
+    "id": "sha256:a631eadf79b59df7974655fcac9969f82c0308001408e152f00c5a944ad4d931"
+  },
+  "new_image_id": null,
+  "new_image_size_bytes": null,
+  "gazebo_version": "8.14.0",
+  "gz_rendering_version": "8.2.3-1~jammy",
+  "plugin_resolved_path": null,
+  "GZ_RENDERING_PLUGIN_PATH": null,
+  "obsolete_GZ_SIM_RENDER_ENGINE_PATH_removed": false,
+  "packages_added": [],
+  "reason": "Required build assertion test -e <dir>/libgz-rendering-ogre2.so cannot pass because that exact file is absent."
+}

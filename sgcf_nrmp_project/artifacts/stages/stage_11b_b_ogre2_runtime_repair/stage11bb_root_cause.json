@@ -1,0 +1,27 @@
+{
+  "root_cause_category": "B. OGRE2 plugin exists but discovery path missing",
+  "final_blocker": "GZ_SIM_RENDER_ENGINE_PATH alone did not resolve the logical plugin basename gz-rendering-ogre2",
+  "evidence": [
+    "libgz-rendering8-ogre2.so.8.2.3 exists in the packaged engine-plugins directory",
+    "plugin ELF is x86-64 and gz-rendering major 8 matches Gazebo Sim major 8",
+    "ldd reports zero not-found dependencies",
+    "original environment omitted GZ_SIM_RENDER_ENGINE_PATH",
+    "gz sim --help documents GZ_SIM_RENDER_ENGINE_PATH",
+    "repaired environment contains the exact packaged directory but runtime still requests unresolved gz-rendering-ogre2"
+  ],
+  "plugin_path": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8",
+  "missing_dependencies": [],
+  "current_environment_paths": {
+    "original": null,
+    "repaired": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins"
+  },
+  "recommended_minimal_fix": "Human review of the Harmonic Debian plugin-name/discovery packaging; determine an official ABI-matched logical-name mechanism before any further image build.",
+  "rejected_fixes": [
+    "host shared-library copy",
+    "source build",
+    "unknown third-party repository",
+    "Gazebo major upgrade",
+    "ABI-mismatched symlink",
+    "sensor/SDF contract change"
+  ]
+}

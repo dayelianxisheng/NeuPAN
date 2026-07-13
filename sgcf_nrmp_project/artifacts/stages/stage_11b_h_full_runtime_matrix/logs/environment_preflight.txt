@@ -1,0 +1,14 @@
+/usr/bin/gz
+8.14.0
+14.9.0
+libgz-rendering8:amd64	8.2.3-1~jammy
+libgz-rendering8-ogre2:amd64	8.2.3-1~jammy
+libgz-rendering8-ogre2-dev:amd64	8.2.3-1~jammy
+alias=/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so
+resolved=/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8.2.3
+owner=libgz-rendering8-ogre2-dev:amd64: /usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so
+ldd_not_found=0
+GZ_RENDERING_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins
+GZ_RENDERING_RESOURCE_PATH=/usr/share/gz/gz-rendering8
+c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef  /usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8.2.3
+     17 bash -lc  set -euo pipefail command -v gz gz sim --versions gz sdf --versions dpkg-query -W libgz-rendering8 libgz-rendering8-ogre2 libgz-rendering8-ogre2-dev alias="$GZ_RENDERING_PLUGIN_PATH/libgz-rendering-ogre2.so" test -L "$alias" test -e "$alias" echo "alias=$alias" echo "resolved=$(readlink -f "$alias")" echo "owner=$(dpkg -S "$alias")" echo "ldd_not_found=$(ldd "$(readlink -f "$alias")" | grep -c "not found" || true)" echo "GZ_RENDERING_PLUGIN_PATH=$GZ_RENDERING_PLUGIN_PATH" echo "GZ_RENDERING_RESOURCE_PATH=$GZ_RENDERING_RESOURCE_PATH" test -s "$GZ_RENDERING_RESOURCE_PATH/ogre2/media/Hlms/Unlit/GLSL/PixelShader_ps.glsl" test -s "$GZ_RENDERING_RESOURCE_PATH/ogre2/media/Hlms/Pbs/GLSL/PixelShader_ps.glsl" test -s "$GZ_RENDERING_RESOURCE_PATH/ogre2/media/materials/scripts/GpuRays.compositor" sha256sum "$(readlink -f "$alias")" ps -eo pid,args | grep -E "[g]z sim|[g]z-sim-server" || true 

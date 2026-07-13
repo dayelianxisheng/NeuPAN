@@ -1,0 +1,25 @@
+{
+  "decision": "BLOCKED_GAZEBO_PLUGIN",
+  "audit_location": "Docker container sgcf_gz_harmonic",
+  "gz_executable": "/usr/bin/gz",
+  "gz_sim_available": true,
+  "gazebo_distribution": "Harmonic",
+  "gazebo_sim_version": "8.14.0",
+  "sdformat_version": "14.9.0",
+  "headless_server_available": true,
+  "sdf_1_9_empty_world_parse_and_start": true,
+  "available_commands": [
+    "gui",
+    "model",
+    "msg",
+    "sdf",
+    "sim",
+    "topic",
+    "service",
+    "log",
+    "param"
+  ],
+  "physics_engine": "DART via gz-physics7-dartsim",
+  "environment_gate_passed": true,
+  "runtime_gate_failure": "Sensors and diff-drive runtime systems are not declared/active in the Stage 11A assets."
+}

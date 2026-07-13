@@ -1,0 +1,19 @@
+{
+  "camera_messages": 5,
+  "camera_nonempty": true,
+  "camera_sample_bytes": 307200,
+  "camera_sample_height": 240,
+  "camera_sample_width": 320,
+  "lidar_finite_return_count": 200,
+  "lidar_infinite_no_return_count": 3420,
+  "lidar_infinity_interpretation": "expected no-return encoding in empty_world; no NaN pollution",
+  "lidar_messages": 20,
+  "lidar_nan_count": 0,
+  "lidar_ranges_nonempty": true,
+  "lidar_ranges_per_message": 181,
+  "lidar_timestamp_monotonic": true,
+  "odometry_messages": 20,
+  "odometry_timestamp_monotonic": true,
+  "required_topics_present": true,
+  "status": "PASSED"
+}

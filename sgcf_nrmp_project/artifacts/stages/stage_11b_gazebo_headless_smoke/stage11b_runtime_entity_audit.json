@@ -1,0 +1,7 @@
+{
+  "status": "PARTIAL_EMPTY_WORLD_ONLY",
+  "pose_and_scene_topics_present": true,
+  "entity_payload_sampled": false,
+  "reason": "Immediate stop followed missing sensor runtime topics.",
+  "decision": "BLOCKED_GAZEBO_PLUGIN"
+}

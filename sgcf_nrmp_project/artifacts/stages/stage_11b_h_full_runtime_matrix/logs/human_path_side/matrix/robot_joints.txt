@@ -1,0 +1,52 @@
+
+Requesting state for world [human_path_side]...
+
+- Joint [23]
+  - Name: base_footprint_to_base_link
+  - Parent: sgcf_robot [8]
+  - Type: fixed
+  - Parent Link: base_footprint [9]
+  - Child Link: base_link [10]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+- Joint [24]
+  - Name: left_wheel_joint
+  - Parent: sgcf_robot [8]
+  - Type: revolute
+  - Parent Link: base_link [10]
+  - Child Link: left_wheel_link [13]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+  - Axis unit vector [ XYZ ]:
+    [0 1 0]
+- Joint [25]
+  - Name: right_wheel_joint
+  - Parent: sgcf_robot [8]
+  - Type: revolute
+  - Parent Link: base_link [10]
+  - Child Link: right_wheel_link [16]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+  - Axis unit vector [ XYZ ]:
+    [0 1 0]
+- Joint [26]
+  - Name: lidar_fixed
+  - Parent: sgcf_robot [8]
+  - Type: fixed
+  - Parent Link: base_link [10]
+  - Child Link: lidar_link [19]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]
+- Joint [27]
+  - Name: camera_fixed
+  - Parent: sgcf_robot [8]
+  - Type: fixed
+  - Parent Link: base_link [10]
+  - Child Link: camera_link [21]
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]

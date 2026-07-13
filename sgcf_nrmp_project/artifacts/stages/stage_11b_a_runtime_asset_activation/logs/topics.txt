@@ -1,0 +1,4 @@
+/gazebo/resource_paths
+/odom
+/tf
+/world/empty_world/stats

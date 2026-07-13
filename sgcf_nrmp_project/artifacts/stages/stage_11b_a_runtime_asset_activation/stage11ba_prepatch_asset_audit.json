@@ -1,0 +1,220 @@
+{
+  "robot_model": "gazebo/models/sgcf_diff_drive_robot/model.sdf",
+  "base_link": {
+    "exists": true,
+    "name": "base_link",
+    "pose": "0 0 0.1 0 0 0",
+    "parent": null,
+    "geometry": null,
+    "collision_extent": null
+  },
+  "base_collision": {
+    "exists": true,
+    "name": "planner_footprint_collision",
+    "pose": "0 0 0 0 0 0",
+    "geometry": "0.8 0.5 0.2"
+  },
+  "lidar": {
+    "exists": true,
+    "name": "lidar",
+    "parent": "lidar_link",
+    "pose": "0 0 0.1 0 0 0",
+    "topic": "/scan",
+    "type": "gpu_lidar"
+  },
+  "camera": {
+    "exists": true,
+    "name": "rgb_camera",
+    "parent": "camera_link",
+    "pose": "0 0 0.9 0 0 0",
+    "topic": "/camera/image_raw",
+    "type": "camera"
+  },
+  "left_wheel_link": {
+    "exists": false,
+    "name": "left_wheel_link",
+    "pose": null,
+    "parent": null,
+    "geometry": null,
+    "collision_extent": null
+  },
+  "right_wheel_link": {
+    "exists": false,
+    "name": "right_wheel_link",
+    "pose": null,
+    "parent": null,
+    "geometry": null,
+    "collision_extent": null
+  },
+  "left_wheel_joint": {
+    "exists": false,
+    "name": "left_wheel_joint",
+    "parent": null,
+    "child": null,
+    "type": null,
+    "axis": null
+  },
+  "right_wheel_joint": {
+    "exists": false,
+    "name": "right_wheel_joint",
+    "parent": null,
+    "child": null,
+    "type": null,
+    "axis": null
+  },
+  "diff_drive_plugins": [],
+  "worlds": [
+    {
+      "scene_id": "empty_world",
+      "plugins": []
+    },
+    {
+      "scene_id": "human_path_center",
+      "plugins": []
+    },
+    {
+      "scene_id": "human_path_side",
+      "plugins": []
+    },
+    {
+      "scene_id": "initial_collision",
+      "plugins": []
+    },
+    {
+      "scene_id": "narrow_passage",
+      "plugins": []
+    },
+    {
+      "scene_id": "outdated_rgb_contract",
+      "plugins": []
+    },
+    {
+      "scene_id": "rgb_dropout_contract",
+      "plugins": []
+    },
+    {
+      "scene_id": "robot_obstacle",
+      "plugins": []
+    },
+    {
+      "scene_id": "semantic_infeasible",
+      "plugins": []
+    },
+    {
+      "scene_id": "single_static_obstacle",
+      "plugins": []
+    },
+    {
+      "scene_id": "static_corridor",
+      "plugins": []
+    },
+    {
+      "scene_id": "vehicle_path",
+      "plugins": []
+    }
+  ],
+  "obstacle_signature": {
+    "empty_world": [],
+    "human_path_center": [
+      {
+        "name": "human_01",
+        "uri": "model://human_placeholder",
+        "pose": "1.5 0 0.85 0 0 0",
+        "scale": "1 1 1"
+      }
+    ],
+    "human_path_side": [
+      {
+        "name": "human_01",
+        "uri": "model://human_placeholder",
+        "pose": "1.5 0.35 0.85 0 0 0",
+        "scale": "1 1 1"
+      }
+    ],
+    "initial_collision": [
+      {
+        "name": "initial_collision_obstacle",
+        "uri": "model://human_placeholder",
+        "pose": "0.41 0 0.2 0 0 0",
+        "scale": "0.5714285714285714 0.5714285714285714 0.23529411764705882"
+      }
+    ],
+    "narrow_passage": [
+      {
+        "name": "wall_left",
+        "uri": "model://static_obstacle",
+        "pose": "2 0.585 0.25 0 0 0",
+        "scale": "5 0.15 0.5"
+      },
+      {
+        "name": "wall_right",
+        "uri": "model://static_obstacle",
+        "pose": "2 -0.585 0.25 0 0 0",
+        "scale": "5 0.15 0.5"
+      }
+    ],
+    "outdated_rgb_contract": [
+      {
+        "name": "human_01",
+        "uri": "model://human_placeholder",
+        "pose": "1.5 0 0.85 0 0 0",
+        "scale": "1 1 1"
+      }
+    ],
+    "rgb_dropout_contract": [
+      {
+        "name": "human_01",
+        "uri": "model://human_placeholder",
+        "pose": "1.5 0 0.85 0 0 0",
+        "scale": "1 1 1"
+      }
+    ],
+    "robot_obstacle": [
+      {
+        "name": "robot_obstacle_01",
+        "uri": "model://robot_obstacle",
+        "pose": "1.5 0 0.15 0 0 0",
+        "scale": "1 1 1"
+      }
+    ],
+    "semantic_infeasible": [
+      {
+        "name": "human_01",
+        "uri": "model://human_placeholder",
+        "pose": "1.5 0 0.85 0 0 0",
+        "scale": "1 1 1"
+      }
+    ],
+    "single_static_obstacle": [
+      {
+        "name": "static_01",
+        "uri": "model://static_cylinder",
+        "pose": "1.5 0 0.35 0 0 0",
+        "scale": "1 1 1"
+      }
+    ],
+    "static_corridor": [
+      {
+        "name": "wall_left",
+        "uri": "model://static_obstacle",
+        "pose": "2 0.7 0.25 0 0 0",
+        "scale": "5 0.15 0.5"
+      },
+      {
+        "name": "wall_right",
+        "uri": "model://static_obstacle",
+        "pose": "2 -0.7 0.25 0 0 0",
+        "scale": "5 0.15 0.5"
+      }
+    ],
+    "vehicle_path": [
+      {
+        "name": "vehicle_01",
+        "uri": "model://vehicle_placeholder",
+        "pose": "1.5 0 0.2 0 0 0",
+        "scale": "1 1 1"
+      }
+    ]
+  },
+  "obstacle_signature_sha256": "5e19602b9ef7a904e7e6b83575d994ace4dca32d44309c08a7dd1372e72e9b00"
+}

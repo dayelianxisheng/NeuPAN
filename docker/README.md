@@ -24,6 +24,11 @@ docker/
 # ROS2（ddr_minimal_sim 仿真）
 ./docker/container.sh ros2 setup
 ./docker/container.sh ros2 enter
+
+# Modern Gazebo Harmonic（Stage 11B headless runtime）
+./docker/gazebo_harmonic/container.sh build
+./docker/gazebo_harmonic/container.sh create
+./docker/gazebo_harmonic/container.sh check
 ```
 
 ## 命令
@@ -80,3 +85,7 @@ ros2 launch neupan_ros2 sim_complete.launch.py sim_env_config:=scenario_corridor
 
 - Docker + NVIDIA Container Toolkit（GPU）
 - 代理服务运行在 `127.0.0.1:7897`（Clash 等）
+
+`gazebo_harmonic/` 是独立的无 GUI Modern Gazebo 环境，不使用上面的
+ROS1/ROS2 setup 脚本，也不会启动 Planner 或 ROS bridge。构建时需要访问
+OSRF Ubuntu 软件源。

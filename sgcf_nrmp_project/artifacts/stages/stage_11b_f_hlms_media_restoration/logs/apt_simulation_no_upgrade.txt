@@ -1,0 +1,426 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autotools-dev cmake cmake-data default-libmysqlclient-dev
+  dh-elpa-helper emacsen-common gcc-11-base hdf5-helpers icu-devtools
+  libaec-dev libaom-dev libarchive13 libarmadillo-dev libarpack2-dev libasan6
+  libassimp-dev libatomic1 libblas-dev libblkid-dev libblosc-dev
+  libboost-atomic1.74-dev libboost-atomic1.74.0 libboost-chrono1.74-dev
+  libboost-chrono1.74.0 libboost-date-time1.74-dev libboost-date-time1.74.0
+  libboost-dev libboost-serialization1.74-dev libboost-serialization1.74.0
+  libboost-system1.74-dev libboost-system1.74.0 libboost-thread-dev
+  libboost-thread1.74-dev libboost-thread1.74.0 libboost1.74-dev libc-dev-bin
+  libc6-dev libcfitsio-dev libcharls-dev libcrypt-dev libcurl4-openssl-dev
+  libdav1d-dev libde265-dev libdeflate-dev libdpkg-perl libdraco-dev
+  libeigen3-dev libexpat1-dev libffi-dev libfreeimage-dev libfreexl-dev
+  libfyba-dev libgcc-11-dev libgdal-dev libgeos-dev libgeotiff-dev libgif-dev
+  libglib2.0-bin libglib2.0-data libglib2.0-dev libglib2.0-dev-bin libgts-dev
+  libgz-cmake3-dev libgz-common5-core-dev libgz-common5-events-dev
+  libgz-common5-geospatial-dev libgz-common5-graphics-dev libgz-math7-dev
+  libgz-math7-eigen3-dev libgz-plugin2-dev libgz-rendering8-core-dev
+  libgz-utils2-cli-dev libgz-utils2-dev libhdf4-alt-dev libhdf5-cpp-103-1
+  libhdf5-dev libhdf5-fortran-102 libhdf5-hl-cpp-100 libhdf5-hl-fortran-100
+  libheif-dev libicu-dev libitm1 libjbig-dev libjpeg-dev libjpeg-turbo8-dev
+  libjpeg8-dev libjson-c-dev libkml-dev libkmlconvenience1 libkmlregionator1
+  libkmlxsd1 liblapack-dev liblsan0 libltdl-dev liblz4-dev liblzma-dev
+  liblzma5 libminizip-dev libmount-dev libmysqlclient-dev libnetcdf-dev
+  libnsl-dev libodbccr2 libogdi-dev libogre-next-2.3-dev libopenjp2-7-dev
+  libpcre16-3 libpcre2-32-0 libpcre2-dev libpcre2-posix3 libpcre3-dev
+  libpcre32-3 libpcrecpp0v5 libperl5.34 libpng-dev libpoppler-dev
+  libpoppler-private-dev libpq-dev libproj-dev libqhull-dev libqhull8.0
+  libqhullcpp8.0 librhash0 librttopo-dev libselinux1-dev libsepol-dev
+  libsigsegv2 libspatialite-dev libsqlite3-dev libssl-dev libssl3
+  libstdc++-11-dev libsuperlu-dev libtiff-dev libtiffxx5 libtinyxml2-dev
+  libtirpc-dev libtsan0 libubsan1 liburiparser-dev libuv1 libvulkan-dev
+  libwebp-dev libwebpdemux2 libx265-dev libxerces-c-dev libxml2-dev
+  libzstd-dev linux-libc-dev m4 perl perl-base perl-modules-5.34 pkg-config
+  rpcsvc-proto unixodbc-dev uuid-dev zlib1g-dev
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc libtool gettext cmake-doc
+  ninja-build cmake-format lrzip libitpp-dev liblapack-doc libboost-doc
+  libboost1.74-doc libboost-container1.74-dev libboost-context1.74-dev
+  libboost-contract1.74-dev libboost-coroutine1.74-dev
+  libboost-exception1.74-dev libboost-fiber1.74-dev
+  libboost-filesystem1.74-dev libboost-graph1.74-dev
+  libboost-graph-parallel1.74-dev libboost-iostreams1.74-dev
+  libboost-locale1.74-dev libboost-log1.74-dev libboost-math1.74-dev
+  libboost-mpi1.74-dev libboost-mpi-python1.74-dev libboost-numpy1.74-dev
+  libboost-program-options1.74-dev libboost-python1.74-dev
+  libboost-random1.74-dev libboost-regex1.74-dev libboost-stacktrace1.74-dev
+  libboost-test1.74-dev libboost-timer1.74-dev libboost-type-erasure1.74-dev
+  libboost-wave1.74-dev libboost1.74-tools-dev libmpfrc++-dev libntl-dev
+  libboost-nowide1.74-dev glibc-doc manpages-dev libcurl4-doc libidn11-dev
+  libkrb5-dev libldap2-dev librtmp-dev libssh2-1-dev debian-keyring gcc
+  | c-compiler binutils patch git bzr libeigen3-doc libgdal-doc
+  libgeotiff-epsg libgirepository1.0-dev libglib2.0-doc libgdk-pixbuf2.0-bin
+  | libgdk-pixbuf2.0-dev libxml2-utils libgts-doc libhdf5-doc icu-doc
+  libtool-doc liblzma-doc netcdf-bin netcdf-doc ogre-next-2.3-doc
+  libfreetype6-dev postgresql-doc-14 proj-bin sqlite3-doc libssl-doc
+  libstdc++-11-doc libsuperlu-doc libx265-doc libxerces-c-doc m4-doc perl-doc
+  libterm-readline-gnu-perl | libterm-readline-perl-perl make
+  libtap-harness-archive-perl dpkg-dev
+Recommended packages:
+  gcc make manpages manpages-dev libc-devtools libcfitsio-doc
+  libfile-fcntllock-perl liblocale-gettext-perl bzip2 xz-utils libtool
+  libpng-tools netbase
+The following NEW packages will be installed:
+  autoconf automake autotools-dev cmake cmake-data default-libmysqlclient-dev
+  dh-elpa-helper emacsen-common gcc-11-base hdf5-helpers icu-devtools
+  libaec-dev libaom-dev libarchive13 libarmadillo-dev libarpack2-dev libasan6
+  libassimp-dev libatomic1 libblas-dev libblkid-dev libblosc-dev
+  libboost-atomic1.74-dev libboost-atomic1.74.0 libboost-chrono1.74-dev
+  libboost-chrono1.74.0 libboost-date-time1.74-dev libboost-date-time1.74.0
+  libboost-dev libboost-serialization1.74-dev libboost-serialization1.74.0
+  libboost-system1.74-dev libboost-system1.74.0 libboost-thread-dev
+  libboost-thread1.74-dev libboost-thread1.74.0 libboost1.74-dev libc-dev-bin
+  libc6-dev libcfitsio-dev libcharls-dev libcrypt-dev libcurl4-openssl-dev
+  libdav1d-dev libde265-dev libdeflate-dev libdpkg-perl libdraco-dev
+  libeigen3-dev libexpat1-dev libffi-dev libfreeimage-dev libfreexl-dev
+  libfyba-dev libgcc-11-dev libgdal-dev libgeos-dev libgeotiff-dev libgif-dev
+  libglib2.0-bin libglib2.0-data libglib2.0-dev libglib2.0-dev-bin libgts-dev
+  libgz-cmake3-dev libgz-common5-core-dev libgz-common5-events-dev
+  libgz-common5-geospatial-dev libgz-common5-graphics-dev libgz-math7-dev
+  libgz-math7-eigen3-dev libgz-plugin2-dev libgz-rendering8-core-dev
+  libgz-rendering8-ogre2-dev libgz-utils2-cli-dev libgz-utils2-dev
+  libhdf4-alt-dev libhdf5-cpp-103-1 libhdf5-dev libhdf5-fortran-102
+  libhdf5-hl-cpp-100 libhdf5-hl-fortran-100 libheif-dev libicu-dev libitm1
+  libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev libjson-c-dev
+  libkml-dev libkmlconvenience1 libkmlregionator1 libkmlxsd1 liblapack-dev
+  liblsan0 libltdl-dev liblz4-dev liblzma-dev libminizip-dev libmount-dev
+  libmysqlclient-dev libnetcdf-dev libnsl-dev libodbccr2 libogdi-dev
+  libogre-next-2.3-dev libopenjp2-7-dev libpcre16-3 libpcre2-32-0 libpcre2-dev
+  libpcre2-posix3 libpcre3-dev libpcre32-3 libpcrecpp0v5 libperl5.34
+  libpng-dev libpoppler-dev libpoppler-private-dev libpq-dev libproj-dev
+  libqhull-dev libqhull8.0 libqhullcpp8.0 librhash0 librttopo-dev
+  libselinux1-dev libsepol-dev libsigsegv2 libspatialite-dev libsqlite3-dev
+  libssl-dev libstdc++-11-dev libsuperlu-dev libtiff-dev libtiffxx5
+  libtinyxml2-dev libtirpc-dev libtsan0 libubsan1 liburiparser-dev libuv1
+  libvulkan-dev libwebp-dev libwebpdemux2 libx265-dev libxerces-c-dev
+  libxml2-dev libzstd-dev linux-libc-dev m4 perl perl-modules-5.34 pkg-config
+  rpcsvc-proto unixodbc-dev uuid-dev zlib1g-dev
+The following packages will be upgraded:
+  liblzma5 libssl3 perl-base
+3 upgraded, 158 newly installed, 0 to remove and 11 not upgraded.
+Inst perl-base [5.34.0-3ubuntu1.5] (5.34.0-3ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf perl-base (5.34.0-3ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst perl-modules-5.34 (5.34.0-3ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [all])
+Inst libperl5.34 (5.34.0-3ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst perl (5.34.0-3ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst liblzma5 [5.2.5-2ubuntu1] (5.2.5-2ubuntu1.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf liblzma5 (5.2.5-2ubuntu1.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libssl3 [3.0.2-0ubuntu1.23] (3.0.2-0ubuntu1.25 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libssl3 (3.0.2-0ubuntu1.25 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libglib2.0-data (2.72.4-0ubuntu2.9 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [all])
+Inst libuv1 (1.43.0-1ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libsigsegv2 (2.13-1ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst m4 (1.4.18-5ubuntu2 Ubuntu:22.04/jammy [amd64])
+Inst autoconf (2.71-2 Ubuntu:22.04/jammy [all])
+Inst autotools-dev (20220109.1 Ubuntu:22.04/jammy [all])
+Inst automake (1:1.16.5-1.3 Ubuntu:22.04/jammy [all])
+Inst libarchive13 (3.6.0-1ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst librhash0 (1.4.2-1ubuntu1 Ubuntu:22.04/jammy [amd64])
+Inst dh-elpa-helper (2.0.9ubuntu1 Ubuntu:22.04/jammy [all])
+Inst emacsen-common (3.0.4 Ubuntu:22.04/jammy [all])
+Inst cmake-data (3.22.1-1ubuntu1.22.04.2 Ubuntu:22.04/jammy-updates [all])
+Inst cmake (3.22.1-1ubuntu1.22.04.2 Ubuntu:22.04/jammy-updates [amd64])
+Inst libssl-dev (3.0.2-0ubuntu1.25 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libzstd-dev (1.4.8+dfsg-3build1 Ubuntu:22.04/jammy [amd64])
+Inst libc-dev-bin (2.35-0ubuntu3.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst linux-libc-dev (5.15.0-185.195 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libcrypt-dev (1:4.4.27-1 Ubuntu:22.04/jammy [amd64])
+Inst rpcsvc-proto (1.4.2-0ubuntu6 Ubuntu:22.04/jammy [amd64])
+Inst libtirpc-dev (1.3.2-2ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libnsl-dev (1.3.0-2build2 Ubuntu:22.04/jammy [amd64])
+Inst libc6-dev (2.35-0ubuntu3.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst zlib1g-dev (1:1.2.11.dfsg-2ubuntu9.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libmysqlclient-dev (8.0.46-0ubuntu0.22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst default-libmysqlclient-dev (1.0.8 Ubuntu:22.04/jammy [amd64])
+Inst gcc-11-base (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst hdf5-helpers (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Inst icu-devtools (70.1-2 Ubuntu:22.04/jammy [amd64])
+Inst libaom-dev (3.3.0-1ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libblas-dev (3.10.0-2ubuntu1 Ubuntu:22.04/jammy [amd64])
+Inst liblapack-dev (3.10.0-2ubuntu1 Ubuntu:22.04/jammy [amd64])
+Inst libarpack2-dev (3.8.0-1 Ubuntu:22.04/jammy [amd64])
+Inst libhdf5-fortran-102 (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Inst libhdf5-hl-fortran-100 (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Inst libhdf5-cpp-103-1 (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Inst libhdf5-hl-cpp-100 (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Inst libjpeg-turbo8-dev (2.1.2-0ubuntu1 Ubuntu:22.04/jammy [amd64])
+Inst libjpeg8-dev (8c-2ubuntu10 Ubuntu:22.04/jammy [amd64])
+Inst libjpeg-dev (8c-2ubuntu10 Ubuntu:22.04/jammy [amd64])
+Inst libaec-dev (1.0.6-1 Ubuntu:22.04/jammy [amd64])
+Inst libcurl4-openssl-dev (7.81.0-1ubuntu1.25 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libhdf5-dev (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Inst libsuperlu-dev (5.3.0+dfsg1-2 Ubuntu:22.04/jammy [amd64])
+Inst libarmadillo-dev (1:10.8.2+dfsg-1 Ubuntu:22.04/jammy [amd64])
+Inst libasan6 (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libatomic1 (12.3.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libblosc-dev (1.21.1+ds2-2 Ubuntu:22.04/jammy [amd64])
+Inst libitm1 (12.3.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst liblsan0 (12.3.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libtsan0 (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libubsan1 (12.3.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libgcc-11-dev (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libstdc++-11-dev (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libboost1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-atomic1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-atomic1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-chrono1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-chrono1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-date-time1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-serialization1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-serialization1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-date-time1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-dev (1.74.0.3ubuntu7 Ubuntu:22.04/jammy [amd64])
+Inst libboost-system1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-system1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-thread1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-thread1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libboost-thread-dev (1.74.0.3ubuntu7 Ubuntu:22.04/jammy [amd64])
+Inst libcfitsio-dev (4.0.0-1 Ubuntu:22.04/jammy [amd64])
+Inst libcharls-dev (2.3.4-1 Ubuntu:22.04/jammy [amd64])
+Inst libdav1d-dev (0.9.2-1 Ubuntu:22.04/jammy [amd64])
+Inst libde265-dev (1.0.8-1ubuntu0.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libdeflate-dev (1.10-2 Ubuntu:22.04/jammy [amd64])
+Inst libdpkg-perl (1.21.1ubuntu2.6 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [all])
+Inst libdraco-dev (1.5.2+dfsg-2 Ubuntu:22.04/jammy [amd64])
+Inst libexpat1-dev (2.4.7-1ubuntu0.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libfyba-dev (4.1.1-7 Ubuntu:22.04/jammy [amd64])
+Inst libgeos-dev (3.10.2-1 Ubuntu:22.04/jammy [amd64])
+Inst libgif-dev (5.1.9-2ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libglib2.0-bin (2.72.4-0ubuntu2.9 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libffi-dev (3.4.2-4 Ubuntu:22.04/jammy [amd64])
+Inst libglib2.0-dev-bin (2.72.4-0ubuntu2.9 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst uuid-dev (2.37.2-4ubuntu3.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libblkid-dev (2.37.2-4ubuntu3.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libsepol-dev (3.3-1build1 Ubuntu:22.04/jammy [amd64])
+Inst libpcre2-32-0 (10.39-3ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpcre2-posix3 (10.39-3ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpcre2-dev (10.39-3ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libselinux1-dev (3.3-1build2 Ubuntu:22.04/jammy [amd64])
+Inst libmount-dev (2.37.2-4ubuntu3.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpcre16-3 (2:8.39-13ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpcre32-3 (2:8.39-13ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpcrecpp0v5 (2:8.39-13ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpcre3-dev (2:8.39-13ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst pkg-config (0.29.2-1ubuntu3 Ubuntu:22.04/jammy [amd64])
+Inst libglib2.0-dev (2.72.4-0ubuntu2.9 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libgts-dev (0.7.6+darcs121130-5 Ubuntu:22.04/jammy [amd64])
+Inst libgz-cmake3-dev (3.6.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libgz-utils2-dev (2.2.1-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libgz-common5-core-dev (5.8.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libgz-math7-dev (7.6.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libgz-common5-events-dev (5.8.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libfreexl-dev (1.0.6-1 Ubuntu:22.04/jammy [amd64])
+Inst libsqlite3-dev (3.37.2-2ubuntu0.6 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libjbig-dev (2.1-3.1ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst liblzma-dev (5.2.5-2ubuntu1.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libtiffxx5 (4.3.0-6ubuntu0.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libtiff-dev (4.3.0-6ubuntu0.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libproj-dev (8.2.1-1 Ubuntu:22.04/jammy [amd64])
+Inst libgeotiff-dev (1.7.0-2build1 Ubuntu:22.04/jammy [amd64])
+Inst libnetcdf-dev (1:4.8.1-1 Ubuntu:22.04/jammy [amd64])
+Inst libhdf4-alt-dev (4.2.15-4 Ubuntu:22.04/jammy [amd64])
+Inst libx265-dev (3.5-2 Ubuntu:22.04/jammy [amd64])
+Inst libheif-dev (1.12.0-2build1 Ubuntu:22.04/jammy [amd64])
+Inst libjson-c-dev (0.15-3~ubuntu1.22.04.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libkmlconvenience1 (1.3.0-9 Ubuntu:22.04/jammy [amd64])
+Inst libkmlregionator1 (1.3.0-9 Ubuntu:22.04/jammy [amd64])
+Inst libkmlxsd1 (1.3.0-9 Ubuntu:22.04/jammy [amd64])
+Inst libminizip-dev (1.1-8build1 Ubuntu:22.04/jammy [amd64])
+Inst liburiparser-dev (0.9.6+dfsg-1 Ubuntu:22.04/jammy [amd64])
+Inst libkml-dev (1.3.0-9 Ubuntu:22.04/jammy [amd64])
+Inst libltdl-dev (2.4.6-15build2 Ubuntu:22.04/jammy [amd64])
+Inst liblz4-dev (1.9.3-2build2 Ubuntu:22.04/jammy [amd64])
+Inst libogdi-dev (4.1.0+ds-5 Ubuntu:22.04/jammy [amd64])
+Inst libopenjp2-7-dev (2.4.0-6ubuntu0.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpng-dev (1.6.37-3ubuntu0.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpoppler-dev (22.02.0-2ubuntu0.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpoppler-private-dev (22.02.0-2ubuntu0.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libpq-dev (14.23-0ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libqhull8.0 (2020.2-4 Ubuntu:22.04/jammy [amd64])
+Inst libqhullcpp8.0 (2020.2-4 Ubuntu:22.04/jammy [amd64])
+Inst libqhull-dev (2020.2-4 Ubuntu:22.04/jammy [amd64])
+Inst librttopo-dev (1.1.0-2 Ubuntu:22.04/jammy [amd64])
+Inst libicu-dev (70.1-2 Ubuntu:22.04/jammy [amd64])
+Inst libxml2-dev (2.9.13+dfsg-1ubuntu0.12 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libspatialite-dev (5.0.1-2build2 Ubuntu:22.04/jammy [amd64])
+Inst libwebpdemux2 (1.2.2-2ubuntu0.22.04.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libwebp-dev (1.2.2-2ubuntu0.22.04.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libxerces-c-dev (3.2.3+debian-3ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libodbccr2 (2.3.9-5ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst unixodbc-dev (2.3.9-5ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libgdal-dev (3.4.1+dfsg-1build4 Ubuntu:22.04/jammy [amd64])
+Inst libassimp-dev (5.2.2~ds0-1 Ubuntu:22.04/jammy [amd64])
+Inst libfreeimage-dev (3.18.0+ds2-6ubuntu5.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Inst libtinyxml2-dev (9.0.0+dfsg-3 Ubuntu:22.04/jammy [amd64])
+Inst libgz-common5-graphics-dev (5.8.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libgz-common5-geospatial-dev (5.8.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libeigen3-dev (3.4.0-2ubuntu2 Ubuntu:22.04/jammy [all])
+Inst libgz-math7-eigen3-dev (7.6.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libgz-utils2-cli-dev (2.2.1-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libgz-plugin2-dev (2.0.4-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libgz-rendering8-core-dev (8.2.3-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libogre-next-2.3-dev (2.3.1-9osrf~jammy OSRF:packages.osrfoundation.org [amd64])
+Inst libvulkan-dev (1.3.204.1-2 Ubuntu:22.04/jammy [amd64])
+Inst libgz-rendering8-ogre2-dev (8.2.3-1~jammy OSRF:packages.osrfoundation.org, local-deb [amd64])
+Conf perl-modules-5.34 (5.34.0-3ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [all])
+Conf libperl5.34 (5.34.0-3ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf perl (5.34.0-3ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libglib2.0-data (2.72.4-0ubuntu2.9 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [all])
+Conf libuv1 (1.43.0-1ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libsigsegv2 (2.13-1ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf m4 (1.4.18-5ubuntu2 Ubuntu:22.04/jammy [amd64])
+Conf autoconf (2.71-2 Ubuntu:22.04/jammy [all])
+Conf autotools-dev (20220109.1 Ubuntu:22.04/jammy [all])
+Conf automake (1:1.16.5-1.3 Ubuntu:22.04/jammy [all])
+Conf libarchive13 (3.6.0-1ubuntu1.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf librhash0 (1.4.2-1ubuntu1 Ubuntu:22.04/jammy [amd64])
+Conf dh-elpa-helper (2.0.9ubuntu1 Ubuntu:22.04/jammy [all])
+Conf emacsen-common (3.0.4 Ubuntu:22.04/jammy [all])
+Conf cmake-data (3.22.1-1ubuntu1.22.04.2 Ubuntu:22.04/jammy-updates [all])
+Conf cmake (3.22.1-1ubuntu1.22.04.2 Ubuntu:22.04/jammy-updates [amd64])
+Conf libssl-dev (3.0.2-0ubuntu1.25 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libzstd-dev (1.4.8+dfsg-3build1 Ubuntu:22.04/jammy [amd64])
+Conf libc-dev-bin (2.35-0ubuntu3.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf linux-libc-dev (5.15.0-185.195 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libcrypt-dev (1:4.4.27-1 Ubuntu:22.04/jammy [amd64])
+Conf rpcsvc-proto (1.4.2-0ubuntu6 Ubuntu:22.04/jammy [amd64])
+Conf libtirpc-dev (1.3.2-2ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libnsl-dev (1.3.0-2build2 Ubuntu:22.04/jammy [amd64])
+Conf libc6-dev (2.35-0ubuntu3.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf zlib1g-dev (1:1.2.11.dfsg-2ubuntu9.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libmysqlclient-dev (8.0.46-0ubuntu0.22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf default-libmysqlclient-dev (1.0.8 Ubuntu:22.04/jammy [amd64])
+Conf gcc-11-base (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf hdf5-helpers (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Conf icu-devtools (70.1-2 Ubuntu:22.04/jammy [amd64])
+Conf libaom-dev (3.3.0-1ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libblas-dev (3.10.0-2ubuntu1 Ubuntu:22.04/jammy [amd64])
+Conf liblapack-dev (3.10.0-2ubuntu1 Ubuntu:22.04/jammy [amd64])
+Conf libarpack2-dev (3.8.0-1 Ubuntu:22.04/jammy [amd64])
+Conf libhdf5-fortran-102 (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Conf libhdf5-hl-fortran-100 (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Conf libhdf5-cpp-103-1 (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Conf libhdf5-hl-cpp-100 (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Conf libjpeg-turbo8-dev (2.1.2-0ubuntu1 Ubuntu:22.04/jammy [amd64])
+Conf libjpeg8-dev (8c-2ubuntu10 Ubuntu:22.04/jammy [amd64])
+Conf libjpeg-dev (8c-2ubuntu10 Ubuntu:22.04/jammy [amd64])
+Conf libaec-dev (1.0.6-1 Ubuntu:22.04/jammy [amd64])
+Conf libcurl4-openssl-dev (7.81.0-1ubuntu1.25 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libhdf5-dev (1.10.7+repack-4ubuntu2 Ubuntu:22.04/jammy [amd64])
+Conf libsuperlu-dev (5.3.0+dfsg1-2 Ubuntu:22.04/jammy [amd64])
+Conf libarmadillo-dev (1:10.8.2+dfsg-1 Ubuntu:22.04/jammy [amd64])
+Conf libasan6 (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libatomic1 (12.3.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libblosc-dev (1.21.1+ds2-2 Ubuntu:22.04/jammy [amd64])
+Conf libitm1 (12.3.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf liblsan0 (12.3.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libtsan0 (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libubsan1 (12.3.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libgcc-11-dev (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libstdc++-11-dev (11.4.0-1ubuntu1~22.04.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libboost1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-atomic1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-atomic1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-chrono1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-chrono1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-date-time1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-serialization1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-serialization1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-date-time1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-dev (1.74.0.3ubuntu7 Ubuntu:22.04/jammy [amd64])
+Conf libboost-system1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-system1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-thread1.74.0 (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-thread1.74-dev (1.74.0-14ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libboost-thread-dev (1.74.0.3ubuntu7 Ubuntu:22.04/jammy [amd64])
+Conf libcfitsio-dev (4.0.0-1 Ubuntu:22.04/jammy [amd64])
+Conf libcharls-dev (2.3.4-1 Ubuntu:22.04/jammy [amd64])
+Conf libdav1d-dev (0.9.2-1 Ubuntu:22.04/jammy [amd64])
+Conf libde265-dev (1.0.8-1ubuntu0.3 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libdeflate-dev (1.10-2 Ubuntu:22.04/jammy [amd64])
+Conf libdpkg-perl (1.21.1ubuntu2.6 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [all])
+Conf libdraco-dev (1.5.2+dfsg-2 Ubuntu:22.04/jammy [amd64])
+Conf libexpat1-dev (2.4.7-1ubuntu0.7 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libfyba-dev (4.1.1-7 Ubuntu:22.04/jammy [amd64])
+Conf libgeos-dev (3.10.2-1 Ubuntu:22.04/jammy [amd64])
+Conf libgif-dev (5.1.9-2ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libglib2.0-bin (2.72.4-0ubuntu2.9 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libffi-dev (3.4.2-4 Ubuntu:22.04/jammy [amd64])
+Conf libglib2.0-dev-bin (2.72.4-0ubuntu2.9 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf uuid-dev (2.37.2-4ubuntu3.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libblkid-dev (2.37.2-4ubuntu3.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libsepol-dev (3.3-1build1 Ubuntu:22.04/jammy [amd64])
+Conf libpcre2-32-0 (10.39-3ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpcre2-posix3 (10.39-3ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpcre2-dev (10.39-3ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libselinux1-dev (3.3-1build2 Ubuntu:22.04/jammy [amd64])
+Conf libmount-dev (2.37.2-4ubuntu3.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpcre16-3 (2:8.39-13ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpcre32-3 (2:8.39-13ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpcrecpp0v5 (2:8.39-13ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpcre3-dev (2:8.39-13ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf pkg-config (0.29.2-1ubuntu3 Ubuntu:22.04/jammy [amd64])
+Conf libglib2.0-dev (2.72.4-0ubuntu2.9 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libgts-dev (0.7.6+darcs121130-5 Ubuntu:22.04/jammy [amd64])
+Conf libgz-cmake3-dev (3.6.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libgz-utils2-dev (2.2.1-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libgz-common5-core-dev (5.8.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libgz-math7-dev (7.6.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libgz-common5-events-dev (5.8.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libfreexl-dev (1.0.6-1 Ubuntu:22.04/jammy [amd64])
+Conf libsqlite3-dev (3.37.2-2ubuntu0.6 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libjbig-dev (2.1-3.1ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf liblzma-dev (5.2.5-2ubuntu1.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libtiffxx5 (4.3.0-6ubuntu0.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libtiff-dev (4.3.0-6ubuntu0.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libproj-dev (8.2.1-1 Ubuntu:22.04/jammy [amd64])
+Conf libgeotiff-dev (1.7.0-2build1 Ubuntu:22.04/jammy [amd64])
+Conf libnetcdf-dev (1:4.8.1-1 Ubuntu:22.04/jammy [amd64])
+Conf libhdf4-alt-dev (4.2.15-4 Ubuntu:22.04/jammy [amd64])
+Conf libx265-dev (3.5-2 Ubuntu:22.04/jammy [amd64])
+Conf libheif-dev (1.12.0-2build1 Ubuntu:22.04/jammy [amd64])
+Conf libjson-c-dev (0.15-3~ubuntu1.22.04.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libkmlconvenience1 (1.3.0-9 Ubuntu:22.04/jammy [amd64])
+Conf libkmlregionator1 (1.3.0-9 Ubuntu:22.04/jammy [amd64])
+Conf libkmlxsd1 (1.3.0-9 Ubuntu:22.04/jammy [amd64])
+Conf libminizip-dev (1.1-8build1 Ubuntu:22.04/jammy [amd64])
+Conf liburiparser-dev (0.9.6+dfsg-1 Ubuntu:22.04/jammy [amd64])
+Conf libkml-dev (1.3.0-9 Ubuntu:22.04/jammy [amd64])
+Conf libltdl-dev (2.4.6-15build2 Ubuntu:22.04/jammy [amd64])
+Conf liblz4-dev (1.9.3-2build2 Ubuntu:22.04/jammy [amd64])
+Conf libogdi-dev (4.1.0+ds-5 Ubuntu:22.04/jammy [amd64])
+Conf libopenjp2-7-dev (2.4.0-6ubuntu0.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpng-dev (1.6.37-3ubuntu0.5 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpoppler-dev (22.02.0-2ubuntu0.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpoppler-private-dev (22.02.0-2ubuntu0.13 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libpq-dev (14.23-0ubuntu0.22.04.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libqhull8.0 (2020.2-4 Ubuntu:22.04/jammy [amd64])
+Conf libqhullcpp8.0 (2020.2-4 Ubuntu:22.04/jammy [amd64])
+Conf libqhull-dev (2020.2-4 Ubuntu:22.04/jammy [amd64])
+Conf librttopo-dev (1.1.0-2 Ubuntu:22.04/jammy [amd64])
+Conf libicu-dev (70.1-2 Ubuntu:22.04/jammy [amd64])
+Conf libxml2-dev (2.9.13+dfsg-1ubuntu0.12 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libspatialite-dev (5.0.1-2build2 Ubuntu:22.04/jammy [amd64])
+Conf libwebpdemux2 (1.2.2-2ubuntu0.22.04.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libwebp-dev (1.2.2-2ubuntu0.22.04.2 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libxerces-c-dev (3.2.3+debian-3ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libodbccr2 (2.3.9-5ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf unixodbc-dev (2.3.9-5ubuntu0.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libgdal-dev (3.4.1+dfsg-1build4 Ubuntu:22.04/jammy [amd64])
+Conf libassimp-dev (5.2.2~ds0-1 Ubuntu:22.04/jammy [amd64])
+Conf libfreeimage-dev (3.18.0+ds2-6ubuntu5.1 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf libtinyxml2-dev (9.0.0+dfsg-3 Ubuntu:22.04/jammy [amd64])
+Conf libgz-common5-graphics-dev (5.8.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libgz-common5-geospatial-dev (5.8.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libeigen3-dev (3.4.0-2ubuntu2 Ubuntu:22.04/jammy [all])
+Conf libgz-math7-eigen3-dev (7.6.0-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libgz-utils2-cli-dev (2.2.1-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libgz-plugin2-dev (2.0.4-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libgz-rendering8-core-dev (8.2.3-1~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libogre-next-2.3-dev (2.3.1-9osrf~jammy OSRF:packages.osrfoundation.org [amd64])
+Conf libvulkan-dev (1.3.204.1-2 Ubuntu:22.04/jammy [amd64])
+Conf libgz-rendering8-ogre2-dev (8.2.3-1~jammy OSRF:packages.osrfoundation.org, local-deb [amd64])

@@ -1,0 +1,16 @@
+{
+  "apt_sources_modified": false,
+  "apt_update_succeeded": true,
+  "runtime_package": "libgz-rendering8-ogre2",
+  "installed_runtime_version": "8.2.3-1~jammy",
+  "runtime_candidate_version": "8.2.3-1~jammy",
+  "requested_dev_package": "libgz-rendering8-ogre2-dev",
+  "dev_package_found": false,
+  "dev_candidate_version": null,
+  "exact_byte_string_match": false,
+  "apt_cache_search_results": [
+    "libgz-rendering8-ogre2 - Gazebo Rendering classes and functions for robot apps - Development files"
+  ],
+  "decision": "BLOCKED_OFFICIAL_PACKAGE_VERSION_MISMATCH",
+  "stop_reason": "The configured official repositories expose no libgz-rendering8-ogre2-dev candidate, so an exact version match cannot be established."
+}

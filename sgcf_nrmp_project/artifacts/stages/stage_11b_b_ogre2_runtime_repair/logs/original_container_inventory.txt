@@ -1,0 +1,1101 @@
+===VERSIONS===
+8.14.0
+===ENV===
+GZ_SIM_PHYSICS_ENGINE_PATH=/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins
+GZ_SIM_RENDER_ENGINE_SERVER=ogre2
+GZ_SIM_RESOURCE_PATH=/workspace/sgcf_nrmp_project/gazebo/models:/workspace/sgcf_nrmp_project/gazebo
+HOME=/root
+HOSTNAME=qcqc
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/workspace
+QT_QPA_PLATFORM=offscreen
+SHLVL=0
+_=/usr/bin/env
+===DPKG===
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                           Version                                 Architecture Description
++++-==============================================-=======================================-============-================================================================================
+ii  adduser                                        3.118ubuntu5                            all          add and remove users and groups
+ii  apt                                            2.4.14                                  amd64        commandline package manager
+ii  base-files                                     12ubuntu4.7                             amd64        Debian base system miscellaneous files
+ii  base-passwd                                    3.5.52build1                            amd64        Debian base system master password and group files
+ii  bash                                           5.1-6ubuntu1.1                          amd64        GNU Bourne Again SHell
+ii  bsdutils                                       1:2.37.2-4ubuntu3.5                     amd64        basic utilities from 4.4BSD-Lite
+ii  ca-certificates                                20260601~22.04.1                        all          Common CA certificates
+ii  coreutils                                      8.32-4.1ubuntu1.3                       amd64        GNU core utilities
+ii  curl                                           7.81.0-1ubuntu1.25                      amd64        command line tool for transferring data with URL syntax
+ii  dash                                           0.5.11+git20210903+057cd650a4ed-3build1 amd64        POSIX-compliant shell
+ii  debconf                                        1.5.79ubuntu1                           all          Debian configuration management system
+ii  debianutils                                    5.5-1ubuntu2                            amd64        Miscellaneous utilities specific to Debian
+ii  diffutils                                      1:3.8-0ubuntu2                          amd64        File comparison utilities
+ii  dirmngr                                        2.2.27-3ubuntu2.5                       amd64        GNU privacy guard - network certificate management service
+ii  distro-info-data                               0.52ubuntu0.12                          all          information about the distributions' releases (data files)
+ii  dpkg                                           1.21.1ubuntu2.6                         amd64        Debian package management system
+ii  e2fsprogs                                      1.46.5-2ubuntu1.2                       amd64        ext2/ext3/ext4 file system utilities
+ii  findutils                                      4.8.0-1ubuntu3                          amd64        utilities for finding files--find, xargs
+ii  fontconfig                                     2.13.1-4.2ubuntu5                       amd64        generic font configuration library - support binaries
+ii  fontconfig-config                              2.13.1-4.2ubuntu5                       all          generic font configuration library - configuration
+ii  fonts-dejavu-core                              2.37-2build1                            all          Vera font family derivate with additional characters
+ii  gcc-12-base:amd64                              12.3.0-1ubuntu1~22.04.3                 amd64        GCC, the GNU Compiler Collection (base package)
+ii  gdal-data                                      3.4.1+dfsg-1build4                      all          Geospatial Data Abstraction Library - Data files
+ii  gnupg                                          2.2.27-3ubuntu2.5                       all          GNU privacy guard - a free PGP replacement
+ii  gnupg-l10n                                     2.2.27-3ubuntu2.5                       all          GNU privacy guard - localization files
+ii  gnupg-utils                                    2.2.27-3ubuntu2.5                       amd64        GNU privacy guard - utility programs
+ii  gpg                                            2.2.27-3ubuntu2.5                       amd64        GNU Privacy Guard -- minimalist public key operations
+ii  gpg-agent                                      2.2.27-3ubuntu2.5                       amd64        GNU privacy guard - cryptographic agent
+ii  gpg-wks-client                                 2.2.27-3ubuntu2.5                       amd64        GNU privacy guard - Web Key Service client
+ii  gpg-wks-server                                 2.2.27-3ubuntu2.5                       amd64        GNU privacy guard - Web Key Service server
+ii  gpgconf                                        2.2.27-3ubuntu2.5                       amd64        GNU privacy guard - core configuration utilities
+ii  gpgsm                                          2.2.27-3ubuntu2.5                       amd64        GNU privacy guard - S/MIME version
+ii  gpgv                                           2.2.27-3ubuntu2.5                       amd64        GNU privacy guard - signature verification tool
+ii  grep                                           3.7-1build1                             amd64        GNU grep, egrep and fgrep
+ii  gz-sim8-cli                                    8.14.0-1~jammy                          amd64        Gazebo Sim classes and functions for robot apps - CLI
+ii  gz-tools2:amd64                                2.0.3-1~jammy                           amd64        Entry point for using all the suite of Gazebo tools - app
+ii  gz-transport13-cli                             13.5.0-1~jammy                          amd64        Gazebo transport Library - CLI
+ii  gzip                                           1.10-4ubuntu4.1                         amd64        GNU compression utilities
+ii  hostname                                       3.23ubuntu2                             amd64        utility to set/show the host name or domain name
+ii  init-system-helpers                            1.62                                    all          helper tools for all init systems
+ii  jq                                             1.6-2.1ubuntu3.2                        amd64        lightweight and flexible command-line JSON processor
+ii  libacl1:amd64                                  2.3.1-1                                 amd64        access control list - shared library
+ii  libaec0:amd64                                  1.0.6-1                                 amd64        Adaptive Entropy Coding library
+ii  libaom3:amd64                                  3.3.0-1ubuntu0.1                        amd64        AV1 Video Codec Library
+ii  libapparmor1:amd64                             3.0.4-2ubuntu2.5                        amd64        changehat AppArmor library
+ii  libapt-pkg6.0:amd64                            2.4.14                                  amd64        package management runtime library
+ii  libarmadillo10                                 1:10.8.2+dfsg-1                         amd64        streamlined C++ linear algebra library
+ii  libarpack2:amd64                               3.8.0-1                                 amd64        Fortran77 subroutines to solve large scale eigenvalue problems
+ii  libasound2:amd64                               1.2.6.1-1ubuntu1.1                      amd64        shared library for ALSA applications
+ii  libasound2-data                                1.2.6.1-1ubuntu1.1                      all          Configuration files and profiles for ALSA drivers
+ii  libass9:amd64                                  1:0.15.2-1                              amd64        library for SSA/ASS subtitles rendering
+ii  libassimp5:amd64                               5.2.2~ds0-1                             amd64        3D model import library
+ii  libassuan0:amd64                               2.5.5-1build1                           amd64        IPC library for the GnuPG components
+ii  libasyncns0:amd64                              0.8-6build2                             amd64        Asynchronous name service query library
+ii  libattr1:amd64                                 1:2.5.1-1build1                         amd64        extended attribute handling - shared library
+ii  libaudit-common                                1:3.0.7-1build1                         all          Dynamic library for security auditing - common files
+ii  libaudit1:amd64                                1:3.0.7-1build1                         amd64        Dynamic library for security auditing
+ii  libavc1394-0:amd64                             0.5.4-5build2                           amd64        control IEEE 1394 audio/video devices
+ii  libavcodec58:amd64                             7:4.4.2-0ubuntu0.22.04.1                amd64        FFmpeg library with de/encoders for audio/video codecs - runtime files
+ii  libavdevice58:amd64                            7:4.4.2-0ubuntu0.22.04.1                amd64        FFmpeg library for handling input and output devices - runtime files
+ii  libavfilter7:amd64                             7:4.4.2-0ubuntu0.22.04.1                amd64        FFmpeg library containing media filters - runtime files
+ii  libavformat58:amd64                            7:4.4.2-0ubuntu0.22.04.1                amd64        FFmpeg library with (de)muxers for multimedia containers - runtime files
+ii  libavutil56:amd64                              7:4.4.2-0ubuntu0.22.04.1                amd64        FFmpeg library with functions for simplifying programming - runtime files
+ii  libblas3:amd64                                 3.10.0-2ubuntu1                         amd64        Basic Linear Algebra Reference implementations, shared library
+ii  libblkid1:amd64                                2.37.2-4ubuntu3.5                       amd64        block device ID library
+ii  libblosc1:amd64                                1.21.1+ds2-2                            amd64        high performance meta-compressor optimized for binary data
+ii  libbluray2:amd64                               1:1.3.1-1                               amd64        Blu-ray disc playback support library (shared library)
+ii  libbrotli1:amd64                               1.0.9-2build6                           amd64        library implementing brotli encoder and decoder (shared libraries)
+ii  libbs2b0:amd64                                 3.1.0+dfsg-2.2build1                    amd64        Bauer stereophonic-to-binaural DSP library
+ii  libbsd0:amd64                                  0.11.5-1                                amd64        utility functions from BSD systems - shared library
+ii  libbullet3.06:amd64                            3.06+dfsg-4build2                       amd64        professional 3D Game Multiphysics Library
+ii  libbz2-1.0:amd64                               1.0.8-5build1                           amd64        high-quality block-sorting file compressor library - runtime
+ii  libc-bin                                       2.35-0ubuntu3.13                        amd64        GNU C Library: Binaries
+ii  libc6:amd64                                    2.35-0ubuntu3.13                        amd64        GNU C Library: Shared libraries
+ii  libcaca0:amd64                                 0.99.beta19-2.2ubuntu4.2                amd64        colour ASCII art library
+ii  libcairo-gobject2:amd64                        1.16.0-5ubuntu2.1                       amd64        Cairo 2D vector graphics library (GObject library)
+ii  libcairo2:amd64                                1.16.0-5ubuntu2.1                       amd64        Cairo 2D vector graphics library
+ii  libcap-ng0:amd64                               0.7.9-2.2build3                         amd64        An alternate POSIX capabilities library
+ii  libcap2:amd64                                  1:2.44-1ubuntu0.22.04.3                 amd64        POSIX 1003.1e capabilities (library)
+ii  libccd2:amd64                                  2.1-2                                   amd64        Library for collision detection between convex shapes - shared library
+ii  libcdio-cdda2:amd64                            10.2+2.0.0-1build3                      amd64        library to read and control digital audio CDs
+ii  libcdio-paranoia2:amd64                        10.2+2.0.0-1build3                      amd64        library to read digital audio CDs with error correction
+ii  libcdio19:amd64                                2.1.0-3ubuntu0.2                        amd64        library to read and control CD-ROM
+ii  libcfitsio9:amd64                              4.0.0-1                                 amd64        shared library for I/O with FITS format data files
+ii  libcharls2:amd64                               2.3.4-1                                 amd64        Implementation of the JPEG-LS standard
+ii  libchromaprint1:amd64                          1.5.1-2                                 amd64        audio fingerprint library
+ii  libcodec2-1.0:amd64                            1.0.1-3                                 amd64        Codec2 runtime library
+ii  libcom-err2:amd64                              1.46.5-2ubuntu1.2                       amd64        common error description library
+ii  libcrypt1:amd64                                1:4.4.27-1                              amd64        libcrypt shared library
+ii  libcurl3-gnutls:amd64                          7.81.0-1ubuntu1.25                      amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl4:amd64                                 7.81.0-1ubuntu1.25                      amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libdart-core+collisions+odelcpsolver6.13:amd64 6.13.2+ds1-1~osrf2~jammy                amd64        Kinematics Dynamics and Optimization Library - main library
+ii  libdatrie1:amd64                               0.2.13-2                                amd64        Double-array trie library
+ii  libdav1d5:amd64                                0.9.2-1                                 amd64        fast and small AV1 video stream decoder (shared library)
+ii  libdb5.3:amd64                                 5.3.28+dfsg1-0.8ubuntu3                 amd64        Berkeley v5.3 Database Libraries [runtime]
+ii  libdbus-1-3:amd64                              1.12.20-2ubuntu4.1                      amd64        simple interprocess messaging system (library)
+ii  libdc1394-25:amd64                             2.2.6-4                                 amd64        high level programming interface for IEEE 1394 digital cameras
+ii  libde265-0:amd64                               1.0.8-1ubuntu0.3                        amd64        Open H.265 video codec implementation
+ii  libdebconfclient0:amd64                        0.261ubuntu1                            amd64        Debian Configuration Management System (C-implementation library)
+ii  libdecor-0-0:amd64                             0.1.0-3build1                           amd64        client-side window decoration library
+ii  libdeflate0:amd64                              1.10-2                                  amd64        fast, whole-buffer DEFLATE-based compression and decompression
+ii  libdouble-conversion3:amd64                    3.1.7-4                                 amd64        routines to convert IEEE floats to and from strings
+ii  libdraco4:amd64                                1.5.2+dfsg-2                            amd64        Library for compressing 3D geometric meshes and point clouds
+ii  libdrm-amdgpu1:amd64                           2.4.113-2~ubuntu0.22.04.1               amd64        Userspace interface to amdgpu-specific kernel DRM services -- runtime
+ii  libdrm-common                                  2.4.113-2~ubuntu0.22.04.1               all          Userspace interface to kernel DRM services -- common files
+ii  libdrm-intel1:amd64                            2.4.113-2~ubuntu0.22.04.1               amd64        Userspace interface to intel-specific kernel DRM services -- runtime
+ii  libdrm-nouveau2:amd64                          2.4.113-2~ubuntu0.22.04.1               amd64        Userspace interface to nouveau-specific kernel DRM services -- runtime
+ii  libdrm-radeon1:amd64                           2.4.113-2~ubuntu0.22.04.1               amd64        Userspace interface to radeon-specific kernel DRM services -- runtime
+ii  libdrm2:amd64                                  2.4.113-2~ubuntu0.22.04.1               amd64        Userspace interface to kernel DRM services -- runtime
+ii  libedit2:amd64                                 3.1-20210910-1build1                    amd64        BSD editline and history libraries
+ii  libegl-mesa0:amd64                             23.2.1-1ubuntu3.1~22.04.4               amd64        free implementation of the EGL API -- Mesa vendor library
+ii  libegl1:amd64                                  1.4.0-1                                 amd64        Vendor neutral GL dispatch library -- EGL support
+ii  libelf1:amd64                                  0.186-1ubuntu0.1                        amd64        library to read and write ELF files
+ii  libevdev2:amd64                                1.12.1+dfsg-1                           amd64        wrapper library for evdev devices
+ii  libexpat1:amd64                                2.4.7-1ubuntu0.7                        amd64        XML parsing C library - runtime library
+ii  libext2fs2:amd64                               1.46.5-2ubuntu1.2                       amd64        ext2/ext3/ext4 file system libraries
+ii  libfcl0.7:amd64                                0.7.0-3                                 amd64        Flexible Collision Library - shared library
+ii  libffi8:amd64                                  3.4.2-4                                 amd64        Foreign Function Interface library runtime
+ii  libflac8:amd64                                 1.3.3-2ubuntu0.2                        amd64        Free Lossless Audio Codec - runtime C library
+ii  libflite1:amd64                                2.2-3                                   amd64        Small run-time speech synthesis engine - shared libraries
+ii  libfontconfig1:amd64                           2.13.1-4.2ubuntu5                       amd64        generic font configuration library - runtime
+ii  libfreeimage3:amd64                            3.18.0+ds2-6ubuntu5.1                   amd64        Support library for graphics image formats (library)
+ii  libfreetype6:amd64                             2.11.1+dfsg-1ubuntu0.3                  amd64        FreeType 2 font engine, shared library files
+ii  libfreexl1:amd64                               1.0.6-1                                 amd64        library for direct reading of Microsoft Excel spreadsheets
+ii  libfribidi0:amd64                              1.0.8-2ubuntu3.1                        amd64        Free Implementation of the Unicode BiDi algorithm
+ii  libfyba0:amd64                                 4.1.1-7                                 amd64        FYBA library to read and write Norwegian geodata standard format SOSI
+ii  libgbm1:amd64                                  23.2.1-1ubuntu3.1~22.04.4               amd64        generic buffer management API -- runtime
+ii  libgcc-s1:amd64                                12.3.0-1ubuntu1~22.04.3                 amd64        GCC support library
+ii  libgcrypt20:amd64                              1.9.4-3ubuntu3                          amd64        LGPL Crypto library - runtime library
+ii  libgdal30                                      3.4.1+dfsg-1build4                      amd64        Geospatial Data Abstraction Library
+ii  libgdbm-compat4:amd64                          1.23-1                                  amd64        GNU dbm database routines (legacy support runtime version) 
+ii  libgdbm6:amd64                                 1.23-1                                  amd64        GNU dbm database routines (runtime version) 
+ii  libgdk-pixbuf-2.0-0:amd64                      2.42.8+dfsg-1ubuntu0.5                  amd64        GDK Pixbuf library
+ii  libgdk-pixbuf2.0-common                        2.42.8+dfsg-1ubuntu0.5                  all          GDK Pixbuf library - data files
+ii  libgeos-c1v5:amd64                             3.10.2-1                                amd64        Geometry engine for Geographic Information Systems - C Library
+ii  libgeos3.10.2:amd64                            3.10.2-1                                amd64        Geometry engine for Geographic Information Systems - C++ Library
+ii  libgeotiff5:amd64                              1.7.0-2build1                           amd64        GeoTIFF (geografic enabled TIFF) library -- run-time files
+ii  libgfortran5:amd64                             12.3.0-1ubuntu1~22.04.3                 amd64        Runtime library for GNU Fortran applications
+ii  libgif7:amd64                                  5.1.9-2ubuntu0.1                        amd64        library for GIF images (library)
+ii  libgl1:amd64                                   1.4.0-1                                 amd64        Vendor neutral GL dispatch library -- legacy GL support
+ii  libgl1-mesa-dri:amd64                          23.2.1-1ubuntu3.1~22.04.4               amd64        free implementation of the OpenGL API -- DRI modules
+ii  libglapi-mesa:amd64                            23.2.1-1ubuntu3.1~22.04.4               amd64        free implementation of the GL API -- shared library
+ii  libgles2:amd64                                 1.4.0-1                                 amd64        Vendor neutral GL dispatch library -- GLESv2 support
+ii  libglib2.0-0:amd64                             2.72.4-0ubuntu2.9                       amd64        GLib library of C routines
+ii  libglvnd0:amd64                                1.4.0-1                                 amd64        Vendor neutral GL dispatch library
+ii  libglx-mesa0:amd64                             23.2.1-1ubuntu3.1~22.04.4               amd64        free implementation of the OpenGL API -- GLX vendor library
+ii  libglx0:amd64                                  1.4.0-1                                 amd64        Vendor neutral GL dispatch library -- GLX support
+ii  libgme0:amd64                                  0.6.3-2                                 amd64        Playback library for video game music files - shared library
+ii  libgmp10:amd64                                 2:6.2.1+dfsg-3ubuntu1                   amd64        Multiprecision arithmetic library
+ii  libgnutls30:amd64                              3.7.3-4ubuntu1.8                        amd64        GNU TLS library - main runtime library
+ii  libgomp1:amd64                                 12.3.0-1ubuntu1~22.04.3                 amd64        GCC OpenMP (GOMP) support library
+ii  libgpg-error0:amd64                            1.43-3                                  amd64        GnuPG development runtime library
+ii  libgraphite2-3:amd64                           1.3.14-1ubuntu0.1                       amd64        Font rendering engine for Complex Scripts -- library
+ii  libgsm1:amd64                                  1.0.19-1                                amd64        Shared libraries for GSM speech compressor
+ii  libgssapi-krb5-2:amd64                         1.19.2-2ubuntu0.7                       amd64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ii  libgts-0.7-5:amd64                             0.7.6+darcs121130-5                     amd64        library to deal with 3D computational surface meshes
+ii  libgudev-1.0-0:amd64                           1:237-2build1                           amd64        GObject-based wrapper library for libudev
+ii  libgz-common5:amd64                            5.8.0-1~jammy                           amd64        Collection of useful code used by robotics apps - Shared library
+ii  libgz-common5-av:amd64                         5.8.0-1~jammy                           amd64        Collection of useful code used by robotics apps - AV libraries
+ii  libgz-common5-events:amd64                     5.8.0-1~jammy                           amd64        Collection of useful code used by robotics apps - Events libraries
+ii  libgz-common5-geospatial:amd64                 5.8.0-1~jammy                           amd64        Collection of useful code used by robotics apps - Geospatial libries
+ii  libgz-common5-graphics:amd64                   5.8.0-1~jammy                           amd64        Collection of useful code used by robotics apps - Graphics libraries
+ii  libgz-common5-io:amd64                         5.8.0-1~jammy                           amd64        Collection of useful code used by robotics apps - I/O libraries
+ii  libgz-fuel-tools9:amd64                        9.1.1-1~jammy                           amd64        Gazebo fuel-tools classes and functions - Shared library
+ii  libgz-gui8:amd64                               8.4.0-1~jammy                           amd64        Gazebo Gui classes and functions for robot apps - Shared library
+ii  libgz-math7:amd64                              7.6.0-1~jammy                           amd64        Gazebo Math Library - Shared library
+ii  libgz-msgs10:amd64                             10.3.2-1~jammy                          amd64        Set of message definitions used by robotics apps - Shared library
+ii  libgz-physics7:amd64                           7.8.0-1~jammy                           amd64        Gazebo Physics classes and functions for robot apps - Shared library
+ii  libgz-physics7-dartsim:amd64                   7.8.0-1~jammy                           amd64        Gazebo Physics classes and functions for robot apps - Dartsim library
+ii  libgz-plugin2:amd64                            2.0.4-1~jammy                           amd64        Gazebo Plugin Library - Shared library
+ii  libgz-rendering8:amd64                         8.2.3-1~jammy                           amd64        Gazebo Rendering classes and functions for robot apps - Shared library
+ii  libgz-rendering8-ogre2:amd64                   8.2.3-1~jammy                           amd64        Gazebo Rendering classes and functions for robot apps - Development files
+ii  libgz-sensors8:amd64                           8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Shared library
+ii  libgz-sensors8-air-pressure:amd64              8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib air-pressure
+ii  libgz-sensors8-air-speed:amd64                 8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib air-speed
+ii  libgz-sensors8-altimeter:amd64                 8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib altimeter
+ii  libgz-sensors8-boundingbox-camera:amd64        8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib Bounding Box Camera
+ii  libgz-sensors8-camera:amd64                    8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib Camera
+ii  libgz-sensors8-depth-camera:amd64              8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib depth-camera
+ii  libgz-sensors8-dvl:amd64                       8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib DVL
+ii  libgz-sensors8-force-torque:amd64              8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib force-torque
+ii  libgz-sensors8-gpu-lidar:amd64                 8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib gpu-lidar
+ii  libgz-sensors8-imu:amd64                       8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib imu
+ii  libgz-sensors8-lidar:amd64                     8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib lidar
+ii  libgz-sensors8-logical-camera:amd64            8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib logical-camera
+ii  libgz-sensors8-magnetometer:amd64              8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib magnetometer
+ii  libgz-sensors8-navsat:amd64                    8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib navsat
+ii  libgz-sensors8-rendering:amd64                 8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib rendering
+ii  libgz-sensors8-rgbd-camera:amd64               8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib rgbd-camera
+ii  libgz-sensors8-segmentation-camera:amd64       8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib segmentation-camera
+ii  libgz-sensors8-thermal-camera:amd64            8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib thermal-camera
+ii  libgz-sensors8-wide-angle-camera:amd64         8.2.2-1~jammy                           amd64        Gazebo Sensors classes and functions for robot apps - Lib wide-angle-camera
+ii  libgz-sim8:amd64                               8.14.0-1~jammy                          amd64        Gazebo Sim classes and functions for robot apps - Shared library
+ii  libgz-sim8-plugins:amd64                       8.14.0-1~jammy                          amd64        Gazebo Sim classes and functions for robot apps - Plugins
+ii  libgz-transport13:amd64                        13.5.0-1~jammy                          amd64        Gazebo Transport Library - Shared library
+ii  libgz-transport13-log:amd64                    13.5.0-1~jammy                          amd64        Gazebo Transport Library - Log Shared library
+ii  libgz-transport13-parameters:amd64             13.5.0-1~jammy                          amd64        Gazebo Transport Library - Parameters Shared library
+ii  libgz-utils2:amd64                             2.2.1-1~jammy                           amd64        Gazebo Utils Library - Shared library
+ii  libharfbuzz0b:amd64                            2.7.4-1ubuntu3.2                        amd64        OpenType text shaping engine (shared library)
+ii  libhdf4-0-alt                                  4.2.15-4                                amd64        Hierarchical Data Format library (without NetCDF)
+ii  libhdf5-103-1:amd64                            1.10.7+repack-4ubuntu2                  amd64        HDF5 C runtime files - serial version
+ii  libhdf5-hl-100:amd64                           1.10.7+repack-4ubuntu2                  amd64        HDF5 High Level runtime files - serial version
+ii  libheif1:amd64                                 1.12.0-2build1                          amd64        ISO/IEC 23008-12:2017 HEIF file format decoder - shared library
+ii  libhogweed6:amd64                              3.7.3-1build2                           amd64        low level cryptographic library (public-key cryptos)
+ii  libice6:amd64                                  2:1.0.10-1build2                        amd64        X11 Inter-Client Exchange library
+ii  libicu70:amd64                                 70.1-2                                  amd64        International Components for Unicode
+ii  libidn2-0:amd64                                2.3.2-2build1                           amd64        Internationalized domain names (IDNA2008/TR46) library
+ii  libiec61883-0:amd64                            1.2.0-4build3                           amd64        partial implementation of IEC 61883 (shared lib)
+ii  libilmbase25:amd64                             2.5.7-2                                 amd64        several utility libraries from ILM used by OpenEXR
+ii  libinput-bin                                   1.20.0-1ubuntu0.3                       amd64        input device management and event handling library - udev quirks
+ii  libinput10:amd64                               1.20.0-1ubuntu0.3                       amd64        input device management and event handling library - shared library
+ii  libjack-jackd2-0:amd64                         1.9.20~dfsg-1                           amd64        JACK Audio Connection Kit (libraries)
+ii  libjbig0:amd64                                 2.1-3.1ubuntu0.22.04.1                  amd64        JBIGkit libraries
+ii  libjpeg-turbo8:amd64                           2.1.2-0ubuntu1                          amd64        IJG JPEG compliant runtime library.
+ii  libjpeg8:amd64                                 8c-2ubuntu10                            amd64        Independent JPEG Group's JPEG runtime library (dependency package)
+ii  libjq1:amd64                                   1.6-2.1ubuntu3.2                        amd64        lightweight and flexible command-line JSON processor - shared library
+ii  libjson-c5:amd64                               0.15-3~ubuntu1.22.04.2                  amd64        JSON manipulation library - shared library
+ii  libjsoncpp25:amd64                             1.9.5-3                                 amd64        library for reading and writing JSON for C++
+ii  libjxr0:amd64                                  1.2~git20170615.f752187-5               amd64        JPEG-XR lib - libraries
+ii  libk5crypto3:amd64                             1.19.2-2ubuntu0.7                       amd64        MIT Kerberos runtime libraries - Crypto Library
+ii  libkeyutils1:amd64                             1.6.1-2ubuntu3                          amd64        Linux Key Management Utilities (library)
+ii  libkmlbase1:amd64                              1.3.0-9                                 amd64        Library to manipulate KML 2.2 OGC standard files - libkmlbase
+ii  libkmldom1:amd64                               1.3.0-9                                 amd64        Library to manipulate KML 2.2 OGC standard files - libkmldom
+ii  libkmlengine1:amd64                            1.3.0-9                                 amd64        Library to manipulate KML 2.2 OGC standard files - libkmlengine
+ii  libkrb5-3:amd64                                1.19.2-2ubuntu0.7                       amd64        MIT Kerberos runtime libraries
+ii  libkrb5support0:amd64                          1.19.2-2ubuntu0.7                       amd64        MIT Kerberos runtime libraries - Support library
+ii  libksba8:amd64                                 1.6.0-2ubuntu0.2                        amd64        X.509 and CMS support library
+ii  liblapack3:amd64                               3.10.0-2ubuntu1                         amd64        Library of linear algebra routines 3 - shared version
+ii  liblcms2-2:amd64                               2.12~rc1-2ubuntu0.1                     amd64        Little CMS 2 color management library
+ii  libldap-2.5-0:amd64                            2.5.20+dfsg-0ubuntu0.22.04.1            amd64        OpenLDAP libraries
+ii  liblilv-0-0:amd64                              0.24.12-2                               amd64        library for simple use of LV2 plugins
+ii  libllvm15:amd64                                1:15.0.7-0ubuntu0.22.04.3               amd64        Modular compiler and toolchain technologies, runtime library
+ii  libltdl7:amd64                                 2.4.6-15build2                          amd64        System independent dlopen wrapper for GNU libtool
+ii  liblz4-1:amd64                                 1.9.3-2build2                           amd64        Fast LZ compression algorithm library - runtime
+ii  liblzma5:amd64                                 5.2.5-2ubuntu1                          amd64        XZ-format compression library
+ii  libmd0:amd64                                   1.0.4-1build1                           amd64        message digest functions from BSD systems - shared library
+ii  libmd4c0:amd64                                 0.4.8-1                                 amd64        Markdown for C
+ii  libmfx1:amd64                                  22.3.0-1                                amd64        Intel Media SDK -- shared library
+ii  libminizip1:amd64                              1.1-8build1                             amd64        compression library - minizip library
+ii  libmount1:amd64                                2.37.2-4ubuntu3.5                       amd64        device mounting library
+ii  libmp3lame0:amd64                              3.100-3build2                           amd64        MP3 encoding library
+ii  libmpdec3:amd64                                2.5.1-2build2                           amd64        library for decimal floating point arithmetic (runtime library)
+ii  libmpg123-0:amd64                              1.29.3-1ubuntu0.1                       amd64        MPEG layer 1/2/3 audio decoder (shared library)
+ii  libmtdev1:amd64                                1.1.6-1build4                           amd64        Multitouch Protocol Translation Library - shared library
+ii  libmysofa1:amd64                               1.2.1~dfsg0-1                           amd64        library to read HRTFs stored in the AES69-2015 SOFA format
+ii  libmysqlclient21:amd64                         8.0.46-0ubuntu0.22.04.3                 amd64        MySQL database client library
+ii  libncurses6:amd64                              6.3-2ubuntu0.1                          amd64        shared libraries for terminal handling
+ii  libncursesw6:amd64                             6.3-2ubuntu0.1                          amd64        shared libraries for terminal handling (wide character support)
+ii  libnetcdf19:amd64                              1:4.8.1-1                               amd64        Interface for scientific data access to large binary data
+ii  libnettle8:amd64                               3.7.3-1build2                           amd64        low level cryptographic library (symmetric and one-way cryptos)
+ii  libnghttp2-14:amd64                            1.43.0-1ubuntu0.4                       amd64        library implementing HTTP/2 protocol (shared library)
+ii  libnorm1:amd64                                 1.5.9+dfsg-2                            amd64        NACK-Oriented Reliable Multicast (NORM) library
+ii  libnpth0:amd64                                 1.6-3build2                             amd64        replacement for GNU Pth using system threads
+ii  libnsl2:amd64                                  1.3.0-2build2                           amd64        Public client interface for NIS(YP) and NIS+
+ii  libnspr4:amd64                                 2:4.35-0ubuntu0.22.04.1                 amd64        NetScape Portable Runtime Library
+ii  libnss3:amd64                                  2:3.98-0ubuntu0.22.04.4                 amd64        Network Security Service libraries
+ii  libnuma1:amd64                                 2.0.14-3ubuntu2                         amd64        Libraries for controlling NUMA policy
+ii  liboctomap1.9:amd64                            1.9.7+dfsg-3                            amd64        3D occupancy grid mapping approach library for mapping
+ii  libodbc2:amd64                                 2.3.9-5ubuntu0.1                        amd64        ODBC Driver Manager library for Unix
+ii  libodbcinst2:amd64                             2.3.9-5ubuntu0.1                        amd64        Support library for accessing ODBC configuration files
+ii  libode8                                        2:0.16.2-1                              amd64        Open Dynamics Engine - runtime library
+ii  libogdi4.1                                     4.1.0+ds-5                              amd64        Open Geographic Datastore Interface Library -- library
+ii  libogg0:amd64                                  1.3.5-0ubuntu3                          amd64        Ogg bitstream library
+ii  libogre-next-2.3.0:amd64                       2.3.1-9osrf~jammy                       amd64        3D Object-Oriented Graphics Rendering Engine (libraries)
+ii  libonig5:amd64                                 6.9.7.1-2build1                         amd64        regular expressions library
+ii  libopenal-data                                 1:1.19.1-2build3                        all          Software implementation of the OpenAL audio API (data files)
+ii  libopenal1:amd64                               1:1.19.1-2build3                        amd64        Software implementation of the OpenAL audio API (shared library)
+ii  libopenexr25:amd64                             2.5.7-1                                 amd64        runtime files for the OpenEXR image library
+ii  libopengl0:amd64                               1.4.0-1                                 amd64        Vendor neutral GL dispatch library -- OpenGL support
+ii  libopenjp2-7:amd64                             2.4.0-6ubuntu0.5                        amd64        JPEG 2000 image compression/decompression library
+ii  libopenmpt0:amd64                              0.6.1-1                                 amd64        module music library based on OpenMPT -- shared library
+ii  libopus0:amd64                                 1.3.1-0.1build2                         amd64        Opus codec runtime library
+ii  libp11-kit0:amd64                              0.24.0-6build1                          amd64        library for loading and coordinating access to PKCS#11 modules - runtime
+ii  libpam-modules:amd64                           1.4.0-11ubuntu2.6                       amd64        Pluggable Authentication Modules for PAM
+ii  libpam-modules-bin                             1.4.0-11ubuntu2.6                       amd64        Pluggable Authentication Modules for PAM - helper binaries
+ii  libpam-runtime                                 1.4.0-11ubuntu2.6                       all          Runtime support for the PAM library
+ii  libpam0g:amd64                                 1.4.0-11ubuntu2.6                       amd64        Pluggable Authentication Modules library
+ii  libpango-1.0-0:amd64                           1.50.6+ds-2ubuntu1                      amd64        Layout and rendering of internationalized text
+ii  libpangocairo-1.0-0:amd64                      1.50.6+ds-2ubuntu1                      amd64        Layout and rendering of internationalized text
+ii  libpangoft2-1.0-0:amd64                        1.50.6+ds-2ubuntu1                      amd64        Layout and rendering of internationalized text
+ii  libpciaccess0:amd64                            0.16-3                                  amd64        Generic PCI access library for X
+ii  libpcre2-16-0:amd64                            10.39-3ubuntu0.1                        amd64        New Perl Compatible Regular Expression Library - 16 bit runtime files
+ii  libpcre2-8-0:amd64                             10.39-3ubuntu0.1                        amd64        New Perl Compatible Regular Expression Library- 8 bit runtime files
+ii  libpcre3:amd64                                 2:8.39-13ubuntu0.22.04.1                amd64        Old Perl 5 Compatible Regular Expression Library - runtime files
+ii  libpgm-5.3-0:amd64                             5.3.128~dfsg-2                          amd64        OpenPGM shared library
+ii  libpixman-1-0:amd64                            0.40.0-1ubuntu0.22.04.1                 amd64        pixel-manipulation library for X and cairo
+ii  libpng16-16:amd64                              1.6.37-3ubuntu0.5                       amd64        PNG library - runtime (version 1.6)
+ii  libpocketsphinx3:amd64                         0.8.0+real5prealpha+1-14ubuntu1         amd64        Speech recognition tool - front-end library
+ii  libpoppler118:amd64                            22.02.0-2ubuntu0.13                     amd64        PDF rendering library
+ii  libpostproc55:amd64                            7:4.4.2-0ubuntu0.22.04.1                amd64        FFmpeg library for post processing - runtime files
+ii  libpq5:amd64                                   14.23-0ubuntu0.22.04.1                  amd64        PostgreSQL C client library
+ii  libprocps8:amd64                               2:3.3.17-6ubuntu2.1                     amd64        library for accessing process information from /proc
+ii  libproj22:amd64                                8.2.1-1                                 amd64        Cartographic projection library
+ii  libprotobuf23:amd64                            3.12.4-1ubuntu7.22.04.6                 amd64        protocol buffers C++ library
+ii  libpsl5:amd64                                  0.21.0-1.2build2                        amd64        Library for Public Suffix List (shared libraries)
+ii  libpulse0:amd64                                1:15.99.1+dfsg1-1ubuntu2.2              amd64        PulseAudio client libraries
+ii  libpython3-stdlib:amd64                        3.10.6-1~22.04.1                        amd64        interactive high-level object-oriented language (default python3 version)
+ii  libpython3.10:amd64                            3.10.12-1~22.04.16                      amd64        Shared Python runtime library (version 3.10)
+ii  libpython3.10-minimal:amd64                    3.10.12-1~22.04.16                      amd64        Minimal subset of the Python language (version 3.10)
+ii  libpython3.10-stdlib:amd64                     3.10.12-1~22.04.16                      amd64        Interactive high-level object-oriented language (standard library, version 3.10)
+ii  libqhull-r8.0:amd64                            2020.2-4                                amd64        calculate convex hulls and related structures (reentrant shared library)
+ii  libqt5core5a:amd64                             5.15.3+dfsg-2ubuntu0.2                  amd64        Qt 5 core module
+ii  libqt5dbus5:amd64                              5.15.3+dfsg-2ubuntu0.2                  amd64        Qt 5 D-Bus module
+ii  libqt5gui5:amd64                               5.15.3+dfsg-2ubuntu0.2                  amd64        Qt 5 GUI module
+ii  libqt5network5:amd64                           5.15.3+dfsg-2ubuntu0.2                  amd64        Qt 5 network module
+ii  libqt5qml5:amd64                               5.15.3+dfsg-1                           amd64        Qt 5 QML module
+ii  libqt5qmlmodels5:amd64                         5.15.3+dfsg-1                           amd64        Qt 5 QML Models library
+ii  libqt5quick5:amd64                             5.15.3+dfsg-1                           amd64        Qt 5 Quick library
+ii  libqt5widgets5:amd64                           5.15.3+dfsg-2ubuntu0.2                  amd64        Qt 5 widgets module
+ii  libquadmath0:amd64                             12.3.0-1ubuntu1~22.04.3                 amd64        GCC Quad-Precision Math Library
+ii  librabbitmq4:amd64                             0.10.0-1ubuntu2.1                       amd64        AMQP client library written in C
+ii  libraw1394-11:amd64                            2.1.2-2build2                           amd64        library for direct access to IEEE 1394 bus (aka FireWire)
+ii  libraw20:amd64                                 0.20.2-2ubuntu2.22.04.3                 amd64        raw image decoder library
+ii  libreadline8:amd64                             8.1.2-1                                 amd64        GNU readline and history libraries, run-time libraries
+ii  librsvg2-2:amd64                               2.52.5+dfsg-3ubuntu0.2                  amd64        SAX-based renderer library for SVG files (runtime)
+ii  librtmp1:amd64                                 2.4+20151223.gitfa8646d.1-2build4       amd64        toolkit for RTMP streams (shared library)
+ii  librttopo1:amd64                               1.1.0-2                                 amd64        Tuscany Region topology library
+ii  librubberband2:amd64                           2.0.0-2                                 amd64        audio time-stretching and pitch-shifting library
+ii  libruby3.0:amd64                               3.0.2-7ubuntu2.13                       amd64        Libraries necessary to run Ruby 3.0
+ii  libsamplerate0:amd64                           0.2.2-1build1                           amd64        Audio sample rate conversion library
+ii  libsasl2-2:amd64                               2.1.27+dfsg2-3ubuntu1.2                 amd64        Cyrus SASL - authentication abstraction library
+ii  libsasl2-modules-db:amd64                      2.1.27+dfsg2-3ubuntu1.2                 amd64        Cyrus SASL - pluggable authentication modules (DB)
+ii  libsdformat14:amd64                            14.9.0-1~jammy                          amd64        Simulation Description Format (SDF) parser - Shared library
+ii  libsdl2-2.0-0:amd64                            2.0.20+dfsg-2ubuntu1.22.04.1            amd64        Simple DirectMedia Layer
+ii  libseccomp2:amd64                              2.5.3-2ubuntu3~22.04.1                  amd64        high level interface to Linux seccomp filter
+ii  libselinux1:amd64                              3.3-1build2                             amd64        SELinux runtime shared libraries
+ii  libsemanage-common                             3.3-1build2                             all          Common files for SELinux policy management libraries
+ii  libsemanage2:amd64                             3.3-1build2                             amd64        SELinux policy management library
+ii  libsensors-config                              1:3.6.0-7ubuntu1                        all          lm-sensors configuration files
+ii  libsensors5:amd64                              1:3.6.0-7ubuntu1                        amd64        library to read temperature/voltage/fan sensors
+ii  libsepol2:amd64                                3.3-1build1                             amd64        SELinux library for manipulating binary security policies
+ii  libserd-0-0:amd64                              0.30.10-2                               amd64        lightweight RDF syntax library
+ii  libshine3:amd64                                3.1.1-2                                 amd64        Fixed-point MP3 encoding library - runtime files
+ii  libslang2:amd64                                2.3.2-5build4                           amd64        S-Lang programming library - runtime version
+ii  libsm6:amd64                                   2:1.2.3-1build2                         amd64        X11 Session Management library
+ii  libsmartcols1:amd64                            2.37.2-4ubuntu3.5                       amd64        smart column output alignment library
+ii  libsnappy1v5:amd64                             1.1.8-1build3                           amd64        fast compression/decompression library
+ii  libsndfile1:amd64                              1.0.31-2ubuntu0.2                       amd64        Library for reading/writing audio files
+ii  libsndio7.0:amd64                              1.8.1-1.1                               amd64        Small audio and MIDI framework from OpenBSD, runtime libraries
+ii  libsodium23:amd64                              1.0.18-1ubuntu0.22.04.1                 amd64        Network communication, cryptography and signaturing library
+ii  libsord-0-0:amd64                              0.16.8-2                                amd64        library for storing RDF data in memory
+ii  libsoxr0:amd64                                 0.1.3-4build2                           amd64        High quality 1D sample-rate conversion library
+ii  libspatialite7:amd64                           5.0.1-2build2                           amd64        Geospatial extension for SQLite - libraries
+ii  libspeex1:amd64                                1.2~rc1.2-1.1ubuntu3                    amd64        The Speex codec runtime library
+ii  libsphinxbase3:amd64                           0.8+5prealpha+1-13build1                amd64        Speech recognition tool - shared library
+ii  libsqlite3-0:amd64                             3.37.2-2ubuntu0.6                       amd64        SQLite 3 shared library
+ii  libsratom-0-0:amd64                            0.6.8-1                                 amd64        library for serialising LV2 atoms to/from Turtle
+ii  libsrt1.4-gnutls:amd64                         1.4.4-4                                 amd64        Secure Reliable Transport UDP streaming library (GnuTLS flavour)
+ii  libss2:amd64                                   1.46.5-2ubuntu1.2                       amd64        command-line interface parsing library
+ii  libssh-4:amd64                                 0.9.6-2ubuntu0.22.04.7                  amd64        tiny C SSH library (OpenSSL flavor)
+ii  libssh-gcrypt-4:amd64                          0.9.6-2ubuntu0.22.04.7                  amd64        tiny C SSH library (gcrypt flavor)
+ii  libssl3:amd64                                  3.0.2-0ubuntu1.23                       amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libstdc++6:amd64                               12.3.0-1ubuntu1~22.04.3                 amd64        GNU Standard C++ Library v3
+ii  libsuperlu5:amd64                              5.3.0+dfsg1-2                           amd64        Direct solution of large, sparse systems of linear equations
+ii  libswresample3:amd64                           7:4.4.2-0ubuntu0.22.04.1                amd64        FFmpeg library for audio resampling, rematrixing etc. - runtime files
+ii  libswscale5:amd64                              7:4.4.2-0ubuntu0.22.04.1                amd64        FFmpeg library for image scaling and various conversions - runtime files
+ii  libsystemd0:amd64                              249.11-0ubuntu3.20                      amd64        systemd utility library
+ii  libsz2:amd64                                   1.0.6-1                                 amd64        Adaptive Entropy Coding library - SZIP
+ii  libtasn1-6:amd64                               4.18.0-4ubuntu0.2                       amd64        Manage ASN.1 structures (runtime)
+ii  libthai-data                                   0.1.29-1build1                          all          Data files for Thai language support library
+ii  libthai0:amd64                                 0.1.29-1build1                          amd64        Thai language support library
+ii  libtheora0:amd64                               1.1.1+dfsg.1-15ubuntu4                  amd64        Theora Video Compression Codec
+ii  libtiff5:amd64                                 4.3.0-6ubuntu0.13                       amd64        Tag Image File Format (TIFF) library
+ii  libtinfo6:amd64                                6.3-2ubuntu0.1                          amd64        shared low-level terminfo library for terminal handling
+ii  libtinyxml2-9:amd64                            9.0.0+dfsg-3                            amd64        C++ XML parsing library
+ii  libtirpc-common                                1.3.2-2ubuntu0.1                        all          transport-independent RPC library - common files
+ii  libtirpc3:amd64                                1.3.2-2ubuntu0.1                        amd64        transport-independent RPC library
+ii  libtwolame0:amd64                              0.4.0-2build2                           amd64        MPEG Audio Layer 2 encoding library
+ii  libudev1:amd64                                 249.11-0ubuntu3.20                      amd64        libudev shared library
+ii  libudfread0:amd64                              1.1.2-1                                 amd64        UDF reader library
+ii  libunistring2:amd64                            1.0-1                                   amd64        Unicode string library for C
+ii  liburiparser1:amd64                            0.9.6+dfsg-1                            amd64        URI parsing library compliant with RFC 3986
+ii  libusb-1.0-0:amd64                             2:1.0.25-1ubuntu2                       amd64        userspace USB programming library
+ii  libuuid1:amd64                                 2.37.2-4ubuntu3.5                       amd64        Universally Unique ID library
+ii  libva-drm2:amd64                               2.14.0-1                                amd64        Video Acceleration (VA) API for Linux -- DRM runtime
+ii  libva-x11-2:amd64                              2.14.0-1                                amd64        Video Acceleration (VA) API for Linux -- X11 runtime
+ii  libva2:amd64                                   2.14.0-1                                amd64        Video Acceleration (VA) API for Linux -- runtime
+ii  libvdpau1:amd64                                1.4-3build2                             amd64        Video Decode and Presentation API for Unix (libraries)
+ii  libvidstab1.1:amd64                            1.1.0-2                                 amd64        video stabilization library (shared library)
+ii  libvorbis0a:amd64                              1.3.7-1build2                           amd64        decoder library for Vorbis General Audio Compression Codec
+ii  libvorbisenc2:amd64                            1.3.7-1build2                           amd64        encoder library for Vorbis General Audio Compression Codec
+ii  libvorbisfile3:amd64                           1.3.7-1build2                           amd64        high-level API for Vorbis General Audio Compression Codec
+ii  libvpx7:amd64                                  1.11.0-2ubuntu2.5                       amd64        VP8 and VP9 video codec (shared library)
+ii  libvulkan1:amd64                               1.3.204.1-2                             amd64        Vulkan loader library
+ii  libwacom-common                                2.2.0-1                                 all          Wacom model feature query library (common files)
+ii  libwacom9:amd64                                2.2.0-1                                 amd64        Wacom model feature query library
+ii  libwayland-client0:amd64                       1.20.0-1ubuntu0.1                       amd64        wayland compositor infrastructure - client library
+ii  libwayland-cursor0:amd64                       1.20.0-1ubuntu0.1                       amd64        wayland compositor infrastructure - cursor library
+ii  libwayland-egl1:amd64                          1.20.0-1ubuntu0.1                       amd64        wayland compositor infrastructure - EGL library
+ii  libwayland-server0:amd64                       1.20.0-1ubuntu0.1                       amd64        wayland compositor infrastructure - server library
+ii  libwebp7:amd64                                 1.2.2-2ubuntu0.22.04.2                  amd64        Lossy compression of digital photographic images
+ii  libwebpmux3:amd64                              1.2.2-2ubuntu0.22.04.2                  amd64        Lossy compression of digital photographic images
+ii  libx11-6:amd64                                 2:1.7.5-1ubuntu0.3                      amd64        X11 client-side library
+ii  libx11-data                                    2:1.7.5-1ubuntu0.3                      all          X11 client-side library
+ii  libx11-xcb1:amd64                              2:1.7.5-1ubuntu0.3                      amd64        Xlib/XCB interface library
+ii  libx264-163:amd64                              2:0.163.3060+git5db6aa6-2build1         amd64        x264 video coding library
+ii  libx265-199:amd64                              3.5-2                                   amd64        H.265/HEVC video stream encoder (shared library)
+ii  libxau6:amd64                                  1:1.0.9-1build5                         amd64        X11 authorisation library
+ii  libxaw7:amd64                                  2:1.0.14-1                              amd64        X11 Athena Widget library
+ii  libxcb-dri2-0:amd64                            1.14-3ubuntu3                           amd64        X C Binding, dri2 extension
+ii  libxcb-dri3-0:amd64                            1.14-3ubuntu3                           amd64        X C Binding, dri3 extension
+ii  libxcb-glx0:amd64                              1.14-3ubuntu3                           amd64        X C Binding, glx extension
+ii  libxcb-icccm4:amd64                            0.4.1-1.1build2                         amd64        utility libraries for X C Binding -- icccm
+ii  libxcb-image0:amd64                            0.4.0-2                                 amd64        utility libraries for X C Binding -- image
+ii  libxcb-keysyms1:amd64                          0.4.0-1build3                           amd64        utility libraries for X C Binding -- keysyms
+ii  libxcb-present0:amd64                          1.14-3ubuntu3                           amd64        X C Binding, present extension
+ii  libxcb-randr0:amd64                            1.14-3ubuntu3                           amd64        X C Binding, randr extension
+ii  libxcb-render-util0:amd64                      0.3.9-1build3                           amd64        utility libraries for X C Binding -- render-util
+ii  libxcb-render0:amd64                           1.14-3ubuntu3                           amd64        X C Binding, render extension
+ii  libxcb-shape0:amd64                            1.14-3ubuntu3                           amd64        X C Binding, shape extension
+ii  libxcb-shm0:amd64                              1.14-3ubuntu3                           amd64        X C Binding, shm extension
+ii  libxcb-sync1:amd64                             1.14-3ubuntu3                           amd64        X C Binding, sync extension
+ii  libxcb-util1:amd64                             0.4.0-1build2                           amd64        utility libraries for X C Binding -- atom, aux and event
+ii  libxcb-xfixes0:amd64                           1.14-3ubuntu3                           amd64        X C Binding, xfixes extension
+ii  libxcb-xinerama0:amd64                         1.14-3ubuntu3                           amd64        X C Binding, xinerama extension
+ii  libxcb-xinput0:amd64                           1.14-3ubuntu3                           amd64        X C Binding, xinput extension
+ii  libxcb-xkb1:amd64                              1.14-3ubuntu3                           amd64        X C Binding, XKEYBOARD extension
+ii  libxcb1:amd64                                  1.14-3ubuntu3                           amd64        X C Binding
+ii  libxcursor1:amd64                              1:1.2.0-2build4                         amd64        X cursor management library
+ii  libxdmcp6:amd64                                1:1.1.3-0ubuntu5                        amd64        X11 Display Manager Control Protocol library
+ii  libxerces-c3.2:amd64                           3.2.3+debian-3ubuntu0.1                 amd64        validating XML parser library for C++
+ii  libxext6:amd64                                 2:1.3.4-1build1                         amd64        X11 miscellaneous extension library
+ii  libxfixes3:amd64                               1:6.0.0-1                               amd64        X11 miscellaneous 'fixes' extension library
+ii  libxi6:amd64                                   2:1.8-1build1                           amd64        X11 Input extension library
+ii  libxinerama1:amd64                             2:1.1.4-3                               amd64        X11 Xinerama extension library
+ii  libxkbcommon-x11-0:amd64                       1.4.0-1                                 amd64        library to create keymaps with the XKB X11 protocol
+ii  libxkbcommon0:amd64                            1.4.0-1                                 amd64        library interface to the XKB compiler - shared library
+ii  libxml2:amd64                                  2.9.13+dfsg-1ubuntu0.12                 amd64        GNOME XML library
+ii  libxmu6:amd64                                  2:1.1.3-3                               amd64        X11 miscellaneous utility library
+ii  libxpm4:amd64                                  1:3.5.12-1ubuntu0.22.04.2               amd64        X11 pixmap library
+ii  libxrandr2:amd64                               2:1.5.2-1build1                         amd64        X11 RandR extension library
+ii  libxrender1:amd64                              1:0.9.10-1build4                        amd64        X Rendering Extension client library
+ii  libxshmfence1:amd64                            1.3-1build4                             amd64        X shared memory fences - shared library
+ii  libxss1:amd64                                  1:1.2.3-1build2                         amd64        X11 Screen Saver extension library
+ii  libxt6:amd64                                   1:1.2.1-1                               amd64        X11 toolkit intrinsics library
+ii  libxv1:amd64                                   2:1.0.11-1build2                        amd64        X11 Video extension library
+ii  libxvidcore4:amd64                             2:1.3.7-1                               amd64        Open source MPEG-4 video codec (library)
+ii  libxxf86vm1:amd64                              1:1.1.4-1build3                         amd64        X11 XFree86 video mode extension library
+ii  libxxhash0:amd64                               0.8.1-1                                 amd64        shared library for xxhash
+ii  libyaml-0-2:amd64                              0.2.2-1build2                           amd64        Fast YAML 1.1 parser and emitter library
+ii  libzimg2:amd64                                 3.0.3+ds1-1                             amd64        scaling, colorspace, depth conversion library (shared library)
+ii  libzip4:amd64                                  1.7.3-1ubuntu2                          amd64        library for reading, creating, and modifying zip archives (runtime)
+ii  libzmq5:amd64                                  4.3.4-2                                 amd64        lightweight messaging kernel (shared library)
+ii  libzstd1:amd64                                 1.4.8+dfsg-3build1                      amd64        fast lossless compression algorithm
+ii  libzvbi-common                                 0.2.35-19                               all          Vertical Blanking Interval decoder (VBI) - common files
+ii  libzvbi0:amd64                                 0.2.35-19                               amd64        Vertical Blanking Interval decoder (VBI) - runtime files
+ii  libzzip-0-13:amd64                             0.13.72+dfsg.1-1.1                      amd64        library providing read access on ZIP-archives - library
+ii  login                                          1:4.8.1-2ubuntu2.2                      amd64        system login tools
+ii  logsave                                        1.46.5-2ubuntu1.2                       amd64        save the output of a command in a log file
+ii  lsb-base                                       11.1.0ubuntu4                           all          Linux Standard Base init script functionality
+ii  lsb-release                                    11.1.0ubuntu4                           all          Linux Standard Base version reporting utility
+ii  mawk                                           1.3.4.20200120-3                        amd64        Pattern scanning and text processing language
+ii  media-types                                    7.0.0                                   all          List of standard media types and their usual file extension
+ii  mesa-utils                                     8.4.0-1ubuntu1                          amd64        Miscellaneous Mesa utilities -- symlinks
+ii  mesa-utils-bin:amd64                           8.4.0-1ubuntu1                          amd64        Miscellaneous Mesa utilities -- native applications
+ii  mount                                          2.37.2-4ubuntu3.5                       amd64        tools for mounting and manipulating filesystems
+ii  mysql-common                                   5.8+1.0.8                               all          MySQL database common files, e.g. /etc/mysql/my.cnf
+ii  ncurses-base                                   6.3-2ubuntu0.1                          all          basic terminal type definitions
+ii  ncurses-bin                                    6.3-2ubuntu0.1                          amd64        terminal-related programs and man pages
+ii  ocl-icd-libopencl1:amd64                       2.2.14-3                                amd64        Generic OpenCL ICD Loader
+ii  openssl                                        3.0.2-0ubuntu1.25                       amd64        Secure Sockets Layer toolkit - cryptographic utility
+ii  passwd                                         1:4.8.1-2ubuntu2.2                      amd64        change and administer password and group data
+ii  perl-base                                      5.34.0-3ubuntu1.5                       amd64        minimal Perl system
+ii  pinentry-curses                                1.1.1-1build2                           amd64        curses-based PIN or pass-phrase entry dialog for GnuPG
+ii  procps                                         2:3.3.17-6ubuntu2.1                     amd64        /proc file system utilities
+ii  proj-data                                      8.2.1-1                                 all          Cartographic projection filter and library (datum package)
+ii  python3                                        3.10.6-1~22.04.1                        amd64        interactive high-level object-oriented language (default python3 version)
+ii  python3-distutils                              3.10.8-1~22.04                          all          distutils package for Python 3.x
+ii  python3-lib2to3                                3.10.8-1~22.04                          all          Interactive high-level object-oriented language (lib2to3)
+ii  python3-minimal                                3.10.6-1~22.04.1                        amd64        minimal subset of the Python language (default python3 version)
+ii  python3-pip-whl                                22.0.2+dfsg-1ubuntu0.7                  all          Python package installer (pip wheel)
+ii  python3-setuptools-whl                         59.6.0-1.2ubuntu0.22.04.3               all          Python Distutils Enhancements (wheel package)
+ii  python3-venv                                   3.10.6-1~22.04.1                        amd64        venv module for python3 (default python3 version)
+ii  python3.10                                     3.10.12-1~22.04.16                      amd64        Interactive high-level object-oriented language (version 3.10)
+ii  python3.10-minimal                             3.10.12-1~22.04.16                      amd64        Minimal subset of the Python language (version 3.10)
+ii  python3.10-venv                                3.10.12-1~22.04.16                      amd64        Interactive high-level object-oriented language (pyvenv binary, version 3.10)
+ii  qml-module-qtqml-models2:amd64                 5.15.3+dfsg-1                           amd64        Qt 5 Models2 QML module
+ii  rake                                           13.0.6-2                                all          ruby make-like utility
+ii  readline-common                                8.1.2-1                                 all          GNU readline and history libraries, common files
+ii  ruby                                           1:3.0~exp1                              amd64        Interpreter of object-oriented scripting language Ruby (default version)
+ii  ruby-net-telnet                                0.1.1-2                                 all          telnet client library
+ii  ruby-rubygems                                  3.3.5-2ubuntu1.2                        all          Package management framework for Ruby
+ii  ruby-webrick                                   1.7.0-3ubuntu0.2                        all          HTTP server toolkit in Ruby
+ii  ruby-xmlrpc                                    0.3.2-1ubuntu0.1                        all          XMLRPC library for Ruby
+ii  ruby3.0                                        3.0.2-7ubuntu2.13                       amd64        Interpreter of object-oriented scripting language Ruby
+ii  rubygems-integration                           1.18                                    all          integration of Debian Ruby packages with Rubygems
+ii  sdformat14-sdf                                 14.9.0-1~jammy                          all          Simulation Description Format (SDF) parser - SDF files
+ii  sed                                            4.8-1ubuntu2.1                          amd64        GNU stream editor for filtering/transforming text
+ii  sensible-utils                                 0.0.17                                  all          Utilities for sensible alternative selection
+ii  shared-mime-info                               2.1-2                                   amd64        FreeDesktop.org shared MIME database and spec
+ii  sysvinit-utils                                 3.01-1ubuntu1                           amd64        System-V-like utilities
+ii  tar                                            1.34+dfsg-1ubuntu0.1.22.04.2            amd64        GNU version of the tar archiving utility
+ii  ubuntu-keyring                                 2021.03.26                              all          GnuPG keys of the Ubuntu archive
+ii  ucf                                            3.0043                                  all          Update Configuration File(s): preserve user changes to config files
+ii  unixodbc-common                                2.3.9-5ubuntu0.1                        all          Common ODBC configuration files
+ii  usrmerge                                       25ubuntu2                               all          Convert the system to the merged /usr directories scheme
+ii  util-linux                                     2.37.2-4ubuntu3.5                       amd64        miscellaneous system utilities
+ii  x11-common                                     1:7.7+23ubuntu2                         all          X Window System (X.Org) infrastructure
+ii  xkb-data                                       2.33-1                                  all          X Keyboard Extension (XKB) configuration data
+ii  zlib1g:amd64                                   1:1.2.11.dfsg-2ubuntu9.2                amd64        compression library - runtime
+===LDCONFIG===
+576 libs found in cache `/etc/ld.so.cache'
+	libzzipwrap-0.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzzipwrap-0.so.13
+	libzzipmmapped-0.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzzipmmapped-0.so.13
+	libzzipfseeko-0.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzzipfseeko-0.so.13
+	libzzip-0.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzzip-0.so.13
+	libzvbi.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzvbi.so.0
+	libzvbi-chains.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzvbi-chains.so.0
+	libzstd.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzstd.so.1
+	libzmq.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzmq.so.5
+	libzip.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzip.so.4
+	libzimg.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzimg.so.2
+	libz.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libz.so.1
+	libyaml-0.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libyaml-0.so.2
+	libx265.so.199 (libc6,x86-64) => /lib/x86_64-linux-gnu/libx265.so.199
+	libx264.so.163 (libc6,x86-64) => /lib/x86_64-linux-gnu/libx264.so.163
+	libxxhash.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxxhash.so.0
+	libxvidcore.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxvidcore.so.4
+	libxshmfence.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxshmfence.so.1
+	libxml2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxml2.so.2
+	libxkbcommon.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxkbcommon.so.0
+	libxkbcommon-x11.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxkbcommon-x11.so.0
+	libxerces-c-3.2.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libxerces-c-3.2.so
+	libxcb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb.so.1
+	libxcb-xkb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-xkb.so.1
+	libxcb-xinput.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-xinput.so.0
+	libxcb-xinerama.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-xinerama.so.0
+	libxcb-xfixes.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-xfixes.so.0
+	libxcb-util.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-util.so.1
+	libxcb-sync.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-sync.so.1
+	libxcb-shm.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-shm.so.0
+	libxcb-shape.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-shape.so.0
+	libxcb-render.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-render.so.0
+	libxcb-render-util.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-render-util.so.0
+	libxcb-randr.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-randr.so.0
+	libxcb-present.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-present.so.0
+	libxcb-keysyms.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-keysyms.so.1
+	libxcb-image.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-image.so.0
+	libxcb-icccm.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-icccm.so.4
+	libxcb-glx.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-glx.so.0
+	libxcb-dri3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-dri3.so.0
+	libxcb-dri2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-dri2.so.0
+	libwebpmux.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwebpmux.so.3
+	libwebp.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwebp.so.7
+	libwayland-server.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwayland-server.so.0
+	libwayland-egl.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwayland-egl.so.1
+	libwayland-cursor.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwayland-cursor.so.0
+	libwayland-client.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwayland-client.so.0
+	libwacom.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwacom.so.9
+	libvulkan.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan.so.1
+	libvpx.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvpx.so.7
+	libvpf.so.4.1 (libc6,x86-64) => /lib/libvpf.so.4.1
+	libvorbisfile.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvorbisfile.so.3
+	libvorbisenc.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvorbisenc.so.2
+	libvorbis.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvorbis.so.0
+	libvidstab.so.1.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvidstab.so.1.1
+	libvdpau.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvdpau.so.1
+	libva.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libva.so.2
+	libva-x11.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libva-x11.so.2
+	libva-drm.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libva-drm.so.2
+	libuuid.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libuuid.so.1
+	libutil.so.1 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libutil.so.1
+	libusb-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libusb-1.0.so.0
+	liburiparser.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/liburiparser.so.1
+	libunistring.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libunistring.so.2
+	libudfread.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libudfread.so.0
+	libudev.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libudev.so.1
+	libtwolame.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtwolame.so.0
+	libtirpc.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtirpc.so.3
+	libtinyxml2.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtinyxml2.so.9
+	libtinfo.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtinfo.so.6
+	libtiff.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtiff.so.5
+	libtic.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtic.so.6
+	libthread_db.so.1 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libthread_db.so.1
+	libtheoraenc.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtheoraenc.so.1
+	libtheoradec.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtheoradec.so.1
+	libtheora.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtheora.so.0
+	libthai.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libthai.so.0
+	libtasn1.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtasn1.so.6
+	libsz.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsz.so.2
+	libsystemd.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsystemd.so.0
+	libswscale.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libswscale.so.5
+	libswresample.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libswresample.so.3
+	libsuperlu.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsuperlu.so.5
+	libstdc++.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libstdc++.so.6
+	libssl3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libssl3.so
+	libssl.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libssl.so.3
+	libssh.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libssh.so.4
+	libssh-gcrypt.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libssh-gcrypt.so.4
+	libss.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libss.so.2
+	libsrt-gnutls.so.1.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsrt-gnutls.so.1.4
+	libsratom-0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsratom-0.so.0
+	libsqlite3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsqlite3.so.0
+	libsphinxbase.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsphinxbase.so.3
+	libsphinxad.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsphinxad.so.3
+	libspeex.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libspeex.so.1
+	libspatialite.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libspatialite.so.7
+	libsoxr.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsoxr.so.0
+	libsord-0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsord-0.so.0
+	libsodium.so.23 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsodium.so.23
+	libsndio.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsndio.so.7
+	libsndfile.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsndfile.so.1
+	libsnappy.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsnappy.so.1
+	libsmime3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libsmime3.so
+	libsmartcols.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsmartcols.so.1
+	libslang.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libslang.so.2
+	libshine.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libshine.so.3
+	libserd-0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libserd-0.so.0
+	libsepol.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsepol.so.2
+	libsensors.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsensors.so.5
+	libsemanage.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsemanage.so.2
+	libselinux.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libselinux.so.1
+	libseccomp.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libseccomp.so.2
+	libsdformat14.so.14 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsdformat14.so.14
+	libsasl2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsasl2.so.2
+	libsamplerate.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsamplerate.so.0
+	libruby-3.0.so.3.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libruby-3.0.so.3.0
+	librubberband.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/librubberband.so.2
+	librttopo.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/librttopo.so.1
+	librtmp.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/librtmp.so.1
+	librt.so.1 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/librt.so.1
+	librsvg-2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/librsvg-2.so.2
+	librom1394.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/librom1394.so.0
+	libresolv.so.2 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libresolv.so.2
+	libreadline.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libreadline.so.8
+	libraw1394.so.11 (libc6,x86-64) => /lib/x86_64-linux-gnu/libraw1394.so.11
+	libraw_r.so.20 (libc6,x86-64) => /lib/x86_64-linux-gnu/libraw_r.so.20
+	libraw.so.20 (libc6,x86-64) => /lib/x86_64-linux-gnu/libraw.so.20
+	librabbitmq.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/librabbitmq.so.4
+	libquadmath.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libquadmath.so.0
+	libqhull_r.so.8.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libqhull_r.so.8.0
+	libp11-kit.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libp11-kit.so.0
+	libpython3.10.so.1.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpython3.10.so.1.0
+	libpulse.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpulse.so.0
+	libpulse-simple.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpulse-simple.so.0
+	libpthread.so.0 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libpthread.so.0
+	libpsl.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpsl.so.5
+	libprotobuf.so.23 (libc6,x86-64) => /lib/x86_64-linux-gnu/libprotobuf.so.23
+	libproj.so.22 (libc6,x86-64) => /lib/x86_64-linux-gnu/libproj.so.22
+	libprocps.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libprocps.so.8
+	libpq.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpq.so.5
+	libpostproc.so.55 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpostproc.so.55
+	libpoppler.so.118 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpoppler.so.118
+	libpocketsphinx.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpocketsphinx.so.3
+	libpng16.so.16 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpng16.so.16
+	libplds4.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libplds4.so
+	libplc4.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libplc4.so
+	libpixman-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpixman-1.so.0
+	libpgm-5.3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpgm-5.3.so.0
+	libpcre2-16.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcre2-16.so.0
+	libpcre2-8.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcre2-8.so.0
+	libpcreposix.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcreposix.so.3
+	libpcre.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcre.so.3
+	libpcprofile.so (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libpcprofile.so
+	libpciaccess.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpciaccess.so.0
+	libpangoft2-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpangoft2-1.0.so.0
+	libpangocairo-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+	libpango-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpango-1.0.so.0
+	libpanelw.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpanelw.so.6
+	libpanel.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpanel.so.6
+	libpamc.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpamc.so.0
+	libpam_misc.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpam_misc.so.0
+	libpam.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpam.so.0
+	libopus.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libopus.so.0
+	libopenmpt.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libopenmpt.so.0
+	libopenjp2.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libopenjp2.so.7
+	libopenal.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libopenal.so.1
+	libonig.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libonig.so.5
+	libogg.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libogg.so.0
+	libogdi.so.4.1 (libc6,x86-64) => /lib/libogdi.so.4.1
+	libode.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libode.so.8
+	libodbcinst.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libodbcinst.so.2
+	libodbc.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libodbc.so.2
+	liboctomath.so.1.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/liboctomath.so.1.9
+	liboctomap.so.1.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/liboctomap.so.1.9
+	libnuma.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnuma.so.1
+	libnss3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss3.so
+	libnssutil3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnssutil3.so
+	libnss_hesiod.so.2 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libnss_hesiod.so.2
+	libnss_files.so.2 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libnss_files.so.2
+	libnss_dns.so.2 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libnss_dns.so.2
+	libnss_compat.so.2 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libnss_compat.so.2
+	libnspr4.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnspr4.so
+	libnsl.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnsl.so.2
+	libnsl.so.1 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libnsl.so.1
+	libnpth.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnpth.so.0
+	libnorm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnorm.so.1
+	libnghttp2.so.14 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnghttp2.so.14
+	libnettle.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnettle.so.8
+	libnetcdf.so.19 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnetcdf.so.19
+	libncursesw.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libncursesw.so.6
+	libncurses.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libncurses.so.6
+	libmysqlclient.so.21 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmysqlclient.so.21
+	libmysofa.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmysofa.so.1
+	libmvec.so.1 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libmvec.so.1
+	libmtdev.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmtdev.so.1
+	libmp3lame.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmp3lame.so.0
+	libmpg123.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmpg123.so.0
+	libmpdec.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmpdec.so.3
+	libmpdec++.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmpdec++.so.3
+	libmount.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmount.so.1
+	libminizip.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libminizip.so.1
+	libmfxhw64.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmfxhw64.so.1
+	libmfx.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmfx.so.1
+	libmfx-tracer.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmfx-tracer.so.1
+	libmfhdfalt.so.0 (libc6,x86-64) => /lib/libmfhdfalt.so.0
+	libmenuw.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmenuw.so.6
+	libmenu.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmenu.so.6
+	libmemusage.so (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libmemusage.so
+	libmd4c.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmd4c.so.0
+	libmd.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmd.so.0
+	libm.so.6 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libm.so.6
+	liblz4.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblz4.so.1
+	liblzma.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblzma.so.5
+	libltdl.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libltdl.so.7
+	liblilv-0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblilv-0.so.0
+	libldap-2.5.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libldap-2.5.so.0
+	liblcms2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblcms2.so.2
+	liblber-2.5.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblber-2.5.so.0
+	liblapack.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblapack.so.3
+	libk5crypto.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libk5crypto.so.3
+	libksba.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libksba.so.8
+	libkrb5support.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkrb5support.so.0
+	libkrb5.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkrb5.so.3
+	libkmlengine.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkmlengine.so.1
+	libkmldom.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkmldom.so.1
+	libkmlbase.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkmlbase.so.1
+	libkeyutils.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkeyutils.so.1
+	libjxrglue.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjxrglue.so.0
+	libjsoncpp.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjsoncpp.so.25
+	libjson-c.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjson-c.so.5
+	libjq.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjq.so.1
+	libjpegxr.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjpegxr.so.0
+	libjpeg.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjpeg.so.8
+	libjbig.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjbig.so.0
+	libjackserver.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjackserver.so.0
+	libjacknet.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjacknet.so.0
+	libjack.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjack.so.0
+	libinput.so.10 (libc6,x86-64) => /lib/x86_64-linux-gnu/libinput.so.10
+	libiec61883.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libiec61883.so.0
+	libidn2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libidn2.so.0
+	libicuuc.so.70 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicuuc.so.70
+	libicutu.so.70 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicutu.so.70
+	libicutest.so.70 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicutest.so.70
+	libicui18n.so.70 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicui18n.so.70
+	libicuio.so.70 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicuio.so.70
+	libicudata.so.70 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicudata.so.70
+	libhogweed.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhogweed.so.6
+	libhistory.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhistory.so.8
+	libheif.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libheif.so.1
+	libhdf5_serial_hl.so.100 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhdf5_serial_hl.so.100
+	libhdf5_serial.so.103 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhdf5_serial.so.103
+	libharfbuzz.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libharfbuzz.so.0
+	libgz-utils2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-utils2.so.2
+	libgz-transport13.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-transport13.so.13
+	libgz-transport13-parameters.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-transport13-parameters.so.13
+	libgz-transport13-log.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-transport13-log.so.13
+	libgz-tools2-backward.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-tools2-backward.so.2
+	libgz-tools2-backward.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-tools2-backward.so
+	libgz-sim8.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8.so.8
+	libgz-sim8-wind-effects-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-wind-effects-system.so.8
+	libgz-sim8-wheel-slip-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-wheel-slip-system.so.8
+	libgz-sim8-velocity-control-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-velocity-control-system.so.8
+	libgz-sim8-user-commands-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-user-commands-system.so.8
+	libgz-sim8-triggered-publisher-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-triggered-publisher-system.so.8
+	libgz-sim8-trajectory-follower-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-trajectory-follower-system.so.8
+	libgz-sim8-tracked-vehicle-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-tracked-vehicle-system.so.8
+	libgz-sim8-track-controller-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-track-controller-system.so.8
+	libgz-sim8-touchplugin-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-touchplugin-system.so.8
+	libgz-sim8-thruster-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-thruster-system.so.8
+	libgz-sim8-thermal-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-thermal-system.so.8
+	libgz-sim8-thermal-sensor-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-thermal-sensor-system.so.8
+	libgz-sim8-spacecraft-thruster-model-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-spacecraft-thruster-model-system.so.8
+	libgz-sim8-shader-param-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-shader-param-system.so.8
+	libgz-sim8-sensors-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-sensors-system.so.8
+	libgz-sim8-scene-broadcaster-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-scene-broadcaster-system.so.8
+	libgz-sim8-rf-comms-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-rf-comms-system.so.8
+	libgz-sim8-rendering.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-rendering.so.8
+	libgz-sim8-python-system-loader-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-python-system-loader-system.so.8
+	libgz-sim8-pose-publisher-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-pose-publisher-system.so.8
+	libgz-sim8-physics-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-physics-system.so.8
+	libgz-sim8-performer-detector-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-performer-detector-system.so.8
+	libgz-sim8-perfect-comms-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-perfect-comms-system.so.8
+	libgz-sim8-particle-emitter-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-particle-emitter-system.so.8
+	libgz-sim8-opticaltactileplugin-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-opticaltactileplugin-system.so.8
+	libgz-sim8-odometry-publisher-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-odometry-publisher-system.so.8
+	libgz-sim8-navsat-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-navsat-system.so.8
+	libgz-sim8-multicopter-motor-model-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-multicopter-motor-model-system.so.8
+	libgz-sim8-multicopter-control-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-multicopter-control-system.so.8
+	libgz-sim8-model-photo-shoot-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-model-photo-shoot-system.so.8
+	libgz-sim8-mecanum-drive-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-mecanum-drive-system.so.8
+	libgz-sim8-magnetometer-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-magnetometer-system.so.8
+	libgz-sim8-logicalaudiosensorplugin-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-logicalaudiosensorplugin-system.so.8
+	libgz-sim8-logical-camera-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-logical-camera-system.so.8
+	libgz-sim8-log-video-recorder-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-log-video-recorder-system.so.8
+	libgz-sim8-log-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-log-system.so.8
+	libgz-sim8-linearbatteryplugin-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-linearbatteryplugin-system.so.8
+	libgz-sim8-lighter_than_air_dynamics-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-lighter_than_air_dynamics-system.so.8
+	libgz-sim8-lift-drag-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-lift-drag-system.so.8
+	libgz-sim8-lens-flare-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-lens-flare-system.so.8
+	libgz-sim8-label-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-label-system.so.8
+	libgz-sim8-kinetic-energy-monitor-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-kinetic-energy-monitor-system.so.8
+	libgz-sim8-joint-trajectory-controller-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-joint-trajectory-controller-system.so.8
+	libgz-sim8-joint-state-publisher-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-joint-state-publisher-system.so.8
+	libgz-sim8-joint-position-controller-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-joint-position-controller-system.so.8
+	libgz-sim8-joint-controller-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-joint-controller-system.so.8
+	libgz-sim8-imu-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-imu-system.so.8
+	libgz-sim8-hydrodynamics-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-hydrodynamics-system.so.8
+	libgz-sim8-gz.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-gz.so.8
+	libgz-sim8-gui.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-gui.so.8
+	libgz-sim8-forcetorque-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-forcetorque-system.so.8
+	libgz-sim8-follow-actor-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-follow-actor-system.so.8
+	libgz-sim8-environmental-sensor-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-environmental-sensor-system.so.8
+	libgz-sim8-environment-preload-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-environment-preload-system.so.8
+	libgz-sim8-entity-semantics-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-entity-semantics-system.so.8
+	libgz-sim8-elevator-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-elevator-system.so.8
+	libgz-sim8-dvl-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-dvl-system.so.8
+	libgz-sim8-diff-drive-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-diff-drive-system.so.8
+	libgz-sim8-detachable-joint-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-detachable-joint-system.so.8
+	libgz-sim8-contact-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-contact-system.so.8
+	libgz-sim8-comms-endpoint-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-comms-endpoint-system.so.8
+	libgz-sim8-collada-world-exporter-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-collada-world-exporter-system.so.8
+	libgz-sim8-camera-video-recorder-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-camera-video-recorder-system.so.8
+	libgz-sim8-buoyancy-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-buoyancy-system.so.8
+	libgz-sim8-buoyancy-engine-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-buoyancy-engine-system.so.8
+	libgz-sim8-breadcrumbs-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-breadcrumbs-system.so.8
+	libgz-sim8-apply-link-wrench-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-apply-link-wrench-system.so.8
+	libgz-sim8-apply-joint-force-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-apply-joint-force-system.so.8
+	libgz-sim8-altimeter-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-altimeter-system.so.8
+	libgz-sim8-air-speed-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-air-speed-system.so.8
+	libgz-sim8-air-pressure-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-air-pressure-system.so.8
+	libgz-sim8-advanced-lift-drag-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-advanced-lift-drag-system.so.8
+	libgz-sim8-acoustic-comms-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-acoustic-comms-system.so.8
+	libgz-sim8-ackermann-steering-system.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sim8-ackermann-steering-system.so.8
+	libgz-sensors8.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8.so.8
+	libgz-sensors8-wide_angle_camera.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-wide_angle_camera.so.8
+	libgz-sensors8-thermal_camera.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-thermal_camera.so.8
+	libgz-sensors8-segmentation_camera.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-segmentation_camera.so.8
+	libgz-sensors8-rgbd_camera.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-rgbd_camera.so.8
+	libgz-sensors8-rendering.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-rendering.so.8
+	libgz-sensors8-navsat.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-navsat.so.8
+	libgz-sensors8-magnetometer.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-magnetometer.so.8
+	libgz-sensors8-logical_camera.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-logical_camera.so.8
+	libgz-sensors8-lidar.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-lidar.so.8
+	libgz-sensors8-imu.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-imu.so.8
+	libgz-sensors8-gpu_lidar.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-gpu_lidar.so.8
+	libgz-sensors8-force_torque.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-force_torque.so.8
+	libgz-sensors8-dvl.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-dvl.so.8
+	libgz-sensors8-depth_camera.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-depth_camera.so.8
+	libgz-sensors8-camera.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-camera.so.8
+	libgz-sensors8-boundingbox_camera.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-boundingbox_camera.so.8
+	libgz-sensors8-altimeter.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-altimeter.so.8
+	libgz-sensors8-air_speed.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-air_speed.so.8
+	libgz-sensors8-air_pressure.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-sensors8-air_pressure.so.8
+	libgz-rendering8.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-rendering8.so.8
+	libgz-rendering8-ogre2.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8
+	libgz-plugin2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-plugin2.so.2
+	libgz-plugin2-loader.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-plugin2-loader.so.2
+	libgz-physics7.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-physics7.so.7
+	libgz-physics7-dartsim-plugin.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-physics7-dartsim-plugin.so.7
+	libgz-msgs10.so.10 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-msgs10.so.10
+	libgz-math7.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-math7.so.7
+	libgz-gui8.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-gui8.so.8
+	libgz-fuel_tools9.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-fuel_tools9.so.9
+	libgz-common5.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-common5.so.5
+	libgz-common5-io.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-common5-io.so.5
+	libgz-common5-graphics.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-common5-graphics.so.5
+	libgz-common5-geospatial.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-common5-geospatial.so.5
+	libgz-common5-events.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-common5-events.so.5
+	libgz-common5-av.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgz-common5-av.so.5
+	libgudev-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgudev-1.0.so.0
+	libgts-0.7.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgts-0.7.so.5
+	libgthread-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgthread-2.0.so.0
+	libgssapi_krb5.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgssapi_krb5.so.2
+	libgsm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgsm.so.1
+	libgraphite2.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgraphite2.so.3
+	libgpg-error.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgpg-error.so.0
+	libgomp.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgomp.so.1
+	libgobject-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgobject-2.0.so.0
+	libgnutls.so.30 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnutls.so.30
+	libgmp.so.10 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgmp.so.10
+	libgmodule-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgmodule-2.0.so.0
+	libgme.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgme.so.0
+	libglib-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libglib-2.0.so.0
+	libglapi.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libglapi.so.0
+	libgio-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgio-2.0.so.0
+	libgif.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgif.so.7
+	libgfortran.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgfortran.so.5
+	libgeotiff.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgeotiff.so.5
+	libgeos_c.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgeos_c.so.1
+	libgeos.so.3.10.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgeos.so.3.10.2
+	libgdk_pixbuf-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+	libgdbm_compat.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdbm_compat.so.4
+	libgdbm.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdbm.so.6
+	libgdal.so.30 (libc6,x86-64) => /lib/libgdal.so.30
+	libgcrypt.so.20 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgcrypt.so.20
+	libgcc_s.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgcc_s.so.1
+	libgbm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgbm.so.1
+	libfyut.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfyut.so.0
+	libfygm.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfygm.so.0
+	libfyba.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfyba.so.0
+	libfribidi.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfribidi.so.0
+	libfreexl.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreexl.so.1
+	libfreetype.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreetype.so.6
+	libfreeimage.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreeimage.so.3
+	libfreebl3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreebl3.so
+	libfreeblpriv3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreeblpriv3.so
+	libformw.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libformw.so.6
+	libform.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libform.so.6
+	libfontconfig.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfontconfig.so.1
+	libflite_usenglish.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_usenglish.so.1
+	libflite_cmulex.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmulex.so.1
+	libflite_cmu_us_slt.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_us_slt.so.1
+	libflite_cmu_us_rms.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_us_rms.so.1
+	libflite_cmu_us_kal16.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_us_kal16.so.1
+	libflite_cmu_us_kal.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_us_kal.so.1
+	libflite_cmu_us_awb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_us_awb.so.1
+	libflite_cmu_time_awb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_time_awb.so.1
+	libflite_cmu_indic_lex.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_indic_lex.so.1
+	libflite_cmu_indic_lang.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_indic_lang.so.1
+	libflite_cmu_grapheme_lex.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_grapheme_lex.so.1
+	libflite_cmu_grapheme_lang.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite_cmu_grapheme_lang.so.1
+	libflite.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflite.so.1
+	libffi.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libffi.so.8
+	libfcl.so.0.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfcl.so.0.7
+	libe2p.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libe2p.so.2
+	libext2fs.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libext2fs.so.2
+	libexpatw.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libexpatw.so.1
+	libexpat.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libexpat.so.1
+	libevdev.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libevdev.so.2
+	libelf.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libelf.so.1
+	libedit.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libedit.so.2
+	libdrm_radeon.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm_radeon.so.1
+	libdrm_nouveau.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm_nouveau.so.2
+	libdrm_intel.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm_intel.so.1
+	libdrm_amdgpu.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm_amdgpu.so.1
+	libdrm.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm.so.2
+	libdraco.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdraco.so.4
+	libdouble-conversion.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdouble-conversion.so.3
+	libdl.so.2 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libdl.so.2
+	libdfalt.so.0 (libc6,x86-64) => /lib/libdfalt.so.0
+	libde265.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libde265.so.0
+	libdeflate.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdeflate.so.0
+	libdecor-0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdecor-0.so.0
+	libdebconfclient.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdebconfclient.so.0
+	libdc1394.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdc1394.so.25
+	libdbus-1.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdbus-1.so.3
+	libdb-5.3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libdb-5.3.so
+	libdav1d.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdav1d.so.5
+	libdatrie.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdatrie.so.1
+	libdart.so.6.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdart.so.6.13
+	libdart-external-odelcpsolver.so.6.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdart-external-odelcpsolver.so.6.13
+	libdart-collision-ode.so.6.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdart-collision-ode.so.6.13
+	libdart-collision-bullet.so.6.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdart-collision-bullet.so.6.13
+	libcurl.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcurl.so.4
+	libcurl-gnutls.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcurl-gnutls.so.4
+	libcrypto.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcrypto.so.3
+	libcrypt.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcrypt.so.1
+	libcom_err.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcom_err.so.2
+	libcodec2.so.1.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcodec2.so.1.0
+	libchromaprint.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libchromaprint.so.1
+	libcharls.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcharls.so.2
+	libcfitsio.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcfitsio.so.9
+	libcdio_paranoia.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcdio_paranoia.so.2
+	libcdio_cdda.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcdio_cdda.so.2
+	libcdio.so.19 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcdio.so.19
+	libccd.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libccd.so.2
+	libcap.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcap.so.2
+	libcap-ng.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcap-ng.so.0
+	libcairo.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcairo.so.2
+	libcairo-gobject.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcairo-gobject.so.2
+	libcaca.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcaca.so.0
+	libcaca++.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcaca++.so.0
+	libc_malloc_debug.so.0 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libc_malloc_debug.so.0
+	libc.so.6 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libc.so.6
+	libbz2.so.1.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbz2.so.1.0
+	libbs2b.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbs2b.so.0
+	libbsd.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbsd.so.0
+	libbrotlienc.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbrotlienc.so.1
+	libbrotlidec.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbrotlidec.so.1
+	libbrotlicommon.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbrotlicommon.so.1
+	libbluray.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbluray.so.2
+	libblosc.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libblosc.so.1
+	libblkid.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libblkid.so.1
+	libblas.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libblas.so.3
+	libavutil.so.56 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavutil.so.56
+	libavformat.so.58 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavformat.so.58
+	libavfilter.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavfilter.so.7
+	libavdevice.so.58 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavdevice.so.58
+	libavc1394.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavc1394.so.0
+	libavcodec.so.58 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavcodec.so.58
+	libaudit.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libaudit.so.1
+	libattr.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libattr.so.1
+	libasyncns.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libasyncns.so.0
+	libassuan.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libassuan.so.0
+	libassimp.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libassimp.so.5
+	libass.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libass.so.9
+	libasound.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libasound.so.2
+	libarpack.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libarpack.so.2
+	libarmadillo.so.10 (libc6,x86-64) => /lib/libarmadillo.so.10
+	libapt-private.so.0.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libapt-private.so.0.0
+	libapt-pkg.so.6.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libapt-pkg.so.6.0
+	libapparmor.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libapparmor.so.1
+	libaom.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libaom.so.3
+	libanl.so.1 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libanl.so.1
+	libaec.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libaec.so.0
+	libacl.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libacl.so.1
+	libX11.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libX11.so.6
+	libX11-xcb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libX11-xcb.so.1
+	libXxf86vm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXxf86vm.so.1
+	libXv.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXv.so.1
+	libXt.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXt.so.6
+	libXss.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXss.so.1
+	libXrender.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXrender.so.1
+	libXrandr.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXrandr.so.2
+	libXpm.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXpm.so.4
+	libXmu.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXmu.so.6
+	libXinerama.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXinerama.so.1
+	libXi.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXi.so.6
+	libXfixes.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXfixes.so.3
+	libXext.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXext.so.6
+	libXdmcp.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXdmcp.so.6
+	libXcursor.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXcursor.so.1
+	libXaw.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXaw.so.7
+	libXau.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXau.so.6
+	libSM.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libSM.so.6
+	libSDL2-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libSDL2-2.0.so.0
+	libQt5XcbQpa.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5XcbQpa.so.5
+	libQt5Widgets.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5Widgets.so.5
+	libQt5Quick.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5Quick.so.5
+	libQt5QmlModels.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5QmlModels.so.5
+	libQt5Qml.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5Qml.so.5
+	libQt5Network.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5Network.so.5
+	libQt5Gui.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5Gui.so.5
+	libQt5EglFsKmsSupport.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5EglFsKmsSupport.so.5
+	libQt5EglFSDeviceIntegration.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5EglFSDeviceIntegration.so.5
+	libQt5DBus.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libQt5DBus.so.5
+	libQt5Core.so.5 (libc6,x86-64, OS ABI: Linux 3.17.0) => /lib/x86_64-linux-gnu/libQt5Core.so.5
+	libOpenGL.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libOpenGL.so.0
+	libOpenCL.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libOpenCL.so.1
+	libLinearMath.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libLinearMath.so.3.05
+	libLinearMath-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libLinearMath-float64.so.3.05
+	libLLVM-15.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libLLVM-15.so.1
+	libLLVM-15.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libLLVM-15.so
+	libImath-2_5.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libImath-2_5.so.25
+	libIlmThread-2_5.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libIlmThread-2_5.so.25
+	libIlmImfUtil-2_5.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libIlmImfUtil-2_5.so.25
+	libIlmImf-2_5.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libIlmImf-2_5.so.25
+	libIexMath-2_5.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libIexMath-2_5.so.25
+	libIex-2_5.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libIex-2_5.so.25
+	libICE.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libICE.so.6
+	libHalf-2_5.so.25 (libc6,x86-64) => /lib/x86_64-linux-gnu/libHalf-2_5.so.25
+	libGLdispatch.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLdispatch.so.0
+	libGLX_mesa.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLX_mesa.so.0
+	libGLX.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLX.so.0
+	libGLESv2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLESv2.so.2
+	libGL.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGL.so.1
+	libFLAC.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libFLAC.so.8
+	libEGL_mesa.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libEGL_mesa.so.0
+	libEGL.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libEGL.so.1
+	libBullet3OpenCL_clew.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3OpenCL_clew.so.3.05
+	libBullet3OpenCL_clew-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3OpenCL_clew-float64.so.3.05
+	libBullet3Geometry.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3Geometry.so.3.05
+	libBullet3Geometry-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3Geometry-float64.so.3.05
+	libBullet3Dynamics.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3Dynamics.so.3.05
+	libBullet3Dynamics-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3Dynamics-float64.so.3.05
+	libBullet3Common.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3Common.so.3.05
+	libBullet3Common-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3Common-float64.so.3.05
+	libBullet3Collision.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3Collision.so.3.05
+	libBullet3Collision-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBullet3Collision-float64.so.3.05
+	libBulletSoftBody.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBulletSoftBody.so.3.05
+	libBulletSoftBody-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBulletSoftBody-float64.so.3.05
+	libBulletDynamics.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBulletDynamics.so.3.05
+	libBulletDynamics-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBulletDynamics-float64.so.3.05
+	libBulletCollision.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBulletCollision.so.3.05
+	libBulletCollision-float64.so.3.05 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBulletCollision-float64.so.3.05
+	libBrokenLocale.so.1 (libc6,x86-64, OS ABI: Linux 3.2.0) => /lib/x86_64-linux-gnu/libBrokenLocale.so.1
+	ld-linux-x86-64.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+Cache generated by: ldconfig (Ubuntu GLIBC 2.35-0ubuntu3.13) stable release version 2.35
+===FILES===
+/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8.2.3
+/usr/lib/x86_64-linux-gnu/libgz-rendering8-ogre2.so.8.2.3

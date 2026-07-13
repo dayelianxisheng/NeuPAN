@@ -1,0 +1,15 @@
+{
+  "container_name": "sgcf_gz_harmonic",
+  "container_status_during_audit": "running",
+  "image_tag": "sgcf-gazebo-harmonic:local",
+  "image_id": "sha256:add3df817107a929749e1ed78b3a6bd674e47850527c7f790694915d078f81db",
+  "project_mount": "/home/qcqc/resource/code/eai/NeuPAN:/workspace",
+  "working_directory": "/workspace",
+  "GZ_SIM_RESOURCE_PATH": "/workspace/sgcf_nrmp_project/gazebo/models:/workspace/sgcf_nrmp_project/gazebo",
+  "GZ_SIM_SYSTEM_PLUGIN_PATH": null,
+  "GZ_SIM_PHYSICS_ENGINE_PATH": "/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins",
+  "gui_started": false,
+  "planner_started": false,
+  "ros_bridge_started": false,
+  "stage10_model_loaded": false
+}

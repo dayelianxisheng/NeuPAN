@@ -1,0 +1,8 @@
+
+Requesting state for world [human_path_side]...
+
+Model: [4]
+  - Name: ground_plane
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [0.000000 0.000000 0.000000]
+    [0.000000 -0.000000 0.000000]

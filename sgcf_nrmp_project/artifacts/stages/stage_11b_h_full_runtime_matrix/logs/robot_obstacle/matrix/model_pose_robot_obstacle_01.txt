@@ -1,0 +1,8 @@
+
+Requesting state for world [robot_obstacle]...
+
+Model: [28]
+  - Name: robot_obstacle_01
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [1.500000 0.000000 0.150000]
+    [0.000000 -0.000000 0.000000]

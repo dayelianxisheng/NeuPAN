@@ -1,0 +1,10 @@
+Stage 11B-B modifications:
+docker/gazebo_harmonic/Dockerfile
+docker/gazebo_harmonic/container.sh
+docker/gazebo_harmonic/README.md
+docker/gazebo_harmonic/install_validation.md
+sgcf_nrmp_project/artifacts/stages/stage_11b_b_ogre2_runtime_repair/
+
+Frozen Gazebo assets modified by Stage 11B-B: none
+Frozen core algorithms modified by Stage 11B-B: none
+Original image overwritten: no

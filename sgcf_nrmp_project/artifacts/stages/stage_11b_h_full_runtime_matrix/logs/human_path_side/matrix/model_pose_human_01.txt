@@ -1,0 +1,8 @@
+
+Requesting state for world [human_path_side]...
+
+Model: [28]
+  - Name: human_01
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [1.500000 0.350000 0.850000]
+    [0.000000 -0.000000 0.000000]

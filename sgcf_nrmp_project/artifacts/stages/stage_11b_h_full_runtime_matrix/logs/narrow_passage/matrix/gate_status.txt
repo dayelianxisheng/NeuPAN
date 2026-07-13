@@ -1,0 +1,6 @@
+scene=narrow_passage
+run_id=matrix
+mode=full
+ready=1
+server_pid=847
+startup_ms=4207

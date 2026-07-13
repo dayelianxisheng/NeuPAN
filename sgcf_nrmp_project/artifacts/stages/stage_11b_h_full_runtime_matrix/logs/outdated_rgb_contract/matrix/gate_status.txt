@@ -1,0 +1,6 @@
+scene=outdated_rgb_contract
+run_id=matrix
+mode=full
+ready=1
+server_pid=4341
+startup_ms=4208

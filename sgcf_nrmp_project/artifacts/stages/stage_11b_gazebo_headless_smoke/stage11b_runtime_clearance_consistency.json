@@ -1,0 +1,6 @@
+{
+  "status": "NOT_EXECUTED_AFTER_IMMEDIATE_STOP",
+  "scope": "runtime LiDAR exact-clearance comparison",
+  "stop_reason": "BLOCKED_GAZEBO_PLUGIN",
+  "fabricated_runtime_data": false
+}

@@ -1,0 +1,24 @@
+ new Debian package, version 2.0.
+ size 1183388 bytes: control archive=9864 bytes.
+    1103 bytes,    20 lines      control              
+   40090 bytes,   347 lines      md5sums              
+ Package: libgz-rendering8-ogre2-dev
+ Source: gz-rendering8
+ Version: 8.2.3-1~jammy
+ Architecture: amd64
+ Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
+ Installed-Size: 4463
+ Depends: libgz-cmake3-dev, libgz-common5-events-dev, libgz-common5-geospatial-dev, libgz-common5-graphics-dev, libgz-math7-dev, libgz-math7-eigen3-dev, libogre-next-2.3-dev, libvulkan-dev, libgz-plugin2-dev, libgz-rendering8-core-dev (= 8.2.3-1~jammy), libgz-rendering8-ogre2 (= 8.2.3-1~jammy)
+ Section: libdevel
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://gazebosim.org/
+ Description: Gazebo Rendering classes and functions for robot apps - Development files
+  Gazebo Rendering is a C++ library designed to provide an abstraction for
+  different rendering engines. It offers unified APIs for creating 3D graphics
+  applications.  Gazebo Rendering is a component in the Gazebo framework, a
+  set of libraries designed to rapidly develop robot applications.
+  Gazebo Rendering is a component in the Gazebo framework, a set of libraries
+  designed to rapidly develop robot applications.
+  .
+  Ogre2 component development files

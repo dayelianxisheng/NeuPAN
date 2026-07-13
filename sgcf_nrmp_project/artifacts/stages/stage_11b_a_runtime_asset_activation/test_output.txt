@@ -1,0 +1,10 @@
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+compileall:
+PASS
+git diff --check:
+PASS
+runtime gate: BLOCKED_SENSOR_SYSTEM_ACTIVATION (OGRE2 resolution failure; no retry)

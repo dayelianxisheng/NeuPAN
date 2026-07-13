@@ -1,0 +1,35 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+compileall:
+PASS
+git diff --check:
+PASS
+Acceptance matrix:
+01 ogre2 unchanged: PASS
+02 gz-rendering-ogre2 unchanged: PASS
+03 actual directory auto-discovery: FAIL exact logical file absent
+04 GZ_RENDERING_PLUGIN_PATH identified from official source: PASS
+05 GZ_SIM_RENDER_ENGINE_PATH not used as Stage11B-C basis: PASS
+06 required plugin file exists: FAIL
+07 required symlink valid: NOT_APPLICABLE file absent
+08 ldd required logical plugin: NOT_EXECUTED file absent
+09 versioned plugin ABI = 8: PASS inherited read-only evidence
+10 new packages installed: PASS none
+11 host libraries copied: PASS none
+12 ABI bypass symlink created: PASS none
+13 Stage11B-B launch parameters preserved: NOT_EXECUTED no launch
+14 runtime re-gate count = 0: PASS truthful prebuild stop
+15 other 11 worlds not run: PASS
+16 Gazebo assets unchanged: PASS
+17 footprint unchanged: PASS 0.8 x 0.5 m
+18 Planner not started: PASS
+19 Stage10 not loaded: PASS
+20 ROS bridge not started: PASS
+21 residual Gazebo processes = 0: PASS
+22 JSON parse: PASS
+23 compileall: PASS
+24 git diff --check: PASS
+25 protected directories: PASS no Stage11B-C changes

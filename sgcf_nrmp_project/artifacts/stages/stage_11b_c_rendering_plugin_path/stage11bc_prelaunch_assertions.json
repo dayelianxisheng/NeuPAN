@@ -1,0 +1,15 @@
+{
+  "GZ_RENDERING_PLUGIN_PATH_source_evidence_confirmed": true,
+  "engine_identifier_unchanged_ogre2": true,
+  "logical_name_unchanged_gz_rendering_ogre2": true,
+  "actual_engine_plugin_directory_uniquely_determined": false,
+  "required_logical_plugin_file_exists": false,
+  "required_logical_plugin_file_readable": false,
+  "required_logical_plugin_symlink_valid": false,
+  "ldd_required_logical_plugin_no_not_found": null,
+  "abi_major_expected": 8,
+  "abi_major_versioned_file": 8,
+  "can_build_reproducible_image_under_rules": false,
+  "passed": false,
+  "stop_rule": "actual plugin directory containing libgz-rendering-ogre2.so cannot be uniquely determined because the file does not exist"
+}

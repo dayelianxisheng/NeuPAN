@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED_NO_RUNTIME_TOPIC",
+  "expected_sdf_topic": "/camera/image_raw",
+  "auto_discovered": false,
+  "messages_collected": 0,
+  "decision": "BLOCKED_GAZEBO_PLUGIN"
+}

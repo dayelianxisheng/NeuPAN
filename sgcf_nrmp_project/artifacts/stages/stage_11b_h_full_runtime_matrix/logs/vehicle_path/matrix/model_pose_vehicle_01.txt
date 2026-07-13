@@ -1,0 +1,8 @@
+
+Requesting state for world [vehicle_path]...
+
+Model: [28]
+  - Name: vehicle_01
+  - Pose [ XYZ (m) ] [ RPY (rad) ]:
+    [1.500000 0.000000 0.200000]
+    [0.000000 -0.000000 0.000000]

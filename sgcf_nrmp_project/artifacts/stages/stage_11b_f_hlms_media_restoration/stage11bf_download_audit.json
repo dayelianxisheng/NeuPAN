@@ -1,0 +1,17 @@
+{
+  "content_length": 1183388,
+  "content_type": "application/vnd.debian.binary-package",
+  "download_file_mtime_utc": "2026-07-13T17:31:02.860219+00:00",
+  "downloaded_size": 1183388,
+  "dpkg_deb_recognized": true,
+  "etag": "6477fd822f1caff5519511ef3e6ee571",
+  "filename": "libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb",
+  "final_url": "https://osrf-distributions.s3.us-east-1.amazonaws.com/gz-rendering/releases/libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb",
+  "http_status": 200,
+  "last_modified": "Fri, 14 Nov 2025 21:35:28 GMT",
+  "md5": "6477fd822f1caff5519511ef3e6ee571",
+  "passed": true,
+  "redirect_count": 0,
+  "requested_url": "https://osrf-distributions.s3.us-east-1.amazonaws.com/gz-rendering/releases/libgz-rendering8-ogre2-dev_8.2.3-1~jammy_amd64.deb",
+  "sha256": "f7963e5c70dc933d5c3e402de6491a28b22e7229ce918bec69f0fc7a69f1df6b"
+}

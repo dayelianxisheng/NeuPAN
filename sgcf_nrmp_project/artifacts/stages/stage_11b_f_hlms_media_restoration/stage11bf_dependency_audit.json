@@ -1,0 +1,18 @@
+{
+  "apt_simulation_summary": {
+    "newly_installed": 158,
+    "not_upgraded": 11,
+    "removed": 0,
+    "upgraded": 3
+  },
+  "downgraded": 0,
+  "gz_rendering_runtime_packages_upgraded": 0,
+  "gz_sim_packages_upgraded": 0,
+  "installed_package": "libgz-rendering8-ogre2-dev=8.2.3-1~jammy",
+  "ogre_runtime_replaced": 0,
+  "runtime_versions_preserved": {
+    "libgz-rendering8": "8.2.3-1~jammy",
+    "libgz-rendering8-ogre2": "8.2.3-1~jammy"
+  },
+  "status": "PASSED"
+}

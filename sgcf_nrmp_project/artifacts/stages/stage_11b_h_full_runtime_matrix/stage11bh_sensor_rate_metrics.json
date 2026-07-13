@@ -1,0 +1,189 @@
+{
+  "human_path_center": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.015814443858732,
+      "relative_error": 0.0015814443858731763
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 50.00000000000013,
+      "relative_error": 2.5579538487363606e-15
+    }
+  },
+  "human_path_side": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.520487264673326,
+      "relative_error": 0.05204872646733261
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 49.99999999999966,
+      "relative_error": 6.8212102632969615e-15
+    }
+  },
+  "initial_collision": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.428100987925362,
+      "relative_error": 0.042810098792536166
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 49.99999999999966,
+      "relative_error": 6.8212102632969615e-15
+    }
+  },
+  "narrow_passage": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.209564750134332,
+      "relative_error": 0.020956475013433184
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 50.00000000000013,
+      "relative_error": 2.5579538487363606e-15
+    }
+  },
+  "outdated_rgb_contract": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.49144119271121,
+      "relative_error": 0.049144119271121056
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 49.99999999999966,
+      "relative_error": 6.8212102632969615e-15
+    }
+  },
+  "rgb_dropout_contract": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.4625550660793,
+      "relative_error": 0.04625550660793003
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 49.99999999999966,
+      "relative_error": 6.8212102632969615e-15
+    }
+  },
+  "robot_obstacle": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.410958904109593,
+      "relative_error": 0.04109589041095933
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 49.99999999999966,
+      "relative_error": 6.8212102632969615e-15
+    }
+  },
+  "semantic_infeasible": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.010537407797683,
+      "relative_error": 0.0010537407797682973
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 50.00000000000013,
+      "relative_error": 2.5579538487363606e-15
+    }
+  },
+  "single_static_obstacle": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 9.999999999999947,
+      "relative_error": 5.329070518200751e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.058231868713609,
+      "relative_error": 0.005823186871360875
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 50.00000000000013,
+      "relative_error": 2.5579538487363606e-15
+    }
+  },
+  "static_corridor": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.286951813752042,
+      "relative_error": 0.028695181375204194
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 50.00000000000013,
+      "relative_error": 2.5579538487363606e-15
+    }
+  },
+  "vehicle_path": {
+    "camera": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.000000000000036,
+      "relative_error": 3.552713678800501e-15
+    },
+    "lidar": {
+      "contract_hz": 10.0,
+      "effective_hz": 10.348583877995651,
+      "relative_error": 0.03485838779956509
+    },
+    "odometry": {
+      "contract_hz": 50.0,
+      "effective_hz": 49.99999999999966,
+      "relative_error": 6.8212102632969615e-15
+    }
+  }
+}

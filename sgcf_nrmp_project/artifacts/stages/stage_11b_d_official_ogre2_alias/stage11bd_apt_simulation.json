@@ -1,0 +1,9 @@
+{
+  "status": "NOT_EXECUTED_DEV_CANDIDATE_MISSING",
+  "command": null,
+  "packages_installed": [],
+  "packages_removed": 0,
+  "packages_upgraded": 0,
+  "packages_downgraded": 0,
+  "transaction_safe": null
+}

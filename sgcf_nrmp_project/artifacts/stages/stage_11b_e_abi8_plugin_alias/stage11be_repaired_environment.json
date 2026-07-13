@@ -1,0 +1,15 @@
+{
+  "image": "sgcf-gazebo-harmonic:abi8-plugin-alias",
+  "container": "sgcf_gz_harmonic_abi8_alias",
+  "GZ_RENDERING_PLUGIN_PATH": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+  "GZ_SIM_RENDER_ENGINE_SERVER": "ogre2",
+  "GZ_SIM_RENDER_ENGINE_PATH": null,
+  "QT_QPA_PLATFORM": "offscreen",
+  "forbidden_new_variables": {
+    "LIBGL_ALWAYS_SOFTWARE": null,
+    "DISPLAY": null,
+    "EGL_DEVICE_ID": null
+  },
+  "engine_identifier": "ogre2",
+  "logical_engine_library": "gz-rendering-ogre2"
+}

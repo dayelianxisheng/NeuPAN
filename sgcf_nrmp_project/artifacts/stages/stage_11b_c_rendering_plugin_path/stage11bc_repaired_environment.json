@@ -1,0 +1,7 @@
+{
+  "status": "NOT_CREATED_PREBUILD_ASSERTION_FAILED",
+  "requested_image": "sgcf-gazebo-harmonic:rendering-path-fix",
+  "GZ_RENDERING_PLUGIN_PATH": null,
+  "GZ_SIM_RENDER_ENGINE_PATH_removed": false,
+  "packages_added": []
+}

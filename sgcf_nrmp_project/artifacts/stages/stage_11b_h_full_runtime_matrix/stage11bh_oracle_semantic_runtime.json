@@ -1,0 +1,49 @@
+{
+  "exact_geometry_modified": false,
+  "lidar_points_modified": false,
+  "planner_access": false,
+  "pointpainting_executed": false,
+  "records": [
+    {
+      "class_id": 2,
+      "class_name": "HUMAN",
+      "entity": "human_01",
+      "runtime_entity_present": true,
+      "scene_id": "human_path_center"
+    },
+    {
+      "class_id": 2,
+      "class_name": "HUMAN",
+      "entity": "human_01",
+      "runtime_entity_present": true,
+      "scene_id": "human_path_side"
+    },
+    {
+      "class_id": 3,
+      "class_name": "VEHICLE",
+      "entity": "vehicle_01",
+      "runtime_entity_present": true,
+      "scene_id": "vehicle_path"
+    },
+    {
+      "class_id": 4,
+      "class_name": "ROBOT",
+      "entity": "robot_obstacle_01",
+      "runtime_entity_present": true,
+      "scene_id": "robot_obstacle"
+    },
+    {
+      "class_id": 1,
+      "class_name": "STATIC_OBSTACLE",
+      "entity": "static_01",
+      "runtime_entity_present": true,
+      "scene_id": "single_static_obstacle"
+    }
+  ],
+  "semantic_margin_executed": false,
+  "status": "PASSED_BOUNDARY_ONLY",
+  "unknown_entity_mapping": {
+    "class_id": 0,
+    "unmapped_entity": "UNKNOWN"
+  }
+}

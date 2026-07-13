@@ -1,0 +1,11 @@
+Stage 11B-E modifications:
+docker/gazebo_harmonic/Dockerfile
+docker/gazebo_harmonic/container.sh
+docker/gazebo_harmonic/README.md
+docker/gazebo_harmonic/install_validation.md
+sgcf_nrmp_project/artifacts/stages/stage_11b_e_abi8_plugin_alias/
+
+Gazebo assets modified by Stage 11B-E: none
+Protected algorithms modified by Stage 11B-E: none
+Packages installed/upgraded/removed by Stage 11B-E: none
+Worlds run: empty_world only, exactly once

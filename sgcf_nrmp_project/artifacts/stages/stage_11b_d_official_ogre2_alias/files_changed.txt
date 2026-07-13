@@ -1,0 +1,9 @@
+Stage 11B-D changes:
+sgcf_nrmp_project/artifacts/stages/stage_11b_d_official_ogre2_alias/
+
+Docker files modified by Stage 11B-D: none
+Gazebo assets modified by Stage 11B-D: none
+Protected algorithm files modified by Stage 11B-D: none
+Packages installed by Stage 11B-D: none
+Images built by Stage 11B-D: none
+Worlds run by Stage 11B-D: none

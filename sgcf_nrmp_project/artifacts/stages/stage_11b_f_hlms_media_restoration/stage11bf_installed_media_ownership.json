@@ -1,0 +1,12 @@
+{
+  "alias": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so",
+  "host_or_source_media_copied": false,
+  "ldd_not_found_count": 0,
+  "logical_alias_owned_by_package": true,
+  "package": "libgz-rendering8-ogre2-dev:amd64",
+  "package_version": "8.2.3-1~jammy",
+  "resolved_target": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8.2.3",
+  "status": "PASSED",
+  "target_sha256": "c82cba3f167941ee6b0439d545a9181305b6ba57652e82ae41477bb0e34b24ef",
+  "unlit_shader_owned_by_package": true
+}

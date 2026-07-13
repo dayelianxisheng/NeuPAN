@@ -1,0 +1,23 @@
+which gz
+/opt/ros/jazzy/opt/gz_tools_vendor/bin/gz
+
+gz --commands
+sdf
+
+gz sdf --versions
+14.9.0
+
+gz --versions
+The base gz help listed only help and sdf.
+
+gz sim --versions
+The base gz help listed only help and sdf.
+
+gz topic --help
+The base gz help listed only help and sdf.
+
+gz service --help
+The base gz help listed only help and sdf.
+
+gz model --help
+The base gz help listed only help and sdf.

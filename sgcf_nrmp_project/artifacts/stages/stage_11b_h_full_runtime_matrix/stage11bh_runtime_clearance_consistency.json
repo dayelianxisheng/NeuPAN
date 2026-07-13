@@ -1,0 +1,111 @@
+{
+  "collision_classification_agreement": 0.2,
+  "decision": "BLOCKED_GEOMETRY_RUNTIME_CONSISTENCY",
+  "records": [
+    {
+      "absolute_error_m": 0.7500000000000001,
+      "adapter_all_points_finite": true,
+      "adapter_point_count": 181,
+      "collision_classification_agreement": false,
+      "nearest_index": 43,
+      "nearest_point_base_xy": [
+        -0.013986162350019518,
+        -0.2000114399798195
+      ],
+      "nearest_range_m": 0.20049984753131866,
+      "point_order_preserved": true,
+      "runtime_clearance_m": 0.0,
+      "runtime_collision": true,
+      "scene_id": "single_static_obstacle",
+      "static_expected_clearance_m": 0.7500000000000001,
+      "static_expected_collision": false,
+      "threshold_passed": false,
+      "valid_point_count": 23
+    },
+    {
+      "absolute_error_m": 0.37499999999999994,
+      "adapter_all_points_finite": true,
+      "adapter_point_count": 181,
+      "collision_classification_agreement": false,
+      "nearest_index": 43,
+      "nearest_point_base_xy": [
+        -0.013986162350019518,
+        -0.2000114399798195
+      ],
+      "nearest_range_m": 0.20049984753131866,
+      "point_order_preserved": true,
+      "runtime_clearance_m": 0.0,
+      "runtime_collision": true,
+      "scene_id": "static_corridor",
+      "static_expected_clearance_m": 0.37499999999999994,
+      "static_expected_collision": false,
+      "threshold_passed": false,
+      "valid_point_count": 44
+    },
+    {
+      "absolute_error_m": 0.25999999999999995,
+      "adapter_all_points_finite": true,
+      "adapter_point_count": 181,
+      "collision_classification_agreement": false,
+      "nearest_index": 43,
+      "nearest_point_base_xy": [
+        -0.013986162350019518,
+        -0.2000114399798195
+      ],
+      "nearest_range_m": 0.20049984753131866,
+      "point_order_preserved": true,
+      "runtime_clearance_m": 0.0,
+      "runtime_collision": true,
+      "scene_id": "narrow_passage",
+      "static_expected_clearance_m": 0.25999999999999995,
+      "static_expected_collision": false,
+      "threshold_passed": false,
+      "valid_point_count": 44
+    },
+    {
+      "absolute_error_m": 0.7545361017187261,
+      "adapter_all_points_finite": true,
+      "adapter_point_count": 181,
+      "collision_classification_agreement": false,
+      "nearest_index": 43,
+      "nearest_point_base_xy": [
+        -0.013986162350019518,
+        -0.2000114399798195
+      ],
+      "nearest_range_m": 0.20049984753131866,
+      "point_order_preserved": true,
+      "runtime_clearance_m": 0.0,
+      "runtime_collision": true,
+      "scene_id": "human_path_side",
+      "static_expected_clearance_m": 0.7545361017187261,
+      "static_expected_collision": false,
+      "threshold_passed": false,
+      "valid_point_count": 23
+    },
+    {
+      "absolute_error_m": 0.0,
+      "adapter_all_points_finite": true,
+      "adapter_point_count": 181,
+      "collision_classification_agreement": true,
+      "nearest_index": 43,
+      "nearest_point_base_xy": [
+        -0.013986162350019518,
+        -0.2000114399798195
+      ],
+      "nearest_range_m": 0.20049984753131866,
+      "point_order_preserved": true,
+      "runtime_clearance_m": 0.0,
+      "runtime_collision": true,
+      "scene_id": "initial_collision",
+      "static_expected_clearance_m": 0.0,
+      "static_expected_collision": true,
+      "threshold_passed": true,
+      "valid_point_count": 65
+    }
+  ],
+  "root_cause": "Runtime GPU LiDAR observes the robot's own geometry at approximately 0.20 m; those points lie inside the frozen planner footprint and force zero clearance in otherwise safe scenes.",
+  "same_self_return_signature_across_scenes": true,
+  "status": "FAILED",
+  "threshold_m": 0.02,
+  "world_geometry_used_for_runtime_distance": false
+}

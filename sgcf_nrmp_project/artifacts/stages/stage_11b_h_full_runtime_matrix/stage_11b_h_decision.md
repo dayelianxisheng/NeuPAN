@@ -1,0 +1,5 @@
+# Stage 11B-H Decision
+
+```text
+BLOCKED_GEOMETRY_RUNTIME_CONSISTENCY
+```

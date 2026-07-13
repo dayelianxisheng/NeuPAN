@@ -1,0 +1,10 @@
+Environment CLI checks: PASS
+Gazebo Sim version: 8.14.0
+SDFormat version: 14.9.0
+empty_world SDF/server/physics start: PASS
+runtime LiDAR topic: FAIL (absent)
+runtime camera topic: FAIL (absent)
+runtime diff-drive/odometry topics: FAIL (absent)
+process cleanup: PASS
+DECISION: BLOCKED_GAZEBO_PLUGIN
+unittest/compileall/full matrix: NOT RUN after immediate stop
