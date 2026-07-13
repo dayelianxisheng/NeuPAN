@@ -1,0 +1,23 @@
+schema_version: 1
+purpose: VALIDATION_ONLY_DIAGNOSTIC_CONTINUATION
+source_checkpoint: best_rgb_semantic_model.pt
+source_epoch: 100
+start_epoch: 101
+maximum_final_epoch: 150
+maximum_additional_epochs: 50
+seed: 10
+model: TinySemanticSegmentation
+model_parameter_count: 118341
+input_height: 120
+input_width: 160
+loss: current_sqrt_weighted_cross_entropy
+class_weights: [0.3282637900393733, 0.8115540256535101, 1.5283809715797676, 1.238860853978437, 1.0929403587489122]
+optimizer: AdamW
+learning_rate: 0.002
+batch_size: 8
+shuffle: false
+augmentation: false
+weight_decay: 0.0
+stop_patience_epochs: 20
+improvement_min_delta: 0.0001
+test_access: prohibited

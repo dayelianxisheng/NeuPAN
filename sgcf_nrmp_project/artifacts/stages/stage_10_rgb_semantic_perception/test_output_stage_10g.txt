@@ -1,0 +1,49 @@
+Stage 10G lifecycle verification
+Date: 2026-07-13
+Python: 3.10
+Torch: 2.8.0+cu128 (CPU)
+
+Command:
+PYTHONPATH=sgcf_nrmp_project/core/src MPLCONFIGDIR=/tmp/matplotlib \
+  python3.10 -m unittest \
+  sgcf_nrmp_project/core/tests/training/test_stage10g_lifecycle.py
+
+Result:
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.069s
+
+OK
+
+Covered assertions:
+- train/validation metrics are stateless and independent
+- validation runs in model.eval() with gradients disabled
+- model.train() can be restored for the next epoch
+- fixed threshold schema across strategies
+- correct STATIC-to-HUMAN rate
+- explicit invalid record for a zero denominator
+- missing threshold field raises explicit schema error
+- atomic checkpoint writes no surviving temp file and reloads
+- train/validation sentinel hashes are fixed
+- validation core classes and denominators are nonzero
+- test dataset/loader/metrics/predictions were not accessed
+- 50-epoch history and optimization values are finite
+- fixed seed reproduces the Stage 10D/E/F initialization hash
+- diagnostic checkpoint metadata, ordering, and reload are valid
+
+compileall: PASS
+JSON parse: PASS (80 files)
+Required Stage 10G artifacts: PASS
+Decision evidence consistency: PASS
+Test non-access audit: PASS
+git diff --check: PASS
+
+Protected directories:
+- neupan/: no Stage 10G increment
+- neupan_ros/: pre-existing dirty submodule state remains (` m neupan_ros`)
+- neupan_ros2/: no Stage 10G increment
+- example/: no Stage 10G increment
+- docker/: no Stage 10G increment
+
+No test split image/label NPZ, PointPainting, Semantic Margin, robustness, CPU
+benchmark, Planner, Stage 09B, ROS, or Gazebo was accessed.

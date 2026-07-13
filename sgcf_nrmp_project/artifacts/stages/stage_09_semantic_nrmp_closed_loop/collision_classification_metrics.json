@@ -1,4 +1,16 @@
 {
+  "_stage_09_finalization": {
+    "stage_status": "STAGE_09_COMPLETE_WITH_KNOWN_PLANNER_LIMITATIONS",
+    "decision": "SEMANTIC_NRMP_CORE_VALIDATED",
+    "stage_10_readiness": "READY_FOR_STAGE_10_PERCEPTION_ONLY",
+    "count_scope": "P0/P1/P2 Stage 09 modes in the intentional initial-collision fixture",
+    "initial_collision_count": 3,
+    "correct_emergency_stop_count": 3,
+    "planner_induced_collision_count": 0,
+    "trajectory_collision_count": 3,
+    "normal_initially_safe_planner_induced_collision_count": 0,
+    "note": "Trajectory collisions in R4 are the already-colliding initial state; they are not planner-induced."
+  },
   "R0_empty_straight": {
     "STAGE05_ORIGINAL": {
       "initial_collision": false,

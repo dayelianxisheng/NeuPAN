@@ -1,0 +1,4 @@
+{
+  "status": "NOT_EXECUTED_DUE_TO_TEST_HUMAN_RECALL_FAILURE",
+  "reason": "PointPainting and semantic-margin evaluation are downstream of the failed test HUMAN-recall gate."
+}

@@ -1,0 +1,92 @@
+{
+  "all_pixels": {
+    "pixel_count": 12259,
+    "true_positive": 9538,
+    "false_positive": 1910,
+    "false_negative": 2721,
+    "iou": 0.6731597148704919,
+    "precision": 0.8331586303284416,
+    "recall": 0.7780406232155967,
+    "prediction_distribution": {
+      "UNKNOWN": 0.10987845664409822,
+      "STATIC_OBSTACLE": 0.0009788726649808304,
+      "HUMAN": 0.7780406232155967,
+      "VEHICLE": 0.0057916632678032464,
+      "ROBOT": 0.10531038420752101
+    },
+    "mean_human_probability": 0.6872374415397644,
+    "mean_winning_probability": 0.7875516414642334
+  },
+  "interior_gt_human": {
+    "pixel_count": 276,
+    "true_positive": 202,
+    "false_positive": 0,
+    "false_negative": 74,
+    "iou": 0.7318840579710145,
+    "precision": 1.0,
+    "recall": 0.7318840579710145,
+    "prediction_distribution": {
+      "UNKNOWN": 0.014492753623188406,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.7318840579710145,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.2536231884057971
+    },
+    "mean_human_probability": 0.6591217517852783,
+    "mean_winning_probability": 0.7692760229110718
+  },
+  "boundary_1px": {
+    "pixel_count": 3654,
+    "true_positive": 2337,
+    "false_positive": 1228,
+    "false_negative": 1317,
+    "iou": 0.47869725522326917,
+    "precision": 0.6555399719495091,
+    "recall": 0.6395730706075534,
+    "prediction_distribution": {
+      "UNKNOWN": 0.24575807334428024,
+      "STATIC_OBSTACLE": 0.0021893814997263274,
+      "HUMAN": 0.6395730706075534,
+      "VEHICLE": 0.008483853311439518,
+      "ROBOT": 0.10399562123700054
+    },
+    "mean_human_probability": 0.5410329699516296,
+    "mean_winning_probability": 0.7191396355628967
+  },
+  "boundary_3px": {
+    "pixel_count": 8913,
+    "true_positive": 6644,
+    "false_positive": 1464,
+    "false_negative": 2269,
+    "iou": 0.6402621181458996,
+    "precision": 0.8194375925012334,
+    "recall": 0.745428026478178,
+    "prediction_distribution": {
+      "UNKNOWN": 0.142376304274655,
+      "STATIC_OBSTACLE": 0.0013463480309660047,
+      "HUMAN": 0.745428026478178,
+      "VEHICLE": 0.007292718501065859,
+      "ROBOT": 0.1035566027151352
+    },
+    "mean_human_probability": 0.6470720767974854,
+    "mean_winning_probability": 0.7649470567703247
+  },
+  "boundary_5px": {
+    "pixel_count": 11983,
+    "true_positive": 9336,
+    "false_positive": 1487,
+    "false_negative": 2647,
+    "iou": 0.6930957683741648,
+    "precision": 0.8626074101450615,
+    "recall": 0.7791037302845698,
+    "prediction_distribution": {
+      "UNKNOWN": 0.11207544020695986,
+      "STATIC_OBSTACLE": 0.001001418676458316,
+      "HUMAN": 0.7791037302845698,
+      "VEHICLE": 0.005925060502378369,
+      "ROBOT": 0.10189435032963365
+    },
+    "mean_human_probability": 0.6878849864006042,
+    "mean_winning_probability": 0.7879725694656372
+  }
+}

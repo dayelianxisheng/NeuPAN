@@ -1,0 +1,746 @@
+[
+  {
+    "epoch": 1,
+    "learning_rate": 0.002,
+    "train_loss": 1.4519573211669923,
+    "validation_loss": 1.4751264651616414,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 2,
+    "learning_rate": 0.002,
+    "train_loss": 1.429571557044983,
+    "validation_loss": 1.460572361946106,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 3,
+    "learning_rate": 0.002,
+    "train_loss": 1.4011820197105407,
+    "validation_loss": 1.4357718626658122,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 4,
+    "learning_rate": 0.002,
+    "train_loss": 1.283110773563385,
+    "validation_loss": 1.3193426926930745,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 5,
+    "learning_rate": 0.002,
+    "train_loss": 1.2589810609817504,
+    "validation_loss": 1.2995903094609578,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 6,
+    "learning_rate": 0.002,
+    "train_loss": 1.2714346051216125,
+    "validation_loss": 1.3380273580551147,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 7,
+    "learning_rate": 0.002,
+    "train_loss": 1.243173611164093,
+    "validation_loss": 1.2957022587458293,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 8,
+    "learning_rate": 0.002,
+    "train_loss": 1.236900806427002,
+    "validation_loss": 1.3037766218185425,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 9,
+    "learning_rate": 0.002,
+    "train_loss": 1.2174277544021606,
+    "validation_loss": 1.2737136284510295,
+    "train_pixel_accuracy": 0.7334713541666666,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 10,
+    "learning_rate": 0.002,
+    "train_loss": 1.2045796275138856,
+    "validation_loss": 1.2574344873428345,
+    "train_pixel_accuracy": 0.7508665364583333,
+    "validation_pixel_accuracy": 0.6881744791666666,
+    "validation_macro_f1": 0.2131615984168187,
+    "validation_mean_iou": 0.16749818439950773,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.6993732338536588,
+      "STATIC_OBSTACLE": 0.13811768814387987,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.9247382127243043,
+      "STATIC_OBSTACLE": 0.22756509052051868,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.8890911458333334,
+      "STATIC_OBSTACLE": 0.11090885416666667,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 11,
+    "learning_rate": 0.002,
+    "train_loss": 1.2045363783836365,
+    "validation_loss": 1.25516144434611,
+    "train_pixel_accuracy": 0.7381588541666667,
+    "validation_pixel_accuracy": 0.6917057291666666,
+    "validation_macro_f1": 0.24323465171399242,
+    "validation_mean_iou": 0.1908188583379376,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7206493129272682,
+      "STATIC_OBSTACLE": 0.23344497876241976,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.8790025968713362,
+      "STATIC_OBSTACLE": 0.512750960688819,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.7833984375,
+      "STATIC_OBSTACLE": 0.2166015625,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 12,
+    "learning_rate": 0.002,
+    "train_loss": 1.188157856464386,
+    "validation_loss": 1.2485758066177368,
+    "train_pixel_accuracy": 0.7342102864583333,
+    "validation_pixel_accuracy": 0.68715625,
+    "validation_macro_f1": 0.24153426079203774,
+    "validation_mean_iou": 0.18970430490738224,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7223977917627418,
+      "STATIC_OBSTACLE": 0.22612373277416947,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.870802911710027,
+      "STATIC_OBSTACLE": 0.5229846084294022,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.7673541666666667,
+      "STATIC_OBSTACLE": 0.23264583333333333,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 13,
+    "learning_rate": 0.002,
+    "train_loss": 1.1849357962608338,
+    "validation_loss": 1.2400367259979248,
+    "train_pixel_accuracy": 0.7200846354166667,
+    "validation_pixel_accuracy": 0.672953125,
+    "validation_macro_f1": 0.24326125712672603,
+    "validation_mean_iou": 0.1899559681789787,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7114747960122939,
+      "STATIC_OBSTACLE": 0.23830504488259965,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.8328140808134672,
+      "STATIC_OBSTACLE": 0.6246429525512196,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.7153932291666667,
+      "STATIC_OBSTACLE": 0.28460677083333336,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 14,
+    "learning_rate": 0.002,
+    "train_loss": 1.1669980525970458,
+    "validation_loss": 1.2404163281122844,
+    "train_pixel_accuracy": 0.7062819010416667,
+    "validation_pixel_accuracy": 0.6680364583333334,
+    "validation_macro_f1": 0.2514792771237354,
+    "validation_mean_iou": 0.19580548900017133,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7045551532393638,
+      "STATIC_OBSTACLE": 0.27447229176149296,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.7959830673762103,
+      "STATIC_OBSTACLE": 0.7930666009082876,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.6600572916666667,
+      "STATIC_OBSTACLE": 0.33994270833333334,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 15,
+    "learning_rate": 0.002,
+    "train_loss": 1.165179431438446,
+    "validation_loss": 1.2314908107121785,
+    "train_pixel_accuracy": 0.6730481770833333,
+    "validation_pixel_accuracy": 0.6215286458333333,
+    "validation_macro_f1": 0.23568306605071127,
+    "validation_mean_iou": 0.17910621566608642,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.6565962096726415,
+      "STATIC_OBSTACLE": 0.23893486865779057,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.7286251191602353,
+      "STATIC_OBSTACLE": 0.8050469555925447,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.5977239583333334,
+      "STATIC_OBSTACLE": 0.40227604166666664,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 16,
+    "learning_rate": 0.002,
+    "train_loss": 1.1463414072990417,
+    "validation_loss": 1.2210002342859905,
+    "train_pixel_accuracy": 0.696654296875,
+    "validation_pixel_accuracy": 0.6476067708333333,
+    "validation_macro_f1": 0.24467060977852473,
+    "validation_mean_iou": 0.18844130603764414,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.6829838273351281,
+      "STATIC_OBSTACLE": 0.25922270285309257,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.7653611696513034,
+      "STATIC_OBSTACLE": 0.8041427778805252,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.6316979166666666,
+      "STATIC_OBSTACLE": 0.3683020833333333,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 17,
+    "learning_rate": 0.002,
+    "train_loss": 1.2241013050079346,
+    "validation_loss": 1.28825044631958,
+    "train_pixel_accuracy": 0.71890234375,
+    "validation_pixel_accuracy": 0.6532109375,
+    "validation_macro_f1": 0.21872836104525112,
+    "validation_mean_iou": 0.16803428653469865,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.6694641946203307,
+      "STATIC_OBSTACLE": 0.1707072380531625,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.84840626609348,
+      "STATIC_OBSTACLE": 0.38113145510963153,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.7954895833333333,
+      "STATIC_OBSTACLE": 0.20451041666666667,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 18,
+    "learning_rate": 0.002,
+    "train_loss": 1.3293628334999084,
+    "validation_loss": 1.3537870248158772,
+    "train_pixel_accuracy": 0.6992467447916667,
+    "validation_pixel_accuracy": 0.6423541666666667,
+    "validation_macro_f1": 0.22371839358150888,
+    "validation_mean_iou": 0.17040781621489834,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.658219602063375,
+      "STATIC_OBSTACLE": 0.19381947901111665,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.815589263343207,
+      "STATIC_OBSTACLE": 0.48009781558884573,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.7519791666666666,
+      "STATIC_OBSTACLE": 0.24802083333333333,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 19,
+    "learning_rate": 0.002,
+    "train_loss": 1.2790879607200623,
+    "validation_loss": 1.3516253232955933,
+    "train_pixel_accuracy": 0.73351171875,
+    "validation_pixel_accuracy": 0.7129973958333333,
+    "validation_macro_f1": 0.16649118032931431,
+    "validation_mean_iou": 0.14259947916666665,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7129973958333333,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 20,
+    "learning_rate": 0.002,
+    "train_loss": 1.2116041660308838,
+    "validation_loss": 1.2651867071787517,
+    "train_pixel_accuracy": 0.73751171875,
+    "validation_pixel_accuracy": 0.6728333333333333,
+    "validation_macro_f1": 0.20271677951196465,
+    "validation_mean_iou": 0.1589504845648011,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.6820115195950887,
+      "STATIC_OBSTACLE": 0.11274090322891682,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.9095039647030034,
+      "STATIC_OBSTACLE": 0.19221996177794218,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.8863020833333334,
+      "STATIC_OBSTACLE": 0.11369791666666666,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 21,
+    "learning_rate": 0.002,
+    "train_loss": 1.1761707305908202,
+    "validation_loss": 1.2338003714879353,
+    "train_pixel_accuracy": 0.7321341145833333,
+    "validation_pixel_accuracy": 0.6834635416666667,
+    "validation_macro_f1": 0.24276531820571523,
+    "validation_mean_iou": 0.1898217792867555,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7140346624651558,
+      "STATIC_OBSTACLE": 0.23507423396862168,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.8607295345719911,
+      "STATIC_OBSTACLE": 0.550520929659084,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.7601796875,
+      "STATIC_OBSTACLE": 0.2398203125,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 22,
+    "learning_rate": 0.002,
+    "train_loss": 1.1492851018905639,
+    "validation_loss": 1.215553601582845,
+    "train_pixel_accuracy": 0.703314453125,
+    "validation_pixel_accuracy": 0.6310494791666666,
+    "validation_macro_f1": 0.23800814747492977,
+    "validation_mean_iou": 0.1812397282809185,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.6604609957741515,
+      "STATIC_OBSTACLE": 0.24573764563044095,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.7460873439959678,
+      "STATIC_OBSTACLE": 0.7819287754556851,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.6243958333333334,
+      "STATIC_OBSTACLE": 0.3756041666666667,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 23,
+    "learning_rate": 0.002,
+    "train_loss": 1.124661374092102,
+    "validation_loss": 1.2044246594111125,
+    "train_pixel_accuracy": 0.7188229166666666,
+    "validation_pixel_accuracy": 0.67309375,
+    "validation_macro_f1": 0.24628373669688255,
+    "validation_mean_iou": 0.1915747520022953,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.7036834399082327,
+      "STATIC_OBSTACLE": 0.25419032010324377,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.8267729764674514,
+      "STATIC_OBSTACLE": 0.6597414873723363,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.7142057291666667,
+      "STATIC_OBSTACLE": 0.2857942708333333,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  },
+  {
+    "epoch": 24,
+    "learning_rate": 0.002,
+    "train_loss": 1.1257738947868348,
+    "validation_loss": 1.2195207277933757,
+    "train_pixel_accuracy": 0.7010559895833334,
+    "validation_pixel_accuracy": 0.6286197916666667,
+    "validation_macro_f1": 0.2396049045674838,
+    "validation_mean_iou": 0.18257551019644302,
+    "validation_per_class_iou": {
+      "UNKNOWN": 0.6615094687734743,
+      "STATIC_OBSTACLE": 0.25136808220874085,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_per_class_recall": {
+      "UNKNOWN": 0.7333476995226286,
+      "STATIC_OBSTACLE": 0.8344327312331751,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "validation_prediction_class_fraction": {
+      "UNKNOWN": 0.6003046875,
+      "STATIC_OBSTACLE": 0.3996953125,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "checkpoint": "stage10e_48_image_overfit_checkpoint.pt",
+  "purpose": "48-image pipeline verification only",
+  "probe_scene_ids": [
+    0,
+    1
+  ],
+  "logits_max_absolute_difference": 0.0,
+  "floating_point_tolerance": 1e-07,
+  "pass": true
+}

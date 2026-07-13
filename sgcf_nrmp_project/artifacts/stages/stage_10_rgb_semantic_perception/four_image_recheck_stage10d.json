@@ -1,0 +1,9 @@
+{
+  "authoritative_four_image_recheck": "L1_current_weighted_CE",
+  "reused_fair_comparison_result": true,
+  "additional_training_run": false,
+  "L0_pass": false,
+  "L1_pass": true,
+  "selected_default_loss": "current_weighted_cross_entropy",
+  "ready_for_48_image_overfit_recheck": true
+}

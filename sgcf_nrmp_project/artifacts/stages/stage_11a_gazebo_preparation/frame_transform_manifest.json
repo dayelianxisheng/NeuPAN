@@ -1,0 +1,14 @@
+{
+  "convention": "T_target_source",
+  "handedness": "right",
+  "units": {"translation": "m", "rotation": "rad"},
+  "transforms": [
+    {"target": "world", "source": "odom", "type": "static_preparation_identity", "translation_xyz": [0, 0, 0], "rpy": [0, 0, 0]},
+    {"target": "odom", "source": "base_footprint", "type": "dynamic_odometry"},
+    {"target": "base_footprint", "source": "base_link", "type": "static", "translation_xyz": [0, 0, 0.1], "rpy": [0, 0, 0]},
+    {"target": "base_link", "source": "lidar_link", "type": "static", "translation_xyz": [0, 0, 0.1], "rpy": [0, 0, 0]},
+    {"target": "base_link", "source": "camera_link", "type": "static", "translation_xyz": [0, 0, 0.9], "rpy": [0, 0, 0]},
+    {"target": "camera_link", "source": "camera_optical_frame", "type": "static", "translation_xyz": [0, 0, 0], "rpy": [-1.5707963267948966, 0, -1.5707963267948966]}
+  ],
+  "acyclic": true
+}

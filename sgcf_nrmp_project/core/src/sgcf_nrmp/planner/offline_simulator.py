@@ -10,6 +10,7 @@ from sgcf_nrmp.planner.dynamics import step
 from sgcf_nrmp.planner.geometry_checker import ExactObservableChecker, OfflineWorldEvaluator
 from sgcf_nrmp.planner.reference import local_reference
 from sgcf_nrmp.planner.solver_result import PlannerStatus
+from sgcf_nrmp.planner.status_machine import CONTROL_ACCEPTED_STATUSES
 from sgcf_nrmp.types.geometry import Pose2D
 from sgcf_nrmp.types.lidar import LidarConfig
 
@@ -41,7 +42,7 @@ def run_closed_loop(planner, scene, path, config, lidar_config: LidarConfig, max
         started = time.perf_counter(); reference = local_reference(state, path, planner.T, config["planner"]["reference_speed_mps"] * planner.dt); reference_times.append((time.perf_counter() - started) * 1000.)
         result = planner.plan(state, reference, checker, previous); control = result.first_control
         online_elapsed = (time.perf_counter() - online_started) * 1000.; online_times.append(online_elapsed); cycle_times.append(online_elapsed)
-        if result.status not in (PlannerStatus.SOLVED_SAFE, PlannerStatus.SOLVED_WITH_SLACK): fallback_count += 1
+        if result.status not in CONTROL_ACCEPTED_STATUSES: fallback_count += 1
         if result.status == PlannerStatus.EMERGENCY_STOP: emergency_count += 1
         next_state = step(state, control, planner.dt); next_state[2] = (next_state[2] + np.pi) % (2 * np.pi) - np.pi
         executed_observable = exact_checker.distance(next_state[None, :])
@@ -52,14 +53,16 @@ def run_closed_loop(planner, scene, path, config, lidar_config: LidarConfig, max
         trajectory_collision |= bool(result.min_observable_clearance <= 0.0)
         state = next_state; states.append(state.copy()); controls.append(control.copy()); statuses.append(result.status.value); results.append(result)
         rejections += result.rejection_count; previous = control
-        if result.status in (PlannerStatus.SOLVED_SAFE, PlannerStatus.SOLVED_WITH_SLACK): last_valid_action = control.copy(); warm_start_valid = planner.previous_controls is not None
+        if result.status in CONTROL_ACCEPTED_STATUSES: last_valid_action = control.copy(); warm_start_valid = planner.previous_controls is not None
         termination_step = cycle_index + 1
         if np.linalg.norm(state[:2] - path[-1, :2]) < .25: termination_reason = "GOAL_REACHED_AFTER_EXECUTE"; break
         if result.status == PlannerStatus.EMERGENCY_STOP: termination_reason = "EMERGENCY_STOP"
-        elif result.status == PlannerStatus.SOLVER_TIMEOUT: termination_reason = "OSQP_OR_SOLVER_USER_LIMIT"
+        elif result.status == PlannerStatus.SOLVER_TIMEOUT: termination_reason = "SOLVER_TIMEOUT"
+        elif result.status == PlannerStatus.SOLVER_USER_LIMIT: termination_reason = "OSQP_MAX_ITER_OR_USER_LIMIT"
         elif result.status == PlannerStatus.REJECTED_BY_GEOMETRY_CHECK: termination_reason = "GEOMETRY_RECHECK_REJECTION"
-        elif result.status == PlannerStatus.INFEASIBLE: termination_reason = "QP_INFEASIBLE"
-        if result.status in (PlannerStatus.EMERGENCY_STOP, PlannerStatus.INFEASIBLE, PlannerStatus.SOLVER_TIMEOUT, PlannerStatus.NUMERICAL_ERROR, PlannerStatus.REJECTED_BY_GEOMETRY_CHECK): break
+        elif result.status in (PlannerStatus.INFEASIBLE,PlannerStatus.GEOMETRICALLY_INFEASIBLE): termination_reason = "GEOMETRICALLY_INFEASIBLE"
+        elif result.status == PlannerStatus.SEMANTICALLY_INFEASIBLE: termination_reason = "SEMANTICALLY_INFEASIBLE"
+        if result.status not in CONTROL_ACCEPTED_STATUSES: break
     states = np.asarray(states); controls = np.asarray(controls); observable = np.asarray(observable_executed) if observable_executed else np.asarray([lidar_config.range_max])
     world = np.asarray([item.minimum_world_clearance for item in world_results]) if world_results else np.asarray([lidar_config.range_max])
     success = bool(np.linalg.norm(states[-1, :2] - path[-1, :2]) < .25)

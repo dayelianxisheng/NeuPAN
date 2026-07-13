@@ -1,0 +1,31 @@
+Stage 10 files created before mandatory stop
+
+core/configs/data/stage_10_rgb_semantic.yaml
+core/configs/eval/stage_10_semantic_eval.yaml
+core/configs/model/tiny_semantic_segmentation.yaml
+core/configs/train/stage_10_semantic_training.yaml
+core/scripts/generate_stage10_rgb_dataset.py
+core/scripts/train_rgb_semantic_model.py
+core/src/sgcf_nrmp/data/procedural/appearance_renderer.py
+core/src/sgcf_nrmp/data/rgb_semantic_dataset.py
+core/src/sgcf_nrmp/models/tiny_semantic_segmentation.py
+core/src/sgcf_nrmp/perception/__init__.py
+core/src/sgcf_nrmp/perception/rgb_semantic_predictor.py
+core/src/sgcf_nrmp/perception/semantic_confidence.py
+core/src/sgcf_nrmp/training/semantic_segmentation_trainer.py
+artifacts/stages/stage_10_rgb_semantic_perception/dataset/*
+artifacts/stages/stage_10_rgb_semantic_perception/dataset_manifest.json
+artifacts/stages/stage_10_rgb_semantic_perception/dataset_split_report.json
+artifacts/stages/stage_10_rgb_semantic_perception/files_changed.txt
+artifacts/stages/stage_10_rgb_semantic_perception/information_boundary_report.json
+artifacts/stages/stage_10_rgb_semantic_perception/known_limitations.md
+artifacts/stages/stage_10_rgb_semantic_perception/label_leakage_audit.json
+artifacts/stages/stage_10_rgb_semantic_perception/overfit_gate.json
+artifacts/stages/stage_10_rgb_semantic_perception/rgb_appearance_examples.png
+artifacts/stages/stage_10_rgb_semantic_perception/semantic_gt_examples.png
+artifacts/stages/stage_10_rgb_semantic_perception/stage_report.md
+artifacts/stages/stage_10_rgb_semantic_perception/test_output.txt
+artifacts/stages/stage_10_rgb_semantic_perception/visual_identifiability_audit.md
+
+No protected upstream, Planner, Stage 05, Stage 07, Stage 08, or Stage 09 core
+file was modified by Stage 10.

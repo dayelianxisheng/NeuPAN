@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "online_equivalent_target_p95_ms": 100.0,
+  "stage09b_reference": {
+    "steady_state_online_p95_ms": 37.72,
+    "first_cycle_setup_inclusive_p95_ms": 279.26
+  },
+  "steady_state_budget_ms": {
+    "sensor_acquisition_and_queue": 10.0,
+    "transform_lookup": 5.0,
+    "adapter_conversion": 7.0,
+    "planner": 50.0,
+    "command_publication": 5.0,
+    "safety_monitor": 3.0,
+    "reserve": 20.0,
+    "total": 100.0
+  },
+  "first_cycle_requirements": [
+    "sensor initialization",
+    "transform availability",
+    "persistent solver construction",
+    "planner warm-up before command enable"
+  ],
+  "stage11a_remeasured_planner": false,
+  "runtime_latency_validated": false
+}

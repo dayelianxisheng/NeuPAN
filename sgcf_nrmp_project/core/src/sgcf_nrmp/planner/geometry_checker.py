@@ -99,10 +99,17 @@ class ExactObservableChecker:
 
     def recheck_observable_trajectory(self, states: np.ndarray, d_safe: float) -> dict[str, object]:
         observable = self.distance(states)
+        finite = np.isfinite(observable)
+        offending = np.flatnonzero((observable < d_safe - 1e-4) | ~finite)
+        collision = np.flatnonzero(observable <= 0.0)
         return {
             "observable": observable,
-            "min_observable": float(observable.min()),
-            "violated_points": int(np.sum(observable < d_safe - 1e-4)),
+            "min_observable": float(np.min(observable)) if finite.all() else float("nan"),
+            "violated_points": int(len(offending)),
+            "offending_indices": offending.tolist(),
+            "collision_indices": collision.tolist(),
+            "nonfinite_indices": np.flatnonzero(~finite).tolist(),
+            "required_clearance": float(d_safe),
         }
 
 

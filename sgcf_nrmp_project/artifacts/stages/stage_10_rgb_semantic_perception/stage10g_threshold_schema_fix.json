@@ -1,0 +1,22 @@
+{
+  "status": "KEYERROR_FIXED_SCHEMA_VALIDATED",
+  "required_keys": [
+    "human_to_static_rate",
+    "human_to_unknown_rate",
+    "static_to_human_rate",
+    "robot_to_human_rate",
+    "human_to_robot_rate",
+    "unknown_rate",
+    "human_recall",
+    "macro_f1"
+  ],
+  "all_strategies_use_same_builder": "build_threshold_summary",
+  "zero_denominator_representation": {
+    "value": null,
+    "valid": false,
+    "reason": "zero_denominator"
+  },
+  "missing_schema_behavior": "explicit ValueError before report generation",
+  "threshold_selection_status": "THRESHOLD_SELECTION_NOT_EXECUTED_DUE_TO_CLASS_COLLAPSE",
+  "checkpoint_save_independent_of_summary": true
+}

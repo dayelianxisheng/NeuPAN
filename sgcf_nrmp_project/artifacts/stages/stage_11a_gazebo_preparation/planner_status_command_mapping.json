@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "maximum_command_age_s": 0.2,
+  "default_action": "ZERO_VELOCITY_FALLBACK",
+  "zero_velocity_mps_radps": [0.0, 0.0],
+  "motion_allowed_statuses": [
+    "SUCCESS",
+    "SEMANTIC_DEGRADED_TO_GEOMETRY",
+    "EXPLICIT_FAILURE_GEOMETRY_FALLBACK"
+  ],
+  "zero_velocity_statuses": [
+    "GOAL_REACHED",
+    "INITIAL_COLLISION",
+    "EMERGENCY_STOP",
+    "INVALID_INPUT",
+    "GEOMETRICALLY_INFEASIBLE",
+    "SEMANTICALLY_INFEASIBLE",
+    "SOLVER_USER_LIMIT",
+    "SOLVER_TIMEOUT",
+    "NUMERICAL_ERROR",
+    "REJECTED_BY_GEOMETRY_CHECK"
+  ],
+  "independent_zero_velocity_conditions": [
+    "invalid output",
+    "stale output",
+    "nonfinite command",
+    "unknown planner status"
+  ],
+  "world_evaluator_may_affect_command": false
+}

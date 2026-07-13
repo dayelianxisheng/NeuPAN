@@ -1,0 +1,39 @@
+Stage 09B validation output
+===========================
+
+Planner regression suite:
+PYTHONPATH=sgcf_nrmp_project/core/src python -m unittest discover -s sgcf_nrmp_project/core/tests/planner -p 'test_*.py'
+Ran 43 tests in 4.812s
+OK
+
+Full research-package suite:
+PYTHONPATH=sgcf_nrmp_project/core/src MPLCONFIGDIR=/tmp/matplotlib-stage09b python -m unittest discover -s sgcf_nrmp_project/core/tests -p 'test_*.py'
+Ran 182 tests in 17.941s
+OK
+
+Compile check:
+python -m compileall -q sgcf_nrmp_project/core/src sgcf_nrmp_project/core/scripts sgcf_nrmp_project/core/tests
+PASS
+
+Strict JSON parse check:
+13 Stage 09B JSON files parsed without NaN/Infinity constants.
+PASS
+
+git diff --check:
+PASS
+
+Protected directory check:
+No Stage 09B additions or modifications under neupan/, neupan_ros/,
+neupan_ros2/, example/, or docker/. The pre-existing ` m neupan_ros` worktree
+state remains present and untouched.
+
+Regression gates:
+- Stage 05/P0 status/control/state/distance/gradient/slack error: all zero
+- planner-induced observable collision count: 0
+- steady-state online-equivalent P95: 37.72445224876719 ms
+- random success: P0 70%, P1 85%, P2 85%
+- human_path_side: reproduced and explicitly classified
+
+Decision:
+STAGE_09B_COMPLETE_WITH_KNOWN_PLANNER_LIMITATIONS
+READY_FOR_GAZEBO_PREPARATION_WITH_RESTRICTIONS

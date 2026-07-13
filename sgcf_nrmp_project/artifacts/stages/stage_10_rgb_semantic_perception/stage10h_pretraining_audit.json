@@ -1,0 +1,102 @@
+{
+  "status": "PASSED",
+  "split_counts": {
+    "train": 80,
+    "validation": 20,
+    "test": 20
+  },
+  "scene_id_disjoint": true,
+  "seed_disjoint": {
+    "geometry_seed": true,
+    "appearance_seed": true,
+    "camera_seed": true
+  },
+  "dataset_manifest_sha256": "7402293f3a9824fadf53e94c38bffdd463040cb4b3ce5c7529554bf9f4356ec9",
+  "dataset_file_sha256": {
+    "train": "8ef3981fa4716e17cb89c24089beb36ffefd1090f900042972e406d5a3cf0c27",
+    "validation": "1877cee042936711c7df5b1c3ed7085364ec10c7bdfc36c2d533a766903bf246",
+    "test": "not_reopened_before_validation_readiness; authoritative Stage10F-A audit retained"
+  },
+  "authoritative_stage10e_hashes_match": true,
+  "class_weight_source_audit": {
+    "yaml_dtype": "float64",
+    "authoritative_dtype": "float64",
+    "yaml_class_order": [
+      "UNKNOWN",
+      "STATIC_OBSTACLE",
+      "HUMAN",
+      "VEHICLE",
+      "ROBOT"
+    ],
+    "authoritative_class_order": [
+      "UNKNOWN",
+      "STATIC_OBSTACLE",
+      "HUMAN",
+      "VEHICLE",
+      "ROBOT"
+    ],
+    "class_order_match": true,
+    "source_elementwise_differences": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_max_abs_difference": 0.0,
+    "atol": 1e-12,
+    "rtol": 1e-12,
+    "passed": true
+  },
+  "class_weight_runtime_cast_audit": {
+    "runtime_dtype": "float32",
+    "runtime_cast_elementwise_differences": [
+      6.240137850888061e-10,
+      1.097074031619627e-08,
+      1.8448613747779063e-08,
+      8.412641028243684e-09,
+      2.8243541061456767e-08
+    ],
+    "runtime_cast_max_abs_difference": 2.8243541061456767e-08,
+    "runtime_cast_difference_expected": true,
+    "runtime_cast_within_float32_precision": true,
+    "atol": 1e-07,
+    "rtol": 1e-07,
+    "passed": true
+  },
+  "class_order": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "cross_entropy_uses_audited_runtime_tensor": true,
+  "train_label_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "validation_label_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "unknown_is_ignore_index": false,
+  "target_dtype_observed": "torch.int64",
+  "logits_shape_observed": [
+    1,
+    5,
+    120,
+    160
+  ],
+  "cross_entropy_input": "raw_logits",
+  "train_validation_inputs_finite": true,
+  "test_dataset_instantiated_for_evaluation": false,
+  "test_images_or_labels_read": false,
+  "training_config_sha256": "1f8e13c1ceb7b6e3013c8f24fa1e082533e017164d7c43ac70436b1f5a0ea519"
+}

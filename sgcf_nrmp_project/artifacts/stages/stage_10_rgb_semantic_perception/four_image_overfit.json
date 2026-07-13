@@ -1,0 +1,4 @@
+{
+  "status": "NOT_RUN_AFTER_ALIGNMENT_DEFECT",
+  "reason": "Single-image and four-image diagnosis were not permitted after the alignment-first stop path."
+}

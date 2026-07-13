@@ -1,0 +1,11 @@
+{
+  "clock": "gazebo_simulation_time",
+  "planner_period_s": 0.2,
+  "maximum_rgb_age_s": 0.1,
+  "maximum_lidar_age_s": 0.2,
+  "rgb_lidar_sync_tolerance_s": 0.05,
+  "maximum_transform_age_s": 0.05,
+  "dropout_timeout_s": 0.1,
+  "r1_failures": ["RGB_DROPOUT", "OUTDATED_IMAGE", "INVALID_PROJECTION", "UNKNOWN"],
+  "failure_semantic_contribution_m": 0.0
+}

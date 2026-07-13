@@ -1,0 +1,8 @@
+{
+  "status": "PARTIAL_GATE_RECORD_ONLY",
+  "cross_entropy": "weighted CrossEntropy only",
+  "dice_enabled": false,
+  "total_loss_equals_cross_entropy": true,
+  "ce_vs_dice_comparison_run": false,
+  "reason": "The alignment-first stop prohibited continuing to the dedicated loss-component comparison."
+}

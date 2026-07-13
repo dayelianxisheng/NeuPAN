@@ -1,0 +1,43 @@
+Stage 10H validation and static acceptance output
+=================================================
+
+Environment:
+Python 3.10.0
+Torch 2.8.0+cu128
+
+Formal retry:
+epochs executed: 100
+best epoch: 100
+validation readiness: PASS
+validation mIoU: 0.7556329340625794
+validation macro F1: 0.8542219191971441
+validation HUMAN recall: 0.7780406232155967
+validation VEHICLE recall: 0.7642236358749216
+validation ROBOT recall: 0.8511774522529204
+
+Frozen policy:
+U0_argmax_always
+checkpoint SHA-256: 6385b1bd1233d967ac2d4f0999d617fc18af97f3f5b24770a2959cc05ee7c4e7
+
+One-time test:
+pixel accuracy: 0.904421875
+mean IoU: 0.6750996710797743
+macro F1: 0.7943820895229194
+HUMAN IoU: 0.5772603754940712
+HUMAN recall: 0.7134025339642802
+Decision: BLOCKED_HUMAN_RECALL
+
+Downstream:
+PointPainting: NOT_EXECUTED_DUE_TO_TEST_HUMAN_RECALL_FAILURE
+Semantic Margin: NOT_EXECUTED_DUE_TO_TEST_HUMAN_RECALL_FAILURE
+Robustness: NOT_EXECUTED_DUE_TO_TEST_HUMAN_RECALL_FAILURE
+CPU benchmark: NOT_EXECUTED_DUE_TO_TEST_HUMAN_RECALL_FAILURE
+
+Tests:
+Ran 150 tests in 16.791s
+OK
+
+compileall: PASS
+JSON parse: PASS (98 files)
+git diff --check: PASS
+Protected upstream incremental check: no Stage 10H changes; pre-existing `m neupan_ros` remains.

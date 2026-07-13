@@ -1,0 +1,41 @@
+{
+  "checkpoint_epoch": 145,
+  "checkpoint_epoch_145": true,
+  "checkpoint_purpose": "VALIDATION_ONLY_DIAGNOSTIC",
+  "optimizer_state_present": true,
+  "model_state_schema_hash": "7012c60820d87dd435e47427327407150fc9fb2434501e4793e67280cf090206",
+  "current_model_schema_hash": "7012c60820d87dd435e47427327407150fc9fb2434501e4793e67280cf090206",
+  "model_architecture_hash_match": true,
+  "training_config_hash_match": true,
+  "stage10i_config_hash_match": true,
+  "dataset_manifest_hash_match": true,
+  "class_weights_match": true,
+  "normalization_match": true,
+  "train_hash_match": true,
+  "validation_hash_match": true,
+  "scene_split_disjoint": true,
+  "prediction_strategy": "U0_argmax_always",
+  "test_accessed": false,
+  "new_audit_accessed": false,
+  "required_positive_checks": [
+    "checkpoint_epoch_145",
+    "optimizer_state_present",
+    "model_architecture_hash_match",
+    "training_config_hash_match",
+    "stage10i_config_hash_match",
+    "dataset_manifest_hash_match",
+    "class_weights_match",
+    "normalization_match",
+    "train_hash_match",
+    "validation_hash_match",
+    "scene_split_disjoint"
+  ],
+  "positive_checks_passed": true,
+  "non_access_checks_passed": true,
+  "passed": true,
+  "superseded_initial_false_positive": {
+    "condition": "expected-false non-access flags were incorrectly included in all(bool_values)",
+    "optimizer_steps_before_fix": 0,
+    "actual_checkpoint_or_metadata_mismatch": false
+  }
+}

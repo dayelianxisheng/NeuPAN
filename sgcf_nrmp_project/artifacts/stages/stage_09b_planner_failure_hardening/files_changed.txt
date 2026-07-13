@@ -1,0 +1,52 @@
+Stage 09B source and configuration
+----------------------------------
+sgcf_nrmp_project/core/configs/eval/stage_09b_planner_hardening.yaml
+sgcf_nrmp_project/core/scripts/run_stage09b_planner_hardening.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/fallback.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/geometry_checker.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/gt_nrmp_planner.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/offline_simulator.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/qp_problem.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/semantic_nrmp_planner.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/solver_result.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/status_machine.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/semantic/semantic_margin_provider.py
+sgcf_nrmp_project/core/tests/planner/test_planner_behavior.py
+sgcf_nrmp_project/core/tests/planner/test_stage09b_status_machine.py
+
+Stage 09B reports and metrics
+----------------------------
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/stage_09b_report.md
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/stage_09b_decision.md
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/planner_status_state_machine.md
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/planner_status_mapping.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/geometry_recheck_taxonomy.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/geometry_recheck_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/linearization_error_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/solver_status_taxonomy.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/solver_failure_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/human_path_side_root_cause.md
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/human_path_side_cycle_trace.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/stage05_equivalence_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/deterministic_regression_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/random_regression_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/collision_classification_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/latency_breakdown.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/stage09b_run_summary.json
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/known_limitations.md
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/test_output.txt
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/files_changed.txt
+
+Stage 09B figures
+-----------------
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/planner_status_state_machine.png
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/geometry_recheck_failure_distribution.png
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/linearization_error_distribution.png
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/solver_status_distribution.png
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/human_path_side_clearance_trace.png
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/human_path_side_solver_trace.png
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/stage09_vs_stage09b_success.png
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/stage09_vs_stage09b_failure_modes.png
+sgcf_nrmp_project/artifacts/stages/stage_09b_planner_failure_hardening/stage09b_latency.png
+
+No Stage 10 file or protected upstream directory was modified by Stage 09B.

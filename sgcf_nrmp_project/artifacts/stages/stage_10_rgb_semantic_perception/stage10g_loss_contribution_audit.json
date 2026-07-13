@@ -1,0 +1,187 @@
+{
+  "batches": [
+    {
+      "batch_index": 0,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.6750460267066956,
+        "STATIC_OBSTACLE": 0.28801408410072327,
+        "HUMAN": 0.16020433604717255,
+        "VEHICLE": 0.19497279822826385,
+        "ROBOT": 0.27005475759506226
+      },
+      "total_weighted_loss": 1.5882920026779175,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 1,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.6986956596374512,
+        "STATIC_OBSTACLE": 0.3066033720970154,
+        "HUMAN": 0.14048027992248535,
+        "VEHICLE": 0.19222410023212433,
+        "ROBOT": 0.24516704678535461
+      },
+      "total_weighted_loss": 1.5831704586744308,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 2,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.675561249256134,
+        "STATIC_OBSTACLE": 0.319572389125824,
+        "HUMAN": 0.16151681542396545,
+        "VEHICLE": 0.18758517503738403,
+        "ROBOT": 0.23929928243160248
+      },
+      "total_weighted_loss": 1.58353491127491,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 3,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.6897796392440796,
+        "STATIC_OBSTACLE": 0.28273680806159973,
+        "HUMAN": 0.1557997763156891,
+        "VEHICLE": 0.19193334877490997,
+        "ROBOT": 0.2671077251434326
+      },
+      "total_weighted_loss": 1.587357297539711,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 4,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.7286428213119507,
+        "STATIC_OBSTACLE": 0.2723749577999115,
+        "HUMAN": 0.15477603673934937,
+        "VEHICLE": 0.173726424574852,
+        "ROBOT": 0.25516486167907715
+      },
+      "total_weighted_loss": 1.5846851021051407,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 5,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.7129742503166199,
+        "STATIC_OBSTACLE": 0.2662677466869354,
+        "HUMAN": 0.17597492039203644,
+        "VEHICLE": 0.17339301109313965,
+        "ROBOT": 0.25739586353302
+      },
+      "total_weighted_loss": 1.5860057920217514,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 6,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.7157370448112488,
+        "STATIC_OBSTACLE": 0.2698666453361511,
+        "HUMAN": 0.16031406819820404,
+        "VEHICLE": 0.21131175756454468,
+        "ROBOT": 0.2219555824995041
+      },
+      "total_weighted_loss": 1.5791850984096527,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 7,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.6825944781303406,
+        "STATIC_OBSTACLE": 0.30257683992385864,
+        "HUMAN": 0.1558479368686676,
+        "VEHICLE": 0.185881569981575,
+        "ROBOT": 0.2594376802444458
+      },
+      "total_weighted_loss": 1.5863385051488876,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 8,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.7151134610176086,
+        "STATIC_OBSTACLE": 0.27667564153671265,
+        "HUMAN": 0.11856921017169952,
+        "VEHICLE": 0.20126566290855408,
+        "ROBOT": 0.27511948347091675
+      },
+      "total_weighted_loss": 1.5867434591054916,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    },
+    {
+      "batch_index": 9,
+      "weighted_ce_per_class_contribution": {
+        "UNKNOWN": 0.742409348487854,
+        "STATIC_OBSTACLE": 0.2557521462440491,
+        "HUMAN": 0.13430136442184448,
+        "VEHICLE": 0.19978301227092743,
+        "ROBOT": 0.2502301335334778
+      },
+      "total_weighted_loss": 1.5824760049581528,
+      "runtime_class_weights": {
+        "UNKNOWN": 0.3282637894153595,
+        "STATIC_OBSTACLE": 0.8115540146827698,
+        "HUMAN": 1.5283809900283813,
+        "VEHICLE": 1.238860845565796,
+        "ROBOT": 1.092940330505371
+      }
+    }
+  ],
+  "every_batch_has_nonzero_core_loss_contribution": true,
+  "weights_match_stage10e": true,
+  "reduction": "sum weighted per-pixel negative log likelihood divided by sum target weights"
+}

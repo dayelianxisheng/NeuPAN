@@ -1,0 +1,8 @@
+{
+  "single_image": {
+    "encoder_parameter_update_norm": 2.7611026225939086,
+    "bottleneck_parameter_update_norm": 4.73412042962224,
+    "decoder_parameter_update_norm": 4.729899945939202,
+    "classifier_parameter_update_norm": 0.469375171281345
+  }
+}

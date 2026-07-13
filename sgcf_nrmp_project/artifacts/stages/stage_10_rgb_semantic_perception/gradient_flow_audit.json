@@ -1,0 +1,4 @@
+{
+  "status": "NOT_RUN_AFTER_ALIGNMENT_DEFECT",
+  "reason": "No dedicated module-gradient audit was executed after the alignment-layer stop."
+}

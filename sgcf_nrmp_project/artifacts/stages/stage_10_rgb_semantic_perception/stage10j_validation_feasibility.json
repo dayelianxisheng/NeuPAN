@@ -1,0 +1,17 @@
+{
+  "hard_gate_logic": "AND",
+  "thresholds": {
+    "mIoU": 0.78,
+    "macro_f1": 0.87,
+    "HUMAN_IoU": 0.65,
+    "HUMAN_recall": 0.85,
+    "VEHICLE_recall": 0.75,
+    "ROBOT_recall": 0.8
+  },
+  "feasible_epoch_count": 0,
+  "feasible_epochs": [],
+  "consecutive_feasible_runs": [],
+  "stable_feasible_runs_at_least_3_epochs": [],
+  "stable_feasible_interval_exists": false,
+  "best_feasible": null
+}

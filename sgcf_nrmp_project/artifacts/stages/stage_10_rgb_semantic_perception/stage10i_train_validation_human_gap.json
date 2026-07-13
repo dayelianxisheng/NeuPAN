@@ -1,0 +1,37 @@
+{
+  "train": {
+    "human_iou": 0.7173427321647733,
+    "human_precision": 0.7635364852869752,
+    "human_recall": 0.9222210984120562,
+    "STATIC_to_HUMAN": 598,
+    "HUMAN_to_STATIC": 2,
+    "HUMAN_to_UNKNOWN": 2457,
+    "HUMAN_to_ROBOT": 1362,
+    "human_error_rates": {
+      "UNKNOWN": 0.049701628400930516,
+      "STATIC_OBSTACLE": 4.0457165975523414e-05,
+      "HUMAN": 0.9222210984120562,
+      "VEHICLE": 0.00048548599170628097,
+      "ROBOT": 0.027551330029331446
+    }
+  },
+  "validation": {
+    "human_iou": 0.6731597148704919,
+    "human_precision": 0.8331586303284416,
+    "human_recall": 0.7780406232155967,
+    "STATIC_to_HUMAN": 6,
+    "HUMAN_to_STATIC": 12,
+    "HUMAN_to_UNKNOWN": 1347,
+    "HUMAN_to_ROBOT": 1291,
+    "human_error_rates": {
+      "UNKNOWN": 0.10987845664409822,
+      "STATIC_OBSTACLE": 0.0009788726649808304,
+      "HUMAN": 0.7780406232155967,
+      "VEHICLE": 0.0057916632678032464,
+      "ROBOT": 0.10531038420752101
+    }
+  },
+  "train_minus_validation_human_recall": 0.1441804751964595,
+  "train_minus_validation_human_iou": 0.044183017294281424,
+  "interpretation": "validation_generalization_gap"
+}

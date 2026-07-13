@@ -1,0 +1,61 @@
+{
+  "mapping": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "renderer_ids": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "saved_label_unique_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "dataset_loader_preserves_ids": true,
+  "loss_target_order": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "model_output_channel_order": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "metric_class_order": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "visualization_class_order": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "logit_channels": 5,
+  "handcrafted_perfect_prediction_recalls": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "all_perfect_recalls_equal_one": true
+}

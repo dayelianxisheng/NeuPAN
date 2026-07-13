@@ -1,0 +1,27 @@
+{
+  "source": "Stage 10D fixed train scene IDs 0-47",
+  "class_order": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "stage10d_weights": {
+    "UNKNOWN": 0.3282637900393733,
+    "STATIC_OBSTACLE": 0.8115540256535101,
+    "HUMAN": 1.5283809715797676,
+    "VEHICLE": 1.238860853978437,
+    "ROBOT": 1.0929403587489122
+  },
+  "stage10e_recomputed_weights": {
+    "UNKNOWN": 0.3282637900393733,
+    "STATIC_OBSTACLE": 0.8115540256535101,
+    "HUMAN": 1.5283809715797676,
+    "VEHICLE": 1.238860853978437,
+    "ROBOT": 1.0929403587489122
+  },
+  "maximum_absolute_difference": 0.0,
+  "exact_order_confirmed": true,
+  "consistent_with_stage10d": true
+}

@@ -1,0 +1,217 @@
+{
+  "logits_shape_expected": [
+    8,
+    5,
+    120,
+    160
+  ],
+  "target_shape_expected": [
+    8,
+    120,
+    160
+  ],
+  "target_dtype": "torch.int64",
+  "label_min": 0,
+  "label_max": 4,
+  "label_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "cross_entropy_input": "raw_logits",
+  "unknown_is_ignore_index": false,
+  "inputs_finite": true,
+  "labels_valid": true,
+  "logits_shape_actual": [
+    8,
+    5,
+    120,
+    160
+  ],
+  "target_shape_actual": [
+    8,
+    120,
+    160
+  ],
+  "model_parameter_count": 118341,
+  "optimizer_covers_all_trainable_parameters": true,
+  "initial_state_sha256": "f52c92334e3602ead517dfdf6fe4709a5f2b04a3dad86a82f516aa08affa57d6",
+  "optimizer_steps": 5000,
+  "initial_loss": 1.58550759156545,
+  "final_loss": 0.004733171779662371,
+  "relative_loss": 0.0029852722275451713,
+  "required_relative_loss_strictly_below": 0.55,
+  "pixel_accuracy": 0.9981434461805555,
+  "macro_f1": 0.9951664725186078,
+  "per_class_recall": {
+    "UNKNOWN": 0.9976034087496395,
+    "STATIC_OBSTACLE": 0.9999636522244839,
+    "HUMAN": 0.9985174680933351,
+    "VEHICLE": 0.9993012175754368,
+    "ROBOT": 0.9997363086507244
+  },
+  "prediction_class_fraction": {
+    "UNKNOWN": 0.7281998697916666,
+    "STATIC_OBSTACLE": 0.11943033854166667,
+    "HUMAN": 0.03470269097222222,
+    "VEHICLE": 0.0516015625,
+    "ROBOT": 0.06606553819444444
+  },
+  "confusion_matrix": [
+    [
+      671010,
+      23,
+      1000,
+      364,
+      225
+    ],
+    [
+      4,
+      110044,
+      0,
+      0,
+      0
+    ],
+    [
+      46,
+      0,
+      30982,
+      0,
+      0
+    ],
+    [
+      33,
+      0,
+      0,
+      47192,
+      0
+    ],
+    [
+      16,
+      0,
+      0,
+      0,
+      60661
+    ]
+  ],
+  "interior": {
+    "pixel_accuracy": 0.9999897776511343,
+    "macro_f1": 0.9999555036440342,
+    "per_class_recall": {
+      "UNKNOWN": 0.9999866818715301,
+      "STATIC_OBSTACLE": 1.0,
+      "HUMAN": 1.0,
+      "VEHICLE": 1.0,
+      "ROBOT": 1.0
+    },
+    "prediction_class_fraction": {
+      "UNKNOWN": 0.7675412312052533,
+      "STATIC_OBSTACLE": 0.11239983695353559,
+      "HUMAN": 0.01853439628724289,
+      "VEHICLE": 0.04412604667268934,
+      "ROBOT": 0.057398488881278915
+    },
+    "confusion_matrix": [
+      [
+        600677,
+        0,
+        5,
+        3,
+        0
+      ],
+      [
+        0,
+        87964,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        14500,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        34530,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        44920
+      ]
+    ]
+  },
+  "boundary": {
+    "pixel_accuracy": 0.9877482895806505,
+    "macro_f1": 0.9867793841483715,
+    "per_class_recall": {
+      "UNKNOWN": 0.9777027120953056,
+      "STATIC_OBSTACLE": 0.9998188733925013,
+      "HUMAN": 0.997216844143272,
+      "VEHICLE": 0.9974005513981883,
+      "ROBOT": 0.9989845782826681
+    },
+    "prediction_class_fraction": {
+      "UNKNOWN": 0.5067013906374774,
+      "STATIC_OBSTACLE": 0.15901324450903231,
+      "HUMAN": 0.12573290839634246,
+      "VEHICLE": 0.09368997345342839,
+      "ROBOT": 0.1148624830037194
+    },
+    "confusion_matrix": [
+      [
+        70333,
+        23,
+        995,
+        361,
+        225
+      ],
+      [
+        4,
+        22080,
+        0,
+        0,
+        0
+      ],
+      [
+        46,
+        0,
+        16482,
+        0,
+        0
+      ],
+      [
+        33,
+        0,
+        0,
+        12662,
+        0
+      ],
+      [
+        16,
+        0,
+        0,
+        0,
+        15741
+      ]
+    ]
+  },
+  "interior_pixel_count": 782599,
+  "boundary_pixel_count": 139001,
+  "no_severe_prediction_collapse": true,
+  "pass": true,
+  "decision": [
+    "48_IMAGE_OVERFIT_GATE_PASSED",
+    "READY_FOR_FULL_STAGE10_TRAINING"
+  ]
+}

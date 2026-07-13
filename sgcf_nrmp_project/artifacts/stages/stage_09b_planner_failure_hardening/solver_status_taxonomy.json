@@ -1,0 +1,13 @@
+{
+  "mapping": {
+    "OSQP_MAX_ITER_REACHED": "SOLVER_USER_LIMIT",
+    "OSQP_TIME_LIMIT_REACHED": "SOLVER_TIMEOUT",
+    "OSQP_PRIMAL_INFEASIBLE": "GEOMETRICALLY_INFEASIBLE or semantic P0 counterfactual classification",
+    "OSQP_DUAL_INFEASIBLE": "NUMERICAL_ERROR",
+    "OSQP_NUMERICAL_ERROR": "NUMERICAL_ERROR",
+    "CVXPY_CANONICALIZATION_FAILURE": "NUMERICAL_ERROR",
+    "UNKNOWN_SOLVER_FAILURE": "NUMERICAL_ERROR"
+  },
+  "raw_status_retained": true,
+  "residuals_retained": true
+}

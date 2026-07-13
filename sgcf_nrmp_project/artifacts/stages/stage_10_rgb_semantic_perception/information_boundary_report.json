@@ -1,0 +1,15 @@
+{
+  "status": "PASS_FOR_IMPLEMENTED_PRETRAINING_AND_OVERFIT_GATE_PATH",
+  "model_inputs": ["current_rgb_image"],
+  "label_only": ["semantic_mask", "instance_mask_for_audit_only", "occluded_mask_for_audit_only"],
+  "forbidden_model_inputs_present": false,
+  "semantic_gt_input": false,
+  "instance_gt_input": false,
+  "depth_gt_input": false,
+  "lidar_gt_class_input": false,
+  "world_geometry_input": false,
+  "semantic_margin_gt_input": false,
+  "future_frame_input": false,
+  "true_calibration_error_input": false,
+  "planner_closed_loop_run": false
+}

@@ -1,0 +1,65 @@
+{
+  "selected_simulator": "Modern Gazebo / gz sim static target",
+  "selected_sdf_version": "1.9",
+  "selection_reason": "No Gazebo runtime is installed; one forward static target is used without multi-version abstraction.",
+  "runtime_available": false,
+  "commands": {
+    "gz": {
+      "path": null,
+      "available": false,
+      "version": null,
+      "available_subcommands": [],
+      "headless_capability": "NOT_TESTED_RUNTIME_UNAVAILABLE"
+    },
+    "gazebo": {
+      "path": null,
+      "available": false,
+      "version": null,
+      "available_subcommands": [],
+      "headless_capability": "NOT_TESTED_RUNTIME_UNAVAILABLE"
+    },
+    "ign": {
+      "path": null,
+      "available": false,
+      "version": null,
+      "available_subcommands": [],
+      "headless_capability": "NOT_TESTED_RUNTIME_UNAVAILABLE"
+    },
+    "ros2": {
+      "path": null,
+      "available": false,
+      "version": null,
+      "available_subcommands": [],
+      "headless_capability": "NOT_TESTED_RUNTIME_UNAVAILABLE"
+    },
+    "colcon": {
+      "path": null,
+      "available": false,
+      "version": null,
+      "available_subcommands": [],
+      "headless_capability": "NOT_TESTED_RUNTIME_UNAVAILABLE"
+    },
+    "xacro": {
+      "path": null,
+      "available": false,
+      "version": null,
+      "available_subcommands": [],
+      "headless_capability": "NOT_TESTED_RUNTIME_UNAVAILABLE"
+    },
+    "python": {
+      "path": "/home/zq/miniconda3/envs/neupan/bin/python",
+      "available": true,
+      "version": [
+        "Python 3.10.0"
+      ],
+      "available_subcommands": [],
+      "headless_capability": "NOT_TESTED_RUNTIME_UNAVAILABLE"
+    }
+  },
+  "required_environment_variables": {
+    "GZ_SIM_RESOURCE_PATH": "/home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN/sgcf_nrmp_project/gazebo/models",
+    "ROS_DOMAIN_ID": "future ROS 2 integration only",
+    "use_sim_time": "future runtime true"
+  },
+  "runtime_actions_executed": false
+}

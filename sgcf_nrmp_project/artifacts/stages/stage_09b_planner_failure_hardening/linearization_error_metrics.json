@@ -1,0 +1,16 @@
+{
+  "sample_count": 533,
+  "mean_signed_error_m": 0.001123848804503086,
+  "mae_m": 0.00325478972259105,
+  "p95_absolute_error_m": 0.013889756347414739,
+  "maximum_absolute_error_m": 0.20596236645245036,
+  "optimistic_sample_count": 155,
+  "offending_horizon_counts": {
+    "9": 13,
+    "5": 5,
+    "6": 4,
+    "None": 3,
+    "8": 4,
+    "7": 15
+  }
+}

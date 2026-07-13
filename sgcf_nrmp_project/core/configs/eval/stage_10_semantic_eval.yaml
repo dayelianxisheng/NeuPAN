@@ -1,0 +1,8 @@
+schema_version: 1
+probability_threshold_candidates: [0.45, 0.55, 0.65]
+entropy_threshold_candidates: [0.8, 1.0, 1.2]
+semantic_margin_max_m: 0.35
+cpu_resolutions:
+  - [160, 120]
+  - [320, 240]
+  - [640, 480]

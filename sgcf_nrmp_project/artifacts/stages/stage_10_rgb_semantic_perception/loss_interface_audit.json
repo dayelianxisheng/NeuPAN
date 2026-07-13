@@ -1,0 +1,9 @@
+{
+  "status": "NOT_RUN_AFTER_ALIGNMENT_DEFECT",
+  "known_from_existing_path_only": {
+    "class_count": 5,
+    "loss": "weighted CrossEntropy on raw model logits",
+    "softmax_before_cross_entropy": false
+  },
+  "reason": "The dedicated interface audit was not executed after the alignment-layer stop."
+}

@@ -1,0 +1,12 @@
+{
+  "scene_id": 0,
+  "patch_size": 5,
+  "quantization_bin_width": 32,
+  "unique_patch_hash_count": 19121,
+  "ambiguous_patch_hash_count": 0,
+  "pixels_with_ambiguous_hash": 0,
+  "ambiguous_pixel_fraction": 0.0,
+  "large_ambiguity_threshold": 0.25,
+  "large_ambiguity": false,
+  "uses_train_only": true
+}

@@ -1,12 +1,15 @@
-/artifacts/datasets/*
-!/artifacts/datasets/.gitkeep
-!/artifacts/datasets/geometry_v1/
-!/artifacts/datasets/geometry_v1/**
-/artifacts/checkpoints/*
-!/artifacts/checkpoints/.gitkeep
-/artifacts/logs/*
-!/artifacts/logs/.gitkeep
-/artifacts/bags/*
-!/artifacts/bags/.gitkeep
+# Python/system-generated files
 **/__pycache__/
-*.pyc
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Model weights and serialized checkpoints only
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Datasets, experiment logs, bags, reports, metrics, figures, manifests, and
+# other process artifacts are intentionally visible to Git.

@@ -1,0 +1,80 @@
+{
+  "purpose": "VALIDATION_ONLY_DIAGNOSTIC",
+  "events": [
+    {
+      "epoch": 101,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 109,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 125,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 132,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 133,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 134,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 142,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 143,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 144,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 145,
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    }
+  ],
+  "optimizer_loaded_without_reset": true,
+  "learning_rate_unchanged": true,
+  "scheduler_state": "not_applicable_no_scheduler",
+  "test_accessed": false,
+  "final_diagnostic_checkpoint_accepted_as_stage10_model": false
+}

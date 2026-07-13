@@ -1,0 +1,7 @@
+{
+  "initial_collision_count": 3,
+  "correct_emergency_stop_count": 3,
+  "planner_induced_collision_count": 0,
+  "trajectory_collision_count": 6,
+  "world_collision_count": 3
+}

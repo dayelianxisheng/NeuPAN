@@ -1,0 +1,90 @@
+{
+  "records": {
+    "stage10i_epoch126": {
+      "epoch": 126,
+      "mean_iou": 0.7737211349094978,
+      "macro_f1": 0.8664364687214068,
+      "human_iou": 0.6635548233571298,
+      "human_recall": 0.8871033526388775,
+      "vehicle_recall": 0.6694292626108772,
+      "robot_recall": 0.9508622288151307,
+      "human_errors": {
+        "status": "NOT_AVAILABLE_CHECKPOINT_NOT_RETAINED"
+      }
+    },
+    "stage10i_epoch145": {
+      "epoch": 145,
+      "mean_iou": 0.8330668903124894,
+      "macro_f1": 0.9047759000884538,
+      "human_iou": 0.6554275145824442,
+      "human_recall": 0.7516110612611143,
+      "vehicle_recall": 0.857270853866141,
+      "robot_recall": 0.9255330984609679,
+      "human_errors": {
+        "status": "available_in_stage10i_checkpoint"
+      }
+    },
+    "stage10j_best_human": {
+      "epoch": 146,
+      "validation_loss": 0.2665250549713771,
+      "mean_iou": 0.8314213138212587,
+      "macro_f1": 0.9036571092512972,
+      "human_iou": 0.6530684140069049,
+      "human_recall": 0.7560975609756098,
+      "vehicle_recall": 0.8730400501747155,
+      "robot_recall": 0.9365844613387725,
+      "human_errors": {
+        "HUMAN_to_UNKNOWN": {
+          "count": 1798,
+          "rate": 0.14666775430296108
+        },
+        "HUMAN_to_STATIC_OBSTACLE": {
+          "count": 23,
+          "rate": 0.001876172607879925
+        },
+        "HUMAN_to_VEHICLE": {
+          "count": 234,
+          "rate": 0.019088016967126194
+        },
+        "HUMAN_to_ROBOT": {
+          "count": 935,
+          "rate": 0.07627049514642303
+        }
+      },
+      "feasible": false
+    },
+    "stage10j_best_miou": {
+      "epoch": 148,
+      "validation_loss": 0.2702390154202779,
+      "mean_iou": 0.8324555333023543,
+      "macro_f1": 0.904334436115896,
+      "human_iou": 0.6544939844302902,
+      "human_recall": 0.7543845338118933,
+      "vehicle_recall": 0.8701729235731566,
+      "robot_recall": 0.931392545892824,
+      "human_errors": {
+        "HUMAN_to_UNKNOWN": {
+          "count": 1896,
+          "rate": 0.1546618810669712
+        },
+        "HUMAN_to_STATIC_OBSTACLE": {
+          "count": 22,
+          "rate": 0.0017945998857981892
+        },
+        "HUMAN_to_VEHICLE": {
+          "count": 240,
+          "rate": 0.019577453299616607
+        },
+        "HUMAN_to_ROBOT": {
+          "count": 853,
+          "rate": 0.0695815319357207
+        }
+      },
+      "feasible": false
+    }
+  },
+  "low_lr_effect": "assessed from validation only",
+  "human_robot_competition": "reduced",
+  "human_vehicle_time_offset": 2,
+  "stage10i_epoch126_human_errors": "NOT_AVAILABLE_CHECKPOINT_NOT_RETAINED"
+}

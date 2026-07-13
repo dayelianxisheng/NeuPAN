@@ -1,0 +1,6 @@
+{
+  "status": "NOT_RUN_AFTER_SINGLE_IMAGE_FAILURE",
+  "known_current_loss": "sqrt-inverse-frequency weighted raw-logit CrossEntropy only",
+  "dice_enabled": false,
+  "reason": "The dedicated loss comparison occurs after single/four-image diagnosis and was prohibited by immediate stop."
+}

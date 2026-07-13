@@ -1,0 +1,38 @@
+{
+  "image_border_10px": {
+    "pixel_count": 36,
+    "true_positive": 0,
+    "false_positive": 0,
+    "false_negative": 36,
+    "iou": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "prediction_distribution": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "mean_human_probability": 0.03642673045396805,
+    "mean_winning_probability": 0.8706520199775696
+  },
+  "non_border": {
+    "pixel_count": 12223,
+    "true_positive": 9538,
+    "false_positive": 1910,
+    "false_negative": 2685,
+    "iou": 0.6748744074152693,
+    "precision": 0.8331586303284416,
+    "recall": 0.780332160680684,
+    "prediction_distribution": {
+      "UNKNOWN": 0.10725681093021353,
+      "STATIC_OBSTACLE": 0.0009817557064550437,
+      "HUMAN": 0.780332160680684,
+      "VEHICLE": 0.005808721263192342,
+      "ROBOT": 0.10562055141945513
+    },
+    "mean_human_probability": 0.689154326915741,
+    "mean_winning_probability": 0.7873069643974304
+  }
+}

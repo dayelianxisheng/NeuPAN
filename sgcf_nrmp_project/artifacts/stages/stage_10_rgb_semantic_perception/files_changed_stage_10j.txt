@@ -1,0 +1,50 @@
+Stage 10J implementation/configuration
+--------------------------------------
+sgcf_nrmp_project/core/configs/train/stage_10j_low_lr_stabilization.yaml
+sgcf_nrmp_project/core/scripts/run_stage10j_low_lr_stabilization.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/training/lifecycle.py
+sgcf_nrmp_project/core/tests/training/test_stage10j_feasibility.py
+
+Stage 10J reports and structured results
+----------------------------------------
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage_10j_low_lr_report.md
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage_10j_decision.md
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_checkpoint_input_audit.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_optimizer_state_audit.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_test_freeze_audit.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_new_audit_non_access.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_preflight_boolean_fix.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_training_config.yaml
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_training_history.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_validation_metrics.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_validation_feasibility.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_validation_pareto.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_metric_stability.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_stage10i_comparison.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_checkpoint_lifecycle.json
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/test_output_stage_10j.txt
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/files_changed_stage_10j.txt
+
+Stage 10J diagnostic checkpoints
+--------------------------------
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_best_human_recall_checkpoint.pt
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_best_miou_checkpoint.pt
+
+Stage 10J figures
+-----------------
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_train_validation_loss.png
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_validation_miou.png
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_validation_macro_f1.png
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_per_class_recall.png
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_human_iou_recall.png
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_human_error_destinations.png
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_validation_pareto.png
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_metric_stability.png
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage10j_stage10i_comparison.png
+
+Updated cumulative Stage 10 documentation
+-----------------------------------------
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/stage_report.md
+sgcf_nrmp_project/artifacts/stages/stage_10_rgb_semantic_perception/known_limitations.md
+
+No Stage 10J changes were made to protected upstream directories.

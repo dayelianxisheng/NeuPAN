@@ -1,0 +1,20 @@
+Stage 10B execution record
+
+PASS repaired-label class distribution and presence audit
+PASS class/channel/metric mapping; handcrafted perfect recall = 1 for all classes
+PASS normalization finite RGB float32 [0,1]
+PASS output resolution 120x160; total stride 4
+CONFIRM 48-image prediction collapse to UNKNOWN/STATIC
+FAIL single-image extreme overfit
+  initial loss: 1.5814664363861084
+  final loss: 0.599865198135376
+  relative loss: 0.37930947147140176
+  ROBOT recall: 0.24848484848484848
+PASS finite nonzero encoder/bottleneck/decoder/classifier gradients
+PASS optimizer contains all trainable parameters and updates every module group
+SKIP four-image, dedicated loss/weight comparison, patch classifier, minimal fix
+SKIP Stage 10B 48-image gate recheck
+STOP BLOCKED_UNRESOLVED_PIPELINE
+
+No full training, validation/test final evaluation, PointPainting, Semantic
+Margin, CPU benchmark, Planner, Stage 09B, ROS, or Gazebo was run.

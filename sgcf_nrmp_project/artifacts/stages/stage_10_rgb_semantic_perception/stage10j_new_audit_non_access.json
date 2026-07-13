@@ -1,0 +1,7 @@
+{
+  "new_audit_split_generated": false,
+  "new_audit_images_read": false,
+  "new_audit_labels_read": false,
+  "new_audit_metrics_computed": false,
+  "reason": "model and validation checkpoint were not frozen before Stage 10J"
+}

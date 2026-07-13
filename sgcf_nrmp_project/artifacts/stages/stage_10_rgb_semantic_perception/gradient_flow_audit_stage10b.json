@@ -1,0 +1,11 @@
+{
+  "single_image": {
+    "encoder_gradient_norm": 0.011633469840731952,
+    "bottleneck_gradient_norm": 0.000779575066669278,
+    "decoder_gradient_norm": 0.07973512406857292,
+    "classifier_gradient_norm": 0.23582095687613844,
+    "fraction_zero_gradients": 0.560236930847168,
+    "fraction_nonfinite_gradients": 0.0,
+    "optimizer_contains_all_trainable_parameters": true
+  }
+}

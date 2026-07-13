@@ -1,0 +1,25 @@
+schema_version: 1
+purpose: VALIDATION_ONLY_LOW_LR_STABILIZATION
+source_checkpoint: stage10i_validation_diagnostic_checkpoint.pt
+source_epoch: 145
+start_epoch: 146
+maximum_final_epoch: 195
+maximum_additional_epochs: 50
+seed: 10
+model: TinySemanticSegmentation
+model_parameter_count: 118341
+input_height: 120
+input_width: 160
+loss: current_sqrt_weighted_cross_entropy
+class_weights: [0.3282637900393733, 0.8115540256535101, 1.5283809715797676, 1.238860853978437, 1.0929403587489122]
+optimizer: AdamW
+old_learning_rate: 0.002
+learning_rate: 0.0002
+batch_size: 8
+shuffle: false
+augmentation: false
+weight_decay: 0.0
+early_stopping: false
+prediction_strategy: U0_argmax_always
+test_access: prohibited
+new_audit_split_access: prohibited

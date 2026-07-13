@@ -1,0 +1,107 @@
+{
+  "purpose": "Stage 10H formal validation-selected synthetic RGB semantic model",
+  "epoch": 100,
+  "best_epoch": 100,
+  "validation_metrics": {
+    "pixel_accuracy": 0.9353541666666667,
+    "mean_iou": 0.7556329340625794,
+    "macro_f1": 0.8542219191971441,
+    "per_class_iou": {
+      "UNKNOWN": 0.9411238879830659,
+      "STATIC_OBSTACLE": 0.8974230092601543,
+      "HUMAN": 0.6731597148704919,
+      "VEHICLE": 0.6377911541481288,
+      "ROBOT": 0.6286669040510559
+    },
+    "per_class_recall": {
+      "UNKNOWN": 0.9613391236381035,
+      "STATIC_OBSTACLE": 0.9539280356739206,
+      "HUMAN": 0.7780406232155967,
+      "VEHICLE": 0.7642236358749216,
+      "ROBOT": 0.8511774522529204
+    },
+    "prediction_class_fraction": {
+      "UNKNOWN": 0.7007473958333333,
+      "STATIC_OBSTACLE": 0.1288671875,
+      "HUMAN": 0.0298125,
+      "VEHICLE": 0.05594791666666667,
+      "ROBOT": 0.084625
+    },
+    "confusion_matrix": [
+      [
+        263206,
+        2926,
+        1641,
+        2070,
+        3948
+      ],
+      [
+        709,
+        46421,
+        6,
+        0,
+        1527
+      ],
+      [
+        1347,
+        12,
+        9538,
+        71,
+        1291
+      ],
+      [
+        2300,
+        18,
+        167,
+        17059,
+        2778
+      ],
+      [
+        1525,
+        108,
+        96,
+        2284,
+        22952
+      ]
+    ]
+  },
+  "validation_loss": 0.2922411262989044,
+  "class_mapping": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "model_architecture": "TinySemanticSegmentation(base_channels=16,class_count=5)",
+  "normalization": "uint8 RGB to float32 [0,1]",
+  "input_resolution_hw": [
+    120,
+    160
+  ],
+  "class_weights": [
+    0.3282637900393733,
+    0.8115540256535101,
+    1.5283809715797676,
+    1.238860853978437,
+    1.0929403587489122
+  ],
+  "dataset_manifest_sha256": "7402293f3a9824fadf53e94c38bffdd463040cb4b3ce5c7529554bf9f4356ec9",
+  "training_config_sha256": "1f8e13c1ceb7b6e3013c8f24fa1e082533e017164d7c43ac70436b1f5a0ea519",
+  "seed": 10,
+  "early_stopping_policy": {
+    "maximum_epochs": 100,
+    "minimum_training_epochs": 60,
+    "patience": 20,
+    "min_delta": 0.0001,
+    "monitor": "validation_mean_iou"
+  },
+  "confidence_policy": "U0_argmax_always",
+  "probability_threshold": null,
+  "entropy_threshold": null,
+  "checkpoint_file": "best_rgb_semantic_model.pt",
+  "validation_readiness_passed": true,
+  "checkpoint_sha256_after_validation_freeze": "6385b1bd1233d967ac2d4f0999d617fc18af97f3f5b24770a2959cc05ee7c4e7",
+  "test_gate_status": "BLOCKED_HUMAN_RECALL",
+  "accepted_as_final_stage10_model": false
+}

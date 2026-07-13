@@ -1,0 +1,30 @@
+{
+  "test_split_manifest_ids_read_for_disjointness_only": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "test_dataset_npz_opened": false,
+  "test_dataset_instantiated": false,
+  "test_dataloader_created": false,
+  "test_dataloader_iterated": false,
+  "test_metrics_computed": false,
+  "test_predictions_saved": false
+}

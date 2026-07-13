@@ -1,0 +1,45 @@
+Stage 10F final verification after authorized audit correction
+Date: 2026-07-13
+Python: 3.10
+Torch: 2.8.0+cu128 (CPU target)
+
+Historical pretraining result:
+- BLOCKED_DATA_INCONSISTENCY false positive
+- optimizer steps before correction: 0
+- superseded by authorized Stage 10F-A precision audit
+
+Corrected audit:
+- float64 source difference: 0.0, PASS at atol/rtol 1e-12
+- float32 cast difference: 2.8243541061456767e-08, PASS at atol/rtol 1e-7
+- CrossEntropyLoss audited tensor identity: PASS
+
+Single full-training attempt:
+- epochs executed: 24
+- validation early stopping: yes
+- best validation mIoU: 0.19580548900017133
+- best validation macro F1: 0.2514792771237354
+- validation HUMAN/VEHICLE/ROBOT recall: zero for every epoch
+- final decision: BLOCKED_CLASS_COLLAPSE
+- test accessed: no
+- accepted checkpoint: no
+- PointPainting / Semantic Margin / robustness / CPU benchmark: not executed
+- secondary post-loop error: KeyError(static_to_human_rate)
+
+Static verification:
+......
+----------------------------------------------------------------------
+Ran 6 weight-audit tests in 0.002s
+
+OK
+
+compileall: PASS
+JSON parse: PASS (65 files)
+Audit/decision consistency: PASS
+git diff --check: PASS
+
+Protected directories:
+- neupan/: no Stage 10F increment
+- neupan_ros/: pre-existing dirty submodule state remains (` m neupan_ros`)
+- neupan_ros2/: no Stage 10F increment
+- example/: no Stage 10F increment
+- docker/: no Stage 10F increment

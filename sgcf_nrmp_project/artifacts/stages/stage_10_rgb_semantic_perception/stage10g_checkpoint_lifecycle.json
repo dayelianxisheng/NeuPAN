@@ -1,0 +1,138 @@
+{
+  "path": "stage10g_diagnostic_best_checkpoint.pt",
+  "purpose": "DIAGNOSTIC_ONLY_NOT_ACCEPTED_FOR_STAGE10",
+  "atomic_write": true,
+  "fsync_before_rename": true,
+  "reload_verified_each_save": true,
+  "save_occurs_before_early_stopping_update": true,
+  "save_independent_of_threshold_reporting": true,
+  "events": [
+    {
+      "epoch": 1,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 2,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 3,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 4,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 5,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 7,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 9,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 10,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 11,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 14,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 28,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 32,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 35,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 36,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 37,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 38,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 39,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 40,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 41,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 42,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 44,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 46,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 47,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 48,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 49,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    }
+  ],
+  "final_diagnostic_best_epoch": 49,
+  "final_reload_max_abs_difference": 0.0
+}

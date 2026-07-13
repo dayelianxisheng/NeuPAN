@@ -1,0 +1,36 @@
+Stage 10C files
+
+Added source/config:
+- core/configs/train/stage_10c_single_image_recheck.yaml
+- core/scripts/diagnose_stage10c_single_residual.py
+- core/scripts/diagnose_stage10c_convergence.py
+- core/scripts/recheck_stage10c_single_image.py
+
+Added artifacts:
+- stage_10c_diagnosis_report.md
+- single_image_residual_error.json
+- robot_region_error_audit.json
+- unknown_region_error_audit.json
+- local_patch_label_ambiguity.json
+- rgb_label_local_consistency.json
+- direct_logits_sanity.json
+- metric_identity_sanity.json
+- single_image_convergence.json
+- single_image_class_weight_comparison.json
+- single_image_loss_comparison.json
+- single_image_capacity_comparison.json
+- single_image_recheck_stage10c.json
+- stage_10c_decision.md
+- test_output_stage_10c.txt
+- files_changed_stage_10c.txt
+- single_image_error_map.png
+- single_image_boundary_error.png
+- robot_error_breakdown.png
+- unknown_error_breakdown.png
+- direct_logits_loss_curve.png
+- single_image_convergence_curve.png
+- single_image_prediction_progress_stage10c.png
+- single_image_recheck_curve_stage10c.png
+
+No frozen Stage 05/07/08/09, Planner, protected upstream, Stage 09B, or later
+stage file was modified.

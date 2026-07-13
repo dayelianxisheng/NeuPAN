@@ -13,5 +13,14 @@
     "P2": 0.30271393134774893
   },
   "observable_collisions": 3,
-  "online_p95_max_ms": 179.09349700494204
+  "observable_collisions_scope": "intentional_initial_collision_cases_only",
+  "observable_collisions_exclude_planner_induced_collision": true,
+  "online_p95_max_ms": 179.09349700494204,
+  "online_p95_max_scope": "first-cycle_and_canonicalization_setup_inclusive_peak",
+  "steady_state_latency_source": "latency_breakdown.json",
+  "deterministic_steady_state_online_p95_max_ms": 63.21148740025818,
+  "random_smoke_steady_state_online_p95_max_ms": 51.08097479569551,
+  "stage_status": "STAGE_09_COMPLETE_WITH_KNOWN_PLANNER_LIMITATIONS",
+  "decision": "SEMANTIC_NRMP_CORE_VALIDATED",
+  "stage_10_readiness": "READY_FOR_STAGE_10_PERCEPTION_ONLY"
 }

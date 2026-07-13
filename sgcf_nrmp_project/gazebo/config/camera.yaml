@@ -1,0 +1,12 @@
+frame_id: camera_link
+optical_frame_id: camera_optical_frame
+width: 320
+height: 240
+horizontal_fov_rad: 1.453284681363431
+fx: 180.0
+fy: 180.0
+cx: 160.0
+cy: 120.0
+minimum_depth_m: 0.05
+far_clip_m: 20.0
+update_rate_hz: 10.0

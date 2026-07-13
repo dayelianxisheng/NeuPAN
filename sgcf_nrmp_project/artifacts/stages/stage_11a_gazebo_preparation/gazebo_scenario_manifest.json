@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "simulator": "Modern Gazebo / gz sim static SDF 1.9 target",
+  "runtime_validated": false,
+  "seed": 909,
+  "shared": {
+    "robot_model": "sgcf_diff_drive_robot",
+    "lidar_config": "config/lidar.yaml",
+    "camera_config": "config/camera.yaml",
+    "goal_pose": [
+      4.0,
+      0.0,
+      0.0
+    ],
+    "avoid_reference_waypoints": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.7,
+        0.72
+      ],
+      [
+        1.5,
+        0.95
+      ],
+      [
+        2.3,
+        0.72
+      ],
+      [
+        4.0,
+        0.0
+      ]
+    ],
+    "straight_reference_waypoints": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ]
+    ]
+  },
+  "scenarios": [
+    {
+      "scene_id": "empty_world",
+      "world": "worlds/empty_world.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference": "straight",
+      "obstacles": [],
+      "contract": "nominal"
+    },
+    {
+      "scene_id": "single_static_obstacle",
+      "world": "worlds/single_static_obstacle.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.7994817392203084
+      ],
+      "reference": "avoid",
+      "obstacles": [
+        {
+          "name": "static_01",
+          "shape": "cylinder",
+          "pose": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "radius": 0.35,
+          "semantic_class": "STATIC_OBSTACLE"
+        }
+      ],
+      "contract": "nominal"
+    },
+    {
+      "scene_id": "static_corridor",
+      "world": "worlds/static_corridor.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference": "straight",
+      "obstacles": [
+        {
+          "name": "wall_left",
+          "shape": "box",
+          "pose": [
+            2.0,
+            0.7,
+            0.0
+          ],
+          "size_xy": [
+            5.0,
+            0.15
+          ],
+          "semantic_class": "STATIC_OBSTACLE"
+        },
+        {
+          "name": "wall_right",
+          "shape": "box",
+          "pose": [
+            2.0,
+            -0.7,
+            0.0
+          ],
+          "size_xy": [
+            5.0,
+            0.15
+          ],
+          "semantic_class": "STATIC_OBSTACLE"
+        }
+      ],
+      "contract": "nominal"
+    },
+    {
+      "scene_id": "narrow_passage",
+      "world": "worlds/narrow_passage.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference": "straight",
+      "obstacles": [
+        {
+          "name": "wall_left",
+          "shape": "box",
+          "pose": [
+            2.0,
+            0.585,
+            0.0
+          ],
+          "size_xy": [
+            5.0,
+            0.15
+          ],
+          "semantic_class": "STATIC_OBSTACLE"
+        },
+        {
+          "name": "wall_right",
+          "shape": "box",
+          "pose": [
+            2.0,
+            -0.585,
+            0.0
+          ],
+          "size_xy": [
+            5.0,
+            0.15
+          ],
+          "semantic_class": "STATIC_OBSTACLE"
+        }
+      ],
+      "contract": "nominal"
+    },
+    {
+      "scene_id": "human_path_center",
+      "world": "worlds/human_path_center.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.7994817392203084
+      ],
+      "reference": "avoid",
+      "obstacles": [
+        {
+          "name": "human_01",
+          "shape": "cylinder",
+          "pose": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "radius": 0.35,
+          "semantic_class": "HUMAN"
+        }
+      ],
+      "contract": "nominal"
+    },
+    {
+      "scene_id": "human_path_side",
+      "world": "worlds/human_path_side.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.7994817392203084
+      ],
+      "reference": "avoid",
+      "obstacles": [
+        {
+          "name": "human_01",
+          "shape": "cylinder",
+          "pose": [
+            1.5,
+            0.35,
+            0.0
+          ],
+          "radius": 0.35,
+          "semantic_class": "HUMAN"
+        }
+      ],
+      "contract": "stage09b_known_limitation"
+    },
+    {
+      "scene_id": "vehicle_path",
+      "world": "worlds/vehicle_path.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.7994817392203084
+      ],
+      "reference": "avoid",
+      "obstacles": [
+        {
+          "name": "vehicle_01",
+          "shape": "box",
+          "pose": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "size_xy": [
+            0.8,
+            0.5
+          ],
+          "semantic_class": "VEHICLE"
+        }
+      ],
+      "contract": "nominal"
+    },
+    {
+      "scene_id": "robot_obstacle",
+      "world": "worlds/robot_obstacle.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.7994817392203084
+      ],
+      "reference": "avoid",
+      "obstacles": [
+        {
+          "name": "robot_obstacle_01",
+          "shape": "box",
+          "pose": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "size_xy": [
+            0.6,
+            0.45
+          ],
+          "semantic_class": "ROBOT"
+        }
+      ],
+      "contract": "nominal"
+    },
+    {
+      "scene_id": "semantic_infeasible",
+      "world": "worlds/semantic_infeasible.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference": "straight",
+      "obstacles": [
+        {
+          "name": "human_01",
+          "shape": "cylinder",
+          "pose": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "radius": 0.35,
+          "semantic_class": "HUMAN"
+        }
+      ],
+      "contract": "geometry_recheck_known_limitation"
+    },
+    {
+      "scene_id": "initial_collision",
+      "world": "worlds/initial_collision.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference": "straight",
+      "obstacles": [
+        {
+          "name": "initial_collision_obstacle",
+          "shape": "cylinder",
+          "pose": [
+            0.41,
+            0.0,
+            0.0
+          ],
+          "radius": 0.2,
+          "semantic_class": "HUMAN"
+        }
+      ],
+      "contract": "intentional_initial_collision"
+    },
+    {
+      "scene_id": "rgb_dropout_contract",
+      "world": "worlds/rgb_dropout_contract.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.7994817392203084
+      ],
+      "reference": "avoid",
+      "obstacles": [
+        {
+          "name": "human_01",
+          "shape": "cylinder",
+          "pose": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "radius": 0.35,
+          "semantic_class": "HUMAN"
+        }
+      ],
+      "contract": "RGB_DROPOUT"
+    },
+    {
+      "scene_id": "outdated_rgb_contract",
+      "world": "worlds/outdated_rgb_contract.sdf",
+      "start_pose": [
+        0.0,
+        0.0,
+        0.7994817392203084
+      ],
+      "reference": "avoid",
+      "obstacles": [
+        {
+          "name": "human_01",
+          "shape": "cylinder",
+          "pose": [
+            1.5,
+            0.0,
+            0.0
+          ],
+          "radius": 0.35,
+          "semantic_class": "HUMAN"
+        }
+      ],
+      "contract": "OUTDATED_IMAGE"
+    }
+  ]
+}

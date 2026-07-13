@@ -1,0 +1,23 @@
+{
+  "source_dtype": "uint8",
+  "source_min": 0,
+  "source_max": 255,
+  "channel_order": "RGB",
+  "model_dtype": "torch.float32",
+  "model_min": 0.007843137718737125,
+  "model_max": 0.9921568632125854,
+  "finite": true,
+  "mean_per_channel": [
+    0.4897139072418213,
+    0.6069217324256897,
+    0.3544217646121979
+  ],
+  "std_per_channel": [
+    0.1612759530544281,
+    0.10980985313653946,
+    0.20302550494670868
+  ],
+  "batch_norm_layers": 0,
+  "group_norm_layers": 0,
+  "dropout_layers": 0
+}

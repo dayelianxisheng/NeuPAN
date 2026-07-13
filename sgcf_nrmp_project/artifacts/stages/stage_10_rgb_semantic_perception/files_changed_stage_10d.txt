@@ -1,0 +1,32 @@
+Stage 10D files
+
+Added source/config/test:
+- core/configs/train/stage_10d_four_image_diagnosis.yaml
+- core/scripts/prepare_stage10d_four_images.py
+- core/scripts/compare_stage10d_four_image_losses.py
+- core/tests/perception/test_stage10d_diagnostics.py
+
+Added artifacts:
+- stage_10d_diagnosis_report.md
+- four_image_selection.json
+- four_image_alignment_audit.json
+- stage10d_class_weight_audit.json
+- four_image_unweighted_ce.json
+- four_image_weighted_ce.json
+- four_image_loss_comparison.json
+- human_robot_confusion_stage10d.json
+- human_robot_patch_separability.json
+- four_image_recheck_stage10d.json
+- stage_10d_decision.md
+- test_output_stage_10d.txt
+- files_changed_stage_10d.txt
+- four_image_rgb_label_overlays.png
+- four_image_prediction_progress_unweighted.png
+- four_image_prediction_progress_weighted.png
+- four_image_loss_comparison.png
+- four_image_per_class_recall.png
+- human_robot_confusion_examples_stage10d.png
+- human_robot_patch_examples.png
+
+No frozen Stage 05/07/08/09, Planner, protected upstream, Stage 09B, or later
+stage file was modified.

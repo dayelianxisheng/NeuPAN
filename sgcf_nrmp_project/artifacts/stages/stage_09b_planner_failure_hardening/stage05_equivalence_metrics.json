@@ -1,0 +1,86 @@
+{
+  "cycles": [
+    {
+      "cycle": 0,
+      "planner_status_difference": 0,
+      "control_max_absolute_error": 0.0,
+      "state_max_absolute_error": 0.0,
+      "distance_max_absolute_error": 0.0,
+      "gradient_max_absolute_error": 0.0,
+      "slack_max_absolute_error": 0.0
+    },
+    {
+      "cycle": 1,
+      "planner_status_difference": 0,
+      "control_max_absolute_error": 0.0,
+      "state_max_absolute_error": 0.0,
+      "distance_max_absolute_error": 0.0,
+      "gradient_max_absolute_error": 0.0,
+      "slack_max_absolute_error": 0.0
+    },
+    {
+      "cycle": 2,
+      "planner_status_difference": 0,
+      "control_max_absolute_error": 0.0,
+      "state_max_absolute_error": 0.0,
+      "distance_max_absolute_error": 0.0,
+      "gradient_max_absolute_error": 0.0,
+      "slack_max_absolute_error": 0.0
+    },
+    {
+      "cycle": 3,
+      "planner_status_difference": 0,
+      "control_max_absolute_error": 0.0,
+      "state_max_absolute_error": 0.0,
+      "distance_max_absolute_error": 0.0,
+      "gradient_max_absolute_error": 0.0,
+      "slack_max_absolute_error": 0.0
+    },
+    {
+      "cycle": 4,
+      "planner_status_difference": 0,
+      "control_max_absolute_error": 0.0,
+      "state_max_absolute_error": 0.0,
+      "distance_max_absolute_error": 0.0,
+      "gradient_max_absolute_error": 0.0,
+      "slack_max_absolute_error": 0.0
+    },
+    {
+      "cycle": 5,
+      "planner_status_difference": 0,
+      "control_max_absolute_error": 0.0,
+      "state_max_absolute_error": 0.0,
+      "distance_max_absolute_error": 0.0,
+      "gradient_max_absolute_error": 0.0,
+      "slack_max_absolute_error": 0.0
+    },
+    {
+      "cycle": 6,
+      "planner_status_difference": 0,
+      "control_max_absolute_error": 0.0,
+      "state_max_absolute_error": 0.0,
+      "distance_max_absolute_error": 0.0,
+      "gradient_max_absolute_error": 0.0,
+      "slack_max_absolute_error": 0.0
+    },
+    {
+      "cycle": 7,
+      "planner_status_difference": 0,
+      "control_max_absolute_error": 0.0,
+      "state_max_absolute_error": 0.0,
+      "distance_max_absolute_error": 0.0,
+      "gradient_max_absolute_error": 0.0,
+      "slack_max_absolute_error": 0.0
+    }
+  ],
+  "maxima": {
+    "planner_status_difference": 0,
+    "control_max_absolute_error": 0.0,
+    "state_max_absolute_error": 0.0,
+    "distance_max_absolute_error": 0.0,
+    "gradient_max_absolute_error": 0.0,
+    "slack_max_absolute_error": 0.0
+  },
+  "exact_geometry_definition_changed": false,
+  "semantic_margin_definition_changed": false
+}

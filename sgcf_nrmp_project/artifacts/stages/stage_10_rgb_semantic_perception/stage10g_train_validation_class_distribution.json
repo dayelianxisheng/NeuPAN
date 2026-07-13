@@ -1,0 +1,236 @@
+{
+  "train": {
+    "UNKNOWN": {
+      "pixel_count": 1126612,
+      "pixel_fraction": 0.7334713541666666,
+      "image_presence_count": 80,
+      "connected_component_count": 155,
+      "component_area": {
+        "p10": 2.0,
+        "p50": 13054.0,
+        "p90": 14427.2
+      },
+      "object_width_px": {
+        "p10": 1.0,
+        "p50": 160.0,
+        "p90": 160.0
+      },
+      "object_height_px": {
+        "p10": 2.0,
+        "p50": 120.0,
+        "p90": 120.0
+      },
+      "interior_pixel_count": 944111,
+      "boundary_pixel_count_3px": 182501
+    },
+    "STATIC_OBSTACLE": {
+      "pixel_count": 179293,
+      "pixel_fraction": 0.11672721354166667,
+      "image_presence_count": 80,
+      "connected_component_count": 88,
+      "component_area": {
+        "p10": 904.4000000000002,
+        "p50": 2184.0,
+        "p90": 2889.6
+      },
+      "object_width_px": {
+        "p10": 10.400000000000002,
+        "p50": 27.0,
+        "p90": 31.0
+      },
+      "object_height_px": {
+        "p10": 72.0,
+        "p50": 82.5,
+        "p90": 91.3
+      },
+      "interior_pixel_count": 126749,
+      "boundary_pixel_count_3px": 52544
+    },
+    "HUMAN": {
+      "pixel_count": 49435,
+      "pixel_fraction": 0.032184244791666664,
+      "image_presence_count": 80,
+      "connected_component_count": 81,
+      "component_area": {
+        "p10": 444.0,
+        "p50": 616.0,
+        "p90": 839.0
+      },
+      "object_width_px": {
+        "p10": 8.0,
+        "p50": 10.0,
+        "p90": 12.0
+      },
+      "object_height_px": {
+        "p10": 71.0,
+        "p50": 83.0,
+        "p90": 95.0
+      },
+      "interior_pixel_count": 12574,
+      "boundary_pixel_count_3px": 36861
+    },
+    "VEHICLE": {
+      "pixel_count": 80641,
+      "pixel_fraction": 0.052500651041666666,
+      "image_presence_count": 80,
+      "connected_component_count": 86,
+      "component_area": {
+        "p10": 690.0,
+        "p50": 928.0,
+        "p90": 1305.5
+      },
+      "object_width_px": {
+        "p10": 19.0,
+        "p50": 27.0,
+        "p90": 32.0
+      },
+      "object_height_px": {
+        "p10": 42.0,
+        "p50": 48.0,
+        "p90": 56.5
+      },
+      "interior_pixel_count": 48972,
+      "boundary_pixel_count_3px": 31669
+    },
+    "ROBOT": {
+      "pixel_count": 100019,
+      "pixel_fraction": 0.06511653645833333,
+      "image_presence_count": 80,
+      "connected_component_count": 87,
+      "component_area": {
+        "p10": 448.0,
+        "p50": 1219.0,
+        "p90": 1625.0
+      },
+      "object_width_px": {
+        "p10": 9.6,
+        "p50": 23.0,
+        "p90": 27.0
+      },
+      "object_height_px": {
+        "p10": 54.6,
+        "p50": 64.0,
+        "p90": 74.0
+      },
+      "interior_pixel_count": 62192,
+      "boundary_pixel_count_3px": 37827
+    }
+  },
+  "validation": {
+    "UNKNOWN": {
+      "pixel_count": 273791,
+      "pixel_fraction": 0.7129973958333333,
+      "image_presence_count": 20,
+      "connected_component_count": 38,
+      "component_area": {
+        "p10": 3.0,
+        "p50": 12637.5,
+        "p90": 14074.8
+      },
+      "object_width_px": {
+        "p10": 1.0,
+        "p50": 160.0,
+        "p90": 160.0
+      },
+      "object_height_px": {
+        "p10": 3.0,
+        "p50": 120.0,
+        "p90": 120.0
+      },
+      "interior_pixel_count": 228183,
+      "boundary_pixel_count_3px": 45608
+    },
+    "STATIC_OBSTACLE": {
+      "pixel_count": 48663,
+      "pixel_fraction": 0.1267265625,
+      "image_presence_count": 20,
+      "connected_component_count": 21,
+      "component_area": {
+        "p10": 1914.0,
+        "p50": 2380.0,
+        "p90": 2852.0
+      },
+      "object_width_px": {
+        "p10": 22.0,
+        "p50": 29.0,
+        "p90": 31.0
+      },
+      "object_height_px": {
+        "p10": 77.0,
+        "p50": 85.0,
+        "p90": 92.0
+      },
+      "interior_pixel_count": 35241,
+      "boundary_pixel_count_3px": 13422
+    },
+    "HUMAN": {
+      "pixel_count": 12259,
+      "pixel_fraction": 0.031924479166666665,
+      "image_presence_count": 19,
+      "connected_component_count": 20,
+      "component_area": {
+        "p10": 393.6,
+        "p50": 681.0,
+        "p90": 825.1
+      },
+      "object_width_px": {
+        "p10": 7.4,
+        "p50": 10.0,
+        "p90": 11.100000000000001
+      },
+      "object_height_px": {
+        "p10": 65.7,
+        "p50": 85.5,
+        "p90": 97.0
+      },
+      "interior_pixel_count": 3346,
+      "boundary_pixel_count_3px": 8913
+    },
+    "VEHICLE": {
+      "pixel_count": 22322,
+      "pixel_fraction": 0.058130208333333336,
+      "image_presence_count": 20,
+      "connected_component_count": 22,
+      "component_area": {
+        "p10": 400.3,
+        "p50": 1055.5,
+        "p90": 1376.0
+      },
+      "object_width_px": {
+        "p10": 12.700000000000001,
+        "p50": 29.0,
+        "p90": 33.0
+      },
+      "object_height_px": {
+        "p10": 42.0,
+        "p50": 51.5,
+        "p90": 57.0
+      },
+      "interior_pixel_count": 13819,
+      "boundary_pixel_count_3px": 8503
+    },
+    "ROBOT": {
+      "pixel_count": 26965,
+      "pixel_fraction": 0.07022135416666667,
+      "image_presence_count": 20,
+      "connected_component_count": 20,
+      "component_area": {
+        "p10": 973.5,
+        "p50": 1409.0,
+        "p90": 1674.3
+      },
+      "object_width_px": {
+        "p10": 20.9,
+        "p50": 25.5,
+        "p90": 28.0
+      },
+      "object_height_px": {
+        "p10": 57.0,
+        "p50": 67.5,
+        "p90": 74.2
+      },
+      "interior_pixel_count": 17499,
+      "boundary_pixel_count_3px": 9466
+    }
+  }
+}

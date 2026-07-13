@@ -1,0 +1,404 @@
+{
+  "epochs": [
+    {
+      "epoch": 1,
+      "loss": 0.02316914399464909,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 2,
+      "loss": 0.031000804901123002,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 3,
+      "loss": 0.034589842955271566,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 4,
+      "loss": 0.03623191912968937,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 5,
+      "loss": 0.04060924847920733,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 6,
+      "loss": 0.0665927529335022,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 7,
+      "loss": 0.052528647581736365,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 8,
+      "loss": 0.06687581539154053,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 9,
+      "loss": 0.05628587404886898,
+      "mean_iou": 0.004094791666666681,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 10,
+      "loss": 0.052854859828948886,
+      "mean_iou": 0.025438076362474332,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 11,
+      "loss": 0.050625065962473625,
+      "mean_iou": 0.011195754027605975,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 12,
+      "loss": 0.06041795015335083,
+      "mean_iou": 0.015135715488481472,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 13,
+      "loss": 0.05510092973709102,
+      "mean_iou": 0.01321732338624576,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 14,
+      "loss": 0.0734182755152386,
+      "mean_iou": 0.0055147763356214186,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 15,
+      "loss": 0.06631137927373243,
+      "mean_iou": 0.014006866164891163,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 16,
+      "loss": 0.07465882698694881,
+      "mean_iou": 0.011353949133270425,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 17,
+      "loss": 0.06414914131164551,
+      "mean_iou": 0.0241442942105842,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 18,
+      "loss": 0.024424191315968846,
+      "mean_iou": 0.0161515150894756,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 19,
+      "loss": 0.072537362575531,
+      "mean_iou": 0.004178284691926604,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 20,
+      "loss": 0.05358254114786787,
+      "mean_iou": 0.033675655206380745,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 21,
+      "loss": 0.057629640897115086,
+      "mean_iou": 0.01540013443600241,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 22,
+      "loss": 0.0662684996922811,
+      "mean_iou": 0.021308051198002664,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 23,
+      "loss": 0.07976328531901045,
+      "mean_iou": 0.01198927472734912,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 24,
+      "loss": 0.09374683300654096,
+      "mean_iou": 0.022284492465783096,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 25,
+      "loss": 0.08546553452809635,
+      "mean_iou": 0.019435087003969675,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 26,
+      "loss": 0.0735454837481182,
+      "mean_iou": 0.018869578068826887,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0
+    },
+    {
+      "epoch": 27,
+      "loss": 0.08270005385080981,
+      "mean_iou": 0.013661354094491984,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 6.998670252651997e-05
+    },
+    {
+      "epoch": 28,
+      "loss": 0.08195157051086421,
+      "mean_iou": 0.00851858974671757,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": -7.417022065640645e-05
+    },
+    {
+      "epoch": 29,
+      "loss": 0.09891587495803833,
+      "mean_iou": 0.017700244363263812,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.00181689009590681
+    },
+    {
+      "epoch": 30,
+      "loss": 0.1038081407546998,
+      "mean_iou": 0.013270495459057535,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 3.5808883313839194e-05
+    },
+    {
+      "epoch": 31,
+      "loss": 0.06986156702041635,
+      "mean_iou": 0.007224140015526848,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.00016521763516517247
+    },
+    {
+      "epoch": 32,
+      "loss": 0.1074218908945721,
+      "mean_iou": 0.008226750853486064,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": -6.963186543972554e-05
+    },
+    {
+      "epoch": 33,
+      "loss": 0.06526641647020992,
+      "mean_iou": 0.019242332965129755,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0002990275533908517
+    },
+    {
+      "epoch": 34,
+      "loss": 0.0854876697063447,
+      "mean_iou": 0.005984310670701293,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": -0.000871105025924919
+    },
+    {
+      "epoch": 35,
+      "loss": 0.10589399337768546,
+      "mean_iou": 0.01532028068078961,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": -0.00028114851020879725
+    },
+    {
+      "epoch": 36,
+      "loss": 0.09473613897959399,
+      "mean_iou": 0.011361903243570781,
+      "human_recall": 0.0,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.004847310422108248
+    },
+    {
+      "epoch": 37,
+      "loss": 0.09314943750699356,
+      "mean_iou": 0.011312822764843716,
+      "human_recall": 4.0457165975523414e-05,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.0031638246103905913
+    },
+    {
+      "epoch": 38,
+      "loss": 0.07136948903401685,
+      "mean_iou": 0.011697888771197706,
+      "human_recall": -0.008082351041522447,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.012768274565566638
+    },
+    {
+      "epoch": 39,
+      "loss": 0.09889728029568978,
+      "mean_iou": 0.0018338458124055323,
+      "human_recall": -0.009241917970315566,
+      "vehicle_recall": 0.0,
+      "robot_recall": -0.026815582584274675
+    },
+    {
+      "epoch": 40,
+      "loss": 0.09640958309173586,
+      "mean_iou": 0.019218436260373895,
+      "human_recall": 0.011817221692159485,
+      "vehicle_recall": 0.0,
+      "robot_recall": -0.012769626061053967
+    },
+    {
+      "epoch": 41,
+      "loss": 0.1322480638821919,
+      "mean_iou": 0.01939447439529518,
+      "human_recall": 0.010119550364423469,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.003156849855490196
+    },
+    {
+      "epoch": 42,
+      "loss": 0.09617797533671057,
+      "mean_iou": 0.010804574881038698,
+      "human_recall": 0.03669887214717926,
+      "vehicle_recall": 0.0,
+      "robot_recall": 0.008512089359798941
+    },
+    {
+      "epoch": 43,
+      "loss": 0.1198491116364796,
+      "mean_iou": 0.030441529143628132,
+      "human_recall": 0.07738577337569807,
+      "vehicle_recall": 1.2400639873017448e-05,
+      "robot_recall": 0.028282674873268604
+    },
+    {
+      "epoch": 44,
+      "loss": 0.08027594089508061,
+      "mean_iou": 0.0032366300932971104,
+      "human_recall": 0.007827776824523847,
+      "vehicle_recall": 2.4801279746034895e-05,
+      "robot_recall": 0.05731148686051524
+    },
+    {
+      "epoch": 45,
+      "loss": 0.1437985082467398,
+      "mean_iou": 0.036108386056408925,
+      "human_recall": 0.12276345677028966,
+      "vehicle_recall": 0.0005288687912871881,
+      "robot_recall": 0.09867944189435829
+    },
+    {
+      "epoch": 46,
+      "loss": 0.1255082011222839,
+      "mean_iou": 0.016913436477252686,
+      "human_recall": 0.06900516500457121,
+      "vehicle_recall": 0.0009793127850260437,
+      "robot_recall": 0.08207369211012527
+    },
+    {
+      "epoch": 47,
+      "loss": 0.108282866080602,
+      "mean_iou": 0.020435734220455137,
+      "human_recall": 0.13092708516589036,
+      "vehicle_recall": 0.0014345604851076096,
+      "robot_recall": 0.02864189532896594
+    },
+    {
+      "epoch": 48,
+      "loss": 0.08969064752260836,
+      "mean_iou": 0.016178152714244665,
+      "human_recall": 0.12490244749765678,
+      "vehicle_recall": 2.642566246213035e-05,
+      "robot_recall": -0.01794680075128391
+    },
+    {
+      "epoch": 49,
+      "loss": 0.13267831007639563,
+      "mean_iou": 0.01626835775629004,
+      "human_recall": 0.08555560449937216,
+      "vehicle_recall": 0.005369552062166581,
+      "robot_recall": 0.016236284288258518
+    },
+    {
+      "epoch": 50,
+      "loss": 0.1338476280371348,
+      "mean_iou": 0.03536691492799443,
+      "human_recall": 0.1572496777002924,
+      "vehicle_recall": -0.0010363461732494743,
+      "robot_recall": 0.07394829212006554
+    }
+  ]
+}

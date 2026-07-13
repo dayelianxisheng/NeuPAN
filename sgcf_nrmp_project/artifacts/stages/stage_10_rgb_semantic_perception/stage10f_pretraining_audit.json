@@ -1,0 +1,121 @@
+{
+  "split_counts": {
+    "train": 80,
+    "validation": 20,
+    "test": 20
+  },
+  "scene_id_disjoint": true,
+  "seed_disjoint": {
+    "geometry_seed": true,
+    "appearance_seed": true,
+    "camera_seed": true
+  },
+  "dataset_file_sha256": {
+    "train": "8ef3981fa4716e17cb89c24089beb36ffefd1090f900042972e406d5a3cf0c27",
+    "validation": "1877cee042936711c7df5b1c3ed7085364ec10c7bdfc36c2d533a766903bf246",
+    "test": "98d37ad1846d3f5fd56fa2862d440a7c3fa0e7e3e2b1a511fc1c04033e2bf6a6"
+  },
+  "manifest_sha256": "7402293f3a9824fadf53e94c38bffdd463040cb4b3ce5c7529554bf9f4356ec9",
+  "authoritative_stage10e_hashes_match": true,
+  "train_label_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "validation_label_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "test_label_ids_static_audit_only": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "target_dtype": "torch.int64",
+  "logits_channels": 5,
+  "unknown_is_ignore_index": false,
+  "class_order": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "class_weights": {
+    "UNKNOWN": 0.3282637900393733,
+    "STATIC_OBSTACLE": 0.8115540256535101,
+    "HUMAN": 1.5283809715797676,
+    "VEHICLE": 1.238860853978437,
+    "ROBOT": 1.0929403587489122
+  },
+  "weighted_ce_order_matches": true,
+  "class_weight_source_audit": {
+    "yaml_dtype": "float64",
+    "authoritative_dtype": "float64",
+    "yaml_class_order": [
+      "UNKNOWN",
+      "STATIC_OBSTACLE",
+      "HUMAN",
+      "VEHICLE",
+      "ROBOT"
+    ],
+    "authoritative_class_order": [
+      "UNKNOWN",
+      "STATIC_OBSTACLE",
+      "HUMAN",
+      "VEHICLE",
+      "ROBOT"
+    ],
+    "class_order_match": true,
+    "source_elementwise_differences": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_max_abs_difference": 0.0,
+    "atol": 1e-12,
+    "rtol": 1e-12,
+    "passed": true
+  },
+  "class_weight_runtime_cast_audit": {
+    "runtime_dtype": "float32",
+    "runtime_cast_elementwise_differences": [
+      6.240137850888061e-10,
+      1.097074031619627e-08,
+      1.8448613747779063e-08,
+      8.412641028243684e-09,
+      2.8243541061456767e-08
+    ],
+    "runtime_cast_max_abs_difference": 2.8243541061456767e-08,
+    "runtime_cast_difference_expected": true,
+    "runtime_cast_within_float32_precision": true,
+    "atol": 1e-07,
+    "rtol": 1e-07,
+    "passed": true
+  },
+  "cross_entropy_uses_audited_runtime_tensor": true,
+  "all_inputs_finite": true,
+  "all_labels_valid": true,
+  "model_input_fields": [
+    "current_rgb_image"
+  ],
+  "test_metrics_read_before_checkpoint_freeze": false,
+  "target_dtype_observed": "torch.int64",
+  "logits_shape_observed": [
+    1,
+    5,
+    120,
+    160
+  ],
+  "logits_channels_observed": 5,
+  "logits_finite": true
+}

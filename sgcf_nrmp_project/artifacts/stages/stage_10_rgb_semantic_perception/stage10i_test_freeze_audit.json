@@ -1,0 +1,34 @@
+{
+  "historical_stage10h_test_result": {
+    "human_recall": 0.7134,
+    "human_iou": 0.57726
+  },
+  "test_scene_ids_read_from_manifest_only": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "test_npz_path_constructed_or_opened": false,
+  "test_dataset_instantiated": false,
+  "test_dataloader_iterated": false,
+  "test_inference_executed": false,
+  "test_metrics_recomputed": false,
+  "test_predictions_inspected_for_tuning": false
+}

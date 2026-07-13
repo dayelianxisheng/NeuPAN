@@ -1,0 +1,33 @@
+{
+  "call_order": [
+    "model_initialization",
+    "optimizer_initialization",
+    "epoch_model_train",
+    "train_metric_stateless_evaluation",
+    "model_eval",
+    "validation_no_grad_inference",
+    "validation_metric_stateless_evaluation",
+    "best_metric_comparison",
+    "atomic_best_checkpoint_save_and_reload",
+    "early_stopping_counter_update",
+    "threshold_summary_not_executed",
+    "report_generation",
+    "final_decision"
+  ],
+  "best_checkpoint_save_step": "immediately after best comparison and before early-stopping update",
+  "threshold_summary_can_block_checkpoint_save": false,
+  "stage10f_report_exception_location": "after epoch loop; no longer in diagnostic replay path",
+  "early_stopping_counter_update_order": "after atomic checkpoint save/reload",
+  "best_epoch_update_before_save": true,
+  "train_eval_switch": "model.train() at every epoch start; evaluate_split sets eval",
+  "validation_no_grad": true,
+  "metric_reset": "metrics are pure functions from a new confusion matrix per split and call",
+  "train_validation_confusion_state_shared": false,
+  "checkpoint_selection": [
+    "validation_mean_iou",
+    "HUMAN_iou",
+    "HUMAN_recall",
+    "negative_validation_loss"
+  ],
+  "checkpoint_is_diagnostic_only": true
+}

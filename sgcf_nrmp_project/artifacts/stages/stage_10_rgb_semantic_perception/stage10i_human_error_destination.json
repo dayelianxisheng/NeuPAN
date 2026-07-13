@@ -1,0 +1,17 @@
+{
+  "all_validation_human_pixels": {
+    "UNKNOWN": 0.10987845664409822,
+    "STATIC_OBSTACLE": 0.0009788726649808304,
+    "HUMAN": 0.7780406232155967,
+    "VEHICLE": 0.0057916632678032464,
+    "ROBOT": 0.10531038420752101
+  },
+  "counts": {
+    "UNKNOWN": 1347,
+    "STATIC_OBSTACLE": 12,
+    "HUMAN": 9538,
+    "VEHICLE": 71,
+    "ROBOT": 1291
+  },
+  "total_human_pixels": 12259
+}

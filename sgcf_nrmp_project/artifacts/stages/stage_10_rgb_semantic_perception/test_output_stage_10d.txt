@@ -1,0 +1,17 @@
+Stage 10D execution record
+
+PASS fixed train-only scene IDs 0,1,2,3; hashes/seeds recorded
+PASS all four images cover UNKNOWN/STATIC/HUMAN/VEHICLE/ROBOT
+PASS static RGB-label overlay audit
+PASS HUMAN/ROBOT train-only crop separability: 100%, 1426 parameters
+PASS class weights sourced from train scenes 0-47 and ordered IDs 0..4
+PASS L0/L1 same initialization hash
+PASS L0/L1 same 1200 steps, optimizer, LR, images, seed
+FAIL L0 unweighted CE four-image gate
+PASS L1 current weighted CE four-image gate
+PASS L1 all class recalls > 0.997 and interior accuracy = 1
+DECISION CURRENT_WEIGHTED_CE_RETAINED
+DECISION FOUR_IMAGE_PIPELINE_VALIDATED
+
+No 48-image overfit, complete training, validation/test, PointPainting, Semantic
+Margin, CPU benchmark, Planner, Stage 09B, ROS, or Gazebo was run.

@@ -1,0 +1,43 @@
+{
+  "definition": "visible HUMAN pixels within 3px of an UNKNOWN occluder versus remaining visible HUMAN pixels",
+  "near_occlusion": {
+    "pixel_count": 397,
+    "true_positive": 314,
+    "false_positive": 272,
+    "false_negative": 83,
+    "iou": 0.4693572496263079,
+    "precision": 0.5358361774744027,
+    "recall": 0.7909319899244333,
+    "prediction_distribution": {
+      "UNKNOWN": 0.1889168765743073,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.7909319899244333,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.020151133501259445
+    },
+    "mean_human_probability": 0.7355882525444031,
+    "mean_winning_probability": 0.8201389312744141
+  },
+  "non_occluded_visible": {
+    "pixel_count": 11862,
+    "true_positive": 9224,
+    "false_positive": 1638,
+    "false_negative": 2638,
+    "iou": 0.6832592592592592,
+    "precision": 0.8491990425336033,
+    "recall": 0.7776091721463497,
+    "prediction_distribution": {
+      "UNKNOWN": 0.10723318158826504,
+      "STATIC_OBSTACLE": 0.0010116337885685382,
+      "HUMAN": 0.7776091721463497,
+      "VEHICLE": 0.005985499915697184,
+      "ROBOT": 0.10816051256111954
+    },
+    "mean_human_probability": 0.6856192350387573,
+    "mean_winning_probability": 0.7864609956741333
+  },
+  "instance_occlusion_fraction_summary": {
+    "mean": 0.0,
+    "max": 0.0
+  }
+}

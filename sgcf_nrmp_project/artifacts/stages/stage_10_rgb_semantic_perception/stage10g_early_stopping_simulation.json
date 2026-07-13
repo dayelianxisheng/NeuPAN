@@ -1,0 +1,27 @@
+{
+  "monitor": "lexicographic validation mean IoU, HUMAN IoU, HUMAN recall, negative validation loss",
+  "patience": 10,
+  "minimum_delta": 0.0,
+  "warmup_epochs": 0,
+  "counter_starts_epoch": 1,
+  "counter_reset_rule": "strict lexicographic improvement",
+  "tie_handling": "tie breakers included in key",
+  "learning_rate_scheduler": "none",
+  "simulated_original_best_epoch": 14,
+  "simulated_original_stop_epoch": 24,
+  "diagnostic_continued_to_epoch": 50,
+  "diagnostic_best_epoch": 49,
+  "first_positive_recall_epoch": {
+    "train": {
+      "HUMAN": 37,
+      "VEHICLE": 43,
+      "ROBOT": 27
+    },
+    "validation": {
+      "HUMAN": 38,
+      "VEHICLE": 45,
+      "ROBOT": 28
+    }
+  },
+  "minority_learning_after_original_stop": true
+}

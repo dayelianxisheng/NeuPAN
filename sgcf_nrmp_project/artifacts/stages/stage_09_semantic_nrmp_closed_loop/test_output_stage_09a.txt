@@ -1,3 +1,13 @@
+SUPERSEDED BY STAGE 09 FINAL REVALIDATION
+
+This file records an earlier blocked or audit state.
+The current authoritative conclusions are in:
+- stage_09_final_report.md
+- stage_report.md
+
+该文件记录历史阻塞/审计状态，已被 Stage 09 最终复验结论取代。
+当前权威结论以 stage_09_final_report.md 和 stage_report.md 为准。
+
 Stage 09A verification
 
 PASS compileall: core/src, core/scripts, core/tests
@@ -15,4 +25,3 @@ PASS protected-directory incremental check
 
 Decision: AUDIT_FIXED_READY_TO_REVALIDATE_STAGE09
 Stage 09 remains BLOCKED_PLANNER_INTEGRATION pending explicit revalidation.
-

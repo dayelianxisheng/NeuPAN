@@ -1,4 +1,24 @@
 {
+  "_stage_09_finalization": {
+    "stage_status": "STAGE_09_COMPLETE_WITH_KNOWN_PLANNER_LIMITATIONS",
+    "decision": "SEMANTIC_NRMP_CORE_VALIDATED",
+    "stage_10_readiness": "READY_FOR_STAGE_10_PERCEPTION_ONLY",
+    "mode_scenario_result_count": 60,
+    "reached_goal_count": 50,
+    "geometry_recheck_rejection_count": 5,
+    "osqp_or_solver_user_limit_count": 2,
+    "intentional_initial_collision_emergency_stop_count": 3,
+    "empty_scene_geometry_rejection_count": 0,
+    "empty_scene_solver_timeout_count": 0,
+    "empty_scene_observable_collision_count": 0,
+    "normal_scenario_planner_induced_observable_collision_count": 0,
+    "human_clearance_m": {"P0": 0.30271393134774893, "P1": 0.5978830647418316, "P2": 0.5978830647418316},
+    "static_clearance_m": {"P0": 0.30271393134774893, "P1": 0.30271393134774893, "P2": 0.30271393134774893},
+    "explicit_failure_degradation": "P2 controls are elementwise identical to P0 for RGB dropout and outdated image",
+    "semantic_margin_bounds_m": [0.0, 0.35],
+    "human_path_side_disclosure": {"P0": "REJECTED_BY_GEOMETRY_CHECK", "P1": "OSQP_OR_SOLVER_USER_LIMIT", "P2": "OSQP_OR_SOLVER_USER_LIMIT"},
+    "note": "Scenario measurements below are retained unchanged; not all deterministic results reached the goal."
+  },
   "no_obstacle_straight": {
     "P0": {
       "success": true,

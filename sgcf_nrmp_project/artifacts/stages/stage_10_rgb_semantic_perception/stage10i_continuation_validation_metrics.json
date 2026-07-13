@@ -1,0 +1,172 @@
+{
+  "decision": "BLOCKED_OPTIMIZATION_CONVERGENCE",
+  "decision_rationale": "The diagnostic stopped after 20 epochs without a new HUMAN-recall high. Aggregate mIoU and VEHICLE/ROBOT improved, but HUMAN recall oscillated and regressed at the mIoU-selected checkpoint; no single accepted checkpoint met all simultaneous gates.",
+  "passed": false,
+  "diagnostic_best_epoch": 145,
+  "epochs_executed": 46,
+  "stop_reason": "VALIDATION_HUMAN_RECALL_20_EPOCHS_NO_IMPROVEMENT",
+  "validation_loss": 0.27757830917835236,
+  "validation_metrics": {
+    "pixel_accuracy": 0.9609479166666667,
+    "mean_iou": 0.8330668903124894,
+    "macro_f1": 0.9047759000884538,
+    "per_class_iou": {
+      "UNKNOWN": 0.9582148654192605,
+      "STATIC_OBSTACLE": 0.9476808532045478,
+      "HUMAN": 0.6554275145824442,
+      "VEHICLE": 0.7961060032449973,
+      "ROBOT": 0.8079052151111974
+    },
+    "per_class_precision": {
+      "UNKNOWN": 0.9762872283971707,
+      "STATIC_OBSTACLE": 0.9785567353045068,
+      "HUMAN": 0.8366475982929266,
+      "VEHICLE": 0.917749748213515,
+      "ROBOT": 0.8640722916594537
+    },
+    "per_class_recall": {
+      "UNKNOWN": 0.9810475873933037,
+      "STATIC_OBSTACLE": 0.9677783942625814,
+      "HUMAN": 0.7516110612611143,
+      "VEHICLE": 0.857270853866141,
+      "ROBOT": 0.9255330984609679
+    },
+    "prediction_class_fraction": {
+      "UNKNOWN": 0.7164739583333334,
+      "STATIC_OBSTACLE": 0.12533072916666665,
+      "HUMAN": 0.0286796875,
+      "VEHICLE": 0.054299479166666664,
+      "ROBOT": 0.07521614583333333
+    },
+    "unknown_rate": 0.7164739583333334,
+    "confusion_matrix": [
+      [
+        268602,
+        878,
+        1541,
+        901,
+        1869
+      ],
+      [
+        1499,
+        47095,
+        0,
+        0,
+        69
+      ],
+      [
+        2008,
+        18,
+        9214,
+        201,
+        818
+      ],
+      [
+        1760,
+        44,
+        212,
+        19136,
+        1170
+      ],
+      [
+        1257,
+        92,
+        46,
+        613,
+        24957
+      ]
+    ],
+    "nll": 0.1345687222820807,
+    "brier_score": 0.05969230774327435,
+    "ece": 0.016524745257726604,
+    "calibration_curve": [
+      {
+        "lower": 0.26666666666666666,
+        "upper": 0.3333333333333333,
+        "count": 14,
+        "accuracy": 0.14285714285714285,
+        "confidence": 0.31524169019290377
+      },
+      {
+        "lower": 0.3333333333333333,
+        "upper": 0.4,
+        "count": 176,
+        "accuracy": 0.23295454545454544,
+        "confidence": 0.37301751666448335
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.4666666666666667,
+        "count": 474,
+        "accuracy": 0.29957805907172996,
+        "confidence": 0.4377285465912477
+      },
+      {
+        "lower": 0.4666666666666667,
+        "upper": 0.5333333333333333,
+        "count": 2238,
+        "accuracy": 0.43386952636282394,
+        "confidence": 0.5072711746909982
+      },
+      {
+        "lower": 0.5333333333333333,
+        "upper": 0.6,
+        "count": 3059,
+        "accuracy": 0.502451781627983,
+        "confidence": 0.5664370976931599
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.6666666666666666,
+        "count": 3061,
+        "accuracy": 0.5334857889578569,
+        "confidence": 0.6338365358373224
+      },
+      {
+        "lower": 0.6666666666666666,
+        "upper": 0.7333333333333333,
+        "count": 3683,
+        "accuracy": 0.5715449361933207,
+        "confidence": 0.7008276475437174
+      },
+      {
+        "lower": 0.7333333333333333,
+        "upper": 0.8,
+        "count": 4317,
+        "accuracy": 0.6416492934908501,
+        "confidence": 0.7676172426847608
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8666666666666667,
+        "count": 5492,
+        "accuracy": 0.6984705025491624,
+        "confidence": 0.834804606346518
+      },
+      {
+        "lower": 0.8666666666666667,
+        "upper": 0.9333333333333333,
+        "count": 8735,
+        "accuracy": 0.7814539210074414,
+        "confidence": 0.9033970521188287
+      },
+      {
+        "lower": 0.9333333333333333,
+        "upper": 1.0,
+        "count": 352751,
+        "accuracy": 0.9897661523284129,
+        "confidence": 0.997567419407459
+      }
+    ],
+    "mean_confidence": 0.9774726619243932
+  },
+  "gate": {
+    "validation_miou_at_least_0_78": true,
+    "validation_macro_f1_at_least_0_87": true,
+    "validation_human_recall_at_least_0_85": false,
+    "validation_human_iou_at_least_0_65": true,
+    "validation_vehicle_recall_at_least_0_75": true,
+    "validation_robot_recall_at_least_0_80": true
+  },
+  "original_test_reused": false
+}

@@ -1,0 +1,53 @@
+{
+  "status": "SYSTEMATIC_RGB_LABEL_MISALIGNMENT_FOUND",
+  "audited_train_scene_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "rgb_shape": [
+    120,
+    160,
+    3
+  ],
+  "label_shape": [
+    120,
+    160
+  ],
+  "shape_match": true,
+  "vertical_or_horizontal_flip_observed": false,
+  "resize_applied": false,
+  "all_black_label_count": 0,
+  "illegal_class_ids": [],
+  "valid_class_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "image_label_index_match": true,
+  "root_causes": [
+    "class-independent texture drawn over full bounding box without instance-mask clipping",
+    "ROBOT antenna drawn to RGB only without semantic/instance labels"
+  ],
+  "affected_classes": [
+    "HUMAN",
+    "VEHICLE",
+    "ROBOT"
+  ],
+  "minimal_fix": "clip all texture to current instance mask and label antenna consistently",
+  "minimal_fix_applied": true,
+  "same_seed_dataset_regenerated": true,
+  "post_fix_action_limited_to_same_48_image_gate": true,
+  "diagnosis_sequence_stopped_after_alignment": true
+}

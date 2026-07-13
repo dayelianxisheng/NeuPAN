@@ -1,0 +1,12 @@
+{
+  "pixel_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "per_class_recall": {
+    "UNKNOWN": 1.0,
+    "STATIC_OBSTACLE": 1.0,
+    "HUMAN": 1.0,
+    "VEHICLE": 1.0,
+    "ROBOT": 1.0
+  },
+  "pass": true
+}

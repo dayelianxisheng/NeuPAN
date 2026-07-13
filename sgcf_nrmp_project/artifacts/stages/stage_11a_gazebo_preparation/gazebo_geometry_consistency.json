@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "comparison_source": "parsed SDF poses/scales/model collision primitives versus frozen scenario and Stage 02/05 definitions",
+  "scenario_count": 12,
+  "obstacle_count": 13,
+  "generated_asset_pose_max_error_m_rad": 0.0,
+  "generated_asset_size_max_error_m": 2.7755575615628914e-17,
+  "observable_point_position_max_error_m": 1.1102230246251565e-16,
+  "exact_clearance_comparison_max_error_m": 0.00010334264283942685,
+  "clearance_tolerance_m": 0.0005,
+  "circle_discretization": {
+    "gazebo_contract_resolution": 512,
+    "stage02_shapely_resolution": 32,
+    "interpretation": "nonzero cylinder clearance error is the measured analytic-SDF versus frozen Stage 02 polygon approximation"
+  },
+  "collision_classification_agreement": 1.0,
+  "records": [
+    {
+      "scene_id": "single_static_obstacle",
+      "obstacle": "static_01",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.00010334264283942685,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "static_corridor",
+      "obstacle": "wall_left",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.0,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "static_corridor",
+      "obstacle": "wall_right",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.0,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "narrow_passage",
+      "obstacle": "wall_left",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.0,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "narrow_passage",
+      "obstacle": "wall_right",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.0,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "human_path_center",
+      "obstacle": "human_01",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.00010334264283942685,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "human_path_side",
+      "obstacle": "human_01",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.00010334264283942685,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "vehicle_path",
+      "obstacle": "vehicle_01",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.0,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "robot_obstacle",
+      "obstacle": "robot_obstacle_01",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.0,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "semantic_infeasible",
+      "obstacle": "human_01",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.00010334264283942685,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "initial_collision",
+      "obstacle": "initial_collision_obstacle",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 2.7755575615628914e-17,
+      "clearance_max_error_m": 5.8213025434405985e-05,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "rgb_dropout_contract",
+      "obstacle": "human_01",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.00010334264283942685,
+      "collision_agreement": 1.0
+    },
+    {
+      "scene_id": "outdated_rgb_contract",
+      "obstacle": "human_01",
+      "pose_error_m_rad": 0.0,
+      "size_error_m": 0.0,
+      "clearance_max_error_m": 0.00010334264283942685,
+      "collision_agreement": 1.0
+    }
+  ],
+  "world_geometry_online_use": false,
+  "passed": true
+}

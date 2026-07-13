@@ -1,0 +1,44 @@
+{
+  "input_resolution_hw": [
+    120,
+    160
+  ],
+  "logit_resolution_before_external_resize_hw": [
+    120,
+    160
+  ],
+  "final_output_resolution_hw": [
+    120,
+    160
+  ],
+  "encoder_total_stride": 4,
+  "label_resize": "none; nearest required if used",
+  "logit_upsampling": "bilinear align_corners=False",
+  "class_sizes": {
+    "STATIC_OBSTACLE": {
+      "minimum_width_px": 22,
+      "minimum_height_px": 69,
+      "minimum_bottleneck_width_cells": 5.5,
+      "minimum_bottleneck_height_cells": 17.25
+    },
+    "HUMAN": {
+      "minimum_width_px": 3,
+      "minimum_height_px": 67,
+      "minimum_bottleneck_width_cells": 0.75,
+      "minimum_bottleneck_height_cells": 16.75
+    },
+    "VEHICLE": {
+      "minimum_width_px": 18,
+      "minimum_height_px": 41,
+      "minimum_bottleneck_width_cells": 4.5,
+      "minimum_bottleneck_height_cells": 10.25
+    },
+    "ROBOT": {
+      "minimum_width_px": 17,
+      "minimum_height_px": 53,
+      "minimum_bottleneck_width_cells": 4.25,
+      "minimum_bottleneck_height_cells": 13.25
+    }
+  },
+  "all_core_classes_at_least_one_bottleneck_cell": false
+}

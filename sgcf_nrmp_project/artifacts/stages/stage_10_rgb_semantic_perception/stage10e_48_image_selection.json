@@ -1,0 +1,1162 @@
+{
+  "split": "train",
+  "selected_scene_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "total_images": 48,
+  "authoritative_hash_reference": "post-Stage-10A repaired dataset; scenes 0-3 cross-checked against four_image_selection.json",
+  "all_classes_present_in_every_image": true,
+  "records": [
+    {
+      "scene_id": 0,
+      "image_id": 0,
+      "geometry_seed": 10000,
+      "appearance_seed": 10001,
+      "camera_seed": 10002,
+      "rgb_sha256": "e74f3e9e3eb80ce611a404aff30103540c515ad46da5cbfe13aea2939744bb27",
+      "semantic_label_sha256": "76eff64116cf5a7dd9fcd4a9fe4d6448dd00b1e566a824d8170a7e6ca40b2325",
+      "class_pixel_counts": {
+        "UNKNOWN": 13171,
+        "STATIC_OBSTACLE": 3008,
+        "HUMAN": 646,
+        "VEHICLE": 1220,
+        "ROBOT": 1155
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 1,
+      "image_id": 1,
+      "geometry_seed": 10003,
+      "appearance_seed": 10004,
+      "camera_seed": 10005,
+      "rgb_sha256": "029604aad7a65506de43b7d0310b65d639ec4f830603faaa98e62a20d6a6a52d",
+      "semantic_label_sha256": "02577821d2b8b1dbb52f52f8d2d74919e667f4630ca02aae7c06e02ec65303ab",
+      "class_pixel_counts": {
+        "UNKNOWN": 13422,
+        "STATIC_OBSTACLE": 3131,
+        "HUMAN": 540,
+        "VEHICLE": 1017,
+        "ROBOT": 1090
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 2,
+      "image_id": 2,
+      "geometry_seed": 10006,
+      "appearance_seed": 10007,
+      "camera_seed": 10008,
+      "rgb_sha256": "0d9713a99e89d932d6a909169d6f3023db4aa13d51e831cdb2ae921a9d2e6c61",
+      "semantic_label_sha256": "9d15c3005ca1512d1cfd2f973d0e26ecfb74a9fd4fe8380fd16e0fde6414568a",
+      "class_pixel_counts": {
+        "UNKNOWN": 14226,
+        "STATIC_OBSTACLE": 2268,
+        "HUMAN": 863,
+        "VEHICLE": 770,
+        "ROBOT": 1073
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 3,
+      "image_id": 3,
+      "geometry_seed": 10009,
+      "appearance_seed": 10010,
+      "camera_seed": 10011,
+      "rgb_sha256": "d75a8214b6551f226a264c2309dc11ad1368829bd382c8802ee77a67eae48216",
+      "semantic_label_sha256": "ab8e8ac16eaca34406da2d442244557e7616fc71397010c1ac206eb321768f56",
+      "class_pixel_counts": {
+        "UNKNOWN": 13841,
+        "STATIC_OBSTACLE": 2079,
+        "HUMAN": 581,
+        "VEHICLE": 1273,
+        "ROBOT": 1426
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 4,
+      "image_id": 4,
+      "geometry_seed": 10012,
+      "appearance_seed": 10013,
+      "camera_seed": 10014,
+      "rgb_sha256": "dc168bb17de043d1860b39127b97f1a9e58acb34aa27d4ef3f6bfd294f242c3d",
+      "semantic_label_sha256": "fc5380cb5d0fd83ccdb8d4e26d3e17888ed4cec2a0d469bd90f97246f78e4ad9",
+      "class_pixel_counts": {
+        "UNKNOWN": 14013,
+        "STATIC_OBSTACLE": 1672,
+        "HUMAN": 783,
+        "VEHICLE": 1124,
+        "ROBOT": 1608
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 5,
+      "image_id": 5,
+      "geometry_seed": 10015,
+      "appearance_seed": 10016,
+      "camera_seed": 10017,
+      "rgb_sha256": "b121fad0d015390049e70e922489cf2a61faa232d3bd33a39d6121d7e9fc3c9b",
+      "semantic_label_sha256": "6af7411dcacefa2e3edd360eae73193ff017bf8276b8d9fec2fadf9930e868a7",
+      "class_pixel_counts": {
+        "UNKNOWN": 14209,
+        "STATIC_OBSTACLE": 2028,
+        "HUMAN": 620,
+        "VEHICLE": 934,
+        "ROBOT": 1409
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 6,
+      "image_id": 6,
+      "geometry_seed": 10018,
+      "appearance_seed": 10019,
+      "camera_seed": 10020,
+      "rgb_sha256": "f7540b96c4a717ac6c782335a195eeb323c8752861223b0293ebe23a70410d4d",
+      "semantic_label_sha256": "0e1f5054d809aa82915095b2a6df3cd20e520099a538a957cc5e479845eb99be",
+      "class_pixel_counts": {
+        "UNKNOWN": 14270,
+        "STATIC_OBSTACLE": 2160,
+        "HUMAN": 540,
+        "VEHICLE": 789,
+        "ROBOT": 1441
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 7,
+      "image_id": 7,
+      "geometry_seed": 10021,
+      "appearance_seed": 10022,
+      "camera_seed": 10023,
+      "rgb_sha256": "eae7249b888d86188b0fe30ca39ff398c082d12f27e22840c0af855ef7e67e4e",
+      "semantic_label_sha256": "35a2ceb8e08af50971d3a3470891a3bdaae339dc1e78b259411549410b7ed701",
+      "class_pixel_counts": {
+        "UNKNOWN": 13305,
+        "STATIC_OBSTACLE": 2212,
+        "HUMAN": 754,
+        "VEHICLE": 1273,
+        "ROBOT": 1656
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 8,
+      "image_id": 8,
+      "geometry_seed": 10024,
+      "appearance_seed": 10025,
+      "camera_seed": 10026,
+      "rgb_sha256": "1bff2f2f104e487e65ff26f37911c005df04d02662d05a1a56c8242787dcf4d9",
+      "semantic_label_sha256": "538f1f0bc9881b7d70119847437f120ca08ec75ba8eca05a6ad38fb394ff5fcc",
+      "class_pixel_counts": {
+        "UNKNOWN": 13987,
+        "STATIC_OBSTACLE": 2212,
+        "HUMAN": 666,
+        "VEHICLE": 1103,
+        "ROBOT": 1232
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 9,
+      "image_id": 9,
+      "geometry_seed": 10027,
+      "appearance_seed": 10028,
+      "camera_seed": 10029,
+      "rgb_sha256": "349df62eb75fcd2b304a2b530185c7f425cd0c2669ea3bbf99aa246937b9d6f5",
+      "semantic_label_sha256": "fb117af8ecd0f58ac566f3678e77ff5357a6c76b409f9cd1acefe4ccd5597c9e",
+      "class_pixel_counts": {
+        "UNKNOWN": 14074,
+        "STATIC_OBSTACLE": 2349,
+        "HUMAN": 820,
+        "VEHICLE": 897,
+        "ROBOT": 1060
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 10,
+      "image_id": 10,
+      "geometry_seed": 10030,
+      "appearance_seed": 10031,
+      "camera_seed": 10032,
+      "rgb_sha256": "975acca781aacfc8cf8773d897c99edbba82fd850ba1960cc3e7adaafffdda07",
+      "semantic_label_sha256": "222eb503564676b5b71ff34b60a9fc368b37b54573ce50c27ce5b1e907a107fc",
+      "class_pixel_counts": {
+        "UNKNOWN": 14071,
+        "STATIC_OBSTACLE": 2400,
+        "HUMAN": 449,
+        "VEHICLE": 797,
+        "ROBOT": 1483
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 11,
+      "image_id": 11,
+      "geometry_seed": 10033,
+      "appearance_seed": 10034,
+      "camera_seed": 10035,
+      "rgb_sha256": "88af5a972a2805d09fabaa0362f6e09b53bfde71de4a75354ea854bd0595e7b5",
+      "semantic_label_sha256": "e476e4932762d44b3019e680bff0985021dd856d055224aa84a2713c64616bd4",
+      "class_pixel_counts": {
+        "UNKNOWN": 14042,
+        "STATIC_OBSTACLE": 2349,
+        "HUMAN": 154,
+        "VEHICLE": 1305,
+        "ROBOT": 1350
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 12,
+      "image_id": 12,
+      "geometry_seed": 10036,
+      "appearance_seed": 10037,
+      "camera_seed": 10038,
+      "rgb_sha256": "c01c406d0a52ed7c594176b8b1f489666a2f6b3e113db9f0078fe8c98e3f760d",
+      "semantic_label_sha256": "83f0b8e9086c661f04efa738f588dace4d75c415f3f9195191565db90d7332a5",
+      "class_pixel_counts": {
+        "UNKNOWN": 15056,
+        "STATIC_OBSTACLE": 1898,
+        "HUMAN": 454,
+        "VEHICLE": 950,
+        "ROBOT": 842
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 13,
+      "image_id": 13,
+      "geometry_seed": 10039,
+      "appearance_seed": 10040,
+      "camera_seed": 10041,
+      "rgb_sha256": "feb685114b7d0ee876d1110bca7613af210cfec87a1d920ed294306a36d4f764",
+      "semantic_label_sha256": "d94c6c6e3f96bfa8c65089a8649517d8cce20160b85a95ffbe7f8b19bbb5f25e",
+      "class_pixel_counts": {
+        "UNKNOWN": 14342,
+        "STATIC_OBSTACLE": 2158,
+        "HUMAN": 725,
+        "VEHICLE": 879,
+        "ROBOT": 1096
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 14,
+      "image_id": 14,
+      "geometry_seed": 10042,
+      "appearance_seed": 10043,
+      "camera_seed": 10044,
+      "rgb_sha256": "6a16c11391db68c1ecbb37abea96cc749ab7d0ec62d2f4137da4a92b8b76b93b",
+      "semantic_label_sha256": "2c0afe6ac6ea26e9c06b01b8e3332e3e584658eb294044fa8c8b023dbccf6734",
+      "class_pixel_counts": {
+        "UNKNOWN": 12359,
+        "STATIC_OBSTACLE": 2970,
+        "HUMAN": 831,
+        "VEHICLE": 1415,
+        "ROBOT": 1625
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 15,
+      "image_id": 15,
+      "geometry_seed": 10045,
+      "appearance_seed": 10046,
+      "camera_seed": 10047,
+      "rgb_sha256": "886e4a05daf2e42b487f6d368f769753c81af7e3b15bb6c5d8fb5eb4430de567",
+      "semantic_label_sha256": "fc6fad34bcd7020d9a5e17f3f708b0655ad002062008180c4a17b3269da66d44",
+      "class_pixel_counts": {
+        "UNKNOWN": 13995,
+        "STATIC_OBSTACLE": 3007,
+        "HUMAN": 474,
+        "VEHICLE": 762,
+        "ROBOT": 962
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 16,
+      "image_id": 16,
+      "geometry_seed": 10048,
+      "appearance_seed": 10049,
+      "camera_seed": 10050,
+      "rgb_sha256": "26abe6778ecf5db7e7619fe9a2540247fcbb7c23b3923e8aebc6822b4f7520f3",
+      "semantic_label_sha256": "e9c64a6f3016126c07f07866be7044ea1bcb6b17ffe08c3b284e235e301c2882",
+      "class_pixel_counts": {
+        "UNKNOWN": 13478,
+        "STATIC_OBSTACLE": 2635,
+        "HUMAN": 885,
+        "VEHICLE": 881,
+        "ROBOT": 1321
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 17,
+      "image_id": 17,
+      "geometry_seed": 10051,
+      "appearance_seed": 10052,
+      "camera_seed": 10053,
+      "rgb_sha256": "791e7873aaf10f3720bbee537d3fbd84eb0fbdeb4bbb4c21e380bf69ec95a0c0",
+      "semantic_label_sha256": "f5d41e7bcc1b13e1ff4ea6bcbb78b8191fe143853200d72cedc3ccc174a09650",
+      "class_pixel_counts": {
+        "UNKNOWN": 13411,
+        "STATIC_OBSTACLE": 2380,
+        "HUMAN": 885,
+        "VEHICLE": 883,
+        "ROBOT": 1641
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 18,
+      "image_id": 18,
+      "geometry_seed": 10054,
+      "appearance_seed": 10055,
+      "camera_seed": 10056,
+      "rgb_sha256": "ac08a58eec4b7e3f41a847b28ff26a8943b51a02c922302d9a752dbd424227be",
+      "semantic_label_sha256": "f92710e453f7eca2111bcb5baf8af35c73b19f710cc80376652716b4842da290",
+      "class_pixel_counts": {
+        "UNKNOWN": 14273,
+        "STATIC_OBSTACLE": 2100,
+        "HUMAN": 592,
+        "VEHICLE": 1360,
+        "ROBOT": 875
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 19,
+      "image_id": 19,
+      "geometry_seed": 10057,
+      "appearance_seed": 10058,
+      "camera_seed": 10059,
+      "rgb_sha256": "016b5de3a3a7cbdf95f866cd7b16e2365b3b17b7a14529a44c461caed4bc7a75",
+      "semantic_label_sha256": "e65c7dd63cd2a94c4c4b23502eae0a4045263137b346b1efd200191b35d8b969",
+      "class_pixel_counts": {
+        "UNKNOWN": 14220,
+        "STATIC_OBSTACLE": 1925,
+        "HUMAN": 704,
+        "VEHICLE": 885,
+        "ROBOT": 1466
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 20,
+      "image_id": 20,
+      "geometry_seed": 10060,
+      "appearance_seed": 10061,
+      "camera_seed": 10062,
+      "rgb_sha256": "c1e6fc73f56c774f58576ca81fc320d3e013c2cd3191dec478337f2545f501a4",
+      "semantic_label_sha256": "d4bc7ecd4104ddc1c75da47565a6fa17bf6311acce8955c81664a67de9cf050e",
+      "class_pixel_counts": {
+        "UNKNOWN": 14491,
+        "STATIC_OBSTACLE": 2610,
+        "HUMAN": 759,
+        "VEHICLE": 852,
+        "ROBOT": 488
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 21,
+      "image_id": 21,
+      "geometry_seed": 10063,
+      "appearance_seed": 10064,
+      "camera_seed": 10065,
+      "rgb_sha256": "6bf8fad6f3941c95829bfd72504cb59c54cd6081d104669fce25167ae6a56dd8",
+      "semantic_label_sha256": "df7952c298c8582282075b415ddb04ca1dfd6ac0b335db02a68b025acb7bd153",
+      "class_pixel_counts": {
+        "UNKNOWN": 13588,
+        "STATIC_OBSTACLE": 3036,
+        "HUMAN": 540,
+        "VEHICLE": 977,
+        "ROBOT": 1059
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 22,
+      "image_id": 22,
+      "geometry_seed": 10066,
+      "appearance_seed": 10067,
+      "camera_seed": 10068,
+      "rgb_sha256": "e84cd028568d74c525236b3c3ed7901b26e418aeceedbde2f197ba4ea72c2417",
+      "semantic_label_sha256": "44e27bebf4da9e03278f0ccb8a780755558efefd0f2b3491012e94cb35f24a0b",
+      "class_pixel_counts": {
+        "UNKNOWN": 13126,
+        "STATIC_OBSTACLE": 2914,
+        "HUMAN": 444,
+        "VEHICLE": 1103,
+        "ROBOT": 1613
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 23,
+      "image_id": 23,
+      "geometry_seed": 10069,
+      "appearance_seed": 10070,
+      "camera_seed": 10071,
+      "rgb_sha256": "6489bff334b1a5a9dd0881656000ca78eac9f0fe2945e772b7eb8f43f8b9e548",
+      "semantic_label_sha256": "a9cc27ff3e2ec8a910b26039343894c2376efcc36017301dd936e9ec9a43f15e",
+      "class_pixel_counts": {
+        "UNKNOWN": 13516,
+        "STATIC_OBSTACLE": 2912,
+        "HUMAN": 540,
+        "VEHICLE": 1110,
+        "ROBOT": 1122
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 24,
+      "image_id": 24,
+      "geometry_seed": 10072,
+      "appearance_seed": 10073,
+      "camera_seed": 10074,
+      "rgb_sha256": "6aed8dcfe5b31e43eb478ab142366b2aecd29ef29b9c046a339e92b04377f341",
+      "semantic_label_sha256": "ff9e3260486d5c4c71e1f4dfbb57b2134dbda5cf2d8390231f1a221a0bf82db2",
+      "class_pixel_counts": {
+        "UNKNOWN": 14122,
+        "STATIC_OBSTACLE": 1804,
+        "HUMAN": 493,
+        "VEHICLE": 1398,
+        "ROBOT": 1383
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 25,
+      "image_id": 25,
+      "geometry_seed": 10075,
+      "appearance_seed": 10076,
+      "camera_seed": 10077,
+      "rgb_sha256": "0c0de6fc683dfb91c78659100d7beea0f088078ad1a94d03f8ffa2daa61d8da3",
+      "semantic_label_sha256": "ec7a3f8c7edad18e01a14bd3a1c2b7c0c4d4c287dcb45c46935c91fac261456a",
+      "class_pixel_counts": {
+        "UNKNOWN": 13701,
+        "STATIC_OBSTACLE": 2700,
+        "HUMAN": 637,
+        "VEHICLE": 1124,
+        "ROBOT": 1038
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 26,
+      "image_id": 26,
+      "geometry_seed": 10078,
+      "appearance_seed": 10079,
+      "camera_seed": 10080,
+      "rgb_sha256": "31323ff29f43fea98c770c65ad792160388ebff2d409e1408941afaa0db5b94d",
+      "semantic_label_sha256": "abcd9b3ff68f6684adf518397481c87c0a03083cf706dc95e8f34f6bc310d129",
+      "class_pixel_counts": {
+        "UNKNOWN": 14332,
+        "STATIC_OBSTACLE": 1800,
+        "HUMAN": 424,
+        "VEHICLE": 1032,
+        "ROBOT": 1612
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 27,
+      "image_id": 27,
+      "geometry_seed": 10081,
+      "appearance_seed": 10082,
+      "camera_seed": 10083,
+      "rgb_sha256": "a13dbb91205e858cc1c6b3432eb9f723bfeacf6283aacafd6771a0a3f6d203bf",
+      "semantic_label_sha256": "716d1b79118074a772fab7c51e84c5dc35354fc6bab329decf30d01e721c25b2",
+      "class_pixel_counts": {
+        "UNKNOWN": 14219,
+        "STATIC_OBSTACLE": 1679,
+        "HUMAN": 878,
+        "VEHICLE": 985,
+        "ROBOT": 1439
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 28,
+      "image_id": 28,
+      "geometry_seed": 10084,
+      "appearance_seed": 10085,
+      "camera_seed": 10086,
+      "rgb_sha256": "7bf24b8f8fb49d198b5b10fd232ea0785ea874014a6b7c51856b0e9cfe982eeb",
+      "semantic_label_sha256": "a8dfa846486eb1935506aa555e4d2b9dea839715f0d29693c63f5d50ecbd6d86",
+      "class_pixel_counts": {
+        "UNKNOWN": 13619,
+        "STATIC_OBSTACLE": 2755,
+        "HUMAN": 627,
+        "VEHICLE": 760,
+        "ROBOT": 1439
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 29,
+      "image_id": 29,
+      "geometry_seed": 10087,
+      "appearance_seed": 10088,
+      "camera_seed": 10089,
+      "rgb_sha256": "d86bbf0b5a15a71ae597c23b57e9dc24394f0783181b48742f12ec33d43b09f6",
+      "semantic_label_sha256": "5f23bb2ccd538c6286c7f9ba2be6f1d8f32e886c351024c4114965c2b1093933",
+      "class_pixel_counts": {
+        "UNKNOWN": 13666,
+        "STATIC_OBSTACLE": 2914,
+        "HUMAN": 590,
+        "VEHICLE": 811,
+        "ROBOT": 1219
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 30,
+      "image_id": 30,
+      "geometry_seed": 10090,
+      "appearance_seed": 10091,
+      "camera_seed": 10092,
+      "rgb_sha256": "90fb94a6d00a6df1d4d01ebcc4349c69235573bb6a84aad18f7d6a00ed155876",
+      "semantic_label_sha256": "f82140b06584660131d930e7fc1b2444fd96047e38e9df552c21548931a165be",
+      "class_pixel_counts": {
+        "UNKNOWN": 14075,
+        "STATIC_OBSTACLE": 2184,
+        "HUMAN": 616,
+        "VEHICLE": 1216,
+        "ROBOT": 1109
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 31,
+      "image_id": 31,
+      "geometry_seed": 10093,
+      "appearance_seed": 10094,
+      "camera_seed": 10095,
+      "rgb_sha256": "49386cf2b796f9228aa0096354f1e851d07b29ac22105681df1f9a0afed5fd7f",
+      "semantic_label_sha256": "137d1484a315935efb70b68a3612100b36087a13094d038f75b170099f7e40d6",
+      "class_pixel_counts": {
+        "UNKNOWN": 13918,
+        "STATIC_OBSTACLE": 2184,
+        "HUMAN": 859,
+        "VEHICLE": 855,
+        "ROBOT": 1384
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 32,
+      "image_id": 32,
+      "geometry_seed": 10096,
+      "appearance_seed": 10097,
+      "camera_seed": 10098,
+      "rgb_sha256": "e9a6b08793a81ee12cf0a06fca859cb1f24614728da71e8a9cac925e158f74cd",
+      "semantic_label_sha256": "47b24ad9676881640d72f25698403c5cfade85dfd45a854e1d3eb89e87e148bd",
+      "class_pixel_counts": {
+        "UNKNOWN": 14252,
+        "STATIC_OBSTACLE": 1368,
+        "HUMAN": 878,
+        "VEHICLE": 1149,
+        "ROBOT": 1553
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 33,
+      "image_id": 33,
+      "geometry_seed": 10099,
+      "appearance_seed": 10100,
+      "camera_seed": 10101,
+      "rgb_sha256": "bf3e501ebfeb44949cef25f8fde1d86fdc64558b78bd9b4733f74ba758f1a9f3",
+      "semantic_label_sha256": "d0c03c180980115a2a3fc32cb96a573b9729f01fe412d31b19988c81bca636b6",
+      "class_pixel_counts": {
+        "UNKNOWN": 14414,
+        "STATIC_OBSTACLE": 2728,
+        "HUMAN": 497,
+        "VEHICLE": 654,
+        "ROBOT": 907
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 34,
+      "image_id": 34,
+      "geometry_seed": 10102,
+      "appearance_seed": 10103,
+      "camera_seed": 10104,
+      "rgb_sha256": "0b9ae9f4570e5e75ef00e97e2eb5a505821517524ed01a5982eca5e35c05abcd",
+      "semantic_label_sha256": "3deecafec90f5383d09993fcc96b236ca8218fb6c916e579055e588dad9d46a9",
+      "class_pixel_counts": {
+        "UNKNOWN": 14315,
+        "STATIC_OBSTACLE": 1958,
+        "HUMAN": 607,
+        "VEHICLE": 950,
+        "ROBOT": 1370
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 35,
+      "image_id": 35,
+      "geometry_seed": 10105,
+      "appearance_seed": 10106,
+      "camera_seed": 10107,
+      "rgb_sha256": "1f94bfc4ae466446214fed7d8431a1282cdd764c2ee83a1eb203394574585493",
+      "semantic_label_sha256": "906ad76b0fa0a876004224673eafbb31ba603334723180e5fc70da71087fcab7",
+      "class_pixel_counts": {
+        "UNKNOWN": 14767,
+        "STATIC_OBSTACLE": 1656,
+        "HUMAN": 657,
+        "VEHICLE": 770,
+        "ROBOT": 1350
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 36,
+      "image_id": 36,
+      "geometry_seed": 10108,
+      "appearance_seed": 10109,
+      "camera_seed": 10110,
+      "rgb_sha256": "eb2c3160dab52787f5b6f9c2a689320635bdf9349d8e251b27f2e243994452db",
+      "semantic_label_sha256": "799318d5546bb4ed023939af84d45073a4c83676f24d25d2161f49b7b0cff3d9",
+      "class_pixel_counts": {
+        "UNKNOWN": 14309,
+        "STATIC_OBSTACLE": 2581,
+        "HUMAN": 445,
+        "VEHICLE": 993,
+        "ROBOT": 872
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 37,
+      "image_id": 37,
+      "geometry_seed": 10111,
+      "appearance_seed": 10112,
+      "camera_seed": 10113,
+      "rgb_sha256": "56f475d1bfd384ef7fc4bde95515394537894cf7b4a3663728fbee0350507922",
+      "semantic_label_sha256": "d18b64c1809dd840713274cb454b242ef941322e3e8c6002924ee0a3ebb8574a",
+      "class_pixel_counts": {
+        "UNKNOWN": 13823,
+        "STATIC_OBSTACLE": 2436,
+        "HUMAN": 428,
+        "VEHICLE": 856,
+        "ROBOT": 1657
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 38,
+      "image_id": 38,
+      "geometry_seed": 10114,
+      "appearance_seed": 10115,
+      "camera_seed": 10116,
+      "rgb_sha256": "c76401a60526a675d0abf2ceb73835eac8321e1f3a1c219c13bffac58924e8d9",
+      "semantic_label_sha256": "fcee97a80feea96a5b05d0e09f807d5e6afa41e1e64cd8839b7c3c4d77ff4697",
+      "class_pixel_counts": {
+        "UNKNOWN": 14756,
+        "STATIC_OBSTACLE": 1750,
+        "HUMAN": 839,
+        "VEHICLE": 914,
+        "ROBOT": 941
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 39,
+      "image_id": 39,
+      "geometry_seed": 10117,
+      "appearance_seed": 10118,
+      "camera_seed": 10119,
+      "rgb_sha256": "be0bf023d8326f95055b3ad3693fd29a04c8263ceda40c8834441d87af697bfd",
+      "semantic_label_sha256": "b84f13febf8a03fbeafb0797e0a751d93f317277358de0814e55bcf6e8321497",
+      "class_pixel_counts": {
+        "UNKNOWN": 14061,
+        "STATIC_OBSTACLE": 2408,
+        "HUMAN": 598,
+        "VEHICLE": 914,
+        "ROBOT": 1219
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 40,
+      "image_id": 40,
+      "geometry_seed": 10120,
+      "appearance_seed": 10121,
+      "camera_seed": 10122,
+      "rgb_sha256": "83bf30a942f03cfc7b66e5a9c26985dc5aeaff901781bf18900f311c873bab39",
+      "semantic_label_sha256": "88653622640257e960e3356872557fef0bfa117f349572c552f47851cd8f68fc",
+      "class_pixel_counts": {
+        "UNKNOWN": 14792,
+        "STATIC_OBSTACLE": 1496,
+        "HUMAN": 659,
+        "VEHICLE": 789,
+        "ROBOT": 1464
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 41,
+      "image_id": 41,
+      "geometry_seed": 10123,
+      "appearance_seed": 10124,
+      "camera_seed": 10125,
+      "rgb_sha256": "60c5c64a5e3cd53ab8f36ba72924977cbceb363e4bd4aea81e1749e0399926b7",
+      "semantic_label_sha256": "45946f4a67b32095bad8d35e9615a31b671213587324ddc2a371feed137563df",
+      "class_pixel_counts": {
+        "UNKNOWN": 14078,
+        "STATIC_OBSTACLE": 2080,
+        "HUMAN": 626,
+        "VEHICLE": 775,
+        "ROBOT": 1641
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 42,
+      "image_id": 42,
+      "geometry_seed": 10126,
+      "appearance_seed": 10127,
+      "camera_seed": 10128,
+      "rgb_sha256": "0483fb0fc383e379375d225db5ed2a08b809a99b10a67a8f1d0058bb79534d98",
+      "semantic_label_sha256": "32c61ebb8631592bc40c5a2b439d97a6d333024524a9834d3435aef2989f32bc",
+      "class_pixel_counts": {
+        "UNKNOWN": 14052,
+        "STATIC_OBSTACLE": 2790,
+        "HUMAN": 745,
+        "VEHICLE": 1035,
+        "ROBOT": 578
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 43,
+      "image_id": 43,
+      "geometry_seed": 10129,
+      "appearance_seed": 10130,
+      "camera_seed": 10131,
+      "rgb_sha256": "3069a87e17bb570f0a7bb1cc9dc7d2b988539eccf45beadaa711a416eb65227a",
+      "semantic_label_sha256": "4ebef0aa8aad2ac875ef1733697db2e5ff77640665780cf43c6db287ba3c0391",
+      "class_pixel_counts": {
+        "UNKNOWN": 14380,
+        "STATIC_OBSTACLE": 1752,
+        "HUMAN": 657,
+        "VEHICLE": 1415,
+        "ROBOT": 996
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 44,
+      "image_id": 44,
+      "geometry_seed": 10132,
+      "appearance_seed": 10133,
+      "camera_seed": 10134,
+      "rgb_sha256": "229273e7e7a1e3a471fcce4808d4c52f8b5add7ca260a22b8f55b4be6091b455",
+      "semantic_label_sha256": "f7549bb227beaa1f686d908447d89750dfdd68292b6e47a29327356fdc5cc52d",
+      "class_pixel_counts": {
+        "UNKNOWN": 14006,
+        "STATIC_OBSTACLE": 2408,
+        "HUMAN": 594,
+        "VEHICLE": 783,
+        "ROBOT": 1409
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 45,
+      "image_id": 45,
+      "geometry_seed": 10135,
+      "appearance_seed": 10136,
+      "camera_seed": 10137,
+      "rgb_sha256": "7948c817f0fd2f2d1216078bc843646c147679b99e422a5ea69aec65348cf4e7",
+      "semantic_label_sha256": "88cb90a5f23b243bd5c845d8d6a02c15de16b2333d2a3462fd9a353ddf440479",
+      "class_pixel_counts": {
+        "UNKNOWN": 14224,
+        "STATIC_OBSTACLE": 2262,
+        "HUMAN": 754,
+        "VEHICLE": 775,
+        "ROBOT": 1185
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 46,
+      "image_id": 46,
+      "geometry_seed": 10138,
+      "appearance_seed": 10139,
+      "camera_seed": 10140,
+      "rgb_sha256": "2cb396bd9b4cb86558d1bdfe9e5783ea64943152a01b4caac53890f79c168d21",
+      "semantic_label_sha256": "4f3b13082fcc4360048a6d61a7f25a3e56297c8e9af6e8c9295d342c2c2c643f",
+      "class_pixel_counts": {
+        "UNKNOWN": 13064,
+        "STATIC_OBSTACLE": 2610,
+        "HUMAN": 851,
+        "VEHICLE": 916,
+        "ROBOT": 1759
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "scene_id": 47,
+      "image_id": 47,
+      "geometry_seed": 10141,
+      "appearance_seed": 10142,
+      "camera_seed": 10143,
+      "rgb_sha256": "83460c79a686eb5c1373c84135cd855485577984df5d09af3ded0eedd285671a",
+      "semantic_label_sha256": "22db384aa489cb8360bfa8c6d9669e1834fbff7b43f00ef48f75c6e8e04ff06c",
+      "class_pixel_counts": {
+        "UNKNOWN": 15191,
+        "STATIC_OBSTACLE": 1332,
+        "HUMAN": 820,
+        "VEHICLE": 797,
+        "ROBOT": 1060
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+Stage 10F-A class-weight precision audit
+Date: 2026-07-13
+
+Command:
+PYTHONPATH=sgcf_nrmp_project/core/src python3.10 -m unittest \
+  sgcf_nrmp_project/core/tests/training/test_class_weight_audit.py
+
+Result:
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK
+
+Audit-only result:
+- split 80/20/20: PASS
+- scene IDs disjoint: PASS
+- geometry/appearance/camera seeds disjoint: PASS
+- Stage 10E scene 0-47 hashes: PASS
+- float64 source max absolute difference: 0.0
+- float64 source atol/rtol: 1e-12 / 1e-12
+- class order: PASS
+- runtime dtype: float32
+- runtime cast max absolute difference: 2.8243541061456767e-08
+- runtime cast atol/rtol: 1e-7 / 1e-7
+- CrossEntropyLoss uses audited tensor: PASS
+- label IDs 0..4, target long, logits 5 channels, finite inputs: PASS
+
+Optimizer steps before correction: 0
+The audit failure was not counted as a training seed.

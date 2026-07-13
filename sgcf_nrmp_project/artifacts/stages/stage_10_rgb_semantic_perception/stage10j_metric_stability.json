@@ -1,0 +1,7 @@
+{
+  "feasible_epoch_count": 0,
+  "feasible_epochs": [],
+  "consecutive_feasible_runs": [],
+  "stable_feasible_runs_at_least_3_epochs": [],
+  "stable_feasible_interval_exists": false
+}

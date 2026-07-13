@@ -1,0 +1,13 @@
+{
+  "status": "NOT_RUN_AFTER_ALIGNMENT_DEFECT",
+  "known_from_existing_path_only": {
+    "source_channel_order": "RGB",
+    "source_dtype": "uint8",
+    "model_input_dtype": "float32",
+    "model_input_scale": "uint8 / 255",
+    "batch_normalization_layers": 0,
+    "dropout_layers": 0,
+    "stochastic_overfit_augmentation": false
+  },
+  "reason": "A dedicated numeric normalization audit was not executed after the alignment-layer stop."
+}

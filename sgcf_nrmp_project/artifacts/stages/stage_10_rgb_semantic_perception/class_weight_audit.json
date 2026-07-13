@@ -1,0 +1,6 @@
+{
+  "status": "NOT_RUN_AFTER_SINGLE_IMAGE_FAILURE",
+  "known_current_scheme": "normalized sqrt inverse pixel frequency from train labels",
+  "actual_weight_values_not_reported": true,
+  "reason": "The class-weight comparison was not executed after mandatory single-image stop."
+}

@@ -1,0 +1,233 @@
+{
+  "interpretation": "Model collapses predominantly to UNKNOWN/STATIC during the current 48-image gate.",
+  "timeline": {
+    "epoch_0": {
+      "predicted_pixel_count": {
+        "UNKNOWN": 921600,
+        "STATIC_OBSTACLE": 0,
+        "HUMAN": 0,
+        "VEHICLE": 0,
+        "ROBOT": 0
+      },
+      "predicted_pixel_fraction": {
+        "UNKNOWN": 1.0,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.0,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.0
+      },
+      "mean_probability": {
+        "UNKNOWN": 0.21835450490315755,
+        "STATIC_OBSTACLE": 0.2095009994506836,
+        "HUMAN": 0.20015315585666232,
+        "VEHICLE": 0.21625970628526475,
+        "ROBOT": 0.15573163138495552
+      },
+      "maximum_probability": {
+        "UNKNOWN": 0.21961316466331482,
+        "STATIC_OBSTACLE": 0.21012316644191742,
+        "HUMAN": 0.2019893079996109,
+        "VEHICLE": 0.21767692267894745,
+        "ROBOT": 0.1570172756910324
+      },
+      "confusion_matrix": [
+        [
+          672622,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          110048,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          31028,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          47225,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          60677,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pixel_accuracy": 0.7298415798611111,
+      "macro_f1": 0.168764952434479,
+      "per_class_recall": {
+        "UNKNOWN": 1.0,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.0,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.0
+      }
+    },
+    "epoch_12": {
+      "predicted_pixel_count": {
+        "UNKNOWN": 921600,
+        "STATIC_OBSTACLE": 0,
+        "HUMAN": 0,
+        "VEHICLE": 0,
+        "ROBOT": 0
+      },
+      "predicted_pixel_fraction": {
+        "UNKNOWN": 1.0,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.0,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.0
+      },
+      "mean_probability": {
+        "UNKNOWN": 0.5209078216552734,
+        "STATIC_OBSTACLE": 0.16752100626627603,
+        "HUMAN": 0.08787285592820909,
+        "VEHICLE": 0.10767504374186197,
+        "ROBOT": 0.11602329678005642
+      },
+      "maximum_probability": {
+        "UNKNOWN": 1.0,
+        "STATIC_OBSTACLE": 0.23502765595912933,
+        "HUMAN": 0.164045050740242,
+        "VEHICLE": 0.18875601887702942,
+        "ROBOT": 0.16348440945148468
+      },
+      "confusion_matrix": [
+        [
+          672622,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          110048,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          31028,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          47225,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          60677,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pixel_accuracy": 0.7298415798611111,
+      "macro_f1": 0.168764952434479,
+      "per_class_recall": {
+        "UNKNOWN": 1.0,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.0,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.0
+      }
+    },
+    "epoch_24": {
+      "predicted_pixel_count": {
+        "UNKNOWN": 752968,
+        "STATIC_OBSTACLE": 168632,
+        "HUMAN": 0,
+        "VEHICLE": 0,
+        "ROBOT": 0
+      },
+      "predicted_pixel_fraction": {
+        "UNKNOWN": 0.8170225694444444,
+        "STATIC_OBSTACLE": 0.18297743055555554,
+        "HUMAN": 0.0,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.0
+      },
+      "mean_probability": {
+        "UNKNOWN": 0.5979297468397352,
+        "STATIC_OBSTACLE": 0.1474970054626465,
+        "HUMAN": 0.06949513859219021,
+        "VEHICLE": 0.08733196470472548,
+        "ROBOT": 0.09774612956576877
+      },
+      "maximum_probability": {
+        "UNKNOWN": 1.0,
+        "STATIC_OBSTACLE": 0.7305499315261841,
+        "HUMAN": 0.17588917911052704,
+        "VEHICLE": 0.20351316034793854,
+        "ROBOT": 0.19275550544261932
+      },
+      "confusion_matrix": [
+        [
+          619079,
+          53543,
+          0,
+          0,
+          0
+        ],
+        [
+          53709,
+          56339,
+          0,
+          0,
+          0
+        ],
+        [
+          19131,
+          11897,
+          0,
+          0,
+          0
+        ],
+        [
+          26005,
+          21220,
+          0,
+          0,
+          0
+        ],
+        [
+          35044,
+          25633,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pixel_accuracy": 0.7328754340277778,
+      "macro_f1": 0.2545701504143209,
+      "per_class_recall": {
+        "UNKNOWN": 0.9203965971972371,
+        "STATIC_OBSTACLE": 0.5119493312009306,
+        "HUMAN": 0.0,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.0
+      }
+    }
+  }
+}

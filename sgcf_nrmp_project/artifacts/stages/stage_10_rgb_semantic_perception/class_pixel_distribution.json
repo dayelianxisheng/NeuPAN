@@ -1,0 +1,5 @@
+{
+  "status": "NOT_RUN_AFTER_ALIGNMENT_DEFECT",
+  "reason": "Stage 10A rules require stopping subsequent diagnosis after fixing pixel alignment and only rechecking the same 48-image gate.",
+  "values": null
+}

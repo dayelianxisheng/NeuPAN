@@ -1,0 +1,89 @@
+{
+  "frozen_sample": {
+    "scene_id": 0,
+    "image_id": 0,
+    "geometry_seed": 10000,
+    "appearance_seed": 10001,
+    "camera_seed": 10002,
+    "rgb_sha256": "e74f3e9e3eb80ce611a404aff30103540c515ad46da5cbfe13aea2939744bb27",
+    "semantic_label_sha256": "76eff64116cf5a7dd9fcd4a9fe4d6448dd00b1e566a824d8170a7e6ca40b2325"
+  },
+  "regions": {
+    "main_body": {
+      "pixel_count": 634,
+      "error_count": 515,
+      "error_rate": 0.8123028391167192,
+      "recall_robot": 0.18769716088328076,
+      "prediction_distribution": {
+        "UNKNOWN": 0.25709779179810727,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.4747634069400631,
+        "VEHICLE": 0.0804416403785489,
+        "ROBOT": 0.18769716088328076
+      },
+      "mean_robot_probability": 0.28912171721458435,
+      "mean_winning_probability": 0.40542274713516235
+    },
+    "upper_structure": {
+      "pixel_count": 426,
+      "error_count": 287,
+      "error_rate": 0.6737089201877934,
+      "recall_robot": 0.32629107981220656,
+      "prediction_distribution": {
+        "UNKNOWN": 0.2746478873239437,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.39906103286384975,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.32629107981220656
+      },
+      "mean_robot_probability": 0.3130248486995697,
+      "mean_winning_probability": 0.3347947299480438
+    },
+    "antenna": {
+      "pixel_count": 95,
+      "error_count": 66,
+      "error_rate": 0.6947368421052632,
+      "recall_robot": 0.30526315789473685,
+      "prediction_distribution": {
+        "UNKNOWN": 0.0,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.6947368421052632,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.30526315789473685
+      },
+      "mean_robot_probability": 0.3350677788257599,
+      "mean_winning_probability": 0.3662092089653015
+    },
+    "boundary": {
+      "pixel_count": 131,
+      "error_count": 54,
+      "error_rate": 0.4122137404580153,
+      "recall_robot": 0.5877862595419847,
+      "prediction_distribution": {
+        "UNKNOWN": 0.09923664122137404,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.2366412213740458,
+        "VEHICLE": 0.07633587786259542,
+        "ROBOT": 0.5877862595419847
+      },
+      "mean_robot_probability": 0.3659974932670593,
+      "mean_winning_probability": 0.447074830532074
+    },
+    "interior": {
+      "pixel_count": 655,
+      "error_count": 568,
+      "error_rate": 0.867175572519084,
+      "recall_robot": 0.13282442748091602,
+      "prediction_distribution": {
+        "UNKNOWN": 0.15725190839694655,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.6885496183206107,
+        "VEHICLE": 0.021374045801526718,
+        "ROBOT": 0.13282442748091602
+      },
+      "mean_robot_probability": 0.29042741656303406,
+      "mean_winning_probability": 0.338608980178833
+    }
+  },
+  "dominant_robot_misprediction": "HUMAN"
+}

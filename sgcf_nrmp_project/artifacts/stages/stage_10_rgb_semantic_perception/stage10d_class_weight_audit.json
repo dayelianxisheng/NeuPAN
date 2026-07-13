@@ -1,0 +1,49 @@
+{
+  "source": "train split fixed scene IDs 0-47",
+  "class_order": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  },
+  "raw_pixel_count": {
+    "UNKNOWN": 672622,
+    "STATIC_OBSTACLE": 110048,
+    "HUMAN": 31028,
+    "VEHICLE": 47225,
+    "ROBOT": 60677
+  },
+  "pixel_frequency": {
+    "UNKNOWN": 0.7298415798611111,
+    "STATIC_OBSTACLE": 0.11940972222222222,
+    "HUMAN": 0.033667534722222225,
+    "VEHICLE": 0.05124240451388889,
+    "ROBOT": 0.06583875868055555
+  },
+  "raw_inverse_frequency": {
+    "UNKNOWN": 1.3701603575262182,
+    "STATIC_OBSTACLE": 8.37452747891829,
+    "HUMAN": 29.702204460487298,
+    "VEHICLE": 19.51508734780307,
+    "ROBOT": 15.188621718278755
+  },
+  "sqrt_inverse_frequency": {
+    "UNKNOWN": 1.17053849040782,
+    "STATIC_OBSTACLE": 2.893877585337412,
+    "HUMAN": 5.449972886215793,
+    "VEHICLE": 4.417588408600678,
+    "ROBOT": 3.897258230894991
+  },
+  "actual_normalized_weights": {
+    "UNKNOWN": 0.3282637900393733,
+    "STATIC_OBSTACLE": 0.8115540256535101,
+    "HUMAN": 1.5283809715797676,
+    "VEHICLE": 1.238860853978437,
+    "ROBOT": 1.0929403587489122
+  },
+  "normalized_once": true,
+  "extreme_amplification": false,
+  "unknown_weight_low": true,
+  "human_robot_weight_ratio": 1.3984120536360318
+}

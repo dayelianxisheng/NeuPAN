@@ -1,0 +1,4 @@
+{
+  "status": "NOT_EXECUTED_DUE_TO_EARLIER_STOP",
+  "reason": "The final single-image recheck failed after the one selected optimization-step fix; width doubling is prohibited after immediate stop and would be a second independent change."
+}

@@ -1,0 +1,21 @@
+{
+  "selected_scene_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "rgb_label_shape_match": true,
+  "valid_class_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "all_labels_nonempty": true,
+  "texture_clipped_to_instance_mask": true,
+  "robot_antenna_labeled": true,
+  "obvious_new_misalignment": false,
+  "training_allowed": true
+}

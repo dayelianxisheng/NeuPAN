@@ -1,0 +1,8 @@
+{
+  "status": "NOT_EXECUTED_DUE_TO_CLASS_COLLAPSE",
+  "validation_checkpoint_frozen": false,
+  "probability_threshold": null,
+  "entropy_threshold": null,
+  "test_accessed": false,
+  "secondary_pipeline_error": "policy_metrics referenced static_to_human_rate before the update inserted it"
+}

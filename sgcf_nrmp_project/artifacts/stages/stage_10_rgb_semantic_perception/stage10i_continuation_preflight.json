@@ -1,0 +1,18 @@
+{
+  "checkpoint_epoch_100": true,
+  "optimizer_state_present": true,
+  "training_config_hash_match": true,
+  "dataset_manifest_hash_match": true,
+  "model_architecture_match": true,
+  "class_weights_match": true,
+  "normalization_match": true,
+  "train_hash_match": true,
+  "validation_hash_match": true,
+  "test_not_accessed": true,
+  "optimizer_loaded_without_reset": true,
+  "loaded_learning_rate": 0.002,
+  "learning_rate_unchanged": true,
+  "scheduler": "not_applicable_no_scheduler",
+  "source_checkpoint_validation_metrics_reproduced": true,
+  "all_frozen_state_checks_passed": true
+}

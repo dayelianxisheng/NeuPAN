@@ -1,0 +1,12 @@
+Stage 10 stopped before the test phase.
+
+No unittest, compileall, simulation, Planner closed loop, robustness evaluation,
+or performance benchmark was run after the mandatory overfit-gate failure.
+
+Pretraining audit: CONTINUE_WITH_INDEPENDENT_APPEARANCE_RENDERER
+Dataset generation: 80 train / 20 validation / 20 test scenes
+48-image overfit gate: FAIL
+Initial loss: 1.5663416385650635
+Final loss: 1.1782216429710388
+Relative loss: 0.7522124254134085
+Decision: BLOCKED_MODEL_OR_DATA_PIPELINE

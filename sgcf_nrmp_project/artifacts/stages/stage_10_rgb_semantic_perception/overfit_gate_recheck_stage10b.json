@@ -1,0 +1,6 @@
+{
+  "status": "NOT_RUN_AFTER_SINGLE_IMAGE_FAILURE",
+  "minimal_fix_selected": null,
+  "same_48_image_gate_recheck_count_stage10b": 0,
+  "reason": "No safe root cause/minimal fix was established before immediate stop; rerunning the 48-image gate would violate the ordered diagnosis."
+}

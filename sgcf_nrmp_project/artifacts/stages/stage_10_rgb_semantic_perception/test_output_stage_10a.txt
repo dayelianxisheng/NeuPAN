@@ -1,0 +1,13 @@
+Stage 10A diagnostic execution record
+
+READ required Stage 10 blocked artifacts
+FAIL layer 1 alignment: texture outside instance masks; ROBOT antenna RGB-only
+APPLY minimal fix: texture clipping + consistent antenna labels
+REGENERATE same-seed 80/20/20 dataset (split unchanged)
+SKIP layers 2-9 by alignment-first stop rule
+RUN exactly one same-ID 48-image overfit gate recheck
+FAIL relative loss: 0.7467831455009948 (required < 0.55)
+STOP BLOCKED_UNRESOLVED_PIPELINE
+
+No unittest, compileall, full training, validation/test evaluation, PointPainting,
+Semantic Margin, CPU benchmark, Planner, Stage 09B, ROS, or Gazebo was run.

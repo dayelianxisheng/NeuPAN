@@ -1,0 +1,21 @@
+{
+  "area_p25": 535.5,
+  "area_p75": 771.0,
+  "bins": {
+    "small": {
+      "instance_count": 5,
+      "pixel_count": 1984,
+      "mean_instance_recall": 0.7327771552328504
+    },
+    "medium": {
+      "instance_count": 9,
+      "pixel_count": 6103,
+      "mean_instance_recall": 0.8601728790091774
+    },
+    "large": {
+      "instance_count": 5,
+      "pixel_count": 4172,
+      "mean_instance_recall": 0.6589021091376992
+    }
+  }
+}

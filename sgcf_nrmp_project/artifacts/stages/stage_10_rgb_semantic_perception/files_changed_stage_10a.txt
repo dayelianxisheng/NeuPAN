@@ -1,0 +1,43 @@
+Stage 10A files
+
+Modified:
+- core/src/sgcf_nrmp/data/procedural/appearance_renderer.py
+- artifacts/stages/stage_10_rgb_semantic_perception/dataset/{train,validation,test}.npz
+- artifacts/stages/stage_10_rgb_semantic_perception/dataset_manifest.json
+- artifacts/stages/stage_10_rgb_semantic_perception/dataset_split_report.json
+- artifacts/stages/stage_10_rgb_semantic_perception/rgb_appearance_examples.png
+- artifacts/stages/stage_10_rgb_semantic_perception/semantic_gt_examples.png
+
+Added:
+- core/configs/train/stage_10a_pipeline_diagnosis.yaml
+- core/scripts/audit_stage10a_alignment.py
+- core/scripts/recheck_stage10a_overfit_gate.py
+- artifacts/stages/stage_10_rgb_semantic_perception/sample_alignment_audit.json
+- artifacts/stages/stage_10_rgb_semantic_perception/sample_alignment_examples.png
+- artifacts/stages/stage_10_rgb_semantic_perception/rgb_label_overlay_examples.png
+- artifacts/stages/stage_10_rgb_semantic_perception/class_pixel_distribution.json
+- artifacts/stages/stage_10_rgb_semantic_perception/class_presence_distribution.json
+- artifacts/stages/stage_10_rgb_semantic_perception/class_component_size.json
+- artifacts/stages/stage_10_rgb_semantic_perception/loss_interface_audit.json
+- artifacts/stages/stage_10_rgb_semantic_perception/single_image_overfit.json
+- artifacts/stages/stage_10_rgb_semantic_perception/four_image_overfit.json
+- artifacts/stages/stage_10_rgb_semantic_perception/gradient_flow_audit.json
+- artifacts/stages/stage_10_rgb_semantic_perception/parameter_update_audit.json
+- artifacts/stages/stage_10_rgb_semantic_perception/normalization_audit.json
+- artifacts/stages/stage_10_rgb_semantic_perception/loss_component_audit.json
+- artifacts/stages/stage_10_rgb_semantic_perception/overfit_gate_recheck.json
+- artifacts/stages/stage_10_rgb_semantic_perception/training_config.yaml
+- artifacts/stages/stage_10_rgb_semantic_perception/model_architecture.json
+- artifacts/stages/stage_10_rgb_semantic_perception/overfit_before_after.png
+- artifacts/stages/stage_10_rgb_semantic_perception/loss_component_curves.png
+- artifacts/stages/stage_10_rgb_semantic_perception/class_pixel_distribution.png
+- artifacts/stages/stage_10_rgb_semantic_perception/single_image_prediction_progress.png
+- artifacts/stages/stage_10_rgb_semantic_perception/four_image_prediction_progress.png
+- artifacts/stages/stage_10_rgb_semantic_perception/gradient_norms.png
+- artifacts/stages/stage_10_rgb_semantic_perception/stage_10a_diagnosis_report.md
+- artifacts/stages/stage_10_rgb_semantic_perception/stage_10a_decision.md
+- artifacts/stages/stage_10_rgb_semantic_perception/test_output_stage_10a.txt
+- artifacts/stages/stage_10_rgb_semantic_perception/files_changed_stage_10a.txt
+
+No frozen planner, semantic-margin, protected upstream, Stage 09B, or later-stage
+file was changed.

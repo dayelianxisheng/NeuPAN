@@ -1,0 +1,50 @@
+Stage 11A static validation record
+==================================
+
+Environment
+-----------
+Python: /home/zq/miniconda3/envs/neupan/bin/python (Python 3.10.0)
+Gazebo/ROS executables: gz, gazebo, ign, ros2, colcon, xacro unavailable
+Runtime actions executed: false
+
+Asset validation
+----------------
+Command: python sgcf_nrmp_project/gazebo/scripts/validate_gazebo_assets.py
+Result: parsed=24, scenarios=12, errors=0, passed=true
+
+Geometry comparison
+-------------------
+Command: python sgcf_nrmp_project/gazebo/scripts/compare_gazebo_stage05_geometry.py
+Obstacles: 13
+Maximum parsed-SDF versus Stage02/05 clearance error: 0.00010334264283942685 m
+Collision classification agreement: 1.0
+Result: PASS (declared tolerance 0.0005 m)
+
+Stage 11A unittest
+------------------
+Command: PYTHONPATH=sgcf_nrmp_project/gazebo:sgcf_nrmp_project/core/src python -m unittest discover -s sgcf_nrmp_project/gazebo/tests -v
+Tests run: 10
+Result: OK
+
+Coverage includes XML parsing, references, duplicate names, unique scenes,
+semantic IDs, frame acyclicity, LiDAR conversion/order/invalid handling,
+Stage07 camera consistency, footprint equality, online world-information
+boundary, Oracle geometry preservation, UNKNOWN zero margin, R1 dropout/stale
+handling, safe-command mapping, frozen human_path_side, and JSON parsing.
+
+Full research-package regression
+--------------------------------
+Command: PYTHONPATH=sgcf_nrmp_project/gazebo:sgcf_nrmp_project/core/src python -m unittest discover -s sgcf_nrmp_project/core/tests -v
+Tests run: 182
+Result: OK
+
+Static hygiene
+--------------
+compileall: PASS
+Stage 11A JSON parsed: 13/13
+git diff --check: PASS
+Protected directory status: only pre-existing `m neupan_ros`; no Stage 11A
+change was made in neupan/, neupan_ros/, neupan_ros2/, example/, or docker/.
+
+Gazebo world load, spawn, headless startup, and sensor checks:
+NOT EXECUTED -- RUNTIME UNAVAILABLE

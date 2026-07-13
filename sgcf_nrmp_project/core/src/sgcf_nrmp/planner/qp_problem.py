@@ -9,7 +9,7 @@ import numpy as np
 
 from sgcf_nrmp.planner.angle_utils import unwrap_reference
 from sgcf_nrmp.planner.dynamics import linearize
-from sgcf_nrmp.planner.solver_result import PlannerStatus
+from sgcf_nrmp.planner.solver_result import PlannerStatus, SolverFailureReason
 from sgcf_nrmp.planner.trust_region import TrustRegion
 
 
@@ -142,10 +142,13 @@ class PersistentPlannerQP:
 
     def solve(self, simulate_timeout=False, simulate_infeasible=False):
         if simulate_timeout:
+            self.last_solve_diagnostics = {"solver_status":"simulated_timeout","failure_reason":SolverFailureReason.OSQP_TIME_LIMIT_REACHED.value,"warm_start_used":self._last_primal is not None}
             return PlannerStatus.SOLVER_TIMEOUT, None, 0.0, 0.0
         if simulate_infeasible:
+            self.last_solve_diagnostics = {"solver_status":"simulated_infeasible","failure_reason":SolverFailureReason.OSQP_PRIMAL_INFEASIBLE.value,"warm_start_used":self._last_primal is not None}
             return PlannerStatus.INFEASIBLE, None, 0.0, 0.0
-        if self._last_primal is not None:
+        warm_start_used = self._last_primal is not None
+        if warm_start_used:
             for variable, value in zip((self.states, self.controls, self.slack), self._last_primal):
                 variable.value = value
         solver = self.config["solver"]
@@ -157,29 +160,60 @@ class PersistentPlannerQP:
                 time_limit=solver["time_limit_s"], polishing=solver["polish"], verbose=False,
                 enforce_dpp=True,
             )
-        except cp.error.SolverError:
+        except cp.error.SolverError as error:
+            self.last_solve_diagnostics = {
+                "solver_status":"solver_error",
+                "failure_reason":SolverFailureReason.CVXPY_CANONICALIZATION_FAILURE.value,
+                "exception_type":type(error).__name__,
+                "warm_start_used":warm_start_used,
+            }
             return PlannerStatus.NUMERICAL_ERROR, None, (time.perf_counter() - started) * 1000.0, 0.0
         wall_ms = (time.perf_counter() - started) * 1000.0
         internal_ms = float(self.problem.solver_stats.solve_time or 0.0) * 1000.0
         setup_ms = float(self.problem.solver_stats.setup_time or 0.0) * 1000.0
         self.solve_count += 1
+        extra = getattr(self.problem.solver_stats,"extra_stats",None); info=getattr(extra,"info",None)
+        status_text=str(getattr(info,"status",self.problem.status)); status_value=getattr(info,"status_val",None)
+        primal_residual=getattr(info,"prim_res",None); dual_residual=getattr(info,"dual_res",None)
+        objective=getattr(info,"obj_val",None)
         self.last_solve_diagnostics = {
             "solver_status": str(self.problem.status),
+            "solver_status_text":status_text,
+            "solver_status_value":int(status_value) if status_value is not None else None,
             "osqp_iterations": int(self.problem.solver_stats.num_iters or 0),
             "osqp_setup_ms": setup_ms,
             "osqp_solve_ms": internal_ms,
             "cvxpy_wrapper_and_canonicalization_ms": max(0.0, wall_ms - internal_ms - setup_ms),
             "first_solve": self.solve_count == 1,
+            "warm_start_used":warm_start_used,
+            "primal_residual":float(primal_residual) if primal_residual is not None else None,
+            "dual_residual":float(dual_residual) if dual_residual is not None else None,
+            "objective":float(objective) if objective is not None else None,
+            "problem_variables":int(sum(variable.size for variable in self.problem.variables())),
+            "problem_constraints":len(self.problem.constraints),
         }
         if self.problem.status in (cp.OPTIMAL, cp.OPTIMAL_INACCURATE):
             values = [np.asarray(v.value).copy() for v in (self.states, self.controls, self.slack)]
             self._last_primal = values
             return PlannerStatus.SOLVED_SAFE, values, wall_ms, internal_ms
         if self.problem.status in (cp.INFEASIBLE, cp.INFEASIBLE_INACCURATE):
+            self.last_solve_diagnostics["failure_reason"] = SolverFailureReason.OSQP_PRIMAL_INFEASIBLE.value
             return PlannerStatus.INFEASIBLE, None, wall_ms, internal_ms
+        if self.problem.status in (cp.UNBOUNDED, cp.UNBOUNDED_INACCURATE):
+            self.last_solve_diagnostics["failure_reason"] = SolverFailureReason.OSQP_DUAL_INFEASIBLE.value
+            return PlannerStatus.NUMERICAL_ERROR, None, wall_ms, internal_ms
         if self.problem.status == cp.USER_LIMIT:
-            return PlannerStatus.SOLVER_TIMEOUT, None, wall_ms, internal_ms
+            reason=(SolverFailureReason.OSQP_TIME_LIMIT_REACHED if "time" in status_text.lower() else SolverFailureReason.OSQP_MAX_ITER_REACHED)
+            self.last_solve_diagnostics["failure_reason"] = reason.value
+            return PlannerStatus.SOLVER_USER_LIMIT, None, wall_ms, internal_ms
+        self.last_solve_diagnostics["failure_reason"] = SolverFailureReason.UNKNOWN_SOLVER_FAILURE.value
         return PlannerStatus.NUMERICAL_ERROR, None, wall_ms, internal_ms
+
+    def invalidate_warm_start(self) -> None:
+        """Discard a failed primal seed without changing the persistent problem."""
+        self._last_primal = None
+        for variable in (self.states,self.controls,self.slack):
+            variable.value = None
 
 
 def build_qp(initial_state, reference, nominal_states, nominal_controls, previous_control,

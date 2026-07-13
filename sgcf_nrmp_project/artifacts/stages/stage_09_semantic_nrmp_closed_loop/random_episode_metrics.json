@@ -1,4 +1,21 @@
 {
+  "stage_status": "STAGE_09_COMPLETE_WITH_KNOWN_PLANNER_LIMITATIONS",
+  "decision": "SEMANTIC_NRMP_CORE_VALIDATED",
+  "stage_10_readiness": "READY_FOR_STAGE_10_PERCEPTION_ONLY",
+  "final_summary": {
+    "episode_count": 20,
+    "mode_result_count": 60,
+    "reached_goal_by_mode": {"P0": 14, "P1": 17, "P2": 17},
+    "success_rate_by_mode": {"P0": 0.7, "P1": 0.85, "P2": 0.85},
+    "reached_goal_total": 48,
+    "success_rate_total": 0.8,
+    "geometry_recheck_rejection_count": 10,
+    "osqp_or_solver_user_limit_count": 2,
+    "initial_collision_count": 0,
+    "planner_induced_collision_count": 0,
+    "steady_state_p95_max_ms": 51.08097479569551,
+    "note": "The fixed-seed smoke measurements in episodes are retained unchanged. Collision-free rejection or stopping is not goal-reaching success."
+  },
   "scope": "20_episode_smoke_due_bounded_runtime",
   "episodes": [
     {

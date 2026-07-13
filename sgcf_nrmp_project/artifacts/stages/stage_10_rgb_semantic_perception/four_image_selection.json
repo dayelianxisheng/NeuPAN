@@ -1,0 +1,109 @@
+{
+  "split": "train",
+  "selected_scene_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "all_classes_covered": true,
+  "selection_changed_after_results": false,
+  "records": [
+    {
+      "image_id": 0,
+      "scene_id": 0,
+      "geometry_seed": 10000,
+      "appearance_seed": 10001,
+      "camera_seed": 10002,
+      "rgb_sha256": "e74f3e9e3eb80ce611a404aff30103540c515ad46da5cbfe13aea2939744bb27",
+      "semantic_label_sha256": "76eff64116cf5a7dd9fcd4a9fe4d6448dd00b1e566a824d8170a7e6ca40b2325",
+      "class_pixel_counts": {
+        "UNKNOWN": 13171,
+        "STATIC_OBSTACLE": 3008,
+        "HUMAN": 646,
+        "VEHICLE": 1220,
+        "ROBOT": 1155
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      },
+      "selection_reason": "fixed first four train scenes; all contain HUMAN and ROBOT with shuffled positions/backgrounds"
+    },
+    {
+      "image_id": 1,
+      "scene_id": 1,
+      "geometry_seed": 10003,
+      "appearance_seed": 10004,
+      "camera_seed": 10005,
+      "rgb_sha256": "029604aad7a65506de43b7d0310b65d639ec4f830603faaa98e62a20d6a6a52d",
+      "semantic_label_sha256": "02577821d2b8b1dbb52f52f8d2d74919e667f4630ca02aae7c06e02ec65303ab",
+      "class_pixel_counts": {
+        "UNKNOWN": 13422,
+        "STATIC_OBSTACLE": 3131,
+        "HUMAN": 540,
+        "VEHICLE": 1017,
+        "ROBOT": 1090
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      },
+      "selection_reason": "fixed first four train scenes; all contain HUMAN and ROBOT with shuffled positions/backgrounds"
+    },
+    {
+      "image_id": 2,
+      "scene_id": 2,
+      "geometry_seed": 10006,
+      "appearance_seed": 10007,
+      "camera_seed": 10008,
+      "rgb_sha256": "0d9713a99e89d932d6a909169d6f3023db4aa13d51e831cdb2ae921a9d2e6c61",
+      "semantic_label_sha256": "9d15c3005ca1512d1cfd2f973d0e26ecfb74a9fd4fe8380fd16e0fde6414568a",
+      "class_pixel_counts": {
+        "UNKNOWN": 14226,
+        "STATIC_OBSTACLE": 2268,
+        "HUMAN": 863,
+        "VEHICLE": 770,
+        "ROBOT": 1073
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      },
+      "selection_reason": "fixed first four train scenes; all contain HUMAN and ROBOT with shuffled positions/backgrounds"
+    },
+    {
+      "image_id": 3,
+      "scene_id": 3,
+      "geometry_seed": 10009,
+      "appearance_seed": 10010,
+      "camera_seed": 10011,
+      "rgb_sha256": "d75a8214b6551f226a264c2309dc11ad1368829bd382c8802ee77a67eae48216",
+      "semantic_label_sha256": "ab8e8ac16eaca34406da2d442244557e7616fc71397010c1ac206eb321768f56",
+      "class_pixel_counts": {
+        "UNKNOWN": 13841,
+        "STATIC_OBSTACLE": 2079,
+        "HUMAN": 581,
+        "VEHICLE": 1273,
+        "ROBOT": 1426
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      },
+      "selection_reason": "fixed first four train scenes; all contain HUMAN and ROBOT with shuffled positions/backgrounds"
+    }
+  ]
+}

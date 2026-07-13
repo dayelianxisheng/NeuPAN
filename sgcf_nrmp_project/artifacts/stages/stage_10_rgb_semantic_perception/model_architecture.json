@@ -1,0 +1,9 @@
+{
+  "name": "TinySemanticSegmentation",
+  "parameter_count": 118341,
+  "class_count": 5,
+  "base_channels": 16,
+  "batch_normalization": false,
+  "dropout": false,
+  "pretrained": false
+}

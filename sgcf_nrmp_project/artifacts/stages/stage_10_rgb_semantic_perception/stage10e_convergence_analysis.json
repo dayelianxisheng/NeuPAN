@@ -1,0 +1,11 @@
+{
+  "initial_loss": 1.58550759156545,
+  "final_loss": 0.004733171779662371,
+  "relative_loss": 0.0029852722275451713,
+  "best_loss": 0.0019342026983698208,
+  "best_step": 4100,
+  "last_20_percent_record_count": 11,
+  "last_20_percent_loss_slope_per_optimizer_step": -3.0043532147609036e-06,
+  "classification": "passed_gate_with_low_loss_oscillation",
+  "oscillation_range_last_20_percent": 0.0659981273735563
+}

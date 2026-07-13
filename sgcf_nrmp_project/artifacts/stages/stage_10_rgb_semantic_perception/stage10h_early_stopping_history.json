@@ -1,0 +1,527 @@
+{
+  "policy": {
+    "maximum_epochs": 100,
+    "minimum_training_epochs": 60,
+    "patience": 20,
+    "min_delta": 0.0001,
+    "monitor": "validation_mean_iou"
+  },
+  "warmup_prevents_actual_stop_through_epoch_60": true,
+  "actual_stop_reason": "MAXIMUM_EPOCHS",
+  "epochs_executed": 100,
+  "best_epoch": 100,
+  "first_positive_recall_epoch": {
+    "train": {
+      "HUMAN": 37,
+      "VEHICLE": 43,
+      "ROBOT": 27
+    },
+    "validation": {
+      "HUMAN": 38,
+      "VEHICLE": 45,
+      "ROBOT": 28
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 2,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 3,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 4,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 5,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 6,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 7,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 8,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 9,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 10,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 11,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 12,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 13,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 14,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 15,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 16,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 17,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 18,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 19,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 20,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 21,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 22,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 23,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 24,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 25,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 26,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 27,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 28,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 29,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 30,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 31,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 32,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 33,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 34,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 35,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 36,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 37,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 38,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 39,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 40,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 41,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 42,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 43,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 44,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 45,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 46,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 47,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 48,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 49,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 50,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 51,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 52,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 53,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 54,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 55,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 56,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 57,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 58,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 59,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 60,
+      "counter": 0,
+      "warmup": true
+    },
+    {
+      "epoch": 61,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 62,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 63,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 64,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 65,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 66,
+      "counter": 2,
+      "warmup": false
+    },
+    {
+      "epoch": 67,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 68,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 69,
+      "counter": 2,
+      "warmup": false
+    },
+    {
+      "epoch": 70,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 71,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 72,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 73,
+      "counter": 2,
+      "warmup": false
+    },
+    {
+      "epoch": 74,
+      "counter": 3,
+      "warmup": false
+    },
+    {
+      "epoch": 75,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 76,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 77,
+      "counter": 2,
+      "warmup": false
+    },
+    {
+      "epoch": 78,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 79,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 80,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 81,
+      "counter": 2,
+      "warmup": false
+    },
+    {
+      "epoch": 82,
+      "counter": 3,
+      "warmup": false
+    },
+    {
+      "epoch": 83,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 84,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 85,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 86,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 87,
+      "counter": 2,
+      "warmup": false
+    },
+    {
+      "epoch": 88,
+      "counter": 3,
+      "warmup": false
+    },
+    {
+      "epoch": 89,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 90,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 91,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 92,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 93,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 94,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 95,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 96,
+      "counter": 0,
+      "warmup": false
+    },
+    {
+      "epoch": 97,
+      "counter": 1,
+      "warmup": false
+    },
+    {
+      "epoch": 98,
+      "counter": 2,
+      "warmup": false
+    },
+    {
+      "epoch": 99,
+      "counter": 3,
+      "warmup": false
+    },
+    {
+      "epoch": 100,
+      "counter": 0,
+      "warmup": false
+    }
+  ]
+}

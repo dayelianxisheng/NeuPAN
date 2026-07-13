@@ -1,0 +1,43 @@
+Stage 10I validation-only diagnostic output
+===========================================
+
+Original Test freeze: PASS
+test.npz opened: false
+Test dataset instantiated: false
+Test inference/metrics/predictions: false
+
+Source checkpoint:
+epoch: 100
+optimizer state loaded: true
+optimizer reset: false
+learning rate: 0.002 (unchanged)
+scheduler: not_applicable_no_scheduler
+all frozen hash/config checks: PASS
+
+Epoch-100 HUMAN:
+train recall: 0.9222210984120562
+validation recall: 0.7780406232155967
+train-validation recall gap: 0.1441804751964595
+
+Continuation:
+epochs: 101-146
+additional epochs: 46
+stop: VALIDATION_HUMAN_RECALL_20_EPOCHS_NO_IMPROVEMENT
+diagnostic best epoch: 145
+validation mIoU: 0.8330668903124894
+validation macro F1: 0.9047759000884538
+validation HUMAN IoU: 0.6554275145824442
+validation HUMAN recall: 0.7516110612611143
+validation VEHICLE recall: 0.857270853866141
+validation ROBOT recall: 0.9255330984609679
+
+Decision: BLOCKED_OPTIMIZATION_CONVERGENCE
+
+Tests:
+Ran 160 tests in 16.780s
+OK
+
+compileall: PASS
+JSON parse: PASS (114 files at test time)
+git diff --check: PASS
+Protected upstream incremental check: no Stage 10I changes; pre-existing `m neupan_ros` remains.

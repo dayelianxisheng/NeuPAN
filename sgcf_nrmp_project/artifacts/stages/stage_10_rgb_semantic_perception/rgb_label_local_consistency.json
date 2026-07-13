@@ -1,0 +1,19 @@
+{
+  "frozen_sample": {
+    "scene_id": 0,
+    "image_id": 0,
+    "geometry_seed": 10000,
+    "appearance_seed": 10001,
+    "camera_seed": 10002,
+    "rgb_sha256": "e74f3e9e3eb80ce611a404aff30103540c515ad46da5cbfe13aea2939744bb27",
+    "semantic_label_sha256": "76eff64116cf5a7dd9fcd4a9fe4d6448dd00b1e566a824d8170a7e6ca40b2325"
+  },
+  "foreground_rgb_without_label_after_fix": "not observed by renderer construction",
+  "foreground_label_without_visible_rgb_structure": "not observed in overlay audit",
+  "rgb_antialiasing_enabled": false,
+  "rgb_blur_only": true,
+  "hard_label_blur_mismatch_possible_near_boundary": true,
+  "texture_clipped_to_instance": true,
+  "shadow_rendering": false,
+  "patch_ambiguity_reference": "local_patch_label_ambiguity.json"
+}

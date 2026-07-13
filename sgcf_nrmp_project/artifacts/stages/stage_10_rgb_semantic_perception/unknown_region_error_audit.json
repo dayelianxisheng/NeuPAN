@@ -1,0 +1,84 @@
+{
+  "unknown_roles": [
+    "background",
+    "occlusion",
+    "invalid/unlabeled"
+  ],
+  "regions": {
+    "pure_background_interior": {
+      "pixel_count": 0,
+      "error_count": 0,
+      "error_rate": 0.0,
+      "recall_robot": 0.0,
+      "prediction_distribution": {
+        "UNKNOWN": 0.0,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.0,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.0
+      },
+      "mean_robot_probability": 0.0,
+      "mean_winning_probability": 0.0
+    },
+    "object_boundary_exterior": {
+      "pixel_count": 13171,
+      "error_count": 5061,
+      "error_rate": 0.38425328372940554,
+      "recall_robot": 0.19094981398527067,
+      "prediction_distribution": {
+        "UNKNOWN": 0.6157467162705945,
+        "STATIC_OBSTACLE": 0.033482651279325794,
+        "HUMAN": 0.09513324728570344,
+        "VEHICLE": 0.0646875711791056,
+        "ROBOT": 0.19094981398527067
+      },
+      "mean_robot_probability": 0.20268473029136658,
+      "mean_winning_probability": 0.6616659164428711
+    },
+    "occlusion_gap": {
+      "pixel_count": 840,
+      "error_count": 258,
+      "error_rate": 0.30714285714285716,
+      "recall_robot": 0.15714285714285714,
+      "prediction_distribution": {
+        "UNKNOWN": 0.6928571428571428,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.15,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.15714285714285714
+      },
+      "mean_robot_probability": 0.2929074168205261,
+      "mean_winning_probability": 0.5411818623542786
+    },
+    "image_border": {
+      "pixel_count": 2700,
+      "error_count": 113,
+      "error_rate": 0.04185185185185185,
+      "recall_robot": 0.0,
+      "prediction_distribution": {
+        "UNKNOWN": 0.9581481481481482,
+        "STATIC_OBSTACLE": 0.027777777777777776,
+        "HUMAN": 0.0,
+        "VEHICLE": 0.014074074074074074,
+        "ROBOT": 0.0
+      },
+      "mean_robot_probability": 0.03995298966765404,
+      "mean_winning_probability": 0.930090069770813
+    },
+    "texture_noise_region": {
+      "pixel_count": 3293,
+      "error_count": 1325,
+      "error_rate": 0.4023686607956271,
+      "recall_robot": 0.18341937443061038,
+      "prediction_distribution": {
+        "UNKNOWN": 0.597631339204373,
+        "STATIC_OBSTACLE": 0.04008502884907379,
+        "HUMAN": 0.10264196781050713,
+        "VEHICLE": 0.07622228970543578,
+        "ROBOT": 0.18341937443061038
+      },
+      "mean_robot_probability": 0.21205461025238037,
+      "mean_winning_probability": 0.6488980650901794
+    }
+  }
+}

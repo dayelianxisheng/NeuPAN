@@ -1,0 +1,19 @@
+{
+  "gazebo_collision_box_length_m": 0.8,
+  "gazebo_collision_box_width_m": 0.5,
+  "stage05_length_m": 0.8,
+  "stage05_width_m": 0.5,
+  "length_error_m": 0.0,
+  "width_error_m": 0.0,
+  "base_link_origin": "center of rectangle at z=0.1 m above base_footprint",
+  "footprint_reference": "base_footprint x/y/yaw",
+  "differential_drive_kinematic_contract": {
+    "wheel_separation_m": 0.5,
+    "wheel_radius_m": 0.1,
+    "maximum_linear_velocity_mps": 1.0,
+    "maximum_angular_velocity_radps": 1.5,
+    "control_period_s": 0.2,
+    "runtime_drive_plugin_implemented": false
+  },
+  "passed": true
+}

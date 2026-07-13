@@ -1,0 +1,33 @@
+{
+  "status": "BLOCKED_CLASS_COLLAPSE",
+  "epochs_executed": 24,
+  "early_stopping_triggered": true,
+  "best_epoch_by_frozen_selection_order": 14,
+  "best_validation_loss": 1.2404163281122844,
+  "best_validation_pixel_accuracy": 0.6680364583333334,
+  "best_validation_macro_f1": 0.2514792771237354,
+  "best_validation_mean_iou": 0.19580548900017133,
+  "best_validation_per_class_iou": {
+    "UNKNOWN": 0.7045551532393638,
+    "STATIC_OBSTACLE": 0.27447229176149296,
+    "HUMAN": 0.0,
+    "VEHICLE": 0.0,
+    "ROBOT": 0.0
+  },
+  "best_validation_per_class_recall": {
+    "UNKNOWN": 0.7959830673762103,
+    "STATIC_OBSTACLE": 0.7930666009082876,
+    "HUMAN": 0.0,
+    "VEHICLE": 0.0,
+    "ROBOT": 0.0
+  },
+  "core_class_recall_nonzero_epoch_count": {
+    "HUMAN": 0,
+    "VEHICLE": 0,
+    "ROBOT": 0
+  },
+  "test_metrics_accessed": false,
+  "checkpoint_accepted": false,
+  "threshold_selection_executed": false,
+  "secondary_pipeline_error": "KeyError: static_to_human_rate during validation policy summary"
+}

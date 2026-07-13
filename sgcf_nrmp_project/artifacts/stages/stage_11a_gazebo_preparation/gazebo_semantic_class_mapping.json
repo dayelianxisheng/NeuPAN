@@ -1,0 +1,24 @@
+{
+  "UNKNOWN": 0,
+  "STATIC_OBSTACLE": 1,
+  "HUMAN": 2,
+  "VEHICLE": 3,
+  "ROBOT": 4,
+  "semantic_margin_m": {
+    "UNKNOWN": 0.0,
+    "STATIC_OBSTACLE": 0.0,
+    "HUMAN": 0.35,
+    "VEHICLE": 0.2,
+    "ROBOT": 0.15
+  },
+  "model_rules": {
+    "static_*|wall_*": "STATIC_OBSTACLE",
+    "human_*|initial_collision_obstacle": "HUMAN",
+    "vehicle_*": "VEHICLE",
+    "robot_obstacle_*": "ROBOT",
+    "unmapped": "UNKNOWN"
+  },
+  "simulation_only": true,
+  "ground_truth_only": true,
+  "not_for_real_deployment": true
+}

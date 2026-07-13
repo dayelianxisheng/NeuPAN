@@ -1,0 +1,151 @@
+{
+  "selected_scene_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "same_initialization": true,
+  "same_steps": true,
+  "same_optimizer_and_learning_rate": true,
+  "L0_unweighted_CE": {
+    "initial_state_sha256": "f52c92334e3602ead517dfdf6fe4709a5f2b04a3dad86a82f516aa08affa57d6",
+    "steps": 1200,
+    "initial_loss": 1.551784873008728,
+    "final_loss": 0.5564962029457092,
+    "relative_loss": 0.35861684994178905,
+    "gradient_norm_last_step": 8.730022196155325,
+    "pixel_accuracy": 0.79640625,
+    "macro_f1": 0.33683688975620374,
+    "per_class_recall": {
+      "UNKNOWN": 0.995993413830955,
+      "STATIC_OBSTACLE": 0.620923135609384,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.04468802698145025
+    },
+    "prediction_fraction": {
+      "UNKNOWN": 0.8975,
+      "STATIC_OBSTACLE": 0.09973958333333334,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0027604166666666667
+    },
+    "confusion_matrix": [
+      [
+        54441,
+        219,
+        0,
+        0,
+        0
+      ],
+      [
+        3975,
+        6511,
+        0,
+        0,
+        0
+      ],
+      [
+        2630,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3581,
+        699,
+        0,
+        0,
+        0
+      ],
+      [
+        4301,
+        231,
+        0,
+        0,
+        212
+      ]
+    ],
+    "interior_pixel_accuracy": 0.8432982715138094,
+    "interior_per_class_recall": {
+      "UNKNOWN": 0.9982710713183082,
+      "STATIC_OBSTACLE": 0.7074382074382074,
+      "HUMAN": 0.0,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.06362545018007203
+    },
+    "pass": false
+  },
+  "L1_current_weighted_CE": {
+    "initial_state_sha256": "f52c92334e3602ead517dfdf6fe4709a5f2b04a3dad86a82f516aa08affa57d6",
+    "steps": 1200,
+    "initial_loss": 1.5828980207443237,
+    "final_loss": 0.006730410736054182,
+    "relative_loss": 0.004251954736091811,
+    "gradient_norm_last_step": 0.08458972017733547,
+    "pixel_accuracy": 0.9978515625,
+    "macro_f1": 0.9948383787962332,
+    "per_class_recall": {
+      "UNKNOWN": 0.9972374679839004,
+      "STATIC_OBSTACLE": 0.9995231737554835,
+      "HUMAN": 0.9988593155893536,
+      "VEHICLE": 0.9992990654205608,
+      "ROBOT": 0.9993676222596964
+    },
+    "prediction_fraction": {
+      "UNKNOWN": 0.7099348958333334,
+      "STATIC_OBSTACLE": 0.136484375,
+      "HUMAN": 0.035247395833333334,
+      "VEHICLE": 0.05619791666666667,
+      "ROBOT": 0.062135416666666665
+    },
+    "confusion_matrix": [
+      [
+        54509,
+        1,
+        80,
+        39,
+        31
+      ],
+      [
+        5,
+        10481,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        2627,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        4277,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        4741
+      ]
+    ],
+    "interior_pixel_accuracy": 1.0,
+    "interior_per_class_recall": {
+      "UNKNOWN": 1.0,
+      "STATIC_OBSTACLE": 1.0,
+      "HUMAN": 1.0,
+      "VEHICLE": 1.0,
+      "ROBOT": 1.0
+    },
+    "pass": true
+  }
+}

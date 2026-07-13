@@ -1,0 +1,21 @@
+Stage 10C execution record
+
+PASS frozen scene/hash audit
+PASS per-pixel residual and ROBOT/UNKNOWN region audits
+PASS local 5x5 quantized patch ambiguity: 0 cross-class hashes in scene 0
+PASS label-copy metric identity: accuracy/F1/recalls all 1
+PASS direct-logits sanity: final loss 4.4498e-05, perfect metrics
+PASS bounded D0/D1 600-step convergence diagnosis
+SELECT one fix: finite D1 single-image steps 80 -> 1200
+RUN one same-scene single-image recheck
+FAIL final criteria:
+  relative loss 0.06058184583013412 (pass)
+  pixel accuracy 0.9792708333333333 (fail < 0.98)
+  macro F1 0.9096725766617466 (fail < 0.95)
+  HUMAN recall 0.6393188854489165 (fail < 0.95)
+  ROBOT recall 0.9108225108225109 (fail < 0.95)
+STOP BLOCKED_OPTIMIZATION_CONVERGENCE
+
+No second fix/recheck, capacity comparison, four/48-image training, validation/
+test evaluation, PointPainting, Semantic Margin, CPU benchmark, Planner,
+Stage 09B, ROS, or Gazebo was run.

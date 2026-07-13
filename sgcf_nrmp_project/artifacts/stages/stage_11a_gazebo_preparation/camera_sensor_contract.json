@@ -1,0 +1,14 @@
+{
+  "camera_frame": "camera_link",
+  "optical_frame": "camera_optical_frame",
+  "optical_axes": {"x": "right", "y": "down", "z": "forward"},
+  "width": 320,
+  "height": 240,
+  "horizontal_fov_rad": 1.453284681363431,
+  "intrinsics": {"fx": 180.0, "fy": 180.0, "cx": 160.0, "cy": 120.0},
+  "update_rate_hz": 10.0,
+  "near_clip_m": 0.05,
+  "far_clip_m": 20.0,
+  "transform_convention": "T_camera_optical_frame_lidar_link",
+  "rgb_model_execution_in_stage11a": false
+}

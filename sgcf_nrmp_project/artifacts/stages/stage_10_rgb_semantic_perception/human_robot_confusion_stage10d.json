@@ -1,0 +1,159 @@
+{
+  "L0_unweighted_CE": {
+    "HUMAN": {
+      "all": {
+        "pixel_count": 2630,
+        "prediction_distribution": {
+          "UNKNOWN": 1.0,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        },
+        "mean_HUMAN_probability": 0.11309000104665756,
+        "mean_ROBOT_probability": 0.09593826532363892
+      },
+      "interior": {
+        "pixel_count": 1237,
+        "prediction_distribution": {
+          "UNKNOWN": 1.0,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        },
+        "mean_HUMAN_probability": 0.1196734830737114,
+        "mean_ROBOT_probability": 0.10483013838529587
+      },
+      "boundary": {
+        "pixel_count": 1393,
+        "prediction_distribution": {
+          "UNKNOWN": 1.0,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        },
+        "mean_HUMAN_probability": 0.10724378377199173,
+        "mean_ROBOT_probability": 0.08804216980934143
+      }
+    },
+    "ROBOT": {
+      "all": {
+        "pixel_count": 4744,
+        "prediction_distribution": {
+          "UNKNOWN": 0.906618887015177,
+          "STATIC_OBSTACLE": 0.04869308600337268,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.04468802698145025
+        },
+        "mean_HUMAN_probability": 0.11116205155849457,
+        "mean_ROBOT_probability": 0.13111469149589539
+      },
+      "interior": {
+        "pixel_count": 3332,
+        "prediction_distribution": {
+          "UNKNOWN": 0.867046818727491,
+          "STATIC_OBSTACLE": 0.06932773109243698,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.06362545018007203
+        },
+        "mean_HUMAN_probability": 0.11119647324085236,
+        "mean_ROBOT_probability": 0.14633111655712128
+      },
+      "boundary": {
+        "pixel_count": 1412,
+        "prediction_distribution": {
+          "UNKNOWN": 1.0,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        },
+        "mean_HUMAN_probability": 0.1110808402299881,
+        "mean_ROBOT_probability": 0.09520737826824188
+      }
+    }
+  },
+  "L1_current_weighted_CE": {
+    "HUMAN": {
+      "all": {
+        "pixel_count": 2630,
+        "prediction_distribution": {
+          "UNKNOWN": 0.0011406844106463879,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9988593155893536,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        },
+        "mean_HUMAN_probability": 0.9891493916511536,
+        "mean_ROBOT_probability": 0.00040226615965366364
+      },
+      "interior": {
+        "pixel_count": 1237,
+        "prediction_distribution": {
+          "UNKNOWN": 0.0,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 1.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        },
+        "mean_HUMAN_probability": 0.9996906518936157,
+        "mean_ROBOT_probability": 0.00011660197196761146
+      },
+      "boundary": {
+        "pixel_count": 1393,
+        "prediction_distribution": {
+          "UNKNOWN": 0.0021536252692031586,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9978463747307968,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        },
+        "mean_HUMAN_probability": 0.9797885417938232,
+        "mean_ROBOT_probability": 0.0006559392204508185
+      }
+    },
+    "ROBOT": {
+      "all": {
+        "pixel_count": 4744,
+        "prediction_distribution": {
+          "UNKNOWN": 0.0006323777403035413,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.9993676222596964
+        },
+        "mean_HUMAN_probability": 7.008910324657336e-05,
+        "mean_ROBOT_probability": 0.9963923096656799
+      },
+      "interior": {
+        "pixel_count": 3332,
+        "prediction_distribution": {
+          "UNKNOWN": 0.0,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 1.0
+        },
+        "mean_HUMAN_probability": 1.083510051103076e-05,
+        "mean_ROBOT_probability": 0.9998436570167542
+      },
+      "boundary": {
+        "pixel_count": 1412,
+        "prediction_distribution": {
+          "UNKNOWN": 0.002124645892351275,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.9978753541076487
+        },
+        "mean_HUMAN_probability": 0.0002099151024594903,
+        "mean_ROBOT_probability": 0.9882481098175049
+      }
+    }
+  },
+  "unweighted_reduces_bidirectional_confusion": false
+}

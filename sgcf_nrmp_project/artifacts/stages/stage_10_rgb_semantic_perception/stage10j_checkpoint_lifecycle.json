@@ -1,0 +1,36 @@
+{
+  "events": [
+    {
+      "epoch": 146,
+      "role": "best_human",
+      "path": "stage10j_best_human_recall_checkpoint.pt",
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 146,
+      "role": "best_miou",
+      "path": "stage10j_best_miou_checkpoint.pt",
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    },
+    {
+      "epoch": 148,
+      "role": "best_miou",
+      "path": "stage10j_best_miou_checkpoint.pt",
+      "atomic_save": true,
+      "fsync_and_rename": true,
+      "reload_max_abs_difference": 0.0,
+      "sentinel_logits_compared": true
+    }
+  ],
+  "all_atomic": true,
+  "all_reload_differences_within_1e-7": true,
+  "selection_split": "validation_only",
+  "test_accessed": false,
+  "new_audit_accessed": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "SUPERSEDED_PRE_OPTIMIZER_AUDIT_FALSE_POSITIVE",
+  "root_cause": "Expected-false test_accessed and new_audit_accessed flags were incorrectly included in an all(bool_values) positive-check aggregation.",
+  "optimizer_steps_before_fix": 0,
+  "training_started_before_fix": false,
+  "actual_checkpoint_state_failure": false,
+  "actual_metadata_or_hash_mismatch": false,
+  "training_configuration_changed": false,
+  "resolution": "Separate required-true consistency checks from required-false non-access checks."
+}

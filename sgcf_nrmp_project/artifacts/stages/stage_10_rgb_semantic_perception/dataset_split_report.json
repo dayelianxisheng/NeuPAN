@@ -1,0 +1,25 @@
+{
+  "split_counts": {
+    "train": 80,
+    "validation": 20,
+    "test": 20
+  },
+  "total_scenes": 120,
+  "scene_id_disjoint": true,
+  "geometry_seed_disjoint": true,
+  "appearance_seed_disjoint": true,
+  "camera_seed_disjoint": true,
+  "same_base_scene_cross_split": false,
+  "image_shape": [
+    120,
+    160,
+    3
+  ],
+  "class_ids": {
+    "UNKNOWN": 0,
+    "STATIC_OBSTACLE": 1,
+    "HUMAN": 2,
+    "VEHICLE": 3,
+    "ROBOT": 4
+  }
+}

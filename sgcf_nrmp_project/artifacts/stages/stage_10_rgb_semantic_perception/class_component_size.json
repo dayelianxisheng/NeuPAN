@@ -1,0 +1,5 @@
+{
+  "status": "NOT_RUN_AFTER_ALIGNMENT_DEFECT",
+  "reason": "Connected-component diagnosis was intentionally skipped after the required alignment-first stop.",
+  "values": null
+}

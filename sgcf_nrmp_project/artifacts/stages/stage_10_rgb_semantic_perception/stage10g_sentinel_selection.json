@@ -1,0 +1,183 @@
+{
+  "train": [
+    {
+      "dataset_index": 0,
+      "scene_id": 0,
+      "rgb_sha256": "e74f3e9e3eb80ce611a404aff30103540c515ad46da5cbfe13aea2939744bb27",
+      "semantic_label_sha256": "76eff64116cf5a7dd9fcd4a9fe4d6448dd00b1e566a824d8170a7e6ca40b2325",
+      "class_pixel_counts": {
+        "UNKNOWN": 13171,
+        "STATIC_OBSTACLE": 3008,
+        "HUMAN": 646,
+        "VEHICLE": 1220,
+        "ROBOT": 1155
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "dataset_index": 1,
+      "scene_id": 1,
+      "rgb_sha256": "029604aad7a65506de43b7d0310b65d639ec4f830603faaa98e62a20d6a6a52d",
+      "semantic_label_sha256": "02577821d2b8b1dbb52f52f8d2d74919e667f4630ca02aae7c06e02ec65303ab",
+      "class_pixel_counts": {
+        "UNKNOWN": 13422,
+        "STATIC_OBSTACLE": 3131,
+        "HUMAN": 540,
+        "VEHICLE": 1017,
+        "ROBOT": 1090
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "dataset_index": 2,
+      "scene_id": 2,
+      "rgb_sha256": "0d9713a99e89d932d6a909169d6f3023db4aa13d51e831cdb2ae921a9d2e6c61",
+      "semantic_label_sha256": "9d15c3005ca1512d1cfd2f973d0e26ecfb74a9fd4fe8380fd16e0fde6414568a",
+      "class_pixel_counts": {
+        "UNKNOWN": 14226,
+        "STATIC_OBSTACLE": 2268,
+        "HUMAN": 863,
+        "VEHICLE": 770,
+        "ROBOT": 1073
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "dataset_index": 3,
+      "scene_id": 3,
+      "rgb_sha256": "d75a8214b6551f226a264c2309dc11ad1368829bd382c8802ee77a67eae48216",
+      "semantic_label_sha256": "ab8e8ac16eaca34406da2d442244557e7616fc71397010c1ac206eb321768f56",
+      "class_pixel_counts": {
+        "UNKNOWN": 13841,
+        "STATIC_OBSTACLE": 2079,
+        "HUMAN": 581,
+        "VEHICLE": 1273,
+        "ROBOT": 1426
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    }
+  ],
+  "validation": [
+    {
+      "dataset_index": 0,
+      "scene_id": 80,
+      "rgb_sha256": "90eb69553bf048b0419ba9712b6e493061c5f12ac2a65ea85380dd05a5151295",
+      "semantic_label_sha256": "e3173c6a4d5e718df6818530c8efbd4fe9e65bfa967ba09a8dabcd9fed3e4c5a",
+      "class_pixel_counts": {
+        "UNKNOWN": 14632,
+        "STATIC_OBSTACLE": 2550,
+        "HUMAN": 0,
+        "VEHICLE": 789,
+        "ROBOT": 1229
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": false,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "dataset_index": 1,
+      "scene_id": 81,
+      "rgb_sha256": "71d63e92ef7fe0cc212ed44b7f22ef5e0b61d76dcf514e8cbe9f269b9046aa9f",
+      "semantic_label_sha256": "7e86a9b0c983229b7972246b4e42af2de3a471a6ccc862343d6b842fd05fe790",
+      "class_pixel_counts": {
+        "UNKNOWN": 13671,
+        "STATIC_OBSTACLE": 2581,
+        "HUMAN": 95,
+        "VEHICLE": 1327,
+        "ROBOT": 1526
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "dataset_index": 2,
+      "scene_id": 82,
+      "rgb_sha256": "ad98fb791c8a4e0da65db8c1999086d88cb90e7ce16d29ba764cfd5845268573",
+      "semantic_label_sha256": "48726ac1ebf26238b403ee17c38cc3c9f5fa63a6a5a364af06ffacb2842d3094",
+      "class_pixel_counts": {
+        "UNKNOWN": 14338,
+        "STATIC_OBSTACLE": 1950,
+        "HUMAN": 449,
+        "VEHICLE": 866,
+        "ROBOT": 1597
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    },
+    {
+      "dataset_index": 3,
+      "scene_id": 83,
+      "rgb_sha256": "d01a2fe240c51538cfe7d3ed960fe48887ecf7fa77bae35d7e86ebe7700ceb82",
+      "semantic_label_sha256": "335fdea200dd8549f5e6ea2211e91a0dcba80998881c5d6c9146a9477b32ca73",
+      "class_pixel_counts": {
+        "UNKNOWN": 14432,
+        "STATIC_OBSTACLE": 1914,
+        "HUMAN": 820,
+        "VEHICLE": 1017,
+        "ROBOT": 1017
+      },
+      "class_presence": {
+        "UNKNOWN": true,
+        "STATIC_OBSTACLE": true,
+        "HUMAN": true,
+        "VEHICLE": true,
+        "ROBOT": true
+      }
+    }
+  ],
+  "test_used": false,
+  "train_aggregate_class_pixel_counts": {
+    "UNKNOWN": 54660,
+    "STATIC_OBSTACLE": 10486,
+    "HUMAN": 2630,
+    "VEHICLE": 4280,
+    "ROBOT": 4744
+  },
+  "train_aggregate_all_classes_present": true,
+  "validation_aggregate_class_pixel_counts": {
+    "UNKNOWN": 57073,
+    "STATIC_OBSTACLE": 8995,
+    "HUMAN": 1364,
+    "VEHICLE": 3999,
+    "ROBOT": 5369
+  },
+  "validation_aggregate_all_classes_present": true
+}

@@ -1,0 +1,46 @@
+{
+  "one_time_initialization": {
+    "scope": "outside recurring samples"
+  },
+  "first_cycle_setup_inclusive": {
+    "mean_ms": 154.36856047508627,
+    "p50_ms": 127.32705350026663,
+    "p95_ms": 279.2646395006159,
+    "p99_ms": 297.33167397058423,
+    "maximum_ms": 318.24590200267266,
+    "sample_count": 120
+  },
+  "steady_state_online_equivalent": {
+    "mean_ms": 20.9082920858965,
+    "p50_ms": 18.964340501042898,
+    "p95_ms": 37.72445224876719,
+    "p99_ms": 57.402614900092914,
+    "maximum_ms": 235.69372500060126,
+    "sample_count": 2736
+  },
+  "steady_state_solver": {
+    "mean_ms": 5.678453120014315,
+    "p50_ms": 2.6555259992164792,
+    "p95_ms": 10.990412849605473,
+    "p99_ms": 92.68407317926177,
+    "maximum_ms": 284.8043250014598,
+    "sample_count": 7750
+  },
+  "geometry_recheck": {
+    "mean_ms": 0.2430029416132751,
+    "p50_ms": 0.19329250244481955,
+    "p95_ms": 0.295190999895567,
+    "p99_ms": 1.3452947096447985,
+    "maximum_ms": 179.1706379990501,
+    "sample_count": 10602
+  },
+  "fallback_decision": {
+    "mean_ms": 0.01630100086913444,
+    "p50_ms": 0.01625600089028012,
+    "p95_ms": 0.017254851081816014,
+    "p99_ms": 0.017317370911769103,
+    "maximum_ms": 0.017333000869257376,
+    "sample_count": 4
+  },
+  "offline_world_excluded": true
+}

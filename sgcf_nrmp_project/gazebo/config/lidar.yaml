@@ -1,0 +1,9 @@
+frame_id: lidar_link
+horizontal_samples: 181
+minimum_angle_rad: -3.141592653589793
+maximum_angle_rad: 3.141592653589793
+minimum_range_m: 0.05
+maximum_range_m: 8.0
+update_rate_hz: 10.0
+gaussian_noise_std_m: 0.0
+maximum_range_is_valid_hit: false

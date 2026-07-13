@@ -1,0 +1,23 @@
+{
+  "best_epoch_equals_maximum_epoch": true,
+  "classification": "STILL_IMPROVING_AT_EPOCH_100",
+  "slopes_per_epoch": {
+    "epoch_60_100": {
+      "validation_loss": -0.005900100152182384,
+      "validation_miou": 0.006117918899560425,
+      "validation_macro_f1": 0.006038312638042331,
+      "validation_human_recall": 0.0004335718080124912,
+      "validation_human_iou": 0.007217737370412651,
+      "train_human_recall": 0.002125618795525326
+    },
+    "last_20_epochs": {
+      "validation_loss": -0.005726525799971177,
+      "validation_miou": 0.005571864890864291,
+      "validation_macro_f1": 0.004872220233090131,
+      "validation_human_recall": -0.0017851546232413582,
+      "validation_human_iou": 0.0022350596556443415,
+      "train_human_recall": 0.0003387299035491932
+    }
+  },
+  "interpretation": "The latest validation best occurred at the budget boundary; bounded continuation is justified without changing training configuration."
+}

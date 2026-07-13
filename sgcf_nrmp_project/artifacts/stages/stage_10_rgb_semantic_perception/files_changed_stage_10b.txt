@@ -1,0 +1,37 @@
+Stage 10B files
+
+Added source scripts:
+- core/scripts/diagnose_stage10b_distribution.py
+- core/scripts/diagnose_stage10b_collapse_single.py
+
+Added artifacts:
+- class_pixel_distribution_after_alignment_fix.json
+- class_presence_distribution_after_alignment_fix.json
+- class_component_size_after_alignment_fix.json
+- class_channel_mapping_audit.json
+- prediction_class_collapse.json
+- single_image_overfit_stage10b.json
+- four_image_overfit_stage10b.json
+- gradient_flow_audit_stage10b.json
+- parameter_update_audit_stage10b.json
+- loss_component_audit_stage10b.json
+- class_weight_audit.json
+- normalization_audit_stage10b.json
+- small_object_resolution_audit.json
+- overfit_gate_recheck_stage10b.json
+- stage_10b_diagnosis_report.md
+- stage_10b_decision.md
+- test_output_stage_10b.txt
+- files_changed_stage_10b.txt
+- class_distribution_after_alignment_fix.png
+- prediction_class_collapse.png
+- confusion_matrix_overfit_recheck.png
+- single_image_prediction_progress_stage10b.png
+- four_image_prediction_progress_stage10b.png
+- gradient_norms_stage10b.png
+- loss_component_curves_stage10b.png
+- small_object_resolution_examples.png
+- overfit_gate_stage10b_before_after.png
+
+No frozen Stage 05/07/08/09, Planner, protected upstream, Stage 09B, or later
+stage file was modified.

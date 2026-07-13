@@ -1,0 +1,31 @@
+{
+  "test_scene_ids_read_from_manifest_only": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "test_dataset_instantiated_for_evaluation": false,
+  "test_dataloader_iterated": false,
+  "test_images_loaded": false,
+  "test_labels_loaded": false,
+  "test_inference_executed": false,
+  "test_metrics_recomputed": false,
+  "test_predictions_used_for_selection": false
+}

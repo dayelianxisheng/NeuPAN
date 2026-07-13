@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "implemented": false,
+  "use_sim_time": true,
+  "topics": [
+    {"name": "/scan", "direction": "input", "type": "sensor_msgs/msg/LaserScan", "rate_hz": 10, "frame": "lidar_link"},
+    {"name": "/camera/image_raw", "direction": "input", "type": "sensor_msgs/msg/Image", "rate_hz": 10, "frame": "camera_optical_frame"},
+    {"name": "/camera/camera_info", "direction": "input", "type": "sensor_msgs/msg/CameraInfo", "rate_hz": 10, "frame": "camera_optical_frame"},
+    {"name": "/odom", "direction": "input", "type": "nav_msgs/msg/Odometry", "rate_hz": 20, "frame": "odom"},
+    {"name": "/tf", "direction": "input", "type": "tf2_msgs/msg/TFMessage", "rate_hz": 20},
+    {"name": "/tf_static", "direction": "input", "type": "tf2_msgs/msg/TFMessage", "rate_hz": 0},
+    {"name": "/cmd_vel", "direction": "output", "type": "geometry_msgs/msg/Twist", "rate_hz": 5, "frame": "base_link"},
+    {"name": "/sgcf_nrmp/planner_status", "direction": "output", "type": "diagnostic_msgs/msg/DiagnosticStatus", "rate_hz": 5},
+    {"name": "/sgcf_nrmp/diagnostics", "direction": "output", "type": "diagnostic_msgs/msg/DiagnosticArray", "rate_hz": 5},
+    {"name": "/sgcf_nrmp/oracle_semantics", "direction": "input", "type": "simulation-side contract TBD", "rate_hz": 10, "simulation_only": true, "ground_truth_only": true, "real_deployment_allowed": false}
+  ]
+}

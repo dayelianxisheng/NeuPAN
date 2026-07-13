@@ -1,0 +1,911 @@
+[
+  {
+    "epoch": 105,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.06896551724137931,
+        "mean_human_probability": 0.08893973380327225,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.09899888765294772,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.06896551724137931,
+          "VEHICLE": 0.27586206896551724,
+          "ROBOT": 0.5561735261401557
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.20525657071339173,
+        "mean_human_probability": 0.17686903476715088,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.15769712140175218,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.20525657071339173,
+          "VEHICLE": 0.15143929912390489,
+          "ROBOT": 0.4856070087609512
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.06315789473684211,
+        "mean_human_probability": 0.07610535621643066,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.23157894736842105,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.06315789473684211,
+          "VEHICLE": 0.7052631578947368,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.4182242990654206,
+        "mean_human_probability": 0.3635905385017395,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.102803738317757,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.4182242990654206,
+          "VEHICLE": 0.4182242990654206,
+          "ROBOT": 0.06074766355140187
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.9152542372881356,
+        "mean_human_probability": 0.8759304881095886,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.007532956685499058,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9152542372881356,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.07721280602636535
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.8390804597701149,
+        "mean_human_probability": 0.8087842464447021,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.007662835249042145,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.8390804597701149,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.1532567049808429
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9741750358680057,
+        "mean_human_probability": 0.8813530802726746,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.007173601147776184,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9741750358680057,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.018651362984218076
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.9715142428785607,
+        "mean_human_probability": 0.9034784436225891,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.010494752623688156,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9715142428785607,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.017991004497751123
+        }
+      }
+    ]
+  },
+  {
+    "epoch": 110,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.38264738598442716,
+        "mean_human_probability": 0.36841049790382385,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.21023359288097887,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.38264738598442716,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.407119021134594
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.17146433041301626,
+        "mean_human_probability": 0.17438991367816925,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.7959949937421777,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.17146433041301626,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.03254067584480601
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.0,
+        "mean_human_probability": 0.1231687068939209,
+        "human_prediction_distribution": {
+          "UNKNOWN": 1.0,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.5537383177570093,
+        "mean_human_probability": 0.44110921025276184,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.2780373831775701,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.5537383177570093,
+          "VEHICLE": 0.1542056074766355,
+          "ROBOT": 0.014018691588785047
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.9096045197740112,
+        "mean_human_probability": 0.8884511590003967,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.0903954802259887,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9096045197740112,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.966794380587484,
+        "mean_human_probability": 0.9388145804405212,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.033205619412515965,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.966794380587484,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9870875179340028,
+        "mean_human_probability": 0.9506219625473022,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.01291248206599713,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9870875179340028,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.9445277361319341,
+        "mean_human_probability": 0.8804783225059509,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.047976011994003,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9445277361319341,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0074962518740629685
+        }
+      }
+    ]
+  },
+  {
+    "epoch": 115,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.474972191323693,
+        "mean_human_probability": 0.423251748085022,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.2836484983314794,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.474972191323693,
+          "VEHICLE": 0.017797552836484983,
+          "ROBOT": 0.2235817575083426
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.6320400500625782,
+        "mean_human_probability": 0.538613498210907,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.17772215269086358,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.6320400500625782,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.1902377972465582
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.37894736842105264,
+        "mean_human_probability": 0.3165968954563141,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.6210526315789474,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.37894736842105264,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.6705607476635514,
+        "mean_human_probability": 0.5984058976173401,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.14485981308411214,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.6705607476635514,
+          "VEHICLE": 0.1425233644859813,
+          "ROBOT": 0.04205607476635514
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.9265536723163842,
+        "mean_human_probability": 0.8920150399208069,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.060263653483992465,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9265536723163842,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.013182674199623353
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.7879948914431673,
+        "mean_human_probability": 0.7610079050064087,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.01277139208173691,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.7879948914431673,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.19923371647509577
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9928263988522238,
+        "mean_human_probability": 0.9718360900878906,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.005738880918220947,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9928263988522238,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0014347202295552368
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.9655172413793104,
+        "mean_human_probability": 0.8941431045532227,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.034482758620689655,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9655172413793104,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "epoch": 120,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.271412680756396,
+        "mean_human_probability": 0.29886239767074585,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.2324805339265851,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.271412680756396,
+          "VEHICLE": 0.03781979977753059,
+          "ROBOT": 0.4582869855394883
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.22152690863579474,
+        "mean_human_probability": 0.2003578096628189,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.32665832290362956,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.22152690863579474,
+          "VEHICLE": 0.0688360450563204,
+          "ROBOT": 0.3829787234042553
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.0,
+        "mean_human_probability": 0.1528446525335312,
+        "human_prediction_distribution": {
+          "UNKNOWN": 1.0,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.0,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.6214953271028038,
+        "mean_human_probability": 0.5288152694702148,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.20327102803738317,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.6214953271028038,
+          "VEHICLE": 0.17523364485981308,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.935969868173258,
+        "mean_human_probability": 0.8959857225418091,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.04143126177024482,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.935969868173258,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.022598870056497175
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.9553001277139208,
+        "mean_human_probability": 0.8920873403549194,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.04086845466155811,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9553001277139208,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0038314176245210726
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9870875179340028,
+        "mean_human_probability": 0.9602084755897522,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.01291248206599713,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9870875179340028,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.9160419790104948,
+        "mean_human_probability": 0.7989307045936584,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.08395802098950525,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9160419790104948,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "epoch": 125,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.7419354838709677,
+        "mean_human_probability": 0.6261975765228271,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.19021134593993325,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.7419354838709677,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.067853170189099
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.46808510638297873,
+        "mean_human_probability": 0.3801792860031128,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.27033792240300375,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.46808510638297873,
+          "VEHICLE": 0.008760951188986232,
+          "ROBOT": 0.2528160200250313
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.17894736842105263,
+        "mean_human_probability": 0.2267392873764038,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.8210526315789474,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.17894736842105263,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.8130841121495327,
+        "mean_human_probability": 0.7429761290550232,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.04906542056074766,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.8130841121495327,
+          "VEHICLE": 0.1378504672897196,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.9340866290018832,
+        "mean_human_probability": 0.9067376852035522,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.03766478342749529,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9340866290018832,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.02824858757062147
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.9885057471264368,
+        "mean_human_probability": 0.9716245532035828,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.011494252873563218,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9885057471264368,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9956958393113343,
+        "mean_human_probability": 0.9856888055801392,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.00430416068866571,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9956958393113343,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.8920539730134932,
+        "mean_human_probability": 0.776898205280304,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.03298350824587706,
+          "STATIC_OBSTACLE": 0.014992503748125937,
+          "HUMAN": 0.8920539730134932,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.05997001499250375
+        }
+      }
+    ]
+  },
+  {
+    "epoch": 130,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.6685205784204672,
+        "mean_human_probability": 0.5683256387710571,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.16129032258064516,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.6685205784204672,
+          "VEHICLE": 0.0011123470522803114,
+          "ROBOT": 0.16907675194660735
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.4330413016270338,
+        "mean_human_probability": 0.4054456055164337,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.05381727158948686,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.4330413016270338,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.5131414267834794
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.3684210526315789,
+        "mean_human_probability": 0.3122842609882355,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.631578947368421,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.3684210526315789,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.6822429906542056,
+        "mean_human_probability": 0.6703210473060608,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.11448598130841121,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.6822429906542056,
+          "VEHICLE": 0.1191588785046729,
+          "ROBOT": 0.08411214953271028
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.9472693032015066,
+        "mean_human_probability": 0.9301915764808655,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.0018832391713747645,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9472693032015066,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.05084745762711865
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.9974457215836526,
+        "mean_human_probability": 0.981720507144928,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.002554278416347382,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9974457215836526,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9956958393113343,
+        "mean_human_probability": 0.9859034419059753,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.00430416068866571,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9956958393113343,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.974512743628186,
+        "mean_human_probability": 0.8672124147415161,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.025487256371814093,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.974512743628186,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "epoch": 135,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.3971078976640712,
+        "mean_human_probability": 0.38980957865715027,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.21468298109010012,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.3971078976640712,
+          "VEHICLE": 0.021134593993325918,
+          "ROBOT": 0.3670745272525028
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.37922403003754696,
+        "mean_human_probability": 0.3507780432701111,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.4718397997496871,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.37922403003754696,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.14893617021276595
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.05263157894736842,
+        "mean_human_probability": 0.19399191439151764,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.9473684210526315,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.05263157894736842,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.6892523364485982,
+        "mean_human_probability": 0.6757155060768127,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.16822429906542055,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.6892523364485982,
+          "VEHICLE": 0.10981308411214953,
+          "ROBOT": 0.03271028037383177
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.9416195856873822,
+        "mean_human_probability": 0.9237410426139832,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.047080979284369114,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9416195856873822,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.011299435028248588
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.9910600255427842,
+        "mean_human_probability": 0.97468501329422,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.008939974457215836,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9910600255427842,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9913916786226685,
+        "mean_human_probability": 0.9820127487182617,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.00860832137733142,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9913916786226685,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.9235382308845578,
+        "mean_human_probability": 0.8807072043418884,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.06296851574212893,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9235382308845578,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.013493253373313344
+        }
+      }
+    ]
+  },
+  {
+    "epoch": 140,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.40266963292547275,
+        "mean_human_probability": 0.3657030463218689,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.19021134593993325,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.40266963292547275,
+          "VEHICLE": 0.035595105672969966,
+          "ROBOT": 0.371523915461624
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.3166458072590738,
+        "mean_human_probability": 0.31470996141433716,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.3241551939924906,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.3166458072590738,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.3591989987484355
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.45263157894736844,
+        "mean_human_probability": 0.3700975179672241,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.5473684210526316,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.45263157894736844,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.735981308411215,
+        "mean_human_probability": 0.72360759973526,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.0794392523364486,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.735981308411215,
+          "VEHICLE": 0.12383177570093458,
+          "ROBOT": 0.06074766355140187
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.9491525423728814,
+        "mean_human_probability": 0.9289321303367615,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.01694915254237288,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9491525423728814,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.03389830508474576
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.9974457215836526,
+        "mean_human_probability": 0.9821579456329346,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.002554278416347382,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9974457215836526,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9928263988522238,
+        "mean_human_probability": 0.9842360019683838,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.007173601147776184,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9928263988522238,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.9220389805097451,
+        "mean_human_probability": 0.8753870725631714,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.049475262368815595,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9220389805097451,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.02848575712143928
+        }
+      }
+    ]
+  },
+  {
+    "epoch": 145,
+    "records": [
+      {
+        "scene_id": 93,
+        "human_recall": 0.3403781979977753,
+        "mean_human_probability": 0.32037127017974854,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.27030033370411566,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.3403781979977753,
+          "VEHICLE": 0.07341490545050056,
+          "ROBOT": 0.31590656284760843
+        }
+      },
+      {
+        "scene_id": 86,
+        "human_recall": 0.25406758448060074,
+        "mean_human_probability": 0.2676612436771393,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.6833541927409261,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.25406758448060074,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0625782227784731
+        }
+      },
+      {
+        "scene_id": 81,
+        "human_recall": 0.07368421052631578,
+        "mean_human_probability": 0.20276682078838348,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.9263157894736842,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.07368421052631578,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 99,
+        "human_recall": 0.7313084112149533,
+        "mean_human_probability": 0.7167121767997742,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.1378504672897196,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.7313084112149533,
+          "VEHICLE": 0.10046728971962617,
+          "ROBOT": 0.030373831775700934
+        }
+      },
+      {
+        "scene_id": 95,
+        "human_recall": 0.943502824858757,
+        "mean_human_probability": 0.932164192199707,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.03766478342749529,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.943502824858757,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.018832391713747645
+        }
+      },
+      {
+        "scene_id": 85,
+        "human_recall": 0.9961685823754789,
+        "mean_human_probability": 0.9837892651557922,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.0038314176245210726,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9961685823754789,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 91,
+        "human_recall": 0.9899569583931134,
+        "mean_human_probability": 0.9807178974151611,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.010043041606886656,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9899569583931134,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.0
+        }
+      },
+      {
+        "scene_id": 98,
+        "human_recall": 0.9085457271364318,
+        "mean_human_probability": 0.8742716908454895,
+        "human_prediction_distribution": {
+          "UNKNOWN": 0.07796101949025487,
+          "STATIC_OBSTACLE": 0.0,
+          "HUMAN": 0.9085457271364318,
+          "VEHICLE": 0.0,
+          "ROBOT": 0.013493253373313344
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,300 @@
+{
+  "instance_count": 19,
+  "correlations": {
+    "pixel_area": {
+      "pearson": 0.07953202287787241,
+      "spearman": -0.1087719298245614,
+      "valid": true
+    },
+    "aspect_ratio": {
+      "pearson": 0.2148121797558944,
+      "spearman": -0.2351908958313228,
+      "valid": true
+    },
+    "foreground_occupancy": {
+      "pearson": 0.20911035251723728,
+      "spearman": 0.26239581288643854,
+      "valid": true
+    },
+    "occlusion_fraction": {
+      "pearson": null,
+      "spearman": null,
+      "valid": false
+    },
+    "distance_from_image_center_px": {
+      "pearson": 0.17044174742217907,
+      "spearman": 0.32280701754385965,
+      "valid": true
+    },
+    "distance_from_image_border_px": {
+      "pearson": -0.3901741069426446,
+      "spearman": -0.268533556107294,
+      "valid": true
+    },
+    "brightness": {
+      "pearson": 0.36938172075179676,
+      "spearman": 0.41754385964912283,
+      "valid": true
+    },
+    "contrast": {
+      "pearson": 0.10956543106446053,
+      "spearman": 0.12105263157894736,
+      "valid": true
+    },
+    "texture_frequency": {
+      "pearson": -0.044719767090363266,
+      "spearman": 0.07543859649122807,
+      "valid": true
+    },
+    "appearance_seed": {
+      "pearson": 0.07319637039931239,
+      "spearman": -0.008771929824561405,
+      "valid": true
+    },
+    "geometry_seed": {
+      "pearson": 0.07319637039931239,
+      "spearman": -0.008771929824561405,
+      "valid": true
+    },
+    "camera_seed": {
+      "pearson": 0.07319637039931239,
+      "spearman": -0.008771929824561405,
+      "valid": true
+    },
+    "background_type": {
+      "bright": {
+        "instance_count": 2,
+        "mean_recall": 0.8753512132822479
+      },
+      "dark": {
+        "instance_count": 6,
+        "mean_recall": 0.7356738134293649
+      },
+      "mid": {
+        "instance_count": 11,
+        "mean_recall": 0.7759279023449692
+      }
+    }
+  },
+  "lowest_performance_instance": {
+    "scene_id": 93,
+    "instance_id": 3,
+    "geometry_seed": 10279,
+    "appearance_seed": 10280,
+    "camera_seed": 10281,
+    "pixel_area": 899,
+    "bbox_width_px": 12,
+    "bbox_height_px": 97,
+    "aspect_ratio": 0.12371134020618557,
+    "foreground_occupancy": 0.7723367697594502,
+    "occlusion_fraction": 0.0,
+    "distance_from_image_center_px": 21.289668856043768,
+    "distance_from_image_border_px": 8,
+    "brightness": 0.4048733660130719,
+    "contrast": 0.07655524265919544,
+    "texture_frequency": 0.0030829210355381455,
+    "background_type": "mid",
+    "gt_human_pixel_count": 899,
+    "prediction_distribution": {
+      "UNKNOWN": 0.27919911012235815,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.2903225806451613,
+      "VEHICLE": 0.05784204671857619,
+      "ROBOT": 0.37263626251390436
+    },
+    "human_recall": 0.2903225806451613,
+    "mean_human_probability": 0.2671802043914795,
+    "rgb_sha256": "dadd7e1770441abccd10ea774a0ec102542993afe99fbf253da321f397df8b95",
+    "label_sha256": "bbdd9ee7a7c8d4acdf2e7b01ab4723083a1fe725b48daea5f6fa0ed2d9a0f8cb"
+  },
+  "highest_performance_instance": {
+    "scene_id": 98,
+    "instance_id": 2,
+    "geometry_seed": 10294,
+    "appearance_seed": 10295,
+    "camera_seed": 10296,
+    "pixel_area": 667,
+    "bbox_width_px": 10,
+    "bbox_height_px": 83,
+    "aspect_ratio": 0.12048192771084337,
+    "foreground_occupancy": 0.8036144578313253,
+    "occlusion_fraction": 0.0,
+    "distance_from_image_center_px": 24.37724348649781,
+    "distance_from_image_border_px": 8,
+    "brightness": 0.48113323801742924,
+    "contrast": 0.09560296564465902,
+    "texture_frequency": 0.0037151036319065757,
+    "background_type": "mid",
+    "gt_human_pixel_count": 667,
+    "prediction_distribution": {
+      "UNKNOWN": 0.013493253373313344,
+      "STATIC_OBSTACLE": 0.0,
+      "HUMAN": 0.9865067466266867,
+      "VEHICLE": 0.0,
+      "ROBOT": 0.0
+    },
+    "human_recall": 0.9865067466266867,
+    "mean_human_probability": 0.9100859761238098,
+    "rgb_sha256": "40b5dec6a7980cea28dcf427db75a28afabf32525ebbbe3349ecdce5e3b26838",
+    "label_sha256": "c1f38b5030d6a30b03d6f84a5f4ce1ba1821432542b7711b0d603fd888850699"
+  },
+  "bottom_seed_records": [
+    {
+      "scene_id": 93,
+      "instance_id": 3,
+      "geometry_seed": 10279,
+      "appearance_seed": 10280,
+      "camera_seed": 10281,
+      "pixel_area": 899,
+      "bbox_width_px": 12,
+      "bbox_height_px": 97,
+      "aspect_ratio": 0.12371134020618557,
+      "foreground_occupancy": 0.7723367697594502,
+      "occlusion_fraction": 0.0,
+      "distance_from_image_center_px": 21.289668856043768,
+      "distance_from_image_border_px": 8,
+      "brightness": 0.4048733660130719,
+      "contrast": 0.07655524265919544,
+      "texture_frequency": 0.0030829210355381455,
+      "background_type": "mid",
+      "gt_human_pixel_count": 899,
+      "prediction_distribution": {
+        "UNKNOWN": 0.27919911012235815,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.2903225806451613,
+        "VEHICLE": 0.05784204671857619,
+        "ROBOT": 0.37263626251390436
+      },
+      "human_recall": 0.2903225806451613,
+      "mean_human_probability": 0.2671802043914795,
+      "rgb_sha256": "dadd7e1770441abccd10ea774a0ec102542993afe99fbf253da321f397df8b95",
+      "label_sha256": "bbdd9ee7a7c8d4acdf2e7b01ab4723083a1fe725b48daea5f6fa0ed2d9a0f8cb"
+    },
+    {
+      "scene_id": 86,
+      "instance_id": 4,
+      "geometry_seed": 10258,
+      "appearance_seed": 10259,
+      "camera_seed": 10260,
+      "pixel_area": 799,
+      "bbox_width_px": 11,
+      "bbox_height_px": 94,
+      "aspect_ratio": 0.11702127659574468,
+      "foreground_occupancy": 0.7727272727272727,
+      "occlusion_fraction": 0.0,
+      "distance_from_image_center_px": 58.57687256929991,
+      "distance_from_image_border_px": 10,
+      "brightness": 0.4495975626361656,
+      "contrast": 0.09959328143042005,
+      "texture_frequency": 0.00987233844832891,
+      "background_type": "mid",
+      "gt_human_pixel_count": 799,
+      "prediction_distribution": {
+        "UNKNOWN": 0.38172715894868586,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.425531914893617,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.1927409261576971
+      },
+      "human_recall": 0.425531914893617,
+      "mean_human_probability": 0.3590300977230072,
+      "rgb_sha256": "6ea0769a74e96d738f022cdf8d204a9e26f3bc478b0a4d907de1b423384fb640",
+      "label_sha256": "163ea6e56603eddbfd160ee05e759b9e7873aac3c4c401e7355e4732e029a132"
+    },
+    {
+      "scene_id": 81,
+      "instance_id": 3,
+      "geometry_seed": 10243,
+      "appearance_seed": 10244,
+      "camera_seed": 10245,
+      "pixel_area": 95,
+      "bbox_width_px": 2,
+      "bbox_height_px": 58,
+      "aspect_ratio": 0.034482758620689655,
+      "foreground_occupancy": 0.8189655172413793,
+      "occlusion_fraction": 0.0,
+      "distance_from_image_center_px": 16.492422502470642,
+      "distance_from_image_border_px": 27,
+      "brightness": 0.2935744144880174,
+      "contrast": 0.06530736698791503,
+      "texture_frequency": 0.005015763575256382,
+      "background_type": "dark",
+      "gt_human_pixel_count": 95,
+      "prediction_distribution": {
+        "UNKNOWN": 0.5368421052631579,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.4631578947368421,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.0
+      },
+      "human_recall": 0.4631578947368421,
+      "mean_human_probability": 0.30969345569610596,
+      "rgb_sha256": "71d63e92ef7fe0cc212ed44b7f22ef5e0b61d76dcf514e8cbe9f269b9046aa9f",
+      "label_sha256": "7e86a9b0c983229b7972246b4e42af2de3a471a6ccc862343d6b842fd05fe790"
+    },
+    {
+      "scene_id": 99,
+      "instance_id": 2,
+      "geometry_seed": 10297,
+      "appearance_seed": 10298,
+      "camera_seed": 10299,
+      "pixel_area": 428,
+      "bbox_width_px": 8,
+      "bbox_height_px": 68,
+      "aspect_ratio": 0.11764705882352941,
+      "foreground_occupancy": 0.7867647058823529,
+      "occlusion_fraction": 0.0,
+      "distance_from_image_center_px": 27.018512172212592,
+      "distance_from_image_border_px": 9,
+      "brightness": 0.5422149373638343,
+      "contrast": 0.06334885740062181,
+      "texture_frequency": 0.0025835688745832397,
+      "background_type": "mid",
+      "gt_human_pixel_count": 428,
+      "prediction_distribution": {
+        "UNKNOWN": 0.1588785046728972,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.616822429906542,
+        "VEHICLE": 0.0,
+        "ROBOT": 0.22429906542056074
+      },
+      "human_recall": 0.616822429906542,
+      "mean_human_probability": 0.49455732107162476,
+      "rgb_sha256": "4ca6dd4277ec75d32fbd55902b456c3e498f56d5310052672070f60684c0d766",
+      "label_sha256": "e83f195915544d7195cfbf021dd0b562005f94aec3bebd95dba8bf9ac0eb7830"
+    },
+    {
+      "scene_id": 94,
+      "instance_id": 2,
+      "geometry_seed": 10282,
+      "appearance_seed": 10283,
+      "camera_seed": 10284,
+      "pixel_area": 748,
+      "bbox_width_px": 11,
+      "bbox_height_px": 88,
+      "aspect_ratio": 0.125,
+      "foreground_occupancy": 0.7727272727272727,
+      "occlusion_fraction": 0.0,
+      "distance_from_image_center_px": 19.78004044485248,
+      "distance_from_image_border_px": 9,
+      "brightness": 0.34235062636165575,
+      "contrast": 0.09143929210946322,
+      "texture_frequency": 0.0014616604470261696,
+      "background_type": "dark",
+      "gt_human_pixel_count": 748,
+      "prediction_distribution": {
+        "UNKNOWN": 0.09090909090909091,
+        "STATIC_OBSTACLE": 0.0,
+        "HUMAN": 0.75,
+        "VEHICLE": 0.001336898395721925,
+        "ROBOT": 0.15775401069518716
+      },
+      "human_recall": 0.75,
+      "mean_human_probability": 0.6885813474655151,
+      "rgb_sha256": "94c9bb67e56ffdb676ae06355b05a07d697002ce831f8d449c1f4b36734ec638",
+      "label_sha256": "b0bf07458a8c67a4f76ab74a3405bba45a8d023ee818df4caaf2d8e340dab340"
+    }
+  ],
+  "seed_systematically_dominates": false,
+  "note": "20 validation scenes provide one visible HUMAN instance each; seed correlation is diagnostic only."
+}

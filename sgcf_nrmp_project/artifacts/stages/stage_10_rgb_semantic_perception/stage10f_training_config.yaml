@@ -1,0 +1,23 @@
+schema_version: 1
+seed: 10
+model: TinySemanticSegmentation
+model_parameter_count: 118341
+input_height: 120
+input_width: 160
+class_count: 5
+loss: current_sqrt_weighted_cross_entropy
+class_weights: [0.3282637900393733, 0.8115540256535101, 1.5283809715797676, 1.238860853978437, 1.0929403587489122]
+optimizer: AdamW
+learning_rate: 0.002
+batch_size: 8
+maximum_epochs: 50
+early_stopping_patience: 10
+shuffle: false
+augmentation: false
+dropout: false
+weight_decay: 0.0
+checkpoint_metric: validation_mean_iou
+threshold_candidates:
+  probability: [0.40, 0.50, 0.60, 0.70, 0.80]
+  entropy: [0.50, 0.80, 1.00, 1.20]
+class_margin_m: [0.0, 0.0, 0.35, 0.20, 0.15]

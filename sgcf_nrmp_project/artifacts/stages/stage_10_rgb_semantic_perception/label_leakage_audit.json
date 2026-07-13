@@ -1,0 +1,24 @@
+{
+  "status": "CONTINUE_WITH_INDEPENDENT_APPEARANCE_RENDERER",
+  "stage07_rgb_debug_image_allowed_for_training": false,
+  "stage07_rgb_directly_uses_visual_color": true,
+  "stage07_fixed_color_shortcut_risk": "HIGH",
+  "semantic_id_in_model_input": false,
+  "instance_id_in_model_input": false,
+  "class_in_filename_or_model_metadata": false,
+  "local_real_rgb_dataset_found": false,
+  "eligible_cached_rgb_weights_found": false,
+  "new_renderer_color_class_independent": true,
+  "same_color_allowed_across_classes": true,
+  "same_class_uses_multiple_colors": true,
+  "class_structure_after_fixed_color_removal": {
+    "stage07_rgb_debug_image": "insufficient_uniform_prism_appearance",
+    "stage10_renderer": "distinct_coarse_shape_and_part_structure"
+  },
+  "split_unit": "scene_id",
+  "scene_leakage_allowed": false,
+  "geometry_seed_leakage_allowed": false,
+  "appearance_seed_leakage_allowed": false,
+  "camera_seed_leakage_allowed": false,
+  "domain_claim": "synthetic_procedural_only"
+}

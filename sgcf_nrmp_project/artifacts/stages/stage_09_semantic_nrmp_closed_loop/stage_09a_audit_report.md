@@ -1,3 +1,11 @@
+> **SUPERSEDED BY STAGE 09 FINAL REVALIDATION**
+>
+> This file records an earlier blocked or audit state. The current authoritative
+> conclusions are in `stage_09_final_report.md` and `stage_report.md`.
+>
+> 该文件记录历史阻塞/审计状态，已被 Stage 09 最终复验结论取代。当前权威
+> 结论以 `stage_09_final_report.md` 和 `stage_report.md` 为准。
+
 # Stage 09A Closed-loop Lifecycle Audit
 
 ## Decision
@@ -49,4 +57,3 @@ All are below 100 ms and P0 remains close to Stage 05. First cycles are reported
 ## Verification
 
 The complete standard-library suite passed: 126 tests in 12.736 s. Compileall and `git diff --check` passed. Protected directories have no Stage 09A increment.
-

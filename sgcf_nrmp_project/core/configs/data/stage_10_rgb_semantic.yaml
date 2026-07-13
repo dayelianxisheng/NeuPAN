@@ -1,0 +1,13 @@
+schema_version: 1
+image_width: 160
+image_height: 120
+train_scenes: 80
+validation_scenes: 20
+test_scenes: 20
+base_seed: 10000
+classes:
+  UNKNOWN: 0
+  STATIC_OBSTACLE: 1
+  HUMAN: 2
+  VEHICLE: 3
+  ROBOT: 4

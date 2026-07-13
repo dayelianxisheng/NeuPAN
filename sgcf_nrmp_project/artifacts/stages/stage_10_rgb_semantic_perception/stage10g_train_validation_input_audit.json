@@ -1,0 +1,54 @@
+{
+  "train": {
+    "scene_count": 80,
+    "image_dtype_saved": "uint8",
+    "image_min": 0,
+    "image_max": 255,
+    "channel_order": "RGB",
+    "normalization": "uint8 to float32 [0,1]",
+    "input_resolution_hw": [
+      120,
+      160
+    ],
+    "label_dtype_saved": "uint8",
+    "label_shape": [
+      120,
+      160
+    ],
+    "label_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "validation": {
+    "scene_count": 20,
+    "image_dtype_saved": "uint8",
+    "image_min": 0,
+    "image_max": 255,
+    "channel_order": "RGB",
+    "normalization": "uint8 to float32 [0,1]",
+    "input_resolution_hw": [
+      120,
+      160
+    ],
+    "label_dtype_saved": "uint8",
+    "label_shape": [
+      120,
+      160
+    ],
+    "label_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "same_dataset_class": "RGBSemanticDataset",
+  "preprocessing_identical": true,
+  "validation_core_classes_present": true,
+  "test_dataset_instantiated": false
+}

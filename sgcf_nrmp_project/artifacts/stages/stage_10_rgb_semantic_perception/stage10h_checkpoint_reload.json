@@ -1,0 +1,307 @@
+{
+  "events": [
+    {
+      "epoch": 1,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 2,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 3,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 4,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 5,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 7,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 9,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 10,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 11,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 14,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 28,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 32,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 35,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 36,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 37,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 38,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 39,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 40,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 41,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 42,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 44,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 46,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 47,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 48,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 49,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 51,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 52,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 55,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 56,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 57,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 61,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 62,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 63,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 64,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 67,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 70,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 71,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 75,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 78,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 79,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 83,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 84,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 85,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 89,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 90,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 92,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 93,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 95,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 96,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    },
+    {
+      "epoch": 100,
+      "atomic_save": true,
+      "saved_before_early_stopping_update": true,
+      "reload_max_abs_difference": 0.0
+    }
+  ],
+  "final_max_abs_difference": 0.0,
+  "tolerance": 1e-07,
+  "passed": true
+}

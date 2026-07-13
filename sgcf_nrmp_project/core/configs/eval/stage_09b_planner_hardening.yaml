@@ -1,0 +1,11 @@
+schema_version: 1
+seed: 909
+deterministic_max_steps: 55
+random_episode_max_steps: 35
+random_smoke_episodes: 20
+modes: [P0, P1, P2]
+primary_lifecycle_fix: warm_start_invalidation_and_solver_status_mapping
+solver_configuration_changed: false
+exact_geometry_changed: false
+semantic_margin_changed: false
+world_online_access_allowed: false

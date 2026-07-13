@@ -1,0 +1,28 @@
+{
+  "optimizer_type": "AdamW",
+  "parameter_group_count": 1,
+  "old_learning_rates": [
+    0.002
+  ],
+  "new_learning_rates": [
+    0.0002
+  ],
+  "expected_new_learning_rate": 0.0002,
+  "before": {
+    "full_optimizer_state_hash": "a16422b668cadd5f23cc36dd77f18916a0c8896a0f89812ca5a9298f615f64bb",
+    "moment_state_hash": "a1a9c65256cf8b3afa4372f860667bd48e1af5e78d325f3ed60ee8be9f001c85",
+    "non_lr_parameter_groups_hash": "1e4686fe45806b8cb24db5f7e920a642607be891ae66ca216fd1c84c9b37d31d",
+    "optimizer_moment_norm": 0.9460928805633336
+  },
+  "after_lr_change_before_any_step": {
+    "full_optimizer_state_hash": "699b2b9bf8aa781be3df6f3660754f81e42fa517d90ef62eaddc180fc1ee86c5",
+    "moment_state_hash": "a1a9c65256cf8b3afa4372f860667bd48e1af5e78d325f3ed60ee8be9f001c85",
+    "non_lr_parameter_groups_hash": "1e4686fe45806b8cb24db5f7e920a642607be891ae66ca216fd1c84c9b37d31d",
+    "optimizer_moment_norm": 0.9460928805633336
+  },
+  "moments_unchanged": true,
+  "non_lr_parameter_groups_unchanged": true,
+  "full_state_hash_changed_only_due_to_lr": true,
+  "optimizer_reinitialized_after_state_load": false,
+  "single_lr_authorized": true
+}

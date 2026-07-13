@@ -9,3 +9,11 @@ class SemanticObservableChecker:
     def distance(self,states): return self.exact_checker.distance(states)
     def semantic_margins(self,states):
         t=time.perf_counter(); value=self.margin_provider.query_margins(states); self.last_semantic_latency_ms=(time.perf_counter()-t)*1000; return value
+    @property
+    def semantic_context(self):
+        return {
+            "semantic_enabled": True,
+            "explicit_failure_active": bool(getattr(self.margin_provider,"explicit_failure_active",False)),
+            "explicit_failure_reasons": list(getattr(self.margin_provider,"explicit_failure_reasons",())),
+            "exact_checker": self.exact_checker,
+        }

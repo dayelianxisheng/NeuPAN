@@ -1,0 +1,63 @@
+{
+  "current_loss_is_ce_only": true,
+  "dice_enabled": false,
+  "D0_unweighted_CE": {
+    "initial_loss": 1.551997423171997,
+    "final_loss": 0.08011031895875931,
+    "relative_loss": 0.05161755925794552,
+    "final_metrics": {
+      "step": 600,
+      "loss": 0.08011031895875931,
+      "gradient_norm_last_step": 1.9859820233817256,
+      "parameter_update_since_last_record": 4.3901741584539105,
+      "pixel_accuracy": 0.9763541666666666,
+      "macro_f1": 0.9332108950422693,
+      "per_class_recall": {
+        "UNKNOWN": 0.9910409232404526,
+        "STATIC_OBSTACLE": 0.9943484042553191,
+        "HUMAN": 0.8452012383900929,
+        "VEHICLE": 0.9663934426229508,
+        "ROBOT": 0.8458874458874459
+      },
+      "prediction_fraction": {
+        "UNKNOWN": 0.6904166666666667,
+        "STATIC_OBSTACLE": 0.15734375,
+        "HUMAN": 0.03567708333333333,
+        "VEHICLE": 0.06338541666666667,
+        "ROBOT": 0.05317708333333333
+      }
+    },
+    "recent_20_percent_loss_slope_per_step": 6.157793104648547e-05,
+    "still_decreasing": false
+  },
+  "D1_weighted_CE": {
+    "initial_loss": 1.5814664363861084,
+    "final_loss": 0.1293400526046753,
+    "relative_loss": 0.08178488624787827,
+    "final_metrics": {
+      "step": 600,
+      "loss": 0.1293400526046753,
+      "gradient_norm_last_step": 1.4477242531197083,
+      "parameter_update_since_last_record": 0.9226569099681637,
+      "pixel_accuracy": 0.9665104166666667,
+      "macro_f1": 0.867724226773916,
+      "per_class_recall": {
+        "UNKNOWN": 0.9953686128615898,
+        "STATIC_OBSTACLE": 0.9986702127659575,
+        "HUMAN": 0.8637770897832817,
+        "VEHICLE": 0.9967213114754099,
+        "ROBOT": 0.5792207792207792
+      },
+      "prediction_fraction": {
+        "UNKNOWN": 0.68390625,
+        "STATIC_OBSTACLE": 0.1571875,
+        "HUMAN": 0.055260416666666666,
+        "VEHICLE": 0.06463541666666667,
+        "ROBOT": 0.039010416666666665
+      }
+    },
+    "recent_20_percent_loss_slope_per_step": -0.00013016879558563256,
+    "still_decreasing": true
+  },
+  "additional_loss_not_introduced": true
+}

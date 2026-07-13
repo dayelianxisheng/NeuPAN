@@ -1,0 +1,4 @@
+{
+  "status": "NOT_RUN_AFTER_SINGLE_IMAGE_FAILURE",
+  "reason": "Stage 10B immediate-stop condition 3 prohibits four-image diagnosis after single-image memorization fails."
+}

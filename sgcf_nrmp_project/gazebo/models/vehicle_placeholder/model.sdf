@@ -1,0 +1,1 @@
+<?xml version='1.0'?><sdf version='1.9'><model name='vehicle_placeholder'><static>true</static><link name='body'><collision name='collision'><geometry><box><size>0.8 0.5 0.4</size></box></geometry></collision><visual name='visual'><geometry><box><size>0.8 0.5 0.4</size></box></geometry><material><diffuse>0.25 0.35 0.8 1</diffuse></material></visual></link></model></sdf>

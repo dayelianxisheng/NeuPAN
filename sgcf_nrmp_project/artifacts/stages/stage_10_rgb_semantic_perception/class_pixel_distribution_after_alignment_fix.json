@@ -1,0 +1,96 @@
+{
+  "selected_48": {
+    "UNKNOWN": {
+      "pixel_count": 672622,
+      "pixel_fraction": 0.7298415798611111
+    },
+    "STATIC_OBSTACLE": {
+      "pixel_count": 110048,
+      "pixel_fraction": 0.11940972222222222
+    },
+    "HUMAN": {
+      "pixel_count": 31028,
+      "pixel_fraction": 0.033667534722222225
+    },
+    "VEHICLE": {
+      "pixel_count": 47225,
+      "pixel_fraction": 0.05124240451388889
+    },
+    "ROBOT": {
+      "pixel_count": 60677,
+      "pixel_fraction": 0.06583875868055555
+    }
+  },
+  "full_train_80": {
+    "UNKNOWN": {
+      "pixel_count": 1126612,
+      "pixel_fraction": 0.7334713541666666
+    },
+    "STATIC_OBSTACLE": {
+      "pixel_count": 179293,
+      "pixel_fraction": 0.11672721354166667
+    },
+    "HUMAN": {
+      "pixel_count": 49435,
+      "pixel_fraction": 0.032184244791666664
+    },
+    "VEHICLE": {
+      "pixel_count": 80641,
+      "pixel_fraction": 0.052500651041666666
+    },
+    "ROBOT": {
+      "pixel_count": 100019,
+      "pixel_fraction": 0.06511653645833333
+    }
+  },
+  "selected_scene_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ]
+}

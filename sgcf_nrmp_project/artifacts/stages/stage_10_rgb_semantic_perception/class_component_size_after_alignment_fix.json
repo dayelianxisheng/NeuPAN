@@ -1,0 +1,126 @@
+{
+  "selected_48": {
+    "UNKNOWN": {
+      "connected_component_count": 95,
+      "median_component_area": 12353.0,
+      "p10_component_area": 2.0,
+      "p50_component_area": 12353.0,
+      "p90_component_area": 14322.8
+    },
+    "STATIC_OBSTACLE": {
+      "connected_component_count": 53,
+      "median_component_area": 2212.0,
+      "p10_component_area": 726.4000000000001,
+      "p50_component_area": 2212.0,
+      "p90_component_area": 2914.0
+    },
+    "HUMAN": {
+      "connected_component_count": 49,
+      "median_component_area": 627.0,
+      "p10_component_area": 444.8,
+      "p50_component_area": 627.0,
+      "p90_component_area": 859.8
+    },
+    "VEHICLE": {
+      "connected_component_count": 52,
+      "median_component_area": 914.0,
+      "p10_component_area": 664.6,
+      "p50_component_area": 914.0,
+      "p90_component_area": 1273.0
+    },
+    "ROBOT": {
+      "connected_component_count": 53,
+      "median_component_area": 1219.0,
+      "p10_component_area": 424.40000000000003,
+      "p50_component_area": 1219.0,
+      "p90_component_area": 1622.6000000000001
+    }
+  },
+  "full_train_80": {
+    "UNKNOWN": {
+      "connected_component_count": 155,
+      "median_component_area": 13054.0,
+      "p10_component_area": 2.0,
+      "p50_component_area": 13054.0,
+      "p90_component_area": 14427.2
+    },
+    "STATIC_OBSTACLE": {
+      "connected_component_count": 88,
+      "median_component_area": 2184.0,
+      "p10_component_area": 904.4000000000002,
+      "p50_component_area": 2184.0,
+      "p90_component_area": 2889.6
+    },
+    "HUMAN": {
+      "connected_component_count": 81,
+      "median_component_area": 616.0,
+      "p10_component_area": 444.0,
+      "p50_component_area": 616.0,
+      "p90_component_area": 839.0
+    },
+    "VEHICLE": {
+      "connected_component_count": 86,
+      "median_component_area": 928.0,
+      "p10_component_area": 690.0,
+      "p50_component_area": 928.0,
+      "p90_component_area": 1305.5
+    },
+    "ROBOT": {
+      "connected_component_count": 87,
+      "median_component_area": 1219.0,
+      "p10_component_area": 448.0,
+      "p50_component_area": 1219.0,
+      "p90_component_area": 1625.0
+    }
+  },
+  "selected_scene_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ]
+}

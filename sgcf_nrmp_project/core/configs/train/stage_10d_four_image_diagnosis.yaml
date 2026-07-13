@@ -1,0 +1,12 @@
+schema_version: 1
+seed: 10
+selected_scene_ids: [0, 1, 2, 3]
+optimizer: AdamW
+learning_rate: 0.002
+steps: 1200
+batch_size: 4
+shuffle: false
+augmentation: false
+dropout: false
+weight_decay: 0.0
+losses: [unweighted_cross_entropy, current_sqrt_weighted_cross_entropy]

@@ -1,0 +1,148 @@
+{
+  "uses_train_only": true,
+  "selected_scene_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "crop_count": 8,
+  "parameter_count": 1426,
+  "statistics": [
+    {
+      "scene_id": 0,
+      "class": "HUMAN",
+      "aspect_ratio": 0.11363636363636363,
+      "foreground_occupancy": 0.7340909090909091,
+      "edge_density": 0.21549111807732496,
+      "texture_std": 0.21880728006362915
+    },
+    {
+      "scene_id": 0,
+      "class": "ROBOT",
+      "aspect_ratio": 0.375,
+      "foreground_occupancy": 0.5941358024691358,
+      "edge_density": 0.09267284619397295,
+      "texture_std": 0.21936970949172974
+    },
+    {
+      "scene_id": 1,
+      "class": "HUMAN",
+      "aspect_ratio": 0.12162162162162163,
+      "foreground_occupancy": 0.8108108108108109,
+      "edge_density": 0.1784215722571887,
+      "texture_std": 0.14994926750659943
+    },
+    {
+      "scene_id": 1,
+      "class": "ROBOT",
+      "aspect_ratio": 0.3728813559322034,
+      "foreground_occupancy": 0.8397534668721109,
+      "edge_density": 0.05113968439509059,
+      "texture_std": 0.18171435594558716
+    },
+    {
+      "scene_id": 2,
+      "class": "HUMAN",
+      "aspect_ratio": 0.12371134020618557,
+      "foreground_occupancy": 0.7414089347079038,
+      "edge_density": 0.18509027126939498,
+      "texture_std": 0.2264765352010727
+    },
+    {
+      "scene_id": 2,
+      "class": "ROBOT",
+      "aspect_ratio": 0.40350877192982454,
+      "foreground_occupancy": 0.8184591914569032,
+      "edge_density": 0.05294486215538847,
+      "texture_std": 0.20609267055988312
+    },
+    {
+      "scene_id": 3,
+      "class": "HUMAN",
+      "aspect_ratio": 0.12658227848101267,
+      "foreground_occupancy": 0.7354430379746836,
+      "edge_density": 0.21873850481445417,
+      "texture_std": 0.23796527087688446
+    },
+    {
+      "scene_id": 3,
+      "class": "ROBOT",
+      "aspect_ratio": 0.35714285714285715,
+      "foreground_occupancy": 0.8148571428571428,
+      "edge_density": 0.04544513457556936,
+      "texture_std": 0.2749249041080475
+    }
+  ],
+  "initial_loss": 0.6997011303901672,
+  "final_loss": 0.00186650559771806,
+  "training_accuracy": 1.0,
+  "curve": [
+    {
+      "step": 0,
+      "loss": 0.6997011303901672,
+      "accuracy": 0.5
+    },
+    {
+      "step": 25,
+      "loss": 0.44562676548957825,
+      "accuracy": 0.75
+    },
+    {
+      "step": 50,
+      "loss": 0.2567545771598816,
+      "accuracy": 1.0
+    },
+    {
+      "step": 75,
+      "loss": 0.12188533693552017,
+      "accuracy": 1.0
+    },
+    {
+      "step": 100,
+      "loss": 0.05841240659356117,
+      "accuracy": 1.0
+    },
+    {
+      "step": 125,
+      "loss": 0.025516536086797714,
+      "accuracy": 1.0
+    },
+    {
+      "step": 150,
+      "loss": 0.013460471294820309,
+      "accuracy": 1.0
+    },
+    {
+      "step": 175,
+      "loss": 0.007876574993133545,
+      "accuracy": 1.0
+    },
+    {
+      "step": 200,
+      "loss": 0.005234104581177235,
+      "accuracy": 1.0
+    },
+    {
+      "step": 225,
+      "loss": 0.003799350932240486,
+      "accuracy": 1.0
+    },
+    {
+      "step": 250,
+      "loss": 0.00290429824963212,
+      "accuracy": 1.0
+    },
+    {
+      "step": 275,
+      "loss": 0.002300666179507971,
+      "accuracy": 1.0
+    },
+    {
+      "step": 300,
+      "loss": 0.00186650559771806,
+      "accuracy": 1.0
+    }
+  ],
+  "visually_separable_for_train_diagnostic": true
+}

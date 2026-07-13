@@ -1,0 +1,5 @@
+{
+  "status": "NOT_RUN_AFTER_ALIGNMENT_DEFECT",
+  "reason": "Subsequent class-distribution diagnosis was not executed after the earliest alignment-layer failure.",
+  "values": null
+}

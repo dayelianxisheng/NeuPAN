@@ -1,0 +1,108 @@
+{
+  "frozen_sample": {
+    "scene_id": 0,
+    "image_id": 0,
+    "geometry_seed": 10000,
+    "appearance_seed": 10001,
+    "camera_seed": 10002,
+    "rgb_sha256": "e74f3e9e3eb80ce611a404aff30103540c515ad46da5cbfe13aea2939744bb27",
+    "semantic_label_sha256": "76eff64116cf5a7dd9fcd4a9fe4d6448dd00b1e566a824d8170a7e6ca40b2325"
+  },
+  "correct_pixel_count": 13143,
+  "incorrect_pixel_count": 6057,
+  "error_rate_by_gt_class": {
+    "UNKNOWN": {
+      "pixel_count": 13171,
+      "error_count": 5061,
+      "error_rate": 0.38425328372940554
+    },
+    "STATIC_OBSTACLE": {
+      "pixel_count": 3008,
+      "error_count": 0,
+      "error_rate": 0.0
+    },
+    "HUMAN": {
+      "pixel_count": 646,
+      "error_count": 122,
+      "error_rate": 0.18885448916408668
+    },
+    "VEHICLE": {
+      "pixel_count": 1220,
+      "error_count": 6,
+      "error_rate": 0.004918032786885246
+    },
+    "ROBOT": {
+      "pixel_count": 1155,
+      "error_count": 868,
+      "error_rate": 0.7515151515151515
+    }
+  },
+  "error_rate_by_predicted_class": {
+    "UNKNOWN": {
+      "pixel_count": 8471,
+      "error_count": 361,
+      "error_rate": 0.04261598394522489
+    },
+    "STATIC_OBSTACLE": {
+      "pixel_count": 3454,
+      "error_count": 446,
+      "error_rate": 0.12912565141864504
+    },
+    "HUMAN": {
+      "pixel_count": 2314,
+      "error_count": 1790,
+      "error_rate": 0.773552290406223
+    },
+    "VEHICLE": {
+      "pixel_count": 2121,
+      "error_count": 907,
+      "error_rate": 0.4276284771334276
+    },
+    "ROBOT": {
+      "pixel_count": 2840,
+      "error_count": 2553,
+      "error_rate": 0.898943661971831
+    }
+  },
+  "gt_unknown_predicted_foreground": 5061,
+  "gt_foreground_predicted_unknown": 361,
+  "gt_robot_prediction_breakdown": {
+    "UNKNOWN": 280,
+    "STATIC_OBSTACLE": 0,
+    "HUMAN": 537,
+    "VEHICLE": 51,
+    "ROBOT": 287
+  },
+  "error_by_boundary_radius_px": {
+    "1": {
+      "pixel_count": 2595,
+      "error_count": 1119,
+      "error_rate": 0.43121387283236995
+    },
+    "2": {
+      "pixel_count": 4188,
+      "error_count": 1569,
+      "error_rate": 0.3746418338108882
+    },
+    "3": {
+      "pixel_count": 5777,
+      "error_count": 1965,
+      "error_rate": 0.3401419421845248
+    },
+    "5": {
+      "pixel_count": 8479,
+      "error_count": 2680,
+      "error_rate": 0.3160750088453827
+    }
+  },
+  "component_interior": {
+    "pixel_count": 3429,
+    "error_count": 401,
+    "error_rate": 0.11694371536891222
+  },
+  "image_border_5px": {
+    "pixel_count": 2700,
+    "error_count": 113,
+    "error_rate": 0.04185185185185185
+  }
+}

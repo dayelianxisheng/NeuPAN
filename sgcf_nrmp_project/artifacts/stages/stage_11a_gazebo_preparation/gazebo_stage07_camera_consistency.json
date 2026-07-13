@@ -1,0 +1,79 @@
+{
+  "stage07_intrinsics": {
+    "fx": 180.0,
+    "fy": 180.0,
+    "cx": 160.0,
+    "cy": 120.0,
+    "width": 320,
+    "height": 240,
+    "minimum_depth": 0.05
+  },
+  "gazebo_intrinsics": {
+    "fx": 180.0,
+    "fy": 180.0,
+    "cx": 160.0,
+    "cy": 120.0,
+    "width": 320,
+    "height": 240
+  },
+  "intrinsics_max_abs_error": 0.0,
+  "T_camera_lidar_stage07": [
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.8
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_camera_lidar_gazebo_contract": [
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.8
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "transform_max_abs_error": 0.0,
+  "camera_optical_axes": {
+    "x": "right",
+    "y": "down",
+    "z": "forward"
+  },
+  "passed": true
+}

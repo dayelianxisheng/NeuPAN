@@ -1,0 +1,4 @@
+schema_version: 1
+class_count: 5
+base_channels: 16
+parameter_limit: 1000000

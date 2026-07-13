@@ -1,0 +1,38 @@
+Stage 10E static verification
+Date: 2026-07-13
+Python: 3.10
+Torch: 2.8.0+cu128 (CPU execution)
+
+Command:
+PYTHONPATH=sgcf_nrmp_project/core/src MPLCONFIGDIR=/tmp/matplotlib \
+  python3.10 -m unittest \
+  sgcf_nrmp_project/core/tests/perception/test_stage10e_overfit_setup.py
+
+Result:
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.052s
+
+OK
+
+compileall:
+python3.10 -m compileall -q \
+  sgcf_nrmp_project/core/src \
+  sgcf_nrmp_project/core/scripts \
+  sgcf_nrmp_project/core/tests/perception
+PASS
+
+JSON parse: PASS (60 Stage 10 JSON files)
+Required Stage 10E artifacts: PASS
+Decision/metric consistency: PASS
+git diff --check: PASS
+
+Protected-directory incremental check:
+- neupan/: no Stage 10E modification
+- neupan_ros/: pre-existing dirty submodule state remains (` m neupan_ros`)
+- neupan_ros2/: no Stage 10E modification
+- example/: no Stage 10E modification
+- docker/: no Stage 10E modification
+
+No test, simulation, or training outside the single authorized 48-image
+Stage 10E run was executed.
