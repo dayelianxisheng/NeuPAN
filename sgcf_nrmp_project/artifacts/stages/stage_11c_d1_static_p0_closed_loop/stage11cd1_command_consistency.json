@@ -1,0 +1,14 @@
+{
+  "empty_world": {
+    "candidate_to_cmd_max_error": 0.0,
+    "forwarded_sample_count": 0,
+    "gazebo_nonzero_count": 0,
+    "ros_to_gazebo_nonzero_sample_count": 0
+  },
+  "single_static_obstacle": {
+    "candidate_to_cmd_max_error": 0.0,
+    "forwarded_sample_count": 0,
+    "gazebo_nonzero_count": 0,
+    "ros_to_gazebo_nonzero_sample_count": 0
+  }
+}

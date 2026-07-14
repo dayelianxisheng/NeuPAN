@@ -1,0 +1,2 @@
+sgcf_nrmp_project/artifacts/stages/stage_11c_d2_static_geometry_expansion/
+sgcf_nrmp_project/tools/finalize_stage11cd2.py

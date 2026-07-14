@@ -1,0 +1,30 @@
+test_actuation_firewall (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_frames_and_sensors (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_initial_collision (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_latency_hard_gate (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... FAIL
+test_oracle_semantics (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_process_cleanup (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_r1_contracts (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_ros_core_equivalence (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_semantic_infeasible (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_seven_authorized_worlds (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_single_static_clearance (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_snapshots_and_evaluations (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+test_stationary_and_self_visibility (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests) ... ok
+
+======================================================================
+FAIL: test_latency_hard_gate (sgcf_nrmp_project.tools.test_stage11cc.Stage11CCTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/qcqc/resource/code/eai/NeuPAN/sgcf_nrmp_project/tools/test_stage11cc.py", line 92, in test_latency_hard_gate
+    self.assertTrue(audit["passed"], f"blocked scenes: {audit['blocked_scenes']}")
+AssertionError: False is not true : blocked scenes: ['semantic_infeasible']
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.006s
+
+FAILED (failures=1)
+
+unittest_exit_code=1
+compileall_exit_code=0
+git_diff_check_exit_code=0

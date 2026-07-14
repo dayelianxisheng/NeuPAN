@@ -1,0 +1,9 @@
+{
+  "buildkit_version": "v0.29.0",
+  "docker_context": "default",
+  "driver": "docker",
+  "local_engine_visible": true,
+  "platform_required": "linux/amd64",
+  "selected_builder": "default",
+  "status": "PASS"
+}

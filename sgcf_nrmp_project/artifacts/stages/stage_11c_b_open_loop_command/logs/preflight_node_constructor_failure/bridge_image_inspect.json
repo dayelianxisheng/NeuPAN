@@ -1,0 +1,66 @@
+[
+    {
+        "Id": "sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862",
+        "RepoTags": [
+            "sgcf-ros2-humble-gzharmonic-bridge:local"
+        ],
+        "RepoDigests": [
+            "sgcf-ros2-humble-gzharmonic-bridge@sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-07-14T19:55:30.566042179+08:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "LC_ALL=C.UTF-8",
+                "ROS_DISTRO=humble",
+                "ROS_DOMAIN_ID=42",
+                "GZ_PARTITION=sgcf_stage11ca"
+            ],
+            "Entrypoint": [
+                "/ros_entrypoint.sh"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "WorkingDir": "/workspace",
+            "Labels": {
+                "org.opencontainers.image.version": "22.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 890542066,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d",
+                "sha256:1ae35c1100e679cd5348df47a0fb19c0da4a6a4c46c32525c2fcb06728431ca7",
+                "sha256:1947a9b03fe2b9993d1397c74dbd64fb7f41b26fef6a0c17bcb9cc9979912884",
+                "sha256:d2a0360f693351e8b83fe0b09f123bf2906bd48a0aedca3e09b05e9649d36978",
+                "sha256:3af2289b3192b75aeda6a3244b1e1726216c479dbc61f0b273e5ef901aaa452c",
+                "sha256:73827213569ef7fb41adfcc89c46b219039f96406d5ff75734c8d42b2cf1f603",
+                "sha256:a57bfebcd7367b2c96712d9db8a43aa720e8e37717aed853afd9ec2ebdd0268f",
+                "sha256:34e97c109833140362601851936eb4051ec55d6fe469102b70df603582d3e23e"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-07-14T11:56:14.018996927Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "kcg2iflap1767ew582rsi8wrp",
+                    "CreatedAt": "2026-07-14T19:56:20.00962845+08:00"
+                }
+            ]
+        }
+    }
+]

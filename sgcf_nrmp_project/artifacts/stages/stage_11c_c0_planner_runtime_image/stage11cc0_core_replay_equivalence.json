@@ -1,0 +1,6 @@
+{
+  "image_built": false,
+  "measurements_fabricated": false,
+  "reason": "BLOCKED_RUNTIME_TRAINING_DEPENDENCY_COUPLING",
+  "status": "NOT_EXECUTED"
+}

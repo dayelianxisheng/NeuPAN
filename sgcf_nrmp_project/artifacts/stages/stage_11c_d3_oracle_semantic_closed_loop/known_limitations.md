@@ -1,0 +1,4 @@
+- `robot_obstacle` remains a recorded Planner completeness limitation from D2.
+- Oracle semantics are simulation-only ground truth and are not Stage 10 prediction.
+- `human_path_center` P1/P2 are currently `SEMANTICALLY_INFEASIBLE` with the frozen maximum semantic margin `0.35`; no semantic closed-loop actuation was possible.
+- Cross-mode launches are independent and their initial scans differ slightly; synchronized geometry invariance was therefore not claimed from these runs.

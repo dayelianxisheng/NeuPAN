@@ -1,0 +1,12 @@
+Stage 11C-C0 dependency-coupling stop additions:
+
+sgcf_nrmp_project/tools/record_stage11cc0_import_coupling_block.py
+sgcf_nrmp_project/artifacts/stages/stage_11c_c0_planner_runtime_image/
+
+Not created because the build-preflight Gate failed:
+
+docker/ros2_humble_gzharmonic_planner_shadow/
+sgcf_nrmp_project/docs/stage_11c_c0_planner_image_handoff.md
+
+No Stage 11C-C0 changes were made to Core, Planner, Stage 10, Gazebo assets,
+original Docker directories, original images, or the ROS bridge package.

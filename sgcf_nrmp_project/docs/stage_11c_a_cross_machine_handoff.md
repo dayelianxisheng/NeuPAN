@@ -2,6 +2,11 @@
 
 更新时间：2026-07-14（Asia/Shanghai）
 
+> 2026-07-14 closure update: Stage 11C-A has now completed with disclosed
+> runtime limitations. Sections describing the interrupted bridge-image build
+> are retained as historical audit context and are superseded by
+> `stage_11c_a_ros2_bridge_data_plane/stage_11c_a_report.md`.
+
 ## 1. 权威阶段状态
 
 本机已经完成并正式关闭 Stage 11B：
@@ -21,16 +26,24 @@ READY_FOR_STAGE_11C_WITH_RESTRICTIONS
 sgcf_nrmp_project/artifacts/stages/stage_11b_n_final_runtime_matrix/stage_11b_n_decision.md
 ```
 
-Stage 11C-A **尚未完成**。当前准确状态是：
+Stage 11C-A 当前准确状态是：
 
 ```text
-STAGE_11C_A_IN_PROGRESS
-BRIDGE_DEPENDENCY_SIMULATION_PASSED
-BRIDGE_IMAGE_BUILD_INCOMPLETE
-NO_RUNTIME_BRIDGE_GATE_EXECUTED
+STAGE_11C_A_COMPLETE_WITH_KNOWN_RUNTIME_LIMITATIONS
+ROS2_GAZEBO_BRIDGE_DATA_PLANE_VALIDATED
+ZERO_TWIST_RUNTIME_GATE_VALIDATED
+READY_FOR_STAGE_11C_B_WITH_RESTRICTIONS
 ```
 
-不得把当前工作写成 `STAGE_11C_A_COMPLETE`，也不得直接开始 Stage 11C-B。
+权威报告位于：
+
+```text
+sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/
+  stage_11c_a_report.md
+  stage_11c_a_decision.md
+```
+
+Stage 11C-B 仍需独立授权后才能开始。
 
 ## 2. 另一台电脑需要追平的 Stage 11B 变更
 
@@ -205,7 +218,9 @@ sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/logs/bridg
 
 ### 步骤 A：同步工作区
 
-由于本机存在大量尚未提交的阶段成果，不要只做普通 `git pull`。推荐从源电脑使用 `rsync`，并明确排除 Git 元数据和大权重：
+当前本机工作区的已提交基线可通过 Git 同步。若需要同步尚未提交的
+Stage 11C-A 收束文件或本地 runtime 原始证据，可使用 `rsync`，并明确排除
+Git 元数据和大权重：
 
 ```bash
 rsync -aH --info=progress2 \
@@ -215,8 +230,8 @@ rsync -aH --info=progress2 \
   --exclude='*.ckpt' \
   --exclude='*.onnx' \
   --exclude='__pycache__/' \
-  /home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN/ \
-  USER@TARGET:/home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN/
+  /home/qcqc/resource/code/eai/NeuPAN/ \
+  USER@TARGET:/path/to/NeuPAN/
 ```
 
 实验报告、JSON、日志、world、生成器和测试不得排除。不要使用 `--delete`，避免误删目标电脑独有数据。
@@ -327,26 +342,25 @@ ROS_DOMAIN_ID: 42
 
 严格顺序：Gazebo → 自动发现 Gazebo topic/type → bridge → ROS audit node → 采集消息 → 仅一次 zero Twist → 清理。
 
-必须达到：
+本机最终 Gate 已达到：
 
 ```text
-/clock >= 50
-/scan >= 20
-/camera/image_raw >= 5
-/camera/camera_info >= 1
-/odom >= 20
+/clock = 6391 (required >= 50)
+/scan = 34 (required >= 20)
+/camera/image_raw = 11 (required >= 5)
+/camera/camera_info = 1 (required >= 1)
+/odom = 52 (required >= 20)
 ```
 
 只允许 zero Twist。不得发送非零命令、启动 Planner、Stage 10、Nav2、RViz、ROS bridge 以外的闭环组件。
 
-完成所有合同、QoS、性能、冻结和清理 Gate 后，才可写：
+最终采用的带限制结论是：
 
 ```text
-STAGE_11C_A_COMPLETE
-ROS2_HUMBLE_HARMONIC_BRIDGE_ENVIRONMENT_VALIDATED
-GAZEBO_TO_ROS_SENSOR_DATA_PLANE_VALIDATED
-ROS_TO_GAZEBO_ZERO_COMMAND_PATH_VALIDATED
-READY_FOR_STAGE_11C_B_OPEN_LOOP_COMMAND_INTEGRATION
+STAGE_11C_A_COMPLETE_WITH_KNOWN_RUNTIME_LIMITATIONS
+ROS2_GAZEBO_BRIDGE_DATA_PLANE_VALIDATED
+ZERO_TWIST_RUNTIME_GATE_VALIDATED
+READY_FOR_STAGE_11C_B_WITH_RESTRICTIONS
 ```
 
 ## 7. 不要同步或误用的内容
@@ -378,4 +392,3 @@ READY_FOR_STAGE_11C_B_OPEN_LOOP_COMMAND_INTEGRATION
 [ ] Planner / Stage 10 / Nav2 / RViz 未启动
 [ ] 所有容器和 Gazebo/ROS bridge 进程清理完成
 ```
-

@@ -1,0 +1,10 @@
+{
+  "d_safe_unchanged": true,
+  "speed_bounds_unchanged": true,
+  "nonlinear_recheck_disabled": false,
+  "empty_candidate_error_le_1e_6": true,
+  "single_candidate_safe": true,
+  "initial_collision_rejected": true,
+  "failure_rejection_preserved": true,
+  "cpu_p95_le_200_ms": true
+}

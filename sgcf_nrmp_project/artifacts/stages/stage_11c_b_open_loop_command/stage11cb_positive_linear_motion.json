@@ -1,0 +1,31 @@
+{
+  "accepted_interval_m": [
+    0.05,
+    0.15000000000000002
+  ],
+  "authorized_duration_s": 1.0,
+  "command_mps": 0.1,
+  "end_pose": [
+    0.09689999999770735,
+    -3.289869976973881e-16,
+    -5.384566508552773e-15
+  ],
+  "end_stamp_s": 7.02,
+  "expected_displacement_m": 0.1,
+  "forward_displacement_m": 0.09689999999770735,
+  "lateral_displacement_m": -3.2896747322034677e-16,
+  "passed": true,
+  "sample_count": 50,
+  "start_pose": [
+    2.5081185980578397e-20,
+    -5.74005207011677e-39,
+    -2.014909911433819e-19
+  ],
+  "start_stamp_s": 6.04,
+  "total_displacement_m": 0.09689999999770735,
+  "unwrapped_yaw_delta_rad": -5.38436501756163e-15,
+  "world_displacement_xy_m": [
+    0.09689999999770735,
+    -3.289869976973881e-16
+  ]
+}

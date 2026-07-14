@@ -1,0 +1,116 @@
+{
+  "status": "BLOCKED_ORACLE_SEMANTIC_CLOSED_LOOP_FEASIBILITY",
+  "human_path_center": {
+    "P0": {
+      "run": "human_path_center_p0",
+      "mode": "P0",
+      "evaluations": 20,
+      "statuses": [
+        "GEOMETRICALLY_INFEASIBLE",
+        "SOLVED_SAFE"
+      ],
+      "eligible_evaluations": 14,
+      "nonzero_actuation_count": 68,
+      "goal_distance_reduction_m": 0.1711021142869371,
+      "semantic_source": [
+        "NONE"
+      ],
+      "semantic_scope": [],
+      "not_stage10": true,
+      "semantic_margin_min": 0.0,
+      "semantic_margin_max": 0.0,
+      "deadline_miss_count": 0,
+      "latency": {
+        "backlog_count": 0,
+        "count": 19,
+        "max": 85.08806800091406,
+        "mean": 29.10531999920127,
+        "p50": 28.57339799811598,
+        "p95": 53.67696099492598,
+        "stale_count": 0
+      },
+      "self_return_count": 0,
+      "candidate_equivalence_max": 0.0,
+      "geometry_equivalence_max": 0.0,
+      "final_linear_speed": 0.0,
+      "final_angular_speed": 0.0,
+      "last_half_second_translation": 0.0,
+      "last_half_second_yaw": 0.0
+    },
+    "P1": {
+      "run": "human_path_center_p1",
+      "mode": "P1",
+      "evaluations": 20,
+      "statuses": [
+        "SEMANTICALLY_INFEASIBLE"
+      ],
+      "eligible_evaluations": 0,
+      "nonzero_actuation_count": 0,
+      "goal_distance_reduction_m": 0.0,
+      "semantic_source": [
+        "ORACLE_GROUND_TRUTH"
+      ],
+      "semantic_scope": [
+        "SIMULATION_ONLY"
+      ],
+      "not_stage10": true,
+      "semantic_margin_min": 0.35,
+      "semantic_margin_max": 0.35,
+      "deadline_miss_count": 1,
+      "latency": {
+        "backlog_count": 0,
+        "count": 19,
+        "max": 177.26986199704697,
+        "mean": 146.86339142032298,
+        "p50": 130.31003400101326,
+        "p95": 175.41991020189016,
+        "stale_count": 0
+      },
+      "self_return_count": 0,
+      "candidate_equivalence_max": 0.0,
+      "geometry_equivalence_max": 0.0,
+      "final_linear_speed": 2.4151673463853704e-20,
+      "final_angular_speed": 3.082735240352978e-20,
+      "last_half_second_translation": 6.648918136844416e-21,
+      "last_half_second_yaw": 1.7713170317670906e-21
+    },
+    "P2": {
+      "run": "human_path_center_p2",
+      "mode": "P2",
+      "evaluations": 20,
+      "statuses": [
+        "SEMANTICALLY_INFEASIBLE"
+      ],
+      "eligible_evaluations": 0,
+      "nonzero_actuation_count": 0,
+      "goal_distance_reduction_m": 0.0,
+      "semantic_source": [
+        "ORACLE_GROUND_TRUTH"
+      ],
+      "semantic_scope": [
+        "SIMULATION_ONLY"
+      ],
+      "not_stage10": true,
+      "semantic_margin_min": 0.35,
+      "semantic_margin_max": 0.35,
+      "deadline_miss_count": 1,
+      "latency": {
+        "backlog_count": 0,
+        "count": 19,
+        "max": 184.62169599661138,
+        "mean": 151.27916631555357,
+        "p50": 135.59998099663062,
+        "p95": 181.46440600103233,
+        "stale_count": 0
+      },
+      "self_return_count": 0,
+      "candidate_equivalence_max": 0.0,
+      "geometry_equivalence_max": 0.0,
+      "final_linear_speed": 2.796649771656566e-20,
+      "final_angular_speed": 2.2265649911355755e-20,
+      "last_half_second_translation": 5.7261739602961245e-21,
+      "last_half_second_yaw": 7.6894383152596465e-22
+    }
+  },
+  "remaining_scenes_started": false
+}

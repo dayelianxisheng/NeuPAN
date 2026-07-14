@@ -1,0 +1,7 @@
+{
+  "core_modified": false,
+  "core_source_hash_before_equals_after": true,
+  "files_changed_in_core": [],
+  "patch_applied": false,
+  "reason": "No erroneous geometry value exists; patching acceptance would weaken the verified safety recheck."
+}

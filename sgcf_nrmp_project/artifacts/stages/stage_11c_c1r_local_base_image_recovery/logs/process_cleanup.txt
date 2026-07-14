@@ -1,0 +1,5 @@
+PASS: temporary probe tag and image removed
+PASS: authoritative base image preserved
+PASS: bootstrap alias preserved and resolves to authoritative base ID
+PASS: residual Stage 11C-C1 containers = 0
+Gazebo, ros_gz_bridge runtime, Planner runtime, and /cmd_vel were not started.

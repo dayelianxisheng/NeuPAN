@@ -1,0 +1,1 @@
+ 125407 bash            bash /home/qcqc/resource/code/eai/NeuPAN/sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh empty_world single_static_obstacle

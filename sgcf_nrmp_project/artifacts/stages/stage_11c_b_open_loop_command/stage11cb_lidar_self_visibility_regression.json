@@ -1,0 +1,20 @@
+{
+  "audited_beams": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    133,
+    134,
+    135,
+    136,
+    137
+  ],
+  "finite_self_return_count": 0,
+  "lidar_visibility_mask": 4294967293,
+  "passed": true,
+  "point_filtering_added": false,
+  "robot_visibility_flags": 2,
+  "scan_count": 90
+}

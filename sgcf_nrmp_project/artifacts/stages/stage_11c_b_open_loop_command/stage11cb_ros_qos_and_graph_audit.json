@@ -1,0 +1,10 @@
+{
+  "authorized_publisher": "stage11cb_open_loop_audit",
+  "authorized_subscriber": "ros_gz_bridge",
+  "clock_publisher_count": 1,
+  "cmd_vel_loop": false,
+  "cmd_vel_publisher_count": 1,
+  "cmd_vel_subscription_count": 1,
+  "odom_publisher_count": 1,
+  "passed": true
+}

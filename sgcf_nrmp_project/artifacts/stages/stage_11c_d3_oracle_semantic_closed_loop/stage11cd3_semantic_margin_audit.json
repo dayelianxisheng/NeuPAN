@@ -1,0 +1,14 @@
+{
+  "P0": {
+    "minimum": 0.0,
+    "maximum": 0.0
+  },
+  "P1": {
+    "minimum": 0.35,
+    "maximum": 0.35
+  },
+  "P2": {
+    "minimum": 0.35,
+    "maximum": 0.35
+  }
+}

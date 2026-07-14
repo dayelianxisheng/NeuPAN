@@ -1,0 +1,26 @@
+/stage11cc_planner_shadow
+  Subscribers:
+    /camera/camera_info: sensor_msgs/msg/CameraInfo
+    /camera/image_raw: sensor_msgs/msg/Image
+    /clock: rosgraph_msgs/msg/Clock
+    /odom: nav_msgs/msg/Odometry
+    /scan: sensor_msgs/msg/LaserScan
+  Publishers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+    /sgcf/planner_candidate_cmd_vel: geometry_msgs/msg/Twist
+    /sgcf/planner_diagnostics: std_msgs/msg/String
+    /sgcf/planner_status: std_msgs/msg/String
+  Service Servers:
+    /stage11cc_planner_shadow/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /stage11cc_planner_shadow/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /stage11cc_planner_shadow/get_parameters: rcl_interfaces/srv/GetParameters
+    /stage11cc_planner_shadow/list_parameters: rcl_interfaces/srv/ListParameters
+    /stage11cc_planner_shadow/set_parameters: rcl_interfaces/srv/SetParameters
+    /stage11cc_planner_shadow/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+

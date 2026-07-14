@@ -1,0 +1,1 @@
+`robot_obstacle` remains unresolved under the current Core SCP/recovery and safety contract. Its current state is safe, but the available P0 candidates enter a future geometry recheck violation; the Safe Actuation Gate correctly emits zero. No threshold, footprint, goal, world, or recheck was relaxed.

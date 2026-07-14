@@ -1,0 +1,14 @@
+{
+  "P0": {
+    "ros_core_candidate_error": 0.0,
+    "nonzero_actuation_count": 68
+  },
+  "P1": {
+    "ros_core_candidate_error": 0.0,
+    "nonzero_actuation_count": 0
+  },
+  "P2": {
+    "ros_core_candidate_error": 0.0,
+    "nonzero_actuation_count": 0
+  }
+}

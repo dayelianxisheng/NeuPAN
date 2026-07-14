@@ -1,0 +1,25 @@
+test_all_json_parse (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_bridge_direction_and_values (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_frozen_components (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_graph_and_cleanup (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_image_binding (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_lidar_and_frames (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_node_is_open_loop_only (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_profile_and_phase_order (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_sensor_and_timestamp_gates (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+test_stationary_and_motion_gates (sgcf_nrmp_project.tools.test_stage11cb.Stage11CBTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
+
+ROS package build audit:
+- colcon: unavailable in the frozen bridge image (no installation authorized)
+- fallback: python3 setup.py build --build-base /tmp/stage11cb_python_build
+- result: PASS
+- package modules copied successfully into the isolated /tmp build tree
+
+Additional checks:
+- compileall: PASS
+- git diff --check: PASS

@@ -1,0 +1,23 @@
+{
+  "candidate_0_240_mps_within_formal_contract": true,
+  "candidate_clamping": false,
+  "derivation": "min(formal Planner bound, formal DiffDrive bound)",
+  "diffdrive_max_angular_velocity_radps": 1.5,
+  "diffdrive_max_linear_velocity_mps": 1.0,
+  "diffdrive_model": "sgcf_nrmp_project/gazebo/models/sgcf_diff_drive_robot/model.sdf",
+  "diffdrive_model_sha256": "3fc0c6077a99591802370181c2f2e57196171b58a5622c6ccb7344d2702b7a52",
+  "effective_angular_limit_radps": 1.5,
+  "effective_linear_limit_mps": 1.0,
+  "planner_config": "sgcf_nrmp_project/core/configs/planner/diff_drive_gt_nrmp.yaml",
+  "planner_config_sha256": "b5e6f65c48716ebcafeb8ddf1456a37bda3a063429e3ff36d17f0eae4b555dad",
+  "planner_v_max_mps": 1.0,
+  "planner_w_max_radps": 1.5,
+  "removed_unauthorized_wrapper_limits": {
+    "angular_radps": 0.5,
+    "linear_mps": 0.15
+  },
+  "stage11cb_validated_commands": {
+    "angular_radps": 0.3,
+    "linear_mps": 0.1
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "camera": {
+    "duplicate_count": 0,
+    "first_s": 3.1,
+    "last_s": 12.0,
+    "monotonic_non_decreasing": true,
+    "negative_jump_count": 0,
+    "sample_count": 90
+  },
+  "camera_info": {
+    "duplicate_count": 0,
+    "first_s": 3.1,
+    "last_s": 12.0,
+    "monotonic_non_decreasing": true,
+    "negative_jump_count": 0,
+    "sample_count": 90
+  },
+  "clock": {
+    "duplicate_count": 0,
+    "first_s": 3.071,
+    "last_s": 12.05,
+    "monotonic_non_decreasing": true,
+    "negative_jump_count": 0,
+    "sample_count": 8980
+  },
+  "lidar": {
+    "duplicate_count": 0,
+    "first_s": 3.1,
+    "last_s": 12.0,
+    "monotonic_non_decreasing": true,
+    "negative_jump_count": 0,
+    "sample_count": 90
+  },
+  "odometry": {
+    "duplicate_count": 0,
+    "first_s": 3.1,
+    "last_s": 12.04,
+    "monotonic_non_decreasing": true,
+    "negative_jump_count": 0,
+    "sample_count": 448
+  },
+  "passed": true
+}

@@ -1,0 +1,44 @@
+{
+  "all_six_components_audited": [
+    "linear_x",
+    "linear_y",
+    "linear_z",
+    "angular_x",
+    "angular_y",
+    "angular_z"
+  ],
+  "gazebo_sample_count": 452,
+  "gazebo_unique_commands": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.3
+    ],
+    [
+      0.1,
+      0.0
+    ]
+  ],
+  "maximum_component_error": 0.0,
+  "passed": true,
+  "ros_sample_count": 452,
+  "ros_unique_commands": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.3
+    ],
+    [
+      0.1,
+      0.0
+    ]
+  ],
+  "sign_agreement_percent": 100.0,
+  "unauthorized_nonzero_component_count": 0
+}

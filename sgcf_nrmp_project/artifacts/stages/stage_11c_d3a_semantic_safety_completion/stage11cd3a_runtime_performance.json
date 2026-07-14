@@ -1,0 +1,65 @@
+{
+  "semantic_infeasible": {
+    "backlog_count": 0,
+    "count": 57,
+    "max": 175.12016700493405,
+    "mean": 98.4184586661541,
+    "p50": 111.98424699978204,
+    "p95": 167.57412839797325,
+    "stale_count": 0
+  },
+  "rgb_dropout_contract": {
+    "backlog_count": 0,
+    "count": 38,
+    "max": 57.65479300316656,
+    "mean": 24.951388578828254,
+    "p50": 23.735105500236386,
+    "p95": 34.08142105399744,
+    "stale_count": 0
+  },
+  "outdated_rgb_contract": {
+    "backlog_count": 0,
+    "count": 38,
+    "max": 57.001354995009024,
+    "mean": 25.258835184726387,
+    "p50": 23.51495050243102,
+    "p95": 34.84028955208483,
+    "stale_count": 0
+  },
+  "probe_human_path_side": {
+    "backlog_count": 0,
+    "count": 38,
+    "max": 222.4769269960234,
+    "mean": 102.34763247334692,
+    "p50": 98.07581100176321,
+    "p95": 215.52839470095932,
+    "stale_count": 0
+  },
+  "probe_vehicle_path": {
+    "backlog_count": 0,
+    "count": 38,
+    "max": 29.837742004019674,
+    "mean": 23.75694173640927,
+    "p50": 23.48736649946659,
+    "p95": 28.503978249500506,
+    "stale_count": 0
+  },
+  "vehicle_path_p0_closed_loop": {
+    "backlog_count": 0,
+    "count": 19,
+    "max": 30.04185600002529,
+    "mean": 24.89895878878949,
+    "p50": 23.76658899447648,
+    "p95": 29.96595990334754,
+    "stale_count": 0
+  },
+  "vehicle_path_p2_closed_loop": {
+    "backlog_count": 0,
+    "count": 19,
+    "max": 29.120150000380818,
+    "mean": 25.45000142172763,
+    "p50": 24.979619003715925,
+    "p95": 28.999071202269988,
+    "stale_count": 0
+  }
+}

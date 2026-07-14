@@ -1,0 +1,14 @@
+Stage 11C-C dependency-stop additions:
+
+sgcf_nrmp_project/tools/record_stage11cc_dependency_block.py
+sgcf_nrmp_project/artifacts/stages/stage_11c_c_planner_shadow_mode/
+
+No Stage 11C-C changes were made to:
+
+docker/
+sgcf_nrmp_project/gazebo/
+sgcf_nrmp_project/core/
+neupan/
+neupan_ros/
+neupan_ros2/
+example/

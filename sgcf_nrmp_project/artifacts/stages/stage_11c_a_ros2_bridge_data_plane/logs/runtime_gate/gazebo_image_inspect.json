@@ -1,0 +1,63 @@
+[
+    {
+        "Id": "sha256:72af30cf91fb3001e019c6e57846dbe8d72497516882cc3d0e99a7d5551759ac",
+        "RepoTags": [
+            "sgcf-gazebo-harmonic:hlms-media-fix"
+        ],
+        "RepoDigests": [
+            "sgcf-gazebo-harmonic@sha256:72af30cf91fb3001e019c6e57846dbe8d72497516882cc3d0e99a7d5551759ac"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-07-14T02:17:01.559351505+08:00",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "QT_QPA_PLATFORM=offscreen",
+                "GZ_SIM_RENDER_ENGINE_SERVER=ogre2",
+                "GZ_RENDERING_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+                "GZ_SIM_PHYSICS_ENGINE_PATH=/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins",
+                "GZ_SIM_RESOURCE_PATH=/workspace/sgcf_nrmp_project/gazebo/models:/workspace/sgcf_nrmp_project/gazebo",
+                "GZ_RENDERING_RESOURCE_PATH=/usr/share/gz/gz-rendering8"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "WorkingDir": "/workspace",
+            "Labels": {
+                "org.opencontainers.image.version": "22.04"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 523807123,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d",
+                "sha256:2fe4436a00a17de8477fa7b2069fcf12f51758e8e59c10e8eecd6265aaf42965",
+                "sha256:3641bf316671086c8ba625f0d9d167748426ded26013b54a912ba30c37311cc9",
+                "sha256:aae4c3fd43f68359584d0ba282b23945c54f336cc44c3483de3377eebbf63db9",
+                "sha256:17dc801e2c6d7d0220c2603e96f2c52a20d60d264cadc1437d660b5a1a08ea75",
+                "sha256:520622fca1358eecf07ae294a281238ef9587bc3b8f80e4988cb2d51be2e97b8",
+                "sha256:378b89729a5734300584feeeed1838eb7398c5bce0f9f553a3562079795b4fcf"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-07-13T18:17:12.795963858Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:72af30cf91fb3001e019c6e57846dbe8d72497516882cc3d0e99a7d5551759ac",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "5jpkcq1yqbuohapn399061g0b",
+                    "CreatedAt": "2026-07-14T02:17:14.446643083+08:00"
+                }
+            ]
+        }
+    }
+]

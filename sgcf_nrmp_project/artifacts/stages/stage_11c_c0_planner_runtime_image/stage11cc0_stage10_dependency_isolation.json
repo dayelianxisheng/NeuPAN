@@ -1,0 +1,11 @@
+{
+  "cuda_required": false,
+  "decision": "BLOCKED_RUNTIME_TRAINING_DEPENDENCY_COUPLING",
+  "isolation_requirement_satisfied": false,
+  "stage10_checkpoint_loaded": false,
+  "stage10_modules_imported": false,
+  "status": "FAILED",
+  "torch_import_location": "sgcf_nrmp.planner.geometry_checker",
+  "torch_imported_by_formal_planner": true,
+  "torch_use": "Exact Observable Geometry tensor/autograd implementation"
+}

@@ -1,0 +1,6 @@
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/gt_nrmp_planner.py
+sgcf_nrmp_project/core/src/sgcf_nrmp/planner/qp_problem.py
+sgcf_nrmp_project/core/tests/planner/test_stage09c_collision_recovery.py
+sgcf_nrmp_project/tools/stage09c_offline_gate.py
+sgcf_nrmp_project/tools/finalize_stage09c.py
+sgcf_nrmp_project/artifacts/stages/stage_09c_collision_recovery/

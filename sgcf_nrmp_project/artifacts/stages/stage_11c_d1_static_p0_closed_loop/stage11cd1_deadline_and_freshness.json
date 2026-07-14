@@ -1,0 +1,22 @@
+{
+  "empty_world": {
+    "deadline_miss_count": 0,
+    "eligible_deadline_miss_count": 0,
+    "odom_stale_count": 2,
+    "pending_queue_depth_max": 1,
+    "scan_stale_count": 1,
+    "single_flight": true,
+    "stale_executed_count": 0,
+    "sustained_backlog": false
+  },
+  "single_static_obstacle": {
+    "deadline_miss_count": 0,
+    "eligible_deadline_miss_count": 0,
+    "odom_stale_count": 5,
+    "pending_queue_depth_max": 1,
+    "scan_stale_count": 1,
+    "single_flight": true,
+    "stale_executed_count": 0,
+    "sustained_backlog": false
+  }
+}

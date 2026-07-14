@@ -35,6 +35,45 @@ class GTNRMPPlanner:
     def _result(self, status, state, controls, slack, **kwargs):
         return SolverResult(status=status, states=rollout(state, controls, self.dt), controls=controls, slack=slack, **kwargs)
 
+    def _repair_unsafe_nominal(self, state, controls, checker):
+        """Replace an unsafe nominal suffix with a dynamically valid hold.
+
+        This is only an SCP linearization recovery.  It does not alter the
+        candidate returned by the QP or the mandatory nonlinear recheck.
+        """
+        original = np.asarray(controls, float)
+        nominal = rollout(state, original, self.dt)
+        if hasattr(checker, "distance"):
+            clearances = np.asarray(checker.distance(nominal), float)
+        else:
+            # Preserve compatibility with the planner checker's documented
+            # linearization interface and lightweight deterministic test doubles.
+            clearances = np.asarray(checker.linearization(nominal)[0], float)
+        unsafe = np.flatnonzero((clearances < self.config["planner"]["d_safe_m"]) | ~np.isfinite(clearances))
+        # Index zero is handled by the current-state collision / emergency gate.
+        if not len(unsafe) or int(unsafe[0]) == 0:
+            return nominal, original.copy(), {
+                "applied": False, "first_unsafe_state_index": None if not len(unsafe) else int(unsafe[0]),
+                "minimum_clearance_before_m": float(np.nanmin(clearances)),
+                "minimum_clearance_after_m": float(np.nanmin(clearances)),
+            }
+        first = int(unsafe[0])
+        repaired_controls = original.copy()
+        repaired_controls[first - 1:] = 0.0
+        repaired = rollout(state, repaired_controls, self.dt)
+        if hasattr(checker, "distance"):
+            repaired_clearances = np.asarray(checker.distance(repaired), float)
+        else:
+            repaired_clearances = np.asarray(checker.linearization(repaired)[0], float)
+        return repaired, repaired_controls, {
+            "applied": True, "first_unsafe_state_index": first,
+            "last_safe_state_index": first - 1, "terminal_hold_control_index": first - 1,
+            "minimum_clearance_before_m": float(np.nanmin(clearances)),
+            "minimum_clearance_after_m": float(np.nanmin(repaired_clearances)),
+            "safe_prefix_states": nominal[:first].tolist(),
+            "terminal_hold_state": repaired[first - 1].tolist(),
+        }
+
     def _recheck_record(self, iteration, nominal, candidate, qp_controls, qp_slack,
                         distances, gradients, check, trust, semantic_margins):
         exact=np.asarray(check["observable"],float); linearized=np.asarray(distances,float)+np.einsum("ij,ij->i",np.asarray(gradients,float),candidate-nominal)
@@ -74,17 +113,22 @@ class GTNRMPPlanner:
         for control in controls:
             control[0] = np.clip(control[0], prior[0] + bounds["acceleration_min_mps2"] * self.dt, prior[0] + bounds["acceleration_max_mps2"] * self.dt)
             control[1] = np.clip(control[1], prior[1] + bounds["angular_acceleration_min_radps2"] * self.dt, prior[1] + bounds["angular_acceleration_max_radps2"] * self.dt); prior = control.copy()
-        nominal = rollout(state, controls, self.dt); trust = trust_override or TrustRegion.from_dict(self.config["trust_region"])
+        trust = trust_override or TrustRegion.from_dict(self.config["trust_region"])
         total_time = 0.; rejections = 0; last_status = PlannerStatus.MAX_ITERATIONS; last_candidate = None
         started = time.perf_counter(); current = checker.recheck_observable_trajectory(state[None, :], self.config["planner"]["d_safe_m"]); timing["observable_recheck_ms"].append((time.perf_counter() - started) * 1000.)
         if current["min_observable"] < self.config["planner"]["emergency_distance_m"]:
             timing["geometry_recheck_samples"].append({"primary_reason":GeometryRecheckReason.CURRENT_STATE_COLLISION.value,"state":state.tolist(),"minimum_exact_observable_clearance":current["min_observable"],"required_clearance":self.config["planner"]["emergency_distance_m"]})
             zeros = np.zeros((self.T, 2)); timing["online_planner_ms"] = (time.perf_counter() - cycle_started) * 1000.
             return self._result(PlannerStatus.EMERGENCY_STOP, state, zeros, np.zeros(self.T), min_observable_clearance=current["min_observable"], diagnostics=timing)
+        collision_recovery_active = False
         for iteration in range(1, int(self.config["planner"]["scp_iterations"]) + 1):
+            nominal, controls, nominal_repair = self._repair_unsafe_nominal(state, controls, checker)
+            collision_recovery_active = collision_recovery_active or bool(nominal_repair["applied"])
+            timing.setdefault("nominal_repair_samples", []).append(nominal_repair)
             started = time.perf_counter(); distances, gradients, valid = checker.linearization(nominal); timing["observable_distance_gradient_ms"].append((time.perf_counter() - started) * 1000.); timing["nominal_states_samples"].append(nominal.tolist()); timing["exact_distance_samples"].append(distances.tolist()); timing["exact_gradient_samples"].append(gradients.tolist()); timing["gradient_valid_samples"].append(valid.tolist())
             semantic_margins=checker.semantic_margins(nominal) if hasattr(checker,"semantic_margins") else np.zeros(len(nominal)); timing.setdefault("semantic_margin_ms",[]).append(float(getattr(checker,"last_semantic_latency_ms",0.))); timing.setdefault("semantic_margin_samples",[]).append(semantic_margins.tolist())
-            timing["parameter_update_ms"].append(self.qp.update(state, reference, nominal, controls, previous_control, distances, gradients, valid, trust, semantic_margins))
+            timing["parameter_update_ms"].append(self.qp.update(state, reference, nominal, controls, previous_control, distances, gradients, valid, trust, semantic_margins, collision_recovery=collision_recovery_active))
+            timing.setdefault("collision_recovery_constraint_samples", []).append({"active": collision_recovery_active, "geometry_slack_max_m": 0.0 if collision_recovery_active else 100.0})
             status, values, elapsed, internal = self.qp.solve(simulate_timeout, simulate_infeasible); timing["solve_wall_ms"].append(elapsed); timing["osqp_internal_ms"].append(internal); timing["qp_status_samples"].append(status.value); timing["solver_detail_samples"].append(dict(self.qp.last_solve_diagnostics)); total_time += elapsed; last_status = status
             if values is None:
                 raw_status=status
@@ -105,6 +149,10 @@ class GTNRMPPlanner:
             last_candidate = (candidate, qp_controls, qp_slack, self.qp.problem.value, check)
             if check["violated_points"]:
                 timing["geometry_recheck_samples"].append(self._recheck_record(iteration,nominal,candidate,qp_controls,qp_slack,distances,gradients,check,trust,semantic_margins))
+                # The next SCP iteration repairs this rejected candidate into a
+                # safe nominal before relinearizing.  Full-horizon recheck stays
+                # authoritative and the unsafe candidate is never accepted.
+                controls = qp_controls.copy()
                 rejections += 1; trust = trust.scaled(.5); last_status = PlannerStatus.REJECTED_BY_GEOMETRY_CHECK
                 if rejections > int(self.config["planner"]["max_rejections"]): break
                 continue

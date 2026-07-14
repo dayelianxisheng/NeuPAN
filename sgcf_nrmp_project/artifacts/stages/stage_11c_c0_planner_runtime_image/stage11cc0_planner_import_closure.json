@@ -1,0 +1,55 @@
+{
+  "cvxpy_required": true,
+  "decision": "BLOCKED_RUNTIME_TRAINING_DEPENDENCY_COUPLING",
+  "formal_entry": "sgcf_nrmp.planner.GTNRMPPlanner",
+  "osqp_directly_imported": false,
+  "osqp_required_as_cvxpy_solver": true,
+  "project_modules": [
+    "planner",
+    "geometry",
+    "semantic",
+    "fusion",
+    "types",
+    "data.procedural"
+  ],
+  "reason_stage10_dependency_cannot_be_excluded": "Torch is required by shared Planner geometry runtime even without importing Stage 10 modules.",
+  "ros_modules": [
+    "rclpy and ROS messages required only by future wrapper"
+  ],
+  "runtime_chain": [
+    "sgcf_nrmp.planner.__init__",
+    "sgcf_nrmp.planner.gt_nrmp_planner.GTNRMPPlanner",
+    "sgcf_nrmp.planner.geometry_checker.ExactObservableChecker",
+    "sgcf_nrmp.planner.geometry_checker.BatchedRectangleObservableOracle"
+  ],
+  "stage10_dependency_can_be_excluded": false,
+  "stage10_module_required": false,
+  "standard_library": [
+    "dataclasses",
+    "enum",
+    "time",
+    "collections.abc"
+  ],
+  "status": "BLOCKED",
+  "third_party_runtime": {
+    "cvxpy": "direct runtime import in planner/qp_problem.py",
+    "numpy": "required",
+    "osqp": "CVXPY runtime solver backend",
+    "qdldl": "OSQP binary wheel dependency / backend component",
+    "scipy": "required transitively by solver stack",
+    "shapely": "direct runtime import in geometry_checker.py",
+    "torch": "direct unconditional runtime import and used by Exact Observable Geometry"
+  },
+  "torch_evidence": {
+    "file": "sgcf_nrmp_project/core/src/sgcf_nrmp/planner/geometry_checker.py",
+    "import": "import torch",
+    "runtime_uses": [
+      "torch.as_tensor",
+      "torch.linalg.vector_norm",
+      "torch.autograd.grad"
+    ],
+    "training_only": false
+  },
+  "torch_required_by_formal_planner_import": true,
+  "training_dependencies_can_be_excluded": false
+}

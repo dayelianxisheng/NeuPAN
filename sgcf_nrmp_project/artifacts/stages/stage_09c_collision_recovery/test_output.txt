@@ -1,0 +1,28 @@
+Stage 09C targeted regression
+......./opt/sgcf_planner_venv/lib/python3.10/site-packages/shapely/decorators.py:173: DeprecationWarning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
+  result = func(*args, **kwargs)
+............
+----------------------------------------------------------------------
+Ran 19 tests in 0.066s
+
+OK
+........../opt/sgcf_planner_venv/lib/python3.10/site-packages/shapely/decorators.py:173: DeprecationWarning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
+  result = func(*args, **kwargs)
+.........................................
+----------------------------------------------------------------------
+Ran 51 tests in 4.357s
+
+OK
+................
+----------------------------------------------------------------------
+Ran 16 tests in 0.007s
+
+OK
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+Full-core discovery note: 182/186 passed; four Stage 10 lifecycle tests require intentionally absent checkpoint artifacts and are outside Stage 09C.
+Offline gate: PASS
+Single-static runtime gate: PASS

@@ -1,0 +1,10 @@
+Stage 11C-D2 targeted regression
+........../opt/sgcf_planner_venv/lib/python3.10/site-packages/shapely/decorators.py:173: DeprecationWarning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
+  result = func(*args, **kwargs)
+.........................................
+----------------------------------------------------------------------
+Ran 51 tests in 4.302s
+
+OK
+Stage 09C offline regression: PASS
+Runtime scenes: single_static, static_corridor, narrow_passage PASS; robot_obstacle safe rejection unresolved

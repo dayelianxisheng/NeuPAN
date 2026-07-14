@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "scenes": {
+    "empty_world": {
+      "passed": true,
+      "threshold_translation": 0.002,
+      "threshold_yaw": 0.002,
+      "translation": 2.0492762838989398e-20,
+      "yaw_delta": 1.7515931875372898e-20
+    },
+    "human_path_center": {
+      "passed": true,
+      "threshold_translation": 0.002,
+      "threshold_yaw": 0.002,
+      "translation": 6.786406917575441e-20,
+      "yaw_delta": 5.1527987746541255e-20
+    },
+    "initial_collision": {
+      "passed": true,
+      "threshold_translation": 0.005,
+      "threshold_yaw": 0.002,
+      "translation": 2.9550434348754893e-10,
+      "yaw_delta": 9.608318237179156e-18
+    },
+    "outdated_rgb_contract": {
+      "passed": true,
+      "threshold_translation": 0.002,
+      "threshold_yaw": 0.002,
+      "translation": 3.229760863368343e-20,
+      "yaw_delta": 2.3540931109167677e-20
+    },
+    "rgb_dropout_contract": {
+      "passed": true,
+      "threshold_translation": 0.002,
+      "threshold_yaw": 0.002,
+      "translation": 1.0196456010963176e-20,
+      "yaw_delta": 4.3239810374725e-21
+    },
+    "semantic_infeasible": {
+      "passed": true,
+      "threshold_translation": 0.002,
+      "threshold_yaw": 0.002,
+      "translation": 1.5892273930561485e-19,
+      "yaw_delta": 1.296755186143046e-19
+    },
+    "single_static_obstacle": {
+      "passed": true,
+      "threshold_translation": 0.002,
+      "threshold_yaw": 0.002,
+      "translation": 2.0130474345382663e-20,
+      "yaw_delta": 1.5997910663117102e-20
+    }
+  }
+}

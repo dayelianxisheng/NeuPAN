@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/stage11cb_open_loop_audit.py", line 349, in <module>
+    main()
+  File "/workspace/sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/stage11cb_open_loop_audit.py", line 316, in main
+    node = Stage11CBOpenLoopAudit(log_dir)
+  File "/workspace/sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/stage11cb_open_loop_audit.py", line 51, in __init__
+    self.declare_parameter("use_sim_time", True)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 367, in declare_parameter
+    return self.declare_parameters('', [args], ignore_override)[0]
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 489, in declare_parameters
+    raise ParameterAlreadyDeclaredException(parameters_already_declared)
+rclpy.exceptions.ParameterAlreadyDeclaredException: ('Parameter(s) already declared', ['use_sim_time'])

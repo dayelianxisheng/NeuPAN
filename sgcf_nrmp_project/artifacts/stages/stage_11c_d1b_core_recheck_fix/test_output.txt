@@ -1,0 +1,12 @@
+test_cleanup (sgcf_nrmp_project.tools.test_stage11cd1b_block.Tests) ... ok
+test_no_runtime (sgcf_nrmp_project.tools.test_stage11cd1b_block.Tests) ... ok
+test_no_unsafe_patch (sgcf_nrmp_project.tools.test_stage11cd1b_block.Tests) ... ok
+test_reproduced (sgcf_nrmp_project.tools.test_stage11cd1b_block.Tests) ... ok
+test_zero_is_real_overlap (sgcf_nrmp_project.tools.test_stage11cd1b_block.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+compileall_exit_code=0
+git_diff_check_exit_code=0

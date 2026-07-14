@@ -1,0 +1,7 @@
+Stage 11C-D3 runtime gate
+human_path_center P0: PASS
+human_path_center P1: BLOCKED_SEMANTICALLY_INFEASIBLE
+human_path_center P2: BLOCKED_SEMANTICALLY_INFEASIBLE
+Remaining scenes and regression suite: NOT RUN due to prior hard stop
+ROS/Core replay: exact within each completed run
+Process cleanup: PASS

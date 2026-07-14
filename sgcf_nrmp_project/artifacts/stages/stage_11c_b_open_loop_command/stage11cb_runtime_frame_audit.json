@@ -1,0 +1,19 @@
+{
+  "camera_image_frames": [
+    "sgcf_robot/camera_link/rgb_camera"
+  ],
+  "camera_info_frames": [
+    "sgcf_robot/camera_link/rgb_camera"
+  ],
+  "direction_basis": "Initial base_link yaw, not assumed world +x",
+  "lidar_frames": [
+    "sgcf_robot/lidar_link/lidar"
+  ],
+  "odometry_child_frames": [
+    "base_link"
+  ],
+  "odometry_header_frames": [
+    "odom"
+  ],
+  "passed": true
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "base_image": "sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862",
+  "python": "3.10",
+  "indexes": [
+    "https://pypi.org/simple",
+    "https://download.pytorch.org/whl/cu128"
+  ],
+  "torch": {
+    "version": "2.8.0+cu128",
+    "official_url": "https://download-r2.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl",
+    "sha256": "0c96999d15cf1f13dd7c913e0b21a9a355538e6cfc10861a17158320292f5954",
+    "build_contract": "CUDA-CAPABLE TORCH BUILD",
+    "execution_contract": "CPU-ONLY PLANNER EXECUTION CONTRACT"
+  },
+  "resolution": "pip 26.0.1 dry-run report with --ignore-installed and --only-binary=:all:",
+  "host_wheels_copied": false,
+  "source_builds_allowed": false,
+  "torchvision": false,
+  "torchaudio": false
+}

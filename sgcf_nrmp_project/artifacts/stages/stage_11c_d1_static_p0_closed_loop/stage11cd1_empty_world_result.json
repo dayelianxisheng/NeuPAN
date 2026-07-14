@@ -1,0 +1,17 @@
+{
+  "candidate_linear_range": [
+    0.24001709101005586,
+    0.24002508566991543
+  ],
+  "core_eligibility": [
+    true
+  ],
+  "core_statuses": [
+    "SOLVED_SAFE"
+  ],
+  "final_goal_distance": 4.0,
+  "forwarded_nonzero_count": 0,
+  "goal_progress": 0.0,
+  "initial_goal_distance": 4.0,
+  "passed": false
+}

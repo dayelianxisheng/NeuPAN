@@ -1,0 +1,13 @@
+test_cleanup (sgcf_nrmp_project.tools.test_stage11cc2.WatchdogTests) ... ok
+test_equivalence (sgcf_nrmp_project.tools.test_stage11cc2.WatchdogTests) ... ok
+test_late_gate (sgcf_nrmp_project.tools.test_stage11cc2.WatchdogTests) ... ok
+test_no_backlog (sgcf_nrmp_project.tools.test_stage11cc2.WatchdogTests) ... ok
+test_semantic_deadline_captured (sgcf_nrmp_project.tools.test_stage11cc2.WatchdogTests) ... ok
+test_watchdog (sgcf_nrmp_project.tools.test_stage11cc2.WatchdogTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
+compileall_exit_code=0
+git_diff_check_exit_code=0

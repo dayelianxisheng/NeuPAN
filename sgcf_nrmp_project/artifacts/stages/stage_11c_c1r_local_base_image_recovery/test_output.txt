@@ -1,0 +1,5 @@
+PASS base object identity
+PASS alias identity
+PASS rootfs lineage
+FAIL strict zero-network probe
+NOT RUN derived image and downstream gates

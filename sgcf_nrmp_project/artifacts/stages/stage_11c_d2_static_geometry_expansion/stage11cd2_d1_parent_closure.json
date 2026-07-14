@@ -1,0 +1,14 @@
+{
+  "parent_stage": "STAGE_11C_D1",
+  "status": "STAGE_11C_D1_COMPLETE",
+  "claims": [
+    "SAFE_ACTUATION_GATE_VALIDATED",
+    "EMPTY_WORLD_P0_CLOSED_LOOP_VALIDATED",
+    "SINGLE_STATIC_P0_CLOSED_LOOP_VALIDATED",
+    "DEADLINE_AND_FRESHNESS_ENFORCEMENT_VALIDATED",
+    "ZERO_FALLBACK_AND_STOP_RESPONSE_VALIDATED",
+    "READY_FOR_STAGE_11C_D2_STATIC_GEOMETRY_EXPANSION"
+  ],
+  "evidence_source": "stage_09c_collision_recovery/stage09c_single_static_closed_loop.json",
+  "historical_reports_preserved": true
+}

@@ -1,0 +1,11 @@
+{
+  "empty_world_only": true,
+  "nav2_started": false,
+  "nonzero_command_sent": false,
+  "planner_started": false,
+  "pointpainting_executed": false,
+  "rviz_started": false,
+  "semantic_margin_executed": false,
+  "stage10_loaded": false,
+  "status": "PASSED"
+}

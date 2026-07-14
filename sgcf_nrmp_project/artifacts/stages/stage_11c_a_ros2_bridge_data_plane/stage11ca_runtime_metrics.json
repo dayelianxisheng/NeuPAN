@@ -1,0 +1,59 @@
+{
+  "all_message_count_thresholds_passed": true,
+  "camera_encoding": "rgb8",
+  "camera_height": 240,
+  "camera_info_height": 240,
+  "camera_info_received": true,
+  "camera_info_width": 320,
+  "camera_received": true,
+  "camera_width": 320,
+  "clock_received": true,
+  "gazebo_runtime_error_count": 0,
+  "lidar_ranges_present": true,
+  "lidar_received": true,
+  "message_counts": {
+    "camera_info": 1,
+    "clock": 6391,
+    "image": 11,
+    "odometry": 52,
+    "scan": 34
+  },
+  "minimum_message_counts": {
+    "camera_info": 1,
+    "clock": 50,
+    "image": 5,
+    "odometry": 20,
+    "scan": 20
+  },
+  "odometry_child_frame_id": "base_link",
+  "odometry_frame_id": "odom",
+  "odometry_received": true,
+  "samples": {
+    "camera_info": {
+      "nonempty": true,
+      "source": "ros_camera_camera_info_once.yaml",
+      "timestamp_s": 6.2
+    },
+    "clock": {
+      "nonempty": true,
+      "source": "ros_clock_once.yaml",
+      "timestamp_s": 3.517
+    },
+    "image": {
+      "nonempty": true,
+      "source": "ros_camera_image_raw_once.yaml",
+      "timestamp_s": 5.3
+    },
+    "odometry": {
+      "nonempty": true,
+      "source": "ros_odom_once.yaml",
+      "timestamp_s": 7.4
+    },
+    "scan": {
+      "nonempty": true,
+      "source": "ros_scan_once.yaml",
+      "timestamp_s": 4.4
+    }
+  },
+  "status": "PASSED"
+}

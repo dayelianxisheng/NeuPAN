@@ -1,0 +1,10 @@
+{
+  "image_count_before_nonzero": 30,
+  "maximum_angular_speed_radps": 8.103660210275566e-20,
+  "maximum_linear_speed_mps": 4.225414643632874e-20,
+  "odom_count": 96,
+  "passed": true,
+  "position_range_m": 2.1923257851077164e-20,
+  "scan_count_before_nonzero": 30,
+  "yaw_range_rad": 1.2438799339964281e-20
+}

@@ -1,0 +1,26 @@
+{
+  "base_image_preserved": true,
+  "cmd_vel_publication_count": 0,
+  "core_tracked_files_unchanged": true,
+  "core_tree_hash_note": "ignored Python bytecode is excluded from the tracked-source decision",
+  "derived_image_preserved": true,
+  "frozen_actual": {
+    "core_hash": "7e144aa888fcfe046e55a71031367ffb236c47855b04a2f9f4b07113987e2cf2",
+    "gazebo_model_hash": "4c69e37ccded2ed479dd2625e4895d6f4e971a0803aa5477435e2c0e074af90e",
+    "gazebo_world_hash": "df8b4d1b690e8e25f6f196cc76a3f5a12218198e84fd1fed0d9509278e53a40f",
+    "original_bridge_docker_hash": "1206f1e59306d1ed2b7ba71348f798cf0650ce6bb9717648763966c9f22a9d4c"
+  },
+  "frozen_components_unchanged": true,
+  "frozen_expected": {
+    "core_hash": "3b94da1777e3d218c71792f2be91084b4de1e69edd498c9f9933d380d067a136",
+    "gazebo_model_hash": "4c69e37ccded2ed479dd2625e4895d6f4e971a0803aa5477435e2c0e074af90e",
+    "gazebo_world_hash": "df8b4d1b690e8e25f6f196cc76a3f5a12218198e84fd1fed0d9509278e53a40f",
+    "original_bridge_docker_hash": "1206f1e59306d1ed2b7ba71348f798cf0650ce6bb9717648763966c9f22a9d4c"
+  },
+  "gazebo_image_id": "sha256:72af30cf91fb3001e019c6e57846dbe8d72497516882cc3d0e99a7d5551759ac",
+  "gazebo_started": false,
+  "residual_test_container_count": 0,
+  "residual_test_containers": [],
+  "runtime_bridge_started": false,
+  "status": "PASS"
+}

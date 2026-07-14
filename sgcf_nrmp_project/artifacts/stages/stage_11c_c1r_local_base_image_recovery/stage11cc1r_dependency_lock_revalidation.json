@@ -1,0 +1,14 @@
+{
+  "dockerfile_sha256": "7698facd3fff03510958b38d4b59c4637210628ab7db89d3356a604395c4bb6d",
+  "duplicate_package_version_conflicts": 0,
+  "entry_count": 36,
+  "lock_drift_detected": false,
+  "lockfile_sha256": "796f17e191c8a843c71ca57e1e6a093f8eb6e5bfbfc89cefd0a823a878e6175d",
+  "missing_sha256_count": 0,
+  "non_binary_wheel_count": 0,
+  "stage10_dependency_present": false,
+  "status": "PASS",
+  "torchaudio_present": false,
+  "torchvision_present": false,
+  "wheel_manifest_sha256": "19878ce2817cc99975460c0424d369ec8f8368cada740ce1f0515a0a45b3700b"
+}

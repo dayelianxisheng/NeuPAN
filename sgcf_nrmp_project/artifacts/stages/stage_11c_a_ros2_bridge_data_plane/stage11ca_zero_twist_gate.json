@@ -1,0 +1,23 @@
+{
+  "nav2_started": false,
+  "only_zero_twist_sent": true,
+  "planner_started": false,
+  "pose_after_xyzyaw": [
+    -3.0414012932583146e-22,
+    -5.503899998090897e-23,
+    -1.9981920855796643e-11,
+    2.4776964782519343e-25
+  ],
+  "pose_before_xyzyaw": [
+    -3.0414012932583146e-22,
+    -5.503899998090897e-23,
+    -1.9981920855796643e-11,
+    2.4776964782519343e-25
+  ],
+  "robot_remained_stationary": true,
+  "rviz_started": false,
+  "stage10_loaded": false,
+  "status": "PASSED",
+  "translation_delta_m": 0.0,
+  "yaw_delta_rad": 0.0
+}

@@ -1,0 +1,14 @@
+Stage 11C-B additions / changes:
+
+sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/config/stage11cb_command_profile.yaml
+sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/launch/stage11cb_open_loop.launch.py
+sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/stage11cb_open_loop_audit.py
+sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/setup.py
+sgcf_nrmp_project/tools/run_stage11cb_open_loop_gate.sh
+sgcf_nrmp_project/tools/finalize_stage11cb.py
+sgcf_nrmp_project/tools/test_stage11cb.py
+sgcf_nrmp_project/artifacts/stages/stage_11c_b_open_loop_command/
+
+Protected component changes during Stage 11C-B: none.
+Docker image changes during Stage 11C-B: none.
+Gazebo asset changes during Stage 11C-B: none.

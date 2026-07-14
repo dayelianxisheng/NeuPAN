@@ -1,0 +1,22 @@
+{
+  "single_static_obstacle": {
+    "candidate_to_ros_max_error": 0.0,
+    "ros_to_gazebo_max_error": 0.0,
+    "threshold": 1e-09
+  },
+  "static_corridor": {
+    "candidate_to_ros_max_error": 0.0,
+    "ros_to_gazebo_max_error": 0.0,
+    "threshold": 1e-09
+  },
+  "narrow_passage": {
+    "candidate_to_ros_max_error": 0.0,
+    "ros_to_gazebo_max_error": 0.0,
+    "threshold": 1e-09
+  },
+  "robot_obstacle": {
+    "candidate_to_ros_max_error": 0.0,
+    "ros_to_gazebo_max_error": 0.0,
+    "threshold": 1e-09
+  }
+}

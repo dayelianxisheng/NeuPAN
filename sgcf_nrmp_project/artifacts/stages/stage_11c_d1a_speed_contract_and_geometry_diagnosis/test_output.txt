@@ -1,0 +1,14 @@
+test_cleanup (sgcf_nrmp_project.tools.test_stage11cd1a.Tests) ... ok
+test_commands (sgcf_nrmp_project.tools.test_stage11cd1a.Tests) ... ok
+test_diagnosis (sgcf_nrmp_project.tools.test_stage11cd1a.Tests) ... ok
+test_empty (sgcf_nrmp_project.tools.test_stage11cd1a.Tests) ... ok
+test_replay (sgcf_nrmp_project.tools.test_stage11cd1a.Tests) ... ok
+test_speed (sgcf_nrmp_project.tools.test_stage11cd1a.Tests) ... ok
+test_stop (sgcf_nrmp_project.tools.test_stage11cd1a.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+compileall_exit_code=0
+git_diff_check_exit_code=0

@@ -1,0 +1,10 @@
+{
+  "candidate_max_difference": 0.0,
+  "d_geo_max_difference": 0.0,
+  "eligibility_agreement": true,
+  "fallback_agreement": true,
+  "g_geo_max_difference": 0.0,
+  "passed": true,
+  "sample_count": 40,
+  "status_agreement": true
+}

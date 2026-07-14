@@ -1,0 +1,18 @@
+{
+  "amends": "BLOCKED_UNRESOLVED_RUNTIME_FAILURE",
+  "amended_status": "STAGE_11C_D2_COMPLETE_WITH_KNOWN_PLANNER_LIMITATIONS",
+  "claims": [
+    "STATIC_GEOMETRY_EXPANSION_VALIDATED",
+    "SINGLE_STATIC_P0_CLOSED_LOOP_VALIDATED",
+    "CORRIDOR_P0_CLOSED_LOOP_VALIDATED",
+    "NARROW_PASSAGE_P0_CLOSED_LOOP_VALIDATED",
+    "ROBOT_OBSTACLE_SAFE_REJECTION_VALIDATED",
+    "ROBOT_OBSTACLE_PLANNER_COMPLETENESS_LIMITATION_RECORDED",
+    "FULL_HORIZON_SAFETY_RECHECK_PRESERVED",
+    "READY_FOR_STAGE_11C_D3_WITH_RESTRICTIONS"
+  ],
+  "reason": "robot_obstacle was safely rejected by the authoritative full-horizon geometry recheck without runtime or actuation failure",
+  "robot_obstacle_closed_loop_capability_claimed": false,
+  "historical_reports_overwritten": false,
+  "future_work": "independent Planner completeness optimization; does not block Oracle Semantic integration validation"
+}

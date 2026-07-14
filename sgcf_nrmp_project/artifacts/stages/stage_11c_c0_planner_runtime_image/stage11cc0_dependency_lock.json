@@ -1,0 +1,16 @@
+{
+  "numerical_stack_conflict": true,
+  "reason": "BLOCKED_RUNTIME_TRAINING_DEPENDENCY_COUPLING",
+  "repository_constraints": {
+    "numpy": ">=1.26,<2",
+    "source": "sgcf_nrmp_project/core/pyproject.toml",
+    "torch": "==2.8.0"
+  },
+  "stage_constraints": {
+    "numpy": "==1.21.5",
+    "scipy": "==1.8.0",
+    "torch": "PROHIBITED"
+  },
+  "status": "NOT_CREATED",
+  "unlocked_install_attempted": false
+}

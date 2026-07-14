@@ -1,0 +1,12 @@
+{
+  "base_image_id": "sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862",
+  "build_exit_code": 0,
+  "decision": "BLOCKED_LOCAL_BASE_IMAGE_RESOLUTION",
+  "docker_io_alias_metadata_lookup_observed": true,
+  "dockerfile_frontend_remote_access_observed": true,
+  "hard_gate": "no Docker Hub access and no docker.io/sgcf-local lookup",
+  "no_403": true,
+  "probe_image_id": "sha256:923f7a1c632ec1b464492c076561af69e5c63c4cd3b0153f051d7a2311cba2e0",
+  "remote_base_layer_pull_observed": false,
+  "status": "FAIL_STRICT_ZERO_NETWORK_GATE"
+}

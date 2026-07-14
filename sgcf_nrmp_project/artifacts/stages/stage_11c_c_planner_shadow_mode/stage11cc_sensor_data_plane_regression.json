@@ -1,0 +1,383 @@
+{
+  "passed": true,
+  "scenes": {
+    "empty_world": {
+      "camera": {
+        "encoding": "rgb8",
+        "height": 240,
+        "width": 320
+      },
+      "camera_info": {
+        "height": 240,
+        "k": [
+          179.99998092651367,
+          0.0,
+          160.0,
+          0.0,
+          179.99998569488525,
+          120.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 320
+      },
+      "counts": {
+        "camera_info": 20,
+        "clock": 1829,
+        "evaluations": 20,
+        "image": 20,
+        "odom": 99,
+        "scan": 20
+      },
+      "passed": true,
+      "self_return_count": 0,
+      "timestamp_audit": {
+        "camera_info": {
+          "count": 20,
+          "negative_jumps": 0
+        },
+        "clock": {
+          "count": 1829,
+          "negative_jumps": 0
+        },
+        "image": {
+          "count": 20,
+          "negative_jumps": 0
+        },
+        "odom": {
+          "count": 99,
+          "negative_jumps": 0
+        },
+        "scan": {
+          "count": 20,
+          "negative_jumps": 0
+        }
+      }
+    },
+    "human_path_center": {
+      "camera": {
+        "encoding": "rgb8",
+        "height": 240,
+        "width": 320
+      },
+      "camera_info": {
+        "height": 240,
+        "k": [
+          179.99998092651367,
+          0.0,
+          160.0,
+          0.0,
+          179.99998569488525,
+          120.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 320
+      },
+      "counts": {
+        "camera_info": 63,
+        "clock": 238,
+        "evaluations": 20,
+        "image": 63,
+        "odom": 126,
+        "scan": 63
+      },
+      "passed": true,
+      "self_return_count": 0,
+      "timestamp_audit": {
+        "camera_info": {
+          "count": 63,
+          "negative_jumps": 0
+        },
+        "clock": {
+          "count": 238,
+          "negative_jumps": 0
+        },
+        "image": {
+          "count": 63,
+          "negative_jumps": 0
+        },
+        "odom": {
+          "count": 126,
+          "negative_jumps": 0
+        },
+        "scan": {
+          "count": 63,
+          "negative_jumps": 0
+        }
+      }
+    },
+    "initial_collision": {
+      "camera": {
+        "encoding": "rgb8",
+        "height": 240,
+        "width": 320
+      },
+      "camera_info": {
+        "height": 240,
+        "k": [
+          179.99998092651367,
+          0.0,
+          160.0,
+          0.0,
+          179.99998569488525,
+          120.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 320
+      },
+      "counts": {
+        "camera_info": 20,
+        "clock": 1919,
+        "evaluations": 20,
+        "image": 20,
+        "odom": 96,
+        "scan": 20
+      },
+      "passed": true,
+      "self_return_count": 0,
+      "timestamp_audit": {
+        "camera_info": {
+          "count": 20,
+          "negative_jumps": 0
+        },
+        "clock": {
+          "count": 1919,
+          "negative_jumps": 0
+        },
+        "image": {
+          "count": 20,
+          "negative_jumps": 0
+        },
+        "odom": {
+          "count": 96,
+          "negative_jumps": 0
+        },
+        "scan": {
+          "count": 20,
+          "negative_jumps": 0
+        }
+      }
+    },
+    "outdated_rgb_contract": {
+      "camera": {
+        "encoding": "rgb8",
+        "height": 240,
+        "width": 320
+      },
+      "camera_info": {
+        "height": 240,
+        "k": [
+          179.99998092651367,
+          0.0,
+          160.0,
+          0.0,
+          179.99998569488525,
+          120.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 320
+      },
+      "counts": {
+        "camera_info": 30,
+        "clock": 239,
+        "evaluations": 20,
+        "image": 30,
+        "odom": 126,
+        "scan": 30
+      },
+      "passed": true,
+      "self_return_count": 0,
+      "timestamp_audit": {
+        "camera_info": {
+          "count": 30,
+          "negative_jumps": 0
+        },
+        "clock": {
+          "count": 239,
+          "negative_jumps": 0
+        },
+        "image": {
+          "count": 30,
+          "negative_jumps": 0
+        },
+        "odom": {
+          "count": 126,
+          "negative_jumps": 0
+        },
+        "scan": {
+          "count": 30,
+          "negative_jumps": 0
+        }
+      }
+    },
+    "rgb_dropout_contract": {
+      "camera": {
+        "encoding": "rgb8",
+        "height": 240,
+        "width": 320
+      },
+      "camera_info": {
+        "height": 240,
+        "k": [
+          179.99998092651367,
+          0.0,
+          160.0,
+          0.0,
+          179.99998569488525,
+          120.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 320
+      },
+      "counts": {
+        "camera_info": 20,
+        "clock": 117,
+        "evaluations": 20,
+        "image": 20,
+        "odom": 24,
+        "scan": 20
+      },
+      "passed": true,
+      "self_return_count": 0,
+      "timestamp_audit": {
+        "camera_info": {
+          "count": 20,
+          "negative_jumps": 0
+        },
+        "clock": {
+          "count": 117,
+          "negative_jumps": 0
+        },
+        "image": {
+          "count": 20,
+          "negative_jumps": 0
+        },
+        "odom": {
+          "count": 24,
+          "negative_jumps": 0
+        },
+        "scan": {
+          "count": 20,
+          "negative_jumps": 0
+        }
+      }
+    },
+    "semantic_infeasible": {
+      "camera": {
+        "encoding": "rgb8",
+        "height": 240,
+        "width": 320
+      },
+      "camera_info": {
+        "height": 240,
+        "k": [
+          179.99998092651367,
+          0.0,
+          160.0,
+          0.0,
+          179.99998569488525,
+          120.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 320
+      },
+      "counts": {
+        "camera_info": 59,
+        "clock": 100,
+        "evaluations": 20,
+        "image": 59,
+        "odom": 60,
+        "scan": 59
+      },
+      "passed": true,
+      "self_return_count": 0,
+      "timestamp_audit": {
+        "camera_info": {
+          "count": 59,
+          "negative_jumps": 0
+        },
+        "clock": {
+          "count": 100,
+          "negative_jumps": 0
+        },
+        "image": {
+          "count": 59,
+          "negative_jumps": 0
+        },
+        "odom": {
+          "count": 60,
+          "negative_jumps": 0
+        },
+        "scan": {
+          "count": 59,
+          "negative_jumps": 0
+        }
+      }
+    },
+    "single_static_obstacle": {
+      "camera": {
+        "encoding": "rgb8",
+        "height": 240,
+        "width": 320
+      },
+      "camera_info": {
+        "height": 240,
+        "k": [
+          179.99998092651367,
+          0.0,
+          160.0,
+          0.0,
+          179.99998569488525,
+          120.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width": 320
+      },
+      "counts": {
+        "camera_info": 20,
+        "clock": 1373,
+        "evaluations": 20,
+        "image": 20,
+        "odom": 97,
+        "scan": 20
+      },
+      "passed": true,
+      "self_return_count": 0,
+      "timestamp_audit": {
+        "camera_info": {
+          "count": 20,
+          "negative_jumps": 0
+        },
+        "clock": {
+          "count": 1373,
+          "negative_jumps": 0
+        },
+        "image": {
+          "count": 20,
+          "negative_jumps": 0
+        },
+        "odom": {
+          "count": 97,
+          "negative_jumps": 0
+        },
+        "scan": {
+          "count": 20,
+          "negative_jumps": 0
+        }
+      }
+    }
+  }
+}

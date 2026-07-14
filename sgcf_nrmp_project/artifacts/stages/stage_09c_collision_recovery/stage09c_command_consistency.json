@@ -1,0 +1,6 @@
+{
+  "candidate_to_ros_max_component_error": 0.0,
+  "ros_to_gazebo_max_component_error": 0.0,
+  "threshold": 1e-09,
+  "passed": true
+}

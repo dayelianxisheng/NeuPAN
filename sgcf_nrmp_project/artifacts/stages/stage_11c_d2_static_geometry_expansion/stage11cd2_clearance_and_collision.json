@@ -1,0 +1,26 @@
+{
+  "single_static_obstacle": {
+    "initial_clearance_m": 0.6890498674152241,
+    "minimum_d_geo_m": 0.25038880421804466,
+    "collision": false,
+    "full_horizon_recheck_preserved": true
+  },
+  "static_corridor": {
+    "initial_clearance_m": 0.37286554366286107,
+    "minimum_d_geo_m": 0.3683782122927678,
+    "collision": false,
+    "full_horizon_recheck_preserved": true
+  },
+  "narrow_passage": {
+    "initial_clearance_m": 0.2582583091048859,
+    "minimum_d_geo_m": 0.2545966634330721,
+    "collision": false,
+    "full_horizon_recheck_preserved": true
+  },
+  "robot_obstacle": {
+    "initial_clearance_m": 0.798792434830165,
+    "minimum_d_geo_m": 0.2534940934253993,
+    "collision": false,
+    "full_horizon_recheck_preserved": true
+  }
+}

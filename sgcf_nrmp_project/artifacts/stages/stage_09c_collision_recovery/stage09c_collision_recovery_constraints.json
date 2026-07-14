@@ -1,0 +1,22 @@
+{
+  "scheme": "SAFE_NOMINAL_RECOVERY_WITH_ZERO_GEOMETRY_SLACK",
+  "penetration_constraint_scheme_used": false,
+  "reason": "safe nominal alone still permitted QP geometry slack below d_safe",
+  "recovery_only": true,
+  "d_safe_unchanged_m": 0.25,
+  "full_horizon_nonlinear_recheck_preserved": true,
+  "samples": [
+    {
+      "active": true,
+      "geometry_slack_max_m": 0.0
+    },
+    {
+      "active": true,
+      "geometry_slack_max_m": 0.0
+    },
+    {
+      "active": true,
+      "geometry_slack_max_m": 0.0
+    }
+  ]
+}

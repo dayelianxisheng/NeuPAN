@@ -1,0 +1,15 @@
+{
+  "candidate_unchanged": true,
+  "command_eligible": false,
+  "formal_status_reproduced": "REJECTED_BY_GEOMETRY_CHECK",
+  "independent_overlap_proof": true,
+  "minimum_clearance_reproduced": 0.0,
+  "passed_requested_offline_gate": false,
+  "qp_status_reproduced": [
+    "SOLVED_SAFE",
+    "SOLVED_SAFE",
+    "SOLVED_SAFE"
+  ],
+  "snapshot": "sgcf_nrmp_project/artifacts/stages/stage_11c_d1a_speed_contract_and_geometry_diagnosis/planner_inputs/single_static_obstacle/sample_00.json",
+  "snapshot_sha256": "30839a52d62d25c4c2a7931add996a0c8968fa0bbf914d0eaec29b5ce9967adb"
+}

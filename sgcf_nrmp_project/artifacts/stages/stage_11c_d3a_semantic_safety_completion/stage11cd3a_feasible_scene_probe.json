@@ -1,0 +1,32 @@
+{
+  "order": [
+    "human_path_side",
+    "vehicle_path"
+  ],
+  "human_path_side": {
+    "p2_eligible": 0,
+    "status": [
+      "SEMANTICALLY_INFEASIBLE"
+    ],
+    "margin_max": 0.35,
+    "p95_ms": 216.3007714967534
+  },
+  "vehicle_path": {
+    "p2_eligible": 20,
+    "status": [
+      "SOLVED_SAFE"
+    ],
+    "margin_max": 0.2,
+    "p95_ms": 28.62398219949682
+  },
+  "selected": "vehicle_path",
+  "selection_reason": "first scene with valid positive margin, eligible finite P2 candidate, exact replay, and latency <=200ms",
+  "vehicle_path_closed_loop": {
+    "p0_progress_m": 0.007756525539826864,
+    "p2_progress_m": -1.1547871547890054e-07,
+    "p2_nonzero_actuation_count": 80,
+    "p2_navigation_progress_passed": false,
+    "semantic_nonzero_closed_loop_demonstrated": false,
+    "classification": "KNOWN_PLANNER_SEMANTIC_FEASIBILITY_LIMITATION"
+  }
+}

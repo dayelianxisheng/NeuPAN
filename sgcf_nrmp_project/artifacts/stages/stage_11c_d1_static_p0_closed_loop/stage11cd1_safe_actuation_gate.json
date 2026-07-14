@@ -1,0 +1,32 @@
+{
+  "closed_loop_capability_passed": false,
+  "empty_world": {
+    "candidate_bridge_subscriber_count": 0,
+    "candidate_gate_subscriber_present": true,
+    "candidate_subscriber_count": 1,
+    "cmd_vel_publisher_count": 1,
+    "evaluation_count": 20,
+    "forwarded_nonzero_count": 0,
+    "gazebo_nonzero_count": 0,
+    "ineligible_executed": 0,
+    "late_executed": 0,
+    "rejected_count": 20,
+    "sole_cmd_vel_publisher": "stage11cd1_safe_actuation_gate",
+    "stale_executed": 0
+  },
+  "safety_passed": true,
+  "single_static_obstacle": {
+    "candidate_bridge_subscriber_count": 0,
+    "candidate_gate_subscriber_present": true,
+    "candidate_subscriber_count": 1,
+    "cmd_vel_publisher_count": 1,
+    "evaluation_count": 20,
+    "forwarded_nonzero_count": 0,
+    "gazebo_nonzero_count": 0,
+    "ineligible_executed": 0,
+    "late_executed": 0,
+    "rejected_count": 20,
+    "sole_cmd_vel_publisher": "stage11cd1_safe_actuation_gate",
+    "stale_executed": 0
+  }
+}

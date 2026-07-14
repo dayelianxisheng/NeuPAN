@@ -1,0 +1,12 @@
+{
+  "bidirectional_cmd_vel": false,
+  "mappings": {
+    "/camera/camera_info": "GZ_TO_ROS",
+    "/camera/image_raw": "GZ_TO_ROS",
+    "/clock": "GZ_TO_ROS",
+    "/cmd_vel": "ROS_TO_GZ",
+    "/odom": "GZ_TO_ROS",
+    "/scan": "GZ_TO_ROS"
+  },
+  "passed": true
+}

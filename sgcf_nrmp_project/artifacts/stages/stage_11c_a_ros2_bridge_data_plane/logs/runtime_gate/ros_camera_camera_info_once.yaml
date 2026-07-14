@@ -1,0 +1,56 @@
+header:
+  stamp:
+    sec: 6
+    nanosec: 200000000
+  frame_id: sgcf_robot/camera_link/rgb_camera
+height: 240
+width: 320
+distortion_model: plumb_bob
+d:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+k:
+- 179.99998092651367
+- 0.0
+- 160.0
+- 0.0
+- 179.99998569488525
+- 120.0
+- 0.0
+- 0.0
+- 1.0
+r:
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+p:
+- 179.99998092651367
+- 0.0
+- 160.0
+- 0.0
+- 0.0
+- 179.99998569488525
+- 120.0
+- 0.0
+- 0.0
+- 0.0
+- 1.0
+- 0.0
+binning_x: 0
+binning_y: 0
+roi:
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: false
+---

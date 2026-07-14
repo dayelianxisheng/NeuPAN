@@ -1,0 +1,9 @@
+{
+  "classification": "UNSAFE_FUTURE_NOMINAL_WITH_VALID_CURRENT_STATE",
+  "current_clearance_m": 0.7509557962417531,
+  "current_collision": false,
+  "pre_fix_status": "REJECTED_BY_GEOMETRY_CHECK",
+  "pre_fix_minimum_horizon_clearance_m": 0.0,
+  "cause": "the nominal future horizon entered the obstacle; zero collision gradients left no useful affine recovery model",
+  "full_horizon_nonlinear_recheck_authoritative": true
+}

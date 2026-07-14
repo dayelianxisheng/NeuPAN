@@ -1,0 +1,71 @@
+{
+  "base_image_id": "sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862",
+  "base_layer_count": 8,
+  "base_layer_prefix_agreement": true,
+  "bridge_type_mappings": {
+    "CameraInfo": true,
+    "Clock": true,
+    "Image": true,
+    "LaserScan": true,
+    "Odometry": true,
+    "Twist": true
+  },
+  "cpu_execution_trace": {
+    "cuda_allocation_count": 0,
+    "cuda_context_count": 0,
+    "cuda_init_calls": 0,
+    "cuda_kernel_count": 0,
+    "cuda_set_device_calls": 0,
+    "cuda_tensor_count": 0,
+    "explicit_cuda_to_requests": 0,
+    "geometry_checker_device": "cpu",
+    "module_cuda_calls": 0,
+    "observed_tensor_devices": [
+      "cpu"
+    ],
+    "planner_device": "cpu",
+    "tensor_cuda_calls": 0
+  },
+  "cuda_available": false,
+  "cuda_device_count": 0,
+  "cuda_initialized": false,
+  "derived_layer_count": 14,
+  "formal_execution_device": "cpu",
+  "gpu_exposed": false,
+  "image_id": "sha256:03f77926ea1b97cc460ca2d5893abb1b26d3b68984d53f9e98e707994841cff5",
+  "image_size_bytes": 6087252982,
+  "image_tag": "sgcf-ros2-humble-gzharmonic-torch-planner:stage11cc1",
+  "labels": {
+    "org.opencontainers.image.version": "22.04",
+    "org.sgcf.authoritative-base-image-id": "sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862",
+    "org.sgcf.base-binding-method": "verified-local-bootstrap-alias",
+    "org.sgcf.planner-lock-sha256": "796f17e191c8a843c71ca57e1e6a093f8eb6e5bfbfc89cefd0a823a878e6175d"
+  },
+  "lock_sha256": "796f17e191c8a843c71ca57e1e6a093f8eb6e5bfbfc89cefd0a823a878e6175d",
+  "locked_wheel_count": 36,
+  "original_bridge_image_modified": false,
+  "planner_venv": {
+    "numpy": "1.26.4",
+    "osqp": "1.1.1",
+    "scipy": "1.13.0",
+    "torch": "2.8.0+cu128"
+  },
+  "ros_node_coexistence": {
+    "candidate_publisher_created": true,
+    "cmd_vel_published": false,
+    "node_created": true,
+    "node_destroyed": true,
+    "subscription_count": 4,
+    "use_sim_time": true
+  },
+  "stage10_modules_loaded": [],
+  "status": "PASS",
+  "system_python": {
+    "numpy": "1.21.5",
+    "rclpy": "PASS",
+    "scipy": "1.8.0"
+  },
+  "temporary_base_tag": "sgcf-local/ros2-bridge-base:stage11cc1",
+  "torch_build": "CUDA_CAPABLE",
+  "torch_compiled_cuda": "12.8"
+}

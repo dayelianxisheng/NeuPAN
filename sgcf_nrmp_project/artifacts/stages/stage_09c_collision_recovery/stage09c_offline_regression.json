@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "empty_world": {
+    "status": "SOLVED_SAFE",
+    "command_eligible": true,
+    "candidate": [
+      0.24002508566991543,
+      3.2853249254701747e-19
+    ],
+    "minimum_clearance_m": 8.0,
+    "iterations": 3,
+    "rejections": 0,
+    "historical_candidate_max_error": 1.3042825198404148e-20
+  },
+  "single_static_obstacle": {
+    "status": "SOLVED_SAFE",
+    "command_eligible": true,
+    "candidate": [
+      0.027524473102727508,
+      0.6000004935061383
+    ],
+    "minimum_clearance_m": 0.25370515755718764,
+    "iterations": 3,
+    "rejections": 1,
+    "full_horizon_violations": 0
+  },
+  "initial_collision": {
+    "status": "EMERGENCY_STOP",
+    "command_eligible": false,
+    "candidate": [
+      0.0,
+      0.0
+    ],
+    "minimum_clearance_m": 0.0,
+    "iterations": 0,
+    "rejections": 0
+  },
+  "semantic_infeasible": {
+    "status": "GEOMETRICALLY_INFEASIBLE",
+    "command_eligible": false,
+    "candidate": [
+      0.0,
+      0.0
+    ],
+    "minimum_clearance_m": Infinity,
+    "iterations": 1,
+    "rejections": 0
+  },
+  "cpu_performance": {
+    "samples": 100,
+    "mean_ms": 132.9994251001699,
+    "p50_ms": 144.08178400117322,
+    "p95_ms": 151.29834269991989,
+    "max_ms": 173.11412500203005
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "camera": {
+    "encoding_values": [
+      "rgb8"
+    ],
+    "height_values": [
+      240
+    ],
+    "nonempty_count": 90,
+    "width_values": [
+      320
+    ]
+  },
+  "counts": {
+    "clock": 8980,
+    "image": 90,
+    "info": 90,
+    "odom": 448,
+    "scan": 90
+  },
+  "lidar": {
+    "nonempty_messages": 90,
+    "range_count": 181
+  },
+  "odometry_finite": true,
+  "passed": true,
+  "required_minimum": {
+    "clock": 100,
+    "image": 10,
+    "info": 1,
+    "odom": 80,
+    "scan": 40
+  },
+  "timestamps_monotonic": true
+}

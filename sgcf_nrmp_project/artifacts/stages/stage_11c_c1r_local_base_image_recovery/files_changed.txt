@@ -1,0 +1,35 @@
+ M sgcf_nrmp_project/docs/stage_11c_a_cross_machine_handoff.md
+ M sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/launch/stage11ca_bridge.launch.py
+ M sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/setup.py
+?? docker/ros2_humble_gzharmonic_torch_planner/
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/files_changed.txt
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/known_limitations.md
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/logs/runtime_gate/
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/stage11ca_bridge_capability_audit.json
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/stage11ca_environment_audit.json
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/stage11ca_information_boundary.json
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/stage11ca_process_cleanup.json
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/stage11ca_runtime_metrics.json
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/stage11ca_zero_twist_gate.json
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/stage_11c_a_decision.md
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/stage_11c_a_report.md
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/test_output.txt
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_b_open_loop_command/
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_c0_planner_runtime_image/
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_c1_torch_planner_runtime/
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_c1r_local_base_image_recovery/
+?? sgcf_nrmp_project/artifacts/stages/stage_11c_c_planner_shadow_mode/
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/config/stage11cb_command_profile.yaml
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/launch/stage11cb_open_loop.launch.py
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/bridge_contract_audit.py
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/stage11cb_open_loop_audit.py
+?? sgcf_nrmp_project/tools/finalize_stage11ca.py
+?? sgcf_nrmp_project/tools/finalize_stage11cb.py
+?? sgcf_nrmp_project/tools/finalize_stage11cc1_build_block.py
+?? sgcf_nrmp_project/tools/finalize_stage11cc1r_probe_block.py
+?? sgcf_nrmp_project/tools/record_stage11cc0_import_coupling_block.py
+?? sgcf_nrmp_project/tools/record_stage11cc_dependency_block.py
+?? sgcf_nrmp_project/tools/run_stage11ca_bridge_gate.sh
+?? sgcf_nrmp_project/tools/run_stage11cb_open_loop_gate.sh
+?? sgcf_nrmp_project/tools/test_stage11ca.py
+?? sgcf_nrmp_project/tools/test_stage11cb.py

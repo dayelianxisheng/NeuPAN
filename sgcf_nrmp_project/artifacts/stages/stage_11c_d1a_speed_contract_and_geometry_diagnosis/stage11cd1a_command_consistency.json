@@ -1,0 +1,8 @@
+{
+  "candidate_clamped": false,
+  "candidate_to_ros_max_error": 0.0,
+  "gazebo_nonzero_count": 160,
+  "passed": true,
+  "ros_nonzero_count": 160,
+  "ros_to_gazebo_max_error": 0.0
+}

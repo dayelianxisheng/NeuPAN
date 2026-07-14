@@ -1,0 +1,16 @@
+{
+  "abi_difference_from_base": false,
+  "architecture": "x86_64",
+  "copied_into_image": false,
+  "cvxpy": "1.7.5",
+  "evidence_only": true,
+  "numerical_stack_difference_from_base": true,
+  "numpy": "1.26.4",
+  "osqp": "1.1.1",
+  "planner_dependency_source": "current host neupan environment, read-only version evidence",
+  "python": "3.10.0",
+  "python_abi": "cpython-310",
+  "qdldl": "not importable as top-level module",
+  "scipy": "1.13.0",
+  "torch": "2.8.0+cu128"
+}

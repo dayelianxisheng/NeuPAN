@@ -1,0 +1,5914 @@
+{
+  "camera": {
+    "encoding": "rgb8",
+    "height": 240,
+    "width": 320
+  },
+  "camera_info": {
+    "height": 240,
+    "k": [
+      179.99998092651367,
+      0.0,
+      160.0,
+      0.0,
+      179.99998569488525,
+      120.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "width": 320
+  },
+  "counts": {
+    "camera_info": 21,
+    "clock": 1912,
+    "evaluations": 20,
+    "image": 21,
+    "odom": 102,
+    "scan": 20
+  },
+  "deadline_miss_count": 0,
+  "failure": null,
+  "frames": {
+    "camera_info": [
+      "sgcf_robot/camera_link/rgb_camera"
+    ],
+    "image": [
+      "sgcf_robot/camera_link/rgb_camera"
+    ],
+    "odom": [
+      "odom"
+    ],
+    "odom_child": [
+      "base_link"
+    ],
+    "scan": [
+      "sgcf_robot/lidar_link/lidar"
+    ]
+  },
+  "latency": {
+    "backlog_count": 0,
+    "count": 19,
+    "max": 13.068346001091413,
+    "mean": 11.179526369041445,
+    "p50": 11.105020999821136,
+    "p95": 11.771914902783461,
+    "stale_count": 0
+  },
+  "pending_queue_depth_max": 1,
+  "pending_queue_limit": 1,
+  "records": [
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 0,
+      "evaluation_monotonic_end": 30322.114407458,
+      "evaluation_monotonic_start": 30322.033219348,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 4.0,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.2542490037740208,
+        "qp_ms": 76.98234300551121,
+        "scan_to_input_ready_ms": 0.1765529996191617,
+        "semantic_ms": 0.0,
+        "total_ms": 81.18811000167625
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 4.3,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24002508566991543,
+          3.179148814243687e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24002508566991543,
+          3.179148814243687e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        6.5451935870539754e-21,
+        -2.1718354507478367e-39,
+        -1.8735325796322248e-19
+      ],
+      "robot_velocity": [
+        1.10197903631676e-20,
+        -2.9131469388921385e-20
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 4.3,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 4.3,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 1,
+      "evaluation_monotonic_end": 30322.252644518,
+      "evaluation_monotonic_start": 30322.242281207,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 4.0,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.07371900210273452,
+        "qp_ms": 6.75909799974761,
+        "scan_to_input_ready_ms": 0.11762199937948026,
+        "semantic_ms": 0.0,
+        "total_ms": 10.36331100112875
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.09199999999999964,
+      "odom_timestamp": 4.32,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001716998697847,
+          3.165843388965843e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001716998697847,
+          3.165843388965843e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        6.7169548597421314e-21,
+        -2.203924819373719e-39,
+        -1.8680628347729123e-19
+      ],
+      "robot_velocity": [
+        2.5948137505700144e-20,
+        3.058560845354274e-20
+      ],
+      "scan_age_s": -0.08800000000000008,
+      "scan_timestamp": 4.5,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 4.5,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 2,
+      "evaluation_monotonic_end": 30322.347266835,
+      "evaluation_monotonic_start": 30322.335912985,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 4.0,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.09012999726110138,
+        "qp_ms": 7.373558000836056,
+        "scan_to_input_ready_ms": 0.1654719999351073,
+        "semantic_ms": 0.0,
+        "total_ms": 11.353850000887178
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.005000000000000782,
+      "odom_timestamp": 4.6,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001709110956765,
+          3.201242856600446e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001709110956765,
+          3.201242856600446e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        1.0534812662810959e-20,
+        -2.9230225184751835e-39,
+        -1.8888295148532442e-19
+      ],
+      "robot_velocity": [
+        1.324438174845142e-20,
+        3.419948818294658e-21
+      ],
+      "scan_age_s": 0.005000000000000782,
+      "scan_timestamp": 4.6,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 4.6,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 3,
+      "evaluation_monotonic_end": 30322.444406294,
+      "evaluation_monotonic_start": 30322.433350366,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 4.0,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.08853700273903087,
+        "qp_ms": 7.090172999596689,
+        "scan_to_input_ready_ms": 0.17737500093062408,
+        "semantic_ms": 0.0,
+        "total_ms": 11.055928000132553
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 4.7,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001709101020785,
+          3.210352442917437e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001709101020785,
+          3.210352442917437e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        1.1551537550915351e-20,
+        -3.1149349602048235e-39,
+        -1.8942298408302127e-19
+      ],
+      "robot_velocity": [
+        2.1177747932468462e-20,
+        -3.9983667871825845e-20
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 4.7,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 4.7,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 4,
+      "evaluation_monotonic_end": 30322.543833551,
+      "evaluation_monotonic_start": 30322.532891959,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 4.0,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.087775999418227,
+        "qp_ms": 6.991345999267651,
+        "scan_to_input_ready_ms": 0.1693599988357164,
+        "semantic_ms": 0.0,
+        "total_ms": 10.9415920014726
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 4.8,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001709101005642,
+          3.2353790332328274e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001709101005642,
+          3.2353790332328274e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        1.2172156515228367e-20,
+        -3.233309536687255e-39,
+        -1.908943623592524e-19
+      ],
+      "robot_velocity": [
+        2.6005361635564995e-20,
+        -2.5577088808814726e-20
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 4.8,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 4.8,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 5,
+      "evaluation_monotonic_end": 30322.644488164,
+      "evaluation_monotonic_start": 30322.632860297,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 4.0,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.10372500037192367,
+        "qp_ms": 7.182937995821703,
+        "scan_to_input_ready_ms": 0.17569199917488731,
+        "semantic_ms": 0.0,
+        "total_ms": 11.62786700297147
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 4.9,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001709101005622,
+          3.2370120790483777e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001709101005622,
+          3.2370120790483777e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        1.389811061648453e-20,
+        -3.563053212274114e-39,
+        -1.9099451408805392e-19
+      ],
+      "robot_velocity": [
+        1.736764140052818e-20,
+        2.136559041010403e-21
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 4.9,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 4.9,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 6,
+      "evaluation_monotonic_end": 30322.746310481,
+      "evaluation_monotonic_start": 30322.733242135,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 4.0,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.09304500053985976,
+        "qp_ms": 8.538517002307344,
+        "scan_to_input_ready_ms": 0.17057200238923542,
+        "semantic_ms": 0.0,
+        "total_ms": 13.068346001091413
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 5.0,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001709101005592,
+          3.232900595717637e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001709101005592,
+          3.232900595717637e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        1.5298374303919697e-20,
+        -3.8299916428459406e-39,
+        -1.9075246155813508e-19
+      ],
+      "robot_velocity": [
+        -1.4212037771263424e-20,
+        -2.0166438650766938e-20
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 5.0,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.0,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 7,
+      "evaluation_monotonic_end": 30322.845460385,
+      "evaluation_monotonic_start": 30322.834030611,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 4.0,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.10485899838386104,
+        "qp_ms": 7.379717997537227,
+        "scan_to_input_ready_ms": 0.1833970018196851,
+        "semantic_ms": 0.0,
+        "total_ms": 11.429774000134785
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.002000000000000668,
+      "odom_timestamp": 5.1,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001709101005647,
+          3.238575388565003e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001709101005647,
+          3.238575388565003e-19
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        1.6675091878029905e-20,
+        -4.092975855800087e-39,
+        -1.9108472251539255e-19
+      ],
+      "robot_velocity": [
+        2.8539690444172404e-20,
+        -9.180074540907344e-21
+      ],
+      "scan_age_s": 0.002000000000000668,
+      "scan_timestamp": 5.1,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.1,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 8,
+      "evaluation_monotonic_end": 30322.944750012,
+      "evaluation_monotonic_start": 30322.934053382,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.9882391625467046,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.08063100176514126,
+        "qp_ms": 7.010702993284212,
+        "scan_to_input_ready_ms": 0.16355800107703544,
+        "semantic_ms": 0.0,
+        "total_ms": 10.696630000893492
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 5.2,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001969139021098,
+          5.91390520787341e-20
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001969139021098,
+          5.91390520787341e-20
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.011760837453295456,
+        -5.1311314216857835e-21,
+        -2.8607486682468094e-20
+      ],
+      "robot_velocity": [
+        0.24001709101504676,
+        0.0
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 5.2,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.2,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 9,
+      "evaluation_monotonic_end": 30323.044494066,
+      "evaluation_monotonic_start": 30323.033797557,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.9642373260266934,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.08640400119475089,
+        "qp_ms": 7.021091994829476,
+        "scan_to_input_ready_ms": 0.1568160005263053,
+        "semantic_ms": 0.0,
+        "total_ms": 10.696509001718368
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 5.3,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24002031599893048,
+          6.141039260858095e-20
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24002031599893048,
+          6.141039260858095e-20
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.03576267397330662,
+        -5.8177636402867756e-21,
+        -2.8607486682468094e-20
+      ],
+      "robot_velocity": [
+        0.24001969139246238,
+        0.0
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 5.3,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.3,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 10,
+      "evaluation_monotonic_end": 30323.145214704,
+      "evaluation_monotonic_start": 30323.133637783,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.940235326281707,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.14113700308371335,
+        "qp_ms": 7.615594997332664,
+        "scan_to_input_ready_ms": 0.15173599967965856,
+        "semantic_ms": 0.0,
+        "total_ms": 11.576920998777496
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 5.4,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24002063658924372,
+          -2.4343653636898987e-17
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24002063658924372,
+          -2.4343653636898987e-17
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.05976467371829313,
+        2.0501101492947025e-19,
+        1.384918032113199e-17
+      ],
+      "robot_velocity": [
+        0.24002031599977722,
+        -1.3877787807814457e-15
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 5.4,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.4,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 11,
+      "evaluation_monotonic_end": 30323.244409582,
+      "evaluation_monotonic_start": 30323.233673699,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.9162332789728413,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.0853689998621121,
+        "qp_ms": 6.862722995720105,
+        "scan_to_input_ready_ms": 0.14529500185744837,
+        "semantic_ms": 0.0,
+        "total_ms": 10.735882999142632
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 5.5,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001054694274235,
+          -1.5185340377943048e-18
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001054694274235,
+          -1.5185340377943048e-18
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.08376672102715871,
+        7.089638069315395e-19,
+        -2.8607486682467323e-20
+      ],
+      "robot_velocity": [
+        0.240020636589474,
+        -2.7755575615628914e-15
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 5.5,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.5,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 12,
+      "evaluation_monotonic_end": 30323.344427043,
+      "evaluation_monotonic_start": 30323.333879134,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.892231709706579,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.07868899774621241,
+        "qp_ms": 6.93014000353287,
+        "scan_to_input_ready_ms": 0.15247700139298104,
+        "semantic_ms": 0.0,
+        "total_ms": 10.547909001616063
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.002000000000000668,
+      "odom_timestamp": 5.6,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001455864250737,
+          -9.620359817647832e-17
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001455864250737,
+          -9.620359817647832e-17
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.10776829029342078,
+        1.4077599070034965e-18,
+        5.548254374457536e-17
+      ],
+      "robot_velocity": [
+        0.24001054694281487,
+        0.0
+      ],
+      "scan_age_s": 0.002000000000000668,
+      "scan_timestamp": 5.6,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.6,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 13,
+      "evaluation_monotonic_end": 30323.445368458,
+      "evaluation_monotonic_start": 30323.433751952,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.86823045843901,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.08371800504392013,
+        "qp_ms": 7.897767998656491,
+        "scan_to_input_ready_ms": 0.15597400124534033,
+        "semantic_ms": 0.0,
+        "total_ms": 11.61650599897257
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 5.7,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.2400194395199978,
+          -9.00388561805815e-15
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.2400194395199978,
+          -9.00388561805815e-15
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.13176954156099013,
+        1.966023787469561e-17,
+        4.662908095938975e-15
+      ],
+      "robot_velocity": [
+        0.24001455864224308,
+        0.0
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 5.7,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.7,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 14,
+      "evaluation_monotonic_end": 30323.545509752,
+      "evaluation_monotonic_start": 30323.534252144,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.844228763411741,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.07378000009339303,
+        "qp_ms": 7.682209994527511,
+        "scan_to_input_ready_ms": 0.17287599985138513,
+        "semantic_ms": 0.0,
+        "total_ms": 11.257607999141328
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 5.8,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001710156616668,
+          -1.076778768347828e-14
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001710156616668,
+          -1.076778768347828e-14
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.15577123658825903,
+        1.4432203997238878e-16,
+        5.4955753644078424e-15
+      ],
+      "robot_velocity": [
+        0.24001943952024346,
+        5.551115123125783e-15
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 5.8,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.8,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 15,
+      "evaluation_monotonic_end": 30323.644238581,
+      "evaluation_monotonic_start": 30323.633644445,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.820226934019473,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.07287600237759762,
+        "qp_ms": 6.790076997276628,
+        "scan_to_input_ready_ms": 0.13970399959362112,
+        "semantic_ms": 0.0,
+        "total_ms": 10.594136001600418
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 5.9,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001066661610354,
+          -9.285133502266968e-15
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001066661610354,
+          -9.285133502266968e-15
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.17977306598052695,
+        2.791437723992467e-16,
+        4.607396944707717e-15
+      ],
+      "robot_velocity": [
+        0.24001710156591613,
+        -4.163336342344337e-13
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 5.9,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 5.9,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 16,
+      "evaluation_monotonic_end": 30323.745110995,
+      "evaluation_monotonic_start": 30323.733551637,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.7962255391754063,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.11626899868133478,
+        "qp_ms": 7.536114997492405,
+        "scan_to_input_ready_ms": 0.13930299974163063,
+        "semantic_ms": 0.0,
+        "total_ms": 11.559358001250075
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 6.0,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.24001857512573374,
+          -8.243333409350724e-15
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.24001857512573374,
+          -8.243333409350724e-15
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.20377446082459363,
+        3.859706665001374e-16,
+        3.830240827470108e-15
+      ],
+      "robot_velocity": [
+        0.24001066661609732,
+        0.0
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 6.0,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 6.0,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 17,
+      "evaluation_monotonic_end": 30323.844819423,
+      "evaluation_monotonic_start": 30323.833860638,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.7722240849968167,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.11359500422258861,
+        "qp_ms": 7.047761999274371,
+        "scan_to_input_ready_ms": 0.13976400077808648,
+        "semantic_ms": 0.0,
+        "total_ms": 10.958785002003424
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.002000000000000668,
+      "odom_timestamp": 6.1,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.2400211066195746,
+          -1.4943266930607392e-14
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.2400211066195746,
+          -1.4943266930607392e-14
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.22777591500318317,
+        4.8584940289253e-16,
+        7.216421052576835e-15
+      ],
+      "robot_velocity": [
+        0.24001857512583605,
+        3.4416913763379853e-13
+      ],
+      "scan_age_s": 0.002000000000000668,
+      "scan_timestamp": 6.1,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 6.1,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 18,
+      "evaluation_monotonic_end": 30323.945081535,
+      "evaluation_monotonic_start": 30323.933856468,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.748222103441052,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.0871560005180072,
+        "qp_ms": 7.527407004090492,
+        "scan_to_input_ready_ms": 0.1754219993017614,
+        "semantic_ms": 0.0,
+        "total_ms": 11.225066999031696
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 6.2,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.2400106433362094,
+          -1.0074561380829816e-14
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.2400106433362094,
+          -1.0074561380829816e-14
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.251777896558948,
+        5.729729608628998e-16,
+        4.662908095938975e-15
+      ],
+      "robot_velocity": [
+        0.2400211066198324,
+        -5.551115123125783e-15
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 6.2,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 6.2,
+      "single_flight": true
+    },
+    {
+      "actuation_eligible": true,
+      "current_clearance": 8.0,
+      "current_collision": false,
+      "deadline_miss": false,
+      "deadline_ms": 200.0,
+      "equivalence": {
+        "candidate": 0.0,
+        "d_geo": 0.0,
+        "eligibility": true,
+        "fallback": true,
+        "g_geo": 0.0,
+        "margin": 0.0,
+        "points": 0.0,
+        "status": true
+      },
+      "evaluation_index": 19,
+      "evaluation_monotonic_end": 30324.044930959,
+      "evaluation_monotonic_start": 30324.033825938,
+      "execution_output": [
+        0.0,
+        0.0
+      ],
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "goal_distance": 3.7242205054799644,
+      "label": [
+        "SHADOW_ONLY",
+        "NOT_ACTUATED"
+      ],
+      "late_candidate_policy": "ON_TIME_SHADOW_RESULT",
+      "latency": {
+        "exact_geometry_ms": 0.12370399781502783,
+        "qp_ms": 7.237401001475519,
+        "scan_to_input_ready_ms": 0.15243699817801826,
+        "semantic_ms": 0.0,
+        "total_ms": 11.105020999821136
+      },
+      "mode": "P0",
+      "observable_point_count": 0,
+      "odom_age_s": 0.0019999999999997797,
+      "odom_timestamp": 6.3,
+      "pending_queue_limit": 1,
+      "replay": {
+        "candidate": [
+          0.2400202979931413,
+          -7.603984648524803e-15
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "result": {
+        "candidate": [
+          0.2400202979931413,
+          -7.603984648524803e-15
+        ],
+        "d_geo": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "eligible": true,
+        "fallback_reason": null,
+        "g_geo": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "margin": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance": 8.0,
+        "solver_iterations": 3,
+        "status": "SOLVED_SAFE"
+      },
+      "robot_pose": [
+        0.2757794945200355,
+        6.742715873926482e-16,
+        3.2196181639262715e-15
+      ],
+      "robot_velocity": [
+        0.2400106433364635,
+        -4.440892098500626e-14
+      ],
+      "scan_age_s": 0.0019999999999997797,
+      "scan_timestamp": 6.3,
+      "scene": "empty_world",
+      "semantic": {
+        "enabled": false,
+        "fallback_reason": null,
+        "semantic_valid": false,
+        "source": "NONE"
+      },
+      "simulation_timestamp": 6.3,
+      "single_flight": true
+    }
+  ],
+  "scene": "empty_world",
+  "self_return_count": 0,
+  "single_flight": true,
+  "snapshot_count": 5,
+  "status": "PASSED",
+  "sustained_backlog": false,
+  "synchronization": [
+    {
+      "image": 4.3,
+      "odom": 4.3,
+      "scan": 4.3,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 4.302
+    },
+    {
+      "image": 4.4,
+      "odom": 4.32,
+      "scan": 4.5,
+      "scan_image_skew": 0.09999999999999964,
+      "scan_odom_skew": 0.17999999999999972,
+      "sim_time": 4.412
+    },
+    {
+      "image": 4.6,
+      "odom": 4.6,
+      "scan": 4.6,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 4.605
+    },
+    {
+      "image": 4.7,
+      "odom": 4.7,
+      "scan": 4.7,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 4.702
+    },
+    {
+      "image": 4.8,
+      "odom": 4.8,
+      "scan": 4.8,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 4.802
+    },
+    {
+      "image": 4.9,
+      "odom": 4.9,
+      "scan": 4.9,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 4.902
+    },
+    {
+      "image": 5.0,
+      "odom": 5.0,
+      "scan": 5.0,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.002
+    },
+    {
+      "image": 5.1,
+      "odom": 5.1,
+      "scan": 5.1,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.102
+    },
+    {
+      "image": 5.2,
+      "odom": 5.2,
+      "scan": 5.2,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.202
+    },
+    {
+      "image": 5.3,
+      "odom": 5.3,
+      "scan": 5.3,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.302
+    },
+    {
+      "image": 5.4,
+      "odom": 5.4,
+      "scan": 5.4,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.402
+    },
+    {
+      "image": 5.5,
+      "odom": 5.5,
+      "scan": 5.5,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.502
+    },
+    {
+      "image": 5.6,
+      "odom": 5.6,
+      "scan": 5.6,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.602
+    },
+    {
+      "image": 5.7,
+      "odom": 5.7,
+      "scan": 5.7,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.702
+    },
+    {
+      "image": 5.8,
+      "odom": 5.8,
+      "scan": 5.8,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.802
+    },
+    {
+      "image": 5.9,
+      "odom": 5.9,
+      "scan": 5.9,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 5.902
+    },
+    {
+      "image": 6.0,
+      "odom": 6.0,
+      "scan": 6.0,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 6.002
+    },
+    {
+      "image": 6.1,
+      "odom": 6.1,
+      "scan": 6.1,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 6.102
+    },
+    {
+      "image": 6.2,
+      "odom": 6.2,
+      "scan": 6.2,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 6.202
+    },
+    {
+      "image": 6.3,
+      "odom": 6.3,
+      "scan": 6.3,
+      "scan_image_skew": 0.0,
+      "scan_odom_skew": 0.0,
+      "sim_time": 6.302
+    }
+  ],
+  "timestamps": {
+    "camera_info": {
+      "count": 21,
+      "negative_jumps": 0
+    },
+    "clock": {
+      "count": 1912,
+      "negative_jumps": 0
+    },
+    "image": {
+      "count": 21,
+      "negative_jumps": 0
+    },
+    "odom": {
+      "count": 102,
+      "negative_jumps": 0
+    },
+    "scan": {
+      "count": 20,
+      "negative_jumps": 0
+    }
+  },
+  "translation": 0.2757794945200355,
+  "yaw_delta": 3.219805157017544e-15
+}

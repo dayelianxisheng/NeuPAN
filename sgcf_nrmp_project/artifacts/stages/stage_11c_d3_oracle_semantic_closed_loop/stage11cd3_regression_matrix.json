@@ -1,0 +1,10 @@
+{
+  "status": "NOT_RUN_DUE_TO_PRIOR_HARD_BLOCK",
+  "stage09c_preserved": true,
+  "core_modified": false,
+  "d_safe_m": 0.25,
+  "speed_bounds": {
+    "linear": 1.0,
+    "angular": 1.5
+  }
+}

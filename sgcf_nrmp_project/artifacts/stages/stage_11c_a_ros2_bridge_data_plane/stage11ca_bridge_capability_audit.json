@@ -1,0 +1,36 @@
+{
+  "all_expected_mappings_registered": true,
+  "debian_metapackage": "ros-humble-ros-gzharmonic",
+  "debian_version": "0.244.12-3jammy",
+  "draft_package_name_rejected": "ros_gzharmonic_bridge",
+  "installed_executable": "parameter_bridge",
+  "installed_ros_package": "ros_gz_bridge",
+  "registered_mapping_count": 6,
+  "status": "PASSED",
+  "topic_records": {
+    "/camera/camera_info": {
+      "expected_type": "sensor_msgs/msg/CameraInfo",
+      "observed": true
+    },
+    "/camera/image_raw": {
+      "expected_type": "sensor_msgs/msg/Image",
+      "observed": true
+    },
+    "/clock": {
+      "expected_type": "rosgraph_msgs/msg/Clock",
+      "observed": true
+    },
+    "/cmd_vel": {
+      "expected_type": "geometry_msgs/msg/Twist",
+      "observed": true
+    },
+    "/odom": {
+      "expected_type": "nav_msgs/msg/Odometry",
+      "observed": true
+    },
+    "/scan": {
+      "expected_type": "sensor_msgs/msg/LaserScan",
+      "observed": true
+    }
+  }
+}

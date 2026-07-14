@@ -1,0 +1,19 @@
+{
+  "binary_identity": "NOT_BINARY_IDENTICAL_TO_HISTORICAL_STAGE_11B_N_IMAGE",
+  "bridge": "ros_gz_bridge",
+  "bridge_image_id": "sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862",
+  "environment_mutated": false,
+  "gazebo_image_id": "sha256:72af30cf91fb3001e019c6e57846dbe8d72497516882cc3d0e99a7d5551759ac",
+  "gazebo_sim": "8.14.0",
+  "gz_partition": "sgcf_stage11ca",
+  "gz_rendering_abi": 8,
+  "historical_stage11bn_image_available": false,
+  "immutable_ids_from": "Stage 11C-B stage11cb_runtime_image_binding.json",
+  "network_mode": "host",
+  "ros_distro": "Humble",
+  "ros_domain_id": 42,
+  "runtime_baseline": "FUNCTIONALLY_EQUIVALENT_RUNTIME_BASELINE",
+  "runtime_started": false,
+  "sdformat": "14.9.0",
+  "status": "PASSED_PRECHECK"
+}

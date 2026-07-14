@@ -1,0 +1,130 @@
+{
+  "expected": {
+    "camera": "sgcf_robot/camera_link/rgb_camera",
+    "odom": "odom",
+    "odom_child": "base_link",
+    "scan": "sgcf_robot/lidar_link/lidar"
+  },
+  "passed": true,
+  "scenes": {
+    "empty_world": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "human_path_center": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "initial_collision": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "outdated_rgb_contract": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "rgb_dropout_contract": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "semantic_infeasible": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "single_static_obstacle": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    }
+  }
+}

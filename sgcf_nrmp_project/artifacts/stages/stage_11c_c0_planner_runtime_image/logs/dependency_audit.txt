@@ -1,0 +1,5 @@
+Formal planner import chain reaches geometry_checker.py.
+geometry_checker.py unconditionally imports torch and uses it for exact observable geometry.
+pyproject.toml requires torch==2.8.0 and numpy>=1.26,<2.
+Stage 11C-C0 prohibits Torch and freezes numpy==1.21.5.
+Decision: BLOCKED_RUNTIME_TRAINING_DEPENDENCY_COUPLING

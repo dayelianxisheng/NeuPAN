@@ -1,0 +1,16 @@
+{
+  "empty_world": {
+    "final_angular_speed": 3.837704010035483e-20,
+    "final_linear_speed": 1.2004248455121106e-20,
+    "last_0_5s_displacement": 3.631555279654283e-21,
+    "last_0_5s_yaw": 3.745841671603558e-21,
+    "passed": true
+  },
+  "single_static_obstacle": {
+    "final_angular_speed": 1.1471481189197683e-20,
+    "final_linear_speed": 5.7819684827255246e-21,
+    "last_0_5s_displacement": 3.566232527520373e-21,
+    "last_0_5s_yaw": 3.78779486667501e-21,
+    "passed": true
+  }
+}

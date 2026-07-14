@@ -1,0 +1,13 @@
+{
+  "base_bridge_image_id": "sha256:c2288babf5595cdf3caafcd23fd68de2714863b5132ffb10b3cbd10006ca2862",
+  "cmd_vel_publish_count": 0,
+  "core_hash": "3b94da1777e3d218c71792f2be91084b4de1e69edd498c9f9933d380d067a136",
+  "derived_image_built": false,
+  "gazebo_image_id": "sha256:72af30cf91fb3001e019c6e57846dbe8d72497516882cc3d0e99a7d5551759ac",
+  "gazebo_models_hash": "4c69e37ccded2ed479dd2625e4895d6f4e971a0803aa5477435e2c0e074af90e",
+  "gazebo_run_count": 0,
+  "gazebo_worlds_hash": "df8b4d1b690e8e25f6f196cc76a3f5a12218198e84fd1fed0d9509278e53a40f",
+  "original_bridge_docker_hash": "1206f1e59306d1ed2b7ba71348f798cf0650ce6bb9717648763966c9f22a9d4c",
+  "protected_changes_by_stage11cc0": [],
+  "status": "PASSED"
+}

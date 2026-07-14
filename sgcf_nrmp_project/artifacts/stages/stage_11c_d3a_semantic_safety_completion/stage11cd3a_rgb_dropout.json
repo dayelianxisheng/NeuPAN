@@ -1,0 +1,22 @@
+{
+  "semantic_valid": false,
+  "semantic_invalid_contract_passed": true,
+  "fallback_reason": "RGB_DROPOUT",
+  "observed_fallback_reasons": [
+    "['RGB_DROPOUT']"
+  ],
+  "semantic_contribution_enabled": false,
+  "semantic_margin_max": 0.0,
+  "pair_equivalence": {
+    "samples": 20,
+    "d_geo_max": 0.0,
+    "g_geo_max": 0.0,
+    "candidate_max": 0.0,
+    "fallback_geometry_status_agreement": true
+  },
+  "nonzero_actuation_count": 2,
+  "simulation_time_contract": false,
+  "self_return_count": 0,
+  "stale": 0,
+  "backlog": 0
+}

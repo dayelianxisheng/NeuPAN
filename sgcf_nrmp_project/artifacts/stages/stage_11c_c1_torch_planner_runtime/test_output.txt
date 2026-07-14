@@ -1,0 +1,19 @@
+PASS derived image build
+PASS system ROS NumPy 1.21.5 / SciPy 1.8.0
+PASS isolated Planner venv
+PASS rclpy, torch, osqp, Planner imports
+PASS CPU-only formal execution; CUDA tensor/context/kernel counts = 0
+PASS Exact Geometry six fixtures; max d_geo/g_geo error = 0
+PASS OSQP deterministic smoke 20/20
+PASS P0/semantic/R1/collision replay
+PASS CPU steady-state P95 17.433560 ms <= 200 ms
+PASS ROS Node create/destroy without /cmd_vel
+PASS ros_gz_bridge mappings 6/6
+PASS Planner unittest 47/47
+PASS frozen components unchanged
+PASS residual test containers = 0
+PASS Gazebo not run; Stage 11C-C not started
+PASS JSON parse 4/4 machine-readable final artifacts
+PASS compileall Core and Stage 11C-C1 tools
+PASS git diff --check
+PASS residual Docker build processes = 0

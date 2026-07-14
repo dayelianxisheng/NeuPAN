@@ -1,0 +1,100 @@
+{
+  "strategy": "SAFE_PREFIX_PLUS_TERMINAL_HOLD",
+  "applied": true,
+  "iterations": [
+    {
+      "applied": true,
+      "first_unsafe_state_index": 5,
+      "last_safe_state_index": 4,
+      "terminal_hold_control_index": 4,
+      "minimum_clearance_before_m": 0.0,
+      "minimum_clearance_after_m": 0.3084648398031907,
+      "safe_prefix_states": [
+        [
+          7.422785593299207e-21,
+          -2.3360570785365742e-39,
+          -1.8739798738978425e-19
+        ],
+        [
+          0.048,
+          -8.995103394709645e-21,
+          -1.8739798738978425e-19
+        ],
+        [
+          0.14400000000000002,
+          -2.6985310184128935e-20,
+          -1.8739798738978425e-19
+        ],
+        [
+          0.28800000000000003,
+          -5.3970620368257865e-20,
+          4.439018118626728e-16
+        ],
+        [
+          0.4424909564385624,
+          6.852484485910682e-17,
+          8.879910217127354e-16
+        ]
+      ],
+      "terminal_hold_state": [
+        0.4424909564385624,
+        6.852484485910682e-17,
+        8.879910217127354e-16
+      ]
+    },
+    {
+      "applied": true,
+      "first_unsafe_state_index": 6,
+      "last_safe_state_index": 5,
+      "terminal_hold_control_index": 5,
+      "minimum_clearance_before_m": 0.2174627523427891,
+      "minimum_clearance_after_m": 0.2651412229151385,
+      "safe_prefix_states": [
+        [
+          7.422785593299207e-21,
+          -2.3360570785365742e-39,
+          -1.8739798738978425e-19
+        ],
+        [
+          0.04799999947116769,
+          -8.995103295607534e-21,
+          0.11999997278273943
+        ],
+        [
+          0.14330962796494714,
+          0.011492369201852563,
+          0.23999960647253804
+        ],
+        [
+          0.27785891336442275,
+          0.04441877055765818,
+          0.2500221322444206
+        ],
+        [
+          0.3825008481465951,
+          0.07114071019952732,
+          0.24997299870546413
+        ],
+        [
+          0.44063597918794994,
+          0.08598337419259362,
+          0.25001881170515294
+        ]
+      ],
+      "terminal_hold_state": [
+        0.44063597918794994,
+        0.08598337419259362,
+        0.25001881170515294
+      ]
+    },
+    {
+      "applied": false,
+      "first_unsafe_state_index": null,
+      "minimum_clearance_before_m": 0.25228306268356065,
+      "minimum_clearance_after_m": 0.25228306268356065
+    }
+  ],
+  "unsafe_candidate_relinearized_after_repair": true,
+  "final_full_horizon_minimum_clearance_m": 0.25370515755718764,
+  "final_full_horizon_collision": false
+}

@@ -1,0 +1,250 @@
+{
+  "empty_world": {
+    "P0": {
+      "clearance_max": 8.0,
+      "clearance_min": 8.0,
+      "collision": false,
+      "eligibility": [
+        true
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"enabled\": false, \"fallback_reason\": null, \"semantic_valid\": false, \"source\": \"NONE\"}"
+      ],
+      "statuses": [
+        "SOLVED_SAFE"
+      ]
+    }
+  },
+  "human_path_center": {
+    "P0": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"enabled\": false, \"fallback_reason\": null, \"semantic_valid\": false, \"source\": \"NONE\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    },
+    "P1": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"class_id\": 2, \"class_name\": \"HUMAN\", \"enabled\": true, \"fallback_reason\": null, \"not_stage10\": true, \"scope\": \"SIMULATION_ONLY\", \"semantic_valid\": true, \"source\": \"ORACLE_GROUND_TRUTH\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    },
+    "P2": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"class_id\": 2, \"class_name\": \"HUMAN\", \"enabled\": true, \"fallback_reason\": null, \"not_stage10\": true, \"scope\": \"SIMULATION_ONLY\", \"semantic_valid\": true, \"source\": \"ORACLE_GROUND_TRUTH\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    }
+  },
+  "initial_collision": {
+    "P0": {
+      "clearance_max": 0.0,
+      "clearance_min": 0.0,
+      "collision": true,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"enabled\": false, \"fallback_reason\": null, \"semantic_valid\": false, \"source\": \"NONE\"}"
+      ],
+      "statuses": [
+        "EMERGENCY_STOP"
+      ]
+    }
+  },
+  "outdated_rgb_contract": {
+    "P0": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"enabled\": false, \"fallback_reason\": null, \"semantic_valid\": false, \"source\": \"NONE\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    },
+    "P2": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"class_id\": 2, \"class_name\": \"HUMAN\", \"enabled\": false, \"fallback_reason\": \"OUTDATED_IMAGE\", \"not_stage10\": true, \"scope\": \"SIMULATION_ONLY\", \"semantic_valid\": false, \"source\": \"ORACLE_GROUND_TRUTH\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    }
+  },
+  "rgb_dropout_contract": {
+    "P0": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"enabled\": false, \"fallback_reason\": null, \"semantic_valid\": false, \"source\": \"NONE\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    },
+    "P2": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"class_id\": 2, \"class_name\": \"HUMAN\", \"enabled\": false, \"fallback_reason\": \"RGB_DROPOUT\", \"not_stage10\": true, \"scope\": \"SIMULATION_ONLY\", \"semantic_valid\": false, \"source\": \"ORACLE_GROUND_TRUTH\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    }
+  },
+  "semantic_infeasible": {
+    "P0": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"enabled\": false, \"fallback_reason\": null, \"semantic_valid\": false, \"source\": \"NONE\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    },
+    "P1": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "SEMANTIC_QP_INFEASIBLE"
+      ],
+      "semantic_contexts": [
+        "{\"class_id\": 2, \"class_name\": \"HUMAN\", \"enabled\": true, \"fallback_reason\": null, \"not_stage10\": true, \"scope\": \"SIMULATION_ONLY\", \"semantic_valid\": true, \"source\": \"ORACLE_GROUND_TRUTH\"}"
+      ],
+      "statuses": [
+        "GEOMETRICALLY_INFEASIBLE"
+      ]
+    },
+    "P2": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "SEMANTIC_QP_INFEASIBLE"
+      ],
+      "semantic_contexts": [
+        "{\"class_id\": 2, \"class_name\": \"HUMAN\", \"enabled\": true, \"fallback_reason\": null, \"not_stage10\": true, \"scope\": \"SIMULATION_ONLY\", \"semantic_valid\": true, \"source\": \"ORACLE_GROUND_TRUTH\"}"
+      ],
+      "statuses": [
+        "GEOMETRICALLY_INFEASIBLE"
+      ]
+    }
+  },
+  "single_static_obstacle": {
+    "P0": {
+      "clearance_max": 0.7509557962417531,
+      "clearance_min": 0.7509557962417531,
+      "collision": false,
+      "eligibility": [
+        false
+      ],
+      "evaluation_count": 20,
+      "fallback_reasons": [
+        "None"
+      ],
+      "semantic_contexts": [
+        "{\"enabled\": false, \"fallback_reason\": null, \"semantic_valid\": false, \"source\": \"NONE\"}"
+      ],
+      "statuses": [
+        "REJECTED_BY_GEOMETRY_CHECK"
+      ]
+    }
+  }
+}

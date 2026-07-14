@@ -1,0 +1,11 @@
+{
+  "authoritative_base_image_preserved": true,
+  "bootstrap_alias_preserved": true,
+  "bridge_started": false,
+  "derived_build_started": false,
+  "gazebo_started": false,
+  "planner_started": false,
+  "probe_image_removed": true,
+  "residual_stage_container_count": 0,
+  "status": "PASS"
+}

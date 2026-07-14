@@ -1,0 +1,21 @@
+{
+  "empty_world": {
+    "frozen_D1A_status": "SOLVED_SAFE",
+    "not_rerun": true,
+    "reason": "No patch applied"
+  },
+  "initial_collision": {
+    "frozen_status": "EMERGENCY_STOP",
+    "not_rerun": true,
+    "reason": "No patch applied"
+  },
+  "semantic_infeasible": {
+    "frozen_status": "GEOMETRICALLY_INFEASIBLE",
+    "not_rerun": true,
+    "reason": "No patch applied"
+  },
+  "stage05_stage09b_suite": {
+    "not_rerun": true,
+    "reason": "Stopped before mutation because the proposed patch would weaken safety policy"
+  }
+}

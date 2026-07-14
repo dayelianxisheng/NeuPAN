@@ -1,0 +1,9 @@
+{
+  "angular_command_to_first_odometry_response_s": 0.009999999999999787,
+  "angular_zero_to_stop_s": 0.02,
+  "linear_command_to_first_odometry_response_s": 0.009999999999999787,
+  "linear_zero_to_stop_s": 0.02,
+  "percentiles_reported": false,
+  "ros_to_gazebo_transport_delay": "not timestamped by Gazebo Twist payload; value receipt directly captured",
+  "sample_scope": "single deterministic command sequence; descriptive only; no percentile claim"
+}

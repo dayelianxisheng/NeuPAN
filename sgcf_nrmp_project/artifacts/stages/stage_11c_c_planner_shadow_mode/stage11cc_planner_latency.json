@@ -1,0 +1,71 @@
+{
+  "blocked_scenes": [
+    "semantic_infeasible"
+  ],
+  "decision": "BLOCKED_PLANNER_INTERFACE_LATENCY",
+  "empty_world": {
+    "backlog_count": 0,
+    "count": 19,
+    "max": 13.021034003031673,
+    "mean": 11.178631947634704,
+    "p50": 11.142358998768032,
+    "p95": 12.36766100009845,
+    "stale_count": 0
+  },
+  "human_path_center": {
+    "backlog_count": 0,
+    "count": 57,
+    "max": 127.96467700172798,
+    "mean": 46.67367638581996,
+    "p50": 52.17870500200661,
+    "p95": 54.33147079820628,
+    "stale_count": 0
+  },
+  "initial_collision": {
+    "backlog_count": 0,
+    "count": 19,
+    "max": 0.6132279995654244,
+    "mean": 0.5073518946837315,
+    "p50": 0.4923999986203853,
+    "p95": 0.5908656974497717,
+    "stale_count": 0
+  },
+  "outdated_rgb_contract": {
+    "backlog_count": 0,
+    "count": 38,
+    "max": 37.87921799812466,
+    "mean": 29.408328499764472,
+    "p50": 28.69954050220258,
+    "p95": 35.41547000113496,
+    "stale_count": 0
+  },
+  "passed": false,
+  "rgb_dropout_contract": {
+    "backlog_count": 0,
+    "count": 38,
+    "max": 37.55639800147037,
+    "mean": 29.547847552940336,
+    "p50": 28.654064999500406,
+    "p95": 35.208089950356225,
+    "stale_count": 0
+  },
+  "semantic_infeasible": {
+    "backlog_count": 0,
+    "count": 57,
+    "max": 219.34946299734293,
+    "mean": 139.97269649125724,
+    "p50": 163.62346599999,
+    "p95": 216.92281919895322,
+    "stale_count": 0
+  },
+  "single_static_obstacle": {
+    "backlog_count": 0,
+    "count": 19,
+    "max": 39.32697200070834,
+    "mean": 30.535056684273417,
+    "p50": 29.647605002537603,
+    "p95": 35.656423698310384,
+    "stale_count": 0
+  },
+  "threshold_ms": 200.0
+}

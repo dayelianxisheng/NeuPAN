@@ -1,0 +1,20 @@
+{
+  "actuation_eligible_evaluation_count": 13,
+  "collision_count": 0,
+  "core_statuses": [
+    "SOLVED_SAFE"
+  ],
+  "eligible_deadline_miss_count": 0,
+  "final_goal_distance_m": 2.0798419363100895,
+  "forwarded_nonzero_publish_count": 160,
+  "goal_progress_m": 1.9201580636899105,
+  "ineligible_executed_count": 0,
+  "initial_goal_distance_m": 4.0,
+  "legal_nonzero_candidate_count": 20,
+  "passed": true,
+  "planner_evaluations": 20,
+  "queue_depth_max": 1,
+  "self_return_count": 0,
+  "stale_executed_count": 0,
+  "sustained_backlog": false
+}

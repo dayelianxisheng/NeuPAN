@@ -1,0 +1,33 @@
+{
+  "human_path_side_shadow": {
+    "observable_point_count_p0": 13,
+    "observable_point_count_p2": 13,
+    "same_nominal_d_geo_max": 0.0,
+    "same_nominal_g_geo_max": 0.0,
+    "current_clearance_difference": 0.0,
+    "note": "later per-mode trajectories differ, so trajectory-indexed d_geo arrays are not compared as identical queries"
+  },
+  "vehicle_path_shadow": {
+    "observable_point_count_p0": 13,
+    "observable_point_count_p2": 13,
+    "same_nominal_d_geo_max": 0.0,
+    "same_nominal_g_geo_max": 0.0,
+    "current_clearance_difference": 0.0,
+    "note": "later per-mode trajectories differ, so trajectory-indexed d_geo arrays are not compared as identical queries"
+  },
+  "rgb_dropout": {
+    "samples": 20,
+    "d_geo_max": 0.0,
+    "g_geo_max": 0.0,
+    "candidate_max": 0.0,
+    "fallback_geometry_status_agreement": true
+  },
+  "outdated_rgb": {
+    "samples": 20,
+    "d_geo_max": 0.0,
+    "g_geo_max": 0.0,
+    "candidate_max": 0.0,
+    "fallback_geometry_status_agreement": true
+  },
+  "semantic_changes_exact_geometry": false
+}

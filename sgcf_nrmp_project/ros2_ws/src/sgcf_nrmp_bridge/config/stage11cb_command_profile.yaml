@@ -1,0 +1,10 @@
+stage11cb_open_loop_audit:
+  ros__parameters:
+    use_sim_time: true
+    linear_velocity_mps: 0.10
+    linear_duration_s: 1.0
+    angular_velocity_radps: 0.30
+    angular_duration_s: 1.0
+    zero_settle_duration_s: 1.0
+    final_stationary_duration_s: 2.0
+

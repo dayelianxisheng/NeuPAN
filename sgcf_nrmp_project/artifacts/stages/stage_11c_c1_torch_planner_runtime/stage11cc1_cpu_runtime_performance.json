@@ -1,0 +1,29 @@
+{
+  "cpu_execution_trace": {
+    "cuda_allocation_count": 0,
+    "cuda_context_count": 0,
+    "cuda_init_calls": 0,
+    "cuda_kernel_count": 0,
+    "cuda_set_device_calls": 0,
+    "cuda_tensor_count": 0,
+    "explicit_cuda_to_requests": 0,
+    "geometry_checker_device": "cpu",
+    "module_cuda_calls": 0,
+    "observed_tensor_devices": [
+      "cpu"
+    ],
+    "planner_device": "cpu",
+    "tensor_cuda_calls": 0
+  },
+  "execution_device": "cpu",
+  "includes_import_time": false,
+  "maximum_ms": 18.507947999751195,
+  "mean_ms": 17.15844524973363,
+  "p50_ms": 17.10113649824052,
+  "p95_ms": 17.433560303106788,
+  "passed": true,
+  "sample_count": 100,
+  "status": "PASS",
+  "threshold_ms": 200.0,
+  "warmup_iterations": 8
+}

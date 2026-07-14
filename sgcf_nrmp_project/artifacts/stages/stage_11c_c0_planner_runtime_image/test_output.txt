@@ -1,0 +1,31 @@
+Stage 11C-C0 build-preflight tests
+==================================
+
+PASS: immutable Bridge image ID obtained from Stage 11C-A/B evidence
+PASS: Python ABI evidence is CPython 3.10 x86-64
+PASS: formal Planner import chain identified
+PASS: CVXPY runtime requirement identified
+PASS: OSQP backend requirement identified
+FAIL: Torch can be excluded from formal Planner runtime
+  geometry_checker.py unconditionally imports torch
+  BatchedRectangleObservableOracle uses torch tensors and autograd
+FAIL: frozen numerical-stack contract is compatible with project metadata
+  image numpy: 1.21.5
+  pyproject numpy requirement: >=1.26,<2
+
+Decision: BLOCKED_RUNTIME_TRAINING_DEPENDENCY_COUPLING
+
+Wheel download: NOT EXECUTED
+Image build: NOT EXECUTED
+OSQP smoke: NOT EXECUTED
+Planner construction: NOT EXECUTED
+Core replay: NOT EXECUTED
+ROS coexistence: NOT EXECUTED
+Bridge regression: NOT EXECUTED
+Gazebo runs: 0
+/cmd_vel publications: 0
+
+JSON parse: PASS
+compileall: PASS
+git diff --check: PASS
+Protected component incremental audit: PASS

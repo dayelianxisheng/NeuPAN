@@ -1,0 +1,12 @@
+{
+  "same_configuration": true,
+  "same_goal": true,
+  "observable_point_counts": {
+    "P0": 13,
+    "P1": 13,
+    "P2": 13
+  },
+  "p0_p1_d_geo_max_difference": 0.05618189742215962,
+  "p0_p2_d_geo_max_difference": 0.05618189742215962,
+  "note": "independent deterministic initial runs; ROS/Core replay within each run is exact"
+}

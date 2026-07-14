@@ -1,0 +1,17 @@
+{
+  "all_core_gates_passed": true,
+  "angular_stop_passed": true,
+  "angular_yaw_delta_rad": 0.2906999999086391,
+  "linear_forward_displacement_m": 0.09689999999770735,
+  "linear_stop_passed": true,
+  "node_status": "PASSED",
+  "residual_process_count": 0,
+  "self_return_count": 0,
+  "sensor_counts": {
+    "clock": 8980,
+    "image": 90,
+    "info": 90,
+    "odom": 448,
+    "scan": 90
+  }
+}

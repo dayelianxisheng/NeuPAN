@@ -1,0 +1,31 @@
+{
+  "statuses": {
+    "P0": [
+      "REJECTED_BY_GEOMETRY_CHECK",
+      "SOLVED_SAFE"
+    ],
+    "P1": [
+      "SEMANTICALLY_INFEASIBLE"
+    ],
+    "P2": [
+      "SEMANTICALLY_INFEASIBLE"
+    ]
+  },
+  "eligible": {
+    "P0": 3,
+    "P1": 0,
+    "P2": 0
+  },
+  "deadline_miss": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 0
+  },
+  "nonzero_actuation_count": 0,
+  "late_or_ineligible_executed": 0,
+  "ros_core_max": 0.0,
+  "p95_ms": 167.57412839797325,
+  "stale": 0,
+  "backlog": 0,
+  "zero_fallback_passed": true
+}

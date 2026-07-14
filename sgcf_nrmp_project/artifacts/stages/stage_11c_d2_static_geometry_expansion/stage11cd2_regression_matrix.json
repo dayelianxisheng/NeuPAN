@@ -1,0 +1,12 @@
+{
+  "stage09c_tests": "PASS",
+  "empty_world_fixture": "PASS",
+  "initial_collision": "EMERGENCY_STOP",
+  "semantic_infeasible": "GEOMETRICALLY_INFEASIBLE",
+  "d_safe_m": 0.25,
+  "speed_bounds": {
+    "linear": 1.0,
+    "angular": 1.5
+  },
+  "full_horizon_recheck": "ENABLED"
+}

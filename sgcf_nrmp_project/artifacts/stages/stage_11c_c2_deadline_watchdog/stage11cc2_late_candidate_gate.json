@@ -1,0 +1,33 @@
+{
+  "human_path_center": {
+    "candidate_bridge_subscriber_count": 0,
+    "cmd_vel_publisher_count": 1,
+    "gazebo_nonzero_count": 0,
+    "late_candidate_count": 0,
+    "late_candidate_to_cmd_vel_count": 0,
+    "late_candidate_to_gazebo_count": 0,
+    "ros_nonzero_count": 0,
+    "sole_publisher": "stage11cc_zero_guard"
+  },
+  "passed": true,
+  "semantic_infeasible": {
+    "candidate_bridge_subscriber_count": 0,
+    "cmd_vel_publisher_count": 1,
+    "gazebo_nonzero_count": 0,
+    "late_candidate_count": 2,
+    "late_candidate_to_cmd_vel_count": 0,
+    "late_candidate_to_gazebo_count": 0,
+    "ros_nonzero_count": 0,
+    "sole_publisher": "stage11cc_zero_guard"
+  },
+  "single_static_obstacle": {
+    "candidate_bridge_subscriber_count": 0,
+    "cmd_vel_publisher_count": 1,
+    "gazebo_nonzero_count": 0,
+    "late_candidate_count": 0,
+    "late_candidate_to_cmd_vel_count": 0,
+    "late_candidate_to_gazebo_count": 0,
+    "ros_nonzero_count": 0,
+    "sole_publisher": "stage11cc_zero_guard"
+  }
+}

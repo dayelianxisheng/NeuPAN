@@ -1,0 +1,77 @@
+{
+  "candidate_reaching_cmd_vel_count": 0,
+  "candidate_reaching_gazebo_count": 0,
+  "passed": true,
+  "scenes": {
+    "empty_world": {
+      "candidate_subscription_count": 0,
+      "cmd_vel_publisher": "stage11cc_zero_guard",
+      "cmd_vel_publisher_count": 1,
+      "gazebo_command_count": 78,
+      "gazebo_nonzero_command_count": 0,
+      "planner_publishes_cmd_vel": false,
+      "ros_nonzero_message_count": 0,
+      "ros_zero_message_count": 279
+    },
+    "human_path_center": {
+      "candidate_subscription_count": 0,
+      "cmd_vel_publisher": "stage11cc_zero_guard",
+      "cmd_vel_publisher_count": 1,
+      "gazebo_command_count": 171,
+      "gazebo_nonzero_command_count": 0,
+      "planner_publishes_cmd_vel": false,
+      "ros_nonzero_message_count": 0,
+      "ros_zero_message_count": 372
+    },
+    "initial_collision": {
+      "candidate_subscription_count": 0,
+      "cmd_vel_publisher": "stage11cc_zero_guard",
+      "cmd_vel_publisher_count": 1,
+      "gazebo_command_count": 78,
+      "gazebo_nonzero_command_count": 0,
+      "planner_publishes_cmd_vel": false,
+      "ros_nonzero_message_count": 0,
+      "ros_zero_message_count": 278
+    },
+    "outdated_rgb_contract": {
+      "candidate_subscription_count": 0,
+      "cmd_vel_publisher": "stage11cc_zero_guard",
+      "cmd_vel_publisher_count": 1,
+      "gazebo_command_count": 103,
+      "gazebo_nonzero_command_count": 0,
+      "planner_publishes_cmd_vel": false,
+      "ros_nonzero_message_count": 0,
+      "ros_zero_message_count": 303
+    },
+    "rgb_dropout_contract": {
+      "candidate_subscription_count": 0,
+      "cmd_vel_publisher": "stage11cc_zero_guard",
+      "cmd_vel_publisher_count": 1,
+      "gazebo_command_count": 103,
+      "gazebo_nonzero_command_count": 0,
+      "planner_publishes_cmd_vel": false,
+      "ros_nonzero_message_count": 0,
+      "ros_zero_message_count": 304
+    },
+    "semantic_infeasible": {
+      "candidate_subscription_count": 0,
+      "cmd_vel_publisher": "stage11cc_zero_guard",
+      "cmd_vel_publisher_count": 1,
+      "gazebo_command_count": 383,
+      "gazebo_nonzero_command_count": 0,
+      "planner_publishes_cmd_vel": false,
+      "ros_nonzero_message_count": 0,
+      "ros_zero_message_count": 584
+    },
+    "single_static_obstacle": {
+      "candidate_subscription_count": 0,
+      "cmd_vel_publisher": "stage11cc_zero_guard",
+      "cmd_vel_publisher_count": 1,
+      "gazebo_command_count": 78,
+      "gazebo_nonzero_command_count": 0,
+      "planner_publishes_cmd_vel": false,
+      "ros_nonzero_message_count": 0,
+      "ros_zero_message_count": 279
+    }
+  }
+}

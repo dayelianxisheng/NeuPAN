@@ -1,0 +1,7 @@
+{
+  "containers_stopped_and_removed": true,
+  "final_zero_cleanup_attempted": true,
+  "passed": true,
+  "residual_host_process_count": 0,
+  "residual_stage_container_count": 0
+}

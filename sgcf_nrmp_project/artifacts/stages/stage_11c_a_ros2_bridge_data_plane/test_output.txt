@@ -1,0 +1,27 @@
+Stage 11C-A validation summary
+
+bridge_contract_audit: PASSED
+mapping_count: 6
+runtime_package: ros_gz_bridge
+runtime_executable: parameter_bridge
+
+python3 -m unittest sgcf_nrmp_project.tools.test_stage11ca
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
+
+python3 -m compileall: PASSED
+bash -n run_stage11ca_bridge_gate.sh: PASSED
+git diff --check: PASSED
+protected path incremental check: PASSED
+runtime stage container residual count: 0
+
+Formal runtime sample thresholds:
+/clock: 6391 (required >= 50) PASS
+/scan: 34 (required >= 20) PASS
+/camera/image_raw: 11 (required >= 5) PASS
+/camera/camera_info: 1 (required >= 1) PASS
+/odom: 52 (required >= 20) PASS
+immutable image ID launch: PASS

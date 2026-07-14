@@ -1,0 +1,65 @@
+{
+  "counts": {
+    "clock": 8980,
+    "image": 90,
+    "info": 90,
+    "odom": 448,
+    "scan": 90
+  },
+  "phase_order": [
+    "ZERO_BASELINE",
+    "POSITIVE_LINEAR",
+    "ZERO_AFTER_LINEAR",
+    "POSITIVE_ANGULAR",
+    "ZERO_AFTER_ANGULAR",
+    "FINAL_STATIONARY",
+    "COMPLETE"
+  ],
+  "phase_records": [
+    {
+      "end_sim_time_s": 6.029,
+      "phase": "ZERO_BASELINE",
+      "start_sim_time_s": 5.01
+    },
+    {
+      "end_sim_time_s": 7.03,
+      "phase": "POSITIVE_LINEAR",
+      "start_sim_time_s": 6.029
+    },
+    {
+      "end_sim_time_s": 8.05,
+      "phase": "ZERO_AFTER_LINEAR",
+      "start_sim_time_s": 7.03
+    },
+    {
+      "end_sim_time_s": 9.05,
+      "phase": "POSITIVE_ANGULAR",
+      "start_sim_time_s": 8.05
+    },
+    {
+      "end_sim_time_s": 10.05,
+      "phase": "ZERO_AFTER_ANGULAR",
+      "start_sim_time_s": 9.05
+    },
+    {
+      "end_sim_time_s": 12.05,
+      "phase": "FINAL_STATIONARY",
+      "start_sim_time_s": 10.05
+    },
+    {
+      "end_sim_time_s": 12.05,
+      "phase": "COMPLETE",
+      "start_sim_time_s": 12.05
+    }
+  ],
+  "profile": {
+    "angular_duration_s": 1.0,
+    "angular_velocity_radps": 0.3,
+    "final_stationary_duration_s": 2.0,
+    "linear_duration_s": 1.0,
+    "linear_velocity_mps": 0.1,
+    "zero_settle_duration_s": 1.0
+  },
+  "status": "PASSED",
+  "use_sim_time": true
+}

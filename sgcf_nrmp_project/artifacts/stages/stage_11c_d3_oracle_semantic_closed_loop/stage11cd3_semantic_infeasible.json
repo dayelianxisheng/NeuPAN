@@ -1,0 +1,4 @@
+{
+  "status": "NOT_RUN_DUE_TO_PRIOR_HARD_BLOCK",
+  "reason": "P1/P2 human_path_center produced no legal nonzero closed-loop command"
+}

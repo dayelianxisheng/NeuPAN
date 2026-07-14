@@ -25,6 +25,7 @@ class PersistentPlannerQP:
         self.states = cp.Variable((T + 1, 3), name="states")
         self.controls = cp.Variable((T, 2), name="controls")
         self.slack = cp.Variable(T, nonneg=True, name="slack")
+        self.geometry_slack_max = cp.Parameter(nonneg=True, name="geometry_slack_max")
         self.initial_state = cp.Parameter(3, name="initial_state")
         self.reference = cp.Parameter((T + 1, 3), name="reference")
         self.nominal_states = cp.Parameter((T + 1, 3), name="nominal_states")
@@ -59,6 +60,7 @@ class PersistentPlannerQP:
         P = np.diag(cost["proximal"])
         objective = 0
         constraints = [self.states[0] == self.initial_state]
+        constraints += [self.slack <= self.geometry_slack_max]
         constraints += [self.controls[:, 0] >= self.v_min, self.controls[:, 0] <= self.v_max]
         constraints += [self.controls[:, 1] >= self.omega_min, self.controls[:, 1] <= self.omega_max]
         inactive_big_m = 100.0
@@ -101,6 +103,7 @@ class PersistentPlannerQP:
         bounds = self.config["bounds"]
         self.d_safe.value = float(self.config["planner"]["d_safe_m"])
         self.semantic_margin.value = np.zeros(self.T)
+        self.geometry_slack_max.value = 100.0
         self.v_min.value = float(bounds["v_min_mps"])
         self.v_max.value = float(bounds["v_max_mps"])
         self.omega_min.value = float(bounds["omega_min_radps"])
@@ -111,7 +114,8 @@ class PersistentPlannerQP:
         self.alpha_max.value = float(bounds["angular_acceleration_max_radps2"])
 
     def update(self, initial_state, reference, nominal_states, nominal_controls, previous_control,
-               distances, gradients, gradient_valid, trust: TrustRegion, semantic_margins=None) -> float:
+               distances, gradients, gradient_valid, trust: TrustRegion, semantic_margins=None,
+               collision_recovery: bool = False) -> float:
         started = time.perf_counter()
         reference = unwrap_reference(np.asarray(reference, float), nominal_states)
         self.initial_state.value = np.asarray(initial_state, float)
@@ -134,6 +138,10 @@ class PersistentPlannerQP:
         margins=np.zeros(self.T) if semantic_margins is None else np.asarray(semantic_margins,float)[1:]
         if margins.shape!=(self.T,) or np.any(margins < -1e-6) or np.any(margins > .350001): raise ValueError("semantic margins must have shape [T+1] and lie in [0,0.35]")
         self.semantic_margin.value=np.clip(margins,0,.35)
+        # A future-collision recovery nominal must not use geometry slack to
+        # step back into the unsafe region.  Normal and semantic paths retain
+        # the configured slack behavior.
+        self.geometry_slack_max.value = 0.0 if collision_recovery else 100.0
         self.trust_xy.value = trust.xy_m
         self.trust_yaw.value = trust.yaw_rad
         self.trust_v.value = trust.linear_velocity_mps

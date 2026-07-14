@@ -1,0 +1,5 @@
+Publishers [Address, Message Type]:
+  tcp://172.17.0.1:36639, gz.msgs.Twist
+Subscribers [Address, Message Type]:
+  tcp://172.17.0.1:44539, gz.msgs.Twist
+  tcp://172.17.0.1:42641, google.protobuf.Message

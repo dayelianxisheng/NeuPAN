@@ -1,0 +1,45 @@
+{
+  "human_path_center": {
+    "backlog_count": 0,
+    "deadline_miss_count": 0,
+    "deadline_ms": 200.0,
+    "evaluation_count": 40,
+    "late_actuation_eligible_count": 0,
+    "late_candidates": 0,
+    "on_time_core_output_preserved": true,
+    "pending_queue_depth_max": 1,
+    "pending_queue_limit": 1,
+    "single_flight": true,
+    "stale_count": 0,
+    "sustained_backlog": false
+  },
+  "passed": true,
+  "semantic_infeasible": {
+    "backlog_count": 0,
+    "deadline_miss_count": 2,
+    "deadline_ms": 200.0,
+    "evaluation_count": 40,
+    "late_actuation_eligible_count": 0,
+    "late_candidates": 2,
+    "on_time_core_output_preserved": true,
+    "pending_queue_depth_max": 1,
+    "pending_queue_limit": 1,
+    "single_flight": true,
+    "stale_count": 0,
+    "sustained_backlog": false
+  },
+  "single_static_obstacle": {
+    "backlog_count": 0,
+    "deadline_miss_count": 0,
+    "deadline_ms": 200.0,
+    "evaluation_count": 20,
+    "late_actuation_eligible_count": 0,
+    "late_candidates": 0,
+    "on_time_core_output_preserved": true,
+    "pending_queue_depth_max": 1,
+    "pending_queue_limit": 1,
+    "single_flight": true,
+    "stale_count": 0,
+    "sustained_backlog": false
+  }
+}

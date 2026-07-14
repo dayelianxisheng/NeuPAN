@@ -1,0 +1,7 @@
+{
+  "historical_status": "BLOCKED_ORACLE_SEMANTIC_CLOSED_LOOP_FEASIBILITY",
+  "amended_classification": "EXPECTED_SEMANTIC_SAFE_REJECTION",
+  "reason": "human centered on reference path with maximum 0.35 semantic margin makes the frozen constraint infeasible",
+  "nonzero_execution": 0,
+  "safety_failure": false
+}

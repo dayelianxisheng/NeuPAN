@@ -1,0 +1,26 @@
+{
+  "single_static_obstacle": {
+    "linear_speed": 0.0,
+    "angular_speed": 0.0,
+    "last_half_second_translation_m": 0.0,
+    "last_half_second_yaw_rad": 0.0
+  },
+  "static_corridor": {
+    "linear_speed": 0.0,
+    "angular_speed": 0.0,
+    "last_half_second_translation_m": 0.0,
+    "last_half_second_yaw_rad": 0.0
+  },
+  "narrow_passage": {
+    "linear_speed": 0.0,
+    "angular_speed": 0.0,
+    "last_half_second_translation_m": 0.0,
+    "last_half_second_yaw_rad": 0.0
+  },
+  "robot_obstacle": {
+    "linear_speed": 2.796649771656566e-20,
+    "angular_speed": 2.2265649911355755e-20,
+    "last_half_second_translation_m": 5.7261739602961245e-21,
+    "last_half_second_yaw_rad": 7.6894383152596465e-22
+  }
+}
