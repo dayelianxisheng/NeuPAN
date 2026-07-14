@@ -1,0 +1,11 @@
+{
+  "additional_runs_executed": 0,
+  "required_samples_per_scene": 3,
+  "required_scenes": [
+    "empty_world",
+    "single_static_obstacle",
+    "human_path_side"
+  ],
+  "small_sample_note": true,
+  "status": "NOT_EXECUTED_DUE_TO_EARLIER_GEOMETRY_STOP"
+}

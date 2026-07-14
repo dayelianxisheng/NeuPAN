@@ -1,0 +1,16 @@
+{
+  "outdated_rgb_contract": {
+    "fallback_reason": "OUTDATED_IMAGE",
+    "semantic_contribution_enabled": false,
+    "semantic_valid": false,
+    "status": "RUNTIME_DATA_CAPTURED_BUT_NOT_ACCEPTED_AFTER_STOP"
+  },
+  "planner_called": false,
+  "rgb_dropout_contract": {
+    "fallback_reason": "RGB_DROPOUT",
+    "semantic_contribution_enabled": false,
+    "semantic_valid": false,
+    "status": "NOT_EXECUTED_FULL_RUNTIME"
+  },
+  "status": "NOT_COMPLETED_DUE_TO_EARLIER_GEOMETRY_STOP"
+}

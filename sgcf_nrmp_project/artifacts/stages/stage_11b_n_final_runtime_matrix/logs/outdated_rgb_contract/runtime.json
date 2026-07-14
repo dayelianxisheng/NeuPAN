@@ -1,0 +1,14 @@
+{
+  "scene": "outdated_rgb_contract",
+  "sample": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784017437837380032,
+  "ready_ns": 1784017442093204216,
+  "first_clock_ns": 1784017442636285827,
+  "first_lidar_ns": 1784017442744450489,
+  "first_camera_ns": 1784017442842275409,
+  "first_odometry_ns": 1784017443028562303,
+  "end_ns": 1784017446126933015
+}

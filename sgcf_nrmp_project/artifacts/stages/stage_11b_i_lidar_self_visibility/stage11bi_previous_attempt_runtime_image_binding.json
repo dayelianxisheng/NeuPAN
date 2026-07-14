@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED_RUNTIME_IMAGE_ID_UNAVAILABLE",
+  "historical_image_id": "sha256:4585ea4a757bad1cecab7f2943b9f4e6b9d3b3ad18f76848a577f0464be9ea3c",
+  "historical_image_object_locally_available": false,
+  "original_attempt_preserved": true,
+  "superseded_by": "Stage 11B-I-B immutable runtime re-baseline and current formal visibility attempt"
+}

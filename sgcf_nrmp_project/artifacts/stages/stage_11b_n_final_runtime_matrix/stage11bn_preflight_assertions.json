@@ -1,0 +1,11 @@
+{
+  "assets_frozen": true,
+  "immutable_binding": true,
+  "include_scale_zero": true,
+  "motion_commands_sent": false,
+  "planner_started": false,
+  "ros_bridge_started": false,
+  "stage10_loaded": false,
+  "status": "PASSED",
+  "worlds_sdformat_valid": 12
+}

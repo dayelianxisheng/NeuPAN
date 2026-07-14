@@ -1,0 +1,24 @@
+{
+  "historical_planner_limit": {
+    "P0": "geometry recheck rejection",
+    "P1_P2": "OSQP_MAX_ITER_REACHED at 10000 iterations"
+  },
+  "planner_run": false,
+  "runtime_clearance_record": {
+    "absolute_error_m": 0.0017118854203630463,
+    "collision_classification_agreement": true,
+    "expected_clearance_m": 0.7545361017187261,
+    "expected_collision": false,
+    "nearest_observable_point_base_xy_m": [
+      1.1552903429392314,
+      0.28804623390905176
+    ],
+    "runtime_clearance_m": 0.7562479871390891,
+    "runtime_collision": false,
+    "scene_id": "human_path_side",
+    "threshold_m": 0.02,
+    "threshold_passed": true
+  },
+  "self_return_count_zero": true,
+  "status": "PASSED_RUNTIME_ONLY"
+}

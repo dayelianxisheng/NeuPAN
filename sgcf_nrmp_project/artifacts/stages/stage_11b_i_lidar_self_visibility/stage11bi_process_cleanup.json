@@ -1,0 +1,28 @@
+{
+  "container_residual_gazebo_process_count": 0,
+  "host_residual_gazebo_process_count": 0,
+  "per_scene": {
+    "empty_world": {
+      "passed": true,
+      "residual_process_count": 0,
+      "server_exit": "0"
+    },
+    "human_path_side": {
+      "passed": true,
+      "residual_process_count": 0,
+      "server_exit": "0"
+    },
+    "initial_collision": {
+      "passed": true,
+      "residual_process_count": 0,
+      "server_exit": "0"
+    },
+    "single_static_obstacle": {
+      "passed": true,
+      "residual_process_count": 0,
+      "server_exit": "0"
+    }
+  },
+  "stage_container_stopped": true,
+  "status": "PASSED"
+}

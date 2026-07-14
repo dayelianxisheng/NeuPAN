@@ -1,0 +1,20 @@
+{
+  "GZ_RENDERING_PLUGIN_PATH": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+  "GZ_RENDERING_RESOURCE_PATH": "/usr/share/gz/gz-rendering8",
+  "container_image_id": "sha256:4585ea4a757bad1cecab7f2943b9f4e6b9d3b3ad18f76848a577f0464be9ea3c",
+  "container_name": "sgcf_gz_harmonic_hlms_media_fix",
+  "core_version_drift": false,
+  "current_tag_target_observed_at_audit": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "empty_world_sha256": "88eb227417c6d24cc64c3238c60a27966f18566b081968ab12d6f8ee1022279e",
+  "gazebo_sim": "8.14.0",
+  "gz_rendering": "8.2.3",
+  "gz_rendering_abi": 8,
+  "hlms_ogre2_gate_passed": true,
+  "hlms_pbs_path": "/usr/share/gz/gz-rendering8/ogre2/media/Hlms/Pbs",
+  "hlms_unlit_path": "/usr/share/gz/gz-rendering8/ogre2/media/Hlms/Unlit",
+  "not_byte_identical_to_historical_image": true,
+  "ogre2_package": "libgz-rendering8-ogre2 8.2.3-1~jammy",
+  "robot_model_sha256": "3e374265419ae09961d772b03c23813c8c433c456ab39ea234cc23527c2aaf1c",
+  "sdformat": "14.9.0",
+  "status": "FUNCTIONAL_ENVIRONMENT_EQUIVALENCE_CONFIRMED"
+}

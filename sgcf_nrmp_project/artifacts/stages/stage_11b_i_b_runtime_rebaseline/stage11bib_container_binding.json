@@ -1,0 +1,28 @@
+{
+  "command": [
+    "sleep",
+    "infinity"
+  ],
+  "container_id": "adbd01ebd7e680b16900207f75664c00bf82b64ae2a4305624e553006b717e6a",
+  "container_image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "container_name": "sgcf_gz_stage11bib",
+  "created_using_mutable_tag": false,
+  "entrypoint": null,
+  "environment": {
+    "GZ_RENDERING_PLUGIN_PATH": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins",
+    "GZ_RENDERING_RESOURCE_PATH": "/usr/share/gz/gz-rendering8",
+    "GZ_SIM_RENDER_ENGINE_SERVER": "ogre2",
+    "QT_QPA_PLATFORM": "offscreen"
+  },
+  "image_id_match": true,
+  "mounts": [
+    {
+      "destination": "/workspace",
+      "read_write": true,
+      "source": "/home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN"
+    }
+  ],
+  "old_container_committed_or_exported": false,
+  "old_container_used_as_runtime_baseline": false,
+  "working_directory": "/workspace"
+}

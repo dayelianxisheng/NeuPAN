@@ -1,0 +1,12 @@
+{
+  "after_sha256": "f0de5a533b28283a0949c348ed9d1d2f299e7f5a7ee48852974c4df26c3c86cc",
+  "before_sha256": "f0de5a533b28283a0949c348ed9d1d2f299e7f5a7ee48852974c4df26c3c86cc",
+  "difference": 0,
+  "footprint_m": [
+    0.8,
+    0.5
+  ],
+  "status": "PASSED",
+  "wheel_radius_m": 0.1,
+  "wheel_separation_m": 0.5
+}

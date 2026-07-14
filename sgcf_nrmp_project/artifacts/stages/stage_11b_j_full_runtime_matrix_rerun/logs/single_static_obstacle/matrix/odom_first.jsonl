@@ -1,0 +1,1 @@
+{"header":{"stamp":{"sec":"17","nsec":220000000},"data":[{"key":"frame_id","value":["odom"]},{"key":"child_frame_id","value":["base_link"]}]},"pose":{"position":{"x":1.3750370158446167e-19,"y":-3.3120923806513458e-38},"orientation":{"z":-1.4551376162459839e-19,"w":1}},"twist":{"linear":{"x":-1.2004248455121106e-20},"angular":{"z":-3.8377040100354832e-20}}}

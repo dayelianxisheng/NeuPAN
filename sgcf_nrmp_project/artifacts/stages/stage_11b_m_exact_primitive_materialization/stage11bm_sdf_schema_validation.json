@@ -1,0 +1,106 @@
+{
+  "active_include_scale_count": 0,
+  "parse_pass_count": 12,
+  "parser": "SDFormat 14.9.0 gz sdf -k with SDF_PATH",
+  "records": [
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "empty_world"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "human_path_center"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "human_path_side"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "initial_collision"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "narrow_passage"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "outdated_rgb_contract"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "rgb_dropout_contract"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "robot_obstacle"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "semantic_infeasible"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "single_static_obstacle"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "static_corridor"
+    },
+    {
+      "exit_code": 0,
+      "include_scale_warning_count": 0,
+      "stderr": "",
+      "undefined_include_child_warning_count": 0,
+      "valid_output": "Valid.",
+      "world": "vehicle_path"
+    }
+  ],
+  "status": "PASSED",
+  "undefined_include_child_warning_count": 0,
+  "world_count": 12
+}

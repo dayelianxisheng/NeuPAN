@@ -1,0 +1,5 @@
+# Stage 11B-K Decision
+
+```text
+BLOCKED_SCALE_SCOPE_EXPANSION_REQUIRED
+```

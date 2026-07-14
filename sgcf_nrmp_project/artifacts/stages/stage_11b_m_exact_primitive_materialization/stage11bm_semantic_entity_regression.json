@@ -1,0 +1,51 @@
+{
+  "exact_geometry_modified": false,
+  "initial_collision_human": true,
+  "lidar_modified": false,
+  "records": [
+    {
+      "class_id": 1,
+      "class_name": "STATIC_OBSTACLE",
+      "entity": "static_01",
+      "entity_present": true,
+      "scene_id": "single_static_obstacle"
+    },
+    {
+      "class_id": 2,
+      "class_name": "HUMAN",
+      "entity": "human_01",
+      "entity_present": true,
+      "scene_id": "human_path_center"
+    },
+    {
+      "class_id": 2,
+      "class_name": "HUMAN",
+      "entity": "human_01",
+      "entity_present": true,
+      "scene_id": "human_path_side"
+    },
+    {
+      "class_id": 3,
+      "class_name": "VEHICLE",
+      "entity": "vehicle_01",
+      "entity_present": true,
+      "scene_id": "vehicle_path"
+    },
+    {
+      "class_id": 4,
+      "class_name": "ROBOT",
+      "entity": "robot_obstacle_01",
+      "entity_present": true,
+      "scene_id": "robot_obstacle"
+    },
+    {
+      "class_id": 2,
+      "class_name": "HUMAN",
+      "entity": "initial_collision_obstacle",
+      "entity_present": true,
+      "scene_id": "initial_collision"
+    }
+  ],
+  "status": "PASSED",
+  "unknown_entity_class": 0
+}

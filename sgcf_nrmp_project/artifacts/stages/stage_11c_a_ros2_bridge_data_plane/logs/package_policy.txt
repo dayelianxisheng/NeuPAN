@@ -1,0 +1,6 @@
+ros-humble-ros-gzharmonic:
+  Installed: (none)
+  Candidate: 0.244.12-3jammy
+  Version table:
+     0.244.12-3jammy 500
+        500 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 Packages

@@ -1,0 +1,13 @@
+Stage 11B-L additions:
+sgcf_nrmp_project/tools/finalize_stage11bl_complex_block.py
+sgcf_nrmp_project/tools/test_stage11bl_complex_block.py
+sgcf_nrmp_project/artifacts/stages/stage_11b_l_global_include_scale_normalization/
+
+No Stage 11B-L asset changes:
+sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py
+sgcf_nrmp_project/gazebo/worlds/
+sgcf_nrmp_project/gazebo/models/
+docker/
+sgcf_nrmp_project/core/
+
+Existing worktree changes from earlier accepted stages were preserved.

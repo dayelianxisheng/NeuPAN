@@ -1,0 +1,17 @@
+Stage 11B-L complex-model hard-stop validation
+
+python -m unittest -v sgcf_nrmp_project.tools.test_stage11bl_complex_block
+Ran 6 tests in 0.001s
+OK
+
+python -m compileall -q sgcf_nrmp_project/tools sgcf_nrmp_project/artifacts/stages/stage_11b_l_global_include_scale_normalization
+PASS
+
+JSON parse audit
+JSON_PARSE_PASS 21
+
+git diff --check
+PASS
+
+No generator migration, SDFormat runtime command, Docker container, or Gazebo scene
+was executed after BLOCKED_NONUNIT_MODEL_MATERIALIZATION_COMPLEX was established.

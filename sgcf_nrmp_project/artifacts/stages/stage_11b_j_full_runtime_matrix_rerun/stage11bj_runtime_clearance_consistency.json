@@ -1,0 +1,89 @@
+{
+  "classification_agreement": 1.0,
+  "decision": "BLOCKED_GEOMETRY_RUNTIME_CONSISTENCY",
+  "failed_scenes": [
+    "static_corridor",
+    "narrow_passage"
+  ],
+  "records": [
+    {
+      "absolute_error_m": 0.0009559154510496715,
+      "collision_classification_agreement": true,
+      "expected_clearance_m": 0.7500000000000001,
+      "expected_collision": false,
+      "nearest_observable_point_base_xy_m": [
+        1.1509559154510498,
+        0.0
+      ],
+      "runtime_clearance_m": 0.7509559154510498,
+      "runtime_collision": false,
+      "scene_id": "single_static_obstacle",
+      "threshold_m": 0.02,
+      "threshold_passed": true
+    },
+    {
+      "absolute_error_m": 0.7260118255440138,
+      "collision_classification_agreement": true,
+      "expected_clearance_m": 0.37499999999999994,
+      "expected_collision": false,
+      "nearest_observable_point_base_xy_m": [
+        1.5009143326763528,
+        -0.2646516925828815
+      ],
+      "runtime_clearance_m": 1.1010118255440138,
+      "runtime_collision": false,
+      "scene_id": "static_corridor",
+      "threshold_m": 0.02,
+      "threshold_passed": false
+    },
+    {
+      "absolute_error_m": 0.8384905668462175,
+      "collision_classification_agreement": true,
+      "expected_clearance_m": 0.25999999999999995,
+      "expected_collision": false,
+      "nearest_observable_point_base_xy_m": [
+        1.4984905668462174,
+        -0.2105991150582267
+      ],
+      "runtime_clearance_m": 1.0984905668462175,
+      "runtime_collision": false,
+      "scene_id": "narrow_passage",
+      "threshold_m": 0.02,
+      "threshold_passed": false
+    },
+    {
+      "absolute_error_m": 0.0017118854203630463,
+      "collision_classification_agreement": true,
+      "expected_clearance_m": 0.7545361017187261,
+      "expected_collision": false,
+      "nearest_observable_point_base_xy_m": [
+        1.1552903429392314,
+        0.28804623390905176
+      ],
+      "runtime_clearance_m": 0.7562479871390891,
+      "runtime_collision": false,
+      "scene_id": "human_path_side",
+      "threshold_m": 0.02,
+      "threshold_passed": true
+    },
+    {
+      "absolute_error_m": 0.0,
+      "collision_classification_agreement": true,
+      "expected_clearance_m": 0.0,
+      "expected_collision": true,
+      "nearest_observable_point_base_xy_m": [
+        0.12234915529136473,
+        -0.16839916532795443
+      ],
+      "runtime_clearance_m": 0.0,
+      "runtime_collision": true,
+      "scene_id": "initial_collision",
+      "threshold_m": 0.02,
+      "threshold_passed": true
+    }
+  ],
+  "root_cause_evidence": "static_corridor and narrow_passage use <scale> under <include>; SDFormat 1.9 runtime warns this element is undefined and does not apply the intended wall dimensions",
+  "status": "FAILED",
+  "threshold_m": 0.02,
+  "world_geometry_used_for_runtime_distance": false
+}

@@ -1,0 +1,169 @@
+{
+  "records": [
+    {
+      "entity_name": "static_01",
+      "geometry": "cylinder",
+      "include_scale_absent": true,
+      "migration": "unit_include_without_scale",
+      "pose_unchanged": true,
+      "scene_id": "single_static_obstacle",
+      "semantic_class": "STATIC_OBSTACLE",
+      "uri": "model://static_cylinder"
+    },
+    {
+      "collision_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "entity_name": "wall_left",
+      "geometry": "box",
+      "migration": "explicit",
+      "pose_unchanged": true,
+      "scene_id": "static_corridor",
+      "semantic_class": "STATIC_OBSTACLE",
+      "visual_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ]
+    },
+    {
+      "collision_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "entity_name": "wall_right",
+      "geometry": "box",
+      "migration": "explicit",
+      "pose_unchanged": true,
+      "scene_id": "static_corridor",
+      "semantic_class": "STATIC_OBSTACLE",
+      "visual_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ]
+    },
+    {
+      "collision_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "entity_name": "wall_left",
+      "geometry": "box",
+      "migration": "explicit",
+      "pose_unchanged": true,
+      "scene_id": "narrow_passage",
+      "semantic_class": "STATIC_OBSTACLE",
+      "visual_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ]
+    },
+    {
+      "collision_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "entity_name": "wall_right",
+      "geometry": "box",
+      "migration": "explicit",
+      "pose_unchanged": true,
+      "scene_id": "narrow_passage",
+      "semantic_class": "STATIC_OBSTACLE",
+      "visual_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ]
+    },
+    {
+      "entity_name": "human_01",
+      "geometry": "cylinder",
+      "include_scale_absent": true,
+      "migration": "unit_include_without_scale",
+      "pose_unchanged": true,
+      "scene_id": "human_path_center",
+      "semantic_class": "HUMAN",
+      "uri": "model://human_placeholder"
+    },
+    {
+      "entity_name": "human_01",
+      "geometry": "cylinder",
+      "include_scale_absent": true,
+      "migration": "unit_include_without_scale",
+      "pose_unchanged": true,
+      "scene_id": "human_path_side",
+      "semantic_class": "HUMAN",
+      "uri": "model://human_placeholder"
+    },
+    {
+      "entity_name": "vehicle_01",
+      "geometry": "box",
+      "include_scale_absent": true,
+      "migration": "unit_include_without_scale",
+      "pose_unchanged": true,
+      "scene_id": "vehicle_path",
+      "semantic_class": "VEHICLE",
+      "uri": "model://vehicle_placeholder"
+    },
+    {
+      "entity_name": "robot_obstacle_01",
+      "geometry": "box",
+      "include_scale_absent": true,
+      "migration": "unit_include_without_scale",
+      "pose_unchanged": true,
+      "scene_id": "robot_obstacle",
+      "semantic_class": "ROBOT",
+      "uri": "model://robot_obstacle"
+    },
+    {
+      "entity_name": "human_01",
+      "geometry": "cylinder",
+      "include_scale_absent": true,
+      "migration": "unit_include_without_scale",
+      "pose_unchanged": true,
+      "scene_id": "semantic_infeasible",
+      "semantic_class": "HUMAN",
+      "uri": "model://human_placeholder"
+    },
+    {
+      "collision_length": 0.4,
+      "collision_radius": 0.2,
+      "entity_name": "initial_collision_obstacle",
+      "geometry": "cylinder",
+      "migration": "explicit",
+      "pose_unchanged": true,
+      "scene_id": "initial_collision",
+      "semantic_class": "HUMAN",
+      "visual_length": 0.4,
+      "visual_radius": 0.2
+    },
+    {
+      "entity_name": "human_01",
+      "geometry": "cylinder",
+      "include_scale_absent": true,
+      "migration": "unit_include_without_scale",
+      "pose_unchanged": true,
+      "scene_id": "rgb_dropout_contract",
+      "semantic_class": "HUMAN",
+      "uri": "model://human_placeholder"
+    },
+    {
+      "entity_name": "human_01",
+      "geometry": "cylinder",
+      "include_scale_absent": true,
+      "migration": "unit_include_without_scale",
+      "pose_unchanged": true,
+      "scene_id": "outdated_rgb_contract",
+      "semantic_class": "HUMAN",
+      "uri": "model://human_placeholder"
+    }
+  ],
+  "status": "PASSED"
+}

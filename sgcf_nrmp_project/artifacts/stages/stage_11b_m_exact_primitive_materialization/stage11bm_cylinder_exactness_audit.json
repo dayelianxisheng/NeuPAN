@@ -1,0 +1,74 @@
+{
+  "axis": "local_z",
+  "base_collision_length_m": 1.7,
+  "base_collision_radius_m": 0.35,
+  "base_visual_length_m": 1.7,
+  "base_visual_radius_m": 0.35,
+  "collision_local_pose_after": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "collision_local_pose_before": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "exact_representability": true,
+  "historical_scale_xyz": [
+    0.5714285714285714,
+    0.5714285714285714,
+    0.23529411764705882
+  ],
+  "joint_count": 0,
+  "length_error_m": 0.0,
+  "link_pose": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "materialization_type": "EXACT_PRIMITIVE_MATERIALIZATION",
+  "mesh_count": 0,
+  "model_pose": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "nested_model_count": 0,
+  "plugin_count": 0,
+  "radius_error_m": 0.0,
+  "resolved_length_m": 0.4,
+  "resolved_radius_m": 0.2,
+  "roll_pitch_zero": true,
+  "scale_x_equals_scale_y": true,
+  "sensor_count": 0,
+  "status": "PASSED",
+  "visual_local_pose_after": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "visual_local_pose_before": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

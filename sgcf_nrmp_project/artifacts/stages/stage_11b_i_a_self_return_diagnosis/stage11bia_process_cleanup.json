@@ -1,0 +1,6 @@
+{
+  "formal_cleanup_passed": true,
+  "passed": true,
+  "probe_runtime_process_query_after_collection": "no gz sim or gz-sim-server process",
+  "residual_gazebo_process_count": 0
+}

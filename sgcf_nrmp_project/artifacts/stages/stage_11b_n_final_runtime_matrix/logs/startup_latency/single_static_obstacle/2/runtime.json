@@ -1,0 +1,14 @@
+{
+  "scene": "single_static_obstacle",
+  "sample": "2",
+  "mode": "startup",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784017492854820176,
+  "ready_ns": 1784017497112042838,
+  "first_clock_ns": 1784017497641013103,
+  "first_lidar_ns": 1784017497751041155,
+  "first_camera_ns": 1784017497845879153,
+  "first_odometry_ns": 1784017497935346767,
+  "end_ns": 1784017497936124308
+}

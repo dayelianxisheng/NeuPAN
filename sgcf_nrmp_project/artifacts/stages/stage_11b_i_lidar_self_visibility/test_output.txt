@@ -1,0 +1,55 @@
+Stage 11B-I formal visibility acceptance checks
+
+Previous attempt:
+BLOCKED_RUNTIME_IMAGE_ID_UNAVAILABLE
+Preserved in stage_11b_i_previous_attempt_report.md.
+
+Current attempt:
+FORMAL_VISIBILITY_FIX
+
+python -m unittest -v sgcf_nrmp_project.tools.test_stage11bi_formal
+
+test_asset_delta_is_visibility_only ... ok
+test_camera_odometry_cleanup_and_boundaries ... ok
+test_empty_world_has_no_self_return ... ok
+test_immutable_runtime_binding ... ok
+test_targeted_geometry_and_external_safety_counterexample ... ok
+test_visibility_contract_exactly_matches_probes ... ok
+
+Ran 6 tests
+OK
+
+Immutable image:
+sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3
+PASS
+
+Static SDF Gate: PASS
+World XML parse: 12/12
+Formal changed XML paths: 4 visibility-only paths
+Collision hash difference: 0
+Camera/joint/DiffDrive hashes: unchanged
+Point-cropping source scan matches: 0
+
+Targeted runtime:
+- empty_world: 20/20 frames zero self-return
+- single_static_obstacle: clearance 0.750956 m, non-collision
+- human_path_side: clearance 0.756248 m, non-collision
+- initial_collision: clearance 0, external obstacle visible, collision
+- classification agreement: 3/3
+- Camera: 4/4 scenes passed
+- Odometry: 4/4 scenes passed
+
+Gazebo launches: 4
+Other worlds launched: 0
+Stage container stopped: true
+Residual Gazebo processes: 0
+
+compileall: PASS
+All JSON parse: PASS
+git diff --check: PASS
+
+Pre-existing unrelated worktree state retained:
+- docker/gazebo_harmonic/container.sh modified before Stage 11B-I
+- neupan_ros nested worktree dirty before Stage 11B-I
+
+Stage 11B-I modified neither location.

@@ -1,0 +1,16 @@
+{
+  "adapter_modified_by_stage11bm": false,
+  "all_models_unchanged": true,
+  "core_modified_by_stage11bm": false,
+  "docker_modified_by_stage11bm": false,
+  "empty_world_unchanged": true,
+  "human_placeholder_unchanged": true,
+  "lidar_visibility_mask": 4294967293,
+  "motion_commands_sent": false,
+  "planner_started": false,
+  "robot_model_unchanged": true,
+  "robot_visual_flags": 2,
+  "ros_bridge_started": false,
+  "stage10_loaded": false,
+  "status": "PASSED"
+}

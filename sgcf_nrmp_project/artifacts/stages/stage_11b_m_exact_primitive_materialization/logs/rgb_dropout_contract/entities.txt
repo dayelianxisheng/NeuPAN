@@ -1,0 +1,7 @@
+
+Requesting state for world [rgb_dropout_contract]...
+
+Available models:
+    - ground_plane
+    - sgcf_robot
+    - human_01

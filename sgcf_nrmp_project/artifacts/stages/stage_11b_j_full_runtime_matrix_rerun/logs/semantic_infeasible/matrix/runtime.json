@@ -1,0 +1,14 @@
+{
+  "scene": "semantic_infeasible",
+  "run_id": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784013746885660784,
+  "ready_ns": 1784013751157267160,
+  "first_clock_ns": 1784013766187621566,
+  "first_lidar_ns": 1784013766296743187,
+  "first_camera_ns": 1784013766398283241,
+  "first_odometry_ns": 1784013766509416139,
+  "end_ns": 1784013769660618913
+}

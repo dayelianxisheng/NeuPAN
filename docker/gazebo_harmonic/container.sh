@@ -13,6 +13,39 @@ HLMS_IMAGE="sgcf-gazebo-harmonic:hlms-media-fix"
 HLMS_CONTAINER="sgcf_gz_harmonic_hlms_media_fix"
 COMMAND="${1:-check}"
 
+# Docker daemon proxy settings cover image pulls, but they are not guaranteed
+# to reach Dockerfile RUN instructions.  BuildKit receives explicit proxy args
+# and host networking so the host loopback proxy remains reachable.
+HTTP_PROXY_URL="${HTTP_PROXY:-${http_proxy:-http://127.0.0.1:7897}}"
+HTTPS_PROXY_URL="${HTTPS_PROXY:-${https_proxy:-$HTTP_PROXY_URL}}"
+NO_PROXY_VALUE="${NO_PROXY:-${no_proxy:-localhost,127.0.0.1}}"
+
+# The local proxy intermittently returns 502 for Ubuntu archive payloads.
+# Fetch Ubuntu packages directly while keeping OSRF / Gazebo downloads on the
+# proxy.  Append without discarding any caller-provided exclusions.
+for direct_host in archive.ubuntu.com security.ubuntu.com; do
+    case ",$NO_PROXY_VALUE," in
+        *",$direct_host,"*) ;;
+        *) NO_PROXY_VALUE="$NO_PROXY_VALUE,$direct_host" ;;
+    esac
+done
+
+build_image() {
+    local target="$1"
+    local image="$2"
+    docker build \
+        --network=host \
+        --build-arg "HTTP_PROXY=$HTTP_PROXY_URL" \
+        --build-arg "HTTPS_PROXY=$HTTPS_PROXY_URL" \
+        --build-arg "http_proxy=$HTTP_PROXY_URL" \
+        --build-arg "https_proxy=$HTTPS_PROXY_URL" \
+        --build-arg "NO_PROXY=$NO_PROXY_VALUE" \
+        --build-arg "no_proxy=$NO_PROXY_VALUE" \
+        --target "$target" \
+        -t "$image" \
+        "$SCRIPT_DIR"
+}
+
 run_container() {
     local image="${1:-$IMAGE}"
     local container="${2:-$CONTAINER}"
@@ -81,16 +114,16 @@ ensure_hlms_running() {
 
 case "$COMMAND" in
     build)
-        docker build --target runtime-base -t "$IMAGE" "$SCRIPT_DIR"
+        build_image runtime-base "$IMAGE"
         ;;
     build-ogre2)
-        docker build --target runtime-base -t "$FIX_IMAGE" "$SCRIPT_DIR"
+        build_image runtime-base "$FIX_IMAGE"
         ;;
     build-abi8-alias)
-        docker build --target abi8-plugin-alias -t "$ALIAS_IMAGE" "$SCRIPT_DIR"
+        build_image abi8-plugin-alias "$ALIAS_IMAGE"
         ;;
     build-hlms-media)
-        docker build --target hlms-media-fix -t "$HLMS_IMAGE" "$SCRIPT_DIR"
+        build_image hlms-media-fix "$HLMS_IMAGE"
         ;;
     create)
         docker rm -f "$CONTAINER" >/dev/null 2>&1 || true

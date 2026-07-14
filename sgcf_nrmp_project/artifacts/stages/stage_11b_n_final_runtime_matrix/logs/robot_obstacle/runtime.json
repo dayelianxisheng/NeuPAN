@@ -1,0 +1,14 @@
+{
+  "scene": "robot_obstacle",
+  "sample": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784017404327862341,
+  "ready_ns": 1784017408586623600,
+  "first_clock_ns": 1784017409116649507,
+  "first_lidar_ns": 1784017409227201143,
+  "first_camera_ns": 1784017409320872988,
+  "first_odometry_ns": 1784017409411815292,
+  "end_ns": 1784017412610705815
+}

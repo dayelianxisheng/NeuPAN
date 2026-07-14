@@ -1,0 +1,16 @@
+Stage 11B-J additions:
+sgcf_nrmp_project/tools/run_stage11bj_scene.sh
+sgcf_nrmp_project/tools/finalize_stage11bj_blocked.py
+sgcf_nrmp_project/tools/test_stage11bj_blocked.py
+sgcf_nrmp_project/artifacts/stages/stage_11b_j_full_runtime_matrix_rerun/
+
+Frozen by Stage 11B-J and unchanged:
+sgcf_nrmp_project/gazebo/
+docker/
+sgcf_nrmp_project/core/
+neupan/
+neupan_ros/
+neupan_ros2/
+example/
+
+Pre-existing unrelated worktree entries were preserved and are not Stage 11B-J changes.

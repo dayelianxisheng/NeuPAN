@@ -1,0 +1,8 @@
+{
+  "ready": true,
+  "world": "empty_world",
+  "lidar_requested": 20,
+  "camera_requested": 5,
+  "odometry_requested": 20,
+  "clock_requested": 20
+}

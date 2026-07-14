@@ -1,0 +1,1053 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 907B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/sgcf-ros2-humble-base:4cbeac7831833
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.1s
+
+#4 [1/3] FROM docker.io/library/sgcf-ros2-humble-base:4cbeac7831833@sha256:4cbeac7831833f8d6fa4cb1f9f8e22c188853468e76b3d5b9cc58148a8c8f64b
+#4 resolve docker.io/library/sgcf-ros2-humble-base:4cbeac7831833@sha256:4cbeac7831833f8d6fa4cb1f9f8e22c188853468e76b3d5b9cc58148a8c8f64b 0.0s done
+#4 DONE 0.3s
+
+#5 [2/3] RUN curl -fsSL https://packages.osrfoundation.org/gazebo.gpg       -o /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg     && printf '%s\n'       'deb [arch=amd64 signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy main'       > /etc/apt/sources.list.d/gazebo-stable.list     && apt-get update     && apt-get install -y --no-install-recommends ros-humble-ros-gzharmonic     && rm -rf /var/lib/apt/lists/*
+#5 3.224 Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+#5 3.236 Get:2 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+#5 3.851 Get:3 http://packages.ros.org/ros2/ubuntu jammy InRelease [4682 B]
+#5 3.912 Get:4 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy InRelease [4276 B]
+#5 4.195 Get:5 http://packages.ros.org/ros2/ubuntu jammy/main Sources [1850 kB]
+#5 4.619 Get:6 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 Packages [133 kB]
+#5 5.653 Get:7 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [7332 kB]
+#5 6.035 Get:8 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+#5 7.160 Get:9 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+#5 8.471 Get:10 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+#5 15.97 Get:11 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [4089 kB]
+#5 22.73 Get:12 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1311 kB]
+#5 25.44 Get:13 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [77.8 kB]
+#5 96.24 Get:14 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+#5 97.36 Get:15 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+#5 103.6 Get:16 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+#5 103.9 Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [86.4 kB]
+#5 104.9 Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [4425 kB]
+#5 112.5 Get:19 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [7619 kB]
+#5 116.2 Get:20 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1614 kB]
+#5 117.7 Get:21 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [35.6 kB]
+#5 118.7 Get:22 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [82.8 kB]
+#5 169.0 Get:23 http://packages.ros.org/ros2/ubuntu jammy/main amd64 Packages [1822 kB]
+#5 411.9 Fetched 50.8 MB in 6min 49s (124 kB/s)
+#5 411.9 Reading package lists...
+#5 412.7 Reading package lists...
+#5 413.4 Building dependency tree...
+#5 413.6 Reading state information...
+#5 413.8 The following additional packages will be installed:
+#5 413.8   adwaita-icon-theme autoconf automake autotools-dev binutils binutils-common
+#5 413.8   binutils-x86-64-linux-gnu blt comerr-dev cpp cpp-11 curl dbus
+#5 413.8   dbus-user-session dconf-gsettings-backend dconf-service
+#5 413.8   default-libmysqlclient-dev fontconfig fontconfig-config fonts-dejavu-core
+#5 413.8   fonts-lyx g++ g++-11 gcc gcc-11 gcc-11-base gdal-data gtk-update-icon-cache
+#5 413.8   gz-tools2 hdf5-helpers hicolor-icon-theme humanity-icon-theme
+#5 413.8   ibverbs-providers icu-devtools ignition-tools iso-codes krb5-multidev
+#5 413.8   libaec-dev libaec0 libaom-dev libaom3 libapparmor1 libargon2-1
+#5 413.8   libarmadillo-dev libarmadillo10 libarpack2 libarpack2-dev libasan6
+#5 413.8   libasound2 libasound2-data libass9 libassimp-dev libassimp5 libasyncns0
+#5 413.8   libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0 libavahi-client3
+#5 413.8   libavahi-common-data libavahi-common3 libavc1394-0 libavcodec-dev
+#5 413.8   libavcodec58 libavdevice-dev libavdevice58 libavfilter-dev libavfilter7
+#5 413.8   libavformat-dev libavformat58 libavutil-dev libavutil56 libbinutils
+#5 413.8   libblas-dev libblkid-dev libblosc-dev libblosc1 libbluray2
+#5 413.8   libboost-atomic1.74-dev libboost-atomic1.74.0 libboost-chrono1.74-dev
+#5 413.8   libboost-chrono1.74.0 libboost-date-time1.74-dev libboost-date-time1.74.0
+#5 413.8   libboost-dev libboost-python1.74.0 libboost-serialization1.74-dev
+#5 413.8   libboost-serialization1.74.0 libboost-system1.74-dev libboost-system1.74.0
+#5 413.8   libboost-thread-dev libboost-thread1.74-dev libboost-thread1.74.0
+#5 413.8   libboost1.74-dev libbrotli-dev libbs2b0 libbsd-dev libbsd0 libbullet-dev
+#5 413.8   libbullet3.06 libcaca0 libcairo-gobject2 libcairo2 libcap2-bin libcc1-0
+#5 413.8   libccd2 libcdio-cdda2 libcdio-paranoia2 libcdio19 libcfitsio-dev libcfitsio9
+#5 413.8   libcharls-dev libcharls2 libchromaprint1 libclang1-14 libcodec2-1.0
+#5 413.8   libcolord2 libcryptsetup12 libctf-nobfd0 libctf0 libcups2 libcurl3-gnutls
+#5 413.8   libcurl4 libcurl4-openssl-dev libdart-core+collisions+odelcpsolver6.13
+#5 413.8   libdatrie1 libdav1d-dev libdav1d5 libdbus-1-3 libdc1394-25 libdc1394-dev
+#5 413.8   libdconf1 libde265-0 libde265-dev libdecor-0-0 libdeflate-dev libdeflate0
+#5 413.8   libdevmapper1.02.1 libdouble-conversion3 libdpkg-perl libdraco-dev libdraco4
+#5 413.8   libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+#5 413.8   libdrm2 libdw1 libedit2 libegl-dev libegl-mesa0 libegl1 libeigen3-dev
+#5 413.8   libelf1 libepoxy0 libevdev2 libevent-core-2.1-7 libevent-pthreads-2.1-7
+#5 413.8   libexif-dev libexif12 libfabric1 libfcl0.7 libffi-dev libflac8 libflite1
+#5 413.8   libfontconfig1 libfreeimage-dev libfreeimage3 libfreetype-dev libfreetype6
+#5 413.8   libfreetype6-dev libfreexl-dev libfreexl1 libfribidi0 libfyba-dev libfyba0
+#5 413.8   libgbm1 libgcc-11-dev libgd3 libgdal-dev libgdal30 libgdbm-compat4 libgdbm6
+#5 413.8   libgdcm-dev libgdcm3.0 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common
+#5 413.8   libgeos-c1v5 libgeos-dev libgeos3.10.2 libgeotiff-dev libgeotiff5
+#5 413.8   libgflags-dev libgflags2.2 libgif-dev libgif7 libgl-dev libgl1
+#5 413.8   libgl1-mesa-dev libgl1-mesa-dri libgl2ps1.4 libglapi-mesa libgles-dev
+#5 413.8   libgles1 libgles2 libglew-dev libglew2.2 libglib2.0-0 libglib2.0-bin
+#5 413.8   libglib2.0-data libglib2.0-dev libglib2.0-dev-bin libglu1-mesa
+#5 413.8   libglu1-mesa-dev libglvnd-core-dev libglvnd-dev libglvnd0 libglx-dev
+#5 413.8   libglx-mesa0 libglx0 libgme0 libgomp1 libgphoto2-6 libgphoto2-dev
+#5 413.8   libgphoto2-port12 libgraphite2-3 libgsm1 libgssrpc4
+#5 413.8   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libgtk-3-0 libgtk-3-common
+#5 413.8   libgts-0.7-5 libgts-dev libgudev-1.0-0 libgz-cmake3-dev libgz-common5
+#5 413.8   libgz-common5-av libgz-common5-av-dev libgz-common5-core-dev
+#5 413.8   libgz-common5-dev libgz-common5-events libgz-common5-events-dev
+#5 413.8   libgz-common5-geospatial libgz-common5-geospatial-dev libgz-common5-graphics
+#5 413.8   libgz-common5-graphics-dev libgz-common5-io libgz-common5-io-dev
+#5 413.8   libgz-common5-profiler libgz-common5-profiler-dev libgz-common5-testing
+#5 413.8   libgz-common5-testing-dev libgz-fuel-tools9 libgz-fuel-tools9-dev libgz-gui8
+#5 413.8   libgz-gui8-dev libgz-math7 libgz-math7-dev libgz-math7-eigen3-dev
+#5 413.8   libgz-msgs10 libgz-msgs10-dev libgz-physics7 libgz-physics7-bullet
+#5 413.8   libgz-physics7-bullet-dev libgz-physics7-core-dev libgz-physics7-dartsim
+#5 413.8   libgz-physics7-dartsim-dev libgz-physics7-dev libgz-physics7-heightmap-dev
+#5 413.8   libgz-physics7-mesh-dev libgz-physics7-sdf-dev libgz-physics7-tpe
+#5 413.8   libgz-physics7-tpe-dev libgz-physics7-tpelib libgz-physics7-tpelib-dev
+#5 413.8   libgz-plugin2 libgz-plugin2-dev libgz-rendering8 libgz-rendering8-core-dev
+#5 413.8   libgz-rendering8-dev libgz-rendering8-ogre1 libgz-rendering8-ogre1-dev
+#5 413.8   libgz-rendering8-ogre2 libgz-rendering8-ogre2-dev libgz-sensors8
+#5 413.8   libgz-sensors8-air-pressure libgz-sensors8-air-pressure-dev
+#5 413.8   libgz-sensors8-air-speed libgz-sensors8-air-speed-dev
+#5 413.8   libgz-sensors8-altimeter libgz-sensors8-altimeter-dev
+#5 413.8   libgz-sensors8-boundingbox-camera libgz-sensors8-boundingbox-camera-dev
+#5 413.8   libgz-sensors8-camera libgz-sensors8-camera-dev libgz-sensors8-core-dev
+#5 413.8   libgz-sensors8-depth-camera libgz-sensors8-depth-camera-dev
+#5 413.8   libgz-sensors8-dev libgz-sensors8-dvl libgz-sensors8-dvl-dev
+#5 413.8   libgz-sensors8-force-torque libgz-sensors8-force-torque-dev
+#5 413.8   libgz-sensors8-gpu-lidar libgz-sensors8-gpu-lidar-dev libgz-sensors8-imu
+#5 413.8   libgz-sensors8-imu-dev libgz-sensors8-lidar libgz-sensors8-lidar-dev
+#5 413.8   libgz-sensors8-logical-camera libgz-sensors8-logical-camera-dev
+#5 413.8   libgz-sensors8-magnetometer libgz-sensors8-magnetometer-dev
+#5 413.8   libgz-sensors8-navsat libgz-sensors8-navsat-dev libgz-sensors8-rendering
+#5 413.8   libgz-sensors8-rendering-dev libgz-sensors8-rgbd-camera
+#5 413.8   libgz-sensors8-rgbd-camera-dev libgz-sensors8-segmentation-camera
+#5 413.8   libgz-sensors8-segmentation-camera-dev libgz-sensors8-thermal-camera
+#5 413.8   libgz-sensors8-thermal-camera-dev libgz-sensors8-wide-angle-camera
+#5 413.8   libgz-sensors8-wide-angle-camera-dev libgz-sim8 libgz-sim8-dev
+#5 413.8   libgz-sim8-plugins libgz-tools2-dev libgz-transport13
+#5 413.8   libgz-transport13-core-dev libgz-transport13-dev libgz-transport13-log
+#5 413.8   libgz-transport13-log-dev libgz-transport13-parameters
+#5 413.8   libgz-transport13-parameters-dev libgz-utils2 libgz-utils2-cli-dev
+#5 413.8   libgz-utils2-dev libharfbuzz0b libhdf4-0-alt libhdf4-alt-dev libhdf5-103-1
+#5 413.8   libhdf5-cpp-103-1 libhdf5-dev libhdf5-fortran-102 libhdf5-hl-100
+#5 413.8   libhdf5-hl-cpp-100 libhdf5-hl-fortran-100 libheif-dev libheif1
+#5 413.8   libhwloc-plugins libhwloc15 libibverbs1 libice-dev libice6 libicu-dev
+#5 413.8   libiec61883-0 libignition-cmake2-dev libignition-math6 libignition-math6-dev
+#5 413.8   libignition-tools-dev libignition-utils1 libignition-utils1-dev
+#5 413.8   libilmbase-dev libilmbase25 libimagequant0 libinput-bin libinput10 libip4tc2
+#5 413.8   libisl23 libitm1 libjack-jackd2-0 libjbig-dev libjbig0 libjpeg-dev
+#5 413.8   libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev libjs-jquery-ui
+#5 413.8   libjson-c-dev libjson-c5 libjsoncpp-dev libjxr0 libkadm5clnt-mit12
+#5 413.8   libkadm5srv-mit12 libkdb5-10 libkml-dev libkmlbase1 libkmlconvenience1
+#5 413.8   libkmldom1 libkmlengine1 libkmlregionator1 libkmlxsd1 libkmod2 libkrb5-dev
+#5 413.8   liblapack-dev liblbfgsb0 liblcms2-2 liblept5 liblilv-0-0 libllvm14 libllvm15
+#5 413.8   liblsan0 libltdl-dev libltdl7 liblz4-dev liblzma-dev liblzma5 libmd-dev
+#5 413.8   libmd0 libmd4c0 libmfx1 libminizip-dev libminizip1 libmount-dev libmp3lame0
+#5 413.8   libmpc3 libmpfr6 libmpg123-0 libmtdev1 libmysofa1 libmysqlclient-dev
+#5 413.8   libmysqlclient21 libnetcdf-dev libnetcdf19 libnl-3-200 libnl-route-3-200
+#5 413.8   libnorm-dev libnorm1 libnspr4 libnss3 libnuma1 liboctomap1.9 libodbc2
+#5 413.8   libodbccr2 libodbcinst2 libode8 libogdi-dev libogdi4.1 libogg-dev libogg0
+#5 413.8   libogre-1.9-dev libogre-1.9.0v5 libogre-next-2.3-dev libogre-next-2.3.0
+#5 413.8   libopenal-data libopenal1 libopencv-calib3d-dev libopencv-calib3d4.5d
+#5 413.8   libopencv-contrib-dev libopencv-contrib4.5d libopencv-core-dev
+#5 413.8   libopencv-core4.5d libopencv-dev libopencv-dnn-dev libopencv-dnn4.5d
+#5 413.8   libopencv-features2d-dev libopencv-features2d4.5d libopencv-flann-dev
+#5 413.8   libopencv-flann4.5d libopencv-highgui-dev libopencv-highgui4.5d
+#5 413.8   libopencv-imgcodecs-dev libopencv-imgcodecs4.5d libopencv-imgproc-dev
+#5 413.8   libopencv-imgproc4.5d libopencv-ml-dev libopencv-ml4.5d
+#5 413.8   libopencv-objdetect-dev libopencv-objdetect4.5d libopencv-photo-dev
+#5 413.8   libopencv-photo4.5d libopencv-shape-dev libopencv-shape4.5d
+#5 413.8   libopencv-stitching-dev libopencv-stitching4.5d libopencv-superres-dev
+#5 413.8   libopencv-superres4.5d libopencv-video-dev libopencv-video4.5d
+#5 413.8   libopencv-videoio-dev libopencv-videoio4.5d libopencv-videostab-dev
+#5 413.8   libopencv-videostab4.5d libopencv-viz-dev libopencv-viz4.5d libopenexr-dev
+#5 413.8   libopenexr25 libopengl-dev libopengl0 libopenjp2-7 libopenjp2-7-dev
+#5 413.8   libopenmpi3 libopenmpt0 libopus0 liborc-0.4-0 liborocos-kdl-dev
+#5 413.8   liborocos-kdl1.5 libpam-systemd libpango-1.0-0 libpangocairo-1.0-0
+#5 413.8   libpangoft2-1.0-0 libpciaccess0 libpcre16-3 libpcre2-16-0 libpcre2-32-0
+#5 413.8   libpcre2-dev libpcre2-posix3 libpcre3-dev libpcre32-3 libpcrecpp0v5
+#5 413.8   libperl5.34 libpgm-5.3-0 libpgm-dev libpixman-1-0 libpmix2 libpng-dev
+#5 413.8   libpng16-16 libpocketsphinx3 libpoppler-dev libpoppler-private-dev
+#5 413.8   libpoppler118 libpostproc-dev libpostproc55 libpq-dev libpq5 libproj-dev
+#5 413.8   libproj22 libprotobuf-dev libprotobuf-lite23 libprotobuf23 libprotoc-dev
+#5 413.8   libprotoc23 libpsm-infinipath1 libpsm2-2 libpthread-stubs0-dev libpulse0
+#5 413.8   libpyside2-dev libpyside2-py3-5.15 libqhull-dev libqhull-r8.0 libqhull8.0
+#5 413.8   libqhullcpp8.0 libqt5charts5 libqt5concurrent5 libqt5core5a libqt5dbus5
+#5 413.8   libqt5designer5 libqt5gui5 libqt5help5 libqt5network5 libqt5opengl5
+#5 413.8   libqt5printsupport5 libqt5qml5 libqt5qmlmodels5 libqt5qmlworkerscript5
+#5 413.8   libqt5quick5 libqt5quickcontrols2-5 libqt5quickparticles5 libqt5quickshapes5
+#5 413.8   libqt5quicktemplates2-5 libqt5quicktest5 libqt5quickwidgets5 libqt5sql5
+#5 413.8   libqt5svg5 libqt5test5 libqt5widgets5 libqt5xml5 librabbitmq4 libraqm0
+#5 413.8   libraw1394-11 libraw1394-dev libraw20 librdmacm1 librsvg2-2 librttopo-dev
+#5 413.8   librttopo1 librubberband2 libruby3.0 libsamplerate0 libsdformat12
+#5 413.8   libsdformat12-dev libsdformat14 libsdformat14-dev libsdl2-2.0-0
+#5 413.8   libselinux1-dev libsensors-config libsensors5 libsepol-dev libserd-0-0
+#5 413.8   libshiboken2-dev libshiboken2-py3-5.15 libshine3 libsigsegv2 libslang2
+#5 413.8   libsm-dev libsm6 libsnappy1v5 libsndfile1 libsndio7.0 libsocket++1
+#5 413.8   libsodium-dev libsodium23 libsord-0-0 libsoxr0 libspatialite-dev
+#5 413.8   libspatialite7 libspeex1 libsphinxbase3 libsqlite3-0 libsqlite3-dev
+#5 413.8   libsratom-0-0 libsrt1.4-gnutls libssh-gcrypt-4 libstdc++-11-dev
+#5 413.8   libsuperlu-dev libsuperlu5 libswresample-dev libswresample3 libswscale-dev
+#5 413.8   libswscale5 libsystemd0 libsz2 libtbb-dev libtbb12 libtbb2 libtbbmalloc2
+#5 413.8   libtcl8.6 libtesseract4 libthai-data libthai0 libtheora-dev libtheora0
+#5 413.8   libtiff-dev libtiff5 libtiffxx5 libtinyxml-dev libtinyxml2.6.2v5 libtk8.6
+#5 413.8   libtsan0 libtwolame0 libubsan1 libucx0 libudfread0 libunwind8
+#5 413.8   liburdfdom-headers-dev liburiparser-dev liburiparser1 libusb-1.0-0
+#5 413.8   libva-drm2 libva-x11-2 libva2 libvdpau1 libvidstab1.1 libvorbis0a
+#5 413.8   libvorbisenc2 libvorbisfile3 libvpx7 libvtk9.1 libvulkan-dev libvulkan1
+#5 413.8   libwacom-common libwacom9 libwayland-client0 libwayland-cursor0
+#5 413.8   libwayland-egl1 libwayland-server0 libwebp-dev libwebp7 libwebpdemux2
+#5 413.8   libwebpmux3 libx11-6 libx11-data libx11-dev libx11-xcb1 libx264-163
+#5 413.8   libx265-199 libx265-dev libxau-dev libxau6 libxaw7 libxaw7-dev libxcb-dri2-0
+#5 413.8   libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1
+#5 413.8   libxcb-present0 libxcb-randr0 libxcb-render-util0 libxcb-render0
+#5 413.8   libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-util1 libxcb-xfixes0
+#5 413.8   libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1 libxcb1 libxcb1-dev
+#5 413.8   libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev libxdmcp6
+#5 413.8   libxerces-c-dev libxerces-c3.2 libxext-dev libxext6 libxfixes3 libxft2
+#5 413.8   libxi6 libxinerama1 libxkbcommon-x11-0 libxkbcommon0 libxml2 libxml2-dev
+#5 413.8   libxmu-dev libxmu-headers libxmu6 libxnvctrl0 libxpm-dev libxpm4
+#5 413.8   libxrandr-dev libxrandr2 libxrender-dev libxrender1 libxshmfence1
+#5 413.8   libxsimd-dev libxss1 libxt-dev libxt6 libxv1 libxvidcore4 libxxf86vm1
+#5 413.8   libyaml-cpp-dev libyaml-cpp0.7 libzimg2 libzip-dev libzip4 libzmq3-dev
+#5 413.8   libzmq5 libzstd-dev libzvbi-common libzvbi0 libzzip-0-13 m4 mysql-common
+#5 413.8   ocl-icd-libopencl1 perl perl-base perl-modules-5.34 pkg-config proj-data
+#5 413.8   protobuf-compiler pyqt5-dev python-matplotlib-data python3-appdirs
+#5 413.8   python3-beniget python3-brotli python3-cycler python3-decorator
+#5 413.8   python3-fonttools python3-fs python3-gast python3-kiwisolver python3-lz4
+#5 413.8   python3-matplotlib python3-mpmath python3-opencv python3-pil
+#5 413.8   python3-pil.imagetk python3-ply python3-pyqt5 python3-pyqt5.qtsvg
+#5 413.8   python3-pyqt5.sip python3-pyside2.qtcore python3-pyside2.qtgui
+#5 413.8   python3-pyside2.qtsvg python3-pyside2.qtwidgets python3-pythran
+#5 413.8   python3-scipy python3-sip python3-sip-dev python3-sympy python3-tk
+#5 413.8   python3-tz python3-ufolib2 python3-unicodedata2
+#5 413.8   qml-module-qt-labs-folderlistmodel qml-module-qt-labs-platform
+#5 413.8   qml-module-qt-labs-settings qml-module-qtcharts
+#5 413.8   qml-module-qtgraphicaleffects qml-module-qtqml qml-module-qtqml-models2
+#5 413.8   qml-module-qtquick-controls qml-module-qtquick-controls2
+#5 413.8   qml-module-qtquick-dialogs qml-module-qtquick-layouts
+#5 413.8   qml-module-qtquick-privatewidgets qml-module-qtquick-templates2
+#5 413.8   qml-module-qtquick-window2 qml-module-qtquick2 qt5-qmake qt5-qmake-bin
+#5 413.8   qt5-qmltooling-plugins qtbase5-dev qtbase5-dev-tools qtchooser
+#5 413.8   qtdeclarative5-dev qtdeclarative5-dev-tools qtquickcontrols2-5-dev rake
+#5 413.8   ros-humble-actuator-msgs ros-humble-compressed-depth-image-transport
+#5 413.8   ros-humble-compressed-image-transport ros-humble-cv-bridge
+#5 413.8   ros-humble-eigen3-cmake-module ros-humble-ignition-cmake2-vendor
+#5 413.8   ros-humble-ignition-math6-vendor ros-humble-image-transport
+#5 413.8   ros-humble-image-transport-plugins ros-humble-interactive-markers
+#5 413.8   ros-humble-kdl-parser ros-humble-laser-geometry ros-humble-libcurl-vendor
+#5 413.8   ros-humble-map-msgs ros-humble-message-filters ros-humble-orocos-kdl-vendor
+#5 413.8   ros-humble-python-qt-binding ros-humble-qt-gui ros-humble-qt-gui-cpp
+#5 413.8   ros-humble-qt-gui-py-common ros-humble-resource-retriever
+#5 413.8   ros-humble-robot-state-publisher ros-humble-ros-gzharmonic-bridge
+#5 413.8   ros-humble-ros-gzharmonic-image ros-humble-ros-gzharmonic-interfaces
+#5 413.8   ros-humble-ros-gzharmonic-sim ros-humble-ros-gzharmonic-sim-demos
+#5 413.8   ros-humble-rqt-gui ros-humble-rqt-gui-cpp ros-humble-rqt-gui-py
+#5 413.8   ros-humble-rqt-image-view ros-humble-rqt-plot ros-humble-rqt-py-common
+#5 413.8   ros-humble-rqt-topic ros-humble-rviz-assimp-vendor ros-humble-rviz-common
+#5 413.8   ros-humble-rviz-default-plugins ros-humble-rviz-ogre-vendor
+#5 413.8   ros-humble-rviz-rendering ros-humble-rviz2 ros-humble-sdformat-urdf
+#5 413.8   ros-humble-sensor-msgs-py ros-humble-tango-icons-vendor ros-humble-tf2
+#5 413.8   ros-humble-tf2-geometry-msgs ros-humble-tf2-msgs ros-humble-tf2-py
+#5 413.8   ros-humble-tf2-ros ros-humble-tf2-ros-py ros-humble-theora-image-transport
+#5 413.8   ros-humble-tinyxml-vendor ros-humble-urdf ros-humble-urdf-parser-plugin
+#5 413.8   ros-humble-urdfdom ros-humble-urdfdom-headers ros-humble-vision-msgs
+#5 413.8   ros-humble-xacro ros-humble-yaml-cpp-vendor ruby ruby-net-telnet
+#5 413.8   ruby-rubygems ruby-webrick ruby-xmlrpc ruby3.0 rubygems-integration
+#5 413.8   sdformat12-sdf sdformat14-sdf shared-mime-info shiboken2 sip-dev systemd
+#5 413.8   systemd-sysv tango-icon-theme tk8.6-blt2.5 ubuntu-mono ucf unicode-data
+#5 413.8   unixodbc-common unixodbc-dev uuid-dev x11-common x11proto-dev xkb-data
+#5 413.8   xorg-sgml-doctools xtrans-dev
+#5 413.8 Suggested packages:
+#5 413.8   autoconf-archive gnu-standards autoconf-doc libtool gettext binutils-doc
+#5 413.8   blt-demo doc-base cpp-doc gcc-11-locales g++-multilib g++-11-multilib
+#5 413.8   gcc-11-doc gcc-multilib make manpages-dev flex bison gdb gcc-doc
+#5 413.8   gcc-11-multilib isoquery krb5-doc libitpp-dev libasound2-plugins alsa-utils
+#5 413.8   libcuda1 libnvcuvid1 libnvidia-encode1 liblapack-doc libbluray-bdj
+#5 413.8   libboost-doc libboost1.74-doc libboost-container1.74-dev
+#5 413.8   libboost-context1.74-dev libboost-contract1.74-dev
+#5 413.8   libboost-coroutine1.74-dev libboost-exception1.74-dev libboost-fiber1.74-dev
+#5 413.8   libboost-filesystem1.74-dev libboost-graph1.74-dev
+#5 413.8   libboost-graph-parallel1.74-dev libboost-iostreams1.74-dev
+#5 413.8   libboost-locale1.74-dev libboost-log1.74-dev libboost-math1.74-dev
+#5 413.8   libboost-mpi1.74-dev libboost-mpi-python1.74-dev libboost-numpy1.74-dev
+#5 413.8   libboost-program-options1.74-dev libboost-python1.74-dev
+#5 413.8   libboost-random1.74-dev libboost-regex1.74-dev libboost-stacktrace1.74-dev
+#5 413.8   libboost-test1.74-dev libboost-timer1.74-dev libboost-type-erasure1.74-dev
+#5 413.8   libboost-wave1.74-dev libboost1.74-tools-dev libmpfrc++-dev libntl-dev
+#5 413.8   libboost-nowide1.74-dev colord cups-common libcurl4-doc libidn11-dev
+#5 413.8   libldap2-dev librtmp-dev libssh2-1-dev debian-keyring patch git bzr
+#5 413.8   libeigen3-doc freetype2-doc libgd-tools gdbm-l10n libgdal-doc
+#5 413.8   libgeotiff-epsg geotiff-bin gdal-bin glew-utils libgirepository1.0-dev
+#5 413.8   libglib2.0-doc libgdk-pixbuf2.0-bin | libgdk-pixbuf2.0-dev gphoto2 krb5-user
+#5 413.8   libvisual-0.4-plugins gstreamer1.0-tools gvfs libgts-doc libdart-dev
+#5 413.8   | libdart6.13-dev libdart-external-convhull-3d-dev
+#5 413.8   | libdart6.13-external-convhull-3d-dev libdart-collision-ode-dev
+#5 413.8   | libdart6.13-collision-ode-dev libdart-utils-urdf-dev
+#5 413.8   | libdart6.13-utils-urdf-dev libdart-utils-dev | libdart6.13-utils-dev
+#5 413.8   libdart-external-odelcpsolver-dev | libdart6.13-external-odelcpsolver-dev
+#5 413.8   libdart-external-ikfast-dev | libdart6.13-external-ikfast-dev
+#5 413.8   libdart-collision-bullet-dev | libdart6.13-collision-bullet-dev libhdf4-doc
+#5 413.8   hdf4-tools libhdf5-doc libhwloc-contrib-plugins libice-doc icu-doc jackd2
+#5 413.8   libjs-jquery-ui-docs liblcms2-utils libtool-doc liblzma-doc netcdf-bin
+#5 413.8   netcdf-doc libnorm-doc odbc-postgresql tdsodbc ogdi-bin ogre-1.9-doc
+#5 413.8   libogre-1.9.0v5-dbg ogre-next-2.3-doc libportaudio2 opencv-doc opus-tools
+#5 413.8   pciutils postgresql-doc-14 proj-bin pulseaudio qt5-image-formats-plugins
+#5 413.8   qtwayland5 libraw1394-doc librsvg2-bin xdg-utils lm-sensors serdi libsm-doc
+#5 413.8   sndiod sordi speex sqlite3-doc libstdc++-11-doc libsuperlu-doc libtbb-doc
+#5 413.8   tcl8.6 libtinyxml-doc tk8.6 mpi-default-bin vtk9-doc vtk9-examples
+#5 413.8   libx11-doc libx265-doc libxaw-doc libxcb-doc libxerces-c-doc libxext-doc
+#5 413.8   libxsimd-doc libxt-doc m4-doc opencl-icd perl-doc libterm-readline-gnu-perl
+#5 413.8   | libterm-readline-perl-perl libtap-harness-archive-perl dpkg-dev
+#5 413.8   protobuf-mode-el python-cycler-doc dvipng ffmpeg fonts-staypuft ghostscript
+#5 413.8   gir1.2-gtk-3.0 inkscape ipython3 librsvg2-common python-matplotlib-doc
+#5 413.8   python3-cairocffi python3-gi python3-gi-cairo python3-gobject
+#5 413.8   python3-tornado texlive-extra-utils texlive-latex-extra python-mpmath-doc
+#5 413.8   python3-gmpy2 python-pil-doc python-ply-doc python-pyside2-doc
+#5 413.8   python-scipy-doc python-sip-doc texlive-fonts-extra python-sympy-doc tix
+#5 413.8   python3-tk-dbg firebird-dev ri ruby-dev bundler systemd-container libfido2-1
+#5 413.8   libtss2-esys-3.0.2-0 libtss2-mu0 libtss2-rc0 policykit-1 gnome-icon-theme
+#5 413.8   kdelibs-data
+#5 413.8 Recommended packages:
+#5 413.8   librsvg2-common alsa-ucm-conf alsa-topology-conf at-spi2-core libaacs0
+#5 413.8   libpam-cap libcfitsio-doc libdecor-0-plugin-1-cairo | libdecor-0-plugin-1
+#5 413.8   dmsetup libfile-fcntllock-perl liblocale-gettext-perl bzip2 xz-utils
+#5 413.8   libexif-doc proj-bin libgdk-pixbuf2.0-bin libgl1-amber-dri xdg-user-dirs
+#5 413.8   libgphoto2-l10n gstreamer1.0-plugins-base libgtk-3-bin libgts-bin
+#5 413.8   gz-plugin2-cli gz-sim8-cli python3-gz-sim8 gz-transport13-cli
+#5 413.8   javascript-common libtool opencv-data libopencv4.5-java libpng-tools
+#5 413.8   pocketsphinx-en-us poppler-data qttranslations5-l10n qt5-gtk-platformtheme
+#5 413.8   libqt5sql5-sqlite | libqt5sql5-mysql | libqt5sql5-odbc | libqt5sql5-psql
+#5 413.8   | libqt5sql5-tds | libqt5sql5-ibase libraw1394-tools va-driver-all
+#5 413.8   | va-driver vdpau-driver-all | vdpau-driver mesa-vulkan-drivers | vulkan-icd
+#5 413.8   libwacom-bin netbase python3-olefile libqt5opengl5-dev zip fonts-lato
+#5 413.8   networkd-dispatcher systemd-timesyncd | time-daemon libnss-systemd
+#5 415.3 The following NEW packages will be installed:
+#5 415.3   adwaita-icon-theme autoconf automake autotools-dev binutils binutils-common
+#5 415.3   binutils-x86-64-linux-gnu blt comerr-dev cpp cpp-11 dbus dbus-user-session
+#5 415.3   dconf-gsettings-backend dconf-service default-libmysqlclient-dev fontconfig
+#5 415.3   fontconfig-config fonts-dejavu-core fonts-lyx g++ g++-11 gcc gcc-11
+#5 415.3   gcc-11-base gdal-data gtk-update-icon-cache gz-tools2 hdf5-helpers
+#5 415.3   hicolor-icon-theme humanity-icon-theme ibverbs-providers icu-devtools
+#5 415.3   ignition-tools iso-codes krb5-multidev libaec-dev libaec0 libaom-dev libaom3
+#5 415.3   libapparmor1 libargon2-1 libarmadillo-dev libarmadillo10 libarpack2
+#5 415.3   libarpack2-dev libasan6 libasound2 libasound2-data libass9 libassimp-dev
+#5 415.3   libassimp5 libasyncns0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data
+#5 415.3   libatspi2.0-0 libavahi-client3 libavahi-common-data libavahi-common3
+#5 415.3   libavc1394-0 libavcodec-dev libavcodec58 libavdevice-dev libavdevice58
+#5 415.3   libavfilter-dev libavfilter7 libavformat-dev libavformat58 libavutil-dev
+#5 415.3   libavutil56 libbinutils libblas-dev libblkid-dev libblosc-dev libblosc1
+#5 415.3   libbluray2 libboost-atomic1.74-dev libboost-atomic1.74.0
+#5 415.3   libboost-chrono1.74-dev libboost-chrono1.74.0 libboost-date-time1.74-dev
+#5 415.3   libboost-date-time1.74.0 libboost-dev libboost-python1.74.0
+#5 415.3   libboost-serialization1.74-dev libboost-serialization1.74.0
+#5 415.3   libboost-system1.74-dev libboost-system1.74.0 libboost-thread-dev
+#5 415.3   libboost-thread1.74-dev libboost-thread1.74.0 libboost1.74-dev libbrotli-dev
+#5 415.3   libbs2b0 libbsd-dev libbsd0 libbullet-dev libbullet3.06 libcaca0
+#5 415.3   libcairo-gobject2 libcairo2 libcap2-bin libcc1-0 libccd2 libcdio-cdda2
+#5 415.3   libcdio-paranoia2 libcdio19 libcfitsio-dev libcfitsio9 libcharls-dev
+#5 415.3   libcharls2 libchromaprint1 libclang1-14 libcodec2-1.0 libcolord2
+#5 415.3   libcryptsetup12 libctf-nobfd0 libctf0 libcups2 libcurl3-gnutls
+#5 415.3   libcurl4-openssl-dev libdart-core+collisions+odelcpsolver6.13 libdatrie1
+#5 415.3   libdav1d-dev libdav1d5 libdbus-1-3 libdc1394-25 libdc1394-dev libdconf1
+#5 415.3   libde265-0 libde265-dev libdecor-0-0 libdeflate-dev libdeflate0
+#5 415.3   libdevmapper1.02.1 libdouble-conversion3 libdpkg-perl libdraco-dev libdraco4
+#5 415.3   libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+#5 415.3   libdrm2 libdw1 libedit2 libegl-dev libegl-mesa0 libegl1 libeigen3-dev
+#5 415.3   libelf1 libepoxy0 libevdev2 libevent-core-2.1-7 libevent-pthreads-2.1-7
+#5 415.3   libexif-dev libexif12 libfabric1 libfcl0.7 libffi-dev libflac8 libflite1
+#5 415.3   libfontconfig1 libfreeimage-dev libfreeimage3 libfreetype-dev libfreetype6
+#5 415.3   libfreetype6-dev libfreexl-dev libfreexl1 libfribidi0 libfyba-dev libfyba0
+#5 415.3   libgbm1 libgcc-11-dev libgd3 libgdal-dev libgdal30 libgdbm-compat4 libgdbm6
+#5 415.3   libgdcm-dev libgdcm3.0 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common
+#5 415.3   libgeos-c1v5 libgeos-dev libgeos3.10.2 libgeotiff-dev libgeotiff5
+#5 415.3   libgflags-dev libgflags2.2 libgif-dev libgif7 libgl-dev libgl1
+#5 415.3   libgl1-mesa-dev libgl1-mesa-dri libgl2ps1.4 libglapi-mesa libgles-dev
+#5 415.3   libgles1 libgles2 libglew-dev libglew2.2 libglib2.0-0 libglib2.0-bin
+#5 415.3   libglib2.0-data libglib2.0-dev libglib2.0-dev-bin libglu1-mesa
+#5 415.3   libglu1-mesa-dev libglvnd-core-dev libglvnd-dev libglvnd0 libglx-dev
+#5 415.3   libglx-mesa0 libglx0 libgme0 libgomp1 libgphoto2-6 libgphoto2-dev
+#5 415.3   libgphoto2-port12 libgraphite2-3 libgsm1 libgssrpc4
+#5 415.3   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libgtk-3-0 libgtk-3-common
+#5 415.3   libgts-0.7-5 libgts-dev libgudev-1.0-0 libgz-cmake3-dev libgz-common5
+#5 415.3   libgz-common5-av libgz-common5-av-dev libgz-common5-core-dev
+#5 415.3   libgz-common5-dev libgz-common5-events libgz-common5-events-dev
+#5 415.3   libgz-common5-geospatial libgz-common5-geospatial-dev libgz-common5-graphics
+#5 415.3   libgz-common5-graphics-dev libgz-common5-io libgz-common5-io-dev
+#5 415.3   libgz-common5-profiler libgz-common5-profiler-dev libgz-common5-testing
+#5 415.3   libgz-common5-testing-dev libgz-fuel-tools9 libgz-fuel-tools9-dev libgz-gui8
+#5 415.3   libgz-gui8-dev libgz-math7 libgz-math7-dev libgz-math7-eigen3-dev
+#5 415.3   libgz-msgs10 libgz-msgs10-dev libgz-physics7 libgz-physics7-bullet
+#5 415.3   libgz-physics7-bullet-dev libgz-physics7-core-dev libgz-physics7-dartsim
+#5 415.3   libgz-physics7-dartsim-dev libgz-physics7-dev libgz-physics7-heightmap-dev
+#5 415.3   libgz-physics7-mesh-dev libgz-physics7-sdf-dev libgz-physics7-tpe
+#5 415.3   libgz-physics7-tpe-dev libgz-physics7-tpelib libgz-physics7-tpelib-dev
+#5 415.3   libgz-plugin2 libgz-plugin2-dev libgz-rendering8 libgz-rendering8-core-dev
+#5 415.3   libgz-rendering8-dev libgz-rendering8-ogre1 libgz-rendering8-ogre1-dev
+#5 415.3   libgz-rendering8-ogre2 libgz-rendering8-ogre2-dev libgz-sensors8
+#5 415.3   libgz-sensors8-air-pressure libgz-sensors8-air-pressure-dev
+#5 415.3   libgz-sensors8-air-speed libgz-sensors8-air-speed-dev
+#5 415.3   libgz-sensors8-altimeter libgz-sensors8-altimeter-dev
+#5 415.3   libgz-sensors8-boundingbox-camera libgz-sensors8-boundingbox-camera-dev
+#5 415.3   libgz-sensors8-camera libgz-sensors8-camera-dev libgz-sensors8-core-dev
+#5 415.3   libgz-sensors8-depth-camera libgz-sensors8-depth-camera-dev
+#5 415.3   libgz-sensors8-dev libgz-sensors8-dvl libgz-sensors8-dvl-dev
+#5 415.3   libgz-sensors8-force-torque libgz-sensors8-force-torque-dev
+#5 415.3   libgz-sensors8-gpu-lidar libgz-sensors8-gpu-lidar-dev libgz-sensors8-imu
+#5 415.3   libgz-sensors8-imu-dev libgz-sensors8-lidar libgz-sensors8-lidar-dev
+#5 415.3   libgz-sensors8-logical-camera libgz-sensors8-logical-camera-dev
+#5 415.3   libgz-sensors8-magnetometer libgz-sensors8-magnetometer-dev
+#5 415.3   libgz-sensors8-navsat libgz-sensors8-navsat-dev libgz-sensors8-rendering
+#5 415.3   libgz-sensors8-rendering-dev libgz-sensors8-rgbd-camera
+#5 415.3   libgz-sensors8-rgbd-camera-dev libgz-sensors8-segmentation-camera
+#5 415.3   libgz-sensors8-segmentation-camera-dev libgz-sensors8-thermal-camera
+#5 415.3   libgz-sensors8-thermal-camera-dev libgz-sensors8-wide-angle-camera
+#5 415.3   libgz-sensors8-wide-angle-camera-dev libgz-sim8 libgz-sim8-dev
+#5 415.3   libgz-sim8-plugins libgz-tools2-dev libgz-transport13
+#5 415.3   libgz-transport13-core-dev libgz-transport13-dev libgz-transport13-log
+#5 415.3   libgz-transport13-log-dev libgz-transport13-parameters
+#5 415.3   libgz-transport13-parameters-dev libgz-utils2 libgz-utils2-cli-dev
+#5 415.3   libgz-utils2-dev libharfbuzz0b libhdf4-0-alt libhdf4-alt-dev libhdf5-103-1
+#5 415.3   libhdf5-cpp-103-1 libhdf5-dev libhdf5-fortran-102 libhdf5-hl-100
+#5 415.3   libhdf5-hl-cpp-100 libhdf5-hl-fortran-100 libheif-dev libheif1
+#5 415.3   libhwloc-plugins libhwloc15 libibverbs1 libice-dev libice6 libicu-dev
+#5 415.3   libiec61883-0 libignition-cmake2-dev libignition-math6 libignition-math6-dev
+#5 415.3   libignition-tools-dev libignition-utils1 libignition-utils1-dev
+#5 415.3   libilmbase-dev libilmbase25 libimagequant0 libinput-bin libinput10 libip4tc2
+#5 415.3   libisl23 libitm1 libjack-jackd2-0 libjbig-dev libjbig0 libjpeg-dev
+#5 415.3   libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev libjs-jquery-ui
+#5 415.3   libjson-c-dev libjson-c5 libjsoncpp-dev libjxr0 libkadm5clnt-mit12
+#5 415.3   libkadm5srv-mit12 libkdb5-10 libkml-dev libkmlbase1 libkmlconvenience1
+#5 415.3   libkmldom1 libkmlengine1 libkmlregionator1 libkmlxsd1 libkmod2 libkrb5-dev
+#5 415.3   liblapack-dev liblbfgsb0 liblcms2-2 liblept5 liblilv-0-0 libllvm14 libllvm15
+#5 415.3   liblsan0 libltdl-dev libltdl7 liblz4-dev liblzma-dev libmd-dev libmd0
+#5 415.3   libmd4c0 libmfx1 libminizip-dev libminizip1 libmount-dev libmp3lame0 libmpc3
+#5 415.3   libmpfr6 libmpg123-0 libmtdev1 libmysofa1 libmysqlclient-dev
+#5 415.3   libmysqlclient21 libnetcdf-dev libnetcdf19 libnl-3-200 libnl-route-3-200
+#5 415.3   libnorm-dev libnorm1 libnspr4 libnss3 libnuma1 liboctomap1.9 libodbc2
+#5 415.3   libodbccr2 libodbcinst2 libode8 libogdi-dev libogdi4.1 libogg-dev libogg0
+#5 415.3   libogre-1.9-dev libogre-1.9.0v5 libogre-next-2.3-dev libogre-next-2.3.0
+#5 415.3   libopenal-data libopenal1 libopencv-calib3d-dev libopencv-calib3d4.5d
+#5 415.3   libopencv-contrib-dev libopencv-contrib4.5d libopencv-core-dev
+#5 415.3   libopencv-core4.5d libopencv-dev libopencv-dnn-dev libopencv-dnn4.5d
+#5 415.3   libopencv-features2d-dev libopencv-features2d4.5d libopencv-flann-dev
+#5 415.3   libopencv-flann4.5d libopencv-highgui-dev libopencv-highgui4.5d
+#5 415.3   libopencv-imgcodecs-dev libopencv-imgcodecs4.5d libopencv-imgproc-dev
+#5 415.3   libopencv-imgproc4.5d libopencv-ml-dev libopencv-ml4.5d
+#5 415.3   libopencv-objdetect-dev libopencv-objdetect4.5d libopencv-photo-dev
+#5 415.3   libopencv-photo4.5d libopencv-shape-dev libopencv-shape4.5d
+#5 415.3   libopencv-stitching-dev libopencv-stitching4.5d libopencv-superres-dev
+#5 415.3   libopencv-superres4.5d libopencv-video-dev libopencv-video4.5d
+#5 415.3   libopencv-videoio-dev libopencv-videoio4.5d libopencv-videostab-dev
+#5 415.3   libopencv-videostab4.5d libopencv-viz-dev libopencv-viz4.5d libopenexr-dev
+#5 415.3   libopenexr25 libopengl-dev libopengl0 libopenjp2-7 libopenjp2-7-dev
+#5 415.3   libopenmpi3 libopenmpt0 libopus0 liborc-0.4-0 liborocos-kdl-dev
+#5 415.3   liborocos-kdl1.5 libpam-systemd libpango-1.0-0 libpangocairo-1.0-0
+#5 415.3   libpangoft2-1.0-0 libpciaccess0 libpcre16-3 libpcre2-16-0 libpcre2-32-0
+#5 415.3   libpcre2-dev libpcre2-posix3 libpcre3-dev libpcre32-3 libpcrecpp0v5
+#5 415.3   libperl5.34 libpgm-5.3-0 libpgm-dev libpixman-1-0 libpmix2 libpng-dev
+#5 415.3   libpng16-16 libpocketsphinx3 libpoppler-dev libpoppler-private-dev
+#5 415.3   libpoppler118 libpostproc-dev libpostproc55 libpq-dev libpq5 libproj-dev
+#5 415.3   libproj22 libprotobuf-dev libprotobuf-lite23 libprotobuf23 libprotoc-dev
+#5 415.3   libprotoc23 libpsm-infinipath1 libpsm2-2 libpthread-stubs0-dev libpulse0
+#5 415.3   libpyside2-dev libpyside2-py3-5.15 libqhull-dev libqhull-r8.0 libqhull8.0
+#5 415.3   libqhullcpp8.0 libqt5charts5 libqt5concurrent5 libqt5core5a libqt5dbus5
+#5 415.3   libqt5designer5 libqt5gui5 libqt5help5 libqt5network5 libqt5opengl5
+#5 415.3   libqt5printsupport5 libqt5qml5 libqt5qmlmodels5 libqt5qmlworkerscript5
+#5 415.3   libqt5quick5 libqt5quickcontrols2-5 libqt5quickparticles5 libqt5quickshapes5
+#5 415.3   libqt5quicktemplates2-5 libqt5quicktest5 libqt5quickwidgets5 libqt5sql5
+#5 415.3   libqt5svg5 libqt5test5 libqt5widgets5 libqt5xml5 librabbitmq4 libraqm0
+#5 415.3   libraw1394-11 libraw1394-dev libraw20 librdmacm1 librsvg2-2 librttopo-dev
+#5 415.3   librttopo1 librubberband2 libruby3.0 libsamplerate0 libsdformat12
+#5 415.3   libsdformat12-dev libsdformat14 libsdformat14-dev libsdl2-2.0-0
+#5 415.3   libselinux1-dev libsensors-config libsensors5 libsepol-dev libserd-0-0
+#5 415.3   libshiboken2-dev libshiboken2-py3-5.15 libshine3 libsigsegv2 libslang2
+#5 415.3   libsm-dev libsm6 libsnappy1v5 libsndfile1 libsndio7.0 libsocket++1
+#5 415.3   libsodium-dev libsodium23 libsord-0-0 libsoxr0 libspatialite-dev
+#5 415.3   libspatialite7 libspeex1 libsphinxbase3 libsqlite3-dev libsratom-0-0
+#5 415.3   libsrt1.4-gnutls libssh-gcrypt-4 libstdc++-11-dev libsuperlu-dev libsuperlu5
+#5 415.3   libswresample-dev libswresample3 libswscale-dev libswscale5 libsz2
+#5 415.3   libtbb-dev libtbb12 libtbb2 libtbbmalloc2 libtcl8.6 libtesseract4
+#5 415.3   libthai-data libthai0 libtheora-dev libtheora0 libtiff-dev libtiff5
+#5 415.3   libtiffxx5 libtinyxml-dev libtinyxml2.6.2v5 libtk8.6 libtsan0 libtwolame0
+#5 415.3   libubsan1 libucx0 libudfread0 libunwind8 liburdfdom-headers-dev
+#5 415.3   liburiparser-dev liburiparser1 libusb-1.0-0 libva-drm2 libva-x11-2 libva2
+#5 415.3   libvdpau1 libvidstab1.1 libvorbis0a libvorbisenc2 libvorbisfile3 libvpx7
+#5 415.3   libvtk9.1 libvulkan-dev libvulkan1 libwacom-common libwacom9
+#5 415.3   libwayland-client0 libwayland-cursor0 libwayland-egl1 libwayland-server0
+#5 415.3   libwebp-dev libwebp7 libwebpdemux2 libwebpmux3 libx11-6 libx11-data
+#5 415.3   libx11-dev libx11-xcb1 libx264-163 libx265-199 libx265-dev libxau-dev
+#5 415.3   libxau6 libxaw7 libxaw7-dev libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0
+#5 415.3   libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-present0 libxcb-randr0
+#5 415.3   libxcb-render-util0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1
+#5 415.3   libxcb-util1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1
+#5 415.3   libxcb1 libxcb1-dev libxcomposite1 libxcursor1 libxdamage1 libxdmcp-dev
+#5 415.3   libxdmcp6 libxerces-c-dev libxerces-c3.2 libxext-dev libxext6 libxfixes3
+#5 415.3   libxft2 libxi6 libxinerama1 libxkbcommon-x11-0 libxkbcommon0 libxml2-dev
+#5 415.3   libxmu-dev libxmu-headers libxmu6 libxnvctrl0 libxpm-dev libxpm4
+#5 415.3   libxrandr-dev libxrandr2 libxrender-dev libxrender1 libxshmfence1
+#5 415.3   libxsimd-dev libxss1 libxt-dev libxt6 libxv1 libxvidcore4 libxxf86vm1
+#5 415.3   libyaml-cpp-dev libyaml-cpp0.7 libzimg2 libzip-dev libzip4 libzmq3-dev
+#5 415.3   libzmq5 libzstd-dev libzvbi-common libzvbi0 libzzip-0-13 m4 mysql-common
+#5 415.3   ocl-icd-libopencl1 perl perl-modules-5.34 pkg-config proj-data
+#5 415.3   protobuf-compiler pyqt5-dev python-matplotlib-data python3-appdirs
+#5 415.3   python3-beniget python3-brotli python3-cycler python3-decorator
+#5 415.3   python3-fonttools python3-fs python3-gast python3-kiwisolver python3-lz4
+#5 415.3   python3-matplotlib python3-mpmath python3-opencv python3-pil
+#5 415.3   python3-pil.imagetk python3-ply python3-pyqt5 python3-pyqt5.qtsvg
+#5 415.3   python3-pyqt5.sip python3-pyside2.qtcore python3-pyside2.qtgui
+#5 415.3   python3-pyside2.qtsvg python3-pyside2.qtwidgets python3-pythran
+#5 415.3   python3-scipy python3-sip python3-sip-dev python3-sympy python3-tk
+#5 415.3   python3-tz python3-ufolib2 python3-unicodedata2
+#5 415.3   qml-module-qt-labs-folderlistmodel qml-module-qt-labs-platform
+#5 415.3   qml-module-qt-labs-settings qml-module-qtcharts
+#5 415.3   qml-module-qtgraphicaleffects qml-module-qtqml qml-module-qtqml-models2
+#5 415.3   qml-module-qtquick-controls qml-module-qtquick-controls2
+#5 415.3   qml-module-qtquick-dialogs qml-module-qtquick-layouts
+#5 415.3   qml-module-qtquick-privatewidgets qml-module-qtquick-templates2
+#5 415.3   qml-module-qtquick-window2 qml-module-qtquick2 qt5-qmake qt5-qmake-bin
+#5 415.3   qt5-qmltooling-plugins qtbase5-dev qtbase5-dev-tools qtchooser
+#5 415.3   qtdeclarative5-dev qtdeclarative5-dev-tools qtquickcontrols2-5-dev rake
+#5 415.3   ros-humble-actuator-msgs ros-humble-compressed-depth-image-transport
+#5 415.3   ros-humble-compressed-image-transport ros-humble-cv-bridge
+#5 415.3   ros-humble-eigen3-cmake-module ros-humble-ignition-cmake2-vendor
+#5 415.3   ros-humble-ignition-math6-vendor ros-humble-image-transport
+#5 415.3   ros-humble-image-transport-plugins ros-humble-interactive-markers
+#5 415.3   ros-humble-kdl-parser ros-humble-laser-geometry ros-humble-libcurl-vendor
+#5 415.3   ros-humble-map-msgs ros-humble-message-filters ros-humble-orocos-kdl-vendor
+#5 415.3   ros-humble-python-qt-binding ros-humble-qt-gui ros-humble-qt-gui-cpp
+#5 415.3   ros-humble-qt-gui-py-common ros-humble-resource-retriever
+#5 415.3   ros-humble-robot-state-publisher ros-humble-ros-gzharmonic
+#5 415.3   ros-humble-ros-gzharmonic-bridge ros-humble-ros-gzharmonic-image
+#5 415.3   ros-humble-ros-gzharmonic-interfaces ros-humble-ros-gzharmonic-sim
+#5 415.3   ros-humble-ros-gzharmonic-sim-demos ros-humble-rqt-gui
+#5 415.3   ros-humble-rqt-gui-cpp ros-humble-rqt-gui-py ros-humble-rqt-image-view
+#5 415.3   ros-humble-rqt-plot ros-humble-rqt-py-common ros-humble-rqt-topic
+#5 415.3   ros-humble-rviz-assimp-vendor ros-humble-rviz-common
+#5 415.3   ros-humble-rviz-default-plugins ros-humble-rviz-ogre-vendor
+#5 415.3   ros-humble-rviz-rendering ros-humble-rviz2 ros-humble-sdformat-urdf
+#5 415.3   ros-humble-sensor-msgs-py ros-humble-tango-icons-vendor ros-humble-tf2
+#5 415.3   ros-humble-tf2-geometry-msgs ros-humble-tf2-msgs ros-humble-tf2-py
+#5 415.3   ros-humble-tf2-ros ros-humble-tf2-ros-py ros-humble-theora-image-transport
+#5 415.3   ros-humble-tinyxml-vendor ros-humble-urdf ros-humble-urdf-parser-plugin
+#5 415.3   ros-humble-urdfdom ros-humble-urdfdom-headers ros-humble-vision-msgs
+#5 415.3   ros-humble-xacro ros-humble-yaml-cpp-vendor ruby ruby-net-telnet
+#5 415.3   ruby-rubygems ruby-webrick ruby-xmlrpc ruby3.0 rubygems-integration
+#5 415.3   sdformat12-sdf sdformat14-sdf shared-mime-info shiboken2 sip-dev systemd
+#5 415.3   systemd-sysv tango-icon-theme tk8.6-blt2.5 ubuntu-mono ucf unicode-data
+#5 415.3   unixodbc-common unixodbc-dev uuid-dev x11-common x11proto-dev xkb-data
+#5 415.3   xorg-sgml-doctools xtrans-dev
+#5 415.3 The following packages will be upgraded:
+#5 415.3   curl libcurl4 liblzma5 libsqlite3-0 libsystemd0 libxml2 perl-base
+#5 415.9 7 upgraded, 899 newly installed, 0 to remove and 102 not upgraded.
+#5 415.9 Need to get 550 MB of archives.
+#5 415.9 After this operation, 2525 MB of additional disk space will be used.
+#5 415.9 Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 perl-base amd64 5.34.0-3ubuntu1.7 [1763 kB]
+#5 416.0 Get:2 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-actuator-msgs amd64 0.0.1-1jammy.20260605.124517 [89.3 kB]
+#5 416.7 Get:3 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 gz-tools2 amd64 2.0.3-1~jammy [20.6 kB]
+#5 417.2 Get:4 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 ignition-tools amd64 1.5.0-1~jammy [19.9 kB]
+#5 417.2 Get:5 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libdart-core+collisions+odelcpsolver6.13 amd64 6.13.2+ds1-1~osrf2~jammy [1452 kB]
+#5 417.2 Get:6 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-cv-bridge amd64 3.2.1-1jammy.20260605.133243 [110 kB]
+#5 417.5 Get:7 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-message-filters amd64 4.3.18-1jammy.20260605.155501 [48.5 kB]
+#5 417.8 Get:8 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-image-transport amd64 3.1.13-1jammy.20260605.160640 [401 kB]
+#5 418.4 Get:9 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-compressed-depth-image-transport amd64 2.5.5-1jammy.20260606.044414 [121 kB]
+#5 418.7 Get:10 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-compressed-image-transport amd64 2.5.5-1jammy.20260606.044420 [130 kB]
+#5 419.0 Get:11 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-eigen3-cmake-module amd64 0.1.1-4jammy.20260304.195907 [5958 B]
+#5 419.0 Get:12 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-ignition-cmake2-vendor amd64 0.0.2-2jammy.20260304.200630 [2202 B]
+#5 419.0 Get:13 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-ignition-math6-vendor amd64 0.0.2-2jammy.20260304.200852 [2138 B]
+#5 419.1 Get:14 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-theora-image-transport amd64 2.5.5-1jammy.20260605.161357 [214 kB]
+#5 419.4 Get:15 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-image-transport-plugins amd64 2.5.5-1jammy.20260606.075215 [6670 B]
+#5 419.4 Get:16 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-tf2 amd64 0.25.20-2jammy.20260605.130708 [96.5 kB]
+#5 419.7 Get:17 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-orocos-kdl-vendor amd64 0.2.5-1jammy.20260304.201339 [6362 B]
+#5 419.7 Get:18 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-tf2-msgs amd64 0.25.20-2jammy.20260605.131108 [113 kB]
+#5 420.0 Get:19 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-tf2-ros amd64 0.25.20-2jammy.20260605.160400 [313 kB]
+#5 420.3 Get:20 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-tf2-py amd64 0.25.20-2jammy.20260605.140657 [29.6 kB]
+#5 420.3 Get:21 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-tf2-ros-py amd64 0.25.20-2jammy.20260605.142515 [21.5 kB]
+#5 420.3 Get:22 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-tf2-geometry-msgs amd64 0.25.20-2jammy.20260605.164050 [21.5 kB]
+#5 420.6 Get:23 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-interactive-markers amd64 2.3.2-2jammy.20260605.164625 [209 kB]
+#5 420.9 Get:24 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-tinyxml-vendor amd64 0.8.3-2jammy.20260304.195406 [6470 B]
+#5 420.9 Get:25 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-urdfdom-headers amd64 1.0.6-2jammy.20260226.012553 [13.4 kB]
+#5 420.9 Get:26 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-urdfdom amd64 3.0.2-2jammy.20260304.202852 [73.4 kB]
+#5 421.2 Get:27 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-urdf-parser-plugin amd64 2.6.1-1jammy.20260304.201738 [9836 B]
+#5 421.2 Get:28 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-urdf amd64 2.6.1-1jammy.20260329.185456 [104 kB]
+#5 421.5 Get:29 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-kdl-parser amd64 2.6.4-1jammy.20260329.192613 [21.7 kB]
+#5 421.5 Get:30 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-sensor-msgs-py amd64 4.9.1-1jammy.20260605.133305 [13.5 kB]
+#5 421.5 Get:31 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-laser-geometry amd64 2.4.1-1jammy.20260605.151049 [27.7 kB]
+#5 421.5 Get:32 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-libcurl-vendor amd64 3.1.3-1jammy.20260304.090502 [7098 B]
+#5 421.8 Get:33 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-map-msgs amd64 2.1.0-3jammy.20260605.123735 [137 kB]
+#5 422.1 Get:34 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-python-qt-binding amd64 1.1.3-1jammy.20260304.202555 [17.0 kB]
+#5 422.1 Get:35 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-tango-icons-vendor amd64 0.1.1-3jammy.20260304.202920 [5898 B]
+#5 422.1 Get:36 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-qt-gui amd64 2.2.5-1jammy.20260330.190956 [55.6 kB]
+#5 422.4 Get:37 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-qt-gui-cpp amd64 2.2.5-1jammy.20260330.192407 [336 kB]
+#5 422.7 Get:38 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-qt-gui-py-common amd64 2.2.5-1jammy.20260330.190941 [11.6 kB]
+#5 422.7 Get:39 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-resource-retriever amd64 3.1.3-1jammy.20260304.202624 [20.9 kB]
+#5 422.7 Get:40 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-robot-state-publisher amd64 3.0.3-2jammy.20260605.161527 [172 kB]
+#5 423.0 Get:41 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-vision-msgs amd64 4.1.1-1jammy.20260605.123400 [156 kB]
+#5 423.4 Get:42 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-yaml-cpp-vendor amd64 8.0.2-1jammy.20260304.195332 [7352 B]
+#5 423.4 Get:43 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rqt-gui amd64 1.1.9-1jammy.20260605.152927 [96.8 kB]
+#5 423.7 Get:44 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rqt-gui-cpp amd64 1.1.9-1jammy.20260605.155155 [110 kB]
+#5 424.0 Get:45 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rqt-image-view amd64 1.2.0-2jammy.20260605.164150 [176 kB]
+#5 424.3 Get:46 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rqt-gui-py amd64 1.1.9-1jammy.20260607.073506 [8604 B]
+#5 424.3 Get:47 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rqt-py-common amd64 1.1.9-1jammy.20260605.152939 [23.8 kB]
+#5 424.3 Get:48 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rqt-plot amd64 1.1.5-1jammy.20260607.080742 [43.6 kB]
+#5 424.6 Get:49 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rqt-topic amd64 1.5.1-1jammy.20260607.080908 [20.5 kB]
+#5 424.6 Get:50 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rviz-ogre-vendor amd64 11.2.27-1jammy.20260612.182926 [3677 kB]
+#5 427.0 Get:51 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsystemd0 amd64 249.11-0ubuntu3.21 [316 kB]
+#5 429.9 Get:52 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libapparmor1 amd64 3.0.4-2ubuntu2.5 [39.6 kB]
+#5 430.2 Get:53 http://archive.ubuntu.com/ubuntu jammy/main amd64 libargon2-1 amd64 0~20171227-0.3 [19.5 kB]
+#5 430.2 Get:54 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdevmapper1.02.1 amd64 2:1.02.175-2.1ubuntu5 [139 kB]
+#5 430.4 Get:55 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rviz-assimp-vendor amd64 11.2.27-1jammy.20260612.182901 [8414 B]
+#5 430.4 Get:56 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rviz-rendering amd64 11.2.27-1jammy.20260612.190415 [797 kB]
+#5 430.4 Get:57 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rviz-common amd64 11.2.27-1jammy.20260612.193221 [620 kB]
+#5 430.7 Get:58 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rviz-default-plugins amd64 11.2.27-1jammy.20260612.201202 [2223 kB]
+#5 430.9 Get:59 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libjson-c5 amd64 0.15-3~ubuntu1.22.04.2 [33.5 kB]
+#5 431.1 Get:60 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcryptsetup12 amd64 2:2.4.3-1ubuntu1.3 [211 kB]
+#5 432.0 Get:61 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-rviz2 amd64 11.2.27-1jammy.20260612.213323 [13.9 kB]
+#5 432.0 Get:62 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-sdformat-urdf amd64 1.0.1-1jammy.20260329.185701 [93.8 kB]
+#5 432.0 Get:63 http://packages.ros.org/ros2/ubuntu jammy/main amd64 ros-humble-xacro amd64 2.1.1-1jammy.20260304.195513 [37.8 kB]
+#5 433.0 Get:64 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libip4tc2 amd64 1.8.7-1ubuntu5.2 [19.9 kB]
+#5 433.0 Get:65 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblzma5 amd64 5.2.5-2ubuntu1.1 [99.6 kB]
+#5 433.0 Get:66 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libkmod2 amd64 29-1ubuntu1.1 [48.1 kB]
+#5 433.8 Get:67 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 systemd amd64 249.11-0ubuntu3.21 [4585 kB]
+#5 463.3 Get:68 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 systemd-sysv amd64 249.11-0ubuntu3.21 [10.5 kB]
+#5 463.3 Get:69 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglib2.0-0 amd64 2.72.4-0ubuntu2.9 [1467 kB]
+#5 473.8 Get:70 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxml2 amd64 2.9.13+dfsg-1ubuntu0.12 [765 kB]
+#5 479.3 Get:71 http://archive.ubuntu.com/ubuntu jammy/main amd64 shared-mime-info amd64 2.1-2 [454 kB]
+#5 483.4 Get:72 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libdouble-conversion3 amd64 3.1.7-4 [39.0 kB]
+#5 483.7 Get:73 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcre2-16-0 amd64 10.39-3ubuntu0.1 [203 kB]
+#5 486.7 Get:74 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libqt5core5a amd64 5.15.3+dfsg-2ubuntu0.2 [2006 kB]
+#5 492.4 Get:75 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpng16-16 amd64 1.6.37-3ubuntu0.5 [192 kB]
+#5 494.5 Get:76 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libfreetype6 amd64 2.11.1+dfsg-1ubuntu0.3 [388 kB]
+#5 495.7 Get:77 http://archive.ubuntu.com/ubuntu jammy/main amd64 ucf all 3.0043 [56.1 kB]
+#5 497.4 Get:78 http://archive.ubuntu.com/ubuntu jammy/main amd64 fonts-dejavu-core all 2.37-2build1 [1041 kB]
+#5 505.3 Get:79 http://archive.ubuntu.com/ubuntu jammy/main amd64 fontconfig-config all 2.13.1-4.2ubuntu5 [29.1 kB]
+#5 506.5 Get:80 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfontconfig1 amd64 2.13.1-4.2ubuntu5 [131 kB]
+#5 508.4 Get:81 http://archive.ubuntu.com/ubuntu jammy/main amd64 fontconfig amd64 2.13.1-4.2ubuntu5 [177 kB]
+#5 510.1 Get:82 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdrm-common all 2.4.113-2~ubuntu0.22.04.1 [5450 B]
+#5 511.8 Get:83 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdrm2 amd64 2.4.113-2~ubuntu0.22.04.1 [38.1 kB]
+#5 512.9 Get:84 http://archive.ubuntu.com/ubuntu jammy/main amd64 libglvnd0 amd64 1.4.0-1 [73.6 kB]
+#5 515.6 Get:85 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libwayland-server0 amd64 1.20.0-1ubuntu0.1 [34.3 kB]
+#5 516.6 Get:86 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxau6 amd64 1:1.0.9-1build5 [7634 B]
+#5 516.9 Get:87 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmd0 amd64 1.0.4-1build1 [23.0 kB]
+#5 517.6 Get:88 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbsd0 amd64 0.11.5-1 [44.8 kB]
+#5 518.8 Get:89 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxdmcp6 amd64 1:1.1.3-0ubuntu5 [10.9 kB]
+#5 520.0 Get:90 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb1 amd64 1.14-3ubuntu3 [49.0 kB]
+#5 521.4 Get:91 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-randr0 amd64 1.14-3ubuntu3 [18.3 kB]
+#5 522.4 Get:92 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgbm1 amd64 23.2.1-1ubuntu3.1~22.04.4 [33.7 kB]
+#5 523.6 Get:93 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglapi-mesa amd64 23.2.1-1ubuntu3.1~22.04.4 [35.6 kB]
+#5 524.7 Get:94 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libwayland-client0 amd64 1.20.0-1ubuntu0.1 [25.9 kB]
+#5 525.5 Get:95 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libx11-data all 2:1.7.5-1ubuntu0.3 [120 kB]
+#5 525.9 Get:96 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-cmake3-dev amd64 3.6.0-1~jammy [208 kB]
+#5 529.6 Get:97 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libx11-6 amd64 2:1.7.5-1ubuntu0.3 [667 kB]
+#5 539.1 Get:98 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libx11-xcb1 amd64 2:1.7.5-1ubuntu0.3 [7802 B]
+#5 539.3 Get:99 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-dri2-0 amd64 1.14-3ubuntu3 [7206 B]
+#5 539.6 Get:100 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-dri3-0 amd64 1.14-3ubuntu3 [6968 B]
+#5 539.9 Get:101 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-present0 amd64 1.14-3ubuntu3 [5734 B]
+#5 540.2 Get:102 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-sync1 amd64 1.14-3ubuntu3 [9416 B]
+#5 540.5 Get:103 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-xfixes0 amd64 1.14-3ubuntu3 [9996 B]
+#5 540.8 Get:104 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxshmfence1 amd64 1.3-1build4 [5394 B]
+#5 541.1 Get:105 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5 amd64 5.8.0-1~jammy [135 kB]
+#5 541.1 Get:106 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+#5 542.1 Get:107 http://archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+#5 542.3 Get:108 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-glx0 amd64 1.14-3ubuntu3 [25.9 kB]
+#5 542.6 Get:109 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-shm0 amd64 1.14-3ubuntu3 [5780 B]
+#5 542.9 Get:110 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxext6 amd64 2:1.3.4-1build1 [31.8 kB]
+#5 543.2 Get:111 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxfixes3 amd64 1:6.0.0-1 [11.7 kB]
+#5 543.5 Get:112 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxxf86vm1 amd64 1:1.1.4-1build3 [10.4 kB]
+#5 543.7 Get:113 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdrm-amdgpu1 amd64 2.4.113-2~ubuntu0.22.04.1 [19.9 kB]
+#5 544.0 Get:114 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpciaccess0 amd64 0.16-3 [19.1 kB]
+#5 544.3 Get:115 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdrm-intel1 amd64 2.4.113-2~ubuntu0.22.04.1 [66.7 kB]
+#5 544.7 Get:116 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdrm-nouveau2 amd64 2.4.113-2~ubuntu0.22.04.1 [17.5 kB]
+#5 544.9 Get:117 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdrm-radeon1 amd64 2.4.113-2~ubuntu0.22.04.1 [21.6 kB]
+#5 545.2 Get:118 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libelf1 amd64 0.186-1ubuntu0.1 [51.1 kB]
+#5 545.5 Get:119 http://archive.ubuntu.com/ubuntu jammy/main amd64 libedit2 amd64 3.1-20210910-1build1 [96.8 kB]
+#5 545.9 Get:120 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libllvm15 amd64 1:15.0.7-0ubuntu0.22.04.3 [25.4 MB]
+#5 550.5 Get:121 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsensors-config all 1:3.6.0-7ubuntu1 [5274 B]
+#5 550.8 Get:122 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsensors5 amd64 1:3.6.0-7ubuntu1 [26.3 kB]
+#5 551.0 Get:123 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgl1-mesa-dri amd64 23.2.1-1ubuntu3.1~22.04.4 [8860 kB]
+#5 551.9 Get:124 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-av amd64 5.8.0-1~jammy [40.6 kB]
+#5 552.2 Get:125 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglx-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [158 kB]
+#5 553.4 Get:126 http://archive.ubuntu.com/ubuntu jammy/main amd64 libglx0 amd64 1.4.0-1 [41.0 kB]
+#5 553.7 Get:127 http://archive.ubuntu.com/ubuntu jammy/main amd64 libgl1 amd64 1.4.0-1 [110 kB]
+#5 554.1 Get:128 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgraphite2-3 amd64 1.3.14-1ubuntu0.1 [71.6 kB]
+#5 554.4 Get:129 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libharfbuzz0b amd64 2.7.4-1ubuntu3.2 [353 kB]
+#5 555.1 Get:130 http://archive.ubuntu.com/ubuntu jammy/main amd64 x11-common all 1:7.7+23ubuntu2 [23.4 kB]
+#5 555.3 Get:131 http://archive.ubuntu.com/ubuntu jammy/main amd64 libice6 amd64 2:1.0.10-1build2 [42.6 kB]
+#5 555.6 Get:132 http://archive.ubuntu.com/ubuntu jammy/main amd64 libevdev2 amd64 1.12.1+dfsg-1 [39.5 kB]
+#5 555.8 Get:133 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmtdev1 amd64 1.1.6-1build4 [14.5 kB]
+#5 556.1 Get:134 http://archive.ubuntu.com/ubuntu jammy/main amd64 libgudev-1.0-0 amd64 1:237-2build1 [16.3 kB]
+#5 556.3 Get:135 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-utils2 amd64 2.2.1-1~jammy [16.2 kB]
+#5 556.3 Get:136 http://archive.ubuntu.com/ubuntu jammy/main amd64 libwacom-common all 2.2.0-1 [54.3 kB]
+#5 556.6 Get:137 http://archive.ubuntu.com/ubuntu jammy/main amd64 libwacom9 amd64 2.2.0-1 [22.0 kB]
+#5 556.8 Get:138 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libinput-bin amd64 1.20.0-1ubuntu0.3 [19.9 kB]
+#5 557.1 Get:139 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libinput10 amd64 1.20.0-1ubuntu0.3 [131 kB]
+#5 557.4 Get:140 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-turbo8 amd64 2.1.2-0ubuntu1 [134 kB]
+#5 557.7 Get:141 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg8 amd64 8c-2ubuntu10 [2264 B]
+#5 557.9 Get:142 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libmd4c0 amd64 0.4.8-1 [42.0 kB]
+#5 558.2 Get:143 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdbus-1-3 amd64 1.12.20-2ubuntu4.1 [189 kB]
+#5 558.4 Get:144 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-utils2-dev amd64 2.2.1-1~jammy [29.4 kB]
+#5 558.5 Get:145 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libqt5dbus5 amd64 5.15.3+dfsg-2ubuntu0.2 [222 kB]
+#5 558.8 Get:146 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libqt5network5 amd64 5.15.3+dfsg-2ubuntu0.2 [731 kB]
+#5 559.3 Get:147 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsm6 amd64 2:1.2.3-1build2 [16.7 kB]
+#5 559.6 Get:148 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-icccm4 amd64 0.4.1-1.1build2 [11.5 kB]
+#5 559.8 Get:149 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-util1 amd64 0.4.0-1build2 [11.4 kB]
+#5 560.1 Get:150 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-image0 amd64 0.4.0-2 [11.5 kB]
+#5 560.3 Get:151 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-keysyms1 amd64 0.4.0-1build3 [8746 B]
+#5 560.6 Get:152 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-render0 amd64 1.14-3ubuntu3 [16.4 kB]
+#5 561.1 Get:153 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-render-util0 amd64 0.3.9-1build3 [10.3 kB]
+#5 561.1 Get:154 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-core-dev amd64 5.8.0-1~jammy [123 kB]
+#5 561.4 Get:155 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-shape0 amd64 1.14-3ubuntu3 [6158 B]
+#5 561.6 Get:156 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-xinerama0 amd64 1.14-3ubuntu3 [5414 B]
+#5 561.8 Get:157 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-xinput0 amd64 1.14-3ubuntu3 [34.3 kB]
+#5 562.1 Get:158 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-xkb1 amd64 1.14-3ubuntu3 [32.8 kB]
+#5 562.3 Get:159 http://archive.ubuntu.com/ubuntu jammy/main amd64 xkb-data all 2.33-1 [394 kB]
+#5 562.6 Get:160 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxkbcommon0 amd64 1.4.0-1 [125 kB]
+#5 562.9 Get:161 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxkbcommon-x11-0 amd64 1.4.0-1 [14.4 kB]
+#5 563.1 Get:162 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxrender1 amd64 1:0.9.10-1build4 [19.7 kB]
+#5 563.4 Get:163 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libqt5gui5 amd64 5.15.3+dfsg-2ubuntu0.2 [3722 kB]
+#5 564.1 Get:164 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libqt5widgets5 amd64 5.15.3+dfsg-2ubuntu0.2 [2561 kB]
+#5 564.4 Get:165 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libqt5svg5 amd64 5.15.3-1 [149 kB]
+#5 564.7 Get:166 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 perl-modules-5.34 all 5.34.0-3ubuntu1.7 [2977 kB]
+#5 565.1 Get:167 http://archive.ubuntu.com/ubuntu jammy/main amd64 libgdbm6 amd64 1.23-1 [33.9 kB]
+#5 565.3 Get:168 http://archive.ubuntu.com/ubuntu jammy/main amd64 libgdbm-compat4 amd64 1.23-1 [6606 B]
+#5 565.6 Get:169 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libperl5.34 amd64 5.34.0-3ubuntu1.7 [4817 kB]
+#5 566.1 Get:170 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 perl amd64 5.34.0-3ubuntu1.7 [232 kB]
+#5 566.4 Get:171 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libqt5qml5 amd64 5.15.3+dfsg-1 [1472 kB]
+#5 566.6 Get:172 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libqt5qmlmodels5 amd64 5.15.3+dfsg-1 [205 kB]
+#5 566.9 Get:173 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libqt5quick5 amd64 5.15.3+dfsg-1 [1748 kB]
+#5 567.2 Get:174 http://archive.ubuntu.com/ubuntu jammy/universe amd64 qml-module-qtquick-window2 amd64 5.15.3+dfsg-1 [26.3 kB]
+#5 567.4 Get:175 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libqt5qmlworkerscript5 amd64 5.15.3+dfsg-1 [34.4 kB]
+#5 567.7 Get:176 http://archive.ubuntu.com/ubuntu jammy/universe amd64 qml-module-qtquick2 amd64 5.15.3+dfsg-1 [33.7 kB]
+#5 567.9 Get:177 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-av-dev amd64 5.8.0-1~jammy [15.6 kB]
+#5 567.9 Get:178 http://archive.ubuntu.com/ubuntu jammy/universe amd64 qml-module-qtgraphicaleffects amd64 5.15.3-1 [74.3 kB]
+#5 568.2 Get:179 http://archive.ubuntu.com/ubuntu jammy/universe amd64 qml-module-qtqml amd64 5.15.3+dfsg-1 [17.2 kB]
+#5 568.7 Get:180 http://archive.ubuntu.com/ubuntu jammy/universe amd64 qml-module-qtqml-models2 amd64 5.15.3+dfsg-1 [18.0 kB]
+#5 568.8 Get:181 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-math7 amd64 7.6.0-1~jammy [115 kB]
+#5 568.9 Get:182 http://archive.ubuntu.com/ubuntu jammy/universe amd64 qml-module-qtquick-layouts amd64 5.15.3+dfsg-1 [56.0 kB]
+#5 569.2 Get:183 http://archive.ubuntu.com/ubuntu jammy/universe amd64 qml-module-qtquick-controls amd64 5.15.3-1 [577 kB]
+#5 569.4 Get:184 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 dbus amd64 1.12.20-2ubuntu4.1 [158 kB]
+#5 569.7 Get:185 http://archive.ubuntu.com/ubuntu jammy/main amd64 iso-codes all 4.9.0-1 [3459 kB]
+#5 570.0 Get:186 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcap2-bin amd64 1:2.44-1ubuntu0.22.04.3 [26.0 kB]
+#5 570.3 Get:187 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libfribidi0 amd64 1.0.8-2ubuntu3.1 [26.1 kB]
+#5 570.5 Get:188 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libglib2.0-data all 2.72.4-0ubuntu2.9 [5088 B]
+#5 570.8 Get:189 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpam-systemd amd64 249.11-0ubuntu3.21 [203 kB]
+#5 571.0 Get:190 http://archive.ubuntu.com/ubuntu jammy/main amd64 libslang2 amd64 2.3.2-5build4 [468 kB]
+#5 571.3 Get:191 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsqlite3-0 amd64 3.37.2-2ubuntu0.6 [642 kB]
+#5 571.5 Get:192 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnuma1 amd64 2.0.14-3ubuntu2 [22.5 kB]
+#5 571.8 Get:193 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libusb-1.0-0 amd64 2:1.0.25-1ubuntu2 [52.7 kB]
+#5 572.0 Get:194 http://archive.ubuntu.com/ubuntu jammy/main amd64 hicolor-icon-theme all 0.17-2 [9976 B]
+#5 572.2 Get:195 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgdk-pixbuf2.0-common all 2.42.8+dfsg-1ubuntu0.5 [5560 B]
+#5 572.5 Get:196 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdeflate0 amd64 1.10-2 [70.9 kB]
+#5 572.7 Get:197 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.22.04.1 [29.2 kB]
+#5 573.0 Get:198 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libwebp7 amd64 1.2.2-2ubuntu0.22.04.2 [206 kB]
+#5 573.2 Get:199 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtiff5 amd64 4.3.0-6ubuntu0.13 [185 kB]
+#5 573.5 Get:200 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgdk-pixbuf-2.0-0 amd64 2.42.8+dfsg-1ubuntu0.5 [148 kB]
+#5 573.7 Get:201 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 gtk-update-icon-cache amd64 3.24.33-1ubuntu2.2 [31.4 kB]
+#5 574.0 Get:202 http://archive.ubuntu.com/ubuntu jammy/main amd64 humanity-icon-theme all 0.6.16 [1282 kB]
+#5 574.2 Get:203 http://archive.ubuntu.com/ubuntu jammy/main amd64 ubuntu-mono all 20.10-0ubuntu2 [153 kB]
+#5 574.5 Get:204 http://archive.ubuntu.com/ubuntu jammy/main amd64 adwaita-icon-theme all 41.0-1ubuntu1 [3444 kB]
+#5 574.9 Get:205 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsigsegv2 amd64 2.13-1ubuntu3 [14.6 kB]
+#5 575.2 Get:206 http://archive.ubuntu.com/ubuntu jammy/main amd64 m4 amd64 1.4.18-5ubuntu2 [199 kB]
+#5 575.7 Get:207 http://archive.ubuntu.com/ubuntu jammy/main amd64 autoconf all 2.71-2 [338 kB]
+#5 576.0 Get:208 http://archive.ubuntu.com/ubuntu jammy/main amd64 autotools-dev all 20220109.1 [44.9 kB]
+#5 576.2 Get:209 http://archive.ubuntu.com/ubuntu jammy/main amd64 automake all 1:1.16.5-1.3 [558 kB]
+#5 576.5 Get:210 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils-common amd64 2.38-4ubuntu2.12 [223 kB]
+#5 576.7 Get:211 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libbinutils amd64 2.38-4ubuntu2.12 [663 kB]
+#5 577.0 Get:212 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libctf-nobfd0 amd64 2.38-4ubuntu2.12 [108 kB]
+#5 577.2 Get:213 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libctf0 amd64 2.38-4ubuntu2.12 [103 kB]
+#5 577.4 Get:214 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-math7-dev amd64 7.6.0-1~jammy [162 kB]
+#5 577.5 Get:215 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.38-4ubuntu2.12 [2324 kB]
+#5 577.8 Get:216 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 binutils amd64 2.38-4ubuntu2.12 [3184 B]
+#5 578.0 Get:217 http://archive.ubuntu.com/ubuntu jammy/main amd64 libtcl8.6 amd64 8.6.12+dfsg-1build1 [990 kB]
+#5 578.3 Get:218 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxft2 amd64 2.3.4-1 [41.8 kB]
+#5 578.5 Get:219 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxss1 amd64 1:1.2.3-1build2 [8476 B]
+#5 578.8 Get:220 http://archive.ubuntu.com/ubuntu jammy/main amd64 libtk8.6 amd64 8.6.12-1build1 [784 kB]
+#5 579.0 Get:221 http://archive.ubuntu.com/ubuntu jammy/main amd64 tk8.6-blt2.5 amd64 2.5.3+dfsg-4.1build2 [643 kB]
+#5 579.3 Get:222 http://archive.ubuntu.com/ubuntu jammy/main amd64 blt amd64 2.5.3+dfsg-4.1build2 [4838 B]
+#5 579.5 Get:223 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.4.0-1ubuntu1~22.04.3 [216 kB]
+#5 579.8 Get:224 http://archive.ubuntu.com/ubuntu jammy/main amd64 libisl23 amd64 0.24-2build1 [727 kB]
+#5 580.0 Get:225 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmpfr6 amd64 4.1.0-3build3 [1425 kB]
+#5 580.3 Get:226 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmpc3 amd64 1.2.1-2build1 [46.9 kB]
+#5 580.6 Get:227 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.4.0-1ubuntu1~22.04.3 [10.0 MB]
+#5 581.4 Get:228 http://archive.ubuntu.com/ubuntu jammy/main amd64 cpp amd64 4:11.2.0-1ubuntu1 [27.7 kB]
+#5 581.6 Get:229 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.25 [194 kB]
+#5 581.9 Get:230 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.25 [291 kB]
+#5 582.1 Get:231 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 dbus-user-session amd64 1.12.20-2ubuntu4.1 [9442 B]
+#5 583.3 Get:232 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdconf1 amd64 0.40.0-3ubuntu0.1 [40.5 kB]
+#5 583.6 Get:233 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 dconf-service amd64 0.40.0-3ubuntu0.1 [28.1 kB]
+#5 584.3 Get:234 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 dconf-gsettings-backend amd64 0.40.0-3ubuntu0.1 [22.7 kB]
+#5 584.9 Get:235 http://archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7212 B]
+#5 586.0 Get:236 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient21 amd64 8.0.46-0ubuntu0.22.04.3 [1336 kB]
+#5 589.3 Get:237 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-events amd64 5.8.0-1~jammy [15.0 kB]
+#5 590.8 Get:238 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-events-dev amd64 5.8.0-1~jammy [15.5 kB]
+#5 592.4 Get:239 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-graphics amd64 5.8.0-1~jammy [320 kB]
+#5 599.1 Get:240 http://archive.ubuntu.com/ubuntu jammy/main amd64 libzstd-dev amd64 1.4.8+dfsg-3build1 [401 kB]
+#5 602.7 Get:241 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient-dev amd64 8.0.46-0ubuntu0.22.04.3 [1705 kB]
+#5 613.5 Get:242 http://archive.ubuntu.com/ubuntu jammy/main amd64 default-libmysqlclient-dev amd64 1.0.8 [3586 B]
+#5 614.4 Get:243 http://archive.ubuntu.com/ubuntu jammy/universe amd64 fonts-lyx all 2.3.6-1 [159 kB]
+#5 615.5 Get:244 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.3.0-1ubuntu1~22.04.3 [48.3 kB]
+#5 616.2 Get:245 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.3.0-1ubuntu1~22.04.3 [127 kB]
+#5 616.3 Get:246 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-graphics-dev amd64 5.8.0-1~jammy [15.9 kB]
+#5 617.0 Get:247 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-geospatial amd64 5.8.0-1~jammy [25.1 kB]
+#5 617.6 Get:248 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.3.0-1ubuntu1~22.04.3 [30.2 kB]
+#5 618.7 Get:249 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.4.0-1ubuntu1~22.04.3 [2283 kB]
+#5 619.0 Get:250 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-geospatial-dev amd64 5.8.0-1~jammy [18.2 kB]
+#5 620.1 Get:251 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-io amd64 5.8.0-1~jammy [16.3 kB]
+#5 621.9 Get:252 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-io-dev amd64 5.8.0-1~jammy [15.0 kB]
+#5 623.5 Get:253 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-profiler amd64 5.8.0-1~jammy [32.0 kB]
+#5 627.9 Get:254 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-profiler-dev amd64 5.8.0-1~jammy [47.5 kB]
+#5 630.0 Get:255 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.3.0-1ubuntu1~22.04.3 [1069 kB]
+#5 631.9 Get:256 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.4.0-1ubuntu1~22.04.3 [2260 kB]
+#5 632.5 Get:257 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-testing amd64 5.8.0-1~jammy [20.0 kB]
+#5 632.5 Get:258 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.3.0-1ubuntu1~22.04.3 [976 kB]
+#5 632.8 Get:259 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.4.0-1ubuntu1~22.04.3 [2517 kB]
+#5 633.2 Get:260 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.4.0-1ubuntu1~22.04.3 [20.1 MB]
+#5 634.0 Get:261 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-testing-dev amd64 5.8.0-1~jammy [19.2 kB]
+#5 634.7 Get:262 http://archive.ubuntu.com/ubuntu jammy/main amd64 gcc amd64 4:11.2.0-1ubuntu1 [5112 B]
+#5 634.9 Get:263 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.4.0-1ubuntu1~22.04.3 [2101 kB]
+#5 634.9 Get:264 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-common5-dev amd64 5.8.0-1~jammy [12.5 kB]
+#5 635.3 Get:265 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.4.0-1ubuntu1~22.04.3 [11.4 MB]
+#5 635.6 Get:266 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-msgs10 amd64 10.3.2-1~jammy [710 kB]
+#5 636.3 Get:267 http://archive.ubuntu.com/ubuntu jammy/main amd64 g++ amd64 4:11.2.0-1ubuntu1 [1412 B]
+#5 636.5 Get:268 http://archive.ubuntu.com/ubuntu jammy/universe amd64 gdal-data all 3.4.1+dfsg-1build4 [216 kB]
+#5 636.7 Get:269 http://archive.ubuntu.com/ubuntu jammy/main amd64 rubygems-integration all 1.18 [5336 B]
+#5 637.0 Get:270 http://archive.ubuntu.com/ubuntu jammy/main amd64 rake all 13.0.6-2 [61.7 kB]
+#5 637.2 Get:271 http://archive.ubuntu.com/ubuntu jammy/main amd64 ruby-net-telnet all 0.1.1-2 [12.6 kB]
+#5 637.4 Get:272 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 ruby-webrick all 1.7.0-3ubuntu0.2 [52.5 kB]
+#5 637.6 Get:273 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 ruby-xmlrpc all 0.3.2-1ubuntu0.1 [24.9 kB]
+#5 637.9 Get:274 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libruby3.0 amd64 3.0.2-7ubuntu2.13 [5116 kB]
+#5 638.4 Get:275 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 ruby3.0 amd64 3.0.2-7ubuntu2.13 [50.1 kB]
+#5 638.6 Get:276 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 ruby-rubygems all 3.3.5-2ubuntu1.2 [228 kB]
+#5 638.9 Get:277 http://archive.ubuntu.com/ubuntu jammy/main amd64 ruby amd64 1:3.0~exp1 [5100 B]
+#5 639.1 Get:278 http://archive.ubuntu.com/ubuntu jammy/universe amd64 hdf5-helpers amd64 1.10.7+repack-4ubuntu2 [14.2 kB]
+#5 639.3 Get:279 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnl-3-200 amd64 3.5.0-0.1 [59.1 kB]
+#5 639.6 Get:280 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnl-route-3-200 amd64 3.5.0-0.1 [180 kB]
+#5 639.8 Get:281 http://archive.ubuntu.com/ubuntu jammy/main amd64 libibverbs1 amd64 39.0-1 [69.3 kB]
+#5 640.0 Get:282 http://archive.ubuntu.com/ubuntu jammy/main amd64 ibverbs-providers amd64 39.0-1 [341 kB]
+#5 640.3 Get:283 http://archive.ubuntu.com/ubuntu jammy/main amd64 icu-devtools amd64 70.1-2 [197 kB]
+#5 640.5 Get:284 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgssrpc4 amd64 1.19.2-2ubuntu0.7 [58.4 kB]
+#5 640.7 Get:285 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libkdb5-10 amd64 1.19.2-2ubuntu0.7 [40.5 kB]
+#5 641.2 Get:286 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libkadm5srv-mit12 amd64 1.19.2-2ubuntu0.7 [54.7 kB]
+#5 641.5 Get:287 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libkadm5clnt-mit12 amd64 1.19.2-2ubuntu0.7 [41.8 kB]
+#5 641.7 Get:288 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 comerr-dev amd64 2.1-1.46.5-2ubuntu1.2 [41.0 kB]
+#5 641.9 Get:289 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 krb5-multidev amd64 1.19.2-2ubuntu0.7 [125 kB]
+#5 642.2 Get:290 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libaec0 amd64 1.0.6-1 [20.1 kB]
+#5 642.4 Get:291 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libaom3 amd64 3.3.0-1ubuntu0.1 [1748 kB]
+#5 642.7 Get:292 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libaom-dev amd64 3.3.0-1ubuntu0.1 [2093 kB]
+#5 643.1 Get:293 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libarpack2 amd64 3.8.0-1 [92.4 kB]
+#5 643.3 Get:294 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libsuperlu5 amd64 5.3.0+dfsg1-2 [183 kB]
+#5 643.6 Get:295 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libarmadillo10 amd64 1:10.8.2+dfsg-1 [105 kB]
+#5 643.8 Get:296 http://archive.ubuntu.com/ubuntu jammy/main amd64 libblas-dev amd64 3.10.0-2ubuntu1 [164 kB]
+#5 644.0 Get:297 http://archive.ubuntu.com/ubuntu jammy/main amd64 liblapack-dev amd64 3.10.0-2ubuntu1 [4774 kB]
+#5 644.6 Get:298 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libarpack2-dev amd64 3.8.0-1 [105 kB]
+#5 644.8 Get:299 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libsz2 amd64 1.0.6-1 [5354 B]
+#5 645.0 Get:300 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-103-1 amd64 1.10.7+repack-4ubuntu2 [1295 kB]
+#5 645.3 Get:301 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-fortran-102 amd64 1.10.7+repack-4ubuntu2 [90.9 kB]
+#5 645.6 Get:302 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-hl-100 amd64 1.10.7+repack-4ubuntu2 [59.1 kB]
+#5 645.8 Get:303 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-hl-fortran-100 amd64 1.10.7+repack-4ubuntu2 [33.8 kB]
+#5 646.1 Get:304 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-cpp-103-1 amd64 1.10.7+repack-4ubuntu2 [129 kB]
+#5 646.3 Get:305 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-hl-cpp-100 amd64 1.10.7+repack-4ubuntu2 [10.6 kB]
+#5 646.5 Get:306 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-turbo8-dev amd64 2.1.2-0ubuntu1 [257 kB]
+#5 646.8 Get:307 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg8-dev amd64 8c-2ubuntu10 [1476 B]
+#5 647.0 Get:308 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-dev amd64 8c-2ubuntu10 [1472 B]
+#5 647.2 Get:309 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libaec-dev amd64 1.0.6-1 [17.9 kB]
+#5 647.5 Get:310 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4-openssl-dev amd64 7.81.0-1ubuntu1.25 [387 kB]
+#5 647.7 Get:311 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-dev amd64 1.10.7+repack-4ubuntu2 [2684 kB]
+#5 648.4 Get:312 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libsuperlu-dev amd64 5.3.0+dfsg1-2 [20.0 kB]
+#5 648.6 Get:313 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libarmadillo-dev amd64 1:10.8.2+dfsg-1 [399 kB]
+#5 648.9 Get:314 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasound2-data all 1.2.6.1-1ubuntu1.1 [19.3 kB]
+#5 649.1 Get:315 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasound2 amd64 1.2.6.1-1ubuntu1.1 [391 kB]
+#5 649.3 Get:316 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libass9 amd64 1:0.15.2-1 [97.5 kB]
+#5 649.6 Get:317 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libdraco4 amd64 1.5.2+dfsg-2 [726 kB]
+#5 649.9 Get:318 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libminizip1 amd64 1.1-8build1 [20.2 kB]
+#5 650.1 Get:319 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libassimp5 amd64 5.2.2~ds0-1 [2265 kB]
+#5 650.5 Get:320 http://archive.ubuntu.com/ubuntu jammy/main amd64 libasyncns0 amd64 0.8-6build2 [12.8 kB]
+#5 650.7 Get:321 http://archive.ubuntu.com/ubuntu jammy/main amd64 libatk1.0-data all 2.36.0-3build1 [2824 B]
+#5 650.9 Get:322 http://archive.ubuntu.com/ubuntu jammy/main amd64 libatk1.0-0 amd64 2.36.0-3build1 [51.9 kB]
+#5 651.2 Get:323 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxi6 amd64 2:1.8-1build1 [32.6 kB]
+#5 651.4 Get:324 http://archive.ubuntu.com/ubuntu jammy/main amd64 libatspi2.0-0 amd64 2.44.0-3 [80.9 kB]
+#5 651.6 Get:325 http://archive.ubuntu.com/ubuntu jammy/main amd64 libatk-bridge2.0-0 amd64 2.38.0-3 [66.6 kB]
+#5 651.8 Get:326 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libavahi-common-data amd64 0.8-5ubuntu5.5 [24.0 kB]
+#5 652.1 Get:327 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libavahi-common3 amd64 0.8-5ubuntu5.5 [23.9 kB]
+#5 652.3 Get:328 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libavahi-client3 amd64 0.8-5ubuntu5.5 [28.1 kB]
+#5 652.5 Get:329 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libva2 amd64 2.14.0-1 [65.0 kB]
+#5 652.8 Get:330 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libmfx1 amd64 22.3.0-1 [3105 kB]
+#5 653.2 Get:331 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libva-drm2 amd64 2.14.0-1 [7502 B]
+#5 653.7 Get:332 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libva-x11-2 amd64 2.14.0-1 [12.6 kB]
+#5 653.9 Get:333 http://archive.ubuntu.com/ubuntu jammy/main amd64 libvdpau1 amd64 1.4-3build2 [27.0 kB]
+#5 654.2 Get:334 http://archive.ubuntu.com/ubuntu jammy/universe amd64 ocl-icd-libopencl1 amd64 2.2.14-3 [39.1 kB]
+#5 654.4 Get:335 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavutil56 amd64 7:4.4.2-0ubuntu0.22.04.1 [290 kB]
+#5 654.6 Get:336 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpixman-1-0 amd64 0.40.0-1ubuntu0.22.04.1 [264 kB]
+#5 654.9 Get:337 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcairo2 amd64 1.16.0-5ubuntu2.1 [628 kB]
+#5 655.1 Get:338 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libcodec2-1.0 amd64 1.0.1-3 [8435 kB]
+#5 656.2 Get:339 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libdav1d5 amd64 0.9.2-1 [463 kB]
+#5 656.5 Get:340 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libgsm1 amd64 1.0.19-1 [27.7 kB]
+#5 656.7 Get:341 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmp3lame0 amd64 3.100-3build2 [141 kB]
+#5 656.9 Get:342 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libopenjp2-7 amd64 2.4.0-6ubuntu0.5 [158 kB]
+#5 657.2 Get:343 http://archive.ubuntu.com/ubuntu jammy/main amd64 libopus0 amd64 1.3.1-0.1build2 [203 kB]
+#5 657.4 Get:344 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcairo-gobject2 amd64 1.16.0-5ubuntu2.1 [19.5 kB]
+#5 657.7 Get:345 http://archive.ubuntu.com/ubuntu jammy/main amd64 libthai-data all 0.1.29-1build1 [162 kB]
+#5 657.9 Get:346 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdatrie1 amd64 0.2.13-2 [19.9 kB]
+#5 658.2 Get:347 http://archive.ubuntu.com/ubuntu jammy/main amd64 libthai0 amd64 0.1.29-1build1 [19.2 kB]
+#5 658.4 Get:348 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpango-1.0-0 amd64 1.50.6+ds-2ubuntu1 [230 kB]
+#5 658.7 Get:349 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpangoft2-1.0-0 amd64 1.50.6+ds-2ubuntu1 [54.0 kB]
+#5 658.9 Get:350 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpangocairo-1.0-0 amd64 1.50.6+ds-2ubuntu1 [39.8 kB]
+#5 659.1 Get:351 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 librsvg2-2 amd64 2.52.5+dfsg-3ubuntu0.2 [2974 kB]
+#5 659.5 Get:352 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libshine3 amd64 3.1.1-2 [23.2 kB]
+#5 659.8 Get:353 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsnappy1v5 amd64 1.1.8-1build3 [17.5 kB]
+#5 660.0 Get:354 http://archive.ubuntu.com/ubuntu jammy/main amd64 libspeex1 amd64 1.2~rc1.2-1.1ubuntu3 [57.9 kB]
+#5 660.3 Get:355 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsoxr0 amd64 0.1.3-4build2 [79.8 kB]
+#5 660.5 Get:356 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libswresample3 amd64 7:4.4.2-0ubuntu0.22.04.1 [62.2 kB]
+#5 660.7 Get:357 http://archive.ubuntu.com/ubuntu jammy/main amd64 libogg0 amd64 1.3.5-0ubuntu3 [22.9 kB]
+#5 661.0 Get:358 http://archive.ubuntu.com/ubuntu jammy/main amd64 libtheora0 amd64 1.1.1+dfsg.1-15ubuntu4 [209 kB]
+#5 661.2 Get:359 http://archive.ubuntu.com/ubuntu jammy/main amd64 libtwolame0 amd64 0.4.0-2build2 [52.5 kB]
+#5 661.8 Get:360 http://archive.ubuntu.com/ubuntu jammy/main amd64 libvorbis0a amd64 1.3.7-1build2 [99.2 kB]
+#5 663.7 Get:361 http://archive.ubuntu.com/ubuntu jammy/main amd64 libvorbisenc2 amd64 1.3.7-1build2 [82.6 kB]
+#5 665.0 Get:362 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libvpx7 amd64 1.11.0-2ubuntu2.5 [1078 kB]
+#5 670.8 Get:363 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libwebpmux3 amd64 1.2.2-2ubuntu0.22.04.2 [20.5 kB]
+#5 671.1 Get:364 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libx264-163 amd64 2:0.163.3060+git5db6aa6-2build1 [591 kB]
+#5 675.3 Get:365 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libx265-199 amd64 3.5-2 [1170 kB]
+#5 683.4 Get:366 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libxvidcore4 amd64 2:1.3.7-1 [201 kB]
+#5 685.0 Get:367 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libzvbi-common all 0.2.35-19 [35.5 kB]
+#5 686.0 Get:368 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libzvbi0 amd64 0.2.35-19 [262 kB]
+#5 688.2 Get:369 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavcodec58 amd64 7:4.4.2-0ubuntu0.22.04.1 [5567 kB]
+#5 692.6 Get:370 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-fuel-tools9 amd64 9.1.1-1~jammy [188 kB]
+#5 709.9 Get:371 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-msgs10-dev amd64 10.3.2-1~jammy [368 kB]
+#5 719.4 Get:372 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavutil-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [427 kB]
+#5 722.5 Get:373 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libswresample-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [78.0 kB]
+#5 723.7 Get:374 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavcodec-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [6221 kB]
+#5 737.8 Get:375 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-tools2-dev amd64 2.0.3-1~jammy [5336 B]
+#5 739.5 Get:376 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-fuel-tools9-dev amd64 9.1.1-1~jammy [27.0 kB]
+#5 741.1 Get:377 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-plugin2 amd64 2.0.4-1~jammy [42.6 kB]
+#5 747.4 Get:378 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-rendering8 amd64 8.2.3-1~jammy [125 kB]
+#5 755.5 Get:379 http://archive.ubuntu.com/ubuntu jammy/main amd64 libraw1394-11 amd64 2.1.2-2build2 [27.0 kB]
+#5 756.1 Get:380 http://archive.ubuntu.com/ubuntu jammy/main amd64 libavc1394-0 amd64 0.5.4-5build2 [17.0 kB]
+#5 756.4 Get:381 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-transport13 amd64 13.5.0-1~jammy [177 kB]
+#5 756.4 Get:382 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libudfread0 amd64 1.1.2-1 [16.2 kB]
+#5 756.8 Get:383 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libbluray2 amd64 1:1.3.1-1 [159 kB]
+#5 757.7 Get:384 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libchromaprint1 amd64 1.5.1-2 [28.4 kB]
+#5 758.0 Get:385 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libgme0 amd64 0.6.3-2 [127 kB]
+#5 758.4 Get:386 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmpg123-0 amd64 1.29.3-1ubuntu0.1 [172 kB]
+#5 758.8 Get:387 http://archive.ubuntu.com/ubuntu jammy/main amd64 libvorbisfile3 amd64 1.3.7-1build2 [17.1 kB]
+#5 759.1 Get:388 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libopenmpt0 amd64 0.6.1-1 [592 kB]
+#5 759.8 Get:389 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 librabbitmq4 amd64 0.10.0-1ubuntu2.1 [39.5 kB]
+#5 760.1 Get:390 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libsrt1.4-gnutls amd64 1.4.4-4 [309 kB]
+#5 760.4 Get:391 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libssh-gcrypt-4 amd64 0.9.6-2ubuntu0.22.04.7 [224 kB]
+#5 760.7 Get:392 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libnorm1 amd64 1.5.9+dfsg-2 [221 kB]
+#5 761.0 Get:393 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libpgm-5.3-0 amd64 5.3.128~dfsg-2 [161 kB]
+#5 761.3 Get:394 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsodium23 amd64 1.0.18-1ubuntu0.22.04.1 [164 kB]
+#5 761.6 Get:395 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libzmq5 amd64 4.3.4-2 [256 kB]
+#5 761.9 Get:396 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavformat58 amd64 7:4.4.2-0ubuntu0.22.04.1 [1103 kB]
+#5 762.5 Get:397 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libbs2b0 amd64 3.1.0+dfsg-2.2build1 [10.2 kB]
+#5 762.8 Get:398 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libflite1 amd64 2.2-3 [13.7 MB]
+#5 764.7 Get:399 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libserd-0-0 amd64 0.30.10-2 [40.8 kB]
+#5 764.9 Get:400 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libsord-0-0 amd64 0.16.8-2 [21.2 kB]
+#5 765.2 Get:401 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libsratom-0-0 amd64 0.6.8-1 [17.0 kB]
+#5 765.4 Get:402 http://archive.ubuntu.com/ubuntu jammy/universe amd64 liblilv-0-0 amd64 0.24.12-2 [42.8 kB]
+#5 765.7 Get:403 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libmysofa1 amd64 1.2.1~dfsg0-1 [1157 kB]
+#5 766.1 Get:404 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libflac8 amd64 1.3.3-2ubuntu0.2 [111 kB]
+#5 766.3 Get:405 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsndfile1 amd64 1.0.31-2ubuntu0.2 [196 kB]
+#5 766.9 Get:406 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpulse0 amd64 1:15.99.1+dfsg1-1ubuntu2.2 [298 kB]
+#5 767.2 Get:407 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libsphinxbase3 amd64 0.8+5prealpha+1-13build1 [126 kB]
+#5 767.4 Get:408 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libpocketsphinx3 amd64 0.8.0+real5prealpha+1-14ubuntu1 [132 kB]
+#5 767.6 Get:409 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-gui8 amd64 8.4.0-1~jammy [577 kB]
+#5 767.7 Get:410 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libpostproc55 amd64 7:4.4.2-0ubuntu0.22.04.1 [60.1 kB]
+#5 767.9 Get:411 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsamplerate0 amd64 0.2.2-1build1 [1359 kB]
+#5 768.3 Get:412 http://archive.ubuntu.com/ubuntu jammy/universe amd64 librubberband2 amd64 2.0.0-2 [90.0 kB]
+#5 768.6 Get:413 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libswscale5 amd64 7:4.4.2-0ubuntu0.22.04.1 [180 kB]
+#5 768.8 Get:414 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libvidstab1.1 amd64 1.1.0-2 [35.0 kB]
+#5 769.1 Get:415 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libzimg2 amd64 3.0.3+ds1-1 [241 kB]
+#5 769.4 Get:416 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavfilter7 amd64 7:4.4.2-0ubuntu0.22.04.1 [1496 kB]
+#5 769.8 Get:417 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcaca0 amd64 0.99.beta19-2.2ubuntu4.2 [224 kB]
+#5 770.0 Get:418 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcdio19 amd64 2.1.0-3ubuntu0.2 [63.6 kB]
+#5 770.3 Get:419 http://archive.ubuntu.com/ubuntu jammy/main amd64 libcdio-cdda2 amd64 10.2+2.0.0-1build3 [16.7 kB]
+#5 770.5 Get:420 http://archive.ubuntu.com/ubuntu jammy/main amd64 libcdio-paranoia2 amd64 10.2+2.0.0-1build3 [15.9 kB]
+#5 770.8 Get:421 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libdc1394-25 amd64 2.2.6-4 [88.8 kB]
+#5 771.0 Get:422 http://archive.ubuntu.com/ubuntu jammy/main amd64 libiec61883-0 amd64 1.2.0-4build3 [25.9 kB]
+#5 771.3 Get:423 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjack-jackd2-0 amd64 1.9.20~dfsg-1 [293 kB]
+#5 771.6 Get:424 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libopenal-data all 1:1.19.1-2build3 [164 kB]
+#5 771.8 Get:425 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libsndio7.0 amd64 1.8.1-1.1 [29.3 kB]
+#5 772.1 Get:426 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libopenal1 amd64 1:1.19.1-2build3 [535 kB]
+#5 772.4 Get:427 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdecor-0-0 amd64 0.1.0-3build1 [15.1 kB]
+#5 772.9 Get:428 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libwayland-cursor0 amd64 1.20.0-1ubuntu0.1 [10.7 kB]
+#5 773.1 Get:429 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libwayland-egl1 amd64 1.20.0-1ubuntu0.1 [5582 B]
+#5 773.4 Get:430 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcursor1 amd64 1:1.2.0-2build4 [20.9 kB]
+#5 773.6 Get:431 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxinerama1 amd64 2:1.1.4-3 [7382 B]
+#5 773.9 Get:432 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxrandr2 amd64 2:1.5.2-1build1 [20.4 kB]
+#5 774.4 Get:433 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsdl2-2.0-0 amd64 2.0.20+dfsg-2ubuntu1.22.04.1 [582 kB]
+#5 774.7 Get:434 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxv1 amd64 2:1.0.11-1build2 [11.2 kB]
+#5 775.0 Get:435 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavdevice58 amd64 7:4.4.2-0ubuntu0.22.04.1 [87.5 kB]
+#5 775.2 Get:436 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavformat-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [1347 kB]
+#5 775.6 Get:437 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libpostproc-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [60.9 kB]
+#5 775.9 Get:438 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libswscale-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [206 kB]
+#5 776.1 Get:439 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavfilter-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [1732 kB]
+#5 776.6 Get:440 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libavdevice-dev amd64 7:4.4.2-0ubuntu0.22.04.1 [97.3 kB]
+#5 776.8 Get:441 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libblosc1 amd64 1.21.1+ds2-2 [35.8 kB]
+#5 777.1 Get:442 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libblosc-dev amd64 1.21.1+ds2-2 [44.1 kB]
+#5 777.3 Get:443 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost1.74-dev amd64 1.74.0-14ubuntu3 [9609 kB]
+#5 778.5 Get:444 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-atomic1.74.0 amd64 1.74.0-14ubuntu3 [224 kB]
+#5 778.8 Get:445 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-atomic1.74-dev amd64 1.74.0-14ubuntu3 [221 kB]
+#5 779.0 Get:446 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-chrono1.74.0 amd64 1.74.0-14ubuntu3 [232 kB]
+#5 779.3 Get:447 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-chrono1.74-dev amd64 1.74.0-14ubuntu3 [239 kB]
+#5 779.6 Get:448 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-date-time1.74.0 amd64 1.74.0-14ubuntu3 [221 kB]
+#5 779.8 Get:449 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-serialization1.74.0 amd64 1.74.0-14ubuntu3 [327 kB]
+#5 780.1 Get:450 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-serialization1.74-dev amd64 1.74.0-14ubuntu3 [375 kB]
+#5 780.4 Get:451 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-date-time1.74-dev amd64 1.74.0-14ubuntu3 [226 kB]
+#5 780.7 Get:452 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-dev amd64 1.74.0.3ubuntu7 [3490 B]
+#5 780.9 Get:453 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-python1.74.0 amd64 1.74.0-14ubuntu3 [299 kB]
+#5 781.2 Get:454 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-system1.74.0 amd64 1.74.0-14ubuntu3 [221 kB]
+#5 781.4 Get:455 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-system1.74-dev amd64 1.74.0-14ubuntu3 [218 kB]
+#5 781.7 Get:456 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-thread1.74.0 amd64 1.74.0-14ubuntu3 [262 kB]
+#5 782.0 Get:457 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-thread1.74-dev amd64 1.74.0-14ubuntu3 [272 kB]
+#5 782.5 Get:458 http://archive.ubuntu.com/ubuntu jammy/main amd64 libboost-thread-dev amd64 1.74.0.3ubuntu7 [3266 B]
+#5 782.8 Get:459 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli-dev amd64 1.0.9-2build6 [337 kB]
+#5 783.1 Get:460 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmd-dev amd64 1.0.4-1build1 [40.0 kB]
+#5 783.3 Get:461 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbsd-dev amd64 0.11.5-1 [168 kB]
+#5 783.6 Get:462 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libbullet3.06 amd64 3.06+dfsg-4build2 [1762 kB]
+#5 784.0 Get:463 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl3-gnutls amd64 7.81.0-1ubuntu1.25 [284 kB]
+#5 784.3 Get:464 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libcfitsio9 amd64 4.0.0-1 [519 kB]
+#5 784.5 Get:465 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libcfitsio-dev amd64 4.0.0-1 [591 kB]
+#5 784.8 Get:466 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libcharls2 amd64 2.3.4-1 [87.0 kB]
+#5 785.1 Get:467 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libcharls-dev amd64 2.3.4-1 [22.4 kB]
+#5 785.3 Get:468 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libllvm14 amd64 1:14.0.0-1ubuntu1.1 [24.0 MB]
+#5 787.4 Get:469 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libclang1-14 amd64 1:14.0.0-1ubuntu1.1 [6792 kB]
+#5 788.1 Get:470 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblcms2-2 amd64 2.12~rc1-2ubuntu0.1 [159 kB]
+#5 788.3 Get:471 http://archive.ubuntu.com/ubuntu jammy/main amd64 libcolord2 amd64 1.4.6-1 [155 kB]
+#5 788.6 Get:472 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcups2 amd64 2.4.1op1-1ubuntu4.21 [266 kB]
+#5 788.8 Get:473 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libccd2 amd64 2.1-2 [21.8 kB]
+#5 789.1 Get:474 http://archive.ubuntu.com/ubuntu jammy/universe amd64 liboctomap1.9 amd64 1.9.7+dfsg-3 [80.4 kB]
+#5 789.3 Get:475 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libfcl0.7 amd64 0.7.0-3 [922 kB]
+#5 789.6 Get:476 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libode8 amd64 2:0.16.2-1 [387 kB]
+#5 789.9 Get:477 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libdav1d-dev amd64 0.9.2-1 [24.1 kB]
+#5 790.2 Get:478 http://archive.ubuntu.com/ubuntu jammy/main amd64 libraw1394-dev amd64 2.1.2-2build2 [39.1 kB]
+#5 790.4 Get:479 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libdc1394-dev amd64 2.2.6-4 [116 kB]
+#5 790.7 Get:480 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libde265-0 amd64 1.0.8-1ubuntu0.3 [290 kB]
+#5 790.9 Get:481 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libde265-dev amd64 1.0.8-1ubuntu0.3 [12.3 kB]
+#5 791.8 Get:482 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdeflate-dev amd64 1.10-2 [59.2 kB]
+#5 793.2 Get:483 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdpkg-perl all 1.21.1ubuntu2.6 [237 kB]
+#5 795.8 Get:484 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libdraco-dev amd64 1.5.2+dfsg-2 [1017 kB]
+#5 798.1 Get:485 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdw1 amd64 0.186-1ubuntu0.1 [251 kB]
+#5 799.0 Get:486 http://archive.ubuntu.com/ubuntu jammy/main amd64 xorg-sgml-doctools all 1:1.11-1.1 [10.9 kB]
+#5 799.3 Get:487 http://archive.ubuntu.com/ubuntu jammy/main amd64 x11proto-dev all 2021.5-1 [604 kB]
+#5 800.9 Get:488 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxau-dev amd64 1:1.0.9-1build5 [9724 B]
+#5 801.2 Get:489 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxdmcp-dev amd64 1:1.1.3-0ubuntu5 [26.5 kB]
+#5 802.1 Get:490 http://archive.ubuntu.com/ubuntu jammy/main amd64 xtrans-dev all 1.4.0-1 [68.9 kB]
+#5 803.2 Get:491 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpthread-stubs0-dev amd64 0.4-1build2 [5516 B]
+#5 803.8 Get:492 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb1-dev amd64 1.14-3ubuntu3 [86.5 kB]
+#5 805.3 Get:493 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libx11-dev amd64 2:1.7.5-1ubuntu0.3 [744 kB]
+#5 808.2 Get:494 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-utils2-cli-dev amd64 2.2.1-1~jammy [64.5 kB]
+#5 813.7 Get:495 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-plugin2-dev amd64 2.0.4-1~jammy [39.3 kB]
+#5 815.5 Get:496 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-math7-eigen3-dev amd64 7.6.0-1~jammy [10.1 kB]
+#5 816.7 Get:497 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-rendering8-core-dev amd64 8.2.3-1~jammy [223 kB]
+#5 825.5 Get:498 http://archive.ubuntu.com/ubuntu jammy/main amd64 libglx-dev amd64 1.4.0-1 [14.1 kB]
+#5 826.3 Get:499 http://archive.ubuntu.com/ubuntu jammy/main amd64 libgl-dev amd64 1.4.0-1 [101 kB]
+#5 828.2 Get:500 http://archive.ubuntu.com/ubuntu jammy/main amd64 libegl-dev amd64 1.4.0-1 [18.0 kB]
+#5 828.7 Get:501 http://archive.ubuntu.com/ubuntu jammy/main amd64 libepoxy0 amd64 1.5.10-1 [237 kB]
+#5 832.0 Get:502 http://archive.ubuntu.com/ubuntu jammy/main amd64 libevent-core-2.1-7 amd64 2.1.12-stable-1build3 [93.9 kB]
+#5 834.0 Get:503 http://archive.ubuntu.com/ubuntu jammy/main amd64 libevent-pthreads-2.1-7 amd64 2.1.12-stable-1build3 [7642 B]
+#5 834.2 Get:504 https://packages.osrfoundation.org/gazebo/ubuntu-stable jammy/main amd64 libgz-rendering8-ogre1 amd64 8.2.3-1~jammy [462 kB]
+#5 834.3 Get:505 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexif12 amd64 0.6.24-1ubuntu0.22.04.1 [92.7 kB]
+#5 836.0 Get:506 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexif-dev amd64 0.6.24-1ubuntu0.22.04.1 [113 kB]
+#5 839.4 Get:507 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libpsm-infinipath1 amd64 3.3+20.604758e7-6.1 [170 kB]
+#5 842.8 Get:508 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libpsm2-2 amd64 11.2.185-1 [182 kB]

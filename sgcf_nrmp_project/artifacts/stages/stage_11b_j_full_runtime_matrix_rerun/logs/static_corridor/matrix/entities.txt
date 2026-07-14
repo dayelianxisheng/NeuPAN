@@ -1,0 +1,8 @@
+
+Requesting state for world [static_corridor]...
+
+Available models:
+    - ground_plane
+    - sgcf_robot
+    - wall_left
+    - wall_right

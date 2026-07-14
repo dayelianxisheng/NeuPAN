@@ -1,0 +1,35 @@
+{
+  "after": {
+    "camera_sensor": "4c87aae1bf7a6c0a0d5af7b7434a9d7d90f1c53584e6b0b0adac86535044f8c4",
+    "collision": "f0de5a533b28283a0949c348ed9d1d2f299e7f5a7ee48852974c4df26c3c86cc",
+    "diff_drive": "de1cbe4e7047c9a1b4c9988932c442d3df2b035036c5b3db6898f43a3027b677",
+    "joint": "c34df312315324ec0e10aa0a8c3a4295a600e7b5e697d0be09bd2a75be9e8496",
+    "lidar_sensor": "de151233c7a9db474e1f84e545196afb0a7a0177a2f872a286c7164ee4f233f9",
+    "lidar_without_visibility": "6f5d70fb26711e4bf6f9eaf127729ac719fe5bf89c599995d7954d4b53415412",
+    "robot": "3fc0c6077a99591802370181c2f2e57196171b58a5622c6ccb7344d2702b7a52",
+    "visual": "a7e767f26a75caf80a031ff8ae734e5623ac1691e28aa324508043f2afabd236",
+    "visual_without_visibility": "ab8ba5595930b6a29114f4534c9025680986521a60329112c7ebeaa73666f38d"
+  },
+  "before": {
+    "camera_sensor": "4c87aae1bf7a6c0a0d5af7b7434a9d7d90f1c53584e6b0b0adac86535044f8c4",
+    "collision": "f0de5a533b28283a0949c348ed9d1d2f299e7f5a7ee48852974c4df26c3c86cc",
+    "diff_drive": "de1cbe4e7047c9a1b4c9988932c442d3df2b035036c5b3db6898f43a3027b677",
+    "joint": "c34df312315324ec0e10aa0a8c3a4295a600e7b5e697d0be09bd2a75be9e8496",
+    "lidar_sensor": "6f5d70fb26711e4bf6f9eaf127729ac719fe5bf89c599995d7954d4b53415412",
+    "robot": "3e374265419ae09961d772b03c23813c8c433c456ab39ea234cc23527c2aaf1c",
+    "visual": "ab8ba5595930b6a29114f4534c9025680986521a60329112c7ebeaa73666f38d"
+  },
+  "camera_equal": true,
+  "changed_xml_paths": [
+    "model/link[@name='base_link']/visual[@name='body']/visibility_flags",
+    "model/link[@name='left_wheel_link']/visual[@name='left_wheel_visual']/visibility_flags",
+    "model/link[@name='right_wheel_link']/visual[@name='right_wheel_visual']/visibility_flags",
+    "model/link[@name='lidar_link']/sensor[@name='lidar']/lidar/visibility_mask"
+  ],
+  "collision_equal": true,
+  "diff_drive_equal": true,
+  "joint_equal": true,
+  "lidar_nonvisibility_equal": true,
+  "status": "PASSED_ALLOWED_DELTA_ONLY",
+  "visual_nonvisibility_equal": true
+}

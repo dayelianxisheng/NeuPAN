@@ -1,0 +1,1143 @@
+{
+  "active_include_scale_count_after": 0,
+  "affected_include_count": 13,
+  "affected_world_count": 11,
+  "historical_invalid_include_scale_count": 13,
+  "legal_mesh_scale_count": 0,
+  "nonunit_scale_count": 5,
+  "records": [
+    {
+      "chosen_migration_strategy": "REMOVE_UNIT_INCLUDE_SCALE_ONLY",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://human_placeholder",
+      "instance_name": "human_01",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": false,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "cylinder"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+        "model_hash": "56724f45c3dae4db1db059f3da3c30eb8876d74dcae37e8d750ca7c9f4311cb2",
+        "model_name": "human_placeholder",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        1.5,
+        0.0,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+      "referenced_model_geometry": [
+        "cylinder"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": true,
+      "world": "human_path_center"
+    },
+    {
+      "chosen_migration_strategy": "REMOVE_UNIT_INCLUDE_SCALE_ONLY",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://human_placeholder",
+      "instance_name": "human_01",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": false,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "cylinder"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+        "model_hash": "56724f45c3dae4db1db059f3da3c30eb8876d74dcae37e8d750ca7c9f4311cb2",
+        "model_name": "human_placeholder",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        1.5,
+        0.35,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+      "referenced_model_geometry": [
+        "cylinder"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": true,
+      "world": "human_path_side"
+    },
+    {
+      "chosen_migration_strategy": "BLOCKED_COMPLEX_NONUNIT_MODEL",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://human_placeholder",
+      "instance_name": "initial_collision_obstacle",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": false,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "cylinder"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+        "model_hash": "56724f45c3dae4db1db059f3da3c30eb8876d74dcae37e8d750ca7c9f4311cb2",
+        "model_name": "human_placeholder",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        0.41,
+        0.0,
+        0.2,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+      "referenced_model_geometry": [
+        "cylinder"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        0.5714285714285714,
+        0.5714285714285714,
+        0.23529411764705882
+      ],
+      "unit_scale": false,
+      "world": "initial_collision"
+    },
+    {
+      "chosen_migration_strategy": "EXPLICIT_STATIC_BOX_MATERIALIZATION",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://static_obstacle",
+      "instance_name": "wall_left",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": true,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "box"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/static_obstacle/model.sdf",
+        "model_hash": "a5cef63add19c020dfb2cb9c35c34ed6474cd4baf7fa4c7620635b7a7323e9d6",
+        "model_name": "static_obstacle",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        2.0,
+        0.585,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/static_obstacle/model.sdf",
+      "referenced_model_geometry": [
+        "box"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "unit_scale": false,
+      "world": "narrow_passage"
+    },
+    {
+      "chosen_migration_strategy": "EXPLICIT_STATIC_BOX_MATERIALIZATION",
+      "include_xml_path": "/sdf/world/include[2]",
+      "included_uri": "model://static_obstacle",
+      "instance_name": "wall_right",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": true,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "box"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/static_obstacle/model.sdf",
+        "model_hash": "a5cef63add19c020dfb2cb9c35c34ed6474cd4baf7fa4c7620635b7a7323e9d6",
+        "model_name": "static_obstacle",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        2.0,
+        -0.585,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/static_obstacle/model.sdf",
+      "referenced_model_geometry": [
+        "box"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "unit_scale": false,
+      "world": "narrow_passage"
+    },
+    {
+      "chosen_migration_strategy": "REMOVE_UNIT_INCLUDE_SCALE_ONLY",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://human_placeholder",
+      "instance_name": "human_01",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": false,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "cylinder"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+        "model_hash": "56724f45c3dae4db1db059f3da3c30eb8876d74dcae37e8d750ca7c9f4311cb2",
+        "model_name": "human_placeholder",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        1.5,
+        0.0,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+      "referenced_model_geometry": [
+        "cylinder"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": true,
+      "world": "outdated_rgb_contract"
+    },
+    {
+      "chosen_migration_strategy": "REMOVE_UNIT_INCLUDE_SCALE_ONLY",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://human_placeholder",
+      "instance_name": "human_01",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": false,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "cylinder"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+        "model_hash": "56724f45c3dae4db1db059f3da3c30eb8876d74dcae37e8d750ca7c9f4311cb2",
+        "model_name": "human_placeholder",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        1.5,
+        0.0,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+      "referenced_model_geometry": [
+        "cylinder"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": true,
+      "world": "rgb_dropout_contract"
+    },
+    {
+      "chosen_migration_strategy": "REMOVE_UNIT_INCLUDE_SCALE_ONLY",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://robot_obstacle",
+      "instance_name": "robot_obstacle_01",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": true,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "box"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/robot_obstacle/model.sdf",
+        "model_hash": "48662cba37c41f8d3e00a06df96381b76c4650869424c52bc0107238b7cbc2f6",
+        "model_name": "robot_obstacle",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        1.5,
+        0.0,
+        0.15,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/robot_obstacle/model.sdf",
+      "referenced_model_geometry": [
+        "box"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": true,
+      "world": "robot_obstacle"
+    },
+    {
+      "chosen_migration_strategy": "REMOVE_UNIT_INCLUDE_SCALE_ONLY",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://human_placeholder",
+      "instance_name": "human_01",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": false,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "cylinder"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+        "model_hash": "56724f45c3dae4db1db059f3da3c30eb8876d74dcae37e8d750ca7c9f4311cb2",
+        "model_name": "human_placeholder",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        1.5,
+        0.0,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/human_placeholder/model.sdf",
+      "referenced_model_geometry": [
+        "cylinder"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": true,
+      "world": "semantic_infeasible"
+    },
+    {
+      "chosen_migration_strategy": "REMOVE_UNIT_INCLUDE_SCALE_ONLY",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://static_cylinder",
+      "instance_name": "static_01",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": false,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "cylinder"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/static_cylinder/model.sdf",
+        "model_hash": "14b00670d4b582b2f1801e1098be50b58000a4e981bcb9e0406c330d7f9c61e0",
+        "model_name": "static_cylinder",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        1.5,
+        0.0,
+        0.35,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/static_cylinder/model.sdf",
+      "referenced_model_geometry": [
+        "cylinder"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": true,
+      "world": "single_static_obstacle"
+    },
+    {
+      "chosen_migration_strategy": "EXPLICIT_STATIC_BOX_MATERIALIZATION",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://static_obstacle",
+      "instance_name": "wall_left",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": true,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "box"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/static_obstacle/model.sdf",
+        "model_hash": "a5cef63add19c020dfb2cb9c35c34ed6474cd4baf7fa4c7620635b7a7323e9d6",
+        "model_name": "static_obstacle",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        2.0,
+        0.7,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/static_obstacle/model.sdf",
+      "referenced_model_geometry": [
+        "box"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "unit_scale": false,
+      "world": "static_corridor"
+    },
+    {
+      "chosen_migration_strategy": "EXPLICIT_STATIC_BOX_MATERIALIZATION",
+      "include_xml_path": "/sdf/world/include[2]",
+      "included_uri": "model://static_obstacle",
+      "instance_name": "wall_right",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": true,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "box"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/static_obstacle/model.sdf",
+        "model_hash": "a5cef63add19c020dfb2cb9c35c34ed6474cd4baf7fa4c7620635b7a7323e9d6",
+        "model_name": "static_obstacle",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        2.0,
+        -0.7,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/static_obstacle/model.sdf",
+      "referenced_model_geometry": [
+        "box"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "unit_scale": false,
+      "world": "static_corridor"
+    },
+    {
+      "chosen_migration_strategy": "REMOVE_UNIT_INCLUDE_SCALE_ONLY",
+      "include_xml_path": "/sdf/world/include[1]",
+      "included_uri": "model://vehicle_placeholder",
+      "instance_name": "vehicle_01",
+      "model_structure_audit": {
+        "automatic_box_materialization_safe": true,
+        "collision_count": 1,
+        "collision_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "geometry_types": [
+          "box"
+        ],
+        "inertial_count": 0,
+        "joint_count": 0,
+        "link_count": 1,
+        "material_xml_present": true,
+        "mesh_count": 0,
+        "model_file": "sgcf_nrmp_project/gazebo/models/vehicle_placeholder/model.sdf",
+        "model_hash": "769ba400b03c97b5eddac488546a45d07a247fd60b883177264b19f63b641a65",
+        "model_name": "vehicle_placeholder",
+        "nested_model_count": 0,
+        "plugin_count": 0,
+        "sensor_count": 0,
+        "static": true,
+        "visual_count": 1,
+        "visual_local_poses": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "pose_xyz_rpy": [
+        1.5,
+        0.0,
+        0.2,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "referenced_model_file": "sgcf_nrmp_project/gazebo/models/vehicle_placeholder/model.sdf",
+      "referenced_model_geometry": [
+        "box"
+      ],
+      "referenced_model_local_poses": {
+        "collision": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "visual": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "scale_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": true,
+      "world": "vehicle_path"
+    }
+  ],
+  "status": "MIGRATED",
+  "unit_scale_count": 8
+}

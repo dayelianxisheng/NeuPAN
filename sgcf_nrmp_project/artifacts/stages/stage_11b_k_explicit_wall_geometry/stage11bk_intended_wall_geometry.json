@@ -1,0 +1,130 @@
+{
+  "dimensions_inferred_from_runtime_clearance": false,
+  "records": [
+    {
+      "base_model_dimensions_xyz_m": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "base_times_scale_matches_intent": true,
+      "historical_invalid_scale": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "intended_dimensions_xyz_m": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "intended_pose_xyz_rpy": [
+        2.0,
+        0.7,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model_name": "wall_left",
+      "scene_id": "static_corridor",
+      "semantic_class": "STATIC_OBSTACLE",
+      "source_generator": "sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py",
+      "source_manifest": "stage_11a_gazebo_preparation/gazebo_scenario_manifest.json"
+    },
+    {
+      "base_model_dimensions_xyz_m": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "base_times_scale_matches_intent": true,
+      "historical_invalid_scale": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "intended_dimensions_xyz_m": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "intended_pose_xyz_rpy": [
+        2.0,
+        -0.7,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model_name": "wall_right",
+      "scene_id": "static_corridor",
+      "semantic_class": "STATIC_OBSTACLE",
+      "source_generator": "sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py",
+      "source_manifest": "stage_11a_gazebo_preparation/gazebo_scenario_manifest.json"
+    },
+    {
+      "base_model_dimensions_xyz_m": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "base_times_scale_matches_intent": true,
+      "historical_invalid_scale": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "intended_dimensions_xyz_m": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "intended_pose_xyz_rpy": [
+        2.0,
+        0.585,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model_name": "wall_left",
+      "scene_id": "narrow_passage",
+      "semantic_class": "STATIC_OBSTACLE",
+      "source_generator": "sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py",
+      "source_manifest": "stage_11a_gazebo_preparation/gazebo_scenario_manifest.json"
+    },
+    {
+      "base_model_dimensions_xyz_m": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "base_times_scale_matches_intent": true,
+      "historical_invalid_scale": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "intended_dimensions_xyz_m": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "intended_pose_xyz_rpy": [
+        2.0,
+        -0.585,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model_name": "wall_right",
+      "scene_id": "narrow_passage",
+      "semantic_class": "STATIC_OBSTACLE",
+      "source_generator": "sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py",
+      "source_manifest": "stage_11a_gazebo_preparation/gazebo_scenario_manifest.json"
+    }
+  ],
+  "status": "RECORDED_NOT_APPLIED_DUE_TO_SCOPE_STOP"
+}

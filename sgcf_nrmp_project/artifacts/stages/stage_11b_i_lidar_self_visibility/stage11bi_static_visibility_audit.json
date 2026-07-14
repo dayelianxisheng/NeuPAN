@@ -1,0 +1,17 @@
+{
+  "all_robot_visuals_flagged": true,
+  "camera_unchanged": true,
+  "collision_unchanged": true,
+  "external_models_modified": false,
+  "footprint_unchanged": true,
+  "human_path_side_world_hash_unchanged": true,
+  "initial_collision_world_hash_unchanged": true,
+  "lidar_mask_valid": true,
+  "lidar_pose_and_nonvisibility_parameters_unchanged": true,
+  "passed_before_runtime": true,
+  "robot_sdf_gz_validation": "Valid",
+  "runtime_point_crop_scan_matches": [],
+  "stage07_relative_extrinsic_unchanged": true,
+  "status": "PASSED",
+  "world_xml_parse_count": 12
+}

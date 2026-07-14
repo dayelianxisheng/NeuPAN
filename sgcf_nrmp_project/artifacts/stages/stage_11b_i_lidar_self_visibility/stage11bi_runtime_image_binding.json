@@ -1,0 +1,12 @@
+{
+  "container_id": "4e1744fecf97791e785529bcf5d72cdaa37f2bf14a1b8091f4664e96666a48d6",
+  "container_image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "container_name": "sgcf_gz_stage11bi_formal",
+  "created_using_mutable_tag": false,
+  "current_attempt": "FORMAL_VISIBILITY_FIX",
+  "image_id_match": true,
+  "immutable_image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "previous_attempt": "BLOCKED_RUNTIME_IMAGE_ID_UNAVAILABLE",
+  "source": "Stage 11B-I-B stage11bib_image_resolution.json",
+  "status": "PASSED"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "NOT_UPDATED_DUE_TO_EARLIER_STOP",
+  "world_hashes": {
+    "empty_world.sdf": "88eb227417c6d24cc64c3238c60a27966f18566b081968ab12d6f8ee1022279e",
+    "human_path_center.sdf": "3a2b82c44c4941228242ec82e39c967cfcd77d3986cf85292da32999adef6035",
+    "human_path_side.sdf": "6ea9ce34a93f3f3e59f96148ec3f6b6b3cb8e6b0d5cef7ba1d08f438dc90790d",
+    "initial_collision.sdf": "38d31e14d7570c581f70d79bf7031bbd08e9fd1d9527d35b8ee6257444233c0d",
+    "narrow_passage.sdf": "ec5f5519a4079f048b5b09a102961205851a840fffbf1d54d386de4484ad318a",
+    "outdated_rgb_contract.sdf": "9fd49c069697657393a72e43294e978138b107ee2a87b85a5973bb14f4854e5c",
+    "rgb_dropout_contract.sdf": "3925c9b29c7f34a15c8f94f0573533cc6b2ab3fa62b6ed49a60300c3a760c18b",
+    "robot_obstacle.sdf": "889622356518dbd359f25ca02108a31eac9c8a0ce8a629f2424cc61d17874400",
+    "semantic_infeasible.sdf": "b80789b8fc3886359edc7d064a02ab8753155e5363d951f8eb936a2fec5abda7",
+    "single_static_obstacle.sdf": "b6a25fd84a59a405035a8e91dc50fadc597f4d8d0e1ed0c88275e23209bf0e1a",
+    "static_corridor.sdf": "7caf6b40a6319aa4748ccb3b5ceb7064084c54d4f85fbcfd07273c61d1b245f5",
+    "vehicle_path.sdf": "274f86147202d1cf7a30d147ad5917bbb78670c5a1c79f4be65e37d13027797c"
+  }
+}

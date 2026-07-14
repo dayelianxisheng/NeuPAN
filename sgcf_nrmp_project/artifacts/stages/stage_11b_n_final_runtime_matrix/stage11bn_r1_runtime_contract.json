@@ -1,0 +1,17 @@
+{
+  "clock_source": "simulation_time",
+  "outdated_rgb_contract": {
+    "fallback_reason": "OUTDATED_IMAGE",
+    "lidar_clock_odometry_normal": true,
+    "semantic_contribution_enabled": false,
+    "semantic_valid": false
+  },
+  "planner_called": false,
+  "rgb_dropout_contract": {
+    "fallback_reason": "RGB_DROPOUT",
+    "lidar_clock_odometry_normal": true,
+    "semantic_contribution_enabled": false,
+    "semantic_valid": false
+  },
+  "status": "PASSED"
+}

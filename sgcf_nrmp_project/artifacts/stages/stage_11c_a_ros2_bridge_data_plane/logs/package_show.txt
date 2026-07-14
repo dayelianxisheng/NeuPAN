@@ -1,0 +1,17 @@
+Package: ros-humble-ros-gzharmonic
+Version: 0.244.12-3jammy
+Architecture: amd64
+Maintainer: Louise Poubel <louise@openrobotics.org>
+Installed-Size: 43
+Depends: ros-humble-ros-gzharmonic-bridge, ros-humble-ros-gzharmonic-image, ros-humble-ros-gzharmonic-sim, ros-humble-ros-gzharmonic-sim-demos, ros-humble-ros-workspace
+Conflicts: ros-humble-ros-gz, ros-humble-ros-gzgarden
+Priority: optional
+Section: misc
+Filename: pool/main/r/ros-humble-ros-gzharmonic/ros-humble-ros-gzharmonic_0.244.12-3jammy_amd64.deb
+Size: 6830
+SHA256: 3c264a9888c9d7738e917692446863f9110b2417298192b1a25b13affa26a2b0
+SHA1: 1701332e61377b6db5c190bfc38fc415c1b76286
+MD5sum: 1c6df801405cdac361e267f694bf6859
+Description: Meta-package containing interfaces for using ROS 2 with Gazebo simulation.
+Description-md5: 7c163df521e3acf63ef2167539969298
+

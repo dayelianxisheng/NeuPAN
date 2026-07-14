@@ -1,0 +1,5 @@
+{
+  "decision": "BLOCKED_SCALE_SCOPE_EXPANSION_REQUIRED",
+  "reason": "include/scale exists outside static_corridor and narrow_passage; expanding the asset repair was not authorized",
+  "status": "NOT_EXECUTED_DUE_TO_EARLIER_STOP"
+}

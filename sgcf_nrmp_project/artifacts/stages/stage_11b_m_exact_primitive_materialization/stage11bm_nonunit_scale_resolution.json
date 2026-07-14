@@ -1,0 +1,299 @@
+{
+  "box_resolved_dimensions_m": [
+    5.0,
+    0.15,
+    0.5
+  ],
+  "cylinder_resolved_length_m": 0.4,
+  "cylinder_resolved_radius_m": 0.2,
+  "historical_records": [
+    {
+      "automatic_materialization_safe": false,
+      "base_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "base_length": 1.7,
+      "base_radius": 0.35,
+      "base_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blocked_reason": "non-unit referenced geometry is cylinder; authorization permits automatic materialization only for box primitives",
+      "geometry_type": "cylinder",
+      "instance_name": "initial_collision_obstacle",
+      "model": "human_placeholder",
+      "scale_xyz": [
+        0.5714285714285714,
+        0.5714285714285714,
+        0.23529411764705882
+      ],
+      "world": "initial_collision",
+      "world_pose": [
+        0.41,
+        0.0,
+        0.2,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "automatic_materialization_safe": true,
+      "base_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "base_dimensions": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "base_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "geometry_type": "box",
+      "instance_name": "wall_left",
+      "model": "static_obstacle",
+      "resolved_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "resolved_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "resolved_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale_xyz": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "world": "narrow_passage",
+      "world_pose": [
+        2.0,
+        0.585,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "automatic_materialization_safe": true,
+      "base_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "base_dimensions": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "base_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "geometry_type": "box",
+      "instance_name": "wall_right",
+      "model": "static_obstacle",
+      "resolved_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "resolved_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "resolved_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale_xyz": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "world": "narrow_passage",
+      "world_pose": [
+        2.0,
+        -0.585,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "automatic_materialization_safe": true,
+      "base_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "base_dimensions": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "base_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "geometry_type": "box",
+      "instance_name": "wall_left",
+      "model": "static_obstacle",
+      "resolved_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "resolved_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "resolved_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale_xyz": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "world": "static_corridor",
+      "world_pose": [
+        2.0,
+        0.7,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "automatic_materialization_safe": true,
+      "base_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "base_dimensions": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "base_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "geometry_type": "box",
+      "instance_name": "wall_right",
+      "model": "static_obstacle",
+      "resolved_collision_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "resolved_dimensions": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "resolved_visual_local_pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale_xyz": [
+        5.0,
+        0.15,
+        0.5
+      ],
+      "world": "static_corridor",
+      "world_pose": [
+        2.0,
+        -0.7,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "status": "PASSED"
+}

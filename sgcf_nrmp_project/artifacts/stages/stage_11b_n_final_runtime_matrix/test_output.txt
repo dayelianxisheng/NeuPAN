@@ -1,0 +1,23 @@
+Stage 11B-N final acceptance validation
+
+python -m unittest -v sgcf_nrmp_project.tools.test_stage11bn
+Ran 11 tests in 0.004s
+OK
+
+python -m compileall -q sgcf_nrmp_project/tools sgcf_nrmp_project/artifacts/stages/stage_11b_n_final_runtime_matrix
+PASS
+
+JSON parse audit
+JSON_PARSE_PASS 61
+
+git diff --check
+PASS
+
+SDFormat: 12 / 12 worlds PASS
+Fresh runtime matrix: 12 / 12 complete
+Segmentation faults: 0
+Robot self-return: 0 in all worlds
+Clearance classification: 5 / 5 agreement
+Startup latency: 3 samples for each required scene
+All matrix and startup processes cleaned
+Final residual Gazebo executable count: 0

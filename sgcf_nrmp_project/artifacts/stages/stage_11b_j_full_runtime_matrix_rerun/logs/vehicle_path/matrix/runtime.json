@@ -1,0 +1,14 @@
+{
+  "scene": "vehicle_path",
+  "run_id": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784013529873870440,
+  "ready_ns": 1784013534124516469,
+  "first_clock_ns": 1784013549137473114,
+  "first_lidar_ns": 1784013549243524923,
+  "first_camera_ns": 1784013549338959834,
+  "first_odometry_ns": 1784013549424964962,
+  "end_ns": 1784013552526258057
+}

@@ -1,0 +1,530 @@
+{
+  "camera_messages": 5,
+  "inside_point_cloud_stable": true,
+  "lidar_messages": 20,
+  "nearest_robot_relative_point_stable": true,
+  "odometry_messages": 20,
+  "records": [
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 0,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 1,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 2,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 3,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 4,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 5,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 6,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 7,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 8,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 9,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 10,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 11,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 12,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 13,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 14,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 15,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 16,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 17,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 18,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    },
+    {
+      "finite_point_count": 10,
+      "inside_footprint_beam_indices": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "inside_footprint_finite_point_count": 10,
+      "message_index": 19,
+      "nearest_point": {
+        "beam_index": 45,
+        "bearing_rad": -1.5707963267948966,
+        "point_xy_m": [
+          1.2247214544127935e-17,
+          -0.2000121921300888
+        ],
+        "range_m": 0.2000121921300888
+      }
+    }
+  ],
+  "scope": "FORMAL_ASSET_EMPTY_WORLD"
+}

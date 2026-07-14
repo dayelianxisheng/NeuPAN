@@ -1,0 +1,201 @@
+{
+  "collisions": [
+    {
+      "base_frame_aabb_m": [
+        [
+          -0.4,
+          -0.25,
+          0
+        ],
+        [
+          0.4,
+          0.25,
+          0.2
+        ]
+      ],
+      "geometry": "box",
+      "name": "planner_footprint_collision",
+      "parent_link": "base_link"
+    },
+    {
+      "base_frame_aabb_m": [
+        [
+          -0.1,
+          0.2,
+          0
+        ],
+        [
+          0.1,
+          0.25,
+          0.2
+        ]
+      ],
+      "geometry": "cylinder",
+      "name": "left_wheel_collision",
+      "parent_link": "left_wheel_link"
+    },
+    {
+      "base_frame_aabb_m": [
+        [
+          -0.1,
+          -0.25,
+          0
+        ],
+        [
+          0.1,
+          -0.2,
+          0.2
+        ]
+      ],
+      "geometry": "cylinder",
+      "name": "right_wheel_collision",
+      "parent_link": "right_wheel_link"
+    }
+  ],
+  "geometry_enumeration_complete": true,
+  "joints": [
+    "base_footprint_to_base_link",
+    "left_wheel_joint",
+    "right_wheel_joint",
+    "lidar_fixed",
+    "camera_fixed"
+  ],
+  "links": [
+    "base_footprint",
+    "base_link",
+    "left_wheel_link",
+    "right_wheel_link",
+    "lidar_link",
+    "camera_link"
+  ],
+  "sensors": [
+    {
+      "angle_max_rad": 3.141592653589793,
+      "angle_min_rad": -3.141592653589793,
+      "base_frame_origin_m": [
+        0,
+        0,
+        0.2
+      ],
+      "name": "lidar",
+      "parent_link": "lidar_link",
+      "range_max_m": 8.0,
+      "range_min_m": 0.05,
+      "scan_plane_z_m": 0.2,
+      "type": "gpu_lidar",
+      "visibility_mask": 4294967295
+    },
+    {
+      "base_frame_origin_m": [
+        0,
+        0,
+        1.0
+      ],
+      "name": "rgb_camera",
+      "parent_link": "camera_link",
+      "type": "camera"
+    }
+  ],
+  "source": "gazebo/models/sgcf_diff_drive_robot/model.sdf",
+  "visuals": [
+    {
+      "base_frame_aabb_m": [
+        [
+          -0.4,
+          -0.25,
+          0.0
+        ],
+        [
+          0.4,
+          0.25,
+          0.2
+        ]
+      ],
+      "geometry": "box",
+      "local_pose": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "material": [
+        0.15,
+        0.25,
+        0.8,
+        1
+      ],
+      "name": "body",
+      "parent_link": "base_link",
+      "scan_plane_intersects": true,
+      "visibility_flags": 4294967295
+    },
+    {
+      "base_frame_aabb_m": [
+        [
+          -0.1,
+          0.2,
+          0.0
+        ],
+        [
+          0.1,
+          0.25,
+          0.2
+        ]
+      ],
+      "geometry": "cylinder",
+      "local_pose": [
+        0,
+        -0.025,
+        0,
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "material": [
+        0.05,
+        0.05,
+        0.05,
+        1
+      ],
+      "name": "left_wheel_visual",
+      "parent_link": "left_wheel_link",
+      "scan_plane_intersects": true,
+      "visibility_flags": 4294967295
+    },
+    {
+      "base_frame_aabb_m": [
+        [
+          -0.1,
+          -0.25,
+          0.0
+        ],
+        [
+          0.1,
+          -0.2,
+          0.2
+        ]
+      ],
+      "geometry": "cylinder",
+      "local_pose": [
+        0,
+        0.025,
+        0,
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "material": [
+        0.05,
+        0.05,
+        0.05,
+        1
+      ],
+      "name": "right_wheel_visual",
+      "parent_link": "right_wheel_link",
+      "scan_plane_intersects": true,
+      "visibility_flags": 4294967295
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "scene": "rgb_dropout_contract",
+  "sample": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784017429513278332,
+  "ready_ns": 1784017433772723718,
+  "first_clock_ns": 1784017434282317683,
+  "first_lidar_ns": 1784017434394978957,
+  "first_camera_ns": 1784017434488516535,
+  "first_odometry_ns": 1784017434577495880,
+  "end_ns": 1784017437704691989
+}

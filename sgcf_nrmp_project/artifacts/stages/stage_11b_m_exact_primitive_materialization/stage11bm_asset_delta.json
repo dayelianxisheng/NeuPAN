@@ -1,0 +1,32 @@
+{
+  "changed_models": [],
+  "changed_worlds": [
+    "human_path_center.sdf",
+    "human_path_side.sdf",
+    "initial_collision.sdf",
+    "narrow_passage.sdf",
+    "outdated_rgb_contract.sdf",
+    "rgb_dropout_contract.sdf",
+    "robot_obstacle.sdf",
+    "semantic_infeasible.sdf",
+    "single_static_obstacle.sdf",
+    "static_corridor.sdf",
+    "vehicle_path.sdf"
+  ],
+  "empty_world_unchanged": true,
+  "expected_changed_worlds": [
+    "human_path_center.sdf",
+    "human_path_side.sdf",
+    "initial_collision.sdf",
+    "narrow_passage.sdf",
+    "outdated_rgb_contract.sdf",
+    "rgb_dropout_contract.sdf",
+    "robot_obstacle.sdf",
+    "semantic_infeasible.sdf",
+    "single_static_obstacle.sdf",
+    "static_corridor.sdf",
+    "vehicle_path.sdf"
+  ],
+  "generator_changed": true,
+  "status": "PASSED"
+}

@@ -1,0 +1,233 @@
+{
+  "all_20_frames_zero_self_return": true,
+  "camera": {
+    "cx": 160.0,
+    "cy": 120.0,
+    "fx": 179.99998092651367,
+    "fy": 179.99998569488525,
+    "height": 240,
+    "nonempty": true,
+    "timestamp_monotonic": true,
+    "width": 320
+  },
+  "camera_message_count": 5,
+  "cleanup": {
+    "passed": true,
+    "residual_process_count": 0,
+    "server_exit": "0"
+  },
+  "historical_self_beams_finite": {
+    "133": false,
+    "134": false,
+    "135": false,
+    "136": false,
+    "137": false,
+    "43": false,
+    "44": false,
+    "45": false,
+    "46": false,
+    "47": false
+  },
+  "lidar_message_count": 20,
+  "lidar_timestamp_monotonic": true,
+  "nearest_observable_index": -1,
+  "nearest_observable_point_base_xy_m": null,
+  "odometry": {
+    "child_frame_id": "base_link",
+    "finite": true,
+    "frame_id": "odom",
+    "timestamp_monotonic": true
+  },
+  "odometry_message_count": 20,
+  "runtime_clearance_m": 8.0,
+  "runtime_collision": false,
+  "scan_records": [
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    },
+    {
+      "finite_point_count": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null,
+      "outside_footprint_count": 0,
+      "self_return_beam_indices": [],
+      "self_return_count": 0
+    }
+  ],
+  "scene_id": "empty_world",
+  "simulation_clock": {
+    "advanced": true,
+    "message_count": 20,
+    "monotonic": true
+  },
+  "status": "PASSED"
+}

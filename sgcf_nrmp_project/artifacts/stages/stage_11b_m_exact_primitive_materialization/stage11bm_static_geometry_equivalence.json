@@ -1,0 +1,8 @@
+{
+  "nonunit_dimension_max_error_m": 0.0,
+  "nonunit_pose_max_error": 0.0,
+  "status": "PASSED",
+  "unit_scale_geometry_max_difference": 0.0,
+  "unit_scale_pose_max_difference": 0.0,
+  "visual_collision_alignment": 1.0
+}

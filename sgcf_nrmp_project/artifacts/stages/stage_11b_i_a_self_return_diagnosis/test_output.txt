@@ -1,0 +1,31 @@
+Stage 11B-I-A static acceptance checks
+
+python -m unittest -v sgcf_nrmp_project.tools.test_stage11bia_diagnosis
+
+test_environment_and_rendering_gate ... ok
+test_formal_signature_is_reproducible ... ok
+test_frozen_boundaries_and_cleanup ... ok
+test_geometry_is_fully_enumerated_and_intersects_plane ... ok
+test_visibility_probe_changes_only_visibility_contract ... ok
+test_visibility_schema_and_attribution ... ok
+
+Ran 6 tests
+OK
+
+python -m compileall -q sgcf_nrmp_project/tools
+PASS
+
+JSON parse check: 9 files
+PASS
+
+git diff --check
+PASS
+
+Residual Gazebo processes
+0
+
+Pre-existing unrelated worktree state retained:
+- docker/gazebo_harmonic/container.sh modified before Stage 11B-I-A
+- neupan_ros nested worktree dirty before Stage 11B-I-A
+
+Stage 11B-I-A modified neither location.

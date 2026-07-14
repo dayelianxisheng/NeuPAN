@@ -1,0 +1,14 @@
+{
+  "scene": "static_corridor",
+  "run_id": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784013438757276793,
+  "ready_ns": 1784013443014638643,
+  "first_clock_ns": 1784013458045737125,
+  "first_lidar_ns": 1784013458166578326,
+  "first_camera_ns": 1784013458262364810,
+  "first_odometry_ns": 1784013458344339087,
+  "end_ns": 1784013461527469631
+}

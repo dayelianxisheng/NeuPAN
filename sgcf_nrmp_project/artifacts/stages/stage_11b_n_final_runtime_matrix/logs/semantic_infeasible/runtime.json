@@ -1,0 +1,14 @@
+{
+  "scene": "semantic_infeasible",
+  "sample": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784017412744958113,
+  "ready_ns": 1784017417001882879,
+  "first_clock_ns": 1784017417521742072,
+  "first_lidar_ns": 1784017417630981868,
+  "first_camera_ns": 1784017417727063532,
+  "first_odometry_ns": 1784017417803903546,
+  "end_ns": 1784017420936990330
+}

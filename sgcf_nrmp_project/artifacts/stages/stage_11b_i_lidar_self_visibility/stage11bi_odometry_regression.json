@@ -1,0 +1,44 @@
+{
+  "diff_drive_direction_source": "Stage 11B-F; no command sent in Stage 11B-I",
+  "records": {
+    "empty_world": {
+      "child_frame_id": "base_link",
+      "finite": true,
+      "frame_id": "odom",
+      "messages": 20,
+      "no_motion_command_sent": true,
+      "passed": true,
+      "timestamp_monotonic": true
+    },
+    "human_path_side": {
+      "child_frame_id": "base_link",
+      "finite": true,
+      "frame_id": "odom",
+      "messages": 20,
+      "no_motion_command_sent": true,
+      "passed": true,
+      "timestamp_monotonic": true
+    },
+    "initial_collision": {
+      "child_frame_id": "base_link",
+      "finite": true,
+      "frame_id": "odom",
+      "messages": 20,
+      "no_motion_command_sent": true,
+      "passed": true,
+      "timestamp_monotonic": true
+    },
+    "single_static_obstacle": {
+      "child_frame_id": "base_link",
+      "finite": true,
+      "frame_id": "odom",
+      "messages": 20,
+      "no_motion_command_sent": true,
+      "passed": true,
+      "timestamp_monotonic": true
+    }
+  },
+  "scenes_passed": 4,
+  "scenes_required": 4,
+  "status": "PASSED"
+}

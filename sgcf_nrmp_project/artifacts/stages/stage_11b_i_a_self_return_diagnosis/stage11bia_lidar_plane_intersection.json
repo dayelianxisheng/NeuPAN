@@ -1,0 +1,17 @@
+{
+  "body_side_surfaces_y_m": [
+    -0.25,
+    0.25
+  ],
+  "coplanar_with_body_top": true,
+  "intersecting_visuals": [
+    "body",
+    "left_wheel_visual",
+    "right_wheel_visual"
+  ],
+  "scan_plane_z_m": 0.2,
+  "wheel_inner_surfaces_y_m": [
+    -0.2,
+    0.2
+  ]
+}

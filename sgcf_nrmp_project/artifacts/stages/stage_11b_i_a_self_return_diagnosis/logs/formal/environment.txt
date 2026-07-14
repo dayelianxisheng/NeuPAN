@@ -1,0 +1,12 @@
+GZ_RENDERING_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins
+GZ_RENDERING_RESOURCE_PATH=/usr/share/gz/gz-rendering8
+GZ_SIM_PHYSICS_ENGINE_PATH=/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins
+GZ_SIM_RENDER_ENGINE_SERVER=ogre2
+GZ_SIM_RESOURCE_PATH=/workspace/sgcf_nrmp_project/gazebo/models
+HOME=/root
+HOSTNAME=kunkun
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/workspace
+QT_QPA_PLATFORM=offscreen
+SHLVL=0
+_=/usr/bin/env

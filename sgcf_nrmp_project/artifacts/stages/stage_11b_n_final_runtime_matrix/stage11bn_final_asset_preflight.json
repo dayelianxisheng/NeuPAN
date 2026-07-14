@@ -1,0 +1,72 @@
+{
+  "active_include_scale_count": 0,
+  "camera_resolution": [
+    320,
+    240
+  ],
+  "explicit_geometry": {
+    "initial_collision": [
+      {
+        "length": 0.4,
+        "name": "initial_collision_obstacle",
+        "primitive": "cylinder",
+        "radius": 0.2
+      }
+    ],
+    "narrow_passage": [
+      {
+        "name": "wall_left",
+        "primitive": "box",
+        "size": [
+          5.0,
+          0.15,
+          0.5
+        ]
+      },
+      {
+        "name": "wall_right",
+        "primitive": "box",
+        "size": [
+          5.0,
+          0.15,
+          0.5
+        ]
+      }
+    ],
+    "static_corridor": [
+      {
+        "name": "wall_left",
+        "primitive": "box",
+        "size": [
+          5.0,
+          0.15,
+          0.5
+        ]
+      },
+      {
+        "name": "wall_right",
+        "primitive": "box",
+        "size": [
+          5.0,
+          0.15,
+          0.5
+        ]
+      }
+    ]
+  },
+  "footprint_m": [
+    0.8,
+    0.5
+  ],
+  "lidar_visibility_mask": 4294967293,
+  "robot_visual_visibility_flags": [
+    2,
+    2,
+    2
+  ],
+  "sdformat_parse_pass_count": 12,
+  "status": "PASSED",
+  "undefined_include_child_warnings": 0,
+  "wheel_radius_m": 0.1,
+  "wheel_separation_m": 0.5
+}

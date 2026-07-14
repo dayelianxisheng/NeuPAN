@@ -1,0 +1,17 @@
+{
+  "default_lidar_mask": 4294967295,
+  "default_visual_flags": 4294967295,
+  "gpu_lidar_sensor_type_supported": true,
+  "sdformat_schema_version": "1.9 (installed by SDFormat 14.9.0)",
+  "semantics": "visible iff lidar visibility_mask bitwise-AND visual visibility_flags is nonzero",
+  "status": "SUPPORTED",
+  "type": "unsigned int",
+  "value_range": [
+    0,
+    4294967295
+  ],
+  "visibility_flags_path": "/usr/share/sdformat14/1.9/visual.sdf",
+  "visibility_flags_schema_supported": true,
+  "visibility_mask_path": "/usr/share/sdformat14/1.9/lidar.sdf",
+  "visibility_mask_schema_supported": true
+}

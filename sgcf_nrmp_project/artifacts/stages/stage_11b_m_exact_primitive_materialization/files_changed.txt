@@ -1,0 +1,28 @@
+Stage 11B-M asset changes:
+sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py
+sgcf_nrmp_project/gazebo/worlds/single_static_obstacle.sdf
+sgcf_nrmp_project/gazebo/worlds/static_corridor.sdf
+sgcf_nrmp_project/gazebo/worlds/narrow_passage.sdf
+sgcf_nrmp_project/gazebo/worlds/human_path_center.sdf
+sgcf_nrmp_project/gazebo/worlds/human_path_side.sdf
+sgcf_nrmp_project/gazebo/worlds/vehicle_path.sdf
+sgcf_nrmp_project/gazebo/worlds/robot_obstacle.sdf
+sgcf_nrmp_project/gazebo/worlds/semantic_infeasible.sdf
+sgcf_nrmp_project/gazebo/worlds/initial_collision.sdf
+sgcf_nrmp_project/gazebo/worlds/rgb_dropout_contract.sdf
+sgcf_nrmp_project/gazebo/worlds/outdated_rgb_contract.sdf
+
+Stage 11B-M tools and evidence:
+sgcf_nrmp_project/tools/run_stage11bm_scene.sh
+sgcf_nrmp_project/tools/finalize_stage11bm.py
+sgcf_nrmp_project/tools/test_stage11bm.py
+sgcf_nrmp_project/artifacts/stages/stage_11b_m_exact_primitive_materialization/
+
+Frozen and unchanged by Stage 11B-M:
+sgcf_nrmp_project/gazebo/worlds/empty_world.sdf
+sgcf_nrmp_project/gazebo/models/
+docker/
+sgcf_nrmp_project/core/
+
+The robot model worktree modification predates Stage 11B-M and belongs to the accepted
+Stage 11B-I visibility fix; its hash was unchanged across this stage.

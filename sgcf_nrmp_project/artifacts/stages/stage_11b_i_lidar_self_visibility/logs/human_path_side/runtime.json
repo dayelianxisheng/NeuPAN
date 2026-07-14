@@ -1,0 +1,9 @@
+{
+  "ready": true,
+  "scene": "human_path_side",
+  "world": "human_path_side",
+  "lidar_requested": 20,
+  "camera_requested": 5,
+  "odometry_requested": 20,
+  "clock_requested": 20
+}

@@ -1,0 +1,32 @@
+{
+  "current_world_hashes": {
+    "empty_world.sdf": "88eb227417c6d24cc64c3238c60a27966f18566b081968ab12d6f8ee1022279e",
+    "human_path_center.sdf": "b3c8e2f70f6c2cf39e6a91400ce8569710c8df8707e8cffaa18e2cf8f33990f7",
+    "human_path_side.sdf": "95a7267bf8ea0ecccea1315dfccce7add9fb5a8e3e0428090e9e9058c1338290",
+    "initial_collision.sdf": "696fc371f6ee7daafe6508d678fa4285934158de6b117a1591f3785e2059687d",
+    "narrow_passage.sdf": "a870186c34b3f24551a189313fc676f518fad8bd91e0230652b0740a82de076d",
+    "outdated_rgb_contract.sdf": "61c8ca0ac2dcfcb8b74f7d06638682b2c245c30cd270473168f6092de9031fd1",
+    "rgb_dropout_contract.sdf": "74653a4d1fe723df8ffece24485aec843a2ae9d22980b8875da9078482b3c784",
+    "robot_obstacle.sdf": "273399d4287da2e1d49a4696984c49d4a892685e19ebd33706a120ba0d411e1d",
+    "semantic_infeasible.sdf": "9cc8b6b7559b3725ce755ca503df34c3ff32d31784d327b69d07dcd90913c0db",
+    "single_static_obstacle.sdf": "e17b41f707ffee6a23a5329582c9ca65a08b9798835e919d096ddc5a4ccfa518",
+    "static_corridor.sdf": "07eb4325733966e1a5c8aba7bf1354ab8482677f03f341184c055d1ea402c017",
+    "vehicle_path.sdf": "11dae74359b465850f74e02468690a700e553e0a8b296a6577b96962400f874b"
+  },
+  "historical_manifest_overwritten": false,
+  "historical_world_hashes": {
+    "empty_world.sdf": "88eb227417c6d24cc64c3238c60a27966f18566b081968ab12d6f8ee1022279e",
+    "human_path_center.sdf": "3a2b82c44c4941228242ec82e39c967cfcd77d3986cf85292da32999adef6035",
+    "human_path_side.sdf": "6ea9ce34a93f3f3e59f96148ec3f6b6b3cb8e6b0d5cef7ba1d08f438dc90790d",
+    "initial_collision.sdf": "38d31e14d7570c581f70d79bf7031bbd08e9fd1d9527d35b8ee6257444233c0d",
+    "narrow_passage.sdf": "ec5f5519a4079f048b5b09a102961205851a840fffbf1d54d386de4484ad318a",
+    "outdated_rgb_contract.sdf": "9fd49c069697657393a72e43294e978138b107ee2a87b85a5973bb14f4854e5c",
+    "rgb_dropout_contract.sdf": "3925c9b29c7f34a15c8f94f0573533cc6b2ab3fa62b6ed49a60300c3a760c18b",
+    "robot_obstacle.sdf": "889622356518dbd359f25ca02108a31eac9c8a0ce8a629f2424cc61d17874400",
+    "semantic_infeasible.sdf": "b80789b8fc3886359edc7d064a02ab8753155e5363d951f8eb936a2fec5abda7",
+    "single_static_obstacle.sdf": "b6a25fd84a59a405035a8e91dc50fadc597f4d8d0e1ed0c88275e23209bf0e1a",
+    "static_corridor.sdf": "7caf6b40a6319aa4748ccb3b5ceb7064084c54d4f85fbcfd07273c61d1b245f5",
+    "vehicle_path.sdf": "274f86147202d1cf7a30d147ad5917bbb78670c5a1c79f4be65e37d13027797c"
+  },
+  "status": "PASSED"
+}

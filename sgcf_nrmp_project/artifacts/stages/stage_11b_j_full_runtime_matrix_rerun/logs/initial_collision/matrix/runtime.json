@@ -1,0 +1,14 @@
+{
+  "scene": "initial_collision",
+  "run_id": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784013769793825399,
+  "ready_ns": 1784013774053369942,
+  "first_clock_ns": 1784013789067415425,
+  "first_lidar_ns": 1784013789178106774,
+  "first_camera_ns": 1784013789269732469,
+  "first_odometry_ns": 1784013789359449881,
+  "end_ns": 1784013792466014625
+}

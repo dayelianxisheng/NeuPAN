@@ -1,0 +1,10 @@
+{
+  "base_axes": {
+    "x": "forward",
+    "y": "left",
+    "z": "up"
+  },
+  "camera_optical_transform_unchanged": true,
+  "lidar_runtime_to_contract": "scoped lidar sensor -> lidar_link -> base_link",
+  "status": "PASSED_FOR_COMPLETED_SCENES"
+}

@@ -1,0 +1,1 @@
+   4403 bash            bash -lc sleep 30; count=$(find /workspace/sgcf_nrmp_project/artifacts/stages/stage_11b_j_full_runtime_matrix_rerun/logs -path '*/matrix/cleanup.json' | wc -l); echo completed=$count; pgrep -af 'run_stage11bj|gz sim|gz-sim-server' || true

@@ -1,0 +1,10 @@
+{
+  "active_include_scale_count": 0,
+  "generator": "sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py",
+  "nonunit_box_strategy": "explicit static box",
+  "nonunit_cylinder_strategy": "explicit axis-aligned circular cylinder",
+  "robot_generation_disabled": true,
+  "status": "PASSED",
+  "unit_strategy": "include without scale",
+  "unsupported_primitive_behavior": "raise ValueError"
+}

@@ -1,0 +1,2467 @@
+{
+  "empty_world": {
+    "camera": {
+      "cx": 160.0,
+      "cy": 120.0,
+      "fx": 179.99998092651367,
+      "fy": 179.99998569488525,
+      "height": 240,
+      "nonempty": true,
+      "timestamp_monotonic": true,
+      "width": 320
+    },
+    "camera_message_count": 5,
+    "cleanup": {
+      "passed": true,
+      "residual_process_count": 0,
+      "server_exit": "0"
+    },
+    "lidar_message_count": 20,
+    "lidar_timestamp_monotonic": true,
+    "nearest_observable_index": -1,
+    "nearest_observable_point_base_xy_m": null,
+    "odometry": {
+      "child_frame_id": "base_link",
+      "finite": true,
+      "frame_id": "odom",
+      "timestamp_monotonic": true
+    },
+    "odometry_message_count": 20,
+    "runtime_clearance_m": 8.0,
+    "runtime_collision": false,
+    "scan_records": [
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 0,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": null,
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      }
+    ],
+    "scene_id": "empty_world",
+    "simulation_clock": {
+      "advanced": true,
+      "message_count": 20,
+      "monotonic": true
+    }
+  },
+  "human_path_side": {
+    "camera": {
+      "cx": 160.0,
+      "cy": 120.0,
+      "fx": 179.99998092651367,
+      "fy": 179.99998569488525,
+      "height": 240,
+      "nonempty": true,
+      "timestamp_monotonic": true,
+      "width": 320
+    },
+    "camera_message_count": 5,
+    "cleanup": {
+      "passed": true,
+      "residual_process_count": 0,
+      "server_exit": "0"
+    },
+    "lidar_message_count": 20,
+    "lidar_timestamp_monotonic": true,
+    "nearest_observable_index": 97,
+    "nearest_observable_point_base_xy_m": [
+      1.1552903429392314,
+      0.28804623390905176
+    ],
+    "odometry": {
+      "child_frame_id": "base_link",
+      "finite": true,
+      "frame_id": "odom",
+      "timestamp_monotonic": true
+    },
+    "odometry_message_count": 20,
+    "runtime_clearance_m": 0.7562479871390891,
+    "runtime_collision": false,
+    "scan_records": [
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 97,
+          "point_base_xy_m": [
+            1.1552903429392314,
+            0.28804623390905176
+          ],
+          "range_m": 1.1906579732894897
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      }
+    ],
+    "scene_id": "human_path_side",
+    "simulation_clock": {
+      "advanced": true,
+      "message_count": 20,
+      "monotonic": true
+    }
+  },
+  "initial_collision": {
+    "camera": {
+      "cx": 160.0,
+      "cy": 120.0,
+      "fx": 179.99998092651367,
+      "fy": 179.99998569488525,
+      "height": 240,
+      "nonempty": true,
+      "timestamp_monotonic": true,
+      "width": 320
+    },
+    "camera_message_count": 5,
+    "cleanup": {
+      "passed": true,
+      "residual_process_count": 0,
+      "server_exit": "0"
+    },
+    "lidar_message_count": 20,
+    "lidar_timestamp_monotonic": true,
+    "nearest_observable_index": 62,
+    "nearest_observable_point_base_xy_m": [
+      0.08650961478298344,
+      -0.12825577827832402
+    ],
+    "odometry": {
+      "child_frame_id": "base_link",
+      "finite": true,
+      "frame_id": "odom",
+      "timestamp_monotonic": true
+    },
+    "odometry_message_count": 20,
+    "runtime_clearance_m": 0.0,
+    "runtime_collision": true,
+    "scan_records": [
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06219058111310005,
+            0.0
+          ],
+          "range_m": 0.06219058111310005
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06225062906742096,
+            0.0
+          ],
+          "range_m": 0.06225062906742096
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06235071271657944,
+            0.0
+          ],
+          "range_m": 0.06235071271657944
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06245078518986702,
+            0.0
+          ],
+          "range_m": 0.06245078518986702
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06255088001489639,
+            0.0
+          ],
+          "range_m": 0.06255088001489639
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06265094131231308,
+            0.0
+          ],
+          "range_m": 0.06265094131231308
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06275103241205215,
+            0.0
+          ],
+          "range_m": 0.06275103241205215
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06285110861063004,
+            0.0
+          ],
+          "range_m": 0.06285110861063004
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06295118480920792,
+            0.0
+          ],
+          "range_m": 0.06295118480920792
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06305128335952759,
+            0.0
+          ],
+          "range_m": 0.06305128335952759
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06315135210752487,
+            0.0
+          ],
+          "range_m": 0.06315135210752487
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06325142085552216,
+            0.0
+          ],
+          "range_m": 0.06325142085552216
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06335151195526123,
+            0.0
+          ],
+          "range_m": 0.06335151195526123
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06345158815383911,
+            0.0
+          ],
+          "range_m": 0.06345158815383911
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06355166435241699,
+            0.0
+          ],
+          "range_m": 0.06355166435241699
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06365175545215607,
+            0.0
+          ],
+          "range_m": 0.06365175545215607
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06375183165073395,
+            0.0
+          ],
+          "range_m": 0.06375183165073395
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06385190784931183,
+            0.0
+          ],
+          "range_m": 0.06385190784931183
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06395197659730911,
+            0.0
+          ],
+          "range_m": 0.06395197659730911
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 57,
+        "inside_footprint_beam_indices": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "inside_footprint_count": 57,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            0.06405206769704819,
+            0.0
+          ],
+          "range_m": 0.06405206769704819
+        },
+        "outside_footprint_count": 0,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      }
+    ],
+    "scene_id": "initial_collision",
+    "simulation_clock": {
+      "advanced": true,
+      "message_count": 20,
+      "monotonic": true
+    }
+  },
+  "single_static_obstacle": {
+    "camera": {
+      "cx": 160.0,
+      "cy": 120.0,
+      "fx": 179.99998092651367,
+      "fy": 179.99998569488525,
+      "height": 240,
+      "nonempty": true,
+      "timestamp_monotonic": true,
+      "width": 320
+    },
+    "camera_message_count": 5,
+    "cleanup": {
+      "passed": true,
+      "residual_process_count": 0,
+      "server_exit": "0"
+    },
+    "lidar_message_count": 20,
+    "lidar_timestamp_monotonic": true,
+    "nearest_observable_index": 90,
+    "nearest_observable_point_base_xy_m": [
+      1.1509559154510498,
+      0.0
+    ],
+    "odometry": {
+      "child_frame_id": "base_link",
+      "finite": true,
+      "frame_id": "odom",
+      "timestamp_monotonic": true
+    },
+    "odometry_message_count": 20,
+    "runtime_clearance_m": 0.7509559154510498,
+    "runtime_collision": false,
+    "scan_records": [
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      },
+      {
+        "finite_point_count": 13,
+        "inside_footprint_beam_indices": [],
+        "inside_footprint_count": 0,
+        "nearest_finite_point": {
+          "beam_index": 90,
+          "point_base_xy_m": [
+            1.1509559154510498,
+            0.0
+          ],
+          "range_m": 1.1509559154510498
+        },
+        "outside_footprint_count": 13,
+        "self_return_beam_indices": [],
+        "self_return_count": 0
+      }
+    ],
+    "scene_id": "single_static_obstacle",
+    "simulation_clock": {
+      "advanced": true,
+      "message_count": 20,
+      "monotonic": true
+    }
+  }
+}

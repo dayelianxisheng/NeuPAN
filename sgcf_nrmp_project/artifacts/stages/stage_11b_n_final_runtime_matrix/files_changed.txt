@@ -1,0 +1,16 @@
+Stage 11B-N additions:
+sgcf_nrmp_project/tools/run_stage11bn_scene.sh
+sgcf_nrmp_project/tools/finalize_stage11bn.py
+sgcf_nrmp_project/tools/test_stage11bn.py
+sgcf_nrmp_project/artifacts/stages/stage_11b_n_final_runtime_matrix/
+
+Frozen and unchanged during Stage 11B-N:
+sgcf_nrmp_project/gazebo/
+docker/
+sgcf_nrmp_project/core/
+neupan/
+neupan_ros/
+neupan_ros2/
+example/
+
+Existing worktree changes from earlier accepted stages were preserved.

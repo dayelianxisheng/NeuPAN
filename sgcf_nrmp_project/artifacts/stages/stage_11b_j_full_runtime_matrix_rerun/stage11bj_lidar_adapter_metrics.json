@@ -1,0 +1,126 @@
+{
+  "empty_world": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "human_path_center": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "human_path_side": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "initial_collision": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "narrow_passage": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "outdated_rgb_contract": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "rgb_dropout_contract": {
+    "status": "NOT_COMPLETED_DUE_TO_EARLIER_STOP"
+  },
+  "robot_obstacle": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "semantic_infeasible": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "single_static_obstacle": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "static_corridor": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  },
+  "vehicle_path": {
+    "all_output_points_finite": true,
+    "fixed_beams_deleted": false,
+    "footprint_points_deleted": false,
+    "input_count": 181,
+    "invalid_ranges_retained": true,
+    "output_count": 181,
+    "point_order_preserved": true,
+    "semantic_filtering": false,
+    "world_geometry_injected": false
+  }
+}

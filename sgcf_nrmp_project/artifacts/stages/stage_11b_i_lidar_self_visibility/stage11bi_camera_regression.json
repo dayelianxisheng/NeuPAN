@@ -1,0 +1,63 @@
+{
+  "records": {
+    "empty_world": {
+      "cx": 160.0,
+      "cy": 120.0,
+      "fx": 179.99998092651367,
+      "fy": 179.99998569488525,
+      "height": 240,
+      "intrinsics_unchanged": false,
+      "messages": 5,
+      "nonempty": true,
+      "optical_transform_unchanged": true,
+      "passed": true,
+      "timestamp_monotonic": true,
+      "width": 320
+    },
+    "human_path_side": {
+      "cx": 160.0,
+      "cy": 120.0,
+      "fx": 179.99998092651367,
+      "fy": 179.99998569488525,
+      "height": 240,
+      "intrinsics_unchanged": false,
+      "messages": 5,
+      "nonempty": true,
+      "optical_transform_unchanged": true,
+      "passed": true,
+      "timestamp_monotonic": true,
+      "width": 320
+    },
+    "initial_collision": {
+      "cx": 160.0,
+      "cy": 120.0,
+      "fx": 179.99998092651367,
+      "fy": 179.99998569488525,
+      "height": 240,
+      "intrinsics_unchanged": false,
+      "messages": 5,
+      "nonempty": true,
+      "optical_transform_unchanged": true,
+      "passed": true,
+      "timestamp_monotonic": true,
+      "width": 320
+    },
+    "single_static_obstacle": {
+      "cx": 160.0,
+      "cy": 120.0,
+      "fx": 179.99998092651367,
+      "fy": 179.99998569488525,
+      "height": 240,
+      "intrinsics_unchanged": false,
+      "messages": 5,
+      "nonempty": true,
+      "optical_transform_unchanged": true,
+      "passed": true,
+      "timestamp_monotonic": true,
+      "width": 320
+    }
+  },
+  "scenes_passed": 4,
+  "scenes_required": 4,
+  "status": "PASSED"
+}

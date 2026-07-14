@@ -47,14 +47,34 @@ SCENARIOS=[
 ]
 
 def model_files():
- d=ROOT/"models"/"sgcf_diff_drive_robot"; d.mkdir(parents=True,exist_ok=True); (d/"model.sdf").write_text(ROBOT); (d/"model.config").write_text("<model><name>SGCF Differential Robot</name><version>1.0</version><sdf version='1.9'>model.sdf</sdf></model>\n")
+ # The robot is a separately frozen runtime asset.  Scenario regeneration must
+ # never overwrite its validated visibility flags, sensor mask, or dynamics.
  for name,(shape,geometry,color) in MODELS.items():
   d=ROOT/"models"/name; d.mkdir(parents=True,exist_ok=True); xml=f"<?xml version='1.0'?><sdf version='1.9'><model name='{name}'><static>true</static><link name='body'><collision name='collision'><geometry><{shape}>{geometry}</{shape}></geometry></collision><visual name='visual'><geometry><{shape}>{geometry}</{shape}></geometry><material><diffuse>{color}</diffuse></material></visual></link></model></sdf>\n"; (d/"model.sdf").write_text(xml); (d/"model.config").write_text(f"<model><name>{name}</name><version>1.0</version><sdf version='1.9'>model.sdf</sdf></model>\n")
+
+def obstacle_xml(name, model_name, pose, scale):
+ pose_text=' '.join(map(str,pose))
+ fmt=lambda value: format(value,'.15g')
+ if scale == [1,1,1]:
+  return f"<include><uri>model://{model_name}</uri><name>{name}</name><pose>{pose_text}</pose></include>"
+ shape,geometry,color=MODELS[model_name]
+ if shape == "box":
+  base=[float(x) for x in geometry.removeprefix("<size>").removesuffix("</size>").split()]
+  size=[base[i]*scale[i] for i in range(3)]
+  resolved=f"<size>{' '.join(fmt(value) for value in size)}</size>"
+ elif shape == "cylinder":
+  if scale[0] != scale[1]: raise ValueError("non-unit cylinder requires scale_x == scale_y")
+  radius=float(geometry.split("<radius>",1)[1].split("</radius>",1)[0])*scale[0]
+  length=float(geometry.split("<length>",1)[1].split("</length>",1)[0])*scale[2]
+  resolved=f"<radius>{fmt(radius)}</radius><length>{fmt(length)}</length>"
+ else:
+  raise ValueError(f"unsupported non-unit primitive: {shape}")
+ return f"<model name='{name}'><static>true</static><pose>{pose_text}</pose><link name='body'><collision name='collision'><geometry><{shape}>{resolved}</{shape}></geometry></collision><visual name='visual'><geometry><{shape}>{resolved}</{shape}></geometry><material><diffuse>{color}</diffuse></material></visual></link></model>"
 
 def world_files():
  for scene,obstacles in SCENARIOS:
   includes=["<include><uri>model://sgcf_diff_drive_robot</uri><name>sgcf_robot</name><pose>0 0 0 0 0 0</pose></include>"]
-  for name,model,pose,scale,_ in obstacles: includes.append(f"<include><uri>model://{model}</uri><name>{name}</name><pose>{' '.join(map(str,pose))}</pose><scale>{' '.join(map(str,scale))}</scale></include>")
+  for name,model,pose,scale,_ in obstacles: includes.append(obstacle_xml(name,model,pose,scale))
   ground="<model name='ground_plane'><static>true</static><link name='ground'><collision name='collision'><geometry><plane><normal>0 0 1</normal><size>20 20</size></plane></geometry></collision><visual name='visual'><geometry><plane><normal>0 0 1</normal><size>20 20</size></plane></geometry></visual></link></model>"
   xml="<?xml version='1.0'?>\n<sdf version='1.9'><world name='"+scene+"'><gravity>0 0 -9.81</gravity>"+WORLD_SYSTEMS+ground+"".join(includes)+"</world></sdf>\n"
   (ROOT/"worlds"/f"{scene}.sdf").write_text(xml)

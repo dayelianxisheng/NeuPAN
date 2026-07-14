@@ -1,0 +1,42 @@
+{
+  "candidates_ranked": [
+    {
+      "bearing_error_rad": 0.0,
+      "candidate_visual": "right_wheel_visual",
+      "position_error_m": 1.219213008879505e-05,
+      "predicted_intersection_xy_m": [
+        1.2246467991473533e-17,
+        -0.2
+      ],
+      "range_error_m": 1.219213008879505e-05,
+      "surface": "inner AABB surface y=-0.2"
+    },
+    {
+      "candidate_visual": "body",
+      "predicted_range_m": 0.25,
+      "range_error_m": 0.049987807869911194,
+      "surface": "side y=-0.25"
+    }
+  ],
+  "historical_stage11bh_representative": {
+    "beam_index": 43,
+    "point_xy_m": [
+      -0.013986,
+      -0.200011
+    ],
+    "range_m": 0.2004998
+  },
+  "observed_nearest": {
+    "beam_index": 45,
+    "bearing_rad": -1.5707963267948966,
+    "point_xy_m": [
+      1.2247214544127935e-17,
+      -0.2000121921300888
+    ],
+    "range_m": 0.2000121921300888
+  },
+  "runtime_confirmation": "SELF_RETURN_CAUSED_BY_ROBOT_VISUAL_VISIBILITY",
+  "status": "SELF_RETURN_ATTRIBUTED_TO_ROBOT_VISUAL",
+  "symmetric_positive_y_source": "left_wheel_visual inner AABB surface y=+0.2",
+  "visual_vs_collision_disambiguation": "The render-only visibility probe removed all returns without modifying collisions; therefore the runtime GPU LiDAR returns are caused by visuals."
+}

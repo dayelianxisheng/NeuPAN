@@ -1,0 +1,14 @@
+Stage 11B-K additions:
+sgcf_nrmp_project/tools/finalize_stage11bk_scope_block.py
+sgcf_nrmp_project/tools/test_stage11bk_scope_block.py
+sgcf_nrmp_project/artifacts/stages/stage_11b_k_explicit_wall_geometry/
+
+No Stage 11B-K asset changes:
+sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py
+sgcf_nrmp_project/gazebo/worlds/
+sgcf_nrmp_project/gazebo/models/
+docker/
+sgcf_nrmp_project/core/
+
+The existing robot model modification belongs to the previously completed Stage 11B-I
+visibility fix and was preserved unchanged by Stage 11B-K.

@@ -1,0 +1,3 @@
+Publishers [Address, Message Type]:
+  tcp://172.17.0.1:36987, gz.msgs.Pose_V
+No subscribers on topic [/world/semantic_infeasible/pose/info]

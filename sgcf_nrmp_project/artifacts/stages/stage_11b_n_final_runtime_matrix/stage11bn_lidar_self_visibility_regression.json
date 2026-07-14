@@ -1,0 +1,2121 @@
+{
+  "all_scenes_self_return_zero": true,
+  "initial_collision_external_visible": true,
+  "lidar_visibility_mask": 4294967293,
+  "records": {
+    "empty_world": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": null,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "human_path_center": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "human_path_side": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1906579732894897,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "initial_collision": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 29,
+      "scan_records": [
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21299782395362854,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.2130758911371231,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.2131759524345398,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21327604353427887,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21337610483169556,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21347621083259583,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21357625722885132,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.2136763483285904,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21377645432949066,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21387650072574615,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21397657692432404,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.2140766680240631,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.2141767144203186,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21427682042121887,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21437691152095795,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21447701752185822,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.2145770639181137,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.2146771401166916,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21477723121643066,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "minimum_finite_range_m": 0.21487729251384735,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "narrow_passage": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.5100311040878296,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "outdated_rgb_contract": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "rgb_dropout_contract": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "robot_obstacle": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.2000733613967896,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "semantic_infeasible": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509560346603394,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "single_static_obstacle": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1509559154510498,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "static_corridor": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 0.625038206577301,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "vehicle_path": {
+      "all_frames_self_return_zero": true,
+      "external_obstacle_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "minimum_finite_range_m": 1.1000672578811646,
+          "self_return_count": 0
+        }
+      ]
+    }
+  },
+  "robot_visual_flags": 2,
+  "status": "PASSED"
+}

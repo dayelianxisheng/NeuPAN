@@ -1,0 +1,16 @@
+{
+  "all_scenes_match": true,
+  "expected": {
+    "cx": 160.0,
+    "cy": 120.0,
+    "far_clip_m": 20.0,
+    "fx": 180.0,
+    "fy": 180.0,
+    "height": 240,
+    "horizontal_fov_rad": 1.453284681363431,
+    "near_clip_m": 0.05,
+    "width": 320
+  },
+  "runtime_intrinsic_tolerance": 5e-05,
+  "status": "PASSED"
+}

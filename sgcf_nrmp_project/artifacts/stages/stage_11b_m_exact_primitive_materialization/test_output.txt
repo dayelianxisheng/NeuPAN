@@ -1,0 +1,21 @@
+Stage 11B-M acceptance validation
+
+python -m unittest -v sgcf_nrmp_project.tools.test_stage11bm
+Ran 11 tests in 0.002s
+OK
+
+python -m compileall -q sgcf_nrmp_project/gazebo/scripts sgcf_nrmp_project/tools sgcf_nrmp_project/artifacts/stages/stage_11b_m_exact_primitive_materialization
+PASS
+
+JSON parse audit
+JSON_PARSE_PASS 44
+
+git diff --check
+PASS
+
+SDFormat 14.9.0 check: 12 / 12 worlds PASS
+Changed-world runtime: 11 / 11 complete
+Clearance classification: 5 / 5 agreement
+Camera / Odometry: 11 / 11 PASS
+Robot self-return: 0 in all 11 worlds
+Residual Gazebo executable count: 0

@@ -1,0 +1,31 @@
+{
+  "adapter_modified": false,
+  "authorized_scenes": [
+    "empty_world",
+    "single_static_obstacle",
+    "human_path_side",
+    "initial_collision"
+  ],
+  "core_modified": false,
+  "docker_modified_by_stage11bi": false,
+  "executed_scenes": [
+    "empty_world",
+    "single_static_obstacle",
+    "human_path_side",
+    "initial_collision"
+  ],
+  "formal_robot_visibility_modified": true,
+  "gazebo_launch_count": 4,
+  "obstacle_models_modified": false,
+  "other_worlds_run": [],
+  "planner_started": false,
+  "point_crop_added": false,
+  "ros_bridge_started": false,
+  "stage09b_human_path_side_limit_retained": {
+    "P0": "geometry recheck rejection",
+    "P1_P2": "OSQP_MAX_ITER_REACHED"
+  },
+  "stage10_loaded": false,
+  "status": "PASSED",
+  "worlds_modified": false
+}

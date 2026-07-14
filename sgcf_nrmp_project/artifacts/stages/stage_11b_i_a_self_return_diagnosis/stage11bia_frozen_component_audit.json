@@ -1,0 +1,21 @@
+{
+  "adapter_point_crop_added": false,
+  "camera_pose_modified": false,
+  "collision_modified": false,
+  "core_modified_by_stage11bia": false,
+  "docker_modified_by_stage11bia": false,
+  "formal_empty_world_sha256": "88eb227417c6d24cc64c3238c60a27966f18566b081968ab12d6f8ee1022279e",
+  "formal_gazebo_modified": false,
+  "formal_robot_model_sha256": "3e374265419ae09961d772b03c23813c8c433c456ab39ea234cc23527c2aaf1c",
+  "gazebo_launch_count": 2,
+  "lidar_pose_modified": false,
+  "minimum_range_modified": false,
+  "planner_started": false,
+  "ros_bridge_started": false,
+  "stage10_loaded": false,
+  "status": "PASSED",
+  "worlds_run": [
+    "empty_world",
+    "empty_world temporary visibility copy"
+  ]
+}

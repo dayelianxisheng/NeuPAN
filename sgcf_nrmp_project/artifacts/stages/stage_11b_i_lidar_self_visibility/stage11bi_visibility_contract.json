@@ -1,0 +1,18 @@
+{
+  "external_visuals_modified": false,
+  "lidar_excludes_self_bit": true,
+  "lidar_includes_default_external_flags": true,
+  "lidar_visibility_mask": 4294967293,
+  "robot_self_visibility_bit": 2,
+  "robot_visual_visibility_flags": 2,
+  "robot_visuals": {
+    "body": 2,
+    "left_wheel_visual": 2,
+    "right_wheel_visual": 2
+  },
+  "source_values": [
+    "stage11bia_visibility_probe.json",
+    "stage11bib_visibility_probe_replay.json"
+  ],
+  "status": "PASSED"
+}

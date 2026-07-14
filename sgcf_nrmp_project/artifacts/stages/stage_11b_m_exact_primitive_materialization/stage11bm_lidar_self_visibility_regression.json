@@ -1,0 +1,1774 @@
+{
+  "all_scenes_self_return_zero": true,
+  "lidar_visibility_mask": 4294967293,
+  "records": {
+    "human_path_center": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "human_path_side": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "initial_collision": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 29,
+      "scan_records": [
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+          ],
+          "inside_footprint_count": 29,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "narrow_passage": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "outdated_rgb_contract": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "rgb_dropout_contract": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "robot_obstacle": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "semantic_infeasible": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "single_static_obstacle": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "static_corridor": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    },
+    "vehicle_path": {
+      "all_frames_self_return_zero": true,
+      "external_inside_footprint_count": 0,
+      "scan_records": [
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        },
+        {
+          "inside_beam_indices": [],
+          "inside_footprint_count": 0,
+          "self_return_count": 0
+        }
+      ]
+    }
+  },
+  "robot_visual_flags": 2,
+  "status": "PASSED"
+}

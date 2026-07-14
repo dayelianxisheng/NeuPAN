@@ -1,0 +1,172 @@
+{
+  "empty_world": {
+    "expected": [
+      "ground_plane",
+      "sgcf_robot"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot"
+    ],
+    "unexpected": []
+  },
+  "human_path_center": {
+    "expected": [
+      "ground_plane",
+      "human_01",
+      "sgcf_robot"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "human_01"
+    ],
+    "unexpected": []
+  },
+  "human_path_side": {
+    "expected": [
+      "ground_plane",
+      "human_01",
+      "sgcf_robot"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "human_01"
+    ],
+    "unexpected": []
+  },
+  "initial_collision": {
+    "expected": [
+      "ground_plane",
+      "initial_collision_obstacle",
+      "sgcf_robot"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "initial_collision_obstacle"
+    ],
+    "unexpected": []
+  },
+  "narrow_passage": {
+    "expected": [
+      "ground_plane",
+      "sgcf_robot",
+      "wall_left",
+      "wall_right"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "wall_left",
+      "wall_right"
+    ],
+    "unexpected": []
+  },
+  "outdated_rgb_contract": {
+    "expected": [
+      "ground_plane",
+      "human_01",
+      "sgcf_robot"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "human_01"
+    ],
+    "unexpected": []
+  },
+  "rgb_dropout_contract": {
+    "expected": [
+      "ground_plane",
+      "human_01",
+      "sgcf_robot"
+    ],
+    "missing": [
+      "ground_plane",
+      "human_01",
+      "sgcf_robot"
+    ],
+    "observed": [],
+    "unexpected": []
+  },
+  "robot_obstacle": {
+    "expected": [
+      "ground_plane",
+      "robot_obstacle_01",
+      "sgcf_robot"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "robot_obstacle_01"
+    ],
+    "unexpected": []
+  },
+  "semantic_infeasible": {
+    "expected": [
+      "ground_plane",
+      "human_01",
+      "sgcf_robot"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "human_01"
+    ],
+    "unexpected": []
+  },
+  "single_static_obstacle": {
+    "expected": [
+      "ground_plane",
+      "sgcf_robot",
+      "static_01"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "static_01"
+    ],
+    "unexpected": []
+  },
+  "static_corridor": {
+    "expected": [
+      "ground_plane",
+      "sgcf_robot",
+      "wall_left",
+      "wall_right"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "wall_left",
+      "wall_right"
+    ],
+    "unexpected": []
+  },
+  "vehicle_path": {
+    "expected": [
+      "ground_plane",
+      "sgcf_robot",
+      "vehicle_01"
+    ],
+    "missing": [],
+    "observed": [
+      "ground_plane",
+      "sgcf_robot",
+      "vehicle_01"
+    ],
+    "unexpected": []
+  }
+}

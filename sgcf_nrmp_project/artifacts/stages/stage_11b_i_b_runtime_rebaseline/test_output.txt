@@ -1,0 +1,45 @@
+Stage 11B-I-B acceptance checks
+
+python -m unittest -v sgcf_nrmp_project.tools.test_stage11bib_rebaseline
+
+test_environment_equivalence ... ok
+test_immutable_image_and_new_container_binding ... ok
+test_self_return_reproduced ... ok
+test_two_launches_cleanup_and_frozen_assets ... ok
+test_visibility_replay_uses_exact_i_a_contract ... ok
+
+Ran 5 tests
+OK
+
+Immutable image binding:
+sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3
+PASS
+
+Gazebo launches: 2
+Worlds: empty_world only
+PASS
+
+Baseline: 20/20 frames reproduced ten self-return points
+Probe: 20/20 frames contained zero finite self-return points
+Camera: 5 nonempty 320x240 frames per run
+Odometry: 20 monotonic messages per run
+Simulation clock: 20 monotonic messages per run
+
+python -m compileall -q sgcf_nrmp_project/tools
+PASS
+
+All Stage 11B-I-B JSON parse
+PASS
+
+git diff --check
+PASS
+
+Stage container stopped: true
+Container residual Gazebo processes: 0
+Host residual Gazebo processes: 0
+
+Pre-existing unrelated worktree state retained:
+- docker/gazebo_harmonic/container.sh modified before Stage 11B-I-B
+- neupan_ros nested worktree dirty before Stage 11B-I-B
+
+Stage 11B-I-B modified neither location.

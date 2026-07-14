@@ -1,0 +1,8 @@
+[1;33mWarning [Utils.cc:132][0m [/scale:/workspace/sgcf_nrmp_project/gazebo/worlds/semantic_infeasible.sdf:L2]: XML Element[scale], child of element[include], not defined in SDF. Copying[scale] as children of [include].
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: egl: failed to create dri2 screen
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+[1;33m[Wrn] [Ogre2Camera.cc:423] [0m[1;33mOgre2Camera::SetVisibilityMask: Mask bits [0m[1;33mc0000000[0m[1;33m are set but will be ignored as they conflict with the [0m[1;33mreserved bits used internally by the ogre2 backend.[0m[1;33m[0m

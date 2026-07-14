@@ -1,0 +1,5 @@
+{
+  "decision": "BLOCKED_NONUNIT_MODEL_MATERIALIZATION_COMPLEX",
+  "reason": "initial_collision non-unit scale references a cylinder model; automatic conversion is authorized only for simple static box models",
+  "status": "NOT_EXECUTED_DUE_TO_EARLIER_STOP"
+}

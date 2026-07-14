@@ -1,0 +1,16 @@
+{
+  "camera_resolution": [
+    320,
+    240
+  ],
+  "footprint_m": [
+    0.8,
+    0.5
+  ],
+  "lidar_visibility_mask": 4294967293,
+  "robot_model_sha256": "3fc0c6077a99591802370181c2f2e57196171b58a5622c6ccb7344d2702b7a52",
+  "status": "PASSED",
+  "visibility_flags": 2,
+  "wheel_radius_m": 0.1,
+  "wheel_separation_m": 0.5
+}

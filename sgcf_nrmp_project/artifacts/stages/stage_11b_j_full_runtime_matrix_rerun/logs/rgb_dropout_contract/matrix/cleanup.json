@@ -1,0 +1,7 @@
+{
+  "server_exit": "NOT_REAPED",
+  "signal": null,
+  "timeout": false,
+  "residual_process_count": 1,
+  "passed": false
+}

@@ -1,0 +1,14 @@
+{
+  "scene": "narrow_passage",
+  "sample": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784017370816555899,
+  "ready_ns": 1784017375074615813,
+  "first_clock_ns": 1784017375609978776,
+  "first_lidar_ns": 1784017375720849763,
+  "first_camera_ns": 1784017375819586526,
+  "first_odometry_ns": 1784017375899470351,
+  "end_ns": 1784017379102922387
+}

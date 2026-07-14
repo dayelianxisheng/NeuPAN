@@ -1,0 +1,83 @@
+{
+  "stage11bm_clearance_cross_check": {
+    "classification_agreement_count": 5,
+    "classification_total": 5,
+    "records": [
+      {
+        "absolute_error_m": 0.0009559154510497825,
+        "classification_agreement": true,
+        "expected_clearance_m": 0.75,
+        "expected_collision": false,
+        "nearest_observable_point_base_xy_m": [
+          1.1509559154510498,
+          0.0
+        ],
+        "runtime_clearance_m": 0.7509559154510498,
+        "runtime_collision": false,
+        "scene_id": "single_static_obstacle",
+        "threshold_passed": true
+      },
+      {
+        "absolute_error_m": 0.0021343086923417687,
+        "classification_agreement": true,
+        "expected_clearance_m": 0.375,
+        "expected_collision": false,
+        "nearest_observable_point_base_xy_m": [
+          0.3892096808539716,
+          -0.6228656913076582
+        ],
+        "runtime_clearance_m": 0.37286569130765823,
+        "runtime_collision": false,
+        "scene_id": "static_corridor",
+        "threshold_passed": true
+      },
+      {
+        "absolute_error_m": 0.0017416023630444366,
+        "classification_agreement": true,
+        "expected_clearance_m": 0.26,
+        "expected_collision": false,
+        "nearest_observable_point_base_xy_m": [
+          0.3175950955338777,
+          0.5082583976369556
+        ],
+        "runtime_clearance_m": 0.2582583976369556,
+        "runtime_collision": false,
+        "scene_id": "narrow_passage",
+        "threshold_passed": true
+      },
+      {
+        "absolute_error_m": 0.0017118854203630463,
+        "classification_agreement": true,
+        "expected_clearance_m": 0.7545361017187261,
+        "expected_collision": false,
+        "nearest_observable_point_base_xy_m": [
+          1.1552903429392314,
+          0.28804623390905176
+        ],
+        "runtime_clearance_m": 0.7562479871390891,
+        "runtime_collision": false,
+        "scene_id": "human_path_side",
+        "threshold_passed": true
+      },
+      {
+        "absolute_error_m": 0.0,
+        "classification_agreement": true,
+        "expected_clearance_m": 0.0,
+        "expected_collision": true,
+        "nearest_observable_point_base_xy_m": [
+          0.2886367043182511,
+          -0.1534708580096995
+        ],
+        "runtime_clearance_m": 0.0,
+        "runtime_collision": true,
+        "scene_id": "initial_collision",
+        "threshold_passed": true
+      }
+    ],
+    "status": "PASSED",
+    "threshold_m": 0.02
+  },
+  "stage11bm_runtime_reused_as_stage11bn_evidence": false,
+  "stage11bn_matrix_is_fresh": true,
+  "status": "PASSED_CROSS_CHECK_ONLY"
+}

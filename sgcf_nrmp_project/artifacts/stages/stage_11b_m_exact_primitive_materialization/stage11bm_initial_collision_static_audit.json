@@ -1,0 +1,17 @@
+{
+  "entity_name": "initial_collision_obstacle",
+  "length_m": 0.4,
+  "pose_xyz_rpy": [
+    0.41,
+    0.0,
+    0.2,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "primitive": "cylinder",
+  "radius_m": 0.2,
+  "robot_footprint_intersection": true,
+  "semantic_class": "HUMAN",
+  "status": "PASSED"
+}

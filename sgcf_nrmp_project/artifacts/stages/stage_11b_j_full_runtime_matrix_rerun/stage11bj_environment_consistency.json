@@ -1,0 +1,9 @@
+{
+  "egl_headless_context_available": true,
+  "gazebo_sim": "8.14.0",
+  "gz_rendering_abi": 8,
+  "hlms_resources_available": true,
+  "ogre2_plugin_available": true,
+  "sdformat": "14.9.0",
+  "status": "PASSED"
+}

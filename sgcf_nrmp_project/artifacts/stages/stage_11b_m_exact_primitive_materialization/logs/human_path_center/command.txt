@@ -1,0 +1,1 @@
+gz sim -s -r --headless-rendering --render-engine-server ogre2 -v 4 /workspace/sgcf_nrmp_project/gazebo/worlds/human_path_center.sdf 

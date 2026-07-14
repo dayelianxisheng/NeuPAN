@@ -1,0 +1,7 @@
+{
+  "gazebo_sim": "8.14.0",
+  "gz_rendering_abi": 8,
+  "ogre2_hlms_egl_gate": "PASSED",
+  "sdformat": "14.9.0",
+  "status": "PASSED"
+}

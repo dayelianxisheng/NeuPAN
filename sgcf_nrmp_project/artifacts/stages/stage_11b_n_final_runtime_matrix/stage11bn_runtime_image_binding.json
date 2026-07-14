@@ -1,0 +1,8 @@
+{
+  "container_id": "d5bc1e9b6fa03a778c7bf35c502f56e4adfdb541a249dfee36cce75fd8b9bfb0",
+  "container_image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "container_name": "sgcf_gz_stage11bn",
+  "created_using_mutable_tag": false,
+  "immutable_image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "status": "PASSED"
+}

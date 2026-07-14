@@ -1,0 +1,1 @@
+gz sim -s -r --headless-rendering --render-engine-server ogre2 -v 4 /tmp/stage11bib_visibility_probe/gazebo/worlds/empty_world.sdf 

@@ -1,0 +1,14 @@
+{
+  "scene": "single_static_obstacle",
+  "run_id": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784013416024993512,
+  "ready_ns": 1784013420277707799,
+  "first_clock_ns": 1784013435297593660,
+  "first_lidar_ns": 1784013435407524127,
+  "first_camera_ns": 1784013435498969582,
+  "first_odometry_ns": 1784013435580186046,
+  "end_ns": 1784013438684076783
+}

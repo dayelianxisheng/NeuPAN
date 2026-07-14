@@ -1,0 +1,22 @@
+Stage 11B-J offline validation
+
+python -m unittest -v sgcf_nrmp_project.tools.test_stage11bj_blocked
+Ran 8 tests in 0.002s
+OK
+
+python -m compileall -q sgcf_nrmp_project/tools sgcf_nrmp_project/artifacts/stages/stage_11b_j_full_runtime_matrix_rerun
+PASS
+
+JSON parse audit
+JSON_PARSE_PASS 47
+
+git diff --check
+PASS
+
+Final process audit
+stage container: Exited (137)
+actual residual Gazebo executable count: 0
+
+Runtime acceptance remains blocked by the geometry consistency failures documented in
+stage11bj_runtime_clearance_consistency.json. No additional Gazebo run was performed
+after the immediate-stop condition.

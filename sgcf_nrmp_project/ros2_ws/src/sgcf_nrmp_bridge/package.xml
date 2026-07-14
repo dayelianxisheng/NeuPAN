@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>sgcf_nrmp_bridge</name>
+  <version>0.1.0</version>
+  <description>Stage 11C-A bridge contract audit tools.</description>
+  <maintainer email="noreply@example.com">SGCF-NRMP</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>rosgraph_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+</package>

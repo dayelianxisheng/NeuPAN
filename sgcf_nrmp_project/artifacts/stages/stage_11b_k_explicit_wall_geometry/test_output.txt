@@ -1,0 +1,17 @@
+Stage 11B-K scope-stop validation
+
+python -m unittest -v sgcf_nrmp_project.tools.test_stage11bk_scope_block
+Ran 6 tests in 0.001s
+OK
+
+python -m compileall -q sgcf_nrmp_project/tools sgcf_nrmp_project/artifacts/stages/stage_11b_k_explicit_wall_geometry
+PASS
+
+JSON parse audit
+JSON_PARSE_PASS 17
+
+git diff --check
+PASS
+
+No SDFormat runtime command or Gazebo scene was executed after the mandatory
+BLOCKED_SCALE_SCOPE_EXPANSION_REQUIRED stop.

@@ -1,0 +1,7 @@
+
+Requesting state for world [single_static_obstacle]...
+
+Available models:
+    - ground_plane
+    - sgcf_robot
+    - static_01

@@ -1,0 +1,382 @@
+{
+  "empty_world": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "human_path_center": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "human_01": [
+        1.5,
+        0.0,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "human_path_side": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "human_01": [
+        1.5,
+        0.35,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "initial_collision": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_collision_obstacle": [
+        0.41,
+        0.0,
+        0.2,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "narrow_passage": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wall_left": [
+        2.0,
+        0.585,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wall_right": [
+        2.0,
+        -0.585,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "outdated_rgb_contract": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "human_01": [
+        1.5,
+        0.0,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "rgb_dropout_contract": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "human_01": [
+        1.5,
+        0.0,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "NOT_CAPTURED"
+  },
+  "robot_obstacle": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "robot_obstacle_01": [
+        1.5,
+        0.0,
+        0.15,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "semantic_infeasible": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "human_01": [
+        1.5,
+        0.0,
+        0.85,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "single_static_obstacle": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_01": [
+        1.5,
+        0.0,
+        0.35,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "static_corridor": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wall_left": [
+        2.0,
+        0.7,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "wall_right": [
+        2.0,
+        -0.7,
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  },
+  "vehicle_path": {
+    "expected_pose_manifest": {
+      "ground_plane": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sgcf_robot": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vehicle_01": [
+        1.5,
+        0.0,
+        0.2,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "orientation_tolerance_rad": 1e-06,
+    "position_tolerance_m": 1e-06,
+    "status": "RUNTIME_POSE_CAPTURED"
+  }
+}

@@ -1,0 +1,641 @@
+{
+  "all_nonexception_static_entities_within_tolerance": true,
+  "exception": {
+    "entity": "sgcf_robot",
+    "position_error_m": 0.002410920387786943,
+    "reason": "intentional initial penetration produces a physics contact response before pose sampling; external obstacle pose remains exact and collision classification remains true",
+    "scene_id": "initial_collision"
+  },
+  "orientation_tolerance_rad": 1e-06,
+  "position_tolerance_m": 1e-06,
+  "records": {
+    "empty_world": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        }
+      ]
+    },
+    "human_path_center": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "human_01",
+          "expected_xyz": [
+            1.5,
+            0.0,
+            0.85
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            1.5,
+            0.0,
+            0.85
+          ]
+        }
+      ]
+    },
+    "human_path_side": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "human_01",
+          "expected_xyz": [
+            1.5,
+            0.35,
+            0.85
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            1.5,
+            0.35,
+            0.85
+          ]
+        }
+      ]
+    },
+    "initial_collision": {
+      "max_orientation_error_rad": 6.749547741047361e-11,
+      "max_position_error_m": 0.002410920387786943,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 6.749547741047361e-11,
+          "position_error_m": 0.002410920387786943,
+          "runtime_xyz": [
+            -0.0024109203877861153,
+            9.025285911463899e-19,
+            -1.998273674860769e-09
+          ]
+        },
+        {
+          "entity": "initial_collision_obstacle",
+          "expected_xyz": [
+            0.41,
+            0.0,
+            0.2
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.41,
+            0.0,
+            0.2
+          ]
+        }
+      ]
+    },
+    "narrow_passage": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "wall_left",
+          "expected_xyz": [
+            2.0,
+            0.585,
+            0.25
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            2.0,
+            0.585,
+            0.25
+          ]
+        },
+        {
+          "entity": "wall_right",
+          "expected_xyz": [
+            2.0,
+            -0.585,
+            0.25
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            2.0,
+            -0.585,
+            0.25
+          ]
+        }
+      ]
+    },
+    "outdated_rgb_contract": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "human_01",
+          "expected_xyz": [
+            1.5,
+            0.0,
+            0.85
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            1.5,
+            0.0,
+            0.85
+          ]
+        }
+      ]
+    },
+    "rgb_dropout_contract": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "human_01",
+          "expected_xyz": [
+            1.5,
+            0.0,
+            0.85
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            1.5,
+            0.0,
+            0.85
+          ]
+        }
+      ]
+    },
+    "robot_obstacle": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "robot_obstacle_01",
+          "expected_xyz": [
+            1.5,
+            0.0,
+            0.15
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            1.5,
+            0.0,
+            0.15
+          ]
+        }
+      ]
+    },
+    "semantic_infeasible": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "human_01",
+          "expected_xyz": [
+            1.5,
+            0.0,
+            0.85
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            1.5,
+            0.0,
+            0.85
+          ]
+        }
+      ]
+    },
+    "single_static_obstacle": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "static_01",
+          "expected_xyz": [
+            1.5,
+            0.0,
+            0.35
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            1.5,
+            0.0,
+            0.35
+          ]
+        }
+      ]
+    },
+    "static_corridor": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "wall_left",
+          "expected_xyz": [
+            2.0,
+            0.7,
+            0.25
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            2.0,
+            0.7,
+            0.25
+          ]
+        },
+        {
+          "entity": "wall_right",
+          "expected_xyz": [
+            2.0,
+            -0.7,
+            0.25
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            2.0,
+            -0.7,
+            0.25
+          ]
+        }
+      ]
+    },
+    "vehicle_path": {
+      "max_orientation_error_rad": 2.4776964782519343e-25,
+      "max_position_error_m": 1.9981920855796643e-11,
+      "records": [
+        {
+          "entity": "ground_plane",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "entity": "sgcf_robot",
+          "expected_xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_error_rad": 2.4776964782519343e-25,
+          "position_error_m": 1.9981920855796643e-11,
+          "runtime_xyz": [
+            -3.0414012932583146e-22,
+            -5.503899998090897e-23,
+            -1.9981920855796643e-11
+          ]
+        },
+        {
+          "entity": "vehicle_01",
+          "expected_xyz": [
+            1.5,
+            0.0,
+            0.2
+          ],
+          "orientation_error_rad": 0.0,
+          "position_error_m": 0.0,
+          "runtime_xyz": [
+            1.5,
+            0.0,
+            0.2
+          ]
+        }
+      ]
+    }
+  },
+  "status": "PASSED_WITH_INITIAL_COLLISION_DYNAMICS_EXCEPTION"
+}

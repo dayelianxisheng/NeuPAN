@@ -1,0 +1,8 @@
+{
+  "base_image_id": "sha256:4cbeac7831833f8d6fa4cb1f9f8e22c188853468e76b3d5b9cc58148a8c8f64b",
+  "requested_package": "ros-humble-ros-gzharmonic",
+  "requested_version": "0.244.12-3jammy",
+  "repository": "https://packages.osrfoundation.org/gazebo/ubuntu-stable",
+  "bridge_image_id": null,
+  "installed_packages": []
+}

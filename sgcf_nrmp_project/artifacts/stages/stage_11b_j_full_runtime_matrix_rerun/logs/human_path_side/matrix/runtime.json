@@ -1,0 +1,14 @@
+{
+  "scene": "human_path_side",
+  "run_id": "matrix",
+  "mode": "full",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784013507143184266,
+  "ready_ns": 1784013511398984353,
+  "first_clock_ns": 1784013526402023238,
+  "first_lidar_ns": 1784013526507579437,
+  "first_camera_ns": 1784013526600864687,
+  "first_odometry_ns": 1784013526680072059,
+  "end_ns": 1784013529802360927
+}

@@ -1,0 +1,530 @@
+{
+  "affected_model_count": 0,
+  "affected_world_count": 11,
+  "affected_worlds": [
+    "human_path_center",
+    "human_path_side",
+    "initial_collision",
+    "narrow_passage",
+    "outdated_rgb_contract",
+    "rgb_dropout_contract",
+    "robot_obstacle",
+    "semantic_infeasible",
+    "single_static_obstacle",
+    "static_corridor",
+    "vehicle_path"
+  ],
+  "authorized_target_worlds": [
+    "narrow_passage",
+    "static_corridor"
+  ],
+  "decision": "BLOCKED_SCALE_SCOPE_EXPANSION_REQUIRED",
+  "include_count": 25,
+  "invalid_include_scale_count": 13,
+  "other_undefined_include_children": [],
+  "outside_authorized_scope_count": 9,
+  "outside_authorized_scope_worlds": [
+    "human_path_center",
+    "human_path_side",
+    "initial_collision",
+    "outdated_rgb_contract",
+    "rgb_dropout_contract",
+    "robot_obstacle",
+    "semantic_infeasible",
+    "single_static_obstacle",
+    "vehicle_path"
+  ],
+  "records": [
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/empty_world.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "empty_world",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/human_path_center.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "human_path_center",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/human_path_center.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "human_01",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "1.5 0 0.85 0 0 0",
+      "scale": "1 1 1",
+      "scene_id": "human_path_center",
+      "static": null,
+      "uri": "model://human_placeholder",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/human_path_side.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "human_path_side",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/human_path_side.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "human_01",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "1.5 0.35 0.85 0 0 0",
+      "scale": "1 1 1",
+      "scene_id": "human_path_side",
+      "static": null,
+      "uri": "model://human_placeholder",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/initial_collision.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "initial_collision",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/initial_collision.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "initial_collision_obstacle",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0.41 0 0.2 0 0 0",
+      "scale": "0.5714285714285714 0.5714285714285714 0.23529411764705882",
+      "scene_id": "initial_collision",
+      "static": null,
+      "uri": "model://human_placeholder",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/narrow_passage.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": true,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "narrow_passage",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/narrow_passage.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": true,
+      "name": "wall_left",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "2 0.585 0.25 0 0 0",
+      "scale": "5 0.15 0.5",
+      "scene_id": "narrow_passage",
+      "static": null,
+      "uri": "model://static_obstacle",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/narrow_passage.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": true,
+      "name": "wall_right",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "2 -0.585 0.25 0 0 0",
+      "scale": "5 0.15 0.5",
+      "scene_id": "narrow_passage",
+      "static": null,
+      "uri": "model://static_obstacle",
+      "xml_path": "/sdf/world/include[2]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/outdated_rgb_contract.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "outdated_rgb_contract",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/outdated_rgb_contract.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "human_01",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "1.5 0 0.85 0 0 0",
+      "scale": "1 1 1",
+      "scene_id": "outdated_rgb_contract",
+      "static": null,
+      "uri": "model://human_placeholder",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/rgb_dropout_contract.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "rgb_dropout_contract",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/rgb_dropout_contract.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "human_01",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "1.5 0 0.85 0 0 0",
+      "scale": "1 1 1",
+      "scene_id": "rgb_dropout_contract",
+      "static": null,
+      "uri": "model://human_placeholder",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/robot_obstacle.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "robot_obstacle",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/robot_obstacle.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "robot_obstacle_01",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "1.5 0 0.15 0 0 0",
+      "scale": "1 1 1",
+      "scene_id": "robot_obstacle",
+      "static": null,
+      "uri": "model://robot_obstacle",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/semantic_infeasible.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "semantic_infeasible",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/semantic_infeasible.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "human_01",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "1.5 0 0.85 0 0 0",
+      "scale": "1 1 1",
+      "scene_id": "semantic_infeasible",
+      "static": null,
+      "uri": "model://human_placeholder",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/single_static_obstacle.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "single_static_obstacle",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/single_static_obstacle.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "static_01",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "1.5 0 0.35 0 0 0",
+      "scale": "1 1 1",
+      "scene_id": "single_static_obstacle",
+      "static": null,
+      "uri": "model://static_cylinder",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/static_corridor.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": true,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "static_corridor",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/static_corridor.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": true,
+      "name": "wall_left",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "2 0.7 0.25 0 0 0",
+      "scale": "5 0.15 0.5",
+      "scene_id": "static_corridor",
+      "static": null,
+      "uri": "model://static_obstacle",
+      "xml_path": "/sdf/world/include[1]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/static_corridor.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": true,
+      "name": "wall_right",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "2 -0.7 0.25 0 0 0",
+      "scale": "5 0.15 0.5",
+      "scene_id": "static_corridor",
+      "static": null,
+      "uri": "model://static_obstacle",
+      "xml_path": "/sdf/world/include[2]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/vehicle_path.sdf",
+      "has_invalid_include_scale": false,
+      "in_authorized_target_scope": false,
+      "name": "sgcf_robot",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "0 0 0 0 0 0",
+      "scale": null,
+      "scene_id": "vehicle_path",
+      "static": null,
+      "uri": "model://sgcf_diff_drive_robot",
+      "xml_path": "/sdf/world/include[0]"
+    },
+    {
+      "child_elements": [
+        "uri",
+        "name",
+        "pose",
+        "scale"
+      ],
+      "file": "sgcf_nrmp_project/gazebo/worlds/vehicle_path.sdf",
+      "has_invalid_include_scale": true,
+      "in_authorized_target_scope": false,
+      "name": "vehicle_01",
+      "placement_frame": null,
+      "plugin_count": 0,
+      "pose": "1.5 0 0.2 0 0 0",
+      "scale": "1 1 1",
+      "scene_id": "vehicle_path",
+      "static": null,
+      "uri": "model://vehicle_placeholder",
+      "xml_path": "/sdf/world/include[1]"
+    }
+  ],
+  "source_generator_emits_include_scale_for_all_obstacles": true,
+  "source_of_truth_generator": "sgcf_nrmp_project/gazebo/scripts/generate_static_assets.py",
+  "status": "FAILED_SCOPE_GATE"
+}

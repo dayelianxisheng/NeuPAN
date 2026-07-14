@@ -1,0 +1,18 @@
+{
+  "core_component_drift": false,
+  "egl_opengl_context_established": true,
+  "gazebo_sim": "8.14.0",
+  "gpu_rays_compositor_present": true,
+  "gz_rendering": "8.2.3",
+  "gz_rendering_abi": 8,
+  "hlms_ogre2_gate": "PASS",
+  "hlms_pbs_glsl_present": true,
+  "hlms_unlit_glsl_present": true,
+  "ldd_not_found_count": 0,
+  "ogre2_alias_target": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering8-ogre2.so.8.2.3",
+  "ogre2_plugin_alias": "/usr/lib/x86_64-linux-gnu/gz-rendering-8/engine-plugins/libgz-rendering-ogre2.so",
+  "ogre_next": "2.3.1",
+  "opengl_renderer_started": true,
+  "sdformat": "14.9.0",
+  "status": "PASSED"
+}

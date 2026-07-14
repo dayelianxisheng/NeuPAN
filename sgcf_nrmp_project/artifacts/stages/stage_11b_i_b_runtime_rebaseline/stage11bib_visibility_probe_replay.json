@@ -1,0 +1,175 @@
+{
+  "all_20_frames_zero_finite_returns": true,
+  "camera_dimensions": [
+    320,
+    240
+  ],
+  "camera_message_count": 5,
+  "camera_modified": false,
+  "camera_nonempty": true,
+  "camera_timestamp_monotonic": true,
+  "cleanup": {
+    "passed": true,
+    "residual_process_count": 0,
+    "server_exit": "0"
+  },
+  "clock_message_count": 20,
+  "collision_modified": false,
+  "diff_drive_modified": false,
+  "lidar_message_count": 20,
+  "lidar_pose_or_range_modified": false,
+  "lidar_timestamp_monotonic": true,
+  "lidar_visibility_mask": 4294967293,
+  "odometry_finite": true,
+  "odometry_message_count": 20,
+  "odometry_timestamp_monotonic": true,
+  "records": [
+    {
+      "finite_point_count": 0,
+      "frame_index": 0,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 1,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 2,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 3,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 4,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 5,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 6,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 7,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 8,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 9,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 10,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 11,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 12,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 13,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 14,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 15,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 16,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 17,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 18,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    },
+    {
+      "finite_point_count": 0,
+      "frame_index": 19,
+      "inside_footprint_beam_indices": [],
+      "inside_footprint_count": 0,
+      "nearest_finite_point": null
+    }
+  ],
+  "robot_self_visibility_bit": 2,
+  "robot_visual_visibility_flags": 2,
+  "simulation_clock_monotonic": true,
+  "status": "VISIBILITY_MASK_FIX_REVALIDATED",
+  "values_match_stage11bia": true,
+  "visual_geometry_or_pose_modified": false,
+  "world_modified": false
+}

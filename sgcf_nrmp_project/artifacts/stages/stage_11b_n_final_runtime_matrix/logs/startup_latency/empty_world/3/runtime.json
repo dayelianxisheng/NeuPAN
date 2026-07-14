@@ -1,0 +1,14 @@
+{
+  "scene": "empty_world",
+  "sample": "3",
+  "mode": "startup",
+  "ready": true,
+  "image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "start_ns": 1784017487648115512,
+  "ready_ns": 1784017491900685864,
+  "first_clock_ns": 1784017492431115318,
+  "first_lidar_ns": 1784017492542469075,
+  "first_camera_ns": 1784017492636521409,
+  "first_odometry_ns": 1784017492722970541,
+  "end_ns": 1784017492723879708
+}

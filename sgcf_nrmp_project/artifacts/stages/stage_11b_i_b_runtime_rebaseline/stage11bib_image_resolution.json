@@ -1,0 +1,10 @@
+{
+  "current_tag": "sgcf-gazebo-harmonic:hlms-media-fix",
+  "current_tag_image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "historical_image_available": false,
+  "historical_image_id": "sha256:4585ea4a757bad1cecab7f2943b9f4e6b9d3b3ad18f76848a577f0464be9ea3c",
+  "selected_immutable_image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "selection_reason": "user-authorized rebuilt image passed prior functional smoke; full ID resolved once and was used thereafter",
+  "tag_prefix_match": true,
+  "tag_prefix_requirement": "sha256:99de63"
+}
