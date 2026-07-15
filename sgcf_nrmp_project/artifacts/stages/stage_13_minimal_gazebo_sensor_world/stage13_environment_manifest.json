@@ -1,0 +1,16 @@
+{
+  "bridge_image_id": "sha256:69ec4a1e2134de8e05532386c4220e8ea4a91107b8bf1947dab4f07948af275f",
+  "bridge_package": "ros-humble-ros-gzharmonic 0.244.12-3jammy",
+  "gazebo_image_id": "sha256:99de6309b456a206402fed9ee51a5514316433b8a922de7b91ba0e79be0974d3",
+  "gazebo_sim": "8.14.0",
+  "images_rebuilt": false,
+  "new_stage13_world_created": false,
+  "planner_started": false,
+  "robot_sha256": "3fc0c6077a99591802370181c2f2e57196171b58a5622c6ccb7344d2702b7a52",
+  "ros_distro": "humble",
+  "sdformat": "14.9.0",
+  "stage10_started": false,
+  "world": "sgcf_nrmp_project/gazebo/worlds/single_static_obstacle.sdf",
+  "world_reused": true,
+  "world_sha256": "e17b41f707ffee6a23a5329582c9ca65a08b9798835e919d096ddc5a4ccfa518"
+}

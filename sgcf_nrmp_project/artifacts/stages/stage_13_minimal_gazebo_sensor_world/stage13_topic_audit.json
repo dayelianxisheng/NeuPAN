@@ -1,0 +1,54 @@
+{
+  "bridge_mapping_count": 6,
+  "bridge_mappings": {
+    "/camera/camera_info": "sensor_msgs/msg/CameraInfo",
+    "/camera/image_raw": "sensor_msgs/msg/Image",
+    "/clock": "rosgraph_msgs/msg/Clock",
+    "/cmd_vel": "geometry_msgs/msg/Twist",
+    "/odom": "nav_msgs/msg/Odometry",
+    "/scan": "sensor_msgs/msg/LaserScan"
+  },
+  "frames": {
+    "camera_info": [
+      "sgcf_robot/camera_link/rgb_camera"
+    ],
+    "image": [
+      "sgcf_robot/camera_link/rgb_camera"
+    ],
+    "odom": [
+      "odom"
+    ],
+    "odom_child": [
+      "base_link"
+    ],
+    "scan": [
+      "sgcf_robot/lidar_link/lidar"
+    ]
+  },
+  "motion_counts": {
+    "camera_info": 55,
+    "clock": 5482,
+    "image": 55,
+    "odom": 274,
+    "scan": 55
+  },
+  "passed": true,
+  "tf_published_from_frozen_odom_and_static_sensor_contracts": true,
+  "topics": {
+    "/camera/camera_info": "sensor_msgs/msg/CameraInfo",
+    "/camera/image_raw": "sensor_msgs/msg/Image",
+    "/clock": "rosgraph_msgs/msg/Clock",
+    "/cmd_vel": "geometry_msgs/msg/Twist",
+    "/odom": "nav_msgs/msg/Odometry",
+    "/scan": "sensor_msgs/msg/LaserScan",
+    "/tf": "tf2_msgs/msg/TFMessage",
+    "/tf_static": "tf2_msgs/msg/TFMessage"
+  },
+  "zero_counts": {
+    "camera_info": 70,
+    "clock": 7005,
+    "image": 70,
+    "odom": 350,
+    "scan": 70
+  }
+}

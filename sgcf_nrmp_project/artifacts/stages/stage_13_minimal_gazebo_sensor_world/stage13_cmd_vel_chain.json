@@ -1,0 +1,41 @@
+{
+  "collision": false,
+  "collision_basis": "runtime LaserScan points remain outside 0.8x0.5 footprint",
+  "gazebo_unique_commands": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.1,
+      0.0
+    ]
+  ],
+  "maximum_component_error": 0.0,
+  "minimum_representative_finite_range_m": 1.0489715337753296,
+  "passed": true,
+  "positive_x_displacement_m": 0.10190000000029921,
+  "requested": {
+    "angular_z": 0.0,
+    "duration_sim_s": 1.0,
+    "linear_x": 0.1
+  },
+  "ros_unique_commands": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.1,
+      0.0
+    ]
+  ],
+  "sensor_counts_during_run": {
+    "camera_info": 55,
+    "clock": 5482,
+    "image": 55,
+    "odom": 274,
+    "scan": 55
+  },
+  "y_drift_m": -3.3508476447778517e-16
+}

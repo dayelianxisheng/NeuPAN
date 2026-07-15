@@ -1,0 +1,42 @@
+{
+  "connected": true,
+  "frozen_T_camera_lidar": [
+    [
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0.8
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "lookup_success_rate": 1.0,
+  "motion_attempts": 274,
+  "passed": true,
+  "tree": {
+    "base_link": [
+      "sgcf_robot/lidar_link/lidar",
+      "sgcf_robot/camera_link/rgb_camera"
+    ],
+    "odom": [
+      "base_link"
+    ]
+  },
+  "zero_attempts": 350
+}

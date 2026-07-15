@@ -1,0 +1,67 @@
+{
+  "motion": {
+    "first_last": {
+      "camera_info": [
+        3.3,
+        8.7
+      ],
+      "clock": [
+        3.243,
+        8.724
+      ],
+      "image": [
+        3.3,
+        8.7
+      ],
+      "odom": [
+        3.26,
+        8.72
+      ],
+      "scan": [
+        3.3,
+        8.7
+      ]
+    },
+    "monotonic": {
+      "camera_info": true,
+      "clock": true,
+      "image": true,
+      "odom": true,
+      "scan": true
+    }
+  },
+  "passed": true,
+  "time_source": "GAZEBO_SIMULATION_TIME",
+  "wall_time_used_for_sensor_stamps": false,
+  "zero": {
+    "first_last": {
+      "camera_info": [
+        3.4,
+        10.3
+      ],
+      "clock": [
+        3.308,
+        10.312
+      ],
+      "image": [
+        3.4,
+        10.3
+      ],
+      "odom": [
+        3.32,
+        10.3
+      ],
+      "scan": [
+        3.4,
+        10.3
+      ]
+    },
+    "monotonic": {
+      "camera_info": true,
+      "clock": true,
+      "image": true,
+      "odom": true,
+      "scan": true
+    }
+  }
+}
