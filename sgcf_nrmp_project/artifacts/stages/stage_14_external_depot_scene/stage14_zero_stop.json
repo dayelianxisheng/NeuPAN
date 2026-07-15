@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "post_stop_max_angular_speed_radps": 0.0,
+  "post_stop_max_linear_speed_mps": 0.0,
+  "post_stop_observation_sim_s": 2.0,
+  "zero_round_nonzero_command_count": 0
+}

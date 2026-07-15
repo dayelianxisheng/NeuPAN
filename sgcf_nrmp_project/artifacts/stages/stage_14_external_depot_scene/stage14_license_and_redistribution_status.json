@@ -1,0 +1,8 @@
+{
+  "license_files": [],
+  "local_runtime_validation_only": true,
+  "redistribution_allowed": false,
+  "status": "LICENSE_UNKNOWN_LOCAL_TEST_ONLY",
+  "vendor_archive_must_not_be_committed": true,
+  "vendor_cache_must_not_be_committed": true
+}

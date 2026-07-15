@@ -1,0 +1,18 @@
+{
+  "external_downloads": 0,
+  "gz_sim_resource_path": [
+    "/home/zq/.cache/sgcf_nrmp/vendor/depot/337924487ba19259ef46b7d1737c3c69df61cde1f85657c418ac13c23d948e1c",
+    "sgcf_nrmp_project/gazebo/models"
+  ],
+  "missing": [],
+  "missing_count": 0,
+  "passed": true,
+  "resource_strategy": "READ_ONLY_VENDOR_CACHE_PLUS_OVERLAY_FILE_URIS",
+  "uri_count": 4,
+  "uris": [
+    "materials/scripts/",
+    "materials/textures/",
+    "meshes/Crates.dae",
+    "meshes/Depot.dae"
+  ]
+}

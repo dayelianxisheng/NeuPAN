@@ -1,0 +1,617 @@
+{
+  "cache": "/home/zq/.cache/sgcf_nrmp/vendor/depot/337924487ba19259ef46b7d1737c3c69df61cde1f85657c418ac13c23d948e1c",
+  "cache_read_only": true,
+  "dangerous_path_count": 0,
+  "dangerous_paths": [],
+  "entries": [
+    {
+      "compressed_size": 0,
+      "crc32": "00000000",
+      "directory": true,
+      "path": "materials/",
+      "size": 0,
+      "symlink": false
+    },
+    {
+      "compressed_size": 0,
+      "crc32": "00000000",
+      "directory": true,
+      "path": "materials/scripts/",
+      "size": 0,
+      "symlink": false
+    },
+    {
+      "compressed_size": 265,
+      "crc32": "9cc10d1a",
+      "directory": false,
+      "path": "materials/scripts/model.material",
+      "size": 2226,
+      "symlink": false
+    },
+    {
+      "compressed_size": 0,
+      "crc32": "00000000",
+      "directory": true,
+      "path": "materials/textures/",
+      "size": 0,
+      "symlink": false
+    },
+    {
+      "compressed_size": 3470600,
+      "crc32": "3fcaa6d8",
+      "directory": false,
+      "path": "materials/textures/BOXSET_Albedo.png",
+      "size": 3473621,
+      "symlink": false
+    },
+    {
+      "compressed_size": 24869,
+      "crc32": "934bb768",
+      "directory": false,
+      "path": "materials/textures/BOXSET_Emissive.png",
+      "size": 36968,
+      "symlink": false
+    },
+    {
+      "compressed_size": 269902,
+      "crc32": "18e3afe5",
+      "directory": false,
+      "path": "materials/textures/BOXSET_Metalness.png",
+      "size": 272432,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1625902,
+      "crc32": "5383d040",
+      "directory": false,
+      "path": "materials/textures/BOXSET_Normal.png",
+      "size": 1630697,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1210550,
+      "crc32": "04de7b35",
+      "directory": false,
+      "path": "materials/textures/BOXSET_Roughness.png",
+      "size": 1210550,
+      "symlink": false
+    },
+    {
+      "compressed_size": 3380068,
+      "crc32": "aaeb528d",
+      "directory": false,
+      "path": "materials/textures/Crates_Crates_BaseColor.png",
+      "size": 3385155,
+      "symlink": false
+    },
+    {
+      "compressed_size": 2314746,
+      "crc32": "389b29a5",
+      "directory": false,
+      "path": "materials/textures/Crates_Crates_Normal.png",
+      "size": 2317343,
+      "symlink": false
+    },
+    {
+      "compressed_size": 764378,
+      "crc32": "96cfb52f",
+      "directory": false,
+      "path": "materials/textures/Crates_Crates_Roughness.png",
+      "size": 766467,
+      "symlink": false
+    },
+    {
+      "compressed_size": 4842350,
+      "crc32": "8a69162b",
+      "directory": false,
+      "path": "materials/textures/DepotLightmap.png",
+      "size": 4842350,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1855815,
+      "crc32": "5c210bc9",
+      "directory": false,
+      "path": "materials/textures/FANS_Albedo.png",
+      "size": 1860682,
+      "symlink": false
+    },
+    {
+      "compressed_size": 8967,
+      "crc32": "e9d0c6d6",
+      "directory": false,
+      "path": "materials/textures/FANS_Metalness.png",
+      "size": 13191,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1276047,
+      "crc32": "86e8a469",
+      "directory": false,
+      "path": "materials/textures/FANS_Normal.png",
+      "size": 1280976,
+      "symlink": false
+    },
+    {
+      "compressed_size": 828722,
+      "crc32": "f77e725d",
+      "directory": false,
+      "path": "materials/textures/FANS_Roughness.png",
+      "size": 828722,
+      "symlink": false
+    },
+    {
+      "compressed_size": 2821429,
+      "crc32": "d71eaf3b",
+      "directory": false,
+      "path": "materials/textures/FLOOR_Albedo.png",
+      "size": 2829451,
+      "symlink": false
+    },
+    {
+      "compressed_size": 102358,
+      "crc32": "ef5f502b",
+      "directory": false,
+      "path": "materials/textures/FLOOR_Metalness.png",
+      "size": 118481,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1953227,
+      "crc32": "85ce3202",
+      "directory": false,
+      "path": "materials/textures/FLOOR_Normal.png",
+      "size": 1969461,
+      "symlink": false
+    },
+    {
+      "compressed_size": 2472258,
+      "crc32": "338593d1",
+      "directory": false,
+      "path": "materials/textures/FLOOR_Roughness.png",
+      "size": 2485054,
+      "symlink": false
+    },
+    {
+      "compressed_size": 220488,
+      "crc32": "f81668fe",
+      "directory": false,
+      "path": "materials/textures/FanBack_FanBack_BaseColor.png",
+      "size": 239445,
+      "symlink": false
+    },
+    {
+      "compressed_size": 603179,
+      "crc32": "47f1f7d8",
+      "directory": false,
+      "path": "materials/textures/FireAlarmPole_Albedo.png",
+      "size": 610213,
+      "symlink": false
+    },
+    {
+      "compressed_size": 120,
+      "crc32": "88467ef8",
+      "directory": false,
+      "path": "materials/textures/FireAlarmPole_Metalness.png",
+      "size": 4166,
+      "symlink": false
+    },
+    {
+      "compressed_size": 252150,
+      "crc32": "86f9538c",
+      "directory": false,
+      "path": "materials/textures/FireAlarmPole_Normal.png",
+      "size": 254308,
+      "symlink": false
+    },
+    {
+      "compressed_size": 267715,
+      "crc32": "74745b31",
+      "directory": false,
+      "path": "materials/textures/FireAlarmPole_Roughness.png",
+      "size": 269116,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1288206,
+      "crc32": "7af076b3",
+      "directory": false,
+      "path": "materials/textures/FireAlarm_Albedo.png",
+      "size": 1297436,
+      "symlink": false
+    },
+    {
+      "compressed_size": 19490,
+      "crc32": "4fc2eee4",
+      "directory": false,
+      "path": "materials/textures/FireAlarm_Metalness.png",
+      "size": 23126,
+      "symlink": false
+    },
+    {
+      "compressed_size": 301760,
+      "crc32": "668fe51f",
+      "directory": false,
+      "path": "materials/textures/FireAlarm_Normal.png",
+      "size": 306913,
+      "symlink": false
+    },
+    {
+      "compressed_size": 730920,
+      "crc32": "fd50afa3",
+      "directory": false,
+      "path": "materials/textures/FireAlarm_Roughness.png",
+      "size": 732547,
+      "symlink": false
+    },
+    {
+      "compressed_size": 2283668,
+      "crc32": "4f095ddb",
+      "directory": false,
+      "path": "materials/textures/Forklift_Forklift_BaseColor.png",
+      "size": 2286411,
+      "symlink": false
+    },
+    {
+      "compressed_size": 334384,
+      "crc32": "63193c58",
+      "directory": false,
+      "path": "materials/textures/Forklift_Forklift_Metallic.png",
+      "size": 337473,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1828974,
+      "crc32": "fbb1c0be",
+      "directory": false,
+      "path": "materials/textures/Forklift_Forklift_Normal.png",
+      "size": 1833995,
+      "symlink": false
+    },
+    {
+      "compressed_size": 904620,
+      "crc32": "a0b361f0",
+      "directory": false,
+      "path": "materials/textures/Forklift_Forklift_Roughness.png",
+      "size": 904620,
+      "symlink": false
+    },
+    {
+      "compressed_size": 194573,
+      "crc32": "793f4306",
+      "directory": false,
+      "path": "materials/textures/INTERCOM_Albedo.png",
+      "size": 208277,
+      "symlink": false
+    },
+    {
+      "compressed_size": 902,
+      "crc32": "300310bc",
+      "directory": false,
+      "path": "materials/textures/INTERCOM_Emissive.png",
+      "size": 4862,
+      "symlink": false
+    },
+    {
+      "compressed_size": 120,
+      "crc32": "88467ef8",
+      "directory": false,
+      "path": "materials/textures/INTERCOM_Metalness.png",
+      "size": 4166,
+      "symlink": false
+    },
+    {
+      "compressed_size": 711342,
+      "crc32": "97b31e1a",
+      "directory": false,
+      "path": "materials/textures/INTERCOM_Normal.png",
+      "size": 714276,
+      "symlink": false
+    },
+    {
+      "compressed_size": 70370,
+      "crc32": "8321b897",
+      "directory": false,
+      "path": "materials/textures/INTERCOM_Roughness.png",
+      "size": 73634,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1863976,
+      "crc32": "504bcd23",
+      "directory": false,
+      "path": "materials/textures/PILLERS_Albedo.png",
+      "size": 1867705,
+      "symlink": false
+    },
+    {
+      "compressed_size": 289662,
+      "crc32": "5eedf930",
+      "directory": false,
+      "path": "materials/textures/PILLERS_Metalness.png",
+      "size": 290950,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1870040,
+      "crc32": "d375f6c0",
+      "directory": false,
+      "path": "materials/textures/PILLERS_Normal.png",
+      "size": 1877344,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1336075,
+      "crc32": "67131506",
+      "directory": false,
+      "path": "materials/textures/PILLERS_Roughness.png",
+      "size": 1336075,
+      "symlink": false
+    },
+    {
+      "compressed_size": 142760,
+      "crc32": "4a039075",
+      "directory": false,
+      "path": "materials/textures/Pipes_Albedo.png",
+      "size": 152014,
+      "symlink": false
+    },
+    {
+      "compressed_size": 7409,
+      "crc32": "06ce5a30",
+      "directory": false,
+      "path": "materials/textures/Pipes_Metalness.png",
+      "size": 12341,
+      "symlink": false
+    },
+    {
+      "compressed_size": 47114,
+      "crc32": "d1854235",
+      "directory": false,
+      "path": "materials/textures/Pipes_Normal.png",
+      "size": 57102,
+      "symlink": false
+    },
+    {
+      "compressed_size": 211620,
+      "crc32": "88b20ebc",
+      "directory": false,
+      "path": "materials/textures/Pipes_Roughness.png",
+      "size": 214681,
+      "symlink": false
+    },
+    {
+      "compressed_size": 3684027,
+      "crc32": "13f70803",
+      "directory": false,
+      "path": "materials/textures/ROOF_Albedo.png",
+      "size": 3708796,
+      "symlink": false
+    },
+    {
+      "compressed_size": 19340,
+      "crc32": "208c5cc2",
+      "directory": false,
+      "path": "materials/textures/ROOF_Emissive.png",
+      "size": 24151,
+      "symlink": false
+    },
+    {
+      "compressed_size": 797127,
+      "crc32": "cbc9e967",
+      "directory": false,
+      "path": "materials/textures/ROOF_Metalness.png",
+      "size": 799075,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1879083,
+      "crc32": "0462cd99",
+      "directory": false,
+      "path": "materials/textures/ROOF_Normal.png",
+      "size": 1886554,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1256766,
+      "crc32": "ffce09c5",
+      "directory": false,
+      "path": "materials/textures/ROOF_Roughness.png",
+      "size": 1256766,
+      "symlink": false
+    },
+    {
+      "compressed_size": 2538712,
+      "crc32": "b00eddcb",
+      "directory": false,
+      "path": "materials/textures/STAIRS_Albedo.png",
+      "size": 2568253,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1016093,
+      "crc32": "8b34e423",
+      "directory": false,
+      "path": "materials/textures/STAIRS_Metalness.png",
+      "size": 1016750,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1911117,
+      "crc32": "4ca11047",
+      "directory": false,
+      "path": "materials/textures/STAIRS_Normal.png",
+      "size": 1914386,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1381534,
+      "crc32": "7ef0be8a",
+      "directory": false,
+      "path": "materials/textures/STAIRS_Roughness.png",
+      "size": 1382088,
+      "symlink": false
+    },
+    {
+      "compressed_size": 4767818,
+      "crc32": "f13c27fd",
+      "directory": false,
+      "path": "materials/textures/WALLS_Albedo.png",
+      "size": 4767818,
+      "symlink": false
+    },
+    {
+      "compressed_size": 120,
+      "crc32": "88467ef8",
+      "directory": false,
+      "path": "materials/textures/WALLS_Metalness.png",
+      "size": 4166,
+      "symlink": false
+    },
+    {
+      "compressed_size": 5443837,
+      "crc32": "ffc65352",
+      "directory": false,
+      "path": "materials/textures/WALLS_Normal.png",
+      "size": 5443837,
+      "symlink": false
+    },
+    {
+      "compressed_size": 227,
+      "crc32": "848ac9ff",
+      "directory": false,
+      "path": "materials/textures/WALLS_Roughness.png",
+      "size": 8576,
+      "symlink": false
+    },
+    {
+      "compressed_size": 858654,
+      "crc32": "bb592029",
+      "directory": false,
+      "path": "materials/textures/Window_WINDOW_BaseColor.png",
+      "size": 874508,
+      "symlink": false
+    },
+    {
+      "compressed_size": 162433,
+      "crc32": "848054db",
+      "directory": false,
+      "path": "materials/textures/Window_WINDOW_Metallic.png",
+      "size": 167100,
+      "symlink": false
+    },
+    {
+      "compressed_size": 954839,
+      "crc32": "5f305acf",
+      "directory": false,
+      "path": "materials/textures/Window_WINDOW_Roughness.png",
+      "size": 957924,
+      "symlink": false
+    },
+    {
+      "compressed_size": 0,
+      "crc32": "00000000",
+      "directory": true,
+      "path": "meshes/",
+      "size": 0,
+      "symlink": false
+    },
+    {
+      "compressed_size": 263752,
+      "crc32": "d0704825",
+      "directory": false,
+      "path": "meshes/Crates.dae",
+      "size": 2114457,
+      "symlink": false
+    },
+    {
+      "compressed_size": 3954384,
+      "crc32": "c7100e32",
+      "directory": false,
+      "path": "meshes/Depot.dae",
+      "size": 25474288,
+      "symlink": false
+    },
+    {
+      "compressed_size": 198,
+      "crc32": "503ac6c9",
+      "directory": false,
+      "path": "model.config",
+      "size": 388,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1595,
+      "crc32": "505f9237",
+      "directory": false,
+      "path": "model.sdf",
+      "size": 24961,
+      "symlink": false
+    },
+    {
+      "compressed_size": 0,
+      "crc32": "00000000",
+      "directory": true,
+      "path": "thumbnails/",
+      "size": 0,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1291728,
+      "crc32": "3cecd1f5",
+      "directory": false,
+      "path": "thumbnails/0.png",
+      "size": 1291728,
+      "symlink": false
+    },
+    {
+      "compressed_size": 861892,
+      "crc32": "59b92013",
+      "directory": false,
+      "path": "thumbnails/1.png",
+      "size": 863927,
+      "symlink": false
+    },
+    {
+      "compressed_size": 858399,
+      "crc32": "08e21e0a",
+      "directory": false,
+      "path": "thumbnails/2.png",
+      "size": 859780,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1053578,
+      "crc32": "00647ef2",
+      "directory": false,
+      "path": "thumbnails/3.png",
+      "size": 1053578,
+      "symlink": false
+    },
+    {
+      "compressed_size": 988839,
+      "crc32": "db7670c6",
+      "directory": false,
+      "path": "thumbnails/4.png",
+      "size": 989051,
+      "symlink": false
+    },
+    {
+      "compressed_size": 1000846,
+      "crc32": "726071c5",
+      "directory": false,
+      "path": "thumbnails/5.png",
+      "size": 1000846,
+      "symlink": false
+    }
+  ],
+  "entry_count": 75,
+  "path_resolution": "LOCAL_USERNAME_MIGRATION",
+  "requested_path": "/home/qcqc/Depot.zip",
+  "resolved_path": "/home/zq/Downloads/Depot.zip",
+  "sha256": "337924487ba19259ef46b7d1737c3c69df61cde1f85657c418ac13c23d948e1c",
+  "size_bytes": 81963314,
+  "symlink_count": 0,
+  "symlinks": [],
+  "zip_test_passed": true
+}

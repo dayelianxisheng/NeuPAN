@@ -1,0 +1,47 @@
+{
+  "bridge_mapping_count": 6,
+  "frames": {
+    "camera_info": [
+      "sgcf_robot/camera_link/rgb_camera"
+    ],
+    "image": [
+      "sgcf_robot/camera_link/rgb_camera"
+    ],
+    "odom": [
+      "odom"
+    ],
+    "odom_child": [
+      "base_link"
+    ],
+    "scan": [
+      "sgcf_robot/lidar_link/lidar"
+    ]
+  },
+  "motion_counts": {
+    "camera_info": 54,
+    "clock": 5380,
+    "image": 54,
+    "odom": 269,
+    "scan": 55
+  },
+  "passed": true,
+  "tf_lookup_success_rate": 1.0,
+  "tf_tree_connected": true,
+  "topics": [
+    "/clock",
+    "/scan",
+    "/camera/image_raw",
+    "/camera/camera_info",
+    "/odom",
+    "/cmd_vel",
+    "/tf",
+    "/tf_static"
+  ],
+  "zero_counts": {
+    "camera_info": 69,
+    "clock": 6976,
+    "image": 69,
+    "odom": 349,
+    "scan": 70
+  }
+}

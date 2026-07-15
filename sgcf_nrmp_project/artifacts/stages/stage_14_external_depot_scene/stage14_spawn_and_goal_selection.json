@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "clearance_m": 1.15,
+      "pose": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clearance_m": 3.6,
+      "pose": [
+        -4.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clearance_m": 3.6,
+      "pose": [
+        0.0,
+        -4.0,
+        0.0,
+        0.0,
+        0.0,
+        1.5707963267948966
+      ]
+    }
+  ],
+  "footprint_m": [
+    0.8,
+    0.5
+  ],
+  "goal_connected_under_available_collision_geometry": true,
+  "goal_region": {
+    "center": [
+      0.0,
+      5.0
+    ],
+    "distance_from_spawn_m": 5.0,
+    "radius": 0.5
+  },
+  "passed": true,
+  "planner_run": false,
+  "required_extra_clearance_m": 0.25,
+  "selected_initial_collision": false,
+  "selected_pose": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "selection_reason": "verified origin; 1.15 m runtime observable clearance; open +x view",
+  "vendor_collision_basis": "ground plane only; building visual has no collision"
+}

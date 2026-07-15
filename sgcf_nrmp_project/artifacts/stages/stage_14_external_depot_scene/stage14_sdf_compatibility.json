@@ -1,0 +1,27 @@
+{
+  "deprecated_classic_or_ignition_plugins": [
+    {
+      "filename": "ignition-gazebo-joint-controller-system",
+      "name": "ignition::gazebo::systems::JointController"
+    },
+    {
+      "filename": "ignition-gazebo-joint-controller-system",
+      "name": "ignition::gazebo::systems::JointController"
+    }
+  ],
+  "gazebo_sim_version": "8.14.0",
+  "gui_only_dependency": false,
+  "include_scale_count": 0,
+  "material_script_warning": "NONFATAL_PBR_FALLBACK_USED",
+  "mesh_scale_count": 16,
+  "model_config_declared_sdf": "1.7",
+  "overlay_parse": "VALID",
+  "overlay_sdf_version": "1.9",
+  "passed": true,
+  "runtime_alias_resolution_passed": true,
+  "sdformat_runtime_version": "14.9.0",
+  "vendor_building_mesh_collision": false,
+  "vendor_collision_geometry": "100x100 PLANE ONLY",
+  "vendor_kind": "MODEL_NOT_WORLD",
+  "vendor_sdf_version": "1.6"
+}

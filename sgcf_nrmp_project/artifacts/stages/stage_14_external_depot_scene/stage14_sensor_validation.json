@@ -1,0 +1,30 @@
+{
+  "camera": {
+    "encoding": "rgb8",
+    "height": 240,
+    "width": 320
+  },
+  "camera_info_frozen": true,
+  "initial_collision": false,
+  "nonfinite_count": 0,
+  "passed": true,
+  "robot_self_return_count": 0,
+  "simulation_time": true,
+  "timestamps_monotonic": {
+    "motion": {
+      "camera_info": true,
+      "clock": true,
+      "image": true,
+      "odom": true,
+      "scan": true
+    },
+    "zero": {
+      "camera_info": true,
+      "clock": true,
+      "image": true,
+      "odom": true,
+      "scan": true
+    }
+  },
+  "zero_round_displacement_m": 7.588852783899312e-20
+}

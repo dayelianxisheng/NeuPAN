@@ -1,0 +1,12 @@
+{
+  "archive_requested_path": "/home/qcqc/Depot.zip",
+  "archive_resolved_path": "/home/zq/Downloads/Depot.zip",
+  "archive_sha256": "337924487ba19259ef46b7d1737c3c69df61cde1f85657c418ac13c23d948e1c",
+  "cache_root": "/home/zq/.cache/sgcf_nrmp/vendor/depot/337924487ba19259ef46b7d1737c3c69df61cde1f85657c418ac13c23d948e1c",
+  "model_name": "Depot",
+  "model_entry": "Depot/model.sdf",
+  "model_config": "Depot/model.config",
+  "license_status": "LICENSE_UNKNOWN_LOCAL_TEST_ONLY",
+  "redistribution_allowed": false,
+  "vendor_files_tracked_in_git": false
+}

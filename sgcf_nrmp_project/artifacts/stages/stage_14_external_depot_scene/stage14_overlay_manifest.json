@@ -1,0 +1,28 @@
+{
+  "compatibility_repairs": [
+    "SDF 1.9 overlay world",
+    "container-stable file URI mapping",
+    "world systems declared in overlay"
+  ],
+  "passed": true,
+  "path": "sgcf_nrmp_project/gazebo/overlays/depot/depot_stage14.sdf",
+  "projection_target_added": true,
+  "projection_target_geometry": {
+    "length": 0.7,
+    "pose": [
+      1.5,
+      0,
+      0.35,
+      0,
+      0,
+      0
+    ],
+    "radius": 0.35,
+    "type": "cylinder"
+  },
+  "robot_include": "file:///workspace/sgcf_nrmp_project/gazebo/models/sgcf_diff_drive_robot",
+  "sha256": "804d430e4362a212c2bd6a6054b20339f2224d3f5aec4f88948c5dec4c2c3d2a",
+  "vendor_files_copied_to_repository": false,
+  "vendor_include": "file:///vendor_cache/Depot",
+  "vendor_modified": false
+}

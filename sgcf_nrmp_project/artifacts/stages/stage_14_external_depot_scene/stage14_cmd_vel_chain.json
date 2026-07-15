@@ -1,0 +1,36 @@
+{
+  "collision": false,
+  "gazebo_unique_commands": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.1,
+      0.0
+    ]
+  ],
+  "maximum_component_error": 0.0,
+  "minimum_runtime_lidar_range_m": 1.0508733987808228,
+  "passed": true,
+  "planner_started": false,
+  "positive_x_displacement_m": 0.1000000000003105,
+  "requested": {
+    "angular_z": 0.0,
+    "duration_sim_s": 1.0,
+    "linear_x": 0.1
+  },
+  "ros_unique_commands": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.1,
+      0.0
+    ]
+  ],
+  "sensors_uninterrupted": true,
+  "stage10_started": false,
+  "y_drift_m": -1.0378674795449698e-16
+}

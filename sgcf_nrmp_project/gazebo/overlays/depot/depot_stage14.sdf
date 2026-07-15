@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <world name="depot_stage14">
+    <gravity>0 0 -9.81</gravity>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <!-- Depot is resolved from the immutable, read-only local vendor cache. -->
+    <include>
+      <uri>file:///vendor_cache/Depot</uri>
+      <name>depot_vendor</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Selected spawn candidate: maximum audited clearance at the origin. -->
+    <include>
+      <uri>file:///workspace/sgcf_nrmp_project/gazebo/models/sgcf_diff_drive_robot</uri>
+      <name>sgcf_robot</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Overlay-only target used for LiDAR / RGB projection validation. -->
+    <model name="depot_projection_target">
+      <static>true</static>
+      <pose>1.5 0 0.35 0 0 0</pose>
+      <link name="target_link">
+        <collision name="target_collision">
+          <geometry><cylinder><radius>0.35</radius><length>0.7</length></cylinder></geometry>
+        </collision>
+        <visual name="target_visual">
+          <geometry><cylinder><radius>0.35</radius><length>0.7</length></cylinder></geometry>
+          <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

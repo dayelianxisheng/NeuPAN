@@ -1,0 +1,246 @@
+{
+  "correct_object_hit_count": 4,
+  "correct_object_hit_ratio": 1.0,
+  "extrinsic_modified": false,
+  "in_image_ratio": 0.3076923076923077,
+  "manual_pixel_offset": false,
+  "observable_point_count": 13,
+  "passed": true,
+  "projection_residual_px": {
+    "max": 0.5283011555852172,
+    "mean": 0.40162293597567145
+  },
+  "records": [
+    {
+      "beam_index": 84,
+      "correct_target_hit": true,
+      "inside_image": true,
+      "lidar_point": [
+        1.2795424672278208,
+        -0.27197529463580816,
+        0.0
+      ],
+      "pixel": [
+        198.2601977666224,
+        232.54021827652963
+      ],
+      "pixel_rgb": [
+        224,
+        0,
+        0
+      ],
+      "residual_px": 0.5283011555852172
+    },
+    {
+      "beam_index": 85,
+      "correct_target_hit": true,
+      "inside_image": true,
+      "lidar_point": [
+        1.231674610876739,
+        -0.21717760556425864,
+        0.0
+      ],
+      "pixel": [
+        191.73887365544198,
+        236.9139862787341
+      ],
+      "pixel_rgb": [
+        242,
+        0,
+        0
+      ],
+      "residual_px": 0.2749278597527817
+    },
+    {
+      "beam_index": 86,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.1882946779700025,
+        -0.1670040600290272,
+        0.0
+      ],
+      "pixel": [
+        185.29736788119664,
+        241.18205292470674
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 87,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.171734664177573,
+        -0.12315440724982306,
+        0.0
+      ],
+      "pixel": [
+        178.9187805342804,
+        242.89470727315228
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 88,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.1608368392299908,
+        -0.08117374909107983,
+        0.0
+      ],
+      "pixel": [
+        172.5868449331949,
+        244.04843100209212
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 89,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.1546533055836203,
+        -0.040321510814497565,
+        0.0
+      ],
+      "pixel": [
+        166.2857579348195,
+        244.71274958427745
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 90,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.1509557962417531,
+        -1.2862933385093785e-07,
+        0.0
+      ],
+      "pixel": [
+        160.00002011656548,
+        245.11339621044982
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 91,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.1546533145961515,
+        0.040321252729371114,
+        0.0
+      ],
+      "pixel": [
+        153.7142823473742,
+        244.71274861084453
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 92,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.160836738454806,
+        0.08117348130821855,
+        0.0
+      ],
+      "pixel": [
+        147.4131954966664,
+        244.0484417710514
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 93,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.171734691704699,
+        0.12315414534671339,
+        0.0
+      ],
+      "pixel": [
+        141.08126014330193,
+        242.89470438603274
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 94,
+      "correct_target_hit": false,
+      "inside_image": false,
+      "lidar_point": [
+        1.1882949513965988,
+        0.16700382760589125,
+        0.0
+      ],
+      "pixel": [
+        134.7026731466081,
+        241.18202504072372
+      ],
+      "pixel_rgb": null,
+      "residual_px": null
+    },
+    {
+      "beam_index": 95,
+      "correct_target_hit": true,
+      "inside_image": true,
+      "lidar_point": [
+        1.231674659419686,
+        0.2171773302635245,
+        0.0
+      ],
+      "pixel": [
+        128.26116782858546,
+        236.91398167090247
+      ],
+      "pixel_rgb": [
+        237,
+        0,
+        0
+      ],
+      "residual_px": 0.2749687029986739
+    },
+    {
+      "beam_index": 96,
+      "correct_target_hit": true,
+      "inside_image": true,
+      "lidar_point": [
+        1.279542644623288,
+        0.2719750334207647,
+        0.0
+      ],
+      "pixel": [
+        121.73984428425314,
+        232.54020267398235
+      ],
+      "pixel_rgb": [
+        219,
+        0,
+        0
+      ],
+      "residual_px": 0.5282940255660131
+    }
+  ],
+  "selection_method": "LIDAR_CLUSTER_ONLY",
+  "source": "RUNTIME_LASERSCAN_POINTS",
+  "stage10_used": false,
+  "target": "depot_projection_target",
+  "target_identification": "RED_OVERLAY_PIXEL_MASK",
+  "valid_projection_count": 4,
+  "world_geometry_used_as_projection_input": false
+}

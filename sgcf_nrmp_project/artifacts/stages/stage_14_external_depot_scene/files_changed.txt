@@ -1,0 +1,21 @@
+Stage 14 authoritative additions
+================================
+
+sgcf_nrmp_project/gazebo/overlays/depot/depot_stage14.sdf
+sgcf_nrmp_project/gazebo/vendor_manifests/depot_local_vendor.json
+sgcf_nrmp_project/tools/finalize_stage14.py
+sgcf_nrmp_project/tools/run_stage14_depot.sh
+sgcf_nrmp_project/tools/test_stage14.py
+sgcf_nrmp_project/artifacts/stages/stage_14_external_depot_scene/
+
+Explicitly excluded and unchanged
+=================================
+
+/home/zq/Downloads/Depot.zip
+/home/zq/.cache/sgcf_nrmp/vendor/depot/337924487ba19259ef46b7d1737c3c69df61cde1f85657c418ac13c23d948e1c/Depot/
+neupan/
+neupan_ros/
+neupan_ros2/
+example/
+docker/
+sgcf_nrmp_project/core/

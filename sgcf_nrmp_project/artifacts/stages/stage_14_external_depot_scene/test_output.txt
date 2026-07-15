@@ -1,0 +1,20 @@
+Stage 14 fast validation
+========================
+
+python -m unittest sgcf_nrmp_project/tools/test_stage14.py
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+JSON_PARSE_PASS json=18 jsonl=2 records=697
+compileall: PASS (PYTHONPYCACHEPREFIX=/tmp/sgcf_stage14_pycache)
+git diff --check: PASS
+SDFormat overlay parse: Valid
+required artifact files: PASS 15/15
+vendor ZIP integrity: PASS
+vendor path traversal: 0
+vendor symlink entries: 0
+residual Stage 14 containers: 0
+residual Stage 14 runtime processes: 0
