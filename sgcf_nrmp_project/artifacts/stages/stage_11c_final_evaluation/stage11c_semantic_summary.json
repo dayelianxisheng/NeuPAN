@@ -1,0 +1,163 @@
+{
+  "source": "GAZEBO_ORACLE_GROUND_TRUTH",
+  "simulation_only": true,
+  "stage10_started": false,
+  "predicted_checkpoint_loaded": false,
+  "human_path_center": {
+    "classification": "EXPECTED_SEMANTIC_SAFE_REJECTION",
+    "p1": {
+      "run": "human_path_center_p1",
+      "mode": "P1",
+      "evaluations": 20,
+      "statuses": [
+        "SEMANTICALLY_INFEASIBLE"
+      ],
+      "eligible_evaluations": 0,
+      "nonzero_actuation_count": 0,
+      "goal_distance_reduction_m": 0.0,
+      "semantic_source": [
+        "ORACLE_GROUND_TRUTH"
+      ],
+      "semantic_scope": [
+        "SIMULATION_ONLY"
+      ],
+      "not_stage10": true,
+      "semantic_margin_min": 0.35,
+      "semantic_margin_max": 0.35,
+      "deadline_miss_count": 1,
+      "latency": {
+        "backlog_count": 0,
+        "count": 19,
+        "max": 177.26986199704697,
+        "mean": 146.86339142032298,
+        "p50": 130.31003400101326,
+        "p95": 175.41991020189016,
+        "stale_count": 0
+      },
+      "self_return_count": 0,
+      "candidate_equivalence_max": 0.0,
+      "geometry_equivalence_max": 0.0,
+      "final_linear_speed": 2.4151673463853704e-20,
+      "final_angular_speed": 3.082735240352978e-20,
+      "last_half_second_translation": 6.648918136844416e-21,
+      "last_half_second_yaw": 1.7713170317670906e-21
+    },
+    "p2": {
+      "run": "human_path_center_p2",
+      "mode": "P2",
+      "evaluations": 20,
+      "statuses": [
+        "SEMANTICALLY_INFEASIBLE"
+      ],
+      "eligible_evaluations": 0,
+      "nonzero_actuation_count": 0,
+      "goal_distance_reduction_m": 0.0,
+      "semantic_source": [
+        "ORACLE_GROUND_TRUTH"
+      ],
+      "semantic_scope": [
+        "SIMULATION_ONLY"
+      ],
+      "not_stage10": true,
+      "semantic_margin_min": 0.35,
+      "semantic_margin_max": 0.35,
+      "deadline_miss_count": 1,
+      "latency": {
+        "backlog_count": 0,
+        "count": 19,
+        "max": 184.62169599661138,
+        "mean": 151.27916631555357,
+        "p50": 135.59998099663062,
+        "p95": 181.46440600103233,
+        "stale_count": 0
+      },
+      "self_return_count": 0,
+      "candidate_equivalence_max": 0.0,
+      "geometry_equivalence_max": 0.0,
+      "final_linear_speed": 2.796649771656566e-20,
+      "final_angular_speed": 2.2265649911355755e-20,
+      "last_half_second_translation": 5.7261739602961245e-21,
+      "last_half_second_yaw": 7.6894383152596465e-22
+    }
+  },
+  "human_path_side": {
+    "classification": "SAFE_REJECTION",
+    "p2_eligible": 0,
+    "status": [
+      "SEMANTICALLY_INFEASIBLE"
+    ],
+    "margin_max": 0.35,
+    "p95_ms": 313.6761869999191
+  },
+  "vehicle_path": {
+    "classification": "KNOWN_PLANNER_SEMANTIC_FEASIBILITY_LIMITATION",
+    "p0_progress_m": 0.03239359886410664,
+    "p2_progress_m": -0.3189102010747691,
+    "p0_gate": {
+      "nonzero_actuation_count": 184,
+      "rejected_count": 8,
+      "collision_count": 0,
+      "deadline_miss_count": 0,
+      "stale_count": 0,
+      "backlog_count": 0,
+      "self_return_count": 0,
+      "candidate_to_ros_max_abs_error": 0.0,
+      "ros_to_gazebo_max_abs_error": 0.0,
+      "published_candidate_match": true,
+      "zero_stop_passed": true,
+      "p95_ms": 50.88899330012278
+    },
+    "p2_gate": {
+      "nonzero_actuation_count": 196,
+      "rejected_count": 3,
+      "collision_count": 0,
+      "deadline_miss_count": 0,
+      "stale_count": 0,
+      "backlog_count": 0,
+      "self_return_count": 0,
+      "candidate_to_ros_max_abs_error": 0.0,
+      "ros_to_gazebo_max_abs_error": 0.0,
+      "published_candidate_match": true,
+      "zero_stop_passed": true,
+      "p95_ms": 41.36516069970638
+    },
+    "p2_navigation_progress_passed": false,
+    "semantic_nonzero_closed_loop_demonstrated": false
+  },
+  "exact_geometry_invariance": {
+    "human_path_side_shadow": {
+      "observable_point_count_p0": 13,
+      "observable_point_count_p2": 13,
+      "same_nominal_d_geo_max": 0.0,
+      "same_nominal_g_geo_max": 0.0,
+      "current_clearance_difference": 0.0,
+      "note": "later per-mode trajectories differ, so trajectory-indexed d_geo arrays are not compared as identical queries"
+    },
+    "vehicle_path_shadow": {
+      "observable_point_count_p0": 13,
+      "observable_point_count_p2": 13,
+      "same_nominal_d_geo_max": 0.0,
+      "same_nominal_g_geo_max": 0.0,
+      "current_clearance_difference": 0.0,
+      "note": "later per-mode trajectories differ, so trajectory-indexed d_geo arrays are not compared as identical queries"
+    },
+    "rgb_dropout": {
+      "samples": 20,
+      "d_geo_max": 0.0,
+      "g_geo_max": 0.0,
+      "candidate_max": 0.0,
+      "fallback_geometry_status_agreement": true
+    },
+    "outdated_rgb": {
+      "samples": 20,
+      "d_geo_max": 0.0,
+      "g_geo_max": 0.0,
+      "candidate_max": 0.0,
+      "fallback_geometry_status_agreement": true
+    },
+    "semantic_changes_exact_geometry": false
+  },
+  "oracle_semantic_runtime_safety_validated": true,
+  "semantic_nonzero_command_execution_safety_validated": true,
+  "semantic_navigation_success_demonstrated": false
+}

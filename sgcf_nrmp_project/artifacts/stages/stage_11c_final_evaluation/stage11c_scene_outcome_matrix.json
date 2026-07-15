@@ -1,0 +1,89 @@
+{
+  "scenes": [
+    {
+      "scene": "empty_world",
+      "mode": "P0",
+      "classification": "PASS",
+      "result": "closed_loop_goal_progress",
+      "goal_progress_m": 1.9201580636899105
+    },
+    {
+      "scene": "single_static_obstacle",
+      "mode": "P0",
+      "classification": "PASS",
+      "result": "closed_loop_safe_nominal_recovery",
+      "goal_progress_m": 0.12550109963961154
+    },
+    {
+      "scene": "static_corridor",
+      "mode": "P0",
+      "classification": "PASS",
+      "result": "closed_loop_goal_progress",
+      "goal_progress_m": 0.957437
+    },
+    {
+      "scene": "narrow_passage",
+      "mode": "P0",
+      "classification": "PASS",
+      "result": "closed_loop_goal_progress",
+      "goal_progress_m": 0.957437
+    },
+    {
+      "scene": "initial_collision",
+      "mode": "P0",
+      "classification": "PASS",
+      "result": "EMERGENCY_STOP",
+      "initial_collision": true
+    },
+    {
+      "scene": "semantic_infeasible",
+      "mode": "P1/P2",
+      "classification": "PASS",
+      "result": "safe_rejection",
+      "command_eligible": false
+    },
+    {
+      "scene": "rgb_dropout_contract",
+      "mode": "P2->P0",
+      "classification": "PASS",
+      "result": "RGB_DROPOUT fallback"
+    },
+    {
+      "scene": "outdated_rgb_contract",
+      "mode": "P2->P0",
+      "classification": "PASS",
+      "result": "OUTDATED_IMAGE fallback"
+    },
+    {
+      "scene": "robot_obstacle",
+      "mode": "P0",
+      "classification": "PASS_WITH_KNOWN_LIMITATION",
+      "result": "safe_rejection",
+      "limitation": "PLANNER_COMPLETENESS"
+    },
+    {
+      "scene": "human_path_center",
+      "mode": "P1/P2",
+      "classification": "PASS_WITH_KNOWN_LIMITATION",
+      "result": "semantic_safe_rejection",
+      "margin": 0.35
+    },
+    {
+      "scene": "human_path_side",
+      "mode": "P2",
+      "classification": "PASS_WITH_KNOWN_LIMITATION",
+      "result": "semantic_safe_rejection",
+      "margin": 0.35
+    },
+    {
+      "scene": "vehicle_path",
+      "mode": "P2",
+      "classification": "PASS_WITH_KNOWN_LIMITATION",
+      "result": "safe_nonzero_execution_without_goal_progress",
+      "goal_progress_m": -0.3189102010747691
+    }
+  ],
+  "pass_count": 8,
+  "pass_with_known_limitation_count": 4,
+  "navigation_success_claimed": false
+}

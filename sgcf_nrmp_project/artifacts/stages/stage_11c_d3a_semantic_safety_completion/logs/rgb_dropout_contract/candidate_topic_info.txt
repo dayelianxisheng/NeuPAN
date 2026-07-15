@@ -6,7 +6,7 @@ Node name: stage11cc_planner_shadow
 Node namespace: /
 Topic type: geometry_msgs/msg/Twist
 Endpoint type: PUBLISHER
-GID: 01.0f.57.5c.98.00.be.8d.00.00.00.00.00.00.12.03.00.00.00.00.00.00.00.00
+GID: 01.0f.d7.5d.a9.00.cc.dd.00.00.00.00.00.00.12.03.00.00.00.00.00.00.00.00
 QoS profile:
   Reliability: RELIABLE
   History (Depth): UNKNOWN
@@ -22,7 +22,7 @@ Node name: stage11cd1_safe_actuation_gate
 Node namespace: /
 Topic type: geometry_msgs/msg/Twist
 Endpoint type: SUBSCRIPTION
-GID: 01.0f.57.5c.53.00.f1.32.00.00.00.00.00.00.16.04.00.00.00.00.00.00.00.00
+GID: 01.0f.d7.5d.52.00.ba.35.00.00.00.00.00.00.16.04.00.00.00.00.00.00.00.00
 QoS profile:
   Reliability: RELIABLE
   History (Depth): UNKNOWN

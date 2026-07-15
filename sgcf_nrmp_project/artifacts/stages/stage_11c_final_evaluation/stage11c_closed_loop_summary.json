@@ -1,0 +1,65 @@
+{
+  "empty_world": {
+    "classification": "PASS",
+    "progress_m": 1.9201580636899105,
+    "nonzero_commands": 160
+  },
+  "single_static_obstacle": {
+    "classification": "PASS",
+    "progress_m": 0.12550109963961154,
+    "nonzero_commands": 36
+  },
+  "static_corridor": {
+    "classification": "PASS",
+    "progress_m": 0.957437,
+    "p95_ms": 18.52781830057206
+  },
+  "narrow_passage": {
+    "classification": "PASS",
+    "progress_m": 0.957437,
+    "p95_ms": 17.810258401732426
+  },
+  "robot_obstacle": {
+    "classification": "PASS_WITH_KNOWN_LIMITATION",
+    "progress_m": 0.0,
+    "nonzero_commands": 0,
+    "collision": false,
+    "navigation_validated": false
+  },
+  "vehicle_path_p2": {
+    "classification": "KNOWN_PLANNER_SEMANTIC_FEASIBILITY_LIMITATION",
+    "p0_progress_m": 0.03239359886410664,
+    "p2_progress_m": -0.3189102010747691,
+    "p0_gate": {
+      "nonzero_actuation_count": 184,
+      "rejected_count": 8,
+      "collision_count": 0,
+      "deadline_miss_count": 0,
+      "stale_count": 0,
+      "backlog_count": 0,
+      "self_return_count": 0,
+      "candidate_to_ros_max_abs_error": 0.0,
+      "ros_to_gazebo_max_abs_error": 0.0,
+      "published_candidate_match": true,
+      "zero_stop_passed": true,
+      "p95_ms": 50.88899330012278
+    },
+    "p2_gate": {
+      "nonzero_actuation_count": 196,
+      "rejected_count": 3,
+      "collision_count": 0,
+      "deadline_miss_count": 0,
+      "stale_count": 0,
+      "backlog_count": 0,
+      "self_return_count": 0,
+      "candidate_to_ros_max_abs_error": 0.0,
+      "ros_to_gazebo_max_abs_error": 0.0,
+      "published_candidate_match": true,
+      "zero_stop_passed": true,
+      "p95_ms": 41.36516069970638
+    },
+    "p2_navigation_progress_passed": false,
+    "semantic_nonzero_closed_loop_demonstrated": false,
+    "semantic_navigation_success": false
+  }
+}

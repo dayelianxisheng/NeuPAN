@@ -4,8 +4,10 @@ set -euo pipefail
 repo="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 stage_dir="${STAGE11CC_STAGE_DIR:-stage_11c_c_planner_shadow_mode}"
 out="$repo/sgcf_nrmp_project/artifacts/stages/$stage_dir"
-planner_image=sha256:03f77926ea1b97cc460ca2d5893abb1b26d3b68984d53f9e98e707994841cff5
-gazebo_image=sha256:72af30cf91fb3001e019c6e57846dbe8d72497516882cc3d0e99a7d5551759ac
+planner_tag=sgcf-ros2-humble-gzharmonic-torch-planner:stage11cc1
+gazebo_tag=sgcf-gazebo-harmonic:hlms-media-fix
+planner_image="${STAGE11CC_PLANNER_IMAGE:-$(docker image inspect "$planner_tag" --format '{{.Id}}')}"
+gazebo_image="${STAGE11CC_GAZEBO_IMAGE:-$(docker image inspect "$gazebo_tag" --format '{{.Id}}')}"
 partition=sgcf_stage11ca
 domain=42
 all_scenes=(empty_world single_static_obstacle static_corridor narrow_passage robot_obstacle human_path_center human_path_side vehicle_path semantic_infeasible initial_collision rgb_dropout_contract outdated_rgb_contract)

@@ -1,0 +1,13 @@
+{
+  "overall": "PASS",
+  "planner_geometry_semantic_evaluation": {"passed": 88, "failed": 0, "environment": "existing locked Planner image"},
+  "stage09c_regression": {"passed": 22, "failed": 0},
+  "stage11cc2_and_d3a": {"passed": 25, "failed": 0},
+  "json_parse": {"status": "PASS", "files": 1106},
+  "jsonl_parse": {"status": "PASS", "files": 517, "records": 19237},
+  "compileall": {"status": "PASS", "isolated_pycache": true},
+  "git_diff_check": "PASS",
+  "full_gazebo_scenarios_rerun": false,
+  "source_or_safety_parameter_changes": false,
+  "note": "Final recheck used the existing locked Planner image because host Python environments lacked pytest."
+}

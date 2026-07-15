@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "stage": "stage11b_n",
+      "passed": true
+    },
+    {
+      "stage": "stage11c_a",
+      "passed": true
+    },
+    {
+      "stage": "stage11c_b",
+      "passed": true
+    },
+    {
+      "stage": "stage11c_c2",
+      "passed": true
+    },
+    {
+      "stage": "stage09c",
+      "passed": true
+    },
+    {
+      "stage": "stage11c_d2",
+      "passed": true
+    },
+    {
+      "stage": "stage11c_d3a",
+      "passed": true
+    }
+  ],
+  "current_residual_container_count": 0,
+  "current_residual_process_count": 0,
+  "passed": true
+}

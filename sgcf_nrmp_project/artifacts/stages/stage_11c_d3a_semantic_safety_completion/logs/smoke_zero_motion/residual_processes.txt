@@ -1,0 +1,1 @@
+  26545 bash            bash sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh empty_world

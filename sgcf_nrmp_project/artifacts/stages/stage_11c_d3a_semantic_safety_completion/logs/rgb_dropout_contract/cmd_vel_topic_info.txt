@@ -6,7 +6,7 @@ Node name: stage11cd1_safe_actuation_gate
 Node namespace: /
 Topic type: geometry_msgs/msg/Twist
 Endpoint type: PUBLISHER
-GID: 01.0f.57.5c.53.00.f1.32.00.00.00.00.00.00.12.03.00.00.00.00.00.00.00.00
+GID: 01.0f.d7.5d.52.00.ba.35.00.00.00.00.00.00.12.03.00.00.00.00.00.00.00.00
 QoS profile:
   Reliability: RELIABLE
   History (Depth): UNKNOWN
@@ -22,7 +22,7 @@ Node name: ros_gz_bridge
 Node namespace: /
 Topic type: geometry_msgs/msg/Twist
 Endpoint type: SUBSCRIPTION
-GID: 01.0f.57.5c.2c.00.dd.ef.00.00.00.00.00.00.17.04.00.00.00.00.00.00.00.00
+GID: 01.0f.d7.5d.2c.00.ea.9f.00.00.00.00.00.00.17.04.00.00.00.00.00.00.00.00
 QoS profile:
   Reliability: RELIABLE
   History (Depth): UNKNOWN

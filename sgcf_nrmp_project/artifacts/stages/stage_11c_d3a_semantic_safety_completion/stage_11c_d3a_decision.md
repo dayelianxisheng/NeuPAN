@@ -10,4 +10,6 @@ SEMANTIC_NONZERO_CLOSED_LOOP_NOT_DEMONSTRATED
 READY_FOR_STAGE_11C_FINAL_EVALUATION_WITH_RESTRICTIONS
 ```
 
-`human_path_center` is reclassified as `EXPECTED_SEMANTIC_SAFE_REJECTION`. `vehicle_path` produced safe, eligible, positive-margin P2 commands and 80 nonzero actuation messages, but those commands were effectively pure rotation and did not reduce goal distance by `0.05 m`. Semantic navigation progress is therefore not claimed.
+`human_path_center` remains `EXPECTED_SEMANTIC_SAFE_REJECTION`. On this machine, `vehicle_path` produced 196 safe, eligible, positive-margin P2 actuation messages with zero collision, deadline miss, stale execution, backlog, self-return, and zero-stop failure. Goal-distance reduction was `-0.31891 m`, below the required `0.05 m`; semantic navigation progress is therefore not claimed.
+
+Stage 11C final evaluation was not started.

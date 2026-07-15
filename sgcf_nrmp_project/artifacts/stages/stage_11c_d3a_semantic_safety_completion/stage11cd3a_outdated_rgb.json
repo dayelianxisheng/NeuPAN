@@ -14,7 +14,7 @@
     "candidate_max": 0.0,
     "fallback_geometry_status_agreement": true
   },
-  "nonzero_actuation_count": 2,
+  "nonzero_actuation_count": 0,
   "simulation_time_contract": true,
   "self_return_count": 0,
   "stale": 0,

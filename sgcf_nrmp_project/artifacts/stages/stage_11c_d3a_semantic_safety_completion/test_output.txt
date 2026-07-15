@@ -1,27 +1,27 @@
 Stage 11C-D3A targeted regression
-......./opt/sgcf_planner_venv/lib/python3.10/site-packages/shapely/decorators.py:173: DeprecationWarning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
-  result = func(*args, **kwargs)
-............
+...................
 ----------------------------------------------------------------------
-Ran 19 tests in 0.066s
+Ran 19 tests in 0.001s
 
 OK
-........../opt/sgcf_planner_venv/lib/python3.10/site-packages/shapely/decorators.py:173: DeprecationWarning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
-  result = func(*args, **kwargs)
-.........................................
+......
 ----------------------------------------------------------------------
-Ran 51 tests in 4.248s
+Ran 6 tests in 0.000s
+
+OK
+Planner test image: sha256:450a603029c87e18550c64d19672ccb72b66395f74c254d0b098fbf8f7deb7cc
+.../opt/sgcf_planner_venv/lib/python3.10/site-packages/shapely/decorators.py:173: DeprecationWarning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
+  result = func(*args, **kwargs)
+...................
+----------------------------------------------------------------------
+Ran 22 tests in 2.571s
 
 OK
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.009s
+Ran 16 tests in 0.018s
 
 OK
-..
-----------------------------------------------------------------------
-Ran 2 tests in 0.001s
-
-OK
+compileall: PASS (isolated pycache)
 Runtime contracts: PASS
 Semantic closed-loop navigation progress: known Planner limitation

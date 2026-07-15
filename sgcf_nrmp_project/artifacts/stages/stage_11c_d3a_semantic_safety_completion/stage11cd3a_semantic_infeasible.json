@@ -17,14 +17,14 @@
     "P2": 0
   },
   "deadline_miss": {
-    "P0": 0,
-    "P1": 0,
-    "P2": 0
+    "P0": 1,
+    "P1": 10,
+    "P2": 7
   },
   "nonzero_actuation_count": 0,
   "late_or_ineligible_executed": 0,
   "ros_core_max": 0.0,
-  "p95_ms": 167.57412839797325,
+  "p95_ms": 252.04678860018248,
   "stale": 0,
   "backlog": 0,
   "zero_fallback_passed": true

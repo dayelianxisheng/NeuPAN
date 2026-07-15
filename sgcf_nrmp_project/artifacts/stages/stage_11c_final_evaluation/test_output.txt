@@ -1,0 +1,54 @@
+Stage 11C Final Evaluation minimal regression
+Planner immutable image: sha256:450a603029c87e18550c64d19672ccb72b66395f74c254d0b098fbf8f7deb7cc
+......./opt/sgcf_planner_venv/lib/python3.10/site-packages/shapely/decorators.py:173: DeprecationWarning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
+  result = func(*args, **kwargs)
+............
+----------------------------------------------------------------------
+Ran 19 tests in 0.105s
+
+OK
+........../opt/sgcf_planner_venv/lib/python3.10/site-packages/shapely/decorators.py:173: DeprecationWarning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
+  result = func(*args, **kwargs)
+.........................................
+----------------------------------------------------------------------
+Ran 51 tests in 5.814s
+
+OK
+................
+----------------------------------------------------------------------
+Ran 16 tests in 0.019s
+
+OK
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
+...................
+----------------------------------------------------------------------
+Ran 19 tests in 0.001s
+
+OK
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK
+JSON_PARSE_PASS files=594
+JSONL_PARSE_PASS files=201 rows=16397
+COMPILEALL_PASS
+GIT_DIFF_CHECK_PASS
+FINAL_RECHECK_PLANNER_GEOMETRY_SEMANTIC_EVALUATION_PASS tests=88
+FINAL_RECHECK_STAGE09_PASS tests=22
+FINAL_RECHECK_STAGE11CC2_D3A_PASS tests=25
+FINAL_JSON_PARSE_PASS files=1106
+FINAL_JSONL_PARSE_PASS files=517 rows=19237
+FINAL_COMPILEALL_PASS isolated_pycache=true
+FINAL_GIT_DIFF_CHECK_PASS
+FINAL_RUNNING_CONTAINER_COUNT=0
+FINAL_STAGE_PROCESS_COUNT=0

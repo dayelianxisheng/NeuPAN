@@ -1,0 +1,19 @@
+{
+  "gazebo_assets_modified": false,
+  "docker_assets_modified": false,
+  "core_modified": false,
+  "planner_configuration_modified": false,
+  "safety_parameters_modified": false,
+  "stage10_started": false,
+  "predicted_checkpoint_loaded": false,
+  "gpu_used": false,
+  "safe_actuation_gate_sole_cmd_vel_publisher": true,
+  "deadline_watchdog_ms": 200.0,
+  "full_horizon_exact_geometry_recheck_enabled": true,
+  "stage09c_safe_nominal_recovery_enabled": true,
+  "preserved_preexisting_dirty_paths": [
+    "neupan_ros",
+    "sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/logs/bridge_image_build.log",
+    "sgcf_nrmp_project/docs/local_stage11c_environment_sync_2026-07-15.md"
+  ]
+}

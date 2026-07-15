@@ -26,6 +26,28 @@ def progress(g):
  ph=dict(tr);o=g['odom_log'];s=[x for x in o if x['sim_time']<=ph['ACTIVE']][-1];e=[x for x in o if x['sim_time']<=ph['FINAL_STOP']][-1]
  d=lambda x:math.hypot(4-x['x'],x['y'])
  return d(s)-d(e)
+def gate_summary(p,g,run):
+ records=p['records']; forwarded=[x for x in g['records'] if x['final_command'] != [0.0,0.0]]
+ ros_commands=[(x['v'],x['w']) for x in g['command_log']]
+ gz_commands=[]
+ for line in (OUT/'logs'/run/'cmd_vel_gz.txt').read_text().splitlines():
+  if line.strip():
+   item=json.loads(line); gz_commands.append((item.get('linear',{}).get('x',0.0),item.get('angular',{}).get('z',0.0)))
+ ros_to_gz=max((min(max(abs(v-rv),abs(w-rw)) for rv,rw in ros_commands) for v,w in gz_commands),default=0.0)
+ return {
+  'nonzero_actuation_count':g['forwarded_nonzero_count'],
+  'rejected_count':g['rejected_count'],
+  'collision_count':sum(bool(x['current_collision']) for x in records),
+  'deadline_miss_count':sum(bool(x['deadline_miss']) for x in records),
+  'stale_count':p['latency']['stale_count'],
+  'backlog_count':p['latency']['backlog_count'],
+  'self_return_count':g['self_return_count'],
+  'candidate_to_ros_max_abs_error':max((max(abs(a-b) for a,b in zip(x['final_command'],x['record']['result']['candidate'])) for x in forwarded),default=0.0),
+  'ros_to_gazebo_max_abs_error':ros_to_gz,
+  'published_candidate_match':all(x['checks']['published_candidate_match'] for x in forwarded),
+  'zero_stop_passed':g['phase']=='FINAL_STOP' and all(x['v']==0.0 and x['w']==0.0 for x in g['command_log'][-5:]),
+  'p95_ms':p['latency']['p95'],
+ }
 def main():
  si,sgi=loaded('semantic_infeasible'); sm=modes(si)
  sem={'statuses':{k:sorted({x['result']['status'] for x in v}) for k,v in sm.items()},'eligible':{k:sum(x['result']['eligible'] for x in v) for k,v in sm.items()},'deadline_miss':{k:sum(x['deadline_miss'] for x in v) for k,v in sm.items()},'nonzero_actuation_count':sgi['forwarded_nonzero_count'],'late_or_ineligible_executed':0,'ros_core_max':max(max(x['equivalence']['candidate'],x['equivalence']['d_geo'],x['equivalence']['g_geo']) for x in si['records']),'p95_ms':si['latency']['p95'],'stale':si['latency']['stale_count'],'backlog':si['latency']['backlog_count'],'zero_fallback_passed':sgi['forwarded_nonzero_count']==0}
@@ -38,7 +60,9 @@ def main():
  hp=json.loads((OUT/'runtime/probe_human_path_side/planner_result.json').read_text()); vp=json.loads((OUT/'runtime/probe_vehicle_path/planner_result.json').read_text()); hm=modes(hp);vm=modes(vp)
  probe={'order':['human_path_side','vehicle_path'],'human_path_side':{'p2_eligible':sum(x['result']['eligible'] for x in hm['P2']),'status':sorted({x['result']['status'] for x in hm['P2']}),'margin_max':max(v for x in hm['P2'] for v in x['result']['margin']),'p95_ms':float(np.percentile([x['latency']['total_ms'] for x in hm['P2'][1:]],95))},'vehicle_path':{'p2_eligible':sum(x['result']['eligible'] for x in vm['P2']),'status':sorted({x['result']['status'] for x in vm['P2']}),'margin_max':max(v for x in vm['P2'] for v in x['result']['margin']),'p95_ms':float(np.percentile([x['latency']['total_ms'] for x in vm['P2'][1:]],95))},'selected':'vehicle_path','selection_reason':'first scene with valid positive margin, eligible finite P2 candidate, exact replay, and latency <=200ms'}
  p0,g0=loaded('vehicle_path_p0_closed_loop');p2,g2=loaded('vehicle_path_p2_closed_loop')
- probe['vehicle_path_closed_loop']={'p0_progress_m':progress(g0),'p2_progress_m':progress(g2),'p2_nonzero_actuation_count':g2['forwarded_nonzero_count'],'p2_navigation_progress_passed':progress(g2)>=.05,'semantic_nonzero_closed_loop_demonstrated':False,'classification':'KNOWN_PLANNER_SEMANTIC_FEASIBILITY_LIMITATION'}
+ p0_gate=gate_summary(p0,g0,'vehicle_path_p0_closed_loop'); p2_gate=gate_summary(p2,g2,'vehicle_path_p2_closed_loop')
+ demonstrated=(g2['forwarded_nonzero_count']>0 and progress(g2)>=.05 and p2_gate['collision_count']==0 and p2_gate['deadline_miss_count']==0 and p2_gate['stale_count']==0 and p2_gate['backlog_count']==0 and p2_gate['zero_stop_passed'])
+ probe['vehicle_path_closed_loop']={'p0_progress_m':progress(g0),'p2_progress_m':progress(g2),'p0_gate':p0_gate,'p2_gate':p2_gate,'p2_navigation_progress_passed':progress(g2)>=.05,'semantic_nonzero_closed_loop_demonstrated':demonstrated,'classification':'ORACLE_SEMANTIC_CLOSED_LOOP_VALIDATED' if demonstrated else 'KNOWN_PLANNER_SEMANTIC_FEASIBILITY_LIMITATION'}
  write('stage11cd3a_feasible_scene_probe.json',probe)
  def initial_geometry(m):
   a,b=m['P0'][0],m['P2'][0]

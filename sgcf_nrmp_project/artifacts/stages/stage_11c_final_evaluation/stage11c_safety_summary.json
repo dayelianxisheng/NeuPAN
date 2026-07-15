@@ -1,0 +1,20 @@
+{
+  "planner_induced_collision_count": 0,
+  "initial_collision_is_preexisting_fixture": true,
+  "initial_collision_status": "EMERGENCY_STOP",
+  "robot_self_return_count": 0,
+  "stale_candidate_executed_count": 0,
+  "late_candidate_executed_count": 0,
+  "ineligible_candidate_executed_count": 0,
+  "candidate_to_ros_max_abs_error": 0.0,
+  "ros_to_gazebo_max_abs_error": 0.0,
+  "ros_core_replay_max_abs_error": 0.0,
+  "exact_geometry_changed_by_semantics": false,
+  "zero_guard_validated": true,
+  "safe_actuation_gate_validated": true,
+  "deadline_watchdog_ms": 200.0,
+  "full_horizon_exact_geometry_recheck_enabled": true,
+  "stage09c_safe_nominal_recovery_enabled": true,
+  "zero_stop_validated": true,
+  "passed": true
+}
