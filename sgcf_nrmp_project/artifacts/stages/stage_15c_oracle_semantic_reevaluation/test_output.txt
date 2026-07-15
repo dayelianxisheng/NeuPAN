@@ -1,0 +1,10 @@
+Stage 15C regression output, 2026-07-15
+
+PASS: Stage 15C / 15B / 11C-D3A / 11C final unittests (42 tests)
+PASS: Stage 09C collision recovery unittest (4 tests)
+PASS: compileall with isolated PYTHONPYCACHEPREFIX
+PASS: JSON and JSONL parse (12993 documents/records at check time)
+PASS: bash syntax checks for precheck and paired runners
+PASS: git diff --check
+PASS: protected Core, Docker, base-world, Stage 10 and upstream directories unchanged
+PASS: residual Stage 15C Gazebo/ROS processes and containers = 0

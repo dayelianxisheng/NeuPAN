@@ -1,0 +1,15 @@
+{
+  "all_zero_stop": true,
+  "candidate_ros_gazebo_max_abs_error": 0.0,
+  "full_horizon_recheck_enabled": true,
+  "initial_collision_evidence": "Stage 11C final evaluation; frozen Core/Gazebo contracts unchanged",
+  "initial_collision_status": "EMERGENCY_STOP",
+  "passed": true,
+  "planner_induced_collision_count": 0,
+  "robot_self_return_count": 0,
+  "ros_core_replay_max_abs_error": 0.0,
+  "safe_actuation_gate_enabled": true,
+  "stage09c_nominal_recovery_enabled": true,
+  "stale_late_ineligible_execution_count": 0,
+  "watchdog_ms": 200
+}

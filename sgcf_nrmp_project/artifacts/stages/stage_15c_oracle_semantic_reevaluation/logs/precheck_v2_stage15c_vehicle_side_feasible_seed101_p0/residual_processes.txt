@@ -1,0 +1,1 @@
+ 685917 bash            bash /home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN/sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh human_path_side

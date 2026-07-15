@@ -1,0 +1,16 @@
+{
+  "collision_count": 0,
+  "modes": {
+    "P0": {
+      "runs": 30,
+      "success_rate": 1.0,
+      "successes": 30
+    },
+    "P2": {
+      "runs": 30,
+      "success_rate": 0.3333333333333333,
+      "successes": 10
+    }
+  },
+  "p2_minus_p0_success_percentage_points": -66.66666666666667
+}

@@ -1,0 +1,8 @@
+{
+  "human_or_vehicle_benefit": true,
+  "oracle_semantic_benefit_gate": false,
+  "p0_success_at_least_80_percent": true,
+  "p2_success_drop_within_5pp": false,
+  "safety_and_performance_pass": true,
+  "static_clearance_not_worse_than_0_02m": true
+}

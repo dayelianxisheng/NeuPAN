@@ -1,0 +1,186 @@
+{
+  "scenarios": [
+    {
+      "base_contract": "human_path_side",
+      "control_window_s": 35.117422096846546,
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "not_stage10_prediction": true,
+      "obstacles": [
+        {
+          "center": [
+            1.5,
+            0.0
+          ],
+          "class_name": "HUMAN",
+          "model": "human_placeholder",
+          "name": "human_01",
+          "z": 0.85
+        }
+      ],
+      "path_length_m": 5.267613314526981,
+      "reference_waypoints": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0.95
+        ],
+        [
+          1.5,
+          1.05
+        ],
+        [
+          2.7,
+          0.95
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "scene_id": "stage15c_human_side_feasible",
+      "semantic_source": "ORACLE_GROUND_TRUTH",
+      "simulation_only": true,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15c_feasible_semantics/stage15c_human_side_feasible.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "control_window_s": 38.40638650269109,
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "not_stage10_prediction": true,
+      "obstacles": [
+        {
+          "center": [
+            1.5,
+            0.0
+          ],
+          "class_name": "VEHICLE",
+          "model": "vehicle_placeholder",
+          "name": "vehicle_01",
+          "z": 0.2
+        }
+      ],
+      "path_length_m": 5.760957975403664,
+      "reference_waypoints": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1.25
+        ],
+        [
+          1.5,
+          1.35
+        ],
+        [
+          2.7,
+          1.25
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "scene_id": "stage15c_vehicle_side_feasible",
+      "semantic_source": "ORACLE_GROUND_TRUTH",
+      "simulation_only": true,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15c_feasible_semantics/stage15c_vehicle_side_feasible.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "control_window_s": 35.117422096846546,
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "not_stage10_prediction": true,
+      "obstacles": [
+        {
+          "center": [
+            1.5,
+            0.0
+          ],
+          "class_name": "HUMAN",
+          "model": "human_placeholder",
+          "name": "human_01",
+          "z": 0.85
+        },
+        {
+          "center": [
+            2.7,
+            -1.2
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "model": "static_cylinder",
+          "name": "static_01",
+          "z": 0.35
+        },
+        {
+          "center": [
+            3.3,
+            -1.3
+          ],
+          "class_name": "VEHICLE",
+          "model": "vehicle_placeholder",
+          "name": "vehicle_01",
+          "z": 0.2
+        }
+      ],
+      "path_length_m": 5.267613314526981,
+      "reference_waypoints": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0.95
+        ],
+        [
+          1.5,
+          1.05
+        ],
+        [
+          2.7,
+          0.95
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "scene_id": "stage15c_mixed_feasible",
+      "semantic_source": "ORACLE_GROUND_TRUTH",
+      "simulation_only": true,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15c_feasible_semantics/stage15c_mixed_feasible.sdf"
+    }
+  ]
+}

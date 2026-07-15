@@ -1,0 +1,3 @@
+ 801267 bash            bash /home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN/sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh human_path_side
+ 805221 bash            bash /home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN/sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh human_path_side
+ 805402 docker          docker exec sgcf_gz_stage11cc_paired_stage15c_mixed_feasible_seed1105_p0 bash -lc gz topic -l

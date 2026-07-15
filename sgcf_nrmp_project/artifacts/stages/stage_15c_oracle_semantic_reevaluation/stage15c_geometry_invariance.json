@@ -1,0 +1,8 @@
+{
+  "cross_trajectory_arrays_compared": false,
+  "d_geo_max_difference": 0.0,
+  "g_geo_max_difference": 0.0,
+  "method": "SAME_QUERY_SEMANTIC_CHECKER_DELEGATES_LINEARIZATION_DISTANCE_AND_RECHECK_TO_FROZEN_EXACT_CHECKER",
+  "observable_points_changed_by_semantics": false,
+  "ros_core_replay_max_abs_error": 0.0
+}

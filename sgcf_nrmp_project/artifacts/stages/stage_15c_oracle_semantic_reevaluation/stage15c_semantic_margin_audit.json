@@ -1,0 +1,6 @@
+{
+  "P0_max_m": 0.0,
+  "P2_max_m": 0.35,
+  "nonnegative": true,
+  "upper_bound_m": 0.35
+}

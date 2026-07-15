@@ -1,0 +1,10 @@
+sgcf_nrmp_project/gazebo/overlays/stage15c_feasible_semantics/
+sgcf_nrmp_project/tools/generate_stage15c_feasible_worlds.py
+sgcf_nrmp_project/tools/run_stage15c_precheck.sh
+sgcf_nrmp_project/tools/run_stage15c_pairs.sh
+sgcf_nrmp_project/tools/finalize_stage15c.py
+sgcf_nrmp_project/tools/test_stage15c.py
+sgcf_nrmp_project/artifacts/stages/stage_15c_oracle_semantic_reevaluation/
+
+Explicitly unchanged: sgcf_nrmp_project/core/, existing Gazebo worlds,
+docker/, Stage 10, neupan/, neupan_ros/, neupan_ros2/.

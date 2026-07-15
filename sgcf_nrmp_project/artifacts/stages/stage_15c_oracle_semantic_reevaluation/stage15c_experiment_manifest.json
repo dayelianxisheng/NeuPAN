@@ -1,0 +1,391 @@
+{
+  "goal_tolerance_m": 0.25,
+  "modes": [
+    "P0",
+    "P2"
+  ],
+  "near_miss_threshold_m": 0.25,
+  "not_stage10_prediction": true,
+  "pair_count": 30,
+  "pairs": [
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1101_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1101_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1101
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1102_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1102_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1102
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1103_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1103_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1103
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1104_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1104_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1104
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1105_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1105_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1105
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1106_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1106_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1106
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1107_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1107_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1107
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1108_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1108_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1108
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1109_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1109_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1109
+    },
+    {
+      "p0_run": "paired_stage15c_human_side_feasible_seed1110_p0",
+      "p2_run": "paired_stage15c_human_side_feasible_seed1110_p2",
+      "scene": "stage15c_human_side_feasible",
+      "seed": 1110
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1101_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1101_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1101
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1102_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1102_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1102
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1103_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1103_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1103
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1104_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1104_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1104
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1105_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1105_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1105
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1106_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1106_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1106
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1107_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1107_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1107
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1108_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1108_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1108
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1109_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1109_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1109
+    },
+    {
+      "p0_run": "paired_stage15c_vehicle_side_feasible_seed1110_p0",
+      "p2_run": "paired_stage15c_vehicle_side_feasible_seed1110_p2",
+      "scene": "stage15c_vehicle_side_feasible",
+      "seed": 1110
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1101_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1101_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1101
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1102_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1102_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1102
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1103_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1103_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1103
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1104_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1104_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1104
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1105_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1105_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1105
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1106_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1106_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1106
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1107_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1107_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1107
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1108_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1108_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1108
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1109_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1109_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1109
+    },
+    {
+      "p0_run": "paired_stage15c_mixed_feasible_seed1110_p0",
+      "p2_run": "paired_stage15c_mixed_feasible_seed1110_p2",
+      "scene": "stage15c_mixed_feasible",
+      "seed": 1110
+    }
+  ],
+  "run_count": 60,
+  "scenes": [
+    {
+      "base_contract": "human_path_side",
+      "control_window_s": 35.117422096846546,
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "not_stage10_prediction": true,
+      "obstacles": [
+        {
+          "center": [
+            1.5,
+            0.0
+          ],
+          "class_name": "HUMAN",
+          "model": "human_placeholder",
+          "name": "human_01",
+          "z": 0.85
+        }
+      ],
+      "path_length_m": 5.267613314526981,
+      "reference_waypoints": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0.95
+        ],
+        [
+          1.5,
+          1.05
+        ],
+        [
+          2.7,
+          0.95
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "scene_id": "stage15c_human_side_feasible",
+      "semantic_source": "ORACLE_GROUND_TRUTH",
+      "simulation_only": true,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15c_feasible_semantics/stage15c_human_side_feasible.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "control_window_s": 38.40638650269109,
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "not_stage10_prediction": true,
+      "obstacles": [
+        {
+          "center": [
+            1.5,
+            0.0
+          ],
+          "class_name": "VEHICLE",
+          "model": "vehicle_placeholder",
+          "name": "vehicle_01",
+          "z": 0.2
+        }
+      ],
+      "path_length_m": 5.760957975403664,
+      "reference_waypoints": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1.25
+        ],
+        [
+          1.5,
+          1.35
+        ],
+        [
+          2.7,
+          1.25
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "scene_id": "stage15c_vehicle_side_feasible",
+      "semantic_source": "ORACLE_GROUND_TRUTH",
+      "simulation_only": true,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15c_feasible_semantics/stage15c_vehicle_side_feasible.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "control_window_s": 35.117422096846546,
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "not_stage10_prediction": true,
+      "obstacles": [
+        {
+          "center": [
+            1.5,
+            0.0
+          ],
+          "class_name": "HUMAN",
+          "model": "human_placeholder",
+          "name": "human_01",
+          "z": 0.85
+        },
+        {
+          "center": [
+            2.7,
+            -1.2
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "model": "static_cylinder",
+          "name": "static_01",
+          "z": 0.35
+        },
+        {
+          "center": [
+            3.3,
+            -1.3
+          ],
+          "class_name": "VEHICLE",
+          "model": "vehicle_placeholder",
+          "name": "vehicle_01",
+          "z": 0.2
+        }
+      ],
+      "path_length_m": 5.267613314526981,
+      "reference_waypoints": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0.95
+        ],
+        [
+          1.5,
+          1.05
+        ],
+        [
+          2.7,
+          0.95
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "scene_id": "stage15c_mixed_feasible",
+      "semantic_source": "ORACLE_GROUND_TRUTH",
+      "simulation_only": true,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15c_feasible_semantics/stage15c_mixed_feasible.sdf"
+    }
+  ],
+  "seeds": [
+    1101,
+    1102,
+    1103,
+    1104,
+    1105,
+    1106,
+    1107,
+    1108,
+    1109,
+    1110
+  ],
+  "semantic_source": "ORACLE_GROUND_TRUTH",
+  "simulation_only": true
+}

@@ -1,0 +1,9 @@
+{
+  "all_three_scenes_admitted": true,
+  "criteria": "P0 goal reached, collision-free, eligible P95 <= 200 ms, no improper execution",
+  "selected_prechecks": [
+    "precheck_v2_stage15c_human_side_feasible_seed101_p0",
+    "precheck_v2_stage15c_vehicle_side_feasible_seed101_p0",
+    "precheck_v2_stage15c_mixed_feasible_seed101_p0"
+  ]
+}
