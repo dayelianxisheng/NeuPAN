@@ -84,6 +84,9 @@ class ShadowNode(Node):
         self.manifest = next(item for item in manifest["scenarios"] if item["scene_id"] == scene)
         shared = manifest["shared"]
         waypoints = shared["straight_reference_waypoints"] if self.manifest["reference"] == "straight" else shared["avoid_reference_waypoints"]
+        reference_override = os.environ.get("STAGE15B_REFERENCE_WAYPOINTS_JSON", "").strip()
+        if reference_override:
+            waypoints = json.loads(reference_override)
         self.path = polyline_path([tuple(point) for point in waypoints])
         self.goal = shared["goal_pose"]
         mode_override = os.environ.get("STAGE11CC_MODES", "").strip()
@@ -113,6 +116,12 @@ class ShadowNode(Node):
         self.done = False
         self.failure = None
         self.started_wall = time.monotonic()
+        # Historical Stage 11C / Stage 15 runs intentionally stopped after 20
+        # evaluations.  Stage 15B may opt into a goal-or-duration navigation
+        # protocol without changing the planner or any safety parameter.
+        self.evaluation_duration_s = float(os.environ.get("STAGE15B_EVALUATION_DURATION_S", "0"))
+        self.goal_tolerance_m = float(os.environ.get("STAGE15B_GOAL_TOLERANCE_M", "0.25"))
+        self.evaluation_start_sim = None
 
     def on_clock(self, msg: Clock):
         self.sim_time = float(msg.clock.sec) + float(msg.clock.nanosec) * 1e-9
@@ -131,7 +140,7 @@ class ShadowNode(Node):
         self.latest_info = msg; self.counts["camera_info"] += 1; self.timestamps["camera_info"].append(stamp(msg)); self.frames["camera_info"].add(msg.header.frame_id)
 
     def minimum_runtime_data_complete(self) -> bool:
-        return (
+        base_complete = (
             self.counts["evaluations"] >= 20
             and self.counts["clock"] >= 100
             and self.counts["scan"] >= 20
@@ -139,6 +148,18 @@ class ShadowNode(Node):
             and self.counts["camera_info"] >= 1
             and (self.scene == "rgb_dropout_contract" or self.counts["image"] >= 5)
         )
+        if not base_complete:
+            return False
+        if self.evaluation_duration_s <= 0:
+            return True
+        goal_distance = math.inf
+        if self.latest_odom is not None:
+            goal_distance = math.hypot(
+                self.goal[0] - self.latest_odom.pose.pose.position.x,
+                self.goal[1] - self.latest_odom.pose.pose.position.y,
+            )
+        elapsed = 0.0 if self.evaluation_start_sim is None or self.sim_time is None else self.sim_time - self.evaluation_start_sim
+        return goal_distance <= self.goal_tolerance_m or elapsed >= self.evaluation_duration_s
 
     def scan_to_core(self, msg: LaserScan, odom: Odometry):
         ranges = np.asarray(msg.ranges, dtype=float)
@@ -201,11 +222,13 @@ class ShadowNode(Node):
                 self.self_return_count += 1
         if self.done or self.latest_odom is None or self.latest_info is None or self.sim_time is None: return
         if self.scene != "rgb_dropout_contract" and self.latest_image is None: return
-        if self.counts["evaluations"] >= 20:
+        if self.evaluation_duration_s <= 0 and self.counts["evaluations"] >= 20:
             if self.minimum_runtime_data_complete():
                 self.done = True
             return
         scan_time, odom_time = stamp(msg), stamp(self.latest_odom)
+        if self.evaluation_start_sim is None:
+            self.evaluation_start_sim = scan_time
         image_time = stamp(self.latest_image) if self.latest_image is not None else None
         input_started = time.perf_counter()
         scan, ordered, valid = self.scan_to_core(msg, self.latest_odom)
@@ -252,7 +275,7 @@ class ShadowNode(Node):
         yaw_delta = abs(pose[-1]["yaw"] - pose[0]["yaw"]) if len(pose) > 1 else None
         # Exclude each mode's first evaluation from steady-state latency.
         latency = [record["latency"]["total_ms"] for record in self.records if record["evaluation_index"] > 0]
-        result = {"status": "PASSED" if self.failure is None else "FAILED", "failure": self.failure, "scene": self.scene, "counts": self.counts, "snapshot_count": self.snapshot_count, "frames": {key: sorted(value) for key, value in self.frames.items()}, "timestamps": {key: monotonic(value) for key, value in self.timestamps.items()}, "synchronization": self.sync_rows, "self_return_count": self.self_return_count, "translation": translation, "yaw_delta": yaw_delta, "single_flight": True, "pending_queue_limit": 1, "pending_queue_depth_max": 1, "sustained_backlog": False, "deadline_miss_count": sum(record["deadline_miss"] for record in self.records), "latency": {"count": len(latency), "mean": float(np.mean(latency)), "p50": float(np.percentile(latency, 50)), "p95": float(np.percentile(latency, 95)), "max": float(np.max(latency)), "backlog_count": 0, "stale_count": 0}, "camera": None if self.latest_image is None else {"width": self.latest_image.width, "height": self.latest_image.height, "encoding": self.latest_image.encoding}, "camera_info": None if self.latest_info is None else {"width": self.latest_info.width, "height": self.latest_info.height, "k": list(self.latest_info.k)}, "records": self.records}
+        result = {"status": "PASSED" if self.failure is None else "FAILED", "failure": self.failure, "scene": self.scene, "counts": self.counts, "snapshot_count": self.snapshot_count, "frames": {key: sorted(value) for key, value in self.frames.items()}, "timestamps": {key: monotonic(value) for key, value in self.timestamps.items()}, "synchronization": self.sync_rows, "self_return_count": self.self_return_count, "translation": translation, "yaw_delta": yaw_delta, "single_flight": True, "pending_queue_limit": 1, "pending_queue_depth_max": 1, "sustained_backlog": False, "deadline_miss_count": sum(record["deadline_miss"] for record in self.records), "navigation_protocol": {"evaluation_duration_s": self.evaluation_duration_s, "goal_tolerance_m": self.goal_tolerance_m, "evaluation_start_sim": self.evaluation_start_sim}, "latency": {"count": len(latency), "mean": float(np.mean(latency)), "p50": float(np.percentile(latency, 50)), "p95": float(np.percentile(latency, 95)), "max": float(np.max(latency)), "backlog_count": 0, "stale_count": 0}, "camera": None if self.latest_image is None else {"width": self.latest_image.width, "height": self.latest_image.height, "encoding": self.latest_image.encoding}, "camera_info": None if self.latest_info is None else {"width": self.latest_info.width, "height": self.latest_info.height, "k": list(self.latest_info.k)}, "records": self.records}
         (self.out_dir / "planner_result.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
 
 
@@ -265,7 +288,7 @@ def main():
         nonlocal stopping; stopping = True
     signal.signal(signal.SIGINT, stop); signal.signal(signal.SIGTERM, stop)
     try:
-        deadline = time.monotonic() + 90.0
+        deadline = time.monotonic() + float(os.environ.get("STAGE15B_WALL_TIMEOUT_S", "90"))
         while rclpy.ok() and not node.done and not stopping:
             if time.monotonic() > deadline: raise TimeoutError("shadow node wall timeout")
             rclpy.spin_once(node, timeout_sec=0.05)

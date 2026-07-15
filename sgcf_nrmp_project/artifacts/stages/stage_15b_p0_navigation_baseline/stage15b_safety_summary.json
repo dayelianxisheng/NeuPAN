@@ -1,0 +1,9 @@
+{
+  "all_zero_stop": true,
+  "collision_count": 0,
+  "improper_execution_count": 0,
+  "maximum_command_error": 0.0,
+  "maximum_replay_error": 0.0,
+  "passed": true,
+  "self_return_count": 0
+}

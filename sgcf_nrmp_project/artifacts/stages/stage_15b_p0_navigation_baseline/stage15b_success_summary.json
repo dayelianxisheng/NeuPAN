@@ -1,0 +1,40 @@
+{
+  "hard_scene_thresholds_passed": true,
+  "scenes": {
+    "empty_world": {
+      "collision_count": 0,
+      "maximum_eligible_p95_ms": 17.537694350176025,
+      "minimum_progress_m": 3.7559778338498147,
+      "runs": 3,
+      "successes": 3
+    },
+    "mixed": {
+      "collision_count": 0,
+      "maximum_eligible_p95_ms": 0.0,
+      "minimum_progress_m": 0.0,
+      "runs": 3,
+      "successes": 0
+    },
+    "narrow_passage": {
+      "collision_count": 0,
+      "maximum_eligible_p95_ms": 23.156265952275135,
+      "minimum_progress_m": 3.755984436693151,
+      "runs": 3,
+      "successes": 3
+    },
+    "single_static_obstacle": {
+      "collision_count": 0,
+      "maximum_eligible_p95_ms": 23.60069840142387,
+      "minimum_progress_m": 3.763759397646751,
+      "runs": 3,
+      "successes": 3
+    },
+    "static_corridor": {
+      "collision_count": 0,
+      "maximum_eligible_p95_ms": 22.285618797832285,
+      "minimum_progress_m": 3.7559785162068566,
+      "runs": 3,
+      "successes": 3
+    }
+  }
+}

@@ -1,0 +1,11 @@
+sgcf_nrmp_project/docs/deployment/mowen_legacy_ros1_migration_constraints.md
+sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/stage11cc_planner_shadow_node.py
+sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/stage11cd1_safe_actuation_gate.py
+sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh
+sgcf_nrmp_project/tools/run_stage15b_p0_baseline.sh
+sgcf_nrmp_project/tools/finalize_stage15b.py
+sgcf_nrmp_project/tools/test_stage15b.py
+sgcf_nrmp_project/artifacts/stages/stage_15b_p0_navigation_baseline/
+
+Explicitly unchanged: sgcf_nrmp_project/core/, sgcf_nrmp_project/gazebo/,
+docker/, example/mowen/, neupan/, neupan_ros/, neupan_ros2/, Stage 10.

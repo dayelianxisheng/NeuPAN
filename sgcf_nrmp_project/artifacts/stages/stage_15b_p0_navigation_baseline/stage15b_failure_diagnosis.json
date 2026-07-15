@@ -1,0 +1,7 @@
+{
+  "core_modified": false,
+  "corrective_action": "STAGE15B_REFERENCE_PATH_OVERRIDE",
+  "historical_fixed_single_static_obstacle": "SAFE_REJECTION_AFTER_INSUFFICIENT_EARLY_LATERAL_OFFSET",
+  "mixed_scene": "SAFE_REJECTION_WITH_NO_LEGAL_P0_COMMAND",
+  "mixed_scene_is_hard_success_gate": false
+}

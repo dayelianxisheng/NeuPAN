@@ -1,0 +1,410 @@
+[
+  {
+    "base_scene": "empty_world",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 15.768039646718535,
+    "deadline_miss_count": 0,
+    "evaluation_count": 160,
+    "final_goal_distance_m": 0.24402216612203365,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.7559778338779664,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.24402216612203365,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "smoke_empty_seed101_p0",
+    "scene_group": "empty_world",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 160
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "empty_world",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 17.537694350176025,
+    "deadline_miss_count": 0,
+    "evaluation_count": 160,
+    "final_goal_distance_m": 0.24402216615018535,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.7559778338498147,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.24402216615018535,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_empty_world_seed202_p0",
+    "scene_group": "empty_world",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 160
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "empty_world",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 17.011116354478872,
+    "deadline_miss_count": 0,
+    "evaluation_count": 160,
+    "final_goal_distance_m": 0.24402216612203365,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.7559778338779664,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.24402216612203365,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_empty_world_seed303_p0",
+    "scene_group": "empty_world",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 160
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "single_static_obstacle",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 23.249717099315603,
+    "deadline_miss_count": 0,
+    "evaluation_count": 209,
+    "final_goal_distance_m": 0.2356769032080583,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.7643230967919417,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.2356769032080583,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "final_single_static_obstacle_seed101_p0",
+    "scene_group": "single_static_obstacle",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "GEOMETRICALLY_INFEASIBLE": 1,
+      "SOLVED_SAFE": 208
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "single_static_obstacle",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 23.165632646123413,
+    "deadline_miss_count": 0,
+    "evaluation_count": 209,
+    "final_goal_distance_m": 0.23509789934775474,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.7649021006522454,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.23509789934775474,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "final_single_static_obstacle_seed202_p0",
+    "scene_group": "single_static_obstacle",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "GEOMETRICALLY_INFEASIBLE": 1,
+      "SOLVED_SAFE": 208
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "single_static_obstacle",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 23.60069840142387,
+    "deadline_miss_count": 0,
+    "evaluation_count": 209,
+    "final_goal_distance_m": 0.236240602353249,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.763759397646751,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.236240602353249,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "final_single_static_obstacle_seed303_p0",
+    "scene_group": "single_static_obstacle",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "GEOMETRICALLY_INFEASIBLE": 1,
+      "SOLVED_SAFE": 208
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "static_corridor",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 21.412708003481384,
+    "deadline_miss_count": 0,
+    "evaluation_count": 161,
+    "final_goal_distance_m": 0.23203320637188396,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.767966793628116,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.23203320637188396,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_static_corridor_seed101_p0",
+    "scene_group": "static_corridor",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 161
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "static_corridor",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 22.285618797832285,
+    "deadline_miss_count": 0,
+    "evaluation_count": 160,
+    "final_goal_distance_m": 0.24402148379314337,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.7559785162068566,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.24402148379314337,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_static_corridor_seed202_p0",
+    "scene_group": "static_corridor",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 160
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "static_corridor",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 21.998978998453822,
+    "deadline_miss_count": 0,
+    "evaluation_count": 161,
+    "final_goal_distance_m": 0.23203260883732568,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.7679673911626743,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.23203260883732568,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_static_corridor_seed303_p0",
+    "scene_group": "static_corridor",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 161
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "narrow_passage",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 21.57314395371941,
+    "deadline_miss_count": 0,
+    "evaluation_count": 160,
+    "final_goal_distance_m": 0.24401556330684868,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.755984436693151,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.24401556330684868,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_narrow_passage_seed101_p0",
+    "scene_group": "narrow_passage",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 160
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "narrow_passage",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 21.21911394824565,
+    "deadline_miss_count": 0,
+    "evaluation_count": 160,
+    "final_goal_distance_m": 0.24401465251861215,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.755985347481388,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.24401465251861215,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_narrow_passage_seed202_p0",
+    "scene_group": "narrow_passage",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 160
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "narrow_passage",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": 23.156265952275135,
+    "deadline_miss_count": 0,
+    "evaluation_count": 160,
+    "final_goal_distance_m": 0.24401516201597476,
+    "final_velocity": [
+      0.0,
+      0.0
+    ],
+    "goal_progress_m": 3.755984837984025,
+    "goal_reached": true,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 0.24401516201597476,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_narrow_passage_seed303_p0",
+    "scene_group": "narrow_passage",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "SOLVED_SAFE": 160
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "human_path_side",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": null,
+    "deadline_miss_count": 0,
+    "evaluation_count": 199,
+    "final_goal_distance_m": 4.0,
+    "final_velocity": [
+      2.331213769407703e-20,
+      -2.110565458489086e-20
+    ],
+    "goal_progress_m": 0.0,
+    "goal_reached": false,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 4.0,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_mixed_seed101_p0",
+    "scene_group": "mixed",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "REJECTED_BY_GEOMETRY_CHECK": 199
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "human_path_side",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": null,
+    "deadline_miss_count": 0,
+    "evaluation_count": 199,
+    "final_goal_distance_m": 4.0,
+    "final_velocity": [
+      2.2518760058370173e-20,
+      2.113985037216719e-20
+    ],
+    "goal_progress_m": 0.0,
+    "goal_reached": false,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 4.0,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_mixed_seed202_p0",
+    "scene_group": "mixed",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "REJECTED_BY_GEOMETRY_CHECK": 199
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  },
+  {
+    "base_scene": "human_path_side",
+    "candidate_ros_gazebo_max_abs_error": 0.0,
+    "collision_count": 0,
+    "command_eligible_p95_ms": null,
+    "deadline_miss_count": 0,
+    "evaluation_count": 198,
+    "final_goal_distance_m": 4.0,
+    "final_velocity": [
+      -3.2986028458490857e-21,
+      -3.26104973841201e-20
+    ],
+    "goal_progress_m": 0.0,
+    "goal_reached": false,
+    "initial_goal_distance_m": 4.0,
+    "minimum_goal_distance_m": 4.0,
+    "ros_core_replay_max_abs_error": 0.0,
+    "run_id": "fixed_mixed_seed303_p0",
+    "scene_group": "mixed",
+    "self_return_count": 0,
+    "stale_late_ineligible_execution_count": 0,
+    "status_counts": {
+      "REJECTED_BY_GEOMETRY_CHECK": 198
+    },
+    "sustained_backlog": false,
+    "zero_stop": true
+  }
+]

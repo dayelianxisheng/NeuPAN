@@ -69,6 +69,7 @@ class SafeActuationGate(Node):
         self.latest_allowed = False
         self.latest_command = (0.0, 0.0)
         self.latest_reason = "BASELINE_ZERO"
+        self.latest_candidate_timestamp = None
 
     @staticmethod
     def stamp(msg):
@@ -129,6 +130,7 @@ class SafeActuationGate(Node):
         self.latest_allowed = allowed
         self.latest_command = candidate if allowed else (0.0, 0.0)
         self.latest_reason = reason
+        self.latest_candidate_timestamp = float(record["simulation_timestamp"])
         if not allowed: self.rejected_count += 1
         row = {"simulation_timestamp": record["simulation_timestamp"], "record": record, "checks": checks, "actuation_eligible": allowed, "final_command": list(self.latest_command), "zero_fallback_reason": reason, "scan_age_s": scan_age, "odom_age_s": odom_age}
         self.records.append(row)
@@ -139,6 +141,16 @@ class SafeActuationGate(Node):
         self.command_log.append({"sim_time": self.sim_time, "phase": self.phase, "v": float(v), "w": float(w), "reason": reason})
 
     def on_timer(self):
+        if (
+            self.phase == "ACTIVE"
+            and self.latest_allowed
+            and self.sim_time is not None
+            and self.latest_candidate_timestamp is not None
+            and self.sim_time - self.latest_candidate_timestamp > self.freshness_s
+        ):
+            self.latest_allowed = False
+            self.latest_command = (0.0, 0.0)
+            self.latest_reason = "CANDIDATE_EXPIRED"
         if self.phase == "ACTIVE" and self.latest_allowed:
             self.publish(*self.latest_command, "FORWARDED_UNMODIFIED")
         else:

@@ -1,0 +1,37 @@
+{
+  "goal_tolerance_m": 0.25,
+  "mode": "P0",
+  "safety_contract_changed": false,
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "selection": {
+    "empty_world": [
+      "smoke_empty_seed101_p0",
+      "fixed_empty_world_seed202_p0",
+      "fixed_empty_world_seed303_p0"
+    ],
+    "mixed": [
+      "fixed_mixed_seed101_p0",
+      "fixed_mixed_seed202_p0",
+      "fixed_mixed_seed303_p0"
+    ],
+    "narrow_passage": [
+      "fixed_narrow_passage_seed101_p0",
+      "fixed_narrow_passage_seed202_p0",
+      "fixed_narrow_passage_seed303_p0"
+    ],
+    "single_static_obstacle": [
+      "final_single_static_obstacle_seed101_p0",
+      "final_single_static_obstacle_seed202_p0",
+      "final_single_static_obstacle_seed303_p0"
+    ],
+    "static_corridor": [
+      "fixed_static_corridor_seed101_p0",
+      "fixed_static_corridor_seed202_p0",
+      "fixed_static_corridor_seed303_p0"
+    ]
+  }
+}

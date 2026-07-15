@@ -1,0 +1,18 @@
+Stage 15B fast regression, 2026-07-15
+
+PASS: python -m unittest test_stage15b test_stage15a test_stage11cc2 (14 tests)
+PASS: python -m unittest test_stage11cd3a test_stage11c_final (33 tests)
+PASS: Stage 09C collision recovery unittest (4 tests)
+PASS: compileall with PYTHONPYCACHEPREFIX=/tmp/stage15b_pycache
+PASS: Stage 15B JSON/JSONL parse (3707 documents/records at check time)
+PASS: bash -n for Stage 15B and Stage 11C runtime runners
+PASS: git diff --check
+PASS: residual Stage 15B Gazebo/ROS processes and containers = 0
+
+Historical artifact tests test_stage11cc.test_latency_hard_gate and
+test_stage11cd1.test_closed_loop_capability remain false because they assert
+the preserved historical Stage 11C-C / D1 blocked evidence. They are not
+regressions in the Stage 15B runtime or its selected final evidence.
+
+The active Conda interpreter does not contain pytest; the Stage 09C test was
+therefore run through its standard-library unittest-compatible entry point.

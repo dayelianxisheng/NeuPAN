@@ -1,0 +1,32 @@
+{
+  "d_safe_modified": false,
+  "full_horizon_recheck_enabled": true,
+  "geometry_modified": false,
+  "planner_core_modified": false,
+  "reference_path_override": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0.95
+    ],
+    [
+      1.5,
+      1.05
+    ],
+    [
+      2.7,
+      0.95
+    ],
+    [
+      4,
+      0
+    ]
+  ],
+  "safe_actuation_gate_enabled": true,
+  "semantic_used": false,
+  "stage10_started": false,
+  "watchdog_ms": 200
+}
