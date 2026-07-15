@@ -1,0 +1,3 @@
+ 426272 bash            bash /home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN/sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh human_path_side
+ 429719 bash            bash /home/zq/resource/code/emb_ai/mobile_robot/path_planning/NeuPAN/sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh human_path_side
+ 429916 docker          docker exec sgcf_gz_stage11cc_random_stage15_mixed_random_1006_p0 bash -lc gz topic -l

@@ -1,0 +1,24 @@
+/stage11cd1_safe_actuation_gate
+  Subscribers:
+    /clock: rosgraph_msgs/msg/Clock
+    /odom: nav_msgs/msg/Odometry
+    /scan: sensor_msgs/msg/LaserScan
+    /sgcf/planner_candidate_cmd_vel: geometry_msgs/msg/Twist
+    /sgcf/planner_diagnostics: std_msgs/msg/String
+    /sgcf/planner_status: std_msgs/msg/String
+  Publishers:
+    /cmd_vel: geometry_msgs/msg/Twist
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+  Service Servers:
+    /stage11cd1_safe_actuation_gate/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /stage11cd1_safe_actuation_gate/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /stage11cd1_safe_actuation_gate/get_parameters: rcl_interfaces/srv/GetParameters
+    /stage11cd1_safe_actuation_gate/list_parameters: rcl_interfaces/srv/ListParameters
+    /stage11cd1_safe_actuation_gate/set_parameters: rcl_interfaces/srv/SetParameters
+    /stage11cd1_safe_actuation_gate/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:

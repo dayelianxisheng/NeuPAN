@@ -1,0 +1,16 @@
+Modified for Stage 15:
+  sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge/sgcf_nrmp_bridge/stage11cc_planner_shadow_node.py
+  sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh
+
+Added for Stage 15:
+  sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/
+  sgcf_nrmp_project/tools/finalize_stage15.py
+  sgcf_nrmp_project/tools/generate_stage15_mixed_worlds.py
+  sgcf_nrmp_project/tools/run_stage15_fixed_pairs.sh
+  sgcf_nrmp_project/tools/run_stage15_mixed_pairs.sh
+  sgcf_nrmp_project/tools/test_stage15.py
+  sgcf_nrmp_project/artifacts/stages/stage_15_oracle_semantic_closed_loop/
+
+Preserved pre-existing unrelated changes (not modified for Stage 15):
+  neupan_ros
+  sgcf_nrmp_project/artifacts/stages/stage_11c_a_ros2_bridge_data_plane/logs/bridge_image_build.log

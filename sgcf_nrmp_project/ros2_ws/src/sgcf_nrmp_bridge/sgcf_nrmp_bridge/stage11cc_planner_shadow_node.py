@@ -70,6 +70,9 @@ class ShadowNode(Node):
         else:
             self.declare_parameter("use_sim_time", True)
         self.scene, self.out_dir, self.repo = scene, out_dir, repo
+        self.scene_label = os.environ.get("STAGE15_SCENE_LABEL", scene)
+        oracle_map_raw = os.environ.get("STAGE15_ORACLE_MAP_JSON", "").strip()
+        self.oracle_map = json.loads(oracle_map_raw) if oracle_map_raw else []
         out_dir.mkdir(parents=True, exist_ok=True)
         self.input_dir = out_dir / "planner_inputs" / scene
         self.input_dir.mkdir(parents=True, exist_ok=True)
@@ -153,14 +156,23 @@ class ShadowNode(Node):
         if mode == "P0": return exact, {"source": "NONE", "semantic_valid": False, "fallback_reason": None, "enabled": False}
         probabilities = np.zeros((len(points_world), 5), dtype=float)
         class_name = SCENE_CLASS.get(self.scene, "UNKNOWN")
-        if len(probabilities): probabilities[:, CLASS_IDS[class_name]] = 1.0
+        if len(probabilities) and self.oracle_map:
+            centers = np.asarray([item["center"] for item in self.oracle_map], dtype=float)
+            classes = [item["class_name"] for item in self.oracle_map]
+            nearest = np.argmin(np.linalg.norm(points_world[:, None, :] - centers[None, :, :], axis=2), axis=1)
+            for row, obstacle_index in enumerate(nearest):
+                probabilities[row, CLASS_IDS[classes[int(obstacle_index)]]] = 1.0
+            class_name = "MIXED"
+        elif len(probabilities):
+            probabilities[:, CLASS_IDS[class_name]] = 1.0
         projection = np.ones(len(points_world), dtype=bool)
         image_available, image_age = True, 0.0
         if self.scene == "rgb_dropout_contract": image_available = False
         if self.scene == "outdated_rgb_contract": image_age = 0.100001
         provider = SemanticMarginProvider(points_world, probabilities, projection, np.ones(len(points_world), bool), image_available, image_age, True, 0.8, 0.5, 8.0)
         context = {"source": "ORACLE_GROUND_TRUTH", "scope": "SIMULATION_ONLY", "not_stage10": True,
-                   "class_name": class_name, "class_id": CLASS_IDS[class_name],
+                   "class_name": class_name, "class_id": None if class_name == "MIXED" else CLASS_IDS[class_name],
+                   "oracle_entity_classes": self.oracle_map,
                    "semantic_valid": not provider.explicit_failure_active,
                    "fallback_reason": provider.explicit_failure_reasons[0] if provider.explicit_failure_reasons else None,
                    "enabled": not provider.explicit_failure_active}
@@ -221,7 +233,7 @@ class ShadowNode(Node):
             command = Twist(); command.linear.x = float(actual["candidate"][0]); command.angular.z = float(actual["candidate"][1]); self.candidate_pub.publish(command)
             status_msg = String(); status_msg.data = actual["status"]; self.status_pub.publish(status_msg)
             current_clearance = float(exact.distance(state[None, :])[0])
-            record = {"scene": self.scene, "mode": mode, "evaluation_index": self.counts["evaluations"], "simulation_timestamp": scan_time, "scan_timestamp": scan_time, "odom_timestamp": odom_time, "scan_age_s": self.sim_time - scan_time, "odom_age_s": self.sim_time - odom_time, "evaluation_monotonic_start": started, "evaluation_monotonic_end": finished, "deadline_ms": 200.0, "deadline_miss": deadline_miss, "actuation_eligible": actuation_eligible, "late_candidate_policy": "DIAGNOSTIC_ONLY" if deadline_miss else "ON_TIME_SHADOW_RESULT", "execution_output": [0.0, 0.0], "single_flight": True, "pending_queue_limit": 1, "robot_pose": state.tolist(), "robot_velocity": [self.latest_odom.twist.twist.linear.x, self.latest_odom.twist.twist.angular.z], "goal": self.goal, "goal_distance": float(np.linalg.norm(np.asarray(self.goal[:2], float) - state[:2])), "observable_point_count": int(len(scan.points_world)), "label": labels, "semantic": semantic, "current_clearance": current_clearance, "current_collision": current_clearance <= 0.0, "result": actual, "replay": expected, "equivalence": equivalence, "geometry_diagnosis": {"d_safe_m": float(self.config["planner"]["d_safe_m"]), "emergency_distance_m": float(self.config["planner"]["emergency_distance_m"]), "nominal_states_samples": result.diagnostics.get("nominal_states_samples", []), "exact_distance_samples": result.diagnostics.get("exact_distance_samples", []), "exact_gradient_samples": result.diagnostics.get("exact_gradient_samples", []), "geometry_recheck_samples": result.diagnostics.get("geometry_recheck_samples", []), "qp_status_samples": result.diagnostics.get("qp_status_samples", []), "solver_detail_samples": result.diagnostics.get("solver_detail_samples", [])}, "latency": {"scan_to_input_ready_ms": input_ms, "exact_geometry_ms": float(sum(result.diagnostics.get("observable_distance_gradient_ms", []))), "semantic_ms": float(sum(result.diagnostics.get("semantic_margin_ms", []))), "qp_ms": float(sum(result.diagnostics.get("solve_wall_ms", []))), "total_ms": total_ms}}
+            record = {"scene": self.scene_label, "base_scene_contract": self.scene, "mode": mode, "evaluation_index": self.counts["evaluations"], "simulation_timestamp": scan_time, "scan_timestamp": scan_time, "odom_timestamp": odom_time, "scan_age_s": self.sim_time - scan_time, "odom_age_s": self.sim_time - odom_time, "evaluation_monotonic_start": started, "evaluation_monotonic_end": finished, "deadline_ms": 200.0, "deadline_miss": deadline_miss, "actuation_eligible": actuation_eligible, "late_candidate_policy": "DIAGNOSTIC_ONLY" if deadline_miss else "ON_TIME_SHADOW_RESULT", "execution_output": [0.0, 0.0], "single_flight": True, "pending_queue_limit": 1, "robot_pose": state.tolist(), "robot_velocity": [self.latest_odom.twist.twist.linear.x, self.latest_odom.twist.twist.angular.z], "goal": self.goal, "goal_distance": float(np.linalg.norm(np.asarray(self.goal[:2], float) - state[:2])), "observable_point_count": int(len(scan.points_world)), "label": labels, "semantic": semantic, "current_clearance": current_clearance, "current_collision": current_clearance <= 0.0, "result": actual, "replay": expected, "equivalence": equivalence, "geometry_diagnosis": {"d_safe_m": float(self.config["planner"]["d_safe_m"]), "emergency_distance_m": float(self.config["planner"]["emergency_distance_m"]), "nominal_states_samples": result.diagnostics.get("nominal_states_samples", []), "exact_distance_samples": result.diagnostics.get("exact_distance_samples", []), "exact_gradient_samples": result.diagnostics.get("exact_gradient_samples", []), "geometry_recheck_samples": result.diagnostics.get("geometry_recheck_samples", []), "qp_status_samples": result.diagnostics.get("qp_status_samples", []), "solver_detail_samples": result.diagnostics.get("solver_detail_samples", [])}, "latency": {"scan_to_input_ready_ms": input_ms, "exact_geometry_ms": float(sum(result.diagnostics.get("observable_distance_gradient_ms", []))), "semantic_ms": float(sum(result.diagnostics.get("semantic_margin_ms", []))), "qp_ms": float(sum(result.diagnostics.get("solve_wall_ms", []))), "total_ms": total_ms}}
             diagnostic = String(); diagnostic.data = json.dumps(record, sort_keys=True); self.diagnostics_pub.publish(diagnostic)
             self.record_stream.write(json.dumps(record, sort_keys=True) + "\n"); self.records.append(record); mode_records.append(record)
         self.counts["evaluations"] += 1

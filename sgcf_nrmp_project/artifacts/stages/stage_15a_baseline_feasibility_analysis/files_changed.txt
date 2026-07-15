@@ -1,0 +1,16 @@
+Added for Stage 15A:
+  sgcf_nrmp_project/tools/analyze_stage15a.py
+  sgcf_nrmp_project/tools/run_stage15a_minimal_p0.sh
+  sgcf_nrmp_project/tools/test_stage15a.py
+  sgcf_nrmp_project/artifacts/stages/stage_15a_baseline_feasibility_analysis/
+
+No Stage 15A changes were made to:
+  sgcf_nrmp_project/core/
+  sgcf_nrmp_project/gazebo/worlds/
+  docker/
+  neupan/
+  neupan_ros/
+  neupan_ros2/
+  Stage 10
+
+Pre-existing unrelated worktree changes remain preserved.

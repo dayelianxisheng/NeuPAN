@@ -1,0 +1,41 @@
+{
+  "all_runs_reached_active_timeout": true,
+  "goal_tolerance_m": 0.25,
+  "per_scene": {
+    "human_path_center": {
+      "active_window_s": 6.0,
+      "initial_goal_distance_m": [
+        4.0
+      ],
+      "reference_speed_minimum_time_s": 13.333333333333334
+    },
+    "human_path_side": {
+      "active_window_s": 6.0,
+      "initial_goal_distance_m": [
+        4.0
+      ],
+      "reference_speed_minimum_time_s": 13.333333333333334
+    },
+    "mixed_static_human_vehicle": {
+      "active_window_s": 6.0,
+      "initial_goal_distance_m": [
+        4.0
+      ],
+      "reference_speed_minimum_time_s": 13.333333333333334
+    },
+    "semantic_infeasible": {
+      "active_window_s": 6.0,
+      "initial_goal_distance_m": [
+        4.0
+      ],
+      "reference_speed_minimum_time_s": 13.333333333333334
+    },
+    "vehicle_path": {
+      "active_window_s": 6.0,
+      "initial_goal_distance_m": [
+        4.0
+      ],
+      "reference_speed_minimum_time_s": 13.333333333333334
+    }
+  }
+}

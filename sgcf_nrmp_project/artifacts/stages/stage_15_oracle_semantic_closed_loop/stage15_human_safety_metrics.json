@@ -1,0 +1,18 @@
+{
+  "P0": {
+    "median_minimum_clearance": 0.7036648025115749,
+    "minimum_clearance": 0.6475491364072633,
+    "near_miss_count": 0,
+    "near_miss_rate": 0.0,
+    "samples": 32
+  },
+  "P2": {
+    "median_minimum_clearance": 0.7062133027466893,
+    "minimum_clearance": 0.6999999999999998,
+    "near_miss_count": 0,
+    "near_miss_rate": 0.0,
+    "samples": 32
+  },
+  "median_clearance_improvement": 0.002548500235114326,
+  "near_miss_relative_reduction": 0
+}

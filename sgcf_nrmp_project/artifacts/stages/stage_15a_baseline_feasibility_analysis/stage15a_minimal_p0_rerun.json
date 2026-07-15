@@ -1,0 +1,72 @@
+{
+  "run_count": 3,
+  "runs": [
+    {
+      "active_duration_s": 20.0,
+      "collision_count": 0,
+      "command_eligible_ratio": 0.4,
+      "final_goal_distance_m": 3.996828088897651,
+      "final_status": "REJECTED_BY_GEOMETRY_CHECK",
+      "goal_progress_m": 0.0031719111023491564,
+      "goal_reached": false,
+      "initial_goal_distance_m": 4.0,
+      "interpretation": "PLANNER_COMPLETENESS_LIMITATION",
+      "maximum_positive_progress_m": 0.0031719111023491564,
+      "nonzero_command_count": 6,
+      "run_id": "stage15a_human_path_center_seed101_p0",
+      "scene": "human_path_center",
+      "stale_late_ineligible_executed": 0,
+      "status_counts": {
+        "GEOMETRICALLY_INFEASIBLE": 3,
+        "REJECTED_BY_GEOMETRY_CHECK": 9,
+        "SOLVED_SAFE": 8
+      },
+      "zero_stop": true
+    },
+    {
+      "active_duration_s": 20.0,
+      "collision_count": 0,
+      "command_eligible_ratio": 0.5,
+      "final_goal_distance_m": 3.9109475858756766,
+      "final_status": "GEOMETRICALLY_INFEASIBLE",
+      "goal_progress_m": 0.08905241412432341,
+      "goal_reached": false,
+      "initial_goal_distance_m": 4.0,
+      "interpretation": "PARTIAL_PROGRESS",
+      "maximum_positive_progress_m": 0.08905241412432341,
+      "nonzero_command_count": 16,
+      "run_id": "stage15a_mixed_seed1015_p0",
+      "scene": "mixed_static_human_vehicle",
+      "stale_late_ineligible_executed": 0,
+      "status_counts": {
+        "GEOMETRICALLY_INFEASIBLE": 6,
+        "REJECTED_BY_GEOMETRY_CHECK": 4,
+        "SOLVED_SAFE": 10
+      },
+      "zero_stop": true
+    },
+    {
+      "active_duration_s": 20.0,
+      "collision_count": 0,
+      "command_eligible_ratio": 0.25,
+      "final_goal_distance_m": 3.9891904782664858,
+      "final_status": "REJECTED_BY_GEOMETRY_CHECK",
+      "goal_progress_m": 0.010809521733514238,
+      "goal_reached": false,
+      "initial_goal_distance_m": 4.0,
+      "interpretation": "PLANNER_COMPLETENESS_LIMITATION",
+      "maximum_positive_progress_m": 0.010809521737172645,
+      "nonzero_command_count": 5,
+      "run_id": "stage15a_vehicle_path_seed303_p0",
+      "scene": "vehicle_path",
+      "stale_late_ineligible_executed": 0,
+      "status_counts": {
+        "GEOMETRICALLY_INFEASIBLE": 3,
+        "REJECTED_BY_GEOMETRY_CHECK": 12,
+        "SOLVED_SAFE": 5
+      },
+      "zero_stop": true
+    }
+  ],
+  "selection_basis": "Top historical P0 progress from distinct candidate scene types"
+}

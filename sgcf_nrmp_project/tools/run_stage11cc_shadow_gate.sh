@@ -8,8 +8,8 @@ planner_tag=sgcf-ros2-humble-gzharmonic-torch-planner:stage11cc1
 gazebo_tag=sgcf-gazebo-harmonic:hlms-media-fix
 planner_image="${STAGE11CC_PLANNER_IMAGE:-$(docker image inspect "$planner_tag" --format '{{.Id}}')}"
 gazebo_image="${STAGE11CC_GAZEBO_IMAGE:-$(docker image inspect "$gazebo_tag" --format '{{.Id}}')}"
-partition=sgcf_stage11ca
-domain=42
+partition="${STAGE11CC_GZ_PARTITION:-sgcf_stage11ca}"
+domain="${STAGE11CC_ROS_DOMAIN_ID:-42}"
 all_scenes=(empty_world single_static_obstacle static_corridor narrow_passage robot_obstacle human_path_center human_path_side vehicle_path semantic_infeasible initial_collision rgb_dropout_contract outdated_rgb_contract)
 scenes=("${@:-${all_scenes[@]}}")
 
@@ -65,10 +65,16 @@ for scene in "${scenes[@]}"; do
   docker rm -f "$gz_name" "$ros_name" >/dev/null 2>&1 || true
   printf '%s\n' "$gazebo_image" >"$logs/gazebo_image_id.txt"
   printf '%s\n' "$planner_image" >"$logs/planner_image_id.txt"
+  gz_seed_args=""
+  if [[ -n "${STAGE11CC_GAZEBO_SEED:-}" ]]; then
+    [[ "$STAGE11CC_GAZEBO_SEED" =~ ^[0-9]+$ ]] || { echo "Invalid Gazebo seed" >&2; exit 2; }
+    gz_seed_args="--seed $STAGE11CC_GAZEBO_SEED"
+  fi
+  world_path="${STAGE11CC_WORLD_PATH:-/workspace/sgcf_nrmp_project/gazebo/worlds/${scene}.sdf}"
   docker run -d --name "$gz_name" --network host \
     -e "GZ_PARTITION=$partition" -v "$repo:/workspace" -w /workspace \
     "$gazebo_image" bash -lc \
-    "exec gz sim -s -r --headless-rendering --render-engine-server ogre2 -v 4 /workspace/sgcf_nrmp_project/gazebo/worlds/${scene}.sdf" \
+    "exec gz sim -s -r --headless-rendering --render-engine-server ogre2 -v 4 $gz_seed_args $world_path" \
     >"$logs/gazebo_container_id.txt"
 
   ready=false
@@ -83,6 +89,7 @@ for scene in "${scenes[@]}"; do
   docker run -d --name "$ros_name" --network host \
     -e "ROS_DOMAIN_ID=$domain" -e "GZ_PARTITION=$partition" \
     -e 'CUDA_VISIBLE_DEVICES=' -e 'NVIDIA_VISIBLE_DEVICES=void' \
+    -e "STAGE15_ORACLE_MAP_JSON=${STAGE15_ORACLE_MAP_JSON:-}" -e "STAGE15_SCENE_LABEL=${STAGE15_SCENE_LABEL:-}" \
     -v "$repo:/workspace" -w /workspace "$planner_image" sleep infinity \
     >"$logs/ros_container_id.txt"
 
@@ -116,7 +123,7 @@ for scene in "${scenes[@]}"; do
   test "$guard_ready" = true
 
   docker exec "$ros_name" bash -lc \
-    "source /opt/ros/humble/setup.bash; export CUDA_VISIBLE_DEVICES=''; export NVIDIA_VISIBLE_DEVICES=void; export PYTHONPATH=/workspace/sgcf_nrmp_project/core/src:/workspace/sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge:\${PYTHONPATH:-}; export STAGE11CC_SCENE=${scene}; export STAGE11CC_MODES=${mode_list}; export STAGE11CC_SCENE_OUT=/workspace/sgcf_nrmp_project/artifacts/stages/${stage_dir}/runtime/${run_id}; export STAGE11CC_REPO=/workspace; exec /opt/sgcf_planner_venv/bin/python -m sgcf_nrmp_bridge.stage11cc_planner_shadow_node" \
+    "source /opt/ros/humble/setup.bash; export CUDA_VISIBLE_DEVICES=''; export NVIDIA_VISIBLE_DEVICES=void; export PYTHONPATH=/workspace/sgcf_nrmp_project/core/src:/workspace/sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge:\${PYTHONPATH:-}; export STAGE11CC_SCENE=${scene}; export STAGE11CC_MODES=${mode_list}; export STAGE11CC_SCENE_OUT=/workspace/sgcf_nrmp_project/artifacts/stages/${stage_dir}/runtime/${run_id}; export STAGE11CC_REPO=/workspace; export STAGE15_ORACLE_MAP_JSON='${STAGE15_ORACLE_MAP_JSON:-}'; export STAGE15_SCENE_LABEL='${STAGE15_SCENE_LABEL:-}'; exec /opt/sgcf_planner_venv/bin/python -m sgcf_nrmp_bridge.stage11cc_planner_shadow_node" \
     >"$logs/planner_stdout.txt" 2>"$logs/planner_stderr.txt" & planner_pid=$!
 
   planner_ready=false

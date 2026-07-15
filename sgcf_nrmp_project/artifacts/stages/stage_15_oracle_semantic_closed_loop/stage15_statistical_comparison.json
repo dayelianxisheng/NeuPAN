@@ -1,0 +1,8 @@
+{
+  "collision_nonincrease": true,
+  "human_or_vehicle_improvement": false,
+  "navigation_success_interpretation": "INCONCLUSIVE",
+  "positive_gate": false,
+  "static_not_worse_than_0_02m": true,
+  "success_drop_within_5pp": true
+}

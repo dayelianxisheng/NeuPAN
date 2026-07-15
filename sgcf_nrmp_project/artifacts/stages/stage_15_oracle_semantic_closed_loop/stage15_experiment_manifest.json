@@ -1,0 +1,35 @@
+{
+  "d_safe_m": 0.25,
+  "deadline_ms": 200,
+  "depot": {
+    "license": "LICENSE_UNKNOWN_LOCAL_TEST_ONLY",
+    "reason": "vendor mesh visual-only / ground-plane collision only",
+    "used_for_scored_safety_metrics": false
+  },
+  "fixed_pair_count": 15,
+  "full_horizon_recheck": true,
+  "initial_collision_evidence": "Stage 11C final safety summary",
+  "initial_collision_status": "EMERGENCY_STOP",
+  "near_miss_threshold_m": 0.25,
+  "planner_config_frozen": true,
+  "planner_parameters_modified": false,
+  "random_pair_count": 20,
+  "safe_actuation_gate": true,
+  "scenes": [
+    "human_path_center",
+    "human_path_side",
+    "vehicle_path",
+    "semantic_infeasible",
+    "mixed_static_human_vehicle"
+  ],
+  "semantic_source": [
+    "ORACLE_GROUND_TRUTH",
+    "SIMULATION_ONLY",
+    "NOT_STAGE10_PREDICTION"
+  ],
+  "stage09c_safe_nominal_recovery": true,
+  "stage10_started": false,
+  "status": "COMPLETE",
+  "total_pair_count": 35,
+  "total_run_count": 70
+}

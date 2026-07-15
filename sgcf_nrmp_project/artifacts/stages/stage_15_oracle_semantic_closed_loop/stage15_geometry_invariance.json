@@ -1,0 +1,9 @@
+{
+  "cross_trajectory_arrays_compared": false,
+  "d_geo_max_difference": 0.0,
+  "g_geo_max_difference": 0.0,
+  "method": "SAME_QUERY_EXACT_CHECKER_DELEGATION_AND_DIRECT_CORE_REPLAY",
+  "pair_count": 35,
+  "same_query_ros_core_replay_max": 0.0,
+  "semantic_changes_exact_geometry": false
+}

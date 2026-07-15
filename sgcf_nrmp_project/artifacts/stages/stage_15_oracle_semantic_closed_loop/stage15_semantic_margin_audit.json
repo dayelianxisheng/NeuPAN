@@ -1,0 +1,11 @@
+{
+  "P0_max": 0.0,
+  "P2_max": 0.35,
+  "mixed_labels": [
+    "STATIC_OBSTACLE",
+    "HUMAN",
+    "VEHICLE"
+  ],
+  "nonnegative": true,
+  "upper_bound": 0.35
+}

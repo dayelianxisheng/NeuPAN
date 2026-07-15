@@ -1,0 +1,22 @@
+Stage 15 quick regression
+=========================
+
+Commands:
+  python -m unittest sgcf_nrmp_project/tools/test_stage15.py \
+    sgcf_nrmp_project/tools/test_stage11cd3a.py \
+    sgcf_nrmp_project/tools/test_stage11cc2.py
+  PYTHONPYCACHEPREFIX=/tmp/stage15_pycache python -m compileall -q \
+    sgcf_nrmp_project/tools \
+    sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bridge
+  bash -n sgcf_nrmp_project/tools/run_stage15_fixed_pairs.sh \
+    sgcf_nrmp_project/tools/run_stage15_mixed_pairs.sh \
+    sgcf_nrmp_project/tools/run_stage11cc_shadow_gate.sh
+  JSON and JSONL parse audit
+  git diff --check
+
+Result:
+  30 unittest cases passed.
+  JSON/JSONL parse: PASS.
+  compileall: PASS.
+  shell syntax: PASS.
+  git diff --check: PASS.

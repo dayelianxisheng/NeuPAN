@@ -1,0 +1,8 @@
+{
+  "decision": "STAGE_15A_COMPLETE_WITH_KNOWN_PLANNER_LIMITATIONS",
+  "p0_goal_success_established": false,
+  "p0_partial_progress_established": true,
+  "protocol_defect_confirmed": true,
+  "required_next_action": "Repeat Stage 15 only if a P0 success baseline is established; Stage 16 remains blocked.",
+  "stage16_ready": false
+}

@@ -1,0 +1,1046 @@
+{
+  "fixed_seeds": [
+    101,
+    202,
+    303
+  ],
+  "not_stage10_prediction": true,
+  "random_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019
+  ],
+  "scenarios": [
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "fixed",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5694765118010956
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.22674107892819279
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.3883397343053333
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_fixed_101",
+      "seed": 101,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_fixed_101.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "fixed",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.613331577871215
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.3347473802607135
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5217348607664113
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_fixed_202",
+      "seed": 202,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_fixed_202.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "fixed",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.43759779377016333
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.41251290274940733
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5732226572777974
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_fixed_303",
+      "seed": 303,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_fixed_303.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.6165655942481354
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.3407581342942199
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5962064950580439
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1000",
+      "seed": 1000,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1000.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.6211962323103929
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.19407029585952829
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.43754245424621824
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1001",
+      "seed": 1001,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1001.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5550276176852582
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.28110004824275353
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5669731584600208
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1002",
+      "seed": 1002,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1002.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5493619410255528
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.2663977096464616
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.4467051783863078
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1003",
+      "seed": 1003,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1003.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.531069977473624
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.41426576027647344
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.47281279407794363
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1004",
+      "seed": 1004,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1004.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5459464951566424
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.3965239198192466
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.4910102735569126
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1005",
+      "seed": 1005,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1005.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5131887895867425
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.23487386305999378
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.6170258071330212
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1006",
+      "seed": 1006,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1006.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.6354254532436523
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.37211614579941077
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.477477596090967
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1007",
+      "seed": 1007,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1007.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5547577183764536
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.4100157298656122
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5383290474160144
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1008",
+      "seed": 1008,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1008.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.4732461804364364
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.2969669455206612
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.6013779919043798
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1009",
+      "seed": 1009,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1009.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5910413144898075
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.385572847406898
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.560724503038543
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1010",
+      "seed": 1010,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1010.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5180609868531455
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.18738437071001207
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5774053001524482
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1011",
+      "seed": 1011,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1011.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5112342461796815
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.21475593460219794
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5700242937703632
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1012",
+      "seed": 1012,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1012.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.6473265907023005
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.36373955414610604
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.45482597144864056
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1013",
+      "seed": 1013,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1013.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5537297958237557
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.23742402122143974
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.6116263876755743
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1014",
+      "seed": 1014,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1014.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.45490244882537356
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.25222703375310274
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.39574712580667754
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1015",
+      "seed": 1015,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1015.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5175600243739147
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.27370791711626563
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5363126759514001
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1016",
+      "seed": 1016,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1016.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5455157790928941
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.33244807975343527
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.5742134157401596
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1017",
+      "seed": 1017,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1017.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.5245535426891239
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.36504957925311055
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.44982463818728874
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1018",
+      "seed": 1018,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1018.sdf"
+    },
+    {
+      "base_contract": "human_path_side",
+      "goal": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "group": "random",
+      "obstacles": [
+        {
+          "center": [
+            3.1,
+            0.4382229292370357
+          ],
+          "class_name": "STATIC_OBSTACLE",
+          "name": "static_01"
+        },
+        {
+          "center": [
+            1.45,
+            0.2314035435341001
+          ],
+          "class_name": "HUMAN",
+          "name": "human_01"
+        },
+        {
+          "center": [
+            2.3,
+            -0.4334164442296132
+          ],
+          "class_name": "VEHICLE",
+          "name": "vehicle_01"
+        }
+      ],
+      "reference": "avoid",
+      "scene_id": "stage15_mixed_random_1019",
+      "seed": 1019,
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world": "sgcf_nrmp_project/gazebo/overlays/stage15_oracle_mixed/stage15_mixed_random_1019.sdf"
+    }
+  ],
+  "scope": "SIMULATION_ONLY",
+  "semantic_source": "ORACLE_GROUND_TRUTH"
+}

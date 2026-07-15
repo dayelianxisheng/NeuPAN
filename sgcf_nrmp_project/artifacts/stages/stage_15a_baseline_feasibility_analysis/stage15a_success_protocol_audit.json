@@ -1,0 +1,27 @@
+{
+  "active_command_window_s": 6.0,
+  "active_window_vs_reference_time_ratio": 0.44999999999999996,
+  "allowed_remedy": "Extend evaluation duration; do not change goal, planner, speed, or safety parameters.",
+  "configured_max_speed_mps": 1.0,
+  "defect": "ACTIVE_WINDOW_TOO_SHORT_FOR_REFERENCE_SPEED_GOAL_COMPLETION",
+  "global_reference_endpoint_error_m": {
+    "avoid": 0.0,
+    "straight": 0.0
+  },
+  "goal_distance_range_m": [
+    4.0,
+    4.0
+  ],
+  "goal_frame_consistent_with_odom": true,
+  "goal_reference_path_endpoint_consistent": true,
+  "max_bound_shortest_completion_time_s": 4.0,
+  "reference_speed_mps": 0.3,
+  "reference_speed_shortest_completion_time_s": 13.333333333333334,
+  "safe_stop_counted_as_runtime_error": false,
+  "snapshot_reference_note": "Saved reference_path is a rolling local horizon; its endpoint is not the global goal and is not evidence of a mismatch.",
+  "success_definition": {
+    "frame": "world/odom XY",
+    "goal_tolerance_m": 0.25,
+    "source": "Core offline simulator formal tolerance"
+  }
+}
