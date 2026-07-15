@@ -1,0 +1,71 @@
+$ python -m unittest ...stage12...
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+OK
+$ finalize evidence validation
+stage12 evidence finalized
+$ package setup.py build (isolated temp)
+$ JSON parse
+$ compileall
+$ git diff --check
+........................................................................ [ 74%]
+.........................                                                [100%]
+=============================== warnings summary ===============================
+../usr/lib/python3/dist-packages/_pytest/config/__init__.py:1233
+  Warning: Unknown config option: pythonpath
+
+tests/geometry/test_geometry.py: 5 warnings
+tests/planner/test_online_offline_boundary.py: 2 warnings
+tests/planner/test_planner_behavior.py: 3 warnings
+tests/planner/test_semantic_nrmp_planner.py: 4 warnings
+tests/planner/test_stage09a_lifecycle.py: 1 warning
+tests/planner/test_stage09c_collision_recovery.py: 2 warnings
+  Warning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
+
+../usr/lib/python3/dist-packages/_pytest/cacheprovider.py:428
+  Warning: cache could not write path /workspace/sgcf_nrmp_project/core/.pytest_cache/v/cache/nodeids
+
+../usr/lib/python3/dist-packages/_pytest/stepwise.py:49
+  Warning: cache could not write path /workspace/sgcf_nrmp_project/core/.pytest_cache/v/cache/stepwise
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+97 passed, 20 warnings in 7.41s
+$ final package metadata/setup build regression
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+OK
+$ checkpoint Stage 12 unittest
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+OK
+$ checkpoint ROS package builds
+$ checkpoint compileall
+$ checkpoint JSON and JSONL parse
+JSONL parse PASS
+........................................................................ [100%]
+=============================== warnings summary ===============================
+../usr/lib/python3/dist-packages/_pytest/config/__init__.py:1233
+  Warning: Unknown config option: pythonpath
+
+tests/geometry/test_geometry.py: 5 warnings
+tests/planner/test_online_offline_boundary.py: 2 warnings
+tests/planner/test_planner_behavior.py: 3 warnings
+tests/planner/test_semantic_nrmp_planner.py: 4 warnings
+tests/planner/test_stage09a_lifecycle.py: 1 warning
+tests/planner/test_stage09c_collision_recovery.py: 2 warnings
+  Warning: The 'resolution' argument is deprecated. Use 'quad_segs' instead
+
+../usr/lib/python3/dist-packages/_pytest/cacheprovider.py:428
+  Warning: cache could not write path /workspace/sgcf_nrmp_project/core/.pytest_cache/v/cache/nodeids
+
+../usr/lib/python3/dist-packages/_pytest/stepwise.py:49
+  Warning: cache could not write path /workspace/sgcf_nrmp_project/core/.pytest_cache/v/cache/stepwise
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+72 passed, 20 warnings in 6.94s

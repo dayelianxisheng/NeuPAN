@@ -1,0 +1,36 @@
+{
+  "format": "SGCF_SELF_CONTAINED_SQLITE_CDR_V1",
+  "message_count": 663,
+  "topics": {
+    "/clock": "rosgraph_msgs/msg/Clock",
+    "/scan": "sensor_msgs/msg/LaserScan",
+    "/camera/image_raw": "sensor_msgs/msg/Image",
+    "/camera/camera_info": "sensor_msgs/msg/CameraInfo",
+    "/odom": "nav_msgs/msg/Odometry",
+    "/tf": "tf2_msgs/msg/TFMessage",
+    "/tf_static": "tf2_msgs/msg/TFMessage",
+    "/sgcf_nrmp/fusion": "std_msgs/msg/String",
+    "/sgcf/planner_candidate_cmd_vel": "geometry_msgs/msg/Twist",
+    "/sgcf/planner_status": "std_msgs/msg/String",
+    "/sgcf/planner_diagnostics": "std_msgs/msg/String",
+    "/sgcf_nrmp/local_plan": "nav_msgs/msg/Path",
+    "/sgcf_nrmp/markers": "visualization_msgs/msg/MarkerArray",
+    "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray"
+  },
+  "counts": {
+    "/clock": 242,
+    "/scan": 30,
+    "/camera/image_raw": 30,
+    "/camera/camera_info": 30,
+    "/odom": 30,
+    "/tf": 30,
+    "/tf_static": 1,
+    "/sgcf_nrmp/fusion": 30,
+    "/sgcf/planner_candidate_cmd_vel": 40,
+    "/sgcf/planner_status": 40,
+    "/sgcf/planner_diagnostics": 40,
+    "/sgcf_nrmp/local_plan": 40,
+    "/sgcf_nrmp/markers": 40,
+    "/diagnostics": 40
+  }
+}

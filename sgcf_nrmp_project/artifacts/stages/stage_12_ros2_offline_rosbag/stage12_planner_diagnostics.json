@@ -1,0 +1,88 @@
+{
+  "all_values_finite": true,
+  "passed": true,
+  "scenes": {
+    "outdated_rgb_contract": {
+      "candidate_topic_only": true,
+      "cmd_vel_published": false,
+      "deadline_miss_count": 0,
+      "evaluations": 20,
+      "latency": {
+        "backlog_count": 0,
+        "count": 38,
+        "max": 60.57352900006663,
+        "mean": 29.11703528946562,
+        "p50": 28.342097500171803,
+        "p95": 58.957363550280206,
+        "stale_count": 0
+      },
+      "statuses": [
+        "EXPLICIT_FAILURE_GEOMETRY_FALLBACK",
+        "GEOMETRICALLY_INFEASIBLE",
+        "SOLVED_SAFE"
+      ],
+      "sustained_backlog": false
+    },
+    "rgb_dropout_contract": {
+      "candidate_topic_only": true,
+      "cmd_vel_published": false,
+      "deadline_miss_count": 1,
+      "evaluations": 20,
+      "latency": {
+        "backlog_count": 0,
+        "count": 38,
+        "max": 60.940596999898844,
+        "mean": 30.690521236872307,
+        "p50": 31.31099849997554,
+        "p95": 59.81534985003236,
+        "stale_count": 0
+      },
+      "statuses": [
+        "EXPLICIT_FAILURE_GEOMETRY_FALLBACK",
+        "GEOMETRICALLY_INFEASIBLE",
+        "SOLVED_SAFE"
+      ],
+      "sustained_backlog": false
+    },
+    "single_static_obstacle": {
+      "candidate_topic_only": true,
+      "cmd_vel_published": false,
+      "deadline_miss_count": 0,
+      "evaluations": 20,
+      "latency": {
+        "backlog_count": 0,
+        "count": 19,
+        "max": 57.09751900030824,
+        "mean": 29.643907736834464,
+        "p50": 29.660983000212582,
+        "p95": 57.00781060031659,
+        "stale_count": 0
+      },
+      "statuses": [
+        "GEOMETRICALLY_INFEASIBLE",
+        "SOLVED_SAFE"
+      ],
+      "sustained_backlog": false
+    },
+    "vehicle_path": {
+      "candidate_topic_only": true,
+      "cmd_vel_published": false,
+      "deadline_miss_count": 1,
+      "evaluations": 20,
+      "latency": {
+        "backlog_count": 0,
+        "count": 38,
+        "max": 33.765289000257326,
+        "mean": 28.55731784211457,
+        "p50": 28.520400999695994,
+        "p95": 33.039726999959385,
+        "stale_count": 0
+      },
+      "statuses": [
+        "GEOMETRICALLY_INFEASIBLE",
+        "SOLVED_SAFE"
+      ],
+      "sustained_backlog": false
+    }
+  }
+}

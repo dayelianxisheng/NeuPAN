@@ -1,0 +1,9 @@
+?? sgcf_nrmp_project/artifacts/stages/stage_12_ros2_offline_rosbag/
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_bringup/
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_evaluation/
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_fusion/
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_msgs/
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_planner/
+?? sgcf_nrmp_project/ros2_ws/src/sgcf_nrmp_visualization/
+?? sgcf_nrmp_project/tools/finalize_stage12.py
+?? sgcf_nrmp_project/tools/run_stage12_offline.sh

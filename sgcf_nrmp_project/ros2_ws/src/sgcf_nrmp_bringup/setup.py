@@ -1,0 +1,2 @@
+from setuptools import setup
+setup(name='sgcf_nrmp_bringup',version='0.1.0',packages=['sgcf_nrmp_bringup'],data_files=[('share/ament_index/resource_index/packages',['resource/sgcf_nrmp_bringup']),('share/sgcf_nrmp_bringup',['package.xml']),('share/sgcf_nrmp_bringup/launch',['launch/stage12_offline.launch.py'])],entry_points={'console_scripts':['synthetic_publisher=sgcf_nrmp_bringup.synthetic_publisher:main','bag_recorder=sgcf_nrmp_bringup.bag_tools:record_main','bag_replayer=sgcf_nrmp_bringup.bag_tools:replay_main','replay_auditor=sgcf_nrmp_bringup.bag_tools:audit_main']})

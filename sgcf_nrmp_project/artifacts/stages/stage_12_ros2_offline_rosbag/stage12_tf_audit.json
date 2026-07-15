@@ -1,0 +1,86 @@
+{
+  "duplicate_parent": false,
+  "dynamic_transform": "odom->base_link",
+  "frames": {
+    "outdated_rgb_contract": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "rgb_dropout_contract": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "single_static_obstacle": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    },
+    "vehicle_path": {
+      "camera_info": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "image": [
+        "sgcf_robot/camera_link/rgb_camera"
+      ],
+      "odom": [
+        "odom"
+      ],
+      "odom_child": [
+        "base_link"
+      ],
+      "scan": [
+        "sgcf_robot/lidar_link/lidar"
+      ]
+    }
+  },
+  "passed": true,
+  "static_transforms": [
+    "base_link->sgcf_robot/lidar_link/lidar",
+    "base_link->sgcf_robot/camera_link/rgb_camera"
+  ],
+  "tree": {
+    "base_link": [
+      "sgcf_robot/lidar_link/lidar",
+      "sgcf_robot/camera_link/rgb_camera"
+    ],
+    "odom": [
+      "base_link"
+    ]
+  }
+}

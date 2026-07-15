@@ -1,0 +1,23 @@
+{
+  "cdr_padding_excluded_from_logical_hash": true,
+  "counts": {
+    "/camera/camera_info": 30,
+    "/camera/image_raw": 30,
+    "/clock": 242,
+    "/diagnostics": 40,
+    "/odom": 30,
+    "/scan": 30,
+    "/sgcf/planner_candidate_cmd_vel": 40,
+    "/sgcf/planner_diagnostics": 40,
+    "/sgcf/planner_status": 40,
+    "/sgcf_nrmp/fusion": 30,
+    "/sgcf_nrmp/local_plan": 40,
+    "/sgcf_nrmp/markers": 40,
+    "/tf": 30,
+    "/tf_static": 1
+  },
+  "counts_identical": true,
+  "independent_replays": 2,
+  "logical_message_hashes_identical": true,
+  "passed": true
+}

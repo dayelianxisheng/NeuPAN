@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "scenes": {
+    "outdated_rgb_contract": {
+      "contract_sync_tolerance_s": 0.05,
+      "negative_jumps": {
+        "camera_info": 0,
+        "clock": 0,
+        "image": 0,
+        "odom": 0,
+        "scan": 0
+      },
+      "scan_image_max_abs_skew_s": 0.10000100000000067,
+      "scan_odom_max_abs_skew_s": 0.0,
+      "timestamps_from_simulation": true,
+      "wall_clock_used_for_message_stamps": false
+    },
+    "rgb_dropout_contract": {
+      "contract_sync_tolerance_s": 0.05,
+      "negative_jumps": {
+        "camera_info": 0,
+        "clock": 0,
+        "image": 0,
+        "odom": 0,
+        "scan": 0
+      },
+      "scan_image_max_abs_skew_s": null,
+      "scan_odom_max_abs_skew_s": 0.049999999999998934,
+      "timestamps_from_simulation": true,
+      "wall_clock_used_for_message_stamps": false
+    },
+    "single_static_obstacle": {
+      "contract_sync_tolerance_s": 0.05,
+      "negative_jumps": {
+        "camera_info": 0,
+        "clock": 0,
+        "image": 0,
+        "odom": 0,
+        "scan": 0
+      },
+      "scan_image_max_abs_skew_s": 0.0,
+      "scan_odom_max_abs_skew_s": 0.0,
+      "timestamps_from_simulation": true,
+      "wall_clock_used_for_message_stamps": false
+    },
+    "vehicle_path": {
+      "contract_sync_tolerance_s": 0.05,
+      "negative_jumps": {
+        "camera_info": 0,
+        "clock": 0,
+        "image": 0,
+        "odom": 0,
+        "scan": 0
+      },
+      "scan_image_max_abs_skew_s": 0.049999999999998934,
+      "scan_odom_max_abs_skew_s": 0.049999999999998934,
+      "timestamps_from_simulation": true,
+      "wall_clock_used_for_message_stamps": false
+    }
+  }
+}

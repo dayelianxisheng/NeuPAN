@@ -1,0 +1,8 @@
+{
+  "direct_core_replay_max_error": 0.0,
+  "exact_geometry_semantic_invariant": true,
+  "horizon_exact_geometry_direct_core_replay_max_error": 0.0,
+  "passed": true,
+  "stage11c_snapshot_current_state_exact_geometry_max_error": 0.0,
+  "threshold": 1e-06
+}

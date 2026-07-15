@@ -1,0 +1,54 @@
+{
+  "external_rosbag_required": false,
+  "gazebo_rerun": false,
+  "oracle_semantics_scope": "SIMULATION_OFFLINE_TEST_ONLY",
+  "scenes": {
+    "outdated_rgb_contract": {
+      "directory": "sgcf_nrmp_project/artifacts/stages/stage_11c_d3a_semantic_safety_completion/planner_inputs/outdated_rgb_contract",
+      "samples": 5,
+      "sha256": {
+        "sample_00.json": "ea85200d66a65e4095b5598471d4d9bf3562908d8c6384ef8d7658172aacfe8f",
+        "sample_01.json": "3484e43b829783898064071d2949008372c46f7722c46355057629eba95c00d2",
+        "sample_02.json": "f0e79e52ce7a935049bae8cc67a7f5e3ea44b8b7d83e34a1df2dfa9b84b03de5",
+        "sample_03.json": "24dd5e34c3354d09a52930d4d5745d1f12786c5a3bad5b62cc7b597ce21bc33a",
+        "sample_04.json": "dbce7698c68e815bf91884cda9c8fc6cbd582b94d3e40c581c06cfe1f5d92863"
+      }
+    },
+    "rgb_dropout_contract": {
+      "directory": "sgcf_nrmp_project/artifacts/stages/stage_11c_d3a_semantic_safety_completion/planner_inputs/rgb_dropout_contract",
+      "samples": 5,
+      "sha256": {
+        "sample_00.json": "c8bb3fd96437c852fa5c15e20ea8b1978783a19333bea54f141327390b80bd7d",
+        "sample_01.json": "acc1a5dc2c2c76961e622ecdfeca0ab4e1d40a2060f4fbe300dd60b767578d03",
+        "sample_02.json": "eb9d5329db7b5f29c119141dcbb0f031df724d86925076fd0c4fd80c0e7bab0f",
+        "sample_03.json": "bfe8effd760dbe3a4af1d82cfb1642e848358c815970c2b77dbfbbc3be5d7a68",
+        "sample_04.json": "83cbcdd921eb9bafb7919d69813f22af6fe70a74a692003078a2293a15270dcf"
+      }
+    },
+    "single_static_obstacle": {
+      "directory": "sgcf_nrmp_project/artifacts/stages/stage_11c_d1a_speed_contract_and_geometry_diagnosis/planner_inputs/single_static_obstacle",
+      "samples": 5,
+      "sha256": {
+        "sample_00.json": "30839a52d62d25c4c2a7931add996a0c8968fa0bbf914d0eaec29b5ce9967adb",
+        "sample_01.json": "d75d6fd6311d7705cc9b005e569a9e295820bbd6d21acdf540faae61f90c1579",
+        "sample_02.json": "7e7a5af5797dfeacb0e3eb1d8c0ebe8c2d6e2e72a09b431411dc518475ebab6a",
+        "sample_03.json": "c03d1473e72c7306bf5eee1752a40dd0bc0c6f82bf61fb878d1602fe8370153c",
+        "sample_04.json": "4e96e18c3a520f830a10d3a41cbf1a370198b6bb33b0dbe32f4b52dc1b38625e"
+      }
+    },
+    "vehicle_path": {
+      "directory": "sgcf_nrmp_project/artifacts/stages/stage_11c_d3a_semantic_safety_completion/planner_inputs/vehicle_path_p2_closed_loop",
+      "samples": 5,
+      "sha256": {
+        "sample_00.json": "65cf5c2e11512678694bac2cbb6890cdc5304127c3c329590e2082da0c8649f3",
+        "sample_01.json": "b0a4cc7f8e005967882b165a5e31773db3fe0bd6c7bbbc0084c419c8d22f4373",
+        "sample_02.json": "d410e598952dafc524dae92048aee37e2958211f927250fd8f8a64815cf1b803",
+        "sample_03.json": "989def311d12ecd9e472b45a0f05e56f4a88e7d8d3ee83cf2e6c4455f625ca65",
+        "sample_04.json": "3350515802fda8d06082fdf752b00543b8b2f4513bb2acc89b7c9738c5cd6d6e"
+      }
+    }
+  },
+  "source": "STAGE_11C_SAVED_PLANNER_INPUT_SNAPSHOTS",
+  "stage10_loaded": false,
+  "stage_status_before_execution": "READY_WITH_RESTRICTIONS"
+}

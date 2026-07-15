@@ -1,0 +1,26 @@
+{
+  "cmd_vel_publisher_count": 0,
+  "forbidden_topic": "/cmd_vel",
+  "planner_outputs": [
+    "/sgcf_nrmp/local_plan",
+    "/sgcf/planner_candidate_cmd_vel",
+    "/sgcf/planner_status",
+    "/sgcf/planner_diagnostics"
+  ],
+  "topics": {
+    "/camera/camera_info": "sensor_msgs/msg/CameraInfo",
+    "/camera/image_raw": "sensor_msgs/msg/Image",
+    "/clock": "rosgraph_msgs/msg/Clock",
+    "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+    "/odom": "nav_msgs/msg/Odometry",
+    "/scan": "sensor_msgs/msg/LaserScan",
+    "/sgcf/planner_candidate_cmd_vel": "geometry_msgs/msg/Twist",
+    "/sgcf/planner_diagnostics": "std_msgs/msg/String",
+    "/sgcf/planner_status": "std_msgs/msg/String",
+    "/sgcf_nrmp/fusion": "std_msgs/msg/String",
+    "/sgcf_nrmp/local_plan": "nav_msgs/msg/Path",
+    "/sgcf_nrmp/markers": "visualization_msgs/msg/MarkerArray",
+    "/tf": "tf2_msgs/msg/TFMessage",
+    "/tf_static": "tf2_msgs/msg/TFMessage"
+  }
+}

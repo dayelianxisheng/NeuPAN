@@ -1,0 +1,43 @@
+{
+  "counts": {
+    "/camera/camera_info": 30,
+    "/camera/image_raw": 30,
+    "/clock": 242,
+    "/diagnostics": 40,
+    "/odom": 30,
+    "/scan": 30,
+    "/sgcf/planner_candidate_cmd_vel": 40,
+    "/sgcf/planner_diagnostics": 40,
+    "/sgcf/planner_status": 40,
+    "/sgcf_nrmp/fusion": 30,
+    "/sgcf_nrmp/local_plan": 40,
+    "/sgcf_nrmp/markers": 40,
+    "/tf": 30,
+    "/tf_static": 1
+  },
+  "database_row_count": 663,
+  "database_sha256": "cc46c4c0779f50e32655cd7fbd0c38834de1260ea7cb7ce5f57045f3c87aee25",
+  "external_rosbag": false,
+  "format": "SGCF_SELF_CONTAINED_SQLITE_CDR_V1",
+  "message_count": 663,
+  "recording_source_scene": "vehicle_path",
+  "self_contained": true,
+  "serialization": "ROS2_CDR",
+  "storage": "SQLite3",
+  "topics": {
+    "/camera/camera_info": "sensor_msgs/msg/CameraInfo",
+    "/camera/image_raw": "sensor_msgs/msg/Image",
+    "/clock": "rosgraph_msgs/msg/Clock",
+    "/diagnostics": "diagnostic_msgs/msg/DiagnosticArray",
+    "/odom": "nav_msgs/msg/Odometry",
+    "/scan": "sensor_msgs/msg/LaserScan",
+    "/sgcf/planner_candidate_cmd_vel": "geometry_msgs/msg/Twist",
+    "/sgcf/planner_diagnostics": "std_msgs/msg/String",
+    "/sgcf/planner_status": "std_msgs/msg/String",
+    "/sgcf_nrmp/fusion": "std_msgs/msg/String",
+    "/sgcf_nrmp/local_plan": "nav_msgs/msg/Path",
+    "/sgcf_nrmp/markers": "visualization_msgs/msg/MarkerArray",
+    "/tf": "tf2_msgs/msg/TFMessage",
+    "/tf_static": "tf2_msgs/msg/TFMessage"
+  }
+}

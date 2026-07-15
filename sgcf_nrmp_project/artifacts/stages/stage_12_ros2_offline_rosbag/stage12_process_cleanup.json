@@ -1,0 +1,8 @@
+{
+  "cmd_vel_published": false,
+  "gazebo_started": false,
+  "passed": true,
+  "stage10_started": false,
+  "stage12_containers_residual": 0,
+  "stage12_processes_residual": 0
+}

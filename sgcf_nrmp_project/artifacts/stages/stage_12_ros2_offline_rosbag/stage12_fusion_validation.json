@@ -1,0 +1,65 @@
+{
+  "oracle_not_predicted_rgb": true,
+  "passed": true,
+  "scenes": {
+    "outdated_rgb_contract": {
+      "fallback_reasons": [
+        "OUTDATED_IMAGE"
+      ],
+      "margin_values": [
+        0.0
+      ],
+      "messages": 130,
+      "reliability_values": [
+        0.0
+      ],
+      "simulation_only": true,
+      "valid_messages": 0
+    },
+    "rgb_dropout_contract": {
+      "fallback_reasons": [
+        "RGB_DROPOUT"
+      ],
+      "margin_values": [
+        0.0
+      ],
+      "messages": 130,
+      "reliability_values": [
+        0.0
+      ],
+      "simulation_only": true,
+      "valid_messages": 0
+    },
+    "single_static_obstacle": {
+      "fallback_reasons": [
+        "None"
+      ],
+      "margin_values": [
+        0.0
+      ],
+      "messages": 130,
+      "reliability_values": [
+        0.0,
+        1.0
+      ],
+      "simulation_only": true,
+      "valid_messages": 129
+    },
+    "vehicle_path": {
+      "fallback_reasons": [
+        "None"
+      ],
+      "margin_values": [
+        0.0,
+        0.2
+      ],
+      "messages": 130,
+      "reliability_values": [
+        0.0,
+        1.0
+      ],
+      "simulation_only": true,
+      "valid_messages": 129
+    }
+  }
+}

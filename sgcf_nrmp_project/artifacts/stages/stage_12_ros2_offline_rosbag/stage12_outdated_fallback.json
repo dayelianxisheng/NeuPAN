@@ -1,0 +1,12 @@
+{
+  "fallback_reason": "OUTDATED_IMAGE",
+  "p2_p0_max_error": {
+    "candidate": 0.0,
+    "d_geo": 0.0,
+    "g_geo": 0.0
+  },
+  "passed": true,
+  "semantic_contribution_enabled": false,
+  "semantic_margin_max": 0.0,
+  "status_difference_expected_for_explicit_failure_reporting": true
+}

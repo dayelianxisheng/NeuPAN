@@ -1,0 +1,7 @@
+{
+  "diagnostics_count": 40,
+  "frame": "odom",
+  "local_plan_count": 40,
+  "marker_count": 40,
+  "passed": true
+}
